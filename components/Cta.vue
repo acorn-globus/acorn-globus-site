@@ -13,6 +13,7 @@
         <!-- You can change the value for button-text, button-color, width and height with the value you want -->
         <formester-popup
           id="efd1648b-1621-41ff-ade9-59630c129567"
+          url="https://bevdkbdf.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
           width="900px"
           height="95%"
         ></formester-popup>
@@ -33,13 +34,13 @@ export default {
     return {
       script: [
         {
-          src: "https://app.formester.com/widget/popup.js",
+          src: "https://bevdkbdf.formester.com/widget/popup.js",
           type: "module",
           defer: true,
         },
       ],
-    }
-  }
+    };
+  },
 };
 </script>
 
