@@ -5,13 +5,6 @@
   <Project />
   <TechStack />
   <Expertise />
-  
-  <formester-standard-form
-    set-auto-height="true"
-    height="100%"
-    id="cbd1943d-51b5-4a83-99cf-72ffc718681a"
-    url="https://bevdkbdf.formester.com/f/cbd1943d-51b5-4a83-99cf-72ffc718681a"
-  ></formester-standard-form>
 </template>
 
 <script setup>
