@@ -3,7 +3,7 @@
   <Testimonials />
   <DevelopmentServices />
   <Technology.Benefits />
-  <Technology.OtherRelatedServices />
+  <!-- <Technology.OtherRelatedServices /> -->
   <div class="bg-[#fafbff] wrapper my-4 md:my-8">
     <div class="container__wrapper flex flex-col gap-16 py-4 md:py-8">
       <h2 class="section__heading">
@@ -67,18 +67,18 @@
 </template>
 
 <script setup>
-import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
+import DevelopmentServices from '~/components/services/DevelopmentServices.vue';
 
 useHead({
-  title: "Best ReactJS Development Company | Acorn Globus",
+  title: 'Best ReactJS Development Company | Acorn Globus',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "Looking for the Best ReactJS development company? We offer end-to-end reactjs services, from concept to deployment, ensuring optimal performance.",
+        'Looking for the Best ReactJS development company? We offer end-to-end reactjs services, from concept to deployment, ensuring optimal performance.',
     },
   ],
-  link: [{ rel: "canonical", href: "https://www.acronglobus.com/technology" }],
+  link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology' }],
 });
 </script>
 
