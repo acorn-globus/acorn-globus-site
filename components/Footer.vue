@@ -86,7 +86,13 @@
               <li class="flex items-center">
                 <a class="footer__link flex items-center" href="#">
                   <img src="~/assets/images/icons/phone.svg" alt="Phone" />
-                  <span class="ml-2">+91 55555555555</span>
+                  <span class="ml-2">+91-9545993951</span>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <a class="footer__link flex items-center" href="#">
+                  <img src="~/assets/images/icons/phone.svg" alt="Phone" />
+                  <span class="ml-2">+91-8828207511</span>
                 </a>
               </li>
               <li class="footer__link flex items-start">
