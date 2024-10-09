@@ -105,12 +105,15 @@
       </div>
     </div>
     <div class="text-center p-3 copyright">
-      © 2022 Acorn Globus. <span class="text-black">All Rights Reserved</span>
+      © {{ currentYear }} Acorn Globus.
+      <span class="text-black">All Rights Reserved</span>
     </div>
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+const currentYear = new Date().getFullYear();
+</script>
 
 <style>
 .footer__container {
