@@ -8,6 +8,7 @@
         >
           <div class="flex flex-col items-center">
             <img
+              v-show="props.iconPath != null"
               :src="props.iconPath"
               alt="React"
               height="80px"
