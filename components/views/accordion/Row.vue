@@ -19,7 +19,7 @@
         </button>
       </header>
       <div :style="contentStyle" class="content">
-        <p :style="infoStyle" class="info">{{ info }}</p>
+        <p :style="infoStyle" class="info">{{ description }}</p>
       </div>
     </article>
   </template>
@@ -27,7 +27,7 @@
   <script setup>
   const props = defineProps({
     title: String,
-    info: String,
+    description: String,
     isOpen: {
       type: Boolean,
       default: false,

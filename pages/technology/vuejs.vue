@@ -65,6 +65,11 @@ useHead({
             name: 'description',
             content: 'Experience the best Vue.js development services with Acorn Globus. Hire top Vue.js developers to build secure & scalable VueJS software & apps.',
         },
+        {
+            hid: 'vuejs-development', // Unique identifier for Nuxt
+            name: 'vuejs-development',
+            content: 'vuejs development, vuejs development company, vuejs app development, single-page applications, vuejs development services, vuejs development agency, hire vuejs developer​',
+        },
     ],
     link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/vuejs' }],
 });
@@ -138,16 +143,16 @@ const trustData = [
 const servicesAccordion = [
     {
         title: "Staff Augmentation",
-        info: "Need more help? Hire our dedicated VueJS developers to work with your team. They’ll bring skills and experience to help you finish your project on time without long-term commitments.",
+        description: "Need more help? Hire our dedicated VueJS developers to work with your team. They’ll bring skills and experience to help you finish your project on time without long-term commitments.",
         isOpen: true
     },
     {
         title: "Development Teams",
-        info: "For big projects, we provide a full development team with developers, designers, and project managers. They’ll focus on your project from start to finish, creating a great Vue.js application that fits your needs."
+        description: "For big projects, we provide a full development team with developers, designers, and project managers. They’ll focus on your project from start to finish, creating a great Vue.js application that fits your needs."
     },
     {
         title: "Outsourcing",
-        info: "Want to focus on your business? Outsource your Vue.js development to us. We handle everything from planning to building your app, so you can relax while we create a high-quality product."
+        description: "Want to focus on your business? Outsource your Vue.js development to us. We handle everything from planning to building your app, so you can relax while we create a high-quality product."
     }
 ];
 
