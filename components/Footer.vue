@@ -45,11 +45,6 @@
               >
             </li>
             <li>
-              <nuxt-link to="/technology" class="footer__link text-black"
-                >Technology</nuxt-link
-              >
-            </li>
-            <li>
               <nuxt-link to="/blog" class="footer__link text-black"
                 >Blog</nuxt-link
               >

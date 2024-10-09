@@ -71,7 +71,7 @@ useHead({
             content: 'vuejs development, vuejs development company, vuejs app development, single-page applications, vuejs development services, vuejs development agency, hire vuejs developer​',
         },
     ],
-    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/vuejs' }],
+    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/vuejs-development-company' }],
 });
 
 const servicesData = [

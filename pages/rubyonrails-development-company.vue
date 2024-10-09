@@ -63,7 +63,7 @@ useHead({
             content: 'ruby on rails development company, ruby on rails development services, ror development services, ruby on rails software development company, ror development company​',
         },
     ],
-    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/rubyonrails' }],
+    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/rubyonrails-development-company' }],
 });
 
 const servicesData = [

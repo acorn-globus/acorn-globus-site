@@ -63,7 +63,7 @@ useHead({
             content: 'angular development company, angular development services, hire angular developers, angular web development, angular development agency, hire angular js developer, angular js development company, angular mobile app development, angular website development​',
         },
     ],
-    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/angular' }],
+    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/angular-development-company' }],
 });
 
 const servicesData = [

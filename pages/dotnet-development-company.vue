@@ -71,7 +71,7 @@ useHead({
             content: '.net development services, hire .net developers, dot net development company, dot net development services, asp.net development company, .net software development services, hire dotnet developers, .net development company​',
         },
     ],
-    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/dotnet' }],
+    link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/dotnet-development-company' }],
 });
 
 const servicesData = [

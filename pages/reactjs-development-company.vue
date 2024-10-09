@@ -71,7 +71,7 @@ useHead({
           content: 'reactjs development company, hire react developers, hire react native developers, react native development company, react development company, hire react js developer, react development services, reactjs development services, react development company, javascript development company​',
       },
   ],
-  link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/technology/reactjs' }],
+  link: [{ rel: 'canonical', href: 'https://www.acronglobus.com/reactjs-development-company' }],
 });
 
 const servicesData = [
