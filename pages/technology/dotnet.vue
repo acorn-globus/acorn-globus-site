@@ -1,6 +1,6 @@
 <template>
     <!-- Hero  -->
-    <Technology.Hero iconPath="/_nuxt/assets/images/tech-stack/dotnet.svg" title=".NET Development Company"
+    <Technology.Hero title=".NET Development Company"
         subTitle="Build your own .Net apps with our expert .Net development services. Create stable, secure, and scalable software tailored to your specific needs."
         callToAction="Get Your Custom Estimate" />
 
