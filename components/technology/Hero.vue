@@ -8,23 +8,23 @@
         >
           <div class="flex flex-col items-center">
             <img
-              src="~/assets/images/tech-stack/react.svg"
+              v-show="props.iconPath != null"
+              :src="props.iconPath"
               alt="React"
               height="80px"
               width="80px"
             />
-            <h1 class="hero__heading">ReactJS Development Company</h1>
+            <h1 class="hero__heading">{{ props.title }}</h1>
           </div>
           <p class="hero__subheading">
-            Need a development partner for your next web project? Our ReactJS
-            proficient developers ensure modern, standards-compliant apps.
+            {{ props.subtitle }}
           </p>
           <nuxt-link
-            href="https://app.zencal.io/u/ankit/acorn-globus"
+            href="https://calendar.app.google/So3CCei31oYjhoM47"
             target="_blank"
             class="contact__btn flex items-center justify-center justify-content-md-start"
           >
-            Contact us
+          {{ props.callToAction }}
           </nuxt-link>
         </div>
       </div>
@@ -37,7 +37,15 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+  import { defineProps } from 'vue';
+  const props = defineProps({
+    iconPath: String, // Define data type for each prop
+    title: String,
+    subTitle: String,
+    callToAction: String,
+  });
+</script>
 
 <style>
 .hero__heading {

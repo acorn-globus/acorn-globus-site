@@ -17,7 +17,7 @@
             is affordable?
           </p>
           <nuxt-link
-            href="https://app.zencal.io/u/ankit/acorn-globus"
+            href="https://calendar.app.google/So3CCei31oYjhoM47"
             target="_blank"
             class="contact__btn flex items-center justify-center justify-content-md-start"
           >
