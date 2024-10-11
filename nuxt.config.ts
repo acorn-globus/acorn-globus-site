@@ -26,6 +26,12 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
+  plugins: [
+    {
+      src: "~/plugins/crisp.js", // Replace "~/plugins/crisp.js" with the actual path to your file
+      mode: 'client', // Ensure the script is loaded on the client side
+    },
+  ],
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
   //         if (document.extension === '.md') {
