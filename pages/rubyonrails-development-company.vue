@@ -14,7 +14,7 @@
 
     <!-- Why Work with us ? -->
     <Views.Sticky.Page title="Why Partner With Us?"
-        subTitle="Choosing Acorn Globus means partnering with a RubyOnRails development company that truly understands your needs."
+        subTitle="Choosing Acorn Globus means partnering with a Ruby On Rails development company that truly understands your needs."
         :services="trustData" />
 
 

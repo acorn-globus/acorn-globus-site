@@ -9,7 +9,7 @@
 
   <!-- React Services -->
   <Views.Sticky.Page title="React Development Services We Offer"
-      subTitle="At our React development agency, we deliver tailored React development services designed to meet your project’s unique demands, from web applications to mobile solutions and custom software."
+      subTitle="At our React development agency, we provide custom ReactJS development services. We meet your project's unique needs, whether for web apps, mobile solutions, or custom software."
       :services="servicesData" />
 
   <!-- Why Work with us ? -->
@@ -59,7 +59,7 @@
 <script setup>
 
 useHead({
-  title: 'Best React.js Development Company | Acorn Globus',
+  title: 'Best ReactJS Development Company | Acorn Globus',
   meta: [
       {
           name: 'description',
@@ -85,7 +85,7 @@ const servicesData = [
   },
   {
     "title": "React Native Mobile Application Development",
-    "description": "Get beautiful, high-performance mobile apps with React Native that offer a native-like experience for both iOS and Android users. With a single codebase, we make sure faster iteration, seamless updates, and productive future maintenance, making your mobile app development both cost-effective and user-focused."
+    "description": "With our React Native development company, you can create beautiful, high-performance mobile apps. These apps provide a native-like experience for both iOS and Android users."
   },
   {
     "title": "React UI/UX Design",
@@ -105,14 +105,14 @@ const servicesData = [
   },
   {
     "title": "React Testing",
-    "description": "We employ industry-standard tools like Jest and Cypress to carry out extensive testing on your React apps, including unit, integration, and end-to-end testing. This make sures your application is thoroughly tested for quality, performance, and security before it goes live."
+    "description": "Hire our React JS developers to test your React apps. We perform unit, integration, and end-to-end testing. This process tests your application for quality, performance, and security before it goes live."
   }
 ];
 
 const trustData = [
   {
     "title": "Expert Team",
-    "description": "At Acorn Globus, our React developers have extensive experience creating innovative applications for top companies. They excel in building user-friendly and high-performing apps tailored to your business needs."
+    "description": "At our React development Company, our developers have extensive experience creating innovative applications for top companies. They excel in building user-friendly and high-performing apps tailored to your business needs."
   },
   {
     "title": "Rigorous Quality Checks",

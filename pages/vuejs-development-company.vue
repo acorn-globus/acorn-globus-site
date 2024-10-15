@@ -20,7 +20,7 @@
 
     <!-- Project Services -->
     <Views.Accordion.Page title="How Can We Help You?"
-        subTitle="At Acorn Globus, we support your Vue.js projects in many ways. Whether you need extra help, a full team, or want to outsource, we’ve got you covered!"
+        subTitle="At our Vue JS development agency, we support your Vue.js projects in many ways. Whether you need extra help, a full team, or want to outsource, we’ve got you covered!"
         :accordions="servicesAccordion" />
 
     <!-- ShowCase Vue related projects  -->
@@ -59,11 +59,11 @@
 <script setup>
 
 useHead({
-    title: 'Best Vue.js Development Company | Acorn Globus',
+    title: 'Best VueJS Development Company | Acorn Globus',
     meta: [
         {
             name: 'description',
-            content: 'Experience the best Vue.js development services with Acorn Globus. Hire top Vue.js developers to build secure & scalable VueJS software & apps.',
+            content: 'Experience the best Vue.js development services with Acorn Globus. Hire top VueJS developers to build secure & scalable VueJS software & apps.',
         },
         {
             hid: 'vuejs-development', // Unique identifier for Nuxt
@@ -88,7 +88,7 @@ const servicesData = [
     {
         icon: null,
         title: "Vue.js Single-Page Applications (SPA)",
-        description: "Develop high-performance SPAs using Vue.js for a fluid user experience. We specialize in creating fast, lightweight SPAs with smooth navigation and rich interactivity."
+        description: "Hire our VueJS developers to develop high-performance SPAs using Vue.js for a fluid user experience. We specialize in creating fast, lightweight SPAs."
     },
     {
         icon: null,
