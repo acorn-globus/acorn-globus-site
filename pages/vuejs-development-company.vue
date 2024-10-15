@@ -1,6 +1,6 @@
 <template>
     <!-- Hero  -->
-    <Technology.Hero iconPath="/_nuxt/assets/images/tech-stack/vue.svg" title="Vue.js Development Company"
+    <Technology.Hero :iconPath="vueIcon" title="Vue.js Development Company"
         subtitle="Build your own Vue.js apps with our exceptional Vue,js development services. Leverage our expertise in Fortune 500 companies to craft stable, secure & scalable software."
         callToAction="Get Your Custom Estimate" />
 
@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+import vueIcon from "~/assets/images/tech-stack/vue.svg";
 
 useHead({
     title: 'Best VueJS Development Company | Acorn Globus',

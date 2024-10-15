@@ -1,6 +1,6 @@
 <template>
   <!-- Hero  -->
-  <Technology.Hero iconPath="/_nuxt/assets/images/tech-stack/react.svg" title="ReactJS Development Company"
+  <Technology.Hero :iconPath="reactIcon" title="ReactJS Development Company"
       subTitle="Build your own React native apps with our React development services. Hire skilled React developers to build dynamic, user-friendly web and mobile applications."
       callToAction="Get Your Custom Estimate" />
 
@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+import reactIcon from "~/assets/images/tech-stack/react.svg";
 
 useHead({
   title: 'Best ReactJS Development Company | Acorn Globus',
