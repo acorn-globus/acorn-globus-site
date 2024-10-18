@@ -1,9 +1,9 @@
 <template>
   <footer class="footer__container text-center md:text-start">
     <div class="container__wrapper p-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 gap-x-6">
         <div
-          class="md:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"
+          class="xl:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"
         >
           <nuxt-link to="/">
             <img
@@ -28,6 +28,42 @@
             </a>
           </div>
         </div>
+
+        <div class="mb-4 mb-lg-0 order-last sm:order-none xl:order-last">
+          <h5 class="footer__subheading mb-4">Reach Us</h5>
+          <div class="flex md:justify-start justify-center">
+            <ul
+              class="footer__items list-unstyled flex flex-col align-items-start justify-center"
+            >
+              <li class="flex items-center">
+                <a
+                  class="footer__link flex items-center"
+                  href="mailto:business@acornglobus.com"
+                >
+                  <img src="~/assets/images/icons/mail.svg" alt="E-Mail" />
+                  <span class="ml-2">business@acornglobus.com</span>
+                </a>
+              </li>
+              <!-- <li class="flex items-center">
+                <a class="footer__link flex items-center" href="#">
+                  <img src="~/assets/images/icons/phone.svg" alt="Phone" />
+                  <span class="ml-2">+91-9545993951</span>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <a class="footer__link flex items-center" href="#">
+                  <img src="~/assets/images/icons/phone.svg" alt="Phone" />
+                  <span class="ml-2">+91-8828207511</span>
+                </a>
+              </li> -->
+              <li class="footer__link flex items-start">
+                <img src="~/assets/images/icons/location.svg" alt="Location" />
+                <span class="ml-2">49/D, Naya Bazar, Jamshedpur</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="mb-4 mb-lg-0">
           <h5 class="footer__subheading mb-4">Quick Links</h5>
           <ul class="footer__items list-unstyled mb-0">
@@ -63,39 +99,51 @@
             </li>
           </ul>
         </div>
+
         <div class="mb-4 mb-lg-0">
-          <h5 class="footer__subheading mb-4">Reach Us</h5>
-          <div class="flex md:justify-start justify-center">
-            <ul
-              class="footer__items list-unstyled flex flex-col align-items-start justify-center"
-            >
-              <li class="flex items-center">
-                <a
-                  class="footer__link flex items-center"
-                  href="mailto:business@acornglobus.com"
-                >
-                  <img src="~/assets/images/icons/mail.svg" alt="E-Mail" />
-                  <span class="ml-2">business@acornglobus.com</span>
-                </a>
-              </li>
-              <!-- <li class="flex items-center">
-                <a class="footer__link flex items-center" href="#">
-                  <img src="~/assets/images/icons/phone.svg" alt="Phone" />
-                  <span class="ml-2">+91-9545993951</span>
-                </a>
-              </li>
-              <li class="flex items-center">
-                <a class="footer__link flex items-center" href="#">
-                  <img src="~/assets/images/icons/phone.svg" alt="Phone" />
-                  <span class="ml-2">+91-8828207511</span>
-                </a>
-              </li> -->
-              <li class="footer__link flex items-start">
-                <img src="~/assets/images/icons/location.svg" alt="Location" />
-                <span class="ml-2">49/D, Naya Bazar, Jamshedpur</span>
-              </li>
-            </ul>
-          </div>
+          <h5 class="footer__subheading mb-4">Technologies</h5>
+          <ul class="footer__items list-unstyled mb-0">
+            <li>
+              <nuxt-link
+                to="/vuejs-development-company"
+                class="footer__link text-black"
+              >
+                Vue.js Development
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                to="/reactjs-development-company"
+                class="footer__link text-black"
+              >
+                React.js Development
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                to="/dotnet-development-company"
+                class="footer__link text-black"
+              >
+                .Net Development
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                to="/angular-development-company"
+                class="footer__link text-black"
+              >
+                Angular Development
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                to="/rubyonrails-development-company"
+                class="footer__link text-black"
+              >
+                Ruby on Rails Development
+              </nuxt-link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
