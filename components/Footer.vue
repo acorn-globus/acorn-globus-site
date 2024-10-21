@@ -137,7 +137,7 @@
             </li>
             <li>
               <nuxt-link
-                to="/rubyonrails-development-company"
+                to="/ruby-on-rails-development-company"
                 class="footer__link text-black"
               >
                 Ruby on Rails Development
