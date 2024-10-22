@@ -31,6 +31,10 @@ export default defineNuxtConfig({
       src: "~/plugins/crisp.js", // Replace "~/plugins/crisp.js" with the actual path to your file
       mode: 'client', // Ensure the script is loaded on the client side
     },
+    {
+      src: '~/plugins/clarity.js',
+      mode: 'client'
+    },
   ],
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
