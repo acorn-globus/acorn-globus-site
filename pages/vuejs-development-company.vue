@@ -1,6 +1,6 @@
 <template>
     <!-- Hero  -->
-    <Technology.Hero iconPath="/_nuxt/assets/images/tech-stack/vue.svg" title="Vue.js Development Company"
+    <Technology.Hero :iconPath="vueIcon" title="Vue.js Development Company"
         subtitle="Build your own Vue.js apps with our exceptional Vue,js development services. Leverage our expertise in Fortune 500 companies to craft stable, secure & scalable software."
         callToAction="Get Your Custom Estimate" />
 
@@ -20,7 +20,7 @@
 
     <!-- Project Services -->
     <Views.Accordion.Page title="How Can We Help You?"
-        subTitle="At Acorn Globus, we support your Vue.js projects in many ways. Whether you need extra help, a full team, or want to outsource, we’ve got you covered!"
+        subTitle="At our Vue JS development agency, we support your Vue.js projects in many ways. Whether you need extra help, a full team, or want to outsource, we’ve got you covered!"
         :accordions="servicesAccordion" />
 
     <!-- ShowCase Vue related projects  -->
@@ -57,13 +57,14 @@
 </template>
 
 <script setup>
+import vueIcon from "~/assets/images/tech-stack/vue.svg";
 
 useHead({
-    title: 'Best Vue.js Development Company | Acorn Globus',
+    title: 'Best VueJS Development Company | Acorn Globus',
     meta: [
         {
             name: 'description',
-            content: 'Experience the best Vue.js development services with Acorn Globus. Hire top Vue.js developers to build secure & scalable VueJS software & apps.',
+            content: 'Experience the best Vue.js development services with Acorn Globus. Hire top VueJS developers to build secure & scalable VueJS software & apps.',
         },
         {
             hid: 'vuejs-development', // Unique identifier for Nuxt
@@ -88,7 +89,7 @@ const servicesData = [
     {
         icon: null,
         title: "Vue.js Single-Page Applications (SPA)",
-        description: "Develop high-performance SPAs using Vue.js for a fluid user experience. We specialize in creating fast, lightweight SPAs with smooth navigation and rich interactivity."
+        description: "Hire our VueJS developers to develop high-performance SPAs using Vue.js for a fluid user experience. We specialize in creating fast, lightweight SPAs."
     },
     {
         icon: null,

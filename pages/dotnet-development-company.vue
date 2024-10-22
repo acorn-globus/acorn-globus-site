@@ -85,7 +85,7 @@ const servicesData = [
   },
   {
     "title": ".NET Enterprise Software Development",
-    "description": "We will build custom enterprise software solutions using .NET. This will help automate workflows, manage data better, and support your enterprise's growth."
+    "description": "With our great .NET software development services, you can create custom enterprise software. This software will have automated workflows and improved data management."
   },
   {
     "title": ".NET API Development",
@@ -101,7 +101,7 @@ const servicesData = [
   },
   {
     "title": ".NET Testing Services",
-    "description": "Our team of dedicated .NET developers conducts thorough testing on your .NET applications. We perform unit and integration tests to make sure your app is ready for launch."
+    "description": "Hire our DotNet developers to conduct thorough testing on your .NET applications. We perform unit and integration tests to make sure your app is ready for launch."
   },
   {
     "title": ".NET Maintenance & Support Services",
