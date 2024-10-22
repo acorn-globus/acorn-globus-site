@@ -1,17 +1,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  // app: {
-  //   head: {
-  //     title: "Acorn Globus",
-  //     meta: [
-  //       ...meta,
-  //       { charset: "utf-8" },
-  //       { name: "viewport", content: "width=device-width, initial-scale=1" },
-  //       { hid: "description", name: "description", content: "" },
-  //       { name: "format-detection", content: "telephone=no" },
-  //     ],
-  //   },
-  // },
+  app: {
+    head: {
+      noscript: [
+        {
+          // Only the noscript iframe for body
+          children: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKLMW4G" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+          tagPosition: 'bodyOpen' 
+        },
+      ]
+    },
+  },
   css: [
     "vue-slick-carousel/dist/vue-slick-carousel.css",
     "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
@@ -33,6 +32,10 @@ export default defineNuxtConfig({
     },
     {
       src: '~/plugins/clarity.js',
+      mode: 'client'
+    },
+    {
+      src: '~/plugins/gtm.js',
       mode: 'client'
     },
   ],
