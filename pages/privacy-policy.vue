@@ -53,6 +53,22 @@
         perfect, and we cannot guarantee the absolute security of your
         information.
       </p>
+      <h3 class="mt-3"><strong>Your Rights</strong></h3>
+      <p class="my-1">You have the right to:</p>
+      <ul class="my-1">
+        <li>Access your personal information</li>
+        <li>Correct any inaccuracies in your personal information</li>
+        <li>Request the deletion of your personal information</li>
+      </ul>
+      <p class="my-1">
+        To exercise these rights, please contact us using the information
+        provided on our website.
+      </p>
+      <h3 class="mt-3"><strong>Changes to This Privacy Policy</strong></h3>
+      <p class="my-1">
+        We may update this Privacy Policy from time to time. We will notify you
+        of any significant changes by posting a notice on our website.
+      </p>
       <h3 class="mt-3"><strong>Contact Us</strong></h3>
       <p class="my-1">
         If you have any questions or concerns about this Privacy Policy, please
