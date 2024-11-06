@@ -97,6 +97,11 @@
                 >Handbook</a
               >
             </li>
+            <li>
+              <a href="/privacy-policy" class="footer__link text-black">
+                Privacy Policy
+              </a>
+            </li>
           </ul>
         </div>
 
