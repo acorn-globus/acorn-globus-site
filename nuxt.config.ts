@@ -14,9 +14,11 @@ export default defineNuxtConfig({
   css: [
     "vue-slick-carousel/dist/vue-slick-carousel.css",
     "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
+    'notivue/notification.css',
+    'notivue/animations.css',
     "~/assets/css/main.css",
   ],
-  modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss", "notivue/nuxt"],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },

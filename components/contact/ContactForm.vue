@@ -226,9 +226,11 @@
           <div class="flex justify-end">
             <button
               type="submit"
-              class="bg-[#75b935] text-white px-6 py-3 rounded-lg hover:bg-[#669e2d] transition-colors"
+              :disabled="submitting"
+              class="bg-[#75b935] text-white px-6 py-3 rounded-lg hover:bg-[#669e2d] transition-colors flex items-center justify-center gap-2"
+              :class="{ 'cursor-not-allowed opacity-50': submitting }"
             >
-              Send Your Query
+              <span>Send Your Query</span>
             </button>
           </div>
         </form>
@@ -286,12 +288,18 @@
           </div>
         </div>
       </div>
+
+      <Notivue v-slot="item">
+        <Notification :item="item" />
+      </Notivue>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import { Notivue, Notification, push } from 'notivue';
+import axios from 'axios';
 import {
   PhoneIcon,
   MessageCircleIcon,
@@ -301,8 +309,8 @@ import {
   UsersIcon,
 } from 'lucide-vue-next';
 
+const submitting = ref(false);
 const clients = ref([]);
-
 const form = ref({
   fullName: '',
   email: '',
@@ -311,22 +319,57 @@ const form = ref({
   service: '',
   message: '',
 });
-
 const errors = ref({});
 
-const handleSubmit = () => {
+const submissionUrl =
+  'https://app.formester.com/forms/23ef1589-ef44-4f4a-ac70-069e6aa29638/submissions.json';
+
+const resetErrors = () => {
   errors.value = {};
+};
 
-  if (!form.value.fullName) errors.value.fullName = 'Please fill full name';
-  if (!form.value.email) errors.value.email = 'Please fill email';
-  if (!form.value.country) errors.value.country = 'Please fill country name';
-  if (!form.value.company) errors.value.company = 'Please fill company name';
-  if (!form.value.service) errors.value.service = 'Please select a service';
-  if (!form.value.message) errors.value.message = 'Please provide a message';
+const resetForm = () => {
+  form.value = {
+    fullName: '',
+    email: '',
+    country: '',
+    company: '',
+    service: '',
+    message: '',
+  };
+}
 
-  if (Object.keys(errors.value).length === 0) {
-    // Submit form
-    console.log('Form submitted:', form.value);
+const validateForm = () => {
+  const fields = {
+    fullName: 'Please fill full name',
+    email: 'Please fill email',
+    country: 'Please fill country name',
+    company: 'Please fill company name',
+    service: 'Please select a service',
+    message: 'Please provide a message',
+  };
+
+  Object.entries(fields).forEach(([key, message]) => {
+    if (!form.value[key]) errors.value[key] = message;
+  });
+
+  return !Object.keys(errors.value).length;
+};
+
+const handleSubmit = async () => {
+  resetErrors();
+  const isValid = validateForm();
+  if (!isValid) return;
+
+  try {
+    submitting.value = true;
+    await axios.post(submissionUrl, form.value);
+    push.success('Form Submitted Successfully! We will get back to you soon.');
+    resetForm();
+  } catch (error) {
+    console.error(error);
+  } finally {
+    submitting.value = false;
   }
 };
 </script>
