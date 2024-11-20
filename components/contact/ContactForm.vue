@@ -337,7 +337,7 @@ const resetForm = () => {
     service: '',
     message: '',
   };
-}
+};
 
 const validateForm = () => {
   const fields = {
@@ -368,6 +368,9 @@ const handleSubmit = async () => {
     resetForm();
   } catch (error) {
     console.error(error);
+    push.error(
+      'Something went wrong! Please reach out to us at contact@acronglobus.com'
+    );
   } finally {
     submitting.value = false;
   }
