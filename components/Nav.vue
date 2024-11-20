@@ -64,7 +64,7 @@
             Blog
           </nuxt-link>
           <nuxt-link
-            to="/#cta"
+            to="/contact"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Contact
