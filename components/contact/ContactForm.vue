@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="min-h-screen bg-primary p-4 md:p-6">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
       <!-- Contact Form Card -->
@@ -41,22 +41,28 @@
             class="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
             <PhoneIcon class="w-4 h-4" />
-            <span class="text-sm underline">Book A Call</span>
+            <nuxt-link
+              href="https://calendar.app.google/5rdLGhWiZpbBrPeS7"
+              target="_blank"
+              class="text-sm underline"
+            >
+              Book a call
+            </nuxt-link>
           </button>
 
-          <button
+          <!-- <button
             class="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
             <MessageCircleIcon class="w-4 h-4" />
             <span class="text-sm underline">WhatsApp</span>
-          </button>
+          </button> -->
 
-          <button
+          <!-- <button
             class="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
             <MailIcon class="w-4 h-4" />
             <span class="text-sm underline">Email us</span>
-          </button>
+          </button> -->
         </div>
 
         <!-- Form -->
@@ -173,13 +179,22 @@
                   v-model="form.service"
                   class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded pl-3 pr-8 py-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow appearance-none cursor-pointer"
                 >
-                  <option value="">Please select a service</option>
-                  <option value="design">Design</option>
-                  <option value="development">Development</option>
-                  <option value="consulting">Consulting</option>
-                  <option value="design-and-development">
-                    Design & Development
-                  </option>
+                <option value="">Please select a service</option>
+                <option value="Software-Development">Software Development</option>
+                <option value="Staff-Augmentation">Staff Augmentation</option>
+                <option value="Dedicated-Teams">Dedicated Teams</option>
+                <option value="Design">Design</option>
+                <option value="Software-Outsourcing">Software Outsourcing</option>
+                <option value="IT-Consulting">IT Consulting</option>
+                <option value="Cloud-Solutions">Cloud Solutions</option>
+                <option value="Support-and-Maintenance">Support & Maintenance</option>
+                <option value="DevOps-Services">DevOps Services</option>
+                <option value="QA-and-Testing">QA & Testing Services</option>
+                <option value="Mobile-App-Development">Mobile App Development</option>
+                <option value="Enterprise-Solutions">Enterprise Solutions</option>
+                <option value="Ecommerce-Development">E-commerce Development</option>
+                <option value="Custom-Software-Solutions">Custom Software Solutions</option>
+                <option value="Other">Other</option>
                 </select>
 
                 <svg

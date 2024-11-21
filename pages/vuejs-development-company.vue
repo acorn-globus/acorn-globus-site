@@ -2,7 +2,7 @@
     <!-- Hero  -->
     <Technology.Hero :iconPath="vueIcon" title="Vue.js Development Company"
         subtitle="Build your own Vue.js apps with our exceptional Vue,js development services. Leverage our expertise in Fortune 500 companies to craft stable, secure & scalable software."
-        callToAction="Get Your Custom Estimate" />
+        callToAction="Book A Free Consultation" />
 
     <!-- Testimonials -->
     <Testimonials />

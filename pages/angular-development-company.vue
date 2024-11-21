@@ -2,7 +2,7 @@
     <!-- Hero  -->
     <Technology.Hero title="Angular Development Company"
         subTitle="Leverage our Angular development services to build scalable single page applications. Hire top Angular developers with proven experience."
-        callToAction="Get Your Custom Estimate" />
+        callToAction="Book A Free Consultation" />
 
     <!-- Testimonials -->
     <Testimonials />

@@ -20,7 +20,7 @@
             {{ props.subtitle }}
           </p>
           <nuxt-link
-            href="https://calendar.app.google/5rdLGhWiZpbBrPeS7"
+            href="/contact"
             target="_blank"
             class="contact__btn flex items-center justify-center justify-content-md-start"
           >
