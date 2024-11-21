@@ -86,9 +86,9 @@
               >
             </li>
             <li>
-              <nuxt-link to="/#cta" class="footer__link text-black"
-                >Contact</nuxt-link
-              >
+              <nuxt-link to="/contact" class="footer__link text-black">
+                Contact
+              </nuxt-link>
             </li>
             <li>
               <a
