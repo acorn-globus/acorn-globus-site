@@ -243,9 +243,6 @@
               <NuxtLink to="/privacy-policy" class="text-gray-400 hover:text-yellow-400 text-sm">
                 Privacy Policy
               </NuxtLink>
-              <NuxtLink to="/terms" class="text-gray-400 hover:text-yellow-400 text-sm">
-                Terms of Service
-              </NuxtLink>
             </div>
           </div>
         </div>
