@@ -42,10 +42,10 @@
               A powerful no-code form builder with AI capabilities, revolutionizing how businesses collect and process data.
             </p>
             <div class="flex flex-wrap gap-2 mb-8">
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">React</span>
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Ruby on Rails</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AI Integration</span>
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
             </div>
             <NuxtLink 
               to="/case-studies/formester"
@@ -132,10 +132,11 @@
               Democratizing education through bite-sized learning experiences, reaching learners across 176 countries with innovative mobile and web solutions.
             </p>
             <div class="flex flex-wrap gap-2 mb-8">
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">React Native</span>
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Node.js</span>
-              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Nuxt</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+              <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Flutter</span>
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AWS</span>
+               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Firebase</span>
             </div>
             <NuxtLink 
               to="/case-studies/rumie"
