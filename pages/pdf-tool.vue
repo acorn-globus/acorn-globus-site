@@ -308,6 +308,38 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'PDF Automation Tool - Transform PDF Creation | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Streamline your PDF workflow with our no-code automation platform. Create, manage, and automate PDF generation with powerful features and intuitive tools.'
+    },
+    {
+      name: 'keywords',
+      content: 'PDF automation, document management, no-code platform, PDF generation, document templates, workflow automation'
+    },
+    {
+      property: 'og:title',
+      content: 'PDF Automation Tool - Transform PDF Creation | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Transform how you create and manage PDFs with our powerful no-code automation platform. Perfect for HR, Education, Developers, and Business teams.'
+    },
+    {
+      property: 'og:type',
+      content: 'product'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/pdf-tool'
+    }
+  ]
+})
+
 import { FileText, Settings, Layout, Copy, Clock, FileStack, Network, PuzzleIcon, Code, Blocks, Files } from 'lucide-vue-next';
 import FormInput from '../components/form/FormInput.vue'
 import FormSelect from '../components/form/FormSelect.vue'

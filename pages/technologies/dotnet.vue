@@ -188,3 +188,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: '.NET Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Expert .NET development services with 7+ years of experience. Building robust enterprise applications with .NET 6/7/8, ASP.NET Core, and Azure.'
+    },
+    {
+      name: 'keywords',
+      content: '.NET development, C#, ASP.NET Core, .NET Core, Azure, enterprise applications, .NET developers'
+    },
+    {
+      property: 'og:title',
+      content: '.NET Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Professional .NET development services specializing in enterprise-grade applications. 30+ successful .NET projects delivered.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/technologies/dotnet'
+    }
+  ]
+})
+</script>

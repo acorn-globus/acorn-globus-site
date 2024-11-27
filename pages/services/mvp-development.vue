@@ -136,3 +136,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'MVP Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Transform your idea into a market-ready product in weeks. Our MVP development services help startups and enterprises validate their ideas quickly and efficiently.'
+    },
+    {
+      name: 'keywords',
+      content: 'MVP development, minimum viable product, rapid development, startup development, product validation'
+    },
+    {
+      property: 'og:title',
+      content: 'MVP Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'From concept to market-ready product in weeks. Build, validate, and iterate your MVP with our expert development team.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/services/mvp-development'
+    }
+  ]
+})
+</script>

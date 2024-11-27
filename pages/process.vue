@@ -240,3 +240,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Our Development Process | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn about our proven development process that ensures successful project delivery. From understanding your vision to continuous improvement, discover how we build lasting digital solutions.'
+    },
+    {
+      name: 'keywords',
+      content: 'software development process, agile development, project management, digital transformation, software development lifecycle'
+    },
+    {
+      property: 'og:title',
+      content: 'Our Development Process | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Discover our transparent and efficient development process that ensures successful project delivery and long-term partnerships.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/process'
+    }
+  ]
+})
+</script>

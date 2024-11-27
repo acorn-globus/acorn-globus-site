@@ -188,3 +188,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Angular Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Professional Angular development services with expertise in building enterprise-grade applications. Specializing in Angular 12+ and modern web development.'
+    },
+    {
+      name: 'keywords',
+      content: 'Angular development, Angular.js, TypeScript, enterprise applications, Angular developers, front-end development'
+    },
+    {
+      property: 'og:title',
+      content: 'Angular Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Expert Angular development services with 6+ years of experience. Building enterprise-grade applications with modern best practices.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/technologies/angular'
+    }
+  ]
+})
+</script>

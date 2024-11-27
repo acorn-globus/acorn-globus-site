@@ -185,4 +185,39 @@
       </div>
     </main>
   </template>
+
+<script setup>
+useHead({
+  title: 'Invoice Falcon Case Study: Shopify Invoicing Solution | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Explore how we transformed Invoice Falcon into a robust Shopify invoicing solution, improving platform stability and user experience for merchants worldwide.'
+    },
+    {
+      name: 'keywords',
+      content: 'Invoice Falcon, Shopify app, invoicing solution, case study, e-commerce, platform optimization'
+    },
+    {
+      property: 'og:title',
+      content: 'Invoice Falcon Case Study: Shopify Invoicing Solution | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Learn how we enhanced Invoice Falcon\'s platform stability, performance, and user experience for Shopify merchants.'
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/case-studies/invoice-falcon'
+    }
+  ]
+})
+</script>
+
   

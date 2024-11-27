@@ -145,3 +145,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Maintenance & Support Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Keep your systems running at peak performance with our comprehensive maintenance and support services. From routine updates to emergency support, we provide ongoing care your systems need.'
+    },
+    {
+      name: 'keywords',
+      content: 'maintenance support, application maintenance, software support, technical support, system maintenance'
+    },
+    {
+      property: 'og:title',
+      content: 'Maintenance & Support Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Comprehensive maintenance and support services ensuring your applications stay secure, efficient, and up-to-date.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/services/maintenance-support'
+    }
+  ]
+})
+</script>

@@ -117,3 +117,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Formester Case Study: No-Code Form Builder | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn how we built Formester, a powerful no-code form builder with AI capabilities, revolutionizing how businesses collect and process data.'
+    },
+    {
+      name: 'keywords',
+      content: 'Formester, form builder, case study, SaaS development, AI integration, no-code platform'
+    },
+    {
+      property: 'og:title',
+      content: 'Formester Case Study: No-Code Form Builder | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Discover how we built a successful no-code form builder that helps businesses streamline their data collection processes.'
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/case-studies/formester'
+    }
+  ]
+})
+</script>

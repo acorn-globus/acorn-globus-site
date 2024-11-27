@@ -168,3 +168,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'React.js Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Expert React.js development services with 7+ years of experience. Building modern web applications with React 18, Next.js, and the latest tools.'
+    },
+    {
+      name: 'keywords',
+      content: 'React development, React.js, Next.js, React developers, front-end development, React consulting'
+    },
+    {
+      property: 'og:title',
+      content: 'React.js Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Professional React.js development services with proven expertise in building scalable applications. 40+ successful React projects delivered.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/technologies/reactjs'
+    }
+  ]
+})
+</script>

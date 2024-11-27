@@ -168,3 +168,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Ruby on Rails Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Expert Ruby on Rails development services with 8+ years of experience. From API development to e-commerce solutions, we build scalable Rails applications.'
+    },
+    {
+      name: 'keywords',
+      content: 'Ruby on Rails development, Rails API, Ruby developers, RoR development, Ruby on Rails consulting, Rails e-commerce'
+    },
+    {
+      property: 'og:title',
+      content: 'Ruby on Rails Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Expert Ruby on Rails development services with proven expertise in building scalable, maintainable applications. 25+ successful Rails projects delivered.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/technologies/ruby-on-rails'
+    }
+  ]
+})
+</script>

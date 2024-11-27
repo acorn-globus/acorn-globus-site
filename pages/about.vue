@@ -166,3 +166,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'About Us - Building Digital Excellence | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'From two dreamers to a family of builders, discover the Acorn Globus story. Learn about our journey, values, and commitment to crafting exceptional digital experiences.'
+    },
+    {
+      name: 'keywords',
+      content: 'Acorn Globus, software development company, digital solutions, company culture, tech innovation, software development team'
+    },
+    {
+      property: 'og:title',
+      content: 'About Us - Building Digital Excellence | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Meet the team behind Acorn Globus and discover our journey from a vision to a leading software development company.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/about'
+    }
+  ]
+})
+</script>

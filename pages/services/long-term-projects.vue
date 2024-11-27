@@ -190,3 +190,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Long-term Development Projects | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Partner with us for long-term development success. We become an integral part of your team, providing dedicated resources, strategic planning, and continuous development.'
+    },
+    {
+      name: 'keywords',
+      content: 'long-term development, dedicated team, software development, strategic partnership, development partnership'
+    },
+    {
+      property: 'og:title',
+      content: 'Long-term Development Projects | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Building lasting digital solutions together. Long-term partnership focused on your business growth and success.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/services/long-term-projects'
+    }
+  ]
+})
+</script>

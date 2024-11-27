@@ -200,3 +200,37 @@
       </div>
     </main>
   </template>
+
+<script setup>
+useHead({
+  title: 'Rumie Case Study: Educational Technology Platform | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn how we helped Rumie democratize education through technology, reaching learners across 176 countries with innovative mobile and web solutions.'
+    },
+    {
+      name: 'keywords',
+      content: 'Rumie, educational technology, case study, non-profit, mobile learning, digital education'
+    },
+    {
+      property: 'og:title',
+      content: 'Rumie Case Study: Educational Technology Platform | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Discover how we helped transform digital education accessibility worldwide through innovative technology solutions.'
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/case-studies/rumie'
+    }
+  ]
+})
+</script>

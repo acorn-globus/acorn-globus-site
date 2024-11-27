@@ -243,3 +243,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Eitoss Case Study: Workplace Communication Platform | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Discover how we helped Eitoss build an innovative platform that bridges the communication gap between management and frontline workers through Kaizen principles.'
+    },
+    {
+      name: 'keywords',
+      content: 'Eitoss, workplace communication, case study, enterprise software, Kaizen principles, employee engagement'
+    },
+    {
+      property: 'og:title',
+      content: 'Eitoss Case Study: Workplace Communication Platform | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Learn how we developed a platform that revolutionizes workplace communication and implements continuous improvement practices.'
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/case-studies/eitoss'
+    }
+  ]
+})
+</script>

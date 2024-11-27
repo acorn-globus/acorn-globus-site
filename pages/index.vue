@@ -35,16 +35,50 @@
 
 <script setup>
 useHead({
-  title: "Software Development Agency | Acorn Globus",
+  title: 'Acorn Globus - Digital Experiences with Passion and Innovation',
   meta: [
     {
-      name: "description",
-      content:
-        "We do more than just develop software for our partners - we help build their businesses. Fortune 500 experience. Get results faster!",
+      name: 'description',
+      content: 'Acorn Globus is a software development company specializing in building transformative digital solutions. From innovative SaaS platforms to enterprise solutions, we help businesses thrive in the digital age.'
     },
+    {
+      name: 'keywords',
+      content: 'software development, web development, mobile apps, digital transformation, SaaS, enterprise solutions, React, Vue.js, Ruby on Rails, .NET'
+    },
+    // Open Graph / Social Media
+    {
+      property: 'og:title',
+      content: 'Acorn Globus - Digital Experiences with Passion and Innovation'
+    },
+    {
+      property: 'og:description',
+      content: 'Building transformative digital solutions that empower businesses and delight users. Expert software development services for web, mobile, and enterprise applications.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    // Twitter
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    },
+    {
+      name: 'twitter:title',
+      content: 'Acorn Globus - Digital Experiences with Passion and Innovation'
+    },
+    {
+      name: 'twitter:description',
+      content: 'Building transformative digital solutions that empower businesses and delight users. Expert software development services for web, mobile, and enterprise applications.'
+    }
   ],
-  link: [{ rel: "canonical", href: "https://www.acronglobus.com" }],
-});
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com'
+    }
+  ]
+})
 </script>
 
 <style scoped></style>

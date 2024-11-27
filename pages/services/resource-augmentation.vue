@@ -166,4 +166,36 @@
 
 <script setup>
 import ReviewsSection from '../../components/ReviewsSection.vue'
+
+useHead({
+  title: 'Resource Augmentation Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Scale your development team with our expert resource augmentation services. From frontend to full-stack developers, we provide skilled professionals who seamlessly integrate into your team.'
+    },
+    {
+      name: 'keywords',
+      content: 'resource augmentation, staff augmentation, dedicated developers, hire developers, development team, remote developers'
+    },
+    {
+      property: 'og:title',
+      content: 'Resource Augmentation Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Strengthen your team with expert developers. Flexible scaling, seamless integration, and proven expertise across multiple technologies.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/services/resource-augmentation'
+    }
+  ]
+})
 </script>

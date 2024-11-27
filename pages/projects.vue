@@ -157,4 +157,36 @@
 
 <script setup>
 import ReviewsSection from '../components/ReviewsSection.vue'
+
+useHead({
+  title: 'Our Projects & Case Studies | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Discover our portfolio of successful digital projects. From SaaS platforms to enterprise solutions, explore how we help businesses transform through technology.'
+    },
+    {
+      name: 'keywords',
+      content: 'software projects, case studies, digital transformation, web development, mobile apps, enterprise solutions'
+    },
+    {
+      property: 'og:title',
+      content: 'Our Projects & Case Studies | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Explore our portfolio of successful digital transformations and innovative solutions that help businesses thrive in the digital age.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/projects'
+    }
+  ]
+})
 </script>

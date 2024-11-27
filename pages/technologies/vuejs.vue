@@ -168,3 +168,37 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Vue.js Development Services | Acorn Globus',
+  meta: [
+    {
+      name: 'description',
+      content: 'Professional Vue.js development services with expertise in Vue 3, Nuxt.js, and modern front-end development. Building reactive, scalable web applications.'
+    },
+    {
+      name: 'keywords',
+      content: 'Vue.js development, Vue 3, Nuxt.js, Vue developers, front-end development, Vue consulting'
+    },
+    {
+      property: 'og:title',
+      content: 'Vue.js Development Services | Acorn Globus'
+    },
+    {
+      property: 'og:description',
+      content: 'Expert Vue.js development services with 6+ years of experience. From SPAs to SSR applications, we build modern web solutions with Vue.js.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://acornglobus.com/technologies/vuejs'
+    }
+  ]
+})
+</script>
