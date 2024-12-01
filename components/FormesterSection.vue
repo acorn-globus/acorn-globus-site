@@ -80,7 +80,12 @@
 
       <div class="text-center mt-12">
         <button class="bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
+          <a 
+          href="https://formester.com" 
+          target="_blank" 
+        >
           Discover Formester
+        </a>
         </button>
       </div>
     </div>
