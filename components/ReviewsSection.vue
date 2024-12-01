@@ -21,10 +21,8 @@
             Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.
           </p>
           <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
-              </svg>
+            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400 overflow-hidden">
+              <img src="@/assets/images/testimonials/alon.jpeg" />
             </div>
             <div>
               <h4 class="font-bold">Alon Diamant</h4>
@@ -45,10 +43,8 @@
             Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.
           </p>
           <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
-              </svg>
+            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400 overflow-hidden">
+              <img src="@/assets/images/testimonials/enzo.jpeg" />
             </div>
             <div>
               <h4 class="font-bold">Enzo Zadrima</h4>
@@ -69,10 +65,8 @@
             Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.
           </p>
           <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
-              </svg>
+            <div class="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-yellow-400 overflow-hidden">
+              <img src="@/assets/images/testimonials/bogdan.jpeg" />
             </div>
             <div>
               <h4 class="font-bold">Bogdan Arsenie</h4>
