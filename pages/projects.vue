@@ -28,11 +28,11 @@
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Formester -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
-          <div class="aspect-video bg-gradient-to-br from-navy-600 to-navy-800 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-navy-400">Formester</span>
-            </div>
-          </div>
+          <img
+            src="~/assets/images/projects/formester-mockup.png"
+            alt="Formester project"
+            class="rounded-2xl"
+          />
           <div class="p-8">
             <div class="flex justify-between items-start mb-4">
               <h2 class="text-3xl font-bold">Formester</h2>
@@ -47,7 +47,7 @@
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AI Integration</span>
             </div>
-            <NuxtLink 
+            <NuxtLink
               to="/case-studies/formester"
               class="inline-block bg-yellow-400 text-navy-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
             >
@@ -58,11 +58,11 @@
 
         <!-- Eitoss -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
-          <div class="aspect-video bg-gradient-to-br from-navy-600 to-navy-800 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-navy-400">Eitoss</span>
-            </div>
-          </div>
+          <img
+            src="~/assets/images/projects/eitoss-project.png"
+            alt="Eitoss Project"
+            class="rounded-2xl"
+          />
           <div class="p-8">
             <div class="flex justify-between items-start mb-4">
               <h2 class="text-3xl font-bold">Eitoss</h2>
@@ -77,7 +77,7 @@
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AI Integration</span>
             </div>
-            <NuxtLink 
+            <NuxtLink
               to="/case-studies/eitoss"
               class="inline-block bg-yellow-400 text-navy-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
             >
@@ -88,11 +88,11 @@
 
         <!-- Invoice Falcon -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
-          <div class="aspect-video bg-gradient-to-br from-navy-600 to-navy-800 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-navy-400">Invoice Falcon</span>
-            </div>
-          </div>
+          <img
+            src="~/assets/images/projects/invoice-falcon-project.png"
+            alt="Invoice Falcon Project"
+            class="rounded-2xl"
+          />
           <div class="p-8">
             <div class="flex justify-between items-start mb-4">
               <h2 class="text-3xl font-bold">Invoice Falcon</h2>
@@ -107,7 +107,7 @@
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Shopify API</span>
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AWS</span>
             </div>
-            <NuxtLink 
+            <NuxtLink
               to="/case-studies/invoice-falcon"
               class="inline-block bg-yellow-400 text-navy-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
             >
@@ -118,11 +118,11 @@
 
         <!-- Rumie -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
-          <div class="aspect-video bg-gradient-to-br from-navy-600 to-navy-800 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-navy-400">Rumie</span>
-            </div>
-          </div>
+          <img
+            src="~/assets/images/projects/rumie-project.png"
+            alt="Rumie Project"
+            class="rounded-2xl"
+          />
           <div class="p-8">
             <div class="flex justify-between items-start mb-4">
               <h2 class="text-3xl font-bold">Rumie</h2>
@@ -138,7 +138,7 @@
               <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">AWS</span>
                <span class="bg-navy-800 px-3 py-1 rounded-full text-sm">Firebase</span>
             </div>
-            <NuxtLink 
+            <NuxtLink
               to="/case-studies/rumie"
               class="inline-block bg-yellow-400 text-navy-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
             >
