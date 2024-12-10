@@ -59,7 +59,7 @@
         <!-- Eitoss -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
           <img
-            src="~/assets/images/projects/eitoss-project.png"
+            src="~/assets/images/projects/eitoss-mockup.png"
             alt="Eitoss Project"
             class="rounded-2xl"
           />
@@ -89,7 +89,7 @@
         <!-- Invoice Falcon -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
           <img
-            src="~/assets/images/projects/invoice-falcon-project.png"
+            src="~/assets/images/projects/invoice-falcon-mockup.png"
             alt="Invoice Falcon Project"
             class="rounded-2xl"
           />
@@ -119,7 +119,7 @@
         <!-- Rumie -->
         <div class="bg-navy-700 rounded-2xl overflow-hidden group">
           <img
-            src="~/assets/images/projects/rumie-project.png"
+            src="~/assets/images/projects/rumie-mockup.png"
             alt="Rumie Project"
             class="rounded-2xl"
           />
