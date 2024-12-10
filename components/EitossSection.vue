@@ -10,7 +10,7 @@
           <p class="text-xl text-gray-300 mb-8">
             We built Eitoss from scratch, delivering a high-quality MVP that secured funding and launched a successful product.
           </p>
-          
+
           <ul class="space-y-4 mb-8">
             <li class="flex items-center text-lg text-gray-300">
               <svg class="w-6 h-6 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -38,8 +38,8 @@
             </li>
           </ul>
 
-          <NuxtLink 
-            to="/case-studies/eitoss" 
+          <NuxtLink
+            to="/case-studies/eitoss"
             class="inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
           >
             View Eitoss Case Study
@@ -48,10 +48,12 @@
 
         <!-- Image -->
         <div class="flex justify-center lg:justify-end">
-          <div class="bg-white rounded-lg w-full max-w-md h-[400px] flex items-center justify-center">
-            <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
+          <div class="w-full max-w-md h-[400px] flex items-center justify-center">
+            <img
+              src="~/assets/images/projects/eitoss-main.png"
+              alt="Eitoss"
+              class="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>

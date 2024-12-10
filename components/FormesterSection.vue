@@ -70,19 +70,21 @@
 
         <!-- Image Preview Section -->
         <div class="lg:col-span-1">
-          <div class="bg-navy-700 rounded-2xl w-full h-full min-h-[400px] flex items-center justify-center">
-            <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
+          <div class="w-full h-full min-h-[400px] flex items-center justify-center">
+            <img
+              src="~/assets/images/projects/formester-main.png"
+              alt="Formester"
+              class="w-full h-full object-cover rounded-2xl"
+            />
           </div>
         </div>
       </div>
 
       <div class="text-center mt-12">
         <button class="bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
-          <a 
-          href="https://formester.com" 
-          target="_blank" 
+          <a
+          href="https://formester.com"
+          target="_blank"
         >
           Discover Formester
         </a>
