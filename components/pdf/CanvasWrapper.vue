@@ -71,7 +71,7 @@ const toggleHand = () => {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     background-color: #f3f3f3;
 }
 
@@ -92,7 +92,7 @@ const toggleHand = () => {
 
 .hand-container {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     bottom: 22px;
     left: 22px;
     padding: 8px;

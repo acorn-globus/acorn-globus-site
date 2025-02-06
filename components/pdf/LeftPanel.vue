@@ -138,34 +138,42 @@ const triggerDownload = async () => {
 
             <div class="element" @click="triggerFileUpload">
                 <Upload />
+                <p class="tooltip-text">Upload PDF file</p>
             </div>
 
             <div class="element" @click="triggerDownload">
                 <Download />
+                <p class="tooltip-text">Download PDF file</p>
             </div>
 
             <div class="element" @click="showModal = true">
                 <FolderDown />
+                <p class="tooltip-text">Download Bulk PDF Files</p>
             </div>
 
             <div class="element" @click="triggerZoomIn">
                 <ZoomIn />
+                <p class="tooltip-text">Zoom In PDF</p>
             </div>
 
             <div class="element" @click="triggerZoomOut">
                 <ZoomOut />
+                <p class="tooltip-text">Zoom Out PDF</p>
             </div>
 
             <div class="element" @click="triggerPreviousPage">
                 <ArrowBigLeft />
+                <p class="tooltip-text">Previous Page</p>
             </div>
 
             <div class="element" @click="triggerNextPage">
                 <ArrowBigRight />
+                <p class="tooltip-text">Next Page</p>
             </div>
 
             <div class="element" @click="triggerAddText">
                 <CaseLower />
+                <p class="tooltip-text">Add Text</p>
             </div>
 
         </div>
@@ -195,7 +203,7 @@ const triggerDownload = async () => {
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
 .left-panel-container {
     position: absolute;
     z-index: 1;
@@ -206,17 +214,41 @@ const triggerDownload = async () => {
 .left-toolbar {
     display: flex;
     flex-direction: column;
-}
 
-.left-toolbar .element {
-    margin: 2px;
-    padding: 8px;
-    background-color: white;
-    border-radius: 8px;
-}
+    .element {
+        position: relative;
+        margin: 2px;
+        padding: 8px;
+        background-color: white;
+        border-radius: 8px;
 
-.element:hover {
-    background-color: #3B5999;
-    color: white;
+        &:hover {
+            background-color: #3B5999;
+            color: white;
+
+            .tooltip-text {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .tooltip-text {
+            border: solid 1px #e0e0e0;
+            visibility: hidden;
+            min-width: 200px; /* Set a maximum width */
+            background-color: #ffffff;
+            color: grey;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 12px;
+            position: absolute;
+            z-index: 1; /* Ensure it's above other content */
+            bottom: 10%; /* Position below the container */
+            left: 120%;
+            //margin-left: -60px; /* Center the tooltip */
+            opacity: 0;
+            transition: opacity 0.5s; /* Smooth appearance */
+        }
+    }
 }
 </style>

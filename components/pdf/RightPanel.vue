@@ -37,7 +37,7 @@ const currentTab = ref(tabs[0])
     </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .right-panel-container {
     border-left: 1px solid #e0e0e0;
     position: absolute;
