@@ -168,7 +168,7 @@
                 <NuxtLink to="/process" class="text-gray-400 hover:text-yellow-400">Our Process</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/pdf-tool" class="text-gray-400 hover:text-yellow-400">PDF Tool (Coming Soon)</NuxtLink>
+                <NuxtLink to="/pdf-tool" class="text-yellow-400 hover:text-yellow-400">PDF Tool Try Now</NuxtLink>
               </li>
             </ul>
           </div>
