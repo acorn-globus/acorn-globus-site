@@ -38,6 +38,7 @@ const stopDragging = () => {
 const toggleHand = () => {
     isHandSelected.value = !isHandSelected.value;
 };
+
 </script>
 
 <template>
@@ -87,6 +88,8 @@ const toggleHand = () => {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 5%;
+    left: 20%;
     will-change: transform;
 }
 

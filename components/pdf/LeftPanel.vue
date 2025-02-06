@@ -1,6 +1,6 @@
 <script setup>
 import { ref, inject, onMounted } from 'vue';
-import { Upload, ZoomIn, ZoomOut, ArrowBigRight, ArrowBigLeft, CaseLower, Download, FolderDown } from 'lucide-vue-next';
+import { Upload, ZoomIn, ZoomOut, ArrowBigRight, ArrowBigLeft, CaseLower, Download, FolderDown, FilePlus2 } from 'lucide-vue-next';
 import ModalWrapper from '@/components/pdf/ModalWrapper.vue';
 import DataSetManager from '@/components/pdf/DataSetManager.vue';
 
@@ -127,6 +127,14 @@ const triggerDownload = async () => {
     }
 }
 
+const triggerAddPage = async() => {
+    try {
+        await pdfBox.value.addBlankPage();
+    } catch (error) {
+        console.error('Add Blank Page failed:', error)
+    }
+}
+
 </script>
 
 <template>
@@ -135,6 +143,11 @@ const triggerDownload = async () => {
         <div class="left-toolbar">
             <input ref="fileInput" hidden="true" type="file" accept="application/pdf" @change="handleFileUpload"
                 class="file-input">
+
+            <div class="element" @click="triggerAddPage">
+                <FilePlus2 />
+                <p class="tooltip-text">Add New Page</p>
+            </div>
 
             <div class="element" @click="triggerFileUpload">
                 <Upload />
