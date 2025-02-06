@@ -26118,7 +26118,7 @@ let tC = class extends Gl {
   }
   async removeElementFromPage(l, I) {
     const g = this.pageElements.get(l);
-    g?.has(I) && (g.delete(I), this.requestUpdate(), this.dispatchPDFEvent("element-removed", {
+    g?.has(I) && (g.delete(I), this.renderElements(this.currentPage), I == this.selectedElementId && (this.selectedElementId = null), this.requestUpdate(), this.dispatchPDFEvent("element-removed", {
       pageNumber: l,
       elementId: I
     }));
@@ -26196,10 +26196,7 @@ let tC = class extends Gl {
             B + Z * 2
           );
       }
-      if (l.fillStyle = I.style.color, l.fillText(g, 0, d), I.bounds && (I.bounds = {
-        width: Number((I.bounds.width * this.zoomLevel).toFixed(2)),
-        height: Number((I.bounds.height * this.zoomLevel).toFixed(2))
-      }), I.style.textDecoration !== "none") {
+      if (l.fillStyle = I.style.color, l.fillText(g, 0, d), I.style.textDecoration !== "none") {
         l.beginPath();
         const i = l.measureText(g);
         switch (I.style.textDecoration) {
@@ -26306,8 +26303,15 @@ let tC = class extends Gl {
   }
   // Helper Methods
   getCanvasPoint(l) {
-    const I = this.topCanvas.getBoundingClientRect(), g = this.topCanvas.width / I.width, C = this.topCanvas.height / I.height, A = Number(((l.clientX - I.left) * g / this.zoomLevel).toFixed(2)), d = Number(((l.clientY - I.top) * C / this.zoomLevel).toFixed(2));
-    return { x: A, y: d };
+    const I = this.topCanvas.getBoundingClientRect(), g = this.topCanvas.width / I.width, C = this.topCanvas.height / I.height, A = Number((l.clientX - I.left) * g), d = Number((l.clientY - I.top) * C);
+    return console.log("tarun", "Canvas Point:", {
+      mouseEvent: { x: l.clientX, y: l.clientY },
+      canvasRect: I,
+      calculatedPoint: { x: A, y: d },
+      zoomLevel: this.zoomLevel,
+      canvasWidth: this.topCanvas.width,
+      canvasHeight: this.topCanvas.height
+    }), { x: A, y: d };
   }
   findElementAtPoint(l) {
     const I = this.pageElements.get(this.currentPage);
@@ -26315,28 +26319,21 @@ let tC = class extends Gl {
   }
   isPointInElement(l, I) {
     if (!I.bounds) return !1;
-    const g = {
-      width: Number((I.bounds.width * this.zoomLevel).toFixed(2)),
-      height: Number((I.bounds.height * this.zoomLevel).toFixed(2))
-    };
-    if (I.rotation) {
-      const C = {
-        x: Number((I.position.x * this.zoomLevel).toFixed(2)),
-        y: Number((I.position.y * this.zoomLevel).toFixed(2))
-      }, A = this.rotatePoint(
-        {
-          x: l.x * this.zoomLevel,
-          y: l.y * this.zoomLevel
-        },
-        C,
-        -I.rotation
-      );
-      l = {
-        x: Number((A.x / this.zoomLevel).toFixed(2)),
-        y: Number((A.y / this.zoomLevel).toFixed(2))
-      };
-    }
-    return l.x >= I.position.x && l.x <= I.position.x + g.width / this.zoomLevel && l.y >= I.position.y && l.y <= I.position.y + g.height / this.zoomLevel;
+    const g = this.elementOriginalBounds.get(I.id) || I.bounds, C = {
+      width: g.width * this.zoomLevel,
+      height: g.height * this.zoomLevel
+    }, A = {
+      x: I.position.x * this.zoomLevel,
+      y: I.position.y * this.zoomLevel
+    }, d = 5 * this.zoomLevel;
+    return console.log("tarun", "Hit Detection:", {
+      point: l,
+      scaledPosition: A,
+      scaledBounds: C,
+      padding: d,
+      zoomLevel: this.zoomLevel,
+      isInBounds: l.x >= A.x - d && l.x <= A.x + C.width + d && l.y >= A.y - d && l.y <= A.y + C.height + d
+    }), l.x >= A.x - d && l.x <= A.x + C.width + d && l.y >= A.y - d && l.y <= A.y + C.height + d;
   }
   rotatePoint(l, I, g) {
     const C = g * Math.PI / 180, A = Math.cos(C), d = Math.sin(C), Z = l.x - I.x, i = l.y - I.y;
@@ -26408,11 +26405,14 @@ let tC = class extends Gl {
     const g = this.getPageElements(this.currentPage).get(l);
     if (!g || g.type !== "text")
       throw new Error("Invalid element ID or not a text element");
+    const C = {
+      ...g,
+      content: I
+      // Update the content
+    }, A = this.calculateTextBounds(C);
     this.updateElement(this.currentPage, l, {
       content: I
-    });
-    const C = this.calculateTextBounds(g);
-    this.elementOriginalBounds.set(l, C), this.renderElements(this.currentPage), this.dispatchPDFEvent("text-content-changed", {
+    }), this.elementOriginalBounds.set(l, A), this.renderElements(this.currentPage), this.dispatchPDFEvent("text-content-changed", {
       elementId: l,
       content: I
     });

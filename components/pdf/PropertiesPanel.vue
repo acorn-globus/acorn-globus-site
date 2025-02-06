@@ -22,6 +22,10 @@ onMounted(() => {
       console.log(details);
       selectedElement.value = details.detail.selectedElementId;
     });
+
+    pdfBox.value.addEventListener("element-removed", (details) => {
+      selectedElement.value = pdfBox.value.selectedElementId;
+    });
   }
 });
 
@@ -78,6 +82,13 @@ const toggleUnderline = () => {
   textDecoration.value = newDecoration;
   updateProperty("textDecoration", newDecoration);
 };
+
+const triggerDelete = async() => {
+  if (selectedElement.value) {
+    await pdfBox.value.removeElementFromPage(pdfBox.value.currentPage, selectedElement.value);
+  }
+}
+
 </script>
 
 <template>
@@ -175,6 +186,15 @@ const toggleUnderline = () => {
             </button>
           </div>
         </div>
+
+        <div class="property-container">
+          <div class="icon-button-group">
+            <button class="delete" @click="triggerDelete">
+              Delete
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -188,11 +208,16 @@ const toggleUnderline = () => {
 
 <style scoped lang="scss">
 .properties-container {
-  padding: 12px;
+  padding: 14px;
 
   .property-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
+
+    p {
+      color: grey;
+    }
 
     input,
     select {
@@ -219,6 +244,16 @@ const toggleUnderline = () => {
           color: #ffffff;
         }
       }
+
+      .delete {
+        background: #F7645E;
+        color: #ffffff;
+        border-radius: 6px;
+      }
+    }
+
+    .delete {
+      flex-grow: 0;
     }
   }
 
