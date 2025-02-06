@@ -13,6 +13,7 @@
           >
           <span class="hint">Upload CSV or JSON file</span>
         </div>
+        <p></p>
       </div>
   
       <!-- Data Preview Section -->
