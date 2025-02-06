@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   app: {
     head: {
       noscript: [
@@ -11,6 +12,7 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   css: [
     "vue-slick-carousel/dist/vue-slick-carousel.css",
     "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
@@ -18,29 +20,19 @@ export default defineNuxtConfig({
     'notivue/animations.css',
     "~/assets/css/main.css",
   ],
+
   modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss", "notivue/nuxt"],
+
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
+
   content: {
     markdown: {
       anchorLinks: false,
     },
   },
-  plugins: [
-    {
-      src: "~/plugins/crisp.js", // Replace "~/plugins/crisp.js" with the actual path to your file
-      mode: 'client', // Ensure the script is loaded on the client side
-    },
-    {
-      src: '~/plugins/clarity.js',
-      mode: 'client'
-    },
-    {
-      src: '~/plugins/gtm.js',
-      mode: 'client'
-    },
-  ],
+
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
   //         if (document.extension === '.md') {
@@ -52,4 +44,32 @@ export default defineNuxtConfig({
   // content: {
   //     liveEdit: false,
   // },
+  plugins: [
+    {
+      src: "~/plugins/pdfbox.js", // Replace "~/plugins/crisp.js" with the actual path to your file
+      mode: 'client', // Ensure the script is loaded on the client side
+    },
+    {
+      src: "~/plugins/crisp.js", // Replace "~/plugins/crisp.js" with the actual path to your file
+      mode: 'client', // Ensure the script is loaded on the client side
+    },
+    {
+      src: '~/plugins/clarity.js',
+      mode: 'client'
+    },
+    {
+      src: '~/plugins/gtm.js',
+      mode: 'client'
+    }
+  ],
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => {
+        return tag === 'pdf-box'
+      }
+    }
+  },
+
+  compatibilityDate: '2025-02-06',
 });
