@@ -26565,13 +26565,13 @@ let QC = class extends Gl {
           console.log("download element stats", G);
           const W = this.processTextVariables(V.content);
           try {
-            const R = await A.embedFont("Helvetica"), U = g.height - (V.position.y + V.style.fontSize), n = this.parseColor(V.style.color);
+            const R = await A.embedFont("Helvetica"), U = R.heightAtSize(V.style.fontSize), n = g.height - V.position.y - U * 0.5, m = this.parseColor(V.style.color);
             d.drawText(W, {
               x: V.position.x,
-              y: U,
+              y: n,
               size: V.style.fontSize,
               font: R,
-              color: n,
+              color: m,
               rotate: FI(V.rotation || 0),
               opacity: V.opacity || 1
             });
