@@ -133,7 +133,7 @@
     Papa.parse(file, {
       header: true,
       complete: (results) => {
-        const newDataSets = results.data.map((row, index) => ({
+        const newDataSets = results.data.slice(0, 5).map((row, index) => ({
           id: (index + 1).toString(),
           variables: row,
           filename: generateFilename({ id: (index + 1).toString() })
@@ -153,7 +153,7 @@
       const data = JSON.parse(text);
       
       if (Array.isArray(data)) {
-        const newDataSets = data.map((row, index) => ({
+        const newDataSets = data.slice(0, 5).map((row, index) => ({
           id: (index + 1).toString(),
           variables: row,
           filename: generateFilename({ id: (index + 1).toString() })

@@ -59,6 +59,7 @@
     flex-direction: column; /* Arrange header, body, footer vertically */
     min-width: 300px; /* Minimum width of the modal */
     max-width: 600px; /* Maximum width of the modal */
+    overflow: scroll;
   }
   
   .modal-header,
