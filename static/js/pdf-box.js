@@ -26541,7 +26541,10 @@ let QC = class extends Gl {
   }
   // Public method to set variables
   setVariables(l) {
-    this.variables = { ...this.variables, ...l }, this.renderElements(this.currentPage);
+    this.variables = { ...this.variables, ...l }, this.renderElements(this.currentPage), this.dispatchPDFEvent("variables-updated", {
+      variableCount: Object.keys(this.variables).length,
+      variables: { ...this.variables }
+    });
   }
   // Public method to get variables
   getVariables() {
@@ -26618,36 +26621,55 @@ let QC = class extends Gl {
   }
   // Helper method to generate PDF with specific variables
   async generatePDFWithVariables() {
-    const I = (await this.pdfDoc.getPage(this.currentPage)).getViewport({ scale: 1 }), g = Math.round(I.height), C = await this.pdfDoc.getData(), A = await hC.load(C), d = A.getPages()[this.currentPage - 1], Z = this.getPageElements(this.currentPage);
-    for (const i of Z.values())
-      if (i.type === "text") {
-        const B = i;
-        console.log("download element stats", i);
-        const F = this.processTextVariables(B.content);
+    const l = await this.pdfDoc.getPage(this.currentPage), I = l.getViewport({ scale: 1 });
+    Math.round(I.height);
+    const g = await this.pdfDoc.getData(), C = await hC.load(g), A = C.getPages()[this.currentPage - 1], d = this.getPageElements(this.currentPage);
+    for (const Z of d.values())
+      if (Z.type === "text") {
+        const i = Z;
+        console.log("download element stats", Z);
+        const B = this.processTextVariables(i.content);
         try {
-          const s = await this.getPDFFont(B.style.fontFamily), c = g - B.position.y - B.style.fontSize;
-          console.log("Font Analysis:", {
-            "Requested Font": B.style.fontFamily,
-            "Position Details": {
-              original: B.position.y,
-              calculated: c
+          const F = await this.getPDFFont(i.style.fontFamily), s = this.calculatePDFPosition(i, I);
+          console.log("PDF Analysis:", {
+            "PDF Type": "Certificate/Form",
+            "Viewport Details": {
+              width: I.width,
+              height: I.height,
+              transform: I.transform
+              // This might reveal differences
+            },
+            "Page Details": {
+              rotation: l.rotate,
+              view: l.view
+              // Original page boundaries
             }
           });
-          const G = this.parseColor(B.style.color);
-          d.drawText(F, {
-            x: B.position.x,
-            y: c,
-            size: B.style.fontSize,
-            font: s,
-            color: G,
-            rotate: sI(B.rotation || 0),
-            opacity: B.opacity || 1
+          const c = this.parseColor(i.style.color);
+          A.drawText(B, {
+            x: i.position.x,
+            y: s,
+            size: i.style.fontSize,
+            font: F,
+            color: c,
+            rotate: sI(i.rotation || 0),
+            opacity: i.opacity || 1
           });
-        } catch (s) {
-          console.error("Error adding text element:", s);
+        } catch (F) {
+          console.error("Error adding text element:", F);
         }
       }
-    return await A.save();
+    return await C.save();
+  }
+  calculatePDFPosition(l, I) {
+    const g = I.transform[5], C = I.height / g, A = g - l.position.y * C - l.style.fontSize;
+    return console.log("Position Calculation:", {
+      "Original Y": l.position.y,
+      "Transform Height": g,
+      "Scale Factor": C,
+      "Font Size": l.style.fontSize,
+      "Final Y": A
+    }), A;
   }
   /**
   * Creates a new blank PDF document (no pages)
@@ -26686,6 +26708,23 @@ let QC = class extends Gl {
         error: "Failed to add blank page"
       }), I;
     }
+  }
+  /**
+   * Gets all elements from all pages
+   * @returns Map of page numbers to their elements
+   */
+  getAllElements() {
+    return new Map(this.pageElements);
+  }
+  /**
+   * Sets elements for all pages
+   * @param elements - Map of page numbers to their elements
+   */
+  setAllElements(l) {
+    this.pageElements = new Map(l), this.pageElements.has(this.currentPage) && this.renderElements(this.currentPage), this.dispatchPDFEvent("elements-updated", {
+      pageCount: this.pageElements.size,
+      elementCount: Array.from(this.pageElements.values()).reduce((I, g) => I + g.size, 0)
+    });
   }
   render() {
     return Bs`
