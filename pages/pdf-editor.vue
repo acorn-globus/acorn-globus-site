@@ -3,6 +3,7 @@ import { ref, provide } from "vue";
 import CanvasWrapper from "@/components/pdf/CanvasWrapper.vue";
 import LeftPanel from "@/components/pdf/LeftPanel.vue";
 import RightPanel from "@/components/pdf/RightPanel.vue";
+import { Youtube } from "lucide-vue-next";
 
 const pdfBox = ref();
 provide("pdfBoxRef", pdfBox);
@@ -30,6 +31,14 @@ provide("pdfBoxRef", pdfBox);
       class="cta mt-4 md:mt-0 inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
       >Interested</a
     >
+
+    <a
+      href="https://www.youtube.com/watch?v=SVY1GBFEUeY"
+      target="_blank"
+      class="youtube mt-4 md:mt-0 inline-flex items-center bg-red-400 text-white-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
+    >
+      <Youtube class="w-5 h-5 mr-2" />
+    </a>
   </div>
 </template>
 
@@ -49,6 +58,15 @@ body {
     position: fixed;
     bottom: 22px;
     left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .youtube {
+    z-index: 1;
+    position: fixed;
+    bottom: 22px;
+    left: 40%;
+    color: white;
     transform: translate(-50%, 0%);
   }
 }
