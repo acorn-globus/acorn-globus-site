@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed, watch } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed, watch, provide } from "vue";
 import CanvasWrapper from "@/components/pdf/CanvasWrapper.vue";
 import NewLeftPanel from "@/components/pdf/NewLeftPanel.vue";
 import NewRightPanel from "@/components/pdf/NewRightPanel.vue";
@@ -13,6 +13,7 @@ const variables = ref({});
 const selectedElement = ref(null);
 const zoomLevel = ref(1);
 const showBulkDownloadModal = ref(false);
+provide('pdfBoxRef', pdfPandora);
 
 // Watch for changes to debug the values
 watch(currentPage, (newVal) => {
