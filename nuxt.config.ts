@@ -66,7 +66,7 @@ export default defineNuxtConfig({
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => {
-        return tag === 'pdf-box'
+        return tag === 'pdf-box' || tag === 'pdf-pandora'
       }
     }
   },
