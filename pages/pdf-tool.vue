@@ -36,7 +36,7 @@
           <p class="text-xl text-gray-300 mb-12">
             No-code PDF automation platform coming soon
           </p>
-          <a href="/pdf-editor"
+          <a href="/pdf-pandora"
             class="inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
             Try Demo Now
           </a>
