@@ -15,13 +15,13 @@
           </div>
 
           <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/v3" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="/v3/about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="/v3/services" class="text-purple-600 font-medium">Services</NuxtLink>
-            <NuxtLink to="/v3/portfolio" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="/v3/contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</NuxtLink>
+            <NuxtLink to="/" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Home</NuxtLink>
+            <NuxtLink to="//about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">About</NuxtLink>
+            <NuxtLink to="//services" class="text-purple-600 font-medium">Services</NuxtLink>
+            <NuxtLink to="//portfolio" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Portfolio</NuxtLink>
+            <NuxtLink to="//contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</NuxtLink>
             <NuxtLink
-              to="/v3/contact"
+              to="//contact"
               class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
             >
               Start Project
@@ -305,14 +305,14 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
-            to="/v3/contact"
+            to="//contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
-            to="/v3/portfolio"
+            to="//portfolio"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200"
           >
             View Our Work
@@ -334,7 +334,7 @@ import {
 
 // Use the v3 layout without default header/footer
 definePageMeta({
-  layout: 'v3'
+  layout: 'default'
 })
 
 const hoveredService = ref(null)
@@ -353,7 +353,7 @@ const services = [
       'Cultural fit assessment'
     ],
     gradient: 'from-blue-500 to-cyan-600',
-    link: '/v3/services/resource-augmentation'
+    link: '//services/resource-augmentation'
   },
   {
     id: 2,
@@ -367,7 +367,7 @@ const services = [
       'Security audits'
     ],
     gradient: 'from-green-500 to-emerald-600',
-    link: '/v3/services/maintenance-support'
+    link: '//services/maintenance-support'
   },
   {
     id: 3,
@@ -381,7 +381,7 @@ const services = [
       'Continuous delivery'
     ],
     gradient: 'from-purple-500 to-pink-600',
-    link: '/v3/services/long-term-projects'
+    link: '//services/long-term-projects'
   },
   {
     id: 4,
@@ -395,7 +395,7 @@ const services = [
       'Built-in analytics'
     ],
     gradient: 'from-orange-500 to-red-600',
-    link: '/v3/services/mvp-development'
+    link: '//services/mvp-development'
   }
 ]
 
