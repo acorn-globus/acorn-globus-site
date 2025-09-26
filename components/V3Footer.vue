@@ -25,10 +25,10 @@
         <div>
           <h4 class="text-gray-900 font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/v3/about" class="hover:text-purple-600 transition-colors">About Us</NuxtLink></li>
-            <li><NuxtLink to="/v3/services" class="hover:text-purple-600 transition-colors">Services</NuxtLink></li>
-            <li><NuxtLink to="/v3/portfolio" class="hover:text-purple-600 transition-colors">Portfolio</NuxtLink></li>
-            <li><NuxtLink to="/v3/contact" class="hover:text-purple-600 transition-colors">Contact</NuxtLink></li>
+            <li><NuxtLink to="/about" class="hover:text-purple-600 transition-colors">About Us</NuxtLink></li>
+            <li><NuxtLink to="/services" class="hover:text-purple-600 transition-colors">Services</NuxtLink></li>
+            <li><NuxtLink to="/portfolio" class="hover:text-purple-600 transition-colors">Portfolio</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="hover:text-purple-600 transition-colors">Contact</NuxtLink></li>
           </ul>
         </div>
 
