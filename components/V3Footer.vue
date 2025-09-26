@@ -3,11 +3,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div class="flex items-center space-x-3 mb-6">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
+          <div class="mb-6">
+            <img
+              src="/images/acorn-globus-logo-dark.svg"
+              alt="Acorn Globus"
+              class="h-10 w-auto"
+            >
           </div>
           <p class="text-sm mb-4">
             Crafting digital experiences with passion and innovation. Your trusted partner for transformative solutions.
@@ -72,5 +73,5 @@
 </template>
 
 <script setup>
-import { Code2, MapPin, Mail, Linkedin, Instagram } from 'lucide-vue-next'
+import { MapPin, Mail, Linkedin, Instagram } from 'lucide-vue-next'
 </script>

@@ -164,7 +164,7 @@
                 :alt="project.name"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div :class="`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-70 group-hover:opacity-80 transition-opacity duration-300`"></div>
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-opacity duration-300"></div>
 
               <!-- Category Badge on Image -->
               <div class="absolute top-4 left-4 flex gap-2">
@@ -209,7 +209,7 @@
               <!-- Metrics -->
               <div v-if="project.metrics" class="flex items-center justify-around pt-6 border-t border-gray-100">
                 <div v-for="(value, key, idx) in Object.fromEntries(Object.entries(project.metrics).slice(0, 2))" :key="idx" class="text-center">
-                  <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  <div class="text-2xl font-bold text-purple-600">
                     {{ value }}
                   </div>
                   <div class="text-xs text-gray-500 capitalize mt-1">{{ key }}</div>
@@ -219,14 +219,14 @@
 
             <!-- View Case Study Button for projects with case studies -->
             <div v-if="[1, 2, 3, 4].includes(project.id)" class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-white/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <button class="w-full px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full text-sm font-semibold hover:shadow-lg transition-all">
+              <button class="w-full px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold hover:bg-purple-700 transition-all">
                 View Case Study →
               </button>
             </div>
 
             <!-- Hover Effect Bottom Bar -->
             <div :class="[
-              'absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 transform transition-transform duration-300',
+              'absolute inset-x-0 bottom-0 h-1 bg-purple-500 transform transition-transform duration-300',
               hoveredProject === project.id ? 'scale-x-100' : 'scale-x-0'
             ]"></div>
           </div>
@@ -373,8 +373,7 @@ const projects = [
       forms: '50K+',
       rating: '4.8'
     },
-    image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-blue-500 to-purple-600',
+    image: '/images/formester-mockup.png',
     link: 'https://formester.com',
     featured: true
   },
@@ -398,8 +397,7 @@ const projects = [
       adoption: '95%',
       roi: '3x'
     },
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-green-500 to-teal-600',
+    image: '/images/eitoss-mockup.png',
     featured: true
   },
   {
@@ -422,8 +420,7 @@ const projects = [
       invoices: '100K+',
       countries: '30+'
     },
-    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-indigo-500 to-blue-600',
+    image: '/images/invoice-falcon-mockup.png',
     link: '#',
     featured: false
   },
@@ -447,54 +444,9 @@ const projects = [
       learners: '1M+',
       lessons: '10K+'
     },
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-pink-500 to-orange-500',
+    image: '/images/rumie-mockup.png',
     link: '#',
     featured: true
-  },
-  {
-    id: 5,
-    name: 'HealthTrack Pro',
-    category: 'enterprise',
-    tagline: 'Healthcare Management Platform',
-    description: 'End-to-end healthcare management system streamlining patient care, appointments, and medical records for healthcare providers.',
-    technologies: ['Node.js', 'React', 'MongoDB', 'HIPAA Compliant', 'Docker'],
-    features: [
-      'Patient management',
-      'Appointment scheduling',
-      'Electronic health records',
-      'Billing integration',
-      'Telemedicine support'
-    ],
-    metrics: {
-      clinics: '50+',
-      patients: '100K+',
-      uptime: '99.9%'
-    },
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-red-500 to-pink-600'
-  },
-  {
-    id: 6,
-    name: 'EduConnect',
-    category: 'saas',
-    tagline: 'Online Learning Platform',
-    description: 'Comprehensive e-learning platform connecting educators and students with interactive courses and real-time collaboration tools.',
-    technologies: ['Python', 'Django', 'React', 'WebRTC', 'AWS'],
-    features: [
-      'Live video classes',
-      'Course management',
-      'Assignment tracking',
-      'Discussion forums',
-      'Progress analytics'
-    ],
-    metrics: {
-      students: '50K+',
-      courses: '1000+',
-      satisfaction: '96%'
-    },
-    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'from-purple-500 to-indigo-600'
   }
 ]
 

@@ -236,8 +236,8 @@
               <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-3xl opacity-10 blur-2xl"></div>
               <div class="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80"
-                  alt="Formester Platform"
+                  src="/images/formester-mockup.png"
+                  alt="Formester Platform - AI Form Builder Interface"
                   class="rounded-2xl shadow-xl"
                 >
                 <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
@@ -263,8 +263,8 @@
               <div class="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-400 rounded-3xl opacity-10 blur-2xl"></div>
               <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1200&q=80"
-                  alt="Eitoss Platform"
+                  src="/images/eitoss-mockup.png"
+                  alt="Eitoss Platform - Analytics Dashboard"
                   class="rounded-2xl shadow-xl"
                 >
                 <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">

@@ -3,15 +3,13 @@
   <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
-        <div class="flex items-center space-x-3">
-          <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-            <Code2 class="h-7 w-7 text-white" />
-          </div>
-          <div>
-            <div class="text-2xl font-bold text-gray-900">Acorn Globus</div>
-            <div class="text-xs text-gray-500 uppercase tracking-wider">{{ subtitle || 'Digital Solutions' }}</div>
-          </div>
-        </div>
+        <NuxtLink to="/" class="flex items-center">
+          <img
+            src="/images/acorn-globus-logo-dark.svg"
+            alt="Acorn Globus"
+            class="h-12 w-auto"
+          >
+        </NuxtLink>
 
         <div class="hidden lg:flex items-center space-x-8">
           <NuxtLink
@@ -119,7 +117,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { Code2, Menu, X } from 'lucide-vue-next'
+import { Menu, X } from 'lucide-vue-next'
 
 // Props
 const props = defineProps({
