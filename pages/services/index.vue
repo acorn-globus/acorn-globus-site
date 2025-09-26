@@ -1,21 +1,21 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <Settings class="h-4 w-4 mr-2" />
             Our Services
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             Comprehensive Digital Solutions
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
               For Your Business Growth
             </span>
           </h1>
@@ -37,8 +37,8 @@
             :class="[
               'px-6 py-2 font-medium transition-all duration-300',
               activeTab === 'services'
-                ? 'text-purple-600 border-b-2 border-purple-600'
-                : 'text-gray-600 hover:text-purple-600'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-blue-600'
             ]"
           >
             Services
@@ -48,8 +48,8 @@
             :class="[
               'px-6 py-2 font-medium transition-all duration-300',
               activeTab === 'process'
-                ? 'text-purple-600 border-b-2 border-purple-600'
-                : 'text-gray-600 hover:text-purple-600'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-blue-600'
             ]"
           >
             Our Process
@@ -59,8 +59,8 @@
             :class="[
               'px-6 py-2 font-medium transition-all duration-300',
               activeTab === 'technologies'
-                ? 'text-purple-600 border-b-2 border-purple-600'
-                : 'text-gray-600 hover:text-purple-600'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-blue-600'
             ]"
           >
             Technologies
@@ -92,7 +92,7 @@
               <component :is="service.icon" class="h-8 w-8" />
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
               {{ service.title }}
             </h3>
 
@@ -102,7 +102,7 @@
 
             <ul class="space-y-3 mb-6">
               <li v-for="(feature, idx) in service.features" :key="idx" class="flex items-start">
-                <CheckCircle class="h-5 w-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle class="h-5 w-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
                 <span class="text-gray-700">{{ feature }}</span>
               </li>
             </ul>
@@ -110,7 +110,7 @@
             <NuxtLink
               v-if="service.link"
               :to="service.link"
-              class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors cursor-pointer"
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors cursor-pointer"
             >
               Learn More
               <ArrowRight class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -127,7 +127,7 @@
           <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">What Sets Us Apart</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div v-for="(item, idx) in differentiators" :key="idx" class="text-center">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl mb-4">
+              <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl mb-4">
                 <component :is="item.icon" class="h-6 w-6" />
               </div>
               <h4 class="font-semibold text-gray-900 mb-2">{{ item.title }}</h4>
@@ -146,7 +146,7 @@
             <!-- Connection Line -->
             <div
               v-if="index < process.length - 1"
-              class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-purple-300 to-transparent z-0"
+              class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"
             ></div>
 
             <div class="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 z-10">
@@ -157,13 +157,13 @@
                 <component :is="phase.icon" class="h-6 w-6" />
               </div>
 
-              <div class="text-sm font-semibold text-purple-600 mb-2">Phase {{ phase.id }}</div>
+              <div class="text-sm font-semibold text-blue-600 mb-2">Phase {{ phase.id }}</div>
               <h3 class="text-xl font-bold text-gray-900 mb-3">{{ phase.title }}</h3>
               <p class="text-gray-600 mb-4 text-sm">{{ phase.description }}</p>
 
               <ul class="space-y-2">
                 <li v-for="(activity, idx) in phase.activities" :key="idx" class="flex items-center text-sm text-gray-700">
-                  <ChevronRight class="h-4 w-4 text-purple-400 mr-2" />
+                  <ChevronRight class="h-4 w-4 text-blue-400 mr-2" />
                   {{ activity }}
                 </li>
               </ul>
@@ -172,7 +172,7 @@
         </div>
 
         <!-- Process Benefits -->
-        <div class="mt-20 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-12">
+        <div class="mt-20 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12">
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Collaborative Approach</h2>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -183,21 +183,21 @@
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-purple-600 rounded-2xl mb-4 shadow-lg">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
                 <Users class="h-8 w-8" />
               </div>
               <h4 class="font-semibold text-gray-900 mb-2">Daily Communication</h4>
               <p class="text-gray-600">Regular stand-ups and updates keep everyone aligned</p>
             </div>
             <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-purple-600 rounded-2xl mb-4 shadow-lg">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
                 <GitBranch class="h-8 w-8" />
               </div>
               <h4 class="font-semibold text-gray-900 mb-2">Agile Methodology</h4>
               <p class="text-gray-600">Iterative development ensures flexibility and quality</p>
             </div>
             <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-purple-600 rounded-2xl mb-4 shadow-lg">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
                 <Target class="h-8 w-8" />
               </div>
               <h4 class="font-semibold text-gray-900 mb-2">Goal-Oriented</h4>
@@ -233,21 +233,21 @@
         <!-- Technology Benefits -->
         <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Cpu class="h-10 w-10 text-purple-600 mb-4" />
+            <Cpu class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Modern Stack</h3>
             <p class="text-gray-600">
               We stay updated with the latest technologies to give you a competitive edge.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Layers class="h-10 w-10 text-purple-600 mb-4" />
+            <Layers class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Scalable Architecture</h3>
             <p class="text-gray-600">
               Our solutions are built to grow with your business, ensuring long-term success.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Shield class="h-10 w-10 text-purple-600 mb-4" />
+            <Shield class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Security First</h3>
             <p class="text-gray-600">
               We implement best security practices to protect your data and applications.
@@ -258,9 +258,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -274,14 +274,14 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
             to="/portfolio"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200"
+            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
           >
             View Our Work
             <ChevronRight class="h-5 w-5 ml-2" />
@@ -348,7 +348,7 @@ const services = [
       'Regular milestones',
       'Continuous delivery'
     ],
-    gradient: 'from-purple-500 to-pink-600',
+    gradient: 'from-blue-500 to-pink-600',
     link: '/services/long-term-projects'
   },
   {

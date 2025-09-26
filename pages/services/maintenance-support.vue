@@ -116,7 +116,7 @@
         <!-- Plan Details -->
         <div class="max-w-4xl mx-auto">
           <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-            <div v-if="supportPlans[activeTab].recommended" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center py-2 text-sm font-semibold">
+            <div v-if="supportPlans[activeTab].recommended" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 text-sm font-semibold">
               RECOMMENDED
             </div>
 
@@ -403,7 +403,7 @@ const supportPlans = {
       { text: 'Database maintenance', included: true },
       { text: 'On-site support', included: false }
     ],
-    gradient: 'from-purple-500 to-indigo-600',
+    gradient: 'from-blue-500 to-indigo-600',
     recommended: true
   },
   enterprise: {

@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -11,12 +11,12 @@
           <!-- Content Section -->
           <div class="order-2 lg:order-1">
             <div class="mb-6">
-              <span class="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
+              <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
                 Innovative IT Solutions
               </span>
               <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 {{ heroSlides[currentSlide].title }}
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
                   {{ heroSlides[currentSlide].subtitle }}
                 </span>
               </h1>
@@ -45,14 +45,14 @@
             <div class="flex flex-wrap gap-4">
               <NuxtLink
                 :to="heroSlides[currentSlide].cta.link"
-                class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+                class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
               >
                 {{ heroSlides[currentSlide].cta.text }}
                 <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </NuxtLink>
               <NuxtLink
                 to="/portfolio"
-                class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+                class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
               >
                 <Sparkles class="mr-2 h-5 w-5" />
                 View Portfolio
@@ -75,7 +75,7 @@
                   :class="[
                     'transition-all duration-300',
                     index === currentSlide
-                      ? 'w-8 h-2 bg-purple-600 rounded-full'
+                      ? 'w-8 h-2 bg-blue-600 rounded-full'
                       : 'w-2 h-2 bg-gray-300 rounded-full hover:bg-gray-400'
                   ]"
                 />
@@ -108,7 +108,7 @@
                     :alt="slide.title"
                     class="w-full h-full object-cover"
                   >
-                  <div class="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
                 </div>
               </div>
 
@@ -116,8 +116,8 @@
               <div class="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-4">
                 <div class="bg-white/90 backdrop-blur-md rounded-lg p-4">
                   <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-purple-100 rounded-lg">
-                      <Rocket class="h-5 w-5 text-purple-600" />
+                    <div class="p-2 bg-blue-100 rounded-lg">
+                      <Rocket class="h-5 w-5 text-blue-600" />
                     </div>
                     <div>
                       <div class="text-sm font-medium text-gray-900">Rapid MVP</div>
@@ -147,7 +147,7 @@
             </div>
 
             <!-- Decorative Elements -->
-            <div class="absolute -z-10 -top-4 -right-4 w-72 h-72 bg-purple-100 rounded-full opacity-20 blur-2xl"></div>
+            <div class="absolute -z-10 -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full opacity-20 blur-2xl"></div>
             <div class="absolute -z-10 -bottom-4 -left-4 w-72 h-72 bg-indigo-100 rounded-full opacity-20 blur-2xl"></div>
           </div>
         </div>
@@ -199,15 +199,15 @@
 
               <div class="flex items-center space-x-8 mb-8">
                 <div>
-                  <div class="text-3xl font-bold text-purple-600">1000+</div>
+                  <div class="text-3xl font-bold text-blue-600">1000+</div>
                   <div class="text-sm text-gray-600">Active Users</div>
                 </div>
                 <div>
-                  <div class="text-3xl font-bold text-purple-600">50K+</div>
+                  <div class="text-3xl font-bold text-blue-600">50K+</div>
                   <div class="text-sm text-gray-600">Forms Created</div>
                 </div>
                 <div>
-                  <div class="text-3xl font-bold text-purple-600">4.8★</div>
+                  <div class="text-3xl font-bold text-blue-600">4.8★</div>
                   <div class="text-sm text-gray-600">User Rating</div>
                 </div>
               </div>
@@ -217,14 +217,14 @@
                   href="https://formester.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors"
+                  class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                 >
                   Visit Formester
                   <ArrowUpRight class="ml-1 h-4 w-4" />
                 </a>
                 <NuxtLink
                   to="/case-studies/formester"
-                  class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors"
+                  class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                 >
                   View Case Study
                   <ArrowRight class="ml-1 h-4 w-4" />
@@ -233,8 +233,8 @@
             </div>
 
             <div class="order-1 lg:order-2 relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-3xl opacity-10 blur-2xl"></div>
-              <div class="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8">
+              <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-400 rounded-3xl opacity-10 blur-2xl"></div>
+              <div class="relative bg-gradient-to-br from-blue-50 to-blue-50 rounded-3xl p-8">
                 <img
                   src="/images/formester-mockup.png"
                   alt="Formester Platform - AI Form Builder Interface"
@@ -353,9 +353,9 @@
           <!-- Featured Testimonial -->
           <div class="order-2 lg:order-1">
             <div class="relative">
-              <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-full blur-2xl opacity-60"></div>
-              <div class="relative bg-gradient-to-br from-white to-purple-50/30 rounded-3xl p-10 border border-purple-100">
-                <Quote class="h-12 w-12 text-purple-200 mb-6" />
+              <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full blur-2xl opacity-60"></div>
+              <div class="relative bg-gradient-to-br from-white to-blue-50/30 rounded-3xl p-10 border border-blue-100">
+                <Quote class="h-12 w-12 text-blue-200 mb-6" />
 
                 <p class="text-2xl text-gray-800 leading-relaxed mb-8 font-light">
                   "{{ testimonials[0].content }}"
@@ -366,7 +366,7 @@
                     <img
                       :src="testimonials[0].avatar"
                       :alt="testimonials[0].name"
-                      class="w-16 h-16 rounded-full mr-4 border-3 border-purple-200"
+                      class="w-16 h-16 rounded-full mr-4 border-3 border-blue-200"
                     >
                     <div>
                       <h4 class="text-lg font-bold text-gray-900">{{ testimonials[0].name }}</h4>
@@ -374,7 +374,7 @@
                     </div>
                   </div>
                   <div class="flex">
-                    <Star v-for="i in testimonials[0].rating" :key="i" class="h-6 w-6 fill-purple-400 text-purple-400" />
+                    <Star v-for="i in testimonials[0].rating" :key="i" class="h-6 w-6 fill-blue-400 text-blue-400" />
                   </div>
                 </div>
               </div>
@@ -437,8 +437,8 @@
             <div class="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 border border-gray-100">
               <!-- Icon -->
               <div class="mb-6">
-                <div class="w-14 h-14 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-300">
-                  <component :is="service.icon" class="h-8 w-8 text-purple-600" />
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-300">
+                  <component :is="service.icon" class="h-8 w-8 text-blue-600" />
                 </div>
               </div>
 
@@ -463,7 +463,7 @@
               <!-- CTA -->
               <NuxtLink
                 :to="service.link"
-                class="inline-flex items-center text-purple-600 font-semibold text-sm hover:text-purple-700 transition-colors"
+                class="inline-flex items-center text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
               >
                 Explore Service
                 <ArrowUpRight class="ml-1 h-3 w-3" />
@@ -471,16 +471,16 @@
             </div>
 
             <!-- Hover Accent -->
-            <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-purple-400 to-indigo-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-b-2xl"></div>
+            <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-b-2xl"></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -494,14 +494,14 @@
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink
             to="/portfolio"
-            class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
           >
             View Portfolio
           </NuxtLink>

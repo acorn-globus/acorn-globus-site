@@ -1,21 +1,21 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <MessageSquare class="h-4 w-4 mr-2" />
             Get In Touch
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             Let's Build Something
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
               Amazing Together
             </span>
           </h1>
@@ -28,7 +28,7 @@
           <div class="flex justify-center gap-4">
             <a
               href="#contact-form"
-              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
               Send Message
               <Send class="h-5 w-5 ml-2" />
@@ -36,7 +36,7 @@
             <a
               href="https://calendar.app.google/5rdLGhWiZpbBrPeS7"
               target="_blank"
-              class="inline-flex items-center px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200"
+              class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
             >
               <Calendar class="h-5 w-5 mr-2" />
               Book Consultation
@@ -51,11 +51,11 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           <div v-for="(info, idx) in contactInfo" :key="idx" class="text-center group">
-            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-100 to-indigo-100 text-purple-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
               <component :is="info.icon" class="h-6 w-6" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">{{ info.title }}</h3>
-            <p class="text-lg text-purple-600 font-semibold mb-1">{{ info.details }}</p>
+            <p class="text-lg text-blue-600 font-semibold mb-1">{{ info.details }}</p>
             <p class="text-sm text-gray-600">{{ info.description }}</p>
           </div>
         </div>
@@ -78,7 +78,7 @@
                       id="fullName"
                       required
                       v-model="formData.fullName"
-                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -92,7 +92,7 @@
                       id="email"
                       required
                       v-model="formData.email"
-                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -107,7 +107,7 @@
                       id="country"
                       required
                       v-model="formData.country"
-                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     >
                       <option value="">Select Country</option>
                       <option v-for="country in countries" :key="country" :value="country">{{ country }}</option>
@@ -123,7 +123,7 @@
                       id="company"
                       required
                       v-model="formData.company"
-                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="Acme Inc."
                     />
                   </div>
@@ -140,8 +140,8 @@
                       :class="[
                         'flex items-center justify-center px-4 py-2 rounded-xl cursor-pointer transition-all',
                         formData.services.includes(service)
-                          ? 'bg-purple-100 text-purple-700 border-2 border-purple-400'
-                          : 'bg-gray-50 text-gray-700 border-2 border-gray-200 hover:border-purple-200'
+                          ? 'bg-blue-100 text-blue-700 border-2 border-blue-400'
+                          : 'bg-gray-50 text-gray-700 border-2 border-gray-200 hover:border-blue-200'
                       ]"
                     >
                       <input
@@ -164,7 +164,7 @@
                     required
                     rows="5"
                     v-model="formData.message"
-                    class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none"
+                    class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -178,7 +178,7 @@
                       ? 'bg-green-500 text-white'
                       : isSubmitting
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:shadow-lg'
+                      : 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-lg'
                   ]"
                 >
                   <span v-if="submitSuccess" class="inline-flex items-center">
@@ -202,7 +202,7 @@
           <!-- Right Sidebar - 1 column -->
           <div class="lg:col-span-1 space-y-8">
             <!-- Quick Actions -->
-            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-6">
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-4">Quick Actions</h3>
               <div class="space-y-3">
                 <a
@@ -211,21 +211,21 @@
                   class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all"
                 >
                   <span class="flex items-center">
-                    <Calendar class="h-5 w-5 text-purple-600 mr-3" />
+                    <Calendar class="h-5 w-5 text-blue-600 mr-3" />
                     <span class="font-medium text-gray-700">Book Free Consultation</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
                 </a>
                 <button class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all">
                   <span class="flex items-center">
-                    <Users class="h-5 w-5 text-purple-600 mr-3" />
+                    <Users class="h-5 w-5 text-blue-600 mr-3" />
                     <span class="font-medium text-gray-700">View Our Team</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
                 </button>
                 <button class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all">
                   <span class="flex items-center">
-                    <Rocket class="h-5 w-5 text-purple-600 mr-3" />
+                    <Rocket class="h-5 w-5 text-blue-600 mr-3" />
                     <span class="font-medium text-gray-700">Start a Project</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
@@ -240,10 +240,10 @@
                 <a
                   href="https://www.linkedin.com/company/acornglobus"
                   target="_blank"
-                  class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-xl hover:bg-purple-50 transition-all group"
+                  class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-xl hover:bg-blue-50 transition-all group"
                 >
                   <span class="flex items-center">
-                    <Linkedin class="h-5 w-5 text-purple-600 mr-3" />
+                    <Linkedin class="h-5 w-5 text-blue-600 mr-3" />
                     <span class="font-medium text-gray-700">LinkedIn</span>
                   </span>
                   <ArrowRight class="h-4 w-4 text-gray-400 group-hover:translate-x-1 transition-transform" />
@@ -251,10 +251,10 @@
                 <a
                   href="https://www.instagram.com/acornglobus/?hl=en"
                   target="_blank"
-                  class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-xl hover:bg-purple-50 transition-all group"
+                  class="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-xl hover:bg-blue-50 transition-all group"
                 >
                   <span class="flex items-center">
-                    <Instagram class="h-5 w-5 text-purple-600 mr-3" />
+                    <Instagram class="h-5 w-5 text-blue-600 mr-3" />
                     <span class="font-medium text-gray-700">@acornglobus</span>
                   </span>
                   <ArrowRight class="h-4 w-4 text-gray-400 group-hover:translate-x-1 transition-transform" />
@@ -296,7 +296,7 @@
         <div class="space-y-6">
           <div v-for="(faq, idx) in faqs" :key="idx" class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow">
             <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-start">
-              <Sparkles class="h-5 w-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
+              <Sparkles class="h-5 w-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
               {{ faq.question }}
             </h3>
             <p class="text-gray-600 ml-8">{{ faq.answer }}</p>
@@ -308,12 +308,12 @@
     <!-- Map Section -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-12 text-center">
-          <MapPin class="h-12 w-12 text-purple-600 mx-auto mb-4" />
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12 text-center">
+          <MapPin class="h-12 w-12 text-blue-600 mx-auto mb-4" />
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
           <p class="text-lg text-gray-600 mb-2">Nagpur, Maharashtra</p>
           <p class="text-gray-600 mb-8">India</p>
-          <button class="inline-flex items-center px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200">
+          <button class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200">
             <Globe class="h-5 w-5 mr-2" />
             View on Map
           </button>

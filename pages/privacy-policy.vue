@@ -1,19 +1,19 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="mb-6">
-          <span class="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
+          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
             Legal Information
           </span>
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Privacy
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
               Policy
             </span>
           </h1>
@@ -36,7 +36,7 @@
         <div class="prose prose-lg max-w-none">
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Shield class="h-5 w-5 text-white" />
               </div>
               Introduction
@@ -49,19 +49,19 @@
 
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Database class="h-5 w-5 text-white" />
               </div>
               Information We Collect
             </h2>
             <p class="text-gray-600 text-lg mb-6 leading-relaxed">We collect information that you provide directly to us, including:</p>
             <div class="grid md:grid-cols-2 gap-4">
-              <div class="bg-purple-50 rounded-lg p-6">
+              <div class="bg-blue-50 rounded-lg p-6">
                 <h4 class="font-semibold text-gray-900 mb-3">Contact Information</h4>
                 <ul class="text-gray-600 space-y-2">
-                  <li class="flex items-center"><Check class="h-4 w-4 text-purple-600 mr-2" />Name and email address</li>
-                  <li class="flex items-center"><Check class="h-4 w-4 text-purple-600 mr-2" />Phone number</li>
-                  <li class="flex items-center"><Check class="h-4 w-4 text-purple-600 mr-2" />Company information</li>
+                  <li class="flex items-center"><Check class="h-4 w-4 text-blue-600 mr-2" />Name and email address</li>
+                  <li class="flex items-center"><Check class="h-4 w-4 text-blue-600 mr-2" />Phone number</li>
+                  <li class="flex items-center"><Check class="h-4 w-4 text-blue-600 mr-2" />Company information</li>
                 </ul>
               </div>
               <div class="bg-indigo-50 rounded-lg p-6">
@@ -77,29 +77,29 @@
 
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Settings class="h-5 w-5 text-white" />
               </div>
               How We Use Your Information
             </h2>
             <p class="text-gray-600 text-lg mb-6 leading-relaxed">We use the information we collect to:</p>
-            <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8">
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
               <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-4">
                   <div class="flex items-start">
-                    <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">
                       <Check class="h-3 w-3 text-white" />
                     </div>
                     <span class="text-gray-700">Provide and maintain our services</span>
                   </div>
                   <div class="flex items-start">
-                    <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">
                       <Check class="h-3 w-3 text-white" />
                     </div>
                     <span class="text-gray-700">Respond to your inquiries and requests</span>
                   </div>
                   <div class="flex items-start">
-                    <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-3 mt-1">
                       <Check class="h-3 w-3 text-white" />
                     </div>
                     <span class="text-gray-700">Send you updates and communications</span>
@@ -131,7 +131,7 @@
 
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Users class="h-5 w-5 text-white" />
               </div>
               Information Sharing
@@ -147,7 +147,7 @@
 
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Lock class="h-5 w-5 text-white" />
               </div>
               Security
@@ -163,23 +163,23 @@
 
           <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
                 <Mail class="h-5 w-5 text-white" />
               </div>
               Contact Us
             </h2>
-            <div class="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-xl p-8">
+            <div class="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-xl p-8">
               <p class="text-gray-700 text-lg leading-relaxed mb-4">
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <div class="flex items-center space-x-4">
                 <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                  <Mail class="h-6 w-6 text-purple-600" />
+                  <Mail class="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
                   <a
                     href="mailto:business@acornglobus.com"
-                    class="text-purple-600 hover:text-purple-700 font-semibold text-lg transition-colors"
+                    class="text-blue-600 hover:text-blue-700 font-semibold text-lg transition-colors"
                   >
                     business@acornglobus.com
                   </a>

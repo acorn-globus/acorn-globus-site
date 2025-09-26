@@ -1,15 +1,15 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NuxtLink
           to="/services"
-          class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium mb-6 transition-colors"
+          class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium mb-6 transition-colors"
         >
           <ArrowLeft class="h-4 w-4 mr-2" />
           Back to Services
@@ -17,14 +17,14 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
+            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
               <Users class="h-4 w-4 mr-2" />
               Team Augmentation
             </div>
 
             <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
               Scale Your Team with
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
                 Top-Tier Talent
               </span>
             </h1>
@@ -38,12 +38,12 @@
             <div class="flex flex-wrap gap-4">
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
               >
                 Build Your Team
                 <ArrowRight class="h-5 w-5 ml-2" />
               </NuxtLink>
-              <button class="inline-flex items-center px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200">
+              <button class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200">
                 <Clock class="h-5 w-5 mr-2" />
                 Quick Integration
               </button>
@@ -53,7 +53,7 @@
           <div class="relative">
             <div class="grid grid-cols-2 gap-4">
               <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Users class="h-8 w-8 text-purple-600 mb-3" />
+                <Users class="h-8 w-8 text-blue-600 mb-3" />
                 <div class="text-2xl font-bold text-gray-900">50+</div>
                 <p class="text-sm text-gray-600">Expert Developers</p>
               </div>
@@ -89,8 +89,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(benefit, idx) in benefits" :key="idx" class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-white text-purple-600 rounded-xl mb-4 shadow-sm">
+          <div v-for="(benefit, idx) in benefits" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-white text-blue-600 rounded-xl mb-4 shadow-sm">
               <component :is="benefit.icon" class="h-6 w-6" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">{{ benefit.title }}</h3>
@@ -119,7 +119,7 @@
             :class="[
               'px-6 py-3 rounded-full font-medium transition-all duration-300',
               activeTab === key
-                ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
+                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
             ]"
           >
@@ -135,12 +135,12 @@
           <div v-for="(tech, idx) in expertise[activeTab].technologies" :key="idx" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex justify-between items-start mb-3">
               <h4 class="text-lg font-bold text-gray-900">{{ tech.name }}</h4>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">
+              <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
                 {{ tech.level }}
               </span>
             </div>
             <div class="flex items-center text-sm text-gray-600">
-              <Sparkles class="h-4 w-4 text-purple-500 mr-2" />
+              <Sparkles class="h-4 w-4 text-blue-500 mr-2" />
               {{ tech.projects }} Projects Delivered
             </div>
           </div>
@@ -160,12 +160,12 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="(step, idx) in process" :key="idx" class="relative">
-            <div v-if="idx < process.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-purple-300 to-transparent z-0"></div>
+            <div v-if="idx < process.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"></div>
             <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-purple-100 text-purple-600 rounded-xl mb-4">
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
                 <component :is="step.icon" class="h-5 w-5" />
               </div>
-              <div class="text-sm text-purple-600 font-semibold mb-2">Step {{ step.step }}</div>
+              <div class="text-sm text-blue-600 font-semibold mb-2">Step {{ step.step }}</div>
               <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
               <p class="text-sm text-gray-600">{{ step.description }}</p>
             </div>
@@ -190,12 +190,12 @@
             <p class="text-gray-600 mb-6">{{ model.description }}</p>
             <ul class="space-y-3 mb-6">
               <li v-for="(feature, featureIdx) in model.features" :key="featureIdx" class="flex items-center text-gray-700">
-                <CheckCircle class="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
+                <CheckCircle class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                 {{ feature }}
               </li>
             </ul>
             <div class="pt-6 border-t border-gray-100">
-              <p class="text-sm text-purple-600 font-medium">{{ model.ideal }}</p>
+              <p class="text-sm text-blue-600 font-medium">{{ model.ideal }}</p>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8">
+          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
             <div class="flex items-start mb-6">
               <Star v-for="i in 5" :key="i" class="h-5 w-5 text-yellow-400 fill-yellow-400" />
             </div>
@@ -237,9 +237,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -253,14 +253,14 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Get Started Now
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
             to="/portfolio"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200"
+            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
           >
             View Success Stories
             <ChevronRight class="h-5 w-5 ml-2" />

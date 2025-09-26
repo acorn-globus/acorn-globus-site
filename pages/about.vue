@@ -1,21 +1,21 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <Building2 class="h-4 w-4 mr-2" />
             About Acorn Globus
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             We Build More Than
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
               Software, We Build Partnerships
             </span>
           </h1>
@@ -28,14 +28,14 @@
           <div class="flex flex-wrap gap-4 justify-center">
             <NuxtLink
               to="/contact"
-              class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+              class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
             >
               Start Your Journey
               <ArrowRight class="ml-2 h-5 w-5" />
             </NuxtLink>
             <NuxtLink
               to="/portfolio"
-              class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+              class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
             >
               View Our Work
               <ArrowUpRight class="ml-2 h-5 w-5" />
@@ -57,7 +57,7 @@
               animation: countersVisible ? `fadeInUp 0.6s ease-out ${index * 0.1}s both` : 'none'
             }"
           >
-            <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl mb-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl mb-4">
               <component :is="stat.icon" class="h-6 w-6" />
             </div>
             <div class="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
@@ -70,7 +70,7 @@
     </section>
 
     <!-- Our Story Section -->
-    <section class="py-24 bg-gradient-to-b from-white to-purple-50/30">
+    <section class="py-24 bg-gradient-to-b from-white to-blue-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
@@ -95,14 +95,14 @@
           </div>
 
           <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-3xl opacity-10 blur-2xl"></div>
+            <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl opacity-10 blur-2xl"></div>
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
               alt="Acorn Globus Team"
               class="relative rounded-3xl shadow-2xl"
             >
             <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
-              <Quote class="h-8 w-8 text-purple-200 mb-2" />
+              <Quote class="h-8 w-8 text-blue-200 mb-2" />
               <p class="text-sm font-medium text-gray-900 italic">
                 "Culture First, Skills Second"
               </p>
@@ -123,11 +123,11 @@
               <img
                 :src="founder.image"
                 :alt="founder.name"
-                class="w-24 h-24 rounded-full border-4 border-purple-100"
+                class="w-24 h-24 rounded-full border-4 border-blue-100"
               >
               <div>
                 <h4 class="text-xl font-bold text-gray-900">{{ founder.name }}</h4>
-                <p class="text-purple-600 font-medium">{{ founder.role }}</p>
+                <p class="text-blue-600 font-medium">{{ founder.role }}</p>
                 <p class="text-gray-600 mt-2">{{ founder.bio }}</p>
               </div>
             </div>
@@ -150,7 +150,7 @@
 
         <div class="relative">
           <!-- Timeline Line -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-purple-200 to-indigo-200"></div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-200 to-indigo-200"></div>
 
           <!-- Timeline Items -->
           <div class="space-y-12">
@@ -171,10 +171,10 @@
                     'flex items-center space-x-3 mb-3',
                     index % 2 === 0 ? 'justify-end' : 'justify-start'
                   ]">
-                    <div class="p-2 bg-purple-100 rounded-lg text-purple-600">
+                    <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
                       <component :is="item.icon" class="h-5 w-5" />
                     </div>
-                    <span class="text-2xl font-bold text-purple-600">{{ item.year }}</span>
+                    <span class="text-2xl font-bold text-blue-600">{{ item.year }}</span>
                   </div>
                   <h3 class="text-xl font-bold text-gray-900 mb-2">{{ item.title }}</h3>
                   <p class="text-gray-600">{{ item.description }}</p>
@@ -182,7 +182,7 @@
               </div>
 
               <!-- Center Dot -->
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-400 rounded-full border-4 border-white shadow-sm"></div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-white shadow-sm"></div>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@
     </section>
 
     <!-- Values Section -->
-    <section class="py-24 bg-gradient-to-b from-white to-purple-50/30">
+    <section class="py-24 bg-gradient-to-b from-white to-blue-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900 mb-4">
@@ -239,8 +239,8 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8">
-          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8">
-            <Handshake class="h-12 w-12 text-purple-600 mb-6" />
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8">
+            <Handshake class="h-12 w-12 text-blue-600 mb-6" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">True Partnership</h3>
             <p class="text-gray-600">
               We don't just deliver code; we become an extension of your team, invested in your success.
@@ -267,9 +267,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -283,14 +283,14 @@
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink
             to="/services"
-            class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
           >
             Explore Services
             <ChevronRight class="ml-2 h-5 w-5" />
@@ -355,8 +355,8 @@ const values = [
     icon: Users,
     title: 'Team Unity',
     description: 'No rigid hierarchies here. We work as one team, where every voice matters and everyone contributes to our collective success.',
-    color: 'from-purple-50 to-indigo-50',
-    iconColor: 'text-purple-600'
+    color: 'from-blue-50 to-indigo-50',
+    iconColor: 'text-blue-600'
   },
   {
     icon: Lightbulb,

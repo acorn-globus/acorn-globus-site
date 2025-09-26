@@ -1,21 +1,21 @@
 <template>
   <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <Briefcase class="h-4 w-4 mr-2" />
             Our Portfolio
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             Transforming Ideas Into
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 block mt-2">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
               Digital Success Stories
             </span>
           </h1>
@@ -33,7 +33,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div v-for="(stat, index) in stats" :key="index" class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl mb-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl mb-4">
               <component :is="stat.icon" class="h-6 w-6" />
             </div>
             <div class="text-3xl font-bold text-gray-900 mb-1">{{ stat.value }}</div>
@@ -44,10 +44,10 @@
     </section>
 
     <!-- Featured Project -->
-    <section v-if="featuredProject" class="py-20 bg-gradient-to-b from-white to-purple-50/30">
+    <section v-if="featuredProject" class="py-20 bg-gradient-to-b from-white to-blue-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
             <Award class="h-4 w-4 mr-2" />
             Featured Success Story
           </div>
@@ -58,7 +58,7 @@
           <div>
             <h3 class="text-4xl font-bold text-gray-900 mb-4">
               {{ featuredProject.name }}
-              <span class="block text-xl text-purple-600 mt-2">{{ featuredProject.tagline }}</span>
+              <span class="block text-xl text-blue-600 mt-2">{{ featuredProject.tagline }}</span>
             </h3>
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
               {{ featuredProject.longDescription }}
@@ -66,15 +66,15 @@
 
             <div class="grid grid-cols-3 gap-4 mb-8">
               <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-purple-600">{{ featuredProject.metrics.users }}</div>
+                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.users }}</div>
                 <div class="text-sm text-gray-600">Active Users</div>
               </div>
               <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-purple-600">{{ featuredProject.metrics.forms }}</div>
+                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.forms }}</div>
                 <div class="text-sm text-gray-600">Forms Created</div>
               </div>
               <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-purple-600">{{ featuredProject.metrics.rating }}★</div>
+                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.rating }}★</div>
                 <div class="text-sm text-gray-600">User Rating</div>
               </div>
             </div>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="flex flex-wrap gap-3 mb-8">
-              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                 {{ tech }}
               </span>
             </div>
@@ -99,7 +99,7 @@
               :href="featuredProject.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
               Visit Formester
               <ExternalLink class="ml-2 h-4 w-4" />
@@ -107,7 +107,7 @@
           </div>
 
           <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-3xl opacity-20 blur-2xl"></div>
+            <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-2xl"></div>
             <img
               :src="featuredProject.image"
               :alt="featuredProject.name"
@@ -129,7 +129,7 @@
             :class="[
               'inline-flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300',
               activeFilter === filter.id
-                ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
+                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             ]"
           >
@@ -175,7 +175,7 @@
                   <Heart v-if="project.category === 'nonprofit'" class="h-3 w-3 mr-1.5" />
                   {{ project.category }}
                 </span>
-                <span v-if="project.isOwnProduct" class="px-4 py-1.5 bg-purple-600/90 backdrop-blur-sm text-white rounded-full text-xs font-semibold inline-flex items-center">
+                <span v-if="project.isOwnProduct" class="px-4 py-1.5 bg-blue-600/90 backdrop-blur-sm text-white rounded-full text-xs font-semibold inline-flex items-center">
                   <Rocket class="h-3 w-3 mr-1.5" />
                   Our Product
                 </span>
@@ -190,15 +190,15 @@
 
             <!-- Content Section -->
             <div class="p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+              <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                 {{ project.name }}
               </h3>
-              <p class="text-sm text-purple-600 font-semibold mb-4">{{ project.tagline }}</p>
+              <p class="text-sm text-blue-600 font-semibold mb-4">{{ project.tagline }}</p>
               <p class="text-gray-600 mb-6 line-clamp-2 leading-relaxed">{{ project.description }}</p>
 
               <!-- Technologies -->
               <div class="flex flex-wrap gap-2 mb-6">
-                <span v-for="(tech, idx) in project.technologies.slice(0, 3)" :key="idx" class="text-xs px-3 py-1.5 bg-purple-50 text-purple-700 rounded-lg font-medium">
+                <span v-for="(tech, idx) in project.technologies.slice(0, 3)" :key="idx" class="text-xs px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg font-medium">
                   {{ tech }}
                 </span>
                 <span v-if="project.technologies.length > 3" class="text-xs px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg font-medium">
@@ -209,7 +209,7 @@
               <!-- Metrics -->
               <div v-if="project.metrics" class="flex items-center justify-around pt-6 border-t border-gray-100">
                 <div v-for="(value, key, idx) in Object.fromEntries(Object.entries(project.metrics).slice(0, 2))" :key="idx" class="text-center">
-                  <div class="text-2xl font-bold text-purple-600">
+                  <div class="text-2xl font-bold text-blue-600">
                     {{ value }}
                   </div>
                   <div class="text-xs text-gray-500 capitalize mt-1">{{ key }}</div>
@@ -219,14 +219,14 @@
 
             <!-- View Case Study Button for projects with case studies -->
             <div v-if="[1, 2, 3, 4].includes(project.id)" class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-white/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <button class="w-full px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold hover:bg-purple-700 transition-all">
+              <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700 transition-all">
                 View Case Study →
               </button>
             </div>
 
             <!-- Hover Effect Bottom Bar -->
             <div :class="[
-              'absolute inset-x-0 bottom-0 h-1 bg-purple-500 transform transition-transform duration-300',
+              'absolute inset-x-0 bottom-0 h-1 bg-blue-500 transform transition-transform duration-300',
               hoveredProject === project.id ? 'scale-x-100' : 'scale-x-0'
             ]"></div>
           </div>
@@ -243,8 +243,8 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8">
-            <Quote class="h-8 w-8 text-purple-200 mb-4" />
+          <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <Quote class="h-8 w-8 text-blue-200 mb-4" />
             <p class="text-gray-700 mb-6 italic">{{ testimonial.content }}</p>
             <div class="flex items-center">
               <img
@@ -263,9 +263,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
@@ -279,14 +279,14 @@
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink
             to="/services"
-            class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
           >
             View Services
             <ChevronRight class="ml-2 h-5 w-5" />
