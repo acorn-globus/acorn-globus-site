@@ -78,11 +78,14 @@
             @click="openModal(design)"
           >
             <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-              <div class="aspect-w-16 aspect-h-12">
+              <div class="relative h-64">
                 <img
                   :src="design.image"
                   :alt="design.title"
-                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  @error="handleImageError"
+                  @load="handleImageLoad"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -188,11 +191,13 @@
         </button>
 
         <div class="p-8">
-          <div class="aspect-w-16 aspect-h-10 mb-6 rounded-2xl overflow-hidden">
+          <div class="mb-6 rounded-2xl overflow-hidden">
             <img
               :src="selectedDesign.image"
               :alt="selectedDesign.title"
               class="w-full h-80 object-cover"
+              @error="handleImageError"
+              @load="handleImageLoad"
             />
           </div>
 
@@ -535,6 +540,16 @@ const loadMore = () => {
   hasMoreDesigns.value = false
 }
 
+const handleImageError = (event) => {
+  console.warn('Failed to load image:', event.target.src)
+  // You can set a fallback image here
+  // event.target.src = '/images/design-placeholder.jpg'
+}
+
+const handleImageLoad = (event) => {
+  console.log('Image loaded successfully:', event.target.src)
+}
+
 // Cleanup on unmount
 onUnmounted(() => {
   document.body.style.overflow = 'auto'
@@ -547,20 +562,5 @@ onUnmounted(() => {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.aspect-w-16 {
-  position: relative;
-  padding-bottom: 75%; /* 16:12 aspect ratio */
-}
-
-.aspect-w-16 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 </style>
