@@ -46,12 +46,8 @@ export default defineNuxtConfig({
   // },
   plugins: [
     {
-      src: "~/plugins/pdfbox.js", // Replace "~/plugins/crisp.js" with the actual path to your file
-      mode: 'client', // Ensure the script is loaded on the client side
-    },
-    {
-      src: "~/plugins/crisp.js", // Replace "~/plugins/crisp.js" with the actual path to your file
-      mode: 'client', // Ensure the script is loaded on the client side
+      src: "~/plugins/crisp.js",
+      mode: 'client',
     },
     {
       src: '~/plugins/clarity.js',
@@ -66,7 +62,7 @@ export default defineNuxtConfig({
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => {
-        return tag === 'pdf-box' || tag === 'pdf-pandora'
+        return false
       }
     }
   },
