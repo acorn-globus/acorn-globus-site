@@ -1,37 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-          <div class="flex items-center space-x-3">
-            <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-7 w-7 text-white" />
-            </div>
-            <div>
-              <div class="text-2xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500 uppercase tracking-wider">Maintenance & Support</div>
-            </div>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="//about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="//services" class="text-purple-600 font-medium">Services</NuxtLink>
-            <NuxtLink to="//portfolio" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="//contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</NuxtLink>
-            <NuxtLink
-              to="//contact"
-              class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
-            >
-              Get Support
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
+  <div class="min-h-screen bg-white"><!-- Hero Section -->
     <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
       <div class="absolute inset-0">
         <div class="absolute top-20 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
@@ -40,7 +8,7 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NuxtLink
-          to="//services"
+          to="/services"
           class="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-6 transition-colors"
         >
           <ArrowLeft class="h-4 w-4 mr-2" />
@@ -69,7 +37,7 @@
 
             <div class="flex flex-wrap gap-4">
               <NuxtLink
-                to="//contact"
+                to="/contact"
                 class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
               >
                 Get Started
@@ -177,7 +145,7 @@
 
               <div class="mt-8 text-center">
                 <NuxtLink
-                  to="//contact"
+                  to="/contact"
                   :class="`inline-flex items-center px-8 py-3 bg-gradient-to-r ${supportPlans[activeTab].gradient} text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300`"
                 >
                   Get Started
@@ -283,7 +251,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
               <Bell class="h-5 w-5 mr-2" />
@@ -314,14 +282,14 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
-            to="//contact"
+            to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Get Started Today
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
-            to="//services"
+            to="/services"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-green-200"
           >
             View All Services
@@ -337,7 +305,6 @@
 import { ref } from 'vue'
 import {
   ArrowRight,
-  Code2,
   Shield,
   Clock,
   AlertCircle,

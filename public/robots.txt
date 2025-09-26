@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://acornglobus.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /_nuxt/
+Disallow: /.nuxt/
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional)
+Crawl-delay: 1

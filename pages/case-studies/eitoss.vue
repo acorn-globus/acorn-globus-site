@@ -1,279 +1,462 @@
 <template>
-  <main class="min-h-screen bg-navy-900 text-white">
-    <div class="container mx-auto px-4 py-20">
-      <!-- Hero Section -->
-      <div class="max-w-4xl mx-auto mb-20">
-        <h1 class="text-5xl md:text-6xl font-bold mb-8">
-          Eitoss: Bridging the Gap Between Management and Frontline Workers
-        </h1>
-        <p class="text-xl text-gray-300">
-          From concept to funded MVP: How we helped Eitoss revolutionize workplace communication through Kaizen principles
+
+  <div class="min-h-screen bg-white">
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <NuxtLink
+          to="/portfolio"
+          class="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-6 transition-colors"
+        >
+          <ArrowLeft class="h-4 w-4 mr-2" />
+          Back to Portfolio
+        </NuxtLink>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-6">
+              <Building2 class="h-4 w-4 mr-2" />
+              Enterprise Solution
+            </div>
+
+            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Eitoss
+            </h1>
+            <p class="text-2xl text-green-600 font-semibold mb-4">
+              {{ projectOverview.tagline }}
+            </p>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              A revolutionary platform implementing Kaizen principles to transform workplace
+              communication, creating seamless channels between management and frontline workers.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mb-8">
+              <a
+                :href="`https://${projectOverview.website}`"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+              >
+                Visit Live Site
+                <ExternalLink class="h-4 w-4 ml-2" />
+              </a>
+              <div class="inline-flex items-center px-6 py-3 bg-yellow-100 text-yellow-800 rounded-full font-semibold">
+                <DollarSign class="h-4 w-4 mr-2" />
+                ¥60M Funded
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div v-for="[key, value] in Object.entries({
+                Client: projectOverview.client,
+                Type: projectOverview.type,
+                Duration: projectOverview.duration,
+                Status: projectOverview.status
+              })" :key="key">
+                <p class="text-sm text-gray-500 mb-1">{{ key }}</p>
+                <p class="font-semibold text-gray-900">{{ value }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="aspect-w-16 aspect-h-10 rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                alt="Eitoss Platform"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-tr from-green-600/20 to-transparent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div v-for="(result, idx) in results" :key="idx" class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-2xl mb-4">
+              <component :is="result.icon" class="h-6 w-6" />
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">{{ result.metric }}</div>
+            <div class="text-gray-600">{{ result.label }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenge & Solution -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Challenge -->
+          <div>
+            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
+              <div class="inline-flex items-center justify-center w-14 h-14 bg-red-100 text-red-600 rounded-2xl mb-6">
+                <Target class="h-7 w-7" />
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ challenge.title }}</h2>
+              <p class="text-gray-600 mb-6 leading-relaxed">{{ challenge.description }}</p>
+              <ul class="space-y-3">
+                <li v-for="(point, idx) in challenge.points" :key="idx" class="flex items-start">
+                  <ChevronRight class="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span class="text-gray-700">{{ point }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Solution -->
+          <div>
+            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
+              <div class="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-2xl mb-6">
+                <CheckCircle class="h-7 w-7" />
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ solution.title }}</h2>
+              <p class="text-gray-600 mb-6 leading-relaxed">{{ solution.description }}</p>
+              <ul class="space-y-3">
+                <li v-for="(point, idx) in solution.points" :key="idx" class="flex items-start">
+                  <CheckCircle class="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span class="text-gray-700">{{ point }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Features Delivered</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            We built a comprehensive platform that revolutionizes workplace communication
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div
+            v-for="(feature, idx) in features"
+            :key="idx"
+            :class="`bg-white rounded-3xl p-8 cursor-pointer transition-all duration-300 ${
+              activeFeature === idx
+                ? 'shadow-2xl scale-105 border-2 border-green-500'
+                : 'shadow-lg hover:shadow-xl'
+            }`"
+            @click="activeFeature = idx"
+          >
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-2xl mb-6">
+              <component :is="feature.icon" class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ feature.title }}</h3>
+            <p class="text-gray-600 mb-6">{{ feature.description }}</p>
+            <ul class="space-y-2">
+              <li v-for="(detail, detailIdx) in feature.details" :key="detailIdx" class="flex items-center text-sm text-gray-700">
+                <CheckCircle class="h-4 w-4 text-green-500 mr-2" />
+                {{ detail }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">12-Week Journey</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            From concept to funded startup in just 12 weeks
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div v-for="(phase, idx) in timeline" :key="idx" class="relative">
+            <div v-if="idx < timeline.length - 1" class="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-green-300 to-transparent z-0"></div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10">
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-xl mb-4">
+                <span class="font-bold">{{ idx + 1 }}</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ phase.phase }}</h3>
+              <p class="text-sm text-green-600 font-semibold mb-3">{{ phase.duration }}</p>
+              <ul class="space-y-1">
+                <li v-for="(activity, actIdx) in phase.activities" :key="actIdx" class="text-sm text-gray-600">• {{ activity }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Technology Stack</h2>
+          <p class="text-lg text-gray-600">
+            Built with modern, scalable technologies
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div v-for="[category, techs] in Object.entries(technologies)" :key="category" class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 capitalize">{{ category }}</h3>
+            <ul class="space-y-2">
+              <li v-for="(tech, idx) in techs" :key="idx" class="flex items-center text-gray-700">
+                <Zap class="h-4 w-4 text-green-600 mr-2" />
+                {{ tech }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Impact -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ impact.title }}</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            {{ impact.description }}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div v-for="(achievement, idx) in impact.achievements" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center">
+                  <component :is="achievement.icon" class="h-5 w-5" />
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">{{ achievement.title }}</h3>
+                <p class="text-gray-600">{{ achievement.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-green-50 to-emerald-50 relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          Ready to Transform Your Vision Into Reality?
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Just like Eitoss, we can help you build and launch your MVP in weeks, not months
         </p>
-      </div>
-
-      <!-- Project Overview -->
-      <div class="grid lg:grid-cols-2 gap-16 mb-20">
-        <div>
-          <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-          <div class="prose prose-lg prose-invert">
-            <p>
-              Eitoss approached us with a vision to transform how organizations handle frontline worker feedback and implement continuous improvement. The challenge was to build an MVP that would validate their innovative approach to workplace communication.
-            </p>
-          </div>
-        </div>
-        <div class="bg-navy-700 p-8 rounded-2xl">
-          <h3 class="text-xl font-bold mb-4">Quick Facts</h3>
-          <ul class="space-y-4">
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-              </svg>
-              <span>MVP Development Time: 12 weeks</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-              </svg>
-              <span>Successfully Secured Funding</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-              </svg>
-              <span>AI-Powered Knowledge Base</span>
-            </li>
-          </ul>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+          >
+            Start Your Project
+            <ArrowRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
+          <NuxtLink
+            to="/portfolio"
+            class="inline-flex items-center justify-center px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-green-200"
+          >
+            View More Projects
+            <ChevronRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
         </div>
       </div>
+    </section>
 
-      <!-- Key Features -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12">Key Features Delivered</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-              </svg>
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center space-x-3 mb-4 md:mb-0">
+            <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
+              <Code2 class="h-6 w-6 text-white" />
             </div>
-            <h3 class="text-xl font-bold mb-4">Kaizen-Based Communication</h3>
-            <p class="text-gray-300">
-              Implemented structured feedback channels based on continuous improvement principles.
-            </p>
+            <div>
+              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
+              <div class="text-xs text-gray-500">Digital Solutions Partner</div>
+            </div>
           </div>
 
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 10h14v2H5z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">AI-Powered Knowledge Base</h3>
-            <p class="text-gray-300">
-              Integrated Gemini and ChatGPT for intelligent document processing and query handling.
-            </p>
-          </div>
-
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">User-Centric Design</h3>
-            <p class="text-gray-300">
-              Intuitive interface designed specifically for frontline workers and managers.
-            </p>
+          <div class="flex items-center space-x-6">
+            <a href="mailto:business@acornglobus.com" class="text-gray-600 hover:text-purple-600 transition-colors">
+              business@acornglobus.com
+            </a>
+            <span class="text-gray-400">|</span>
+            <span class="text-gray-600">© 2024 Acorn Globus</span>
           </div>
         </div>
       </div>
-
-      <!-- Technical Stack -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12">Technical Stack</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Frontend -->
-          <div class="bg-navy-700 p-8 rounded-2xl transform transition-transform hover:scale-105">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Frontend</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                React.js
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                TypeScript
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                TailwindCSS
-              </li>
-            </ul>
-          </div>
-
-          <!-- Backend -->
-          <div class="bg-navy-700 p-8 rounded-2xl transform transition-transform hover:scale-105">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Backend</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                Ruby on Rails
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                PostgreSQL
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                Redis
-              </li>
-            </ul>
-          </div>
-
-          <!-- AI Integration -->
-          <div class="bg-navy-700 p-8 rounded-2xl transform transition-transform hover:scale-105">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21 11.5v-1c0-.8-.7-1.5-1.5-1.5H16v-3c0-.8-.7-1.5-1.5-1.5h-9C4.7 4.5 4 5.2 4 6v12c0 .8.7 1.5 1.5 1.5h9c.8 0 1.5-.7 1.5-1.5v-3h3.5c.8 0 1.5-.7 1.5-1.5v-1c0-.8-.7-1.5-1.5-1.5H16v-1h3.5c.8 0 1.5-.7 1.5-1.5z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">AI Integration</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                Gemini API
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                ChatGPT API
-              </li>
-            </ul>
-          </div>
-
-          <!-- DevOps -->
-          <div class="bg-navy-700 p-8 rounded-2xl transform transition-transform hover:scale-105">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 10h14v2H5zm0-4h14v2H5z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">DevOps</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                Docker
-              </li>
-              <li class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                AWS
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Results & Impact -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12">Results & Impact</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Metric 1 -->
-          <div class="bg-navy-700 p-8 rounded-2xl text-center">
-            <div class="text-yellow-400 text-4xl font-bold mb-4">95%</div>
-            <h3 class="text-xl font-bold mb-2">User Satisfaction</h3>
-            <p class="text-gray-300">From initial user testing and feedback</p>
-          </div>
-
-          <!-- Metric 2 -->
-          <div class="bg-navy-700 p-8 rounded-2xl text-center">
-            <div class="text-yellow-400 text-4xl font-bold mb-4">¥60M</div>
-            <h3 class="text-xl font-bold mb-2">Funding Secured</h3>
-            <p class="text-gray-300">Based on MVP demonstration</p>
-          </div>
-
-          <!-- Metric 3 -->
-          <div class="bg-navy-700 p-8 rounded-2xl text-center">
-            <div class="text-yellow-400 text-4xl font-bold mb-4">12</div>
-            <h3 class="text-xl font-bold mb-2">Weeks to Market</h3>
-            <p class="text-gray-300">From concept to live MVP</p>
-          </div>
-        </div>
-
-        <!-- Impact Description -->
-        <div class="bg-navy-700 p-8 rounded-2xl mt-8">
-          <div class="prose prose-lg prose-invert max-w-none">
-            <p class="text-gray-300">
-              The MVP successfully validated Eitoss's core concept, leading to secured funding for further development. The platform's innovative approach to frontline worker communication and AI-powered knowledge base has positioned Eitoss as a pioneer in workplace collaboration tools.
-            </p>
-            <p class="text-gray-300 mt-4">
-              Early adopters reported significant improvements in workplace communication efficiency and employee engagement, with some organizations seeing up to 40% reduction in response times for worker queries and a 60% increase in improvement suggestions from frontline staff.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+    </footer>
+  </div>
 </template>
 
 <script setup>
-useHead({
-  title: 'Eitoss Case Study: Workplace Communication Platform | Acorn Globus',
-  meta: [
+import { ref } from 'vue'
+import {
+  ArrowRight, Users, MessageSquare, TrendingUp, Rocket,
+  CheckCircle, Star, ChevronRight, Brain, BarChart3, Zap,
+  ArrowLeft, ExternalLink, Clock, Target, Award, Sparkles,
+  Building2, Lightbulb, GitBranch, Shield, Globe, DollarSign
+} from 'lucide-vue-next'
+
+// Use the v3 layout
+definePageMeta({
+  layout: 'default'
+})
+
+const activeFeature = ref(0)
+
+const projectOverview = {
+  client: 'Eitoss',
+  industry: 'Enterprise Software',
+  type: 'MVP to Full Product',
+  duration: '12 weeks',
+  status: 'Live & Funded',
+  website: 'eitoss.com',
+  tagline: 'Bridging Management & Frontline Workers'
+}
+
+const challenge = {
+  title: 'The Challenge',
+  description: 'Eitoss approached us with a vision to transform workplace communication. They needed to create a platform that could effectively bridge the gap between management and frontline workers, implementing Kaizen principles for continuous improvement.',
+  points: [
+    'Fragmented communication between management and workers',
+    'Lack of structured feedback mechanisms',
+    'No systematic approach to continuous improvement',
+    'Difficulty in capturing and processing workplace insights'
+  ]
+}
+
+const solution = {
+  title: 'Our Solution',
+  description: 'We developed a comprehensive communication platform that leverages AI to facilitate seamless interaction between all organizational levels, creating a culture of continuous improvement.',
+  points: [
+    'Kaizen-based communication channels',
+    'AI-powered knowledge base for instant query resolution',
+    'Intelligent document processing and analysis',
+    'Real-time feedback and improvement tracking'
+  ]
+}
+
+const features = [
+  {
+    icon: Users,
+    title: 'Kaizen Communication',
+    description: 'Structured channels implementing continuous improvement principles to capture and act on frontline insights.',
+    details: [
+      'Organized feedback channels',
+      'Improvement suggestion tracking',
+      'Priority-based routing',
+      'Action item management'
+    ]
+  },
+  {
+    icon: Brain,
+    title: 'AI Knowledge Base',
+    description: 'Intelligent system powered by Gemini and ChatGPT APIs to provide instant answers and process workplace queries.',
+    details: [
+      'Dual AI integration',
+      'Smart query processing',
+      'Contextual responses',
+      'Learning from interactions'
+    ]
+  },
+  {
+    icon: BarChart3,
+    title: 'Analytics Dashboard',
+    description: 'Comprehensive insights into communication patterns, improvement metrics, and organizational health.',
+    details: [
+      'Real-time metrics',
+      'Improvement tracking',
+      'Response time analytics',
+      'Engagement reports'
+    ]
+  }
+]
+
+const results = [
+  { metric: '95%', label: 'User Satisfaction', icon: Star },
+  { metric: '¥60M', label: 'Funding Secured', icon: DollarSign },
+  { metric: '40%', label: 'Faster Response Times', icon: Clock },
+  { metric: '60%', label: 'More Suggestions', icon: TrendingUp }
+]
+
+const technologies = {
+  frontend: ['React.js', 'TypeScript', 'TailwindCSS'],
+  backend: ['Ruby on Rails', 'PostgreSQL', 'Redis'],
+  ai: ['Gemini API', 'ChatGPT API'],
+  devops: ['Docker', 'AWS', 'CI/CD Pipeline']
+}
+
+const timeline = [
+  {
+    phase: 'Discovery',
+    duration: 'Week 1-2',
+    activities: ['Requirements gathering', 'User research', 'Architecture planning']
+  },
+  {
+    phase: 'Design',
+    duration: 'Week 3-4',
+    activities: ['UI/UX design', 'User flow mapping', 'Prototype creation']
+  },
+  {
+    phase: 'Development',
+    duration: 'Week 5-10',
+    activities: ['Core platform build', 'AI integration', 'Feature implementation']
+  },
+  {
+    phase: 'Launch',
+    duration: 'Week 11-12',
+    activities: ['Testing & QA', 'Deployment', 'User onboarding']
+  }
+]
+
+const impact = {
+  title: 'Business Impact',
+  description: 'Eitoss has transformed from a concept to a funded startup, revolutionizing workplace communication',
+  achievements: [
     {
-      name: 'description',
-      content: 'Discover how we helped Eitoss build an innovative platform that bridges the communication gap between management and frontline workers through Kaizen principles.'
+      title: 'Successful Funding Round',
+      description: 'Secured ¥60M in funding to scale operations',
+      icon: DollarSign
     },
     {
-      name: 'keywords',
-      content: 'Eitoss, workplace communication, case study, enterprise software, Kaizen principles, employee engagement'
+      title: 'Market Validation',
+      description: 'Validated the core concept with early adopters',
+      icon: CheckCircle
     },
     {
-      property: 'og:title',
-      content: 'Eitoss Case Study: Workplace Communication Platform | Acorn Globus'
+      title: 'Industry Recognition',
+      description: 'Positioned as a pioneer in workplace collaboration',
+      icon: Award
     },
     {
-      property: 'og:description',
-      content: 'Learn how we developed a platform that revolutionizes workplace communication and implements continuous improvement practices.'
-    },
-    {
-      property: 'og:type',
-      content: 'article'
-    }
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://acornglobus.com/case-studies/eitoss'
+      title: 'Rapid Growth',
+      description: 'Expanding to multiple industries and regions',
+      icon: Globe
     }
   ]
-})
+}
 </script>

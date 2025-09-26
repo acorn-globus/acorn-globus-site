@@ -16,14 +16,14 @@
 
           <div class="hidden lg:flex items-center space-x-8">
             <NuxtLink to="/" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="//about" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="//services" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="//portfolio" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="//contact" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contact</NuxtLink>
+            <NuxtLink to="/about" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">About</NuxtLink>
+            <NuxtLink to="/services" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Services</NuxtLink>
+            <NuxtLink to="/portfolio" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Portfolio</NuxtLink>
+            <NuxtLink to="/contact" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contact</NuxtLink>
           </div>
 
           <NuxtLink
-            to="//contact"
+            to="/contact"
             class="hidden lg:inline-flex items-center px-6 py-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
           >
             Start Your MVP
@@ -60,7 +60,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center px-8 py-4 bg-amber-600 text-white font-semibold rounded-xl hover:bg-amber-700 transition-all transform hover:scale-105"
             >
               Start Your MVP
@@ -307,7 +307,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center px-8 py-4 bg-white text-amber-600 font-semibold rounded-xl hover:bg-amber-50 transition-all transform hover:scale-105"
             >
               Get Started Today
@@ -341,7 +341,6 @@ import {
   ChevronDown,
   Rocket,
   Clock,
-  Code2,
   Users,
   TrendingUp,
   Target,
@@ -385,7 +384,7 @@ const phases = [
   {
     title: 'Rapid Development',
     duration: '6-8 weeks',
-    icon: Code2,
+    icon: Zap,
     activities: [
       'Agile sprints',
       'Weekly demonstrations',

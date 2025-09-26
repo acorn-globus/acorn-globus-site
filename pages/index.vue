@@ -1,37 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-          <div class="flex items-center space-x-3">
-            <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-7 w-7 text-white" />
-            </div>
-            <div>
-              <div class="text-2xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500 uppercase tracking-wider">Digital Solutions</div>
-            </div>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-purple-600 font-medium">Home</NuxtLink>
-            <NuxtLink to="/about" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="/services" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="/portfolio" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="/contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
-            >
-              Start Project
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
+  <div class="min-h-screen bg-white"><!-- Hero Section -->
     <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
       <div class="absolute inset-0">
         <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
@@ -544,7 +512,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import {
-  ArrowRight, ChevronDown, Code2, Users, Globe, Award, Sparkles,
+  ArrowRight, ChevronDown, Users, Globe, Award, Sparkles,
   Rocket, Target, Clock, CheckCircle, ArrowUpRight, Quote, Star,
   MapPin, Mail, Linkedin, Twitter, Github, Zap, Shield, Terminal,
   TrendingUp
@@ -553,6 +521,27 @@ import {
 // Use the default layout
 definePageMeta({
   layout: 'default'
+})
+
+// SEO Meta Tags
+useSeoMeta({
+  title: 'Acorn Globus - Innovative IT Solutions & Software Development',
+  description: 'Transform your ideas into exceptional digital experiences. We offer software development, resource augmentation, MVP development, and maintenance services with 6+ years of excellence.',
+  keywords: 'software development, IT solutions, resource augmentation, MVP development, web development, mobile app development, startup solutions, custom software',
+  author: 'Acorn Globus',
+  robots: 'index, follow',
+  ogTitle: 'Acorn Globus - Innovative IT Solutions & Software Development',
+  ogDescription: 'Transform your ideas into exceptional digital experiences. We offer software development, resource augmentation, MVP development, and maintenance services with 6+ years of excellence.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com',
+  ogType: 'website',
+  ogSiteName: 'Acorn Globus',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@acornglobus',
+  twitterCreator: '@acornglobus',
+  twitterTitle: 'Acorn Globus - Innovative IT Solutions & Software Development',
+  twitterDescription: 'Transform your ideas into exceptional digital experiences. We offer software development, resource augmentation, MVP development, and maintenance services with 6+ years of excellence.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 const currentSlide = ref(0)

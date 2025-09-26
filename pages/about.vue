@@ -1,37 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-          <div class="flex items-center space-x-3">
-            <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-7 w-7 text-white" />
-            </div>
-            <div>
-              <div class="text-2xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500 uppercase tracking-wider">Digital Solutions</div>
-            </div>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="//about" class="text-purple-600 font-medium">About</NuxtLink>
-            <NuxtLink to="//services" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="//portfolio" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="//contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</NuxtLink>
-            <NuxtLink
-              to="//contact"
-              class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
-            >
-              Start Project
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
+  <div class="min-h-screen bg-white"><!-- Hero Section -->
     <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-indigo-50">
       <div class="absolute inset-0">
         <div class="absolute top-20 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
@@ -59,14 +27,14 @@
 
           <div class="flex flex-wrap gap-4 justify-center">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
             >
               Start Your Journey
               <ArrowRight class="ml-2 h-5 w-5" />
             </NuxtLink>
             <NuxtLink
-              to="//portfolio"
+              to="/portfolio"
               class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
             >
               View Our Work
@@ -314,14 +282,14 @@
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
-            to="//contact"
+            to="/contact"
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
             Start Your Project
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink
-            to="//services"
+            to="/services"
             class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
           >
             Explore Services
@@ -336,7 +304,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import {
-  ArrowRight, Code2, Users, Target, Heart, Sparkles, TrendingUp,
+  ArrowRight, Users, Target, Heart, Sparkles, TrendingUp,
   Award, Globe, Zap, BookOpen, Coffee, Rocket, Building2,
   CheckCircle, Star, Quote, ArrowUpRight, MapPin, Calendar,
   Lightbulb, Handshake, Shield, Clock, ChevronRight
@@ -345,6 +313,24 @@ import {
 // Use the v3 layout without default header/footer
 definePageMeta({
   layout: 'default'
+})
+
+// SEO Meta Tags
+useSeoMeta({
+  title: 'About Us - Acorn Globus | Our Story, Team & Values',
+  description: 'Learn about Acorn Globus journey from a solo project to a thriving team of 16+ passionate innovators. Meet our founders Ankit Singhania and Tarun Bhukya and discover our culture-first approach.',
+  keywords: 'about acorn globus, software development team, founders, company history, tech team, startup story, culture first hiring',
+  author: 'Acorn Globus',
+  robots: 'index, follow',
+  ogTitle: 'About Us - Acorn Globus | Our Story, Team & Values',
+  ogDescription: 'Learn about Acorn Globus journey from a solo project to a thriving team of 16+ passionate innovators. Meet our founders Ankit Singhania and Tarun Bhukya and discover our culture-first approach.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/about',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'About Us - Acorn Globus | Our Story, Team & Values',
+  twitterDescription: 'Learn about Acorn Globus journey from a solo project to a thriving team of 16+ passionate innovators. Meet our founders and discover our culture-first approach.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 const activeValue = ref(0)
@@ -432,14 +418,14 @@ const founders = [
     name: 'Ankit Singhania',
     role: 'Co-Founder',
     bio: 'Visionary leader with a passion for building innovative solutions that make a real impact.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+    image: '/images/ankit.jpeg',
     linkedin: '#'
   },
   {
     name: 'Tarun Bhukya',
     role: 'Co-Founder',
     bio: 'Technical architect who believes in the power of clean code and exceptional user experiences.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80',
+    image: '/images/tarun.jpeg',
     linkedin: '#'
   }
 ]

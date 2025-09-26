@@ -16,14 +16,14 @@
 
           <div class="hidden lg:flex items-center space-x-8">
             <NuxtLink to="/" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="//about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="//services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="//portfolio" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="//contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</NuxtLink>
+            <NuxtLink to="/about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</NuxtLink>
+            <NuxtLink to="/services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</NuxtLink>
+            <NuxtLink to="/portfolio" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Portfolio</NuxtLink>
+            <NuxtLink to="/contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</NuxtLink>
           </div>
 
           <NuxtLink
-            to="//contact"
+            to="/contact"
             class="hidden lg:inline-flex items-center px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
           >
             Start a Project
@@ -60,7 +60,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all transform hover:scale-105"
             >
               Discuss Your Project
@@ -150,7 +150,7 @@
               </div>
 
               <NuxtLink
-                to="//contact"
+                to="/contact"
                 class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all"
               >
                 Get Started
@@ -323,7 +323,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <NuxtLink
-              to="//contact"
+              to="/contact"
               class="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all transform hover:scale-105"
             >
               Start a Conversation
@@ -355,7 +355,6 @@ import { ref } from 'vue'
 import {
   ArrowRight,
   Clock,
-  Code2,
   Users,
   Target,
   TrendingUp,

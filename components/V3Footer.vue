@@ -13,14 +13,11 @@
             Crafting digital experiences with passion and innovation. Your trusted partner for transformative solutions.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors">
+            <a href="https://www.linkedin.com/company/acornglobus" target="_blank" class="text-gray-400 hover:text-purple-600 transition-colors">
               <Linkedin class="h-5 w-5" />
             </a>
-            <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors">
-              <Twitter class="h-5 w-5" />
-            </a>
-            <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors">
-              <Github class="h-5 w-5" />
+            <a href="https://www.instagram.com/acornglobus/?hl=en" target="_blank" class="text-gray-400 hover:text-purple-600 transition-colors">
+              <Instagram class="h-5 w-5" />
             </a>
           </div>
         </div>
@@ -38,10 +35,10 @@
         <div>
           <h4 class="text-gray-900 font-semibold mb-4">Services</h4>
           <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/v3/services/resource-augmentation" class="hover:text-purple-600 transition-colors">Resource Augmentation</NuxtLink></li>
-            <li><NuxtLink to="/v3/services/long-term-projects" class="hover:text-purple-600 transition-colors">Long-Term Projects</NuxtLink></li>
-            <li><NuxtLink to="/v3/services/maintenance-support" class="hover:text-purple-600 transition-colors">Maintenance & Support</NuxtLink></li>
-            <li><NuxtLink to="/v3/services/mvp-development" class="hover:text-purple-600 transition-colors">MVP Development</NuxtLink></li>
+            <li><NuxtLink to="/services/resource-augmentation" class="hover:text-purple-600 transition-colors">Resource Augmentation</NuxtLink></li>
+            <li><NuxtLink to="/services/long-term-projects" class="hover:text-purple-600 transition-colors">Long-Term Projects</NuxtLink></li>
+            <li><NuxtLink to="/services/maintenance-support" class="hover:text-purple-600 transition-colors">Maintenance & Support</NuxtLink></li>
+            <li><NuxtLink to="/services/mvp-development" class="hover:text-purple-600 transition-colors">MVP Development</NuxtLink></li>
           </ul>
         </div>
 
@@ -75,5 +72,5 @@
 </template>
 
 <script setup>
-import { Code2, MapPin, Mail, Linkedin, Twitter, Github } from 'lucide-vue-next'
+import { Code2, MapPin, Mail, Linkedin, Instagram } from 'lucide-vue-next'
 </script>
