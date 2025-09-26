@@ -50,10 +50,13 @@
                 {{ heroSlides[currentSlide].cta.text }}
                 <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </NuxtLink>
-              <button class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300">
+              <NuxtLink
+                to="/portfolio"
+                class="inline-flex items-center px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300"
+              >
                 <Sparkles class="mr-2 h-5 w-5" />
                 View Portfolio
-              </button>
+              </NuxtLink>
             </div>
 
             <!-- Slide Navigation -->
