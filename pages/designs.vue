@@ -78,7 +78,7 @@
             @click="openModal(design)"
           >
             <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-              <div class="relative h-64">
+              <div class="aspect-w-16 aspect-h-12 relative">
                 <img
                   :src="design.image"
                   :alt="design.title"
@@ -191,7 +191,7 @@
         </button>
 
         <div class="p-8">
-          <div class="mb-6 rounded-2xl overflow-hidden">
+          <div class="aspect-w-16 aspect-h-10 mb-6 rounded-2xl overflow-hidden">
             <img
               :src="selectedDesign.image"
               :alt="selectedDesign.title"
@@ -562,5 +562,20 @@ onUnmounted(() => {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 75%; /* 16:12 aspect ratio */
+}
+
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 </style>
