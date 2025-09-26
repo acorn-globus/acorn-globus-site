@@ -37,6 +37,12 @@
             Portfolio
           </NuxtLink>
           <NuxtLink
+            to="/designs"
+            :class="['font-medium transition-colors', currentPath === '/designs' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
+          >
+            Designs
+          </NuxtLink>
+          <NuxtLink
             to="/contact"
             :class="['font-medium transition-colors', currentPath === '/contact' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
           >
@@ -92,6 +98,13 @@
             @click="isMobileMenuOpen = false"
           >
             Portfolio
+          </NuxtLink>
+          <NuxtLink
+            to="/designs"
+            :class="['block px-3 py-2 rounded-md font-medium transition-colors', currentPath === '/designs' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100']"
+            @click="isMobileMenuOpen = false"
+          >
+            Designs
           </NuxtLink>
           <NuxtLink
             to="/contact"
