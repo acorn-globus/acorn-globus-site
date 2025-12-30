@@ -27,11 +27,7 @@ export default defineNuxtConfig({
     cssPath: "~/assets/css/tailwind.css",
   },
 
-  content: {
-    markdown: {
-      anchorLinks: false,
-    },
-  },
+  content: {},
 
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
@@ -67,5 +63,5 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2025-02-06',
+  compatibilityDate: '2025-12-29',
 });
