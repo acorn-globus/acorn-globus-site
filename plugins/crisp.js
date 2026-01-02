@@ -1,4 +1,4 @@
-export default () => {
+export default defineNuxtPlugin(() => {
     window.$crisp = [];
     window.CRISP_WEBSITE_ID = "5d6686bf-eb0b-42b5-8a6a-0ce2471c3edd";
   
@@ -10,4 +10,4 @@ export default () => {
       s.async = 1;
       d.getElementsByTagName("head")[0].appendChild(s);
     })();
-  };
+});
