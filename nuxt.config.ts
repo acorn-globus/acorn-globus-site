@@ -6,8 +6,8 @@ export default defineNuxtConfig({
       noscript: [
         {
           // Only the noscript iframe for body
-          children: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKLMW4G" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
-          tagPosition: 'bodyOpen' 
+          innerHTML: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKLMW4G" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+          tagPosition: 'bodyOpen'
         },
       ]
     },
@@ -40,19 +40,11 @@ export default defineNuxtConfig({
   // content: {
   //     liveEdit: false,
   // },
+
   plugins: [
-    {
-      src: "~/plugins/crisp.js",
-      mode: 'client',
-    },
-    {
-      src: '~/plugins/clarity.js',
-      mode: 'client'
-    },
-    {
-      src: '~/plugins/gtm.js',
-      mode: 'client'
-    }
+    '~/plugins/crisp.client.js',
+    '~/plugins/clarity.client.js',
+    '~/plugins/gtm.client.js',
   ],
 
   vue: {

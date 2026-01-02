@@ -19,14 +19,15 @@
 <script setup>
 import BlogCard from "~/components/blog/BlogCard.vue";
 
-let { data: articles } = await useAsyncData("articles-list", () =>
-  queryContent("blog").find()
+const { data: articles } = await useAsyncData("articles-list", () =>
+  queryCollection("blog").all()
 );
-articles = articles.value;
 
-articles.forEach((article) => {
-  article.slug = article._path.replace("/blog/", "");
-});
+if (articles.value) {
+  articles.value.forEach((article) => {
+    article.slug = article.path.replace("/blog/", "");
+  });
+}
 
 useHead({
   title: "Blog | Acorn Globus",
