@@ -1,5 +1,4 @@
 <template>
-
   <div class="min-h-screen bg-white">
 
     <!-- Hero Section -->
@@ -22,46 +21,40 @@
           <div>
             <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
               <Sparkles class="h-4 w-4 mr-2" />
-              SaaS Product
+              Our Own SaaS Product
             </div>
 
-            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Formester
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              We Built Our Own SaaS. Here's What It Taught Us About Building Yours.
             </h1>
-            <p class="text-2xl text-purple-600 font-semibold mb-4">
-              {{ projectOverview.tagline }}
-            </p>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Our flagship SaaS product showcasing our expertise in building scalable,
-              user-centric applications. Formester demonstrates our ability to identify market
-              opportunities and deliver innovative solutions.
+              Formester is our SaaS product -- a no-code, AI-powered form builder used by real
+              businesses every day. Building it changed how we work with every client.
             </p>
 
             <div class="flex flex-wrap gap-4 mb-8">
               <a
-                :href="`https://${projectOverview.website}`"
+                href="https://formester.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
               >
-                Visit Live Site
+                Visit Formester
                 <ExternalLink class="h-4 w-4 ml-2" />
               </a>
-              <button class="inline-flex items-center px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200">
-                Try Formester Free
+              <NuxtLink
+                to="/contact"
+                class="inline-flex items-center px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-purple-200"
+              >
+                Let's Talk
                 <ArrowRight class="h-4 w-4 ml-2" />
-              </button>
+              </NuxtLink>
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div v-for="[key, value] in Object.entries({
-                Product: projectOverview.product,
-                Type: projectOverview.type,
-                Status: projectOverview.status,
-                Launched: projectOverview.launched
-              })" :key="key">
-                <p class="text-sm text-gray-500 mb-1">{{ key }}</p>
-                <p class="font-semibold text-gray-900">{{ value }}</p>
+              <div v-for="(item, idx) in heroMeta" :key="idx">
+                <p class="text-sm text-gray-500 mb-1">{{ item.label }}</p>
+                <p class="font-semibold text-gray-900">{{ item.value }}</p>
               </div>
             </div>
           </div>
@@ -69,8 +62,8 @@
           <div class="relative">
             <div class="aspect-w-16 aspect-h-10 rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
-                alt="Formester Dashboard"
+                src="~/assets/images/projects/formester-main.png"
+                alt="Formester - AI-powered no-code form builder dashboard"
                 class="w-full h-full object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent"></div>
@@ -80,192 +73,175 @@
       </div>
     </section>
 
-    <!-- Results Section -->
-    <section class="py-20 bg-white">
+    <!-- Ratings Bar -->
+    <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(result, idx) in results" :key="idx" class="text-center">
+          <div v-for="(rating, idx) in ratings" :key="idx" class="text-center">
             <div class="inline-flex items-center justify-center w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl mb-4">
-              <component :is="result.icon" class="h-6 w-6" />
+              <component :is="rating.icon" class="h-6 w-6" />
             </div>
-            <div class="text-3xl font-bold text-gray-900 mb-1">{{ result.metric }}</div>
-            <div class="text-gray-600">{{ result.label }}</div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">{{ rating.metric }}</div>
+            <div class="text-gray-600">{{ rating.label }}</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Challenge & Solution -->
+    <!-- The Story: It Started With a Question -->
     <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Challenge -->
-          <div>
-            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-red-100 text-red-600 rounded-2xl mb-6">
-                <Target class="h-7 w-7" />
-              </div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ challenge.title }}</h2>
-              <p class="text-gray-600 mb-6 leading-relaxed">{{ challenge.description }}</p>
-              <ul class="space-y-3">
-                <li v-for="(point, idx) in challenge.points" :key="idx" class="flex items-start">
-                  <ChevronRight class="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700">{{ point }}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Solution -->
-          <div>
-            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-2xl mb-6">
-                <CheckCircle class="h-7 w-7" />
-              </div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ solution.title }}</h2>
-              <p class="text-gray-600 mb-6 leading-relaxed">{{ solution.description }}</p>
-              <ul class="space-y-3">
-                <li v-for="(point, idx) in solution.points" :key="idx" class="flex items-start">
-                  <CheckCircle class="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700">{{ point }}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">It Started With a Question</h2>
+        <div class="prose prose-lg prose-gray max-w-none">
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Here's what we noticed after years of building products for clients: we were good at
+            executing on requirements. Really good. But there was a gap between executing on a spec
+            and truly owning the outcome.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            When a client asked us to build a feature, we built it. When they asked us to fix a bug,
+            we fixed it. But we wanted to know what it feels like on the other side -- to be the ones
+            deciding what gets built, the ones losing sleep over churn, the ones watching real users
+            struggle with something you designed.
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            So we built Formester. Not as a side project. Not as a tech demo. As a real product, with
+            real users, real revenue goals, and real consequences for every decision.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Key Features -->
+    <!-- What We Built -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Features Delivered</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            We built comprehensive features that set Formester apart from the competition
+        <div class="max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Built</h2>
+          <p class="text-lg text-gray-600">
+            Formester is a form builder -- but that understates it. The surface is simple. What's
+            underneath is not.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="(feature, idx) in features"
             :key="idx"
-            :class="[
-              'bg-white rounded-3xl p-8 cursor-pointer transition-all duration-300',
-              activeFeature === idx
-                ? 'shadow-2xl scale-105 border-2 border-purple-500'
-                : 'shadow-lg hover:shadow-xl'
-            ]"
-            @click="activeFeature = idx"
+            class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <div class="inline-flex items-center justify-center w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl mb-6">
               <component :is="feature.icon" class="h-6 w-6" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">{{ feature.title }}</h3>
-            <p class="text-gray-600 mb-6">{{ feature.description }}</p>
-            <ul class="space-y-2">
-              <li v-for="(detail, detailIdx) in feature.details" :key="detailIdx" class="flex items-center text-sm text-gray-700">
-                <CheckCircle class="h-4 w-4 text-purple-500 mr-2" />
-                {{ detail }}
-              </li>
-            </ul>
+            <p class="text-gray-600">{{ feature.description }}</p>
           </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-12">
+          <p class="text-gray-500 text-sm">
+            Under the hood: Ruby on Rails, Vue.js, PostgreSQL, Redis, AWS, and OpenAI API. Each
+            chosen for a specific reason -- Rails for iteration speed, PostgreSQL for data integrity
+            at scale.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Development Principles -->
+    <!-- Five Lessons -->
     <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Product Philosophy</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Formester embodies our approach to product development - user-focused, iterative, and built to last
-          </p>
-        </div>
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Five Things Building Formester Taught Us</h2>
+        <p class="text-lg text-gray-600 mb-12">
+          These aren't abstract lessons. They're things we learned the hard way, and they've changed
+          how we approach every client engagement.
+        </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div v-for="(principle, idx) in principles" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center">
-                  <Rocket class="h-5 w-5" />
-                </div>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">{{ principle.title }}</h3>
-                <p class="text-gray-600">{{ principle.description }}</p>
-              </div>
+        <div class="space-y-16">
+          <div v-for="(lesson, idx) in lessons" :key="idx">
+            <div class="flex items-start gap-4 mb-4">
+              <span class="flex-shrink-0 w-10 h-10 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center font-bold text-lg">
+                {{ idx + 1 }}
+              </span>
+              <h3 class="text-2xl font-bold text-gray-900 pt-1">{{ lesson.title }}</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-4 ml-14">{{ lesson.story }}</p>
+            <div class="ml-14 bg-purple-50 rounded-2xl p-6">
+              <p class="text-sm font-semibold text-purple-700 mb-2">How this shows up in client work</p>
+              <p class="text-gray-700">{{ lesson.clientImpact }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technologies Used -->
+    <!-- The Numbers -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Technology Stack</h2>
-          <p class="text-lg text-gray-600">
-            Built with modern, scalable technologies
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">The Numbers</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            These aren't projections. They're the result of years of building, listening to users, and
+            making the product better every week.
           </p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-4">
-          <span
-            v-for="(tech, idx) in technologies"
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            v-for="(stat, idx) in stats"
             :key="idx"
-            class="px-6 py-3 bg-gradient-to-br from-purple-50 to-indigo-50 text-purple-700 rounded-full font-semibold hover:shadow-md transition-all duration-300"
+            class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 text-center"
           >
-            {{ tech }}
-          </span>
+            <div class="text-2xl font-bold text-gray-900 mb-2">{{ stat.value }}</div>
+            <div class="text-gray-600 text-sm">{{ stat.label }}</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-3xl p-12 shadow-xl relative">
-          <div class="absolute top-8 left-8">
-            <MessageSquare class="h-8 w-8 text-purple-200" />
-          </div>
+    <!-- Why This Matters For You -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why This Matters for You</h2>
+        <div class="prose prose-lg prose-gray max-w-none mb-12">
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Formester is our proof. It's proof that we understand what it means to own a product, not
+            just deliver one. It's proof that we know the difference between shipping a feature and
+            solving a user's problem. And it's proof that we think about long-term maintainability
+            because we live with the consequences of every decision we make.
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            When we say "we build it like it's ours," that's not a tagline. It's literally what we do.
+            We've been doing it with Formester since we started, and we bring that same ownership
+            mindset to every product we touch.
+          </p>
+        </div>
 
-          <blockquote class="text-xl text-gray-700 italic leading-relaxed mb-8">
-            "{{ testimonial.content }}"
-          </blockquote>
-
-          <div class="flex items-center">
-            <img
-              :src="testimonial.avatar"
-              :alt="testimonial.author"
-              class="w-12 h-12 rounded-full mr-4"
-            />
-            <div>
-              <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
-              <div class="text-sm text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</div>
-            </div>
+        <div class="space-y-6">
+          <div v-for="(audience, idx) in audiences" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ audience.title }}</h3>
+            <p class="text-gray-600">{{ audience.description }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-white">
-      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Build Your Own Success Story
-        </h2>
-        <p class="text-xl text-gray-600 mb-8">
-          Just like Formester, we can help transform your ideas into successful products
+    <section class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+      <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <p class="text-gray-600 italic mb-4">
+          Formester is live at
+          <a href="https://formester.com" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:text-purple-700 underline">formester.com</a>.
+          We built it. We maintain it. We use what we learn from it every single day.
         </p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Want a team that builds your product with the same care we put into ours?
+        </h2>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
-            Start Your Project
+            Let's Talk
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
@@ -278,159 +254,132 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="flex items-center space-x-3 mb-4 md:mb-0">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500">Digital Solutions Partner</div>
-            </div>
-          </div>
-
-          <div class="flex items-center space-x-6">
-            <a href="mailto:business@acornglobus.com" class="text-gray-600 hover:text-purple-600 transition-colors">
-              business@acornglobus.com
-            </a>
-            <span class="text-gray-400">|</span>
-            <span class="text-gray-600">© 2024 Acorn Globus</span>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
 import {
-  ArrowRight, Sparkles, Zap, Users, TrendingUp, Rocket,
-  CheckCircle, Star, ChevronRight, Brain, BarChart3, Layout,
-  MessageSquare, ArrowLeft, ExternalLink, Clock, Target, Award
+  ArrowRight, Sparkles, Users, Star, ChevronRight, Brain, BarChart3, Layout,
+  ArrowLeft, ExternalLink, Award, Zap, CreditCard, GitBranch
 } from 'lucide-vue-next'
 
-// Use the v3 layout
 definePageMeta({
   layout: 'default'
 })
 
-const activeFeature = ref(0)
+useSeoMeta({
+  title: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
+  description: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  keywords: 'product engineering team that builds its own products, Formester case study, AcornGlobus SaaS, form builder, product ownership',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
+  ogDescription: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/case-studies/formester',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
+  twitterDescription: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
 
-const projectOverview = {
-  product: 'Formester',
-  industry: 'SaaS / Software',
-  type: 'Our Own Product',
-  status: 'Live & Growing',
-  launched: '2023',
-  website: 'formester.com',
-  tagline: 'AI-Powered No-Code Form Builder'
-}
+const heroMeta = [
+  { label: 'Product', value: 'Formester' },
+  { label: 'Type', value: 'Our Own SaaS' },
+  { label: 'Status', value: 'Live & Growing' },
+  { label: 'Stack', value: 'Rails + Vue.js' },
+]
 
-const challenge = {
-  title: 'Why We Built Formester',
-  description: 'We saw an opportunity in the form builder market. Most solutions were either too complex for non-technical users or too limited for advanced needs. We wanted to create something different - a platform that combines simplicity with power.',
-  points: [
-    'Most form builders required coding knowledge',
-    'Lack of AI-powered form generation',
-    'Limited insights and analytics',
-    'Poor user experience for non-technical users'
-  ]
-}
-
-const solution = {
-  title: 'What We Built',
-  description: 'We created Formester as a bootstrapped SaaS product, demonstrating our ability to conceptualize, build, and scale a complete product. Every feature was carefully crafted based on real user needs.',
-  points: [
-    'Intuitive no-code builder anyone can use',
-    'First-to-market AI form generation',
-    'Comprehensive analytics dashboard',
-    'Enterprise-grade integrations'
-  ]
-}
+const ratings = [
+  { metric: '4.7/5', label: 'G2 (33 reviews)', icon: Star },
+  { metric: '4.4/5', label: 'Trustpilot', icon: Star },
+  { metric: '5/5', label: 'Product Hunt & Capterra', icon: Award },
+  { metric: '1,000+', label: 'Zapier Integrations', icon: Zap },
+]
 
 const features = [
   {
     icon: Brain,
-    title: 'AI Form Generation',
-    description: 'Describe your form in plain English and watch AI create it instantly. No templates, no restrictions - just pure creativity.',
-    details: [
-      'Natural language processing',
-      'Smart field suggestions',
-      'Automatic validation rules',
-      'Multi-language support'
-    ]
+    title: 'AI-Powered Form Creation',
+    description: 'Users describe what they need in plain language. The AI generates a complete form with logic, validation, and structure. No dragging, no dropping, no template hunting.',
+  },
+  {
+    icon: GitBranch,
+    title: 'Conditional Logic for Everyone',
+    description: 'Branch paths, skip logic, calculated fields -- all configured visually. Built because we watched users struggle with tools that required code for anything beyond a basic contact form.',
+  },
+  {
+    icon: CreditCard,
+    title: 'Payment Processing Baked In',
+    description: 'Stripe and PayPal integration for subscriptions, one-time payments, donations, and product orders. Not a bolt-on -- a core part of the product.',
+  },
+  {
+    icon: Users,
+    title: 'Real-Time Collaboration',
+    description: 'Teams can co-edit forms, set granular permissions, and submit collaboratively. We built this because our own team needed it.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Analytics That Answer "So What?"',
+    description: 'Drop-off analysis, funnel tracking, GA4 integration. Not just "you got 500 responses" but "42% of users abandon at question 7."',
   },
   {
     icon: Layout,
     title: 'No-Code Builder',
-    description: 'Build complex, multi-step forms with conditional logic without writing a single line of code.',
-    details: [
-      'Drag-and-drop interface',
-      'Conditional logic builder',
-      'Custom styling options',
-      'Responsive design'
-    ]
+    description: 'Build complex, multi-step forms with drag-and-drop. Custom styling, responsive design, and 1,000+ integrations via Zapier plus native Slack, Sheets, Salesforce, and HubSpot.',
   },
-  {
-    icon: BarChart3,
-    title: 'Smart Analytics',
-    description: 'Get deep insights into form performance, user behavior, and conversion rates with our intelligent analytics.',
-    details: [
-      'Real-time data tracking',
-      'Conversion funnel analysis',
-      'A/B testing capabilities',
-      'Custom report generation'
-    ]
-  }
 ]
 
-const results = [
-  { metric: '1000+', label: 'Active Users', icon: Users },
-  { metric: '50K+', label: 'Forms Created', icon: Layout },
-  { metric: '95%', label: 'User Satisfaction', icon: Star },
-  { metric: '3x', label: 'Faster Form Creation', icon: Zap }
-]
-
-const technologies = [
-  'Ruby on Rails',
-  'Vue.js',
-  'PostgreSQL',
-  'Redis',
-  'AWS',
-  'OpenAI API',
-  'Stripe',
-  'SendGrid'
-]
-
-const principles = [
+const lessons = [
   {
-    title: 'Ship Fast, Learn Faster',
-    description: 'We believe in rapid iteration and continuous deployment to quickly validate ideas.'
+    title: 'The spec is never the product',
+    story: 'When we wrote Formester\'s initial requirements, we thought we knew what users wanted. We were wrong about a lot of it. The feature we were most excited about got almost no usage. The feature we added as an afterthought became one of the most-used parts of the product.',
+    clientImpact: 'We don\'t just build what\'s in the spec. We ask why each feature exists, who it\'s for, and what outcome it should drive. When we see a feature that might not land with users, we say so -- honestly and early.',
   },
   {
-    title: 'User Feedback Drives Our Roadmap',
-    description: 'Every feature is built based on real user needs and feedback.'
+    title: 'Technical debt is personal when it\'s your product',
+    story: 'When you\'re building for someone else, shortcuts feel like trade-offs. When you\'re building for yourself, shortcuts feel like setting a trap for future-you. We\'ve lived with every architectural decision we made on Formester -- the good ones and the ones we wish we could take back.',
+    clientImpact: 'We build for the team that comes after us. Clean code, clear documentation, no lock-in. Because we know what it\'s like to inherit your own mess six months later.',
   },
   {
-    title: 'Embrace Mistakes as Learning',
-    description: 'We view failures as opportunities to improve and innovate.'
+    title: 'Shipping is the beginning, not the end',
+    story: 'Formester\'s launch was the easiest part. What came after -- monitoring, user support, performance tuning, iterating based on feedback, deciding what not to build -- that\'s where the real work lives.',
+    clientImpact: 'We think about Day 2 from Day 1. How will this be monitored? How will the team debug this at 2 AM? What happens when traffic spikes? We plan for the product\'s life, not just its launch.',
   },
   {
-    title: 'Focus on User Happiness',
-    description: 'Without investor pressure, we can focus solely on making users successful.'
-  }
+    title: 'Users don\'t care about your architecture',
+    story: 'Nobody signs up for Formester because we use PostgreSQL. They sign up because they can build a payment form in three minutes. We learned to measure every technical decision by its impact on the user, not its elegance.',
+    clientImpact: 'When we recommend a technology or architecture, we explain it in terms of what it means for the user and the business. "We chose PostgreSQL for ACID compliance at scale" is something we say to CTOs. To founders, we say "your data will be consistent and safe, even when thousands of people are using your product at the same time."',
+  },
+  {
+    title: 'Ownership means staying',
+    story: 'We didn\'t ship Formester and move on. We\'re still building it. Still improving it. Still fixing the things that break. That\'s what ownership actually means -- not a mindset you put on for a meeting, but a commitment you live with every day.',
+    clientImpact: 'PerformLine started with 1 engineer and grew to 8+ over 2 years. Eitoss started as an MVP we shipped in 3 months -- they raised funding, and we\'re still building together more than 2 years later. We stay because that\'s what partners do.',
+  },
 ]
 
-const testimonial = {
-  content: "Formester has completely transformed how we collect customer feedback. The AI form generation saves us hours every week, and the analytics help us understand our users better than ever before.",
-  author: "Sarah Mitchell",
-  role: "Product Manager",
-  company: "TechStart Inc.",
-  avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-}
+const stats = [
+  { value: '4.7/5 stars', label: 'G2 (33 reviews)' },
+  { value: '4.4/5 stars', label: 'Trustpilot' },
+  { value: '5/5 stars', label: 'Product Hunt and Capterra' },
+  { value: 'Rising Star Award', label: 'FinancesOnline' },
+  { value: 'Top Form Builder', label: 'Recognized by Research.com' },
+  { value: '1,000+ Integrations', label: 'Zapier, Slack, Sheets, Salesforce, HubSpot' },
+]
+
+const audiences = [
+  {
+    title: 'For funded startups',
+    description: 'You need a team that cares about your runway as much as you do. Because we\'ve built our own product on limited resources, we know the difference between "nice to have" and "need to ship." We\'ll help you scope ruthlessly and build what actually moves your metrics.',
+  },
+  {
+    title: 'For non-technical founders',
+    description: 'You need a team that explains what they\'re building and why. Because we\'ve been on both sides -- the builders and the product owners -- we translate technical decisions into business impact. You\'ll always understand what you\'re paying for.',
+  },
+  {
+    title: 'For growing companies',
+    description: 'You need engineers who think beyond the ticket. Because we\'ve maintained our own product for years, we build with operations, scale, and future development in mind. Your code will be something your next hire can understand on day one.',
+  },
+]
 </script>
