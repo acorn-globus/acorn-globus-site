@@ -155,6 +155,57 @@ export function useBlogPostSchema(post: {
 }
 
 /**
+ * Injects Article JSON-LD schema for long-form guide/pillar pages.
+ */
+export function useArticleSchema(article: {
+  title: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified?: string
+  author?: string
+  image?: string
+  wordCount?: number
+}) {
+  useHead({
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: article.title,
+          description: article.description,
+          url: `${SITE_URL}${article.url}`,
+          datePublished: article.datePublished,
+          dateModified: article.dateModified || article.datePublished,
+          author: {
+            '@type': 'Organization',
+            name: article.author || ORG_NAME,
+            url: SITE_URL,
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: ORG_NAME,
+            url: SITE_URL,
+            logo: {
+              '@type': 'ImageObject',
+              url: ORG_LOGO,
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `${SITE_URL}${article.url}`,
+          },
+          ...(article.image ? { image: article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}` } : {}),
+          ...(article.wordCount ? { wordCount: article.wordCount } : {}),
+        }),
+      },
+    ],
+  })
+}
+
+/**
  * Injects FAQPage JSON-LD schema.
  * @param faqs Array of { question, answer } pairs.
  */

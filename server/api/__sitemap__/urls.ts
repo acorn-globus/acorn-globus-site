@@ -35,6 +35,10 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/technologies/dotnet', changefreq: 'monthly', priority: 0.6 },
     { loc: '/technologies/ruby-on-rails', changefreq: 'monthly', priority: 0.6 },
 
+    // Guides (pillar pages)
+    { loc: '/guides/it-staff-augmentation', changefreq: 'monthly', priority: 0.9 },
+    { loc: '/guides/mvp-development', changefreq: 'monthly', priority: 0.9 },
+
     // Blog index
     { loc: '/blog', changefreq: 'weekly', priority: 0.7 },
 
