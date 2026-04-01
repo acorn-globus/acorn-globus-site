@@ -341,20 +341,51 @@ definePageMeta({
 // SEO Meta Tags
 useSeoMeta({
   title: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  description: 'Ready to transform your ideas into reality? Contact Acorn Globus for software development, resource augmentation, and IT solutions. Free consultation available.',
+  description: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you -- resource augmentation, MVP development, and full project delivery. Free consultation available.',
   keywords: 'contact acorn globus, software development inquiry, IT consultation, project quote, business inquiry, tech partner',
   author: 'Acorn Globus',
   robots: 'index, follow',
   ogTitle: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  ogDescription: 'Ready to transform your ideas into reality? Contact Acorn Globus for software development, resource augmentation, and IT solutions. Free consultation available.',
+  ogDescription: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you -- resource augmentation, MVP development, and full project delivery. Free consultation available.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/contact',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  twitterDescription: 'Ready to transform your ideas into reality? Contact Acorn Globus for software development, resource augmentation, and IT solutions.',
+  twitterDescription: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you. Free consultation available.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useBreadcrumbSchema([
+  { name: 'Contact', path: '/contact' },
+])
+
+useFaqSchema([
+  {
+    question: 'What services does AcornGlobus offer?',
+    answer: 'We offer four core services: Resource Augmentation (dedicated engineers who embed with your team), MVP Development (ship a real product in 6-12 weeks), Full Project Delivery (end-to-end product engineering), and Maintenance & Support (ongoing care from the team that built it).',
+  },
+  {
+    question: 'How quickly can you start on a project?',
+    answer: 'For resource augmentation, we can typically match engineers and begin within 1-2 weeks. For MVP and full project delivery, we start with a discovery phase within the first week of engagement.',
+  },
+  {
+    question: 'What technologies do you work with?',
+    answer: 'We are stack-agnostic and pick the right technology for your problem. Our team has experience with React, Vue.js, Angular, Node.js, Ruby on Rails, Python, .NET, and more. We work with AWS, Azure, and GCP for cloud infrastructure.',
+  },
+  {
+    question: 'Do you offer a trial period?',
+    answer: 'Yes. For resource augmentation, we offer a 2-week trial period where our engineers join your team with zero commitment. You evaluate fit and productivity before making any long-term decisions.',
+  },
+  {
+    question: 'Who owns the code?',
+    answer: 'You do. 100% code ownership from day one. We build for your independence with clean code, full documentation, and zero lock-in. If you want to bring development in-house later, we will help you do that.',
+  },
+  {
+    question: 'What is your minimum engagement?',
+    answer: 'For resource augmentation, the minimum is 1 engineer with a 3-month initial commitment. For MVP development, typical engagements are 6-12 weeks. For maintenance, the minimum retainer is 3 months.',
+  },
+])
 
 const formData = ref({
   fullName: '',
@@ -375,14 +406,14 @@ const services = [
   'Design',
   'Software Outsourcing',
   'IT Consulting',
-  'Cloud Solutions',
+  'Cloud Services',
   'Support & Maintenance',
   'DevOps Services',
   'QA & Testing',
   'Mobile App Development',
-  'Enterprise Solutions',
+  'Enterprise Software',
   'E-commerce Development',
-  'Custom Software Solutions'
+  'Custom Software'
 ]
 
 const countries = [
@@ -430,7 +461,7 @@ const faqs = [
   },
   {
     question: 'Do you provide support after project completion?',
-    answer: 'Yes, we offer comprehensive maintenance and support packages to ensure your solution continues to perform optimally.'
+    answer: 'Yes, we offer ongoing maintenance and support packages -- from basic monitoring to full 24/7 coverage -- to keep your product running smoothly.'
   },
   {
     question: 'Can you work with our existing team?',

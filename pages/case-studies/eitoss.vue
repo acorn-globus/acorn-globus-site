@@ -326,6 +326,28 @@ definePageMeta({
   layout: 'default'
 })
 
+useSeoMeta({
+  title: 'Eitoss Case Study | MVP to Funded Product in 12 Weeks | AcornGlobus',
+  description: 'How we shipped Eitoss\'s MVP in 12 weeks, helping them secure 60M yen in funding. From concept to funded startup — a partnership that continues 2+ years later.',
+  keywords: 'Eitoss case study, MVP development, startup funding, Kaizen communication, AcornGlobus portfolio',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Eitoss Case Study | MVP to Funded Product in 12 Weeks | AcornGlobus',
+  ogDescription: 'How we shipped Eitoss\'s MVP in 12 weeks, helping them secure 60M yen in funding. A partnership that continues 2+ years later.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/case-studies/eitoss',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Eitoss Case Study | MVP to Funded Product in 12 Weeks',
+  twitterDescription: 'How we shipped Eitoss\'s MVP in 12 weeks, helping them secure 60M yen in funding.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Case Studies', path: '/projects' },
+  { name: 'Eitoss', path: '/case-studies/eitoss' },
+])
+
 const activeFeature = ref(0)
 
 const projectOverview = {

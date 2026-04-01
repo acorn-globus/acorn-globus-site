@@ -292,15 +292,33 @@ definePageMeta({
   layout: 'default'
 })
 
-useHead({
+useSeoMeta({
   title: 'Maintenance & Support | We Built It, We Keep It Running | AcornGlobus',
-  meta: [
-    {
-      name: 'description',
-      content: 'Ongoing maintenance from the team that knows your product inside out. Bug fixes, security updates, performance monitoring, and improvements. Same engineers, same relationship.'
-    }
-  ]
+  description: 'Ongoing maintenance from the team that knows your product inside out. Bug fixes, security updates, performance monitoring, and improvements. Same engineers, same relationship.',
+  keywords: 'software maintenance, application support, bug fixes, security updates, performance monitoring, AcornGlobus',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Maintenance & Support | We Built It, We Keep It Running | AcornGlobus',
+  ogDescription: 'Ongoing maintenance from the team that knows your product inside out. Bug fixes, security updates, performance monitoring.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/maintenance-support',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Maintenance & Support | We Built It, We Keep It Running',
+  twitterDescription: 'Ongoing maintenance from the team that knows your product inside out. Same engineers, same relationship.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useServiceSchema({
+  name: 'Maintenance & Support',
+  description: 'Ongoing maintenance from the team that knows your product inside out. Bug fixes, security updates, performance monitoring, and improvements.',
+  url: '/services/maintenance-support',
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'Maintenance & Support', path: '/services/maintenance-support' },
+])
 
 const approach = [
   {

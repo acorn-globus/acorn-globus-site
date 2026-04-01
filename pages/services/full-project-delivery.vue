@@ -250,15 +250,33 @@ definePageMeta({
   layout: 'default'
 })
 
-useHead({
+useSeoMeta({
   title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  meta: [
-    {
-      name: 'description',
-      content: 'We build your product end-to-end with the same care we put into our own. One team, one relationship, milestone transparency. From architecture to launch and beyond.'
-    }
-  ]
+  description: 'We build your product end-to-end with the same care we put into our own. One team, one relationship, milestone transparency. From architecture to launch and beyond.',
+  keywords: 'full project delivery, end-to-end development, product engineering, software development, fixed price project, AcornGlobus',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
+  ogDescription: 'We build your product end-to-end with the same care we put into our own. One team, one relationship, milestone transparency.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/full-project-delivery',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering',
+  twitterDescription: 'We build your product end-to-end with the same care we put into our own. One team, one relationship, milestone transparency.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useServiceSchema({
+  name: 'Full Project Delivery',
+  description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
+  url: '/services/full-project-delivery',
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'Full Project Delivery', path: '/services/full-project-delivery' },
+])
 
 const approach = [
   {

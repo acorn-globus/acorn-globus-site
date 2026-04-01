@@ -14,15 +14,15 @@
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Transforming Ideas Into
+            Products We've Built
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              Digital Success Stories
+              And Stories Behind Them
             </span>
           </h1>
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            From innovative startups to established enterprises, we've helped businesses across the globe
-            achieve their digital transformation goals.
+            From our own SaaS product to funded startups and global nonprofits, here's the work
+            we're proud of -- and the partnerships that made it happen.
           </p>
         </div>
       </div>
@@ -274,7 +274,7 @@
           Have a Project in Mind?
         </h2>
         <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          Let's collaborate to transform your vision into a digital success story.
+          Let's build your next success story together. We'd love to hear about your idea.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
@@ -323,21 +323,25 @@ definePageMeta({
 
 // SEO Meta Tags
 useSeoMeta({
-  title: 'Portfolio - Acorn Globus | Case Studies & Success Stories',
-  description: 'Explore our portfolio of successful projects including Formester, EiToss, Rumie Initiative, and Invoice Falcon. See how we transform ideas into digital success stories.',
+  title: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
+  description: 'Explore our portfolio: Formester (our own SaaS, 1000+ users), Eitoss (MVP to funding in 8 weeks), Rumie (1M+ learners in 176 countries). Real products, real outcomes.',
   keywords: 'acorn globus portfolio, case studies, software development projects, formester, eitoss, rumie initiative, invoice falcon, success stories',
   author: 'Acorn Globus',
   robots: 'index, follow',
-  ogTitle: 'Portfolio - Acorn Globus | Case Studies & Success Stories',
-  ogDescription: 'Explore our portfolio of successful projects including Formester, EiToss, Rumie Initiative, and Invoice Falcon. See how we transform ideas into digital success stories.',
+  ogTitle: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
+  ogDescription: 'Explore our portfolio: Formester (our own SaaS, 1000+ users), Eitoss (MVP to funding in 8 weeks), Rumie (1M+ learners in 176 countries). Real products, real outcomes.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/portfolio',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Portfolio - Acorn Globus | Case Studies & Success Stories',
-  twitterDescription: 'Explore our portfolio of successful projects including Formester, EiToss, Rumie Initiative, and Invoice Falcon. Digital success stories.',
+  twitterTitle: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
+  twitterDescription: 'Explore our portfolio: Formester (our own SaaS), Eitoss (MVP to funding), Rumie (1M+ learners). Real products, real outcomes.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useBreadcrumbSchema([
+  { name: 'Portfolio', path: '/portfolio' },
+])
 
 const router = useRouter()
 const activeFilter = ref('all')
@@ -357,8 +361,8 @@ const projects = [
     name: 'Formester',
     category: 'saas',
     tagline: 'AI-Powered No-Code Form Builder',
-    description: 'Our flagship SaaS product - a revolutionary no-code form builder with AI capabilities. Build complex forms with advanced logic without writing a single line of code.',
-    longDescription: 'We built Formester to showcase our capability in creating innovative SaaS solutions. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.',
+    description: 'Our own SaaS product -- a no-code form builder with AI capabilities. Build complex forms with advanced logic without writing a single line of code.',
+    longDescription: 'We built Formester ourselves -- it\'s proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.8 rating. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.',
     isOwnProduct: true,
     technologies: ['Ruby on Rails', 'Vue.js', 'PostgreSQL', 'AI Integration', 'AWS'],
     features: [
@@ -382,8 +386,8 @@ const projects = [
     name: 'Eitoss',
     category: 'enterprise',
     tagline: 'Bridging Management & Frontline Workers',
-    description: 'An innovative platform implementing Kaizen principles to bridge the communication gap between management and frontline workers, driving continuous improvement.',
-    longDescription: 'Eitoss revolutionizes workplace communication by creating a seamless channel between decision-makers and ground-level employees, fostering a culture of continuous improvement and innovation.',
+    description: 'A platform implementing Kaizen principles to bridge the communication gap between management and frontline workers, driving continuous improvement.',
+    longDescription: 'Eitoss connects decision-makers with ground-level employees through a seamless communication channel, fostering a culture of continuous improvement. We shipped the MVP in 8 weeks, they raised funding, and we\'re still building together 2+ years later.',
     technologies: ['Ruby on Rails', 'React', 'PostgreSQL', 'AI Integration', 'Real-time Analytics'],
     features: [
       'Real-time communication channels',
@@ -404,9 +408,9 @@ const projects = [
     id: 3,
     name: 'Invoice Falcon',
     category: 'ecommerce',
-    tagline: 'Shopify Invoicing Revolution',
-    description: 'A comprehensive invoicing solution for Shopify merchants, transforming how businesses handle their billing and compliance needs globally.',
-    longDescription: 'Invoice Falcon simplifies invoicing for Shopify stores with automated generation, multi-currency support, and compliance with global tax regulations, making it the go-to solution for merchants worldwide.',
+    tagline: 'Shopify Invoicing Made Simple',
+    description: 'A full-featured invoicing app for Shopify merchants -- automated generation, multi-currency support, and tax compliance across 30+ countries.',
+    longDescription: 'Invoice Falcon simplifies invoicing for Shopify stores with automated generation, multi-currency support, and compliance with global tax regulations, serving 500+ merchants worldwide.',
     technologies: ['Ruby on Rails', 'React', 'Shopify API', 'AWS', 'Stripe'],
     features: [
       'Automated invoice generation',
@@ -459,8 +463,8 @@ const filteredProjects = computed(() => {
 const featuredProject = computed(() => projects.find(p => p.featured && p.id === 1))
 
 const stats = [
-  { value: '25+', label: 'Successful Projects', icon: Rocket },
-  { value: '98%', label: 'Client Satisfaction', icon: Star },
+  { value: '25+', label: 'Products Shipped', icon: Rocket },
+  { value: '80%+', label: 'Client Retention', icon: Star },
   { value: '15+', label: 'Industries Served', icon: Globe },
   { value: '1M+', label: 'End Users Impacted', icon: Users }
 ]

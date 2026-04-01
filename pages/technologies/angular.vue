@@ -190,30 +190,29 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Angular Development Services | AcornGlobus',
+  description: 'Professional Angular development services with expertise in building enterprise-grade applications. Specializing in Angular 12+ and modern web development.',
+  keywords: 'Angular development, Angular.js, TypeScript, enterprise applications, Angular developers, front-end development',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Angular Development Services | AcornGlobus',
+  ogDescription: 'Expert Angular development services with 6+ years of experience. Building enterprise-grade applications with modern best practices.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/technologies/angular',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Angular Development Services | AcornGlobus',
+  twitterDescription: 'Professional Angular development services for enterprise-grade applications.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Technologies', path: '/technologies/angular' },
+  { name: 'Angular', path: '/technologies/angular' },
+])
+// Keep canonical link
 useHead({
-  title: 'Angular Development Services | Acorn Globus',
-  meta: [
-    {
-      name: 'description',
-      content: 'Professional Angular development services with expertise in building enterprise-grade applications. Specializing in Angular 12+ and modern web development.'
-    },
-    {
-      name: 'keywords',
-      content: 'Angular development, Angular.js, TypeScript, enterprise applications, Angular developers, front-end development'
-    },
-    {
-      property: 'og:title',
-      content: 'Angular Development Services | Acorn Globus'
-    },
-    {
-      property: 'og:description',
-      content: 'Expert Angular development services with 6+ years of experience. Building enterprise-grade applications with modern best practices.'
-    },
-    {
-      property: 'og:type',
-      content: 'website'
-    }
-  ],
   link: [
     {
       rel: 'canonical',

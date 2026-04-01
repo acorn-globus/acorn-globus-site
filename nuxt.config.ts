@@ -3,11 +3,18 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      link: [
+        // Preconnect hints for external resources
+        { rel: 'preconnect', href: 'https://www.googletagmanager.com' },
+        { rel: 'preconnect', href: 'https://www.google-analytics.com' },
+        { rel: 'preconnect', href: 'https://client.crisp.chat' },
+        { rel: 'preconnect', href: 'https://www.clarity.ms' },
+      ],
       noscript: [
         {
           // Only the noscript iframe for body
           children: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKLMW4G" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
-          tagPosition: 'bodyOpen' 
+          tagPosition: 'bodyOpen'
         },
       ]
     },
@@ -21,7 +28,16 @@ export default defineNuxtConfig({
     "~/assets/css/main.css",
   ],
 
-  modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss", "notivue/nuxt"],
+  modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss", "notivue/nuxt", "@nuxtjs/sitemap"],
+
+  site: {
+    url: 'https://acornglobus.com',
+  },
+
+  sitemap: {
+    excludeAppSources: true,
+    sources: ['/api/__sitemap__/urls'],
+  },
 
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",

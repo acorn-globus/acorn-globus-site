@@ -94,14 +94,22 @@ const formatDate = (date) => {
 //   route.push("/blog/");
 // };
 
+const route = useRoute()
+const slug = route.params.slug
+
 useHead({
   link: [
     {
       rel: "canonical",
-      href: `https://www.acornglobus.com/blog/${useRoute().params.slug}`,
+      href: `https://acornglobus.com/blog/${slug}`,
     },
   ],
-});
+})
+
+useBreadcrumbSchema([
+  { name: 'Blog', path: '/blog' },
+  { name: String(slug), path: `/blog/${slug}` },
+]);
 </script>
 
 <style>

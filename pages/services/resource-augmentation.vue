@@ -269,15 +269,33 @@ definePageMeta({
   layout: 'default'
 })
 
-useHead({
+useSeoMeta({
   title: 'Resource Augmentation | Engineers Who Become Part of Your Team | AcornGlobus',
-  meta: [
-    {
-      name: 'description',
-      content: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.'
-    }
-  ]
+  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
+  keywords: 'resource augmentation, dedicated developers, team augmentation, staff augmentation, hire developers, AcornGlobus',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Resource Augmentation | Engineers Who Become Part of Your Team | AcornGlobus',
+  ogDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/resource-augmentation',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Resource Augmentation | Engineers Who Become Part of Your Team',
+  twitterDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useServiceSchema({
+  name: 'Resource Augmentation',
+  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. Named engineers, not a talent pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
+  url: '/services/resource-augmentation',
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'Resource Augmentation', path: '/services/resource-augmentation' },
+])
 
 const approach = [
   {

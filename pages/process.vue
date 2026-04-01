@@ -242,35 +242,24 @@
 </template>
 
 <script setup>
-useHead({
-  title: 'Our Development Process | Acorn Globus',
-  meta: [
-    {
-      name: 'description',
-      content: 'Learn about our proven development process that ensures successful project delivery. From understanding your vision to continuous improvement, discover how we build lasting digital solutions.'
-    },
-    {
-      name: 'keywords',
-      content: 'software development process, agile development, project management, digital transformation, software development lifecycle'
-    },
-    {
-      property: 'og:title',
-      content: 'Our Development Process | Acorn Globus'
-    },
-    {
-      property: 'og:description',
-      content: 'Discover our transparent and efficient development process that ensures successful project delivery and long-term partnerships.'
-    },
-    {
-      property: 'og:type',
-      content: 'website'
-    }
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://acornglobus.com/process'
-    }
-  ]
+useSeoMeta({
+  title: 'Our Development Process | AcornGlobus',
+  description: 'Learn about our proven development process that ensures successful project delivery. From understanding your vision to continuous improvement, discover how we build lasting digital solutions.',
+  keywords: 'software development process, agile development, project management, digital transformation, software development lifecycle',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Our Development Process | AcornGlobus',
+  ogDescription: 'Discover our transparent and efficient development process that ensures successful project delivery and long-term partnerships.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/process',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Our Development Process | AcornGlobus',
+  twitterDescription: 'Our transparent development process ensures successful project delivery and long-term partnerships.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useBreadcrumbSchema([
+  { name: 'Our Process', path: '/process' },
+])
 </script>

@@ -384,6 +384,28 @@ definePageMeta({
   layout: 'default'
 })
 
+useSeoMeta({
+  title: 'Rumie Case Study | Democratizing Education in 176 Countries | AcornGlobus',
+  description: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, 60% speed improvement, reaching learners in 176 countries. 4+ year ongoing partnership.',
+  keywords: 'Rumie case study, EdTech platform, education technology, offline learning, mobile app, AcornGlobus portfolio',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Rumie Case Study | Education in 176 Countries | AcornGlobus',
+  ogDescription: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, 60% speed improvement, reaching 176 countries.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/case-studies/rumie',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Rumie Case Study | Education in 176 Countries',
+  twitterDescription: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, reaching 176 countries.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Case Studies', path: '/projects' },
+  { name: 'Rumie', path: '/case-studies/rumie' },
+])
+
 const activeFeature = ref(0)
 
 const projectOverview = {

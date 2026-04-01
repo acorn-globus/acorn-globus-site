@@ -283,15 +283,33 @@ definePageMeta({
   layout: 'default'
 })
 
-useHead({
+useSeoMeta({
   title: 'MVP Development | Ship a Real Product, Not a Throwaway Prototype | AcornGlobus',
-  meta: [
-    {
-      name: 'description',
-      content: "We build MVPs that launch, raise funding, and keep growing. Eitoss shipped in 3 months, raised funding, and we're still building together 2 years later. 6-12 week timelines."
-    }
-  ]
+  description: 'We build MVPs that launch, raise funding, and keep growing. Eitoss shipped in 3 months, raised funding, and we\'re still building together 2 years later. 6-12 week timelines.',
+  keywords: 'MVP development, minimum viable product, startup MVP, product development, rapid prototyping, AcornGlobus',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'MVP Development | Ship a Real Product, Not a Throwaway Prototype | AcornGlobus',
+  ogDescription: 'We build MVPs that launch, raise funding, and keep growing. Eitoss shipped in 3 months, raised funding. 6-12 week timelines.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/mvp-development',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'MVP Development | Ship a Real Product | AcornGlobus',
+  twitterDescription: 'We build MVPs that launch, raise funding, and keep growing. 6-12 week timelines.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useServiceSchema({
+  name: 'MVP Development',
+  description: 'We build MVPs that launch, raise funding, and keep growing. Production-quality from day one, with clean code and proper architecture. 6-12 week timelines.',
+  url: '/services/mvp-development',
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'MVP Development', path: '/services/mvp-development' },
+])
 
 const approach = [
   {

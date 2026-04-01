@@ -202,7 +202,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Privacy Policy - Acorn Globus',
-  description: 'Learn how Acorn Globus collects, uses, and protects your personal information. Our comprehensive privacy policy ensures transparency and security.',
+  title: 'Privacy Policy - AcornGlobus',
+  description: 'Learn how AcornGlobus collects, uses, and protects your personal information. Our comprehensive privacy policy ensures transparency and security.',
+  robots: 'index, follow',
 })
+
+useBreadcrumbSchema([
+  { name: 'Privacy Policy', path: '/privacy-policy' },
+])
 </script>

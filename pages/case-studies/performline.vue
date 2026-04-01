@@ -399,8 +399,13 @@ useSeoMeta({
   title: 'PerformLine: From 1 Engineer to 8+ in 2 Years | AcornGlobus Case Study',
   ogTitle: 'PerformLine: From 1 Engineer to 8+ in 2 Years | AcornGlobus Case Study',
   description: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years — a resource augmentation partnership built on trust.',
-  ogDescription: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years — a resource augmentation partnership built on trust.'
+  ogDescription: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years — a resource augmentation partnership built on trust.',
 })
+
+useBreadcrumbSchema([
+  { name: 'Case Studies', path: '/projects' },
+  { name: 'PerformLine', path: '/case-studies/performline' },
+])
 
 const heroStats = [
   { label: 'Client', value: 'PerformLine' },

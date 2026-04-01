@@ -357,6 +357,28 @@ definePageMeta({
   layout: 'default'
 })
 
+useSeoMeta({
+  title: 'Invoice Falcon Case Study | Shopify Invoicing Platform Transformation | AcornGlobus',
+  description: 'How we transformed Invoice Falcon into a reliable Shopify invoicing platform: 99.9% uptime, 40% faster performance, 50% fewer support tickets. 2+ year ongoing partnership.',
+  keywords: 'Invoice Falcon case study, Shopify invoicing, platform transformation, e-commerce, AcornGlobus portfolio',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Invoice Falcon Case Study | Platform Transformation | AcornGlobus',
+  ogDescription: 'How we transformed Invoice Falcon: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Invoice Falcon Case Study | Platform Transformation',
+  twitterDescription: 'How we transformed Invoice Falcon: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Case Studies', path: '/projects' },
+  { name: 'Invoice Falcon', path: '/case-studies/invoice-falcon' },
+])
+
 const activeFeature = ref(0)
 
 const projectOverview = {

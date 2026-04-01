@@ -323,6 +323,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useBreadcrumbSchema([
+  { name: 'About', path: '/about' },
+])
+
 const countersVisible = ref(false)
 
 const stats = [

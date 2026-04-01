@@ -28,22 +28,26 @@ articles.forEach((article) => {
   article.slug = article._path.replace("/blog/", "");
 });
 
-useHead({
-  title: "Blog | Acorn Globus",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Explore articles on technology, innovation, and industry leadership.",
-    },
-  ],
-  link: [
-    {
-      rel: "canonical",
-      href: `https://www.acornglobus.com/blog`,
-    },
-  ],
-});
+useSeoMeta({
+  title: 'Blog | AcornGlobus',
+  description: 'Explore articles on technology, product engineering, and building software partnerships. Insights from the team behind Formester and 25+ client products.',
+  keywords: 'software development blog, product engineering, tech articles, AcornGlobus blog',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Blog | AcornGlobus',
+  ogDescription: 'Explore articles on technology, product engineering, and building software partnerships.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/blog',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Blog | AcornGlobus',
+  twitterDescription: 'Articles on technology, product engineering, and building software partnerships.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Blog', path: '/blog' },
+]);
 </script>
 
 <style>

@@ -300,10 +300,31 @@ import {
   ChevronRight, Star, Award, TrendingUp, Settings, Package, Globe
 } from 'lucide-vue-next'
 
-// Use the v3 layout without default header/footer
+// Use the v3 layout
 definePageMeta({
   layout: 'default'
 })
+
+useSeoMeta({
+  title: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  description: 'Resource augmentation, MVP development, full project delivery, and maintenance support. We build with you, not just for you. 20+ engineers, 80%+ client retention.',
+  keywords: 'software development services, resource augmentation, MVP development, full project delivery, maintenance support, AcornGlobus',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Services | Product Engineering & MVP Development | AcornGlobus',
+  ogDescription: 'Resource augmentation, MVP development, full project delivery, and maintenance support. We build with you, not just for you.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Services | Product Engineering & MVP Development | AcornGlobus',
+  twitterDescription: 'Resource augmentation, MVP development, full project delivery, and maintenance support. We build with you, not just for you.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+])
 
 const hoveredService = ref(null)
 const activeTab = ref('services')

@@ -284,6 +284,11 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useBreadcrumbSchema([
+  { name: 'Case Studies', path: '/projects' },
+  { name: 'Formester', path: '/case-studies/formester' },
+])
+
 const heroMeta = [
   { label: 'Product', value: 'Formester' },
   { label: 'Type', value: 'Our Own SaaS' },
