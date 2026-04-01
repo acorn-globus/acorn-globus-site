@@ -14,15 +14,15 @@
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Comprehensive Digital Solutions
+            How We Work
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              For Your Business Growth
+              With You
             </span>
           </h1>
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             From resource augmentation to full-scale development, we provide the expertise and
-            partnership your business needs to thrive in the digital age.
+            partnership your business needs to grow.
           </p>
         </div>
       </div>
@@ -214,7 +214,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Technology Stack</h2>
           <p class="text-lg text-gray-600">
-            We use cutting-edge technologies to build robust and scalable solutions
+            We pick the right tool for the job -- here's what we work with daily
           </p>
         </div>
 
@@ -236,14 +236,14 @@
             <Cpu class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Modern Stack</h3>
             <p class="text-gray-600">
-              We stay updated with the latest technologies to give you a competitive edge.
+              We use production-proven technologies that our team has shipped real products with.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg">
             <Layers class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Scalable Architecture</h3>
             <p class="text-gray-600">
-              Our solutions are built to grow with your business, ensuring long-term success.
+              We build to grow with your business -- clean code, proper documentation, zero lock-in.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg">
@@ -266,10 +266,10 @@
 
       <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Ready to Transform Your Business?
+          Have a Project in Mind?
         </h2>
         <p class="text-xl text-gray-600 mb-8">
-          Let's discuss how our services can help you achieve your goals
+          Let's talk about how we can help you build it
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
@@ -313,7 +313,7 @@ const services = [
     id: 1,
     icon: Users,
     title: 'Resource Augmentation',
-    description: 'Integrate our skilled professionals seamlessly into your existing workflows. Our experts become an extension of your team, bringing specialized knowledge and experience.',
+    description: 'Integrate our skilled professionals seamlessly into your existing workflows. Our engineers become an extension of your team, bringing specialized knowledge and experience.',
     features: [
       'Skilled developers & designers',
       'Flexible engagement models',
@@ -340,27 +340,27 @@ const services = [
   {
     id: 3,
     icon: Clock,
-    title: 'Short & Long-Term Projects',
-    description: 'Partner with us for comprehensive development projects. We handle everything from initial planning to deployment and beyond, ensuring project success.',
+    title: 'Full Project Delivery',
+    description: "Your product, built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.",
     features: [
-      'End-to-end development',
-      'Agile methodology',
-      'Regular milestones',
-      'Continuous delivery'
+      'End-to-end product engineering',
+      'Milestone transparency',
+      'Built to hand over — zero lock-in',
+      '4-week post-launch warranty'
     ],
     gradient: 'from-blue-500 to-pink-600',
-    link: '/services/long-term-projects'
+    link: '/services/full-project-delivery'
   },
   {
     id: 4,
     icon: Rocket,
     title: 'MVP Development',
-    description: 'Transform your ideas into reality quickly with our MVP development service. Launch your product in just 8-12 weeks with professional-grade quality.',
+    description: "Ship a real product, not a prototype you'll rewrite in six months. Production-ready from day one, with clean code and proper architecture.",
     features: [
-      '8-12 week timeline',
-      'Investor-ready MVPs',
-      'Agile development',
-      'Built-in analytics'
+      '6-12 week timeline',
+      'Production-quality from day one',
+      '100% code ownership',
+      'Post-launch support included'
     ],
     gradient: 'from-orange-500 to-red-600',
     link: '/services/mvp-development'
@@ -386,7 +386,7 @@ const process = [
     id: 2,
     phase: 'Strategy',
     title: 'Planning for Success',
-    description: 'We develop a comprehensive strategy that aligns with your business objectives and technical requirements.',
+    description: 'We develop a clear strategy that aligns with your business objectives and technical requirements.',
     activities: [
       'Architecture Design',
       'Technology Selection',
@@ -399,7 +399,7 @@ const process = [
   {
     id: 3,
     phase: 'Development',
-    title: 'Building Your Solution',
+    title: 'Building Your Product',
     description: 'Our team executes the plan with agile methodology, ensuring quality and timely delivery.',
     activities: [
       'Agile Development',
@@ -439,7 +439,7 @@ const technologies = [
 const differentiators = [
   {
     title: 'True Partnership Mindset',
-    description: "We don't just work for you - we work with you, treating your goals as our own.",
+    description: "We don't just work for you -- we work with you, treating your goals as our own.",
     icon: Heart
   },
   {
@@ -449,7 +449,7 @@ const differentiators = [
   },
   {
     title: 'Quality-First Approach',
-    description: 'Rigorous code reviews and testing ensure robust, maintainable solutions.',
+    description: 'Rigorous code reviews and testing ensure robust, maintainable code.',
     icon: Award
   },
   {

@@ -1,293 +1,235 @@
 <template>
   <div class="min-h-screen bg-white">
-    <!-- Navigation Header -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-yellow-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500">MVP Development</div>
-            </div>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="/about" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="/services" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="/portfolio" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="/contact" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contact</NuxtLink>
-          </div>
-
-          <NuxtLink
-            to="/contact"
-            class="hidden lg:inline-flex items-center px-6 py-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
-          >
-            Start Your MVP
-          </NuxtLink>
-
-          <button class="lg:hidden p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 overflow-hidden">
-      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-amber-200 rounded-full blur-3xl opacity-30" />
-      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-200 rounded-full blur-3xl opacity-30" />
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto">
-          <div class="inline-flex items-center px-4 py-2 bg-amber-100 rounded-full text-amber-800 text-sm font-medium mb-6">
-            <Rocket class="w-4 h-4 mr-2" />
-            MVP Development Service
-          </div>
-          <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Launch Your Product
-            <span class="block text-amber-600 mt-2">In Just 8-12 Weeks</span>
-          </h1>
-          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-            Transform your idea into a market-ready MVP. We help startups and enterprises
-            validate product concepts quickly with professional-grade minimum viable products.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center px-8 py-4 bg-amber-600 text-white font-semibold rounded-xl hover:bg-amber-700 transition-all transform hover:scale-105"
-            >
-              Start Your MVP
-              <ArrowRight class="ml-2 w-5 h-5" />
-            </NuxtLink>
-            <button class="inline-flex items-center px-8 py-4 bg-white text-amber-600 font-semibold rounded-xl border-2 border-amber-200 hover:bg-amber-50 transition-all">
-              View Success Stories
-              <ChevronDown class="ml-2 w-5 h-5" />
-            </button>
-          </div>
-        </div>
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-amber-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-yellow-100/30 rounded-full blur-3xl"></div>
       </div>
-    </section>
 
-    <!-- Key Stats -->
-    <section class="py-16 bg-white border-b">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div
-            v-for="(stat, index) in keyStats"
-            :key="index"
-            class="text-center"
-          >
-            <div class="text-3xl md:text-4xl font-bold text-amber-600 mb-2">
-              {{ stat.value }}{{ stat.suffix }}
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <NuxtLink
+          to="/services"
+          class="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium mb-6 transition-colors"
+        >
+          <ArrowLeft class="h-4 w-4 mr-2" />
+          Back to Services
+        </NuxtLink>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-6">
+              <Rocket class="h-4 w-4 mr-2" />
+              MVP Development
             </div>
-            <div class="text-gray-600">{{ stat.label }}</div>
+
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Ship a real product. Not a prototype you'll rewrite in six months.
+            </h1>
+
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              We build MVPs that are production-ready from day one — clean code, proper architecture,
+              ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+              <NuxtLink
+                to="/contact"
+                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+              >
+                Tell us about your product idea
+                <ArrowRight class="h-5 w-5 ml-2" />
+              </NuxtLink>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <Clock class="h-8 w-8 text-amber-600 mb-3" />
+                <div class="text-2xl font-bold text-gray-900">6-12</div>
+                <p class="text-sm text-gray-600">Weeks to Launch</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <Package class="h-8 w-8 text-amber-600 mb-3" />
+                <div class="text-2xl font-bold text-gray-900">25+</div>
+                <p class="text-sm text-gray-600">Products Shipped</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <TrendingUp class="h-8 w-8 text-green-600 mb-3" />
+                <div class="text-2xl font-bold text-gray-900">80%+</div>
+                <p class="text-sm text-gray-600">Client Retention</p>
+              </div>
+              <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <Shield class="h-8 w-8 text-amber-600 mb-3" />
+                <div class="text-2xl font-bold text-gray-900">100%</div>
+                <p class="text-sm text-gray-600">Code Ownership</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="py-20 bg-gradient-to-br from-amber-50 to-yellow-50">
+    <!-- Pain Point Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Your runway is ticking. You need builders, not promises.</h2>
+        <div class="text-lg text-gray-600 space-y-4 leading-relaxed">
+          <p>
+            You've got the vision. Maybe the funding too. What you don't have is six months to
+            hire a team, three months to onboard them, and patience for a prototype that falls
+            apart under real users.
+          </p>
+          <p>
+            You need a team that can start now, ship something real in weeks, and stick around
+            after launch — not disappear when the invoice clears.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">We build it like it's ours. Because we've built our own.</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            We created Formester — our own SaaS product, live and growing with real users and a
+            4.8 rating. That taught us what it actually feels like to ship something you care about.
+            The anxiety of launch day. The trade-offs between speed and quality. The difference
+            between a demo and a product.
+          </p>
+          <p class="text-lg text-gray-600 mt-4 leading-relaxed">We bring that same ownership to your MVP:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div v-for="(item, idx) in approach" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-amber-100 text-amber-600 rounded-xl mb-4">
+              <component :is="item.icon" class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ item.title }}</h3>
+            <p class="text-gray-600">{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof Story Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Eitoss: MVP in 3 months. Raised funding. Still building together.</h2>
+          <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
+            <p>
+              Eitoss came to us with a product vision and a timeline. We scoped the MVP together,
+              had a demoable product in 8 weeks, and launched into production in 3 months.
+            </p>
+            <p>
+              They used that product to raise funding. And then they kept building with us — not
+              because they had to, but because the partnership worked. Two years later, we're still
+              growing the product together.
+            </p>
+            <p>That's not a vendor relationship. That's what partnership looks like.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Our MVP Development?
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get to market faster, validate your ideas, and attract investors with a professional MVP
-          </p>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">How it works</h2>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="(benefit, index) in benefits"
-            :key="index"
-            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group"
-          >
-            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
-              <component :is="benefit.icon" class="w-7 h-7 text-amber-600" />
+        <div class="max-w-4xl mx-auto space-y-6">
+          <div v-for="(step, idx) in steps" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 inline-flex items-center justify-center w-10 h-10 bg-amber-100 text-amber-700 rounded-xl mr-4 font-bold text-sm">
+                {{ idx + 1 }}
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">{{ step.title }}</h3>
+                <p class="text-gray-600">{{ step.description }}</p>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">
-              {{ benefit.title }}
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              {{ benefit.description }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">What you get</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div v-for="(item, idx) in included" :key="idx" class="flex items-start">
+            <CheckCircle class="h-5 w-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" />
+            <span class="text-gray-700">{{ item }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Details -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">The details</h2>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="divide-y divide-gray-100">
+            <div v-for="(detail, idx) in engagementDetails" :key="idx" class="flex items-center px-6 py-4">
+              <div class="w-1/3 font-semibold text-gray-900">{{ detail.label }}</div>
+              <div class="w-2/3 text-gray-600">{{ detail.value }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience-Specific Messaging -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">For funded startups</h3>
+            <p class="text-gray-700 leading-relaxed">
+              You've got the vision and the funding. We'll be the team that brings it to life.
+              Fixed-price and milestone-based options keep your budget predictable while your
+              product takes shape.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Development Process -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Our MVP Development Process
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            A proven agile methodology that delivers results in 8-12 weeks
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8 mb-12">
-          <div
-            v-for="(phase, index) in phases"
-            :key="index"
-            @click="activePhase = index"
-            :class="`cursor-pointer p-8 rounded-2xl transition-all ${
-              activePhase === index
-                ? 'bg-gradient-to-br from-amber-100 to-yellow-100 shadow-xl'
-                : 'bg-gray-50 hover:bg-gray-100'
-            }`"
-          >
-            <div class="flex items-start justify-between mb-4">
-              <div :class="`w-14 h-14 rounded-xl flex items-center justify-center ${
-                activePhase === index ? 'bg-amber-200' : 'bg-gray-200'
-              }`">
-                <component :is="phase.icon" :class="`w-7 h-7 ${
-                  activePhase === index ? 'text-amber-700' : 'text-gray-600'
-                }`" />
-              </div>
-              <span :class="`text-sm font-medium px-3 py-1 rounded-full ${
-                activePhase === index ? 'bg-amber-200 text-amber-800' : 'bg-gray-200 text-gray-600'
-              }`">
-                {{ phase.duration }}
-              </span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">
-              Phase {{ index + 1 }}: {{ phase.title }}
-            </h3>
-            <ul class="space-y-2">
-              <li v-for="(activity, i) in phase.activities.slice(0, 3)" :key="i" class="flex items-start">
-                <CheckCircle :class="`w-5 h-5 mr-2 mt-0.5 flex-shrink-0 ${
-                  activePhase === index ? 'text-amber-600' : 'text-gray-400'
-                }`" />
-                <span class="text-sm text-gray-600">{{ activity }}</span>
-              </li>
-            </ul>
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">For non-technical founders</h3>
+            <p class="text-gray-700 leading-relaxed">
+              You don't need a CTO yet. You need a team that feels like co-founders. We'll
+              translate your vision into a technical plan, guide you through every decision, and
+              build it with you. Milestone-based pricing so you know exactly what you're getting
+              at every step.
+            </p>
           </div>
-        </div>
-
-        <!-- Active Phase Details -->
-        <div
-          :key="activePhase"
-          class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8"
-        >
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ phases[activePhase].title }} - Detailed Activities
-          </h3>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div v-for="(activity, index) in phases[activePhase].activities" :key="index" class="flex items-start">
-              <CheckCircle class="w-5 h-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">{{ activity }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Deliverables -->
-    <section class="py-20 bg-gradient-to-br from-yellow-50 to-amber-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            What You'll Get
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to launch, test, and scale your product
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            v-for="(deliverable, index) in deliverables"
-            :key="index"
-            class="bg-white p-6 rounded-2xl shadow-lg"
-          >
-            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
-              <component :is="deliverable.icon" class="w-6 h-6 text-amber-600" />
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-3">
-              {{ deliverable.title }}
-            </h3>
-            <ul class="space-y-2">
-              <li v-for="(item, i) in deliverable.items" :key="i" class="flex items-start">
-                <ArrowRight class="w-4 h-4 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span class="text-sm text-gray-600">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technologies -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Technologies We Use
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modern tech stack for scalable and maintainable MVPs
-          </p>
-        </div>
-
-        <div class="flex flex-wrap gap-3 justify-center">
-          <span
-            v-for="(tech, index) in technologies"
-            :key="index"
-            class="px-4 py-2 bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800 rounded-lg text-sm font-medium"
-          >
-            {{ tech.name }}
-          </span>
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-20 bg-gradient-to-br from-amber-50 to-yellow-50">
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Success Stories
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from founders who launched successful MVPs with us
-          </p>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">What our clients say</h2>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-8">
-          <div
-            v-for="(testimonial, index) in testimonials"
-            :key="index"
-            class="bg-white p-8 rounded-2xl shadow-lg"
-          >
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-white rounded-2xl p-8 shadow-lg">
             <div class="flex mb-4">
-              <svg
-                v-for="i in 5"
-                :key="i"
-                class="w-5 h-5 text-amber-400 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
+              <Star v-for="i in 5" :key="i" class="h-5 w-5 text-yellow-400 fill-yellow-400" />
             </div>
-            <p class="text-gray-700 italic mb-6 leading-relaxed">
+            <blockquote class="text-gray-700 italic mb-6 leading-relaxed">
               "{{ testimonial.quote }}"
-            </p>
+            </blockquote>
             <div class="border-t pt-4">
               <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
-              <div class="text-sm text-gray-600">{{ testimonial.role }}</div>
-              <div class="text-sm text-amber-600">{{ testimonial.company }}</div>
+              <div class="text-sm text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</div>
             </div>
           </div>
         </div>
@@ -295,39 +237,36 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-amber-600 to-yellow-600 relative overflow-hidden">
-      <div class="absolute inset-0 bg-grid-pattern opacity-10" />
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center">
-          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Launch Your MVP?
-          </h2>
-          <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Join 50+ startups who validated their ideas and secured funding with our MVP development service
-          </p>
-          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center px-8 py-4 bg-white text-amber-600 font-semibold rounded-xl hover:bg-amber-50 transition-all transform hover:scale-105"
-            >
-              Get Started Today
-              <ArrowRight class="ml-2 w-5 h-5" />
-            </NuxtLink>
-            <button class="inline-flex items-center px-8 py-4 bg-amber-700 text-white font-semibold rounded-xl hover:bg-amber-800 transition-all">
-              Schedule a Consultation
-              <Calendar class="ml-2 w-5 h-5" />
-            </button>
-          </div>
-          <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-white">
-            <div class="flex items-center">
-              <Mail class="w-5 h-5 mr-3 text-amber-200" />
-              <span>business@acornglobus.com</span>
-            </div>
-            <div class="flex items-center">
-              <MapPin class="w-5 h-5 mr-3 text-amber-200" />
-              <span>Nagpur, Maharashtra</span>
-            </div>
-          </div>
+    <section class="py-24 bg-gradient-to-br from-amber-50 to-yellow-50 relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-yellow-100/30 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          Your idea deserves a real product, not a throwaway prototype.
+        </h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          Tell us what you're building. We'll have an honest conversation about scope, timeline,
+          and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the
+          right fit, we'll scope it together.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+          >
+            Let's talk about your product
+            <ArrowRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
+          <NuxtLink
+            to="/case-studies/eitoss"
+            class="inline-flex items-center justify-center px-8 py-3 bg-white text-amber-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-amber-200"
+          >
+            See how we built Eitoss's MVP
+            <ChevronRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -335,169 +274,88 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import {
-  ArrowRight,
-  ChevronDown,
-  Rocket,
-  Clock,
-  Users,
-  TrendingUp,
-  Target,
-  Zap,
-  Shield,
-  BarChart,
-  FileCode,
-  MessageSquare,
-  CheckCircle,
-  Lightbulb,
-  Package,
-  GitBranch,
-  Repeat,
-  Calendar,
-  DollarSign,
-  Award,
-  ArrowUpRight,
-  Mail,
-  Phone,
-  MapPin
+  ArrowRight, ArrowLeft, Rocket, Clock, Package, TrendingUp, Shield,
+  CheckCircle, ChevronRight, Star, Zap, Heart, Target, FileCode
 } from 'lucide-vue-next'
 
-definePageMeta({ layout: 'default' })
+definePageMeta({
+  layout: 'default'
+})
 
-const activePhase = ref(0)
+useHead({
+  title: 'MVP Development | Ship a Real Product, Not a Throwaway Prototype | AcornGlobus',
+  meta: [
+    {
+      name: 'description',
+      content: "We build MVPs that launch, raise funding, and keep growing. Eitoss shipped in 3 months, raised funding, and we're still building together 2 years later. 6-12 week timelines."
+    }
+  ]
+})
 
-const phases = [
-  {
-    title: 'Discovery & Planning',
-    duration: '1-2 weeks',
-    icon: Lightbulb,
-    activities: [
-      'Define core features',
-      'Create user stories',
-      'Establish success metrics',
-      'Technical architecture planning',
-      'Risk assessment',
-      'Resource allocation'
-    ]
-  },
-  {
-    title: 'Rapid Development',
-    duration: '6-8 weeks',
-    icon: Zap,
-    activities: [
-      'Agile sprints',
-      'Weekly demonstrations',
-      'Continuous feedback integration',
-      'Core feature implementation',
-      'UI/UX development',
-      'API integration'
-    ]
-  },
-  {
-    title: 'Launch & Iterate',
-    duration: '1-2 weeks',
-    icon: Rocket,
-    activities: [
-      'Quick market launch',
-      'Data-driven improvements',
-      'User feedback collection',
-      'Performance optimization',
-      'Bug fixes and refinements',
-      'Analytics implementation'
-    ]
-  }
-]
-
-const benefits = [
-  {
-    icon: Clock,
-    title: 'Fast Time-to-Market',
-    description: '8-12 week development cycle to get your product in front of users quickly'
-  },
-  {
-    icon: DollarSign,
-    title: 'Cost-Effective Validation',
-    description: 'Test your product idea without the investment of a full-scale application'
-  },
-  {
-    icon: TrendingUp,
-    title: 'Investor-Ready',
-    description: 'Professional-grade MVPs designed to impress investors and secure funding'
-  },
-  {
-    icon: Users,
-    title: 'User-Centric Design',
-    description: 'Focus on core features that deliver real value to your target users'
-  },
+const approach = [
   {
     icon: Shield,
-    title: 'Scalable Foundation',
-    description: 'Clean, production-ready codebase that can grow with your business'
+    title: 'Production-quality from day one.',
+    description: 'Clean code, proper architecture, CI/CD pipeline. Built to grow, not to be thrown away.'
   },
   {
-    icon: BarChart,
-    title: 'Data-Driven Insights',
-    description: 'Built-in analytics to track user behavior and validate assumptions'
-  }
-]
-
-const deliverables = [
-  {
-    icon: Package,
-    title: 'Core Product Features',
-    items: [
-      'Essential functionality',
-      'User authentication',
-      'Data management',
-      'Core workflows'
-    ]
-  },
-  {
-    icon: GitBranch,
-    title: 'Clean Codebase',
-    items: [
-      'Modular architecture',
-      'Version control setup',
-      'CI/CD pipeline',
-      'Testing framework'
-    ]
+    icon: Target,
+    title: 'Honest guidance on scope.',
+    description: "We'll tell you what to build first and what can wait. Not to bill less — because we want you to succeed faster."
   },
   {
     icon: FileCode,
-    title: 'Documentation',
-    items: [
-      'Technical documentation',
-      'API documentation',
-      'User guides',
-      'Deployment guides'
-    ]
+    title: 'You own everything.',
+    description: 'Your code, your product, your freedom. Full ownership from day one, documented and ready for your future in-house team.'
   },
   {
-    icon: BarChart,
-    title: 'Analytics & Monitoring',
-    items: [
-      'User tracking',
-      'Performance metrics',
-      'Error monitoring',
-      'Usage analytics'
-    ]
+    icon: Heart,
+    title: "We don't disappear after launch.",
+    description: "Eitoss started as an MVP we shipped in 3 months. They raised funding. Two years later, we're still building together."
   }
 ]
 
-const technologies = [
-  { name: 'React', category: 'Frontend' },
-  { name: 'Angular', category: 'Frontend' },
-  { name: 'Vue.js', category: 'Frontend' },
-  { name: 'Node.js', category: 'Backend' },
-  { name: 'Python', category: 'Backend' },
-  { name: '.NET', category: 'Backend' },
-  { name: 'AWS', category: 'Cloud' },
-  { name: 'Google Cloud', category: 'Cloud' },
-  { name: 'MongoDB', category: 'Database' },
-  { name: 'PostgreSQL', category: 'Database' },
-  { name: 'Redis', category: 'Database' },
-  { name: 'Docker', category: 'DevOps' }
+const steps = [
+  {
+    title: 'Discovery and scoping (1-2 weeks)',
+    description: 'We understand your vision, define what the MVP actually needs, and create a technical plan with a realistic timeline and budget. No guesswork.'
+  },
+  {
+    title: 'Design and architecture (1 week)',
+    description: 'UI/UX wireframes, technical architecture, stack selection. The foundation matters.'
+  },
+  {
+    title: 'Build sprints (4-8 weeks)',
+    description: 'Two-week sprints with a working demo at the end of each one. You see real progress every two weeks, not just status updates.'
+  },
+  {
+    title: 'Launch prep (1 week)',
+    description: 'Deployment, monitoring, documentation, handoff. Ready for real users.'
+  },
+  {
+    title: 'Post-launch support (2 weeks included)',
+    description: 'Bug fixes and critical issues after launch, because launching is just the beginning.'
+  }
+]
+
+const included = [
+  'Product scoping and feature prioritization — what to build first, what to skip',
+  'Technical architecture and stack selection',
+  'UI/UX wireframes (we recommend a dedicated designer for pixel-perfect design)',
+  'Full-stack development',
+  'Testing and QA',
+  'Cloud deployment (AWS, GCP, or Azure)',
+  'CI/CD pipeline setup',
+  '2 weeks of post-launch support',
+  "Complete documentation and code handoff — it's your product"
+]
+
+const engagementDetails = [
+  { label: 'Timeline', value: '6-12 weeks typical' },
+  { label: 'Team', value: '2-4 engineers + 1 project lead' },
+  { label: 'Pricing', value: 'Fixed-price or capped time-and-materials' },
+  { label: 'Code ownership', value: '100% yours from day one' }
 ]
 
 const testimonials = [
@@ -519,12 +377,5 @@ const testimonials = [
     role: "CTO",
     company: "PerformLine & Social Impact Advocate"
   }
-]
-
-const keyStats = [
-  { value: '8-12', label: 'Weeks to Launch', suffix: '' },
-  { value: '50+', label: 'MVPs Delivered', suffix: '' },
-  { value: '85', label: 'Success Rate', suffix: '%' },
-  { value: '3x', label: 'Faster to Market', suffix: '' }
 ]
 </script>
