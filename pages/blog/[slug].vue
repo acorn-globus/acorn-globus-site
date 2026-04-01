@@ -98,7 +98,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: `https://www.acronglobus.com/blog/${useRoute().params.slug}`,
+      href: `https://www.acornglobus.com/blog/${useRoute().params.slug}`,
     },
   ],
 });

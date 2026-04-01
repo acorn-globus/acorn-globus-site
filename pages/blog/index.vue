@@ -40,7 +40,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: `https://www.acronglobus.com/blog`,
+      href: `https://www.acornglobus.com/blog`,
     },
   ],
 });
