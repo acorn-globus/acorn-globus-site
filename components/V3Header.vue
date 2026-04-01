@@ -43,6 +43,12 @@
             Designs
           </NuxtLink>
           <NuxtLink
+            to="/blog"
+            :class="['font-medium transition-colors', currentPath.startsWith('/blog') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
+          >
+            Blog
+          </NuxtLink>
+          <NuxtLink
             to="/contact"
             :class="['font-medium transition-colors', currentPath === '/contact' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
           >
@@ -105,6 +111,13 @@
             @click="isMobileMenuOpen = false"
           >
             Designs
+          </NuxtLink>
+          <NuxtLink
+            to="/blog"
+            :class="['block px-3 py-2 rounded-md font-medium transition-colors', currentPath.startsWith('/blog') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100']"
+            @click="isMobileMenuOpen = false"
+          >
+            Blog
           </NuxtLink>
           <NuxtLink
             to="/contact"

@@ -11,7 +11,7 @@
             >
           </div>
           <p class="text-sm mb-4">
-            Crafting digital experiences with passion and innovation. Your trusted partner for transformative solutions.
+            We build products like they're our own. 20+ engineers, 80%+ client retention, and partnerships that last years.
           </p>
           <div class="flex space-x-4">
             <a href="https://www.linkedin.com/company/acornglobus" target="_blank" class="text-gray-400 hover:text-purple-600 transition-colors">
@@ -29,6 +29,7 @@
             <li><NuxtLink to="/about" class="hover:text-purple-600 transition-colors">About Us</NuxtLink></li>
             <li><NuxtLink to="/services" class="hover:text-purple-600 transition-colors">Services</NuxtLink></li>
             <li><NuxtLink to="/portfolio" class="hover:text-purple-600 transition-colors">Portfolio</NuxtLink></li>
+            <li><NuxtLink to="/blog" class="hover:text-purple-600 transition-colors">Blog</NuxtLink></li>
             <li><NuxtLink to="/contact" class="hover:text-purple-600 transition-colors">Contact</NuxtLink></li>
           </ul>
         </div>
