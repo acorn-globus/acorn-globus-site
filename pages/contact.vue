@@ -16,13 +16,13 @@
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             Let's Build Something
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              Amazing Together
+              Great Together
             </span>
           </h1>
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Have a project in mind? We'd love to hear about it. Let's discuss how we can help
-            bring your ideas to life.
+            Have a product idea, a team that needs more hands, or a question about how we work?
+            We'd love to hear from you.
           </p>
 
           <div class="flex justify-center gap-4">
@@ -30,7 +30,7 @@
               href="#contact-form"
               class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
-              Send Message
+              Send a Message
               <Send class="h-5 w-5 ml-2" />
             </a>
             <a
@@ -39,7 +39,7 @@
               class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
             >
               <Calendar class="h-5 w-5 mr-2" />
-              Book Consultation
+              Book a Free Consultation
             </a>
           </div>
         </div>
@@ -65,7 +65,7 @@
           <!-- Contact Form - 2 columns -->
           <div id="contact-form" class="lg:col-span-2">
             <div class="bg-white rounded-3xl shadow-xl p-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
+              <h2 class="text-3xl font-bold text-gray-900 mb-8">Tell Us About Your Product</h2>
 
               <form @submit.prevent="handleSubmit" class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,7 +133,7 @@
                   <label class="block text-sm font-semibold text-gray-700 mb-2">
                     Services Required *
                   </label>
-                  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  <div class="grid grid-cols-2 gap-3">
                     <label
                       v-for="service in services"
                       :key="service"
@@ -183,7 +183,7 @@
                 >
                   <span v-if="submitSuccess" class="inline-flex items-center">
                     <CheckCircle class="h-5 w-5 mr-2" />
-                    Message Sent Successfully!
+                    Thanks! We'll be in touch soon.
                   </span>
                   <span v-else-if="isSubmitting">Sending...</span>
                   <span v-else class="inline-flex items-center">
@@ -193,7 +193,7 @@
                 </button>
 
                 <p class="text-center text-sm text-gray-600 mt-4">
-                  We'll get back to you within 8 business hours
+                  We typically respond within 8 business hours
                 </p>
               </form>
             </div>
@@ -212,24 +212,30 @@
                 >
                   <span class="flex items-center">
                     <Calendar class="h-5 w-5 text-blue-600 mr-3" />
-                    <span class="font-medium text-gray-700">Book Free Consultation</span>
+                    <span class="font-medium text-gray-700">Book a Free Consultation</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
                 </a>
-                <button class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all">
+                <NuxtLink
+                  to="/about"
+                  class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all"
+                >
                   <span class="flex items-center">
                     <Users class="h-5 w-5 text-blue-600 mr-3" />
-                    <span class="font-medium text-gray-700">View Our Team</span>
+                    <span class="font-medium text-gray-700">Meet Our Team</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
-                </button>
-                <button class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all">
+                </NuxtLink>
+                <NuxtLink
+                  to="/portfolio"
+                  class="w-full flex items-center justify-between px-4 py-3 bg-white rounded-xl hover:shadow-md transition-all"
+                >
                   <span class="flex items-center">
                     <Rocket class="h-5 w-5 text-blue-600 mr-3" />
-                    <span class="font-medium text-gray-700">Start a Project</span>
+                    <span class="font-medium text-gray-700">See Our Work</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
-                </button>
+                </NuxtLink>
               </div>
             </div>
 
@@ -290,7 +296,7 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-          <p class="text-lg text-gray-600">Quick answers to common questions</p>
+          <p class="text-lg text-gray-600">Honest answers to the questions we hear most</p>
         </div>
 
         <div class="space-y-6">
@@ -340,19 +346,19 @@ definePageMeta({
 
 // SEO Meta Tags
 useSeoMeta({
-  title: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  description: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you -- resource augmentation, MVP development, and full project delivery. Free consultation available.',
-  keywords: 'contact acorn globus, software development inquiry, IT consultation, project quote, business inquiry, tech partner',
-  author: 'Acorn Globus',
+  title: 'Contact Us | Let\'s Build Together | AcornGlobus',
+  description: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you -- resource augmentation, MVP development, and full project delivery.',
+  keywords: 'contact AcornGlobus, software development inquiry, IT consultation, project quote, business inquiry, tech partner',
+  author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  ogDescription: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you -- resource augmentation, MVP development, and full project delivery. Free consultation available.',
+  ogTitle: 'Contact Us | Let\'s Build Together | AcornGlobus',
+  ogDescription: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you -- resource augmentation, MVP development, and full project delivery.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/contact',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Contact Us - Acorn Globus | Get In Touch for Your Next Project',
-  twitterDescription: 'Have a project in mind? Let\'s talk. Acorn Globus builds software products with you. Free consultation available.',
+  twitterTitle: 'Contact Us | Let\'s Build Together | AcornGlobus',
+  twitterDescription: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -400,20 +406,10 @@ const isSubmitting = ref(false)
 const submitSuccess = ref(false)
 
 const services = [
-  'Software Development',
-  'Staff Augmentation',
-  'Dedicated Teams',
-  'Design',
-  'Software Outsourcing',
-  'IT Consulting',
-  'Cloud Services',
-  'Support & Maintenance',
-  'DevOps Services',
-  'QA & Testing',
-  'Mobile App Development',
-  'Enterprise Software',
-  'E-commerce Development',
-  'Custom Software'
+  'MVP Development',
+  'Full Project Delivery',
+  'Resource Augmentation',
+  'Maintenance & Support'
 ]
 
 const countries = [
@@ -434,7 +430,7 @@ const contactInfo = [
     icon: Mail,
     title: 'Email Us',
     details: 'business@acornglobus.com',
-    description: 'For business inquiries and partnerships'
+    description: 'For partnerships and project conversations'
   },
   {
     icon: MapPin,
@@ -446,26 +442,34 @@ const contactInfo = [
     icon: Clock,
     title: 'Response Time',
     details: 'Within 8 hours',
-    description: 'Business hours response guarantee'
+    description: "During business hours -- we won't keep you waiting"
   }
 ]
 
 const faqs = [
   {
-    question: 'How quickly can we start a project?',
-    answer: 'We can typically begin within 1-2 weeks after initial consultation, depending on project scope and resource availability.'
+    question: 'What services does AcornGlobus offer?',
+    answer: 'We offer four core services: Resource Augmentation (dedicated engineers who embed with your team), MVP Development (ship a real product in 6-12 weeks), Full Project Delivery (end-to-end product engineering), and Maintenance & Support (ongoing care from the team that built it).'
   },
   {
-    question: 'What engagement models do you offer?',
-    answer: 'We offer flexible engagement models including dedicated teams, fixed-price projects, and time & material arrangements.'
+    question: 'How quickly can you start on a project?',
+    answer: 'For resource augmentation, we can typically match engineers and begin within 1-2 weeks. For MVP and full project delivery, we start with a discovery phase within the first week of engagement.'
   },
   {
-    question: 'Do you provide support after project completion?',
-    answer: 'Yes, we offer ongoing maintenance and support packages -- from basic monitoring to full 24/7 coverage -- to keep your product running smoothly.'
+    question: 'Do you offer a trial period?',
+    answer: 'Yes. For resource augmentation, we offer a 2-week trial period where our engineers join your team with zero commitment. You evaluate fit and productivity before making any long-term decisions.'
   },
   {
-    question: 'Can you work with our existing team?',
-    answer: 'Absolutely! Our resource augmentation service is designed to seamlessly integrate with your existing workflows and team.'
+    question: 'Who owns the code?',
+    answer: 'You do. 100% code ownership from day one. We build for your independence with clean code, full documentation, and zero lock-in. If you want to bring development in-house later, we will help you do that.'
+  },
+  {
+    question: 'What technologies do you work with?',
+    answer: 'We are stack-agnostic and pick the right technology for your problem. Our team has experience with React, Vue.js, Angular, Node.js, Ruby on Rails, Python, .NET, and more. We work with AWS, Azure, and GCP for cloud infrastructure.'
+  },
+  {
+    question: 'What is your minimum engagement?',
+    answer: 'For resource augmentation, the minimum is 1 engineer with a 3-month initial commitment. For MVP development, typical engagements are 6-12 weeks. For maintenance, the minimum retainer is 3 months.'
   }
 ]
 

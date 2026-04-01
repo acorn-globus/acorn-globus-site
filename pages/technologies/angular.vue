@@ -1,209 +1,214 @@
 <template>
-  <main class="min-h-screen bg-navy-900 text-white">
-    <div class="container mx-auto px-4 py-20">
-      <!-- Hero Section -->
-      <div class="max-w-4xl mx-auto mb-20">
-        <div class="inline-block bg-navy-700 px-4 py-2 rounded-full text-yellow-400 text-sm font-semibold mb-6">
-          Technology Expertise
-        </div>
-        <h1 class="text-5xl md:text-6xl font-bold mb-8">
-          Angular Development
-        </h1>
-        <p class="text-xl text-gray-300 mb-8">
-          Building enterprise-grade web applications with Angular. Our expert Angular developers specialize in creating robust, scalable solutions with TypeScript-first development.
-        </p>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-navy-700 p-6 rounded-xl">
-            <h3 class="text-lg font-semibold mb-2">6+ Years Experience</h3>
-            <p class="text-gray-300">Deep expertise in Angular ecosystem</p>
-          </div>
-          <div class="bg-navy-700 p-6 rounded-xl">
-            <h3 class="text-lg font-semibold mb-2">35+ Angular Projects</h3>
-            <p class="text-gray-300">Enterprise-level deliveries</p>
-          </div>
-        </div>
+  <div class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
       </div>
 
-      <!-- Our Expertise -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12 text-center">Our Angular Expertise</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9.93 12.645h4.134L11.996 7.74M11.996.009L.686 3.988l1.725 14.76 9.585 5.243 9.585-5.243 1.725-14.76L11.996.009zm7.058 18.297h-2.636l-1.42-3.501H8.995l-1.42 3.501H4.937l7.06-15.648 7.057 15.648z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Enterprise Apps</h3>
-            <p class="text-gray-300">
-              Large-scale applications with Angular 12+.
-            </p>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
+            <Code class="h-4 w-4 mr-2" />
+            Technology Expertise
           </div>
 
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Micro Frontends</h3>
-            <p class="text-gray-300">
-              Scalable architecture with Module Federation.
-            </p>
-          </div>
+          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Angular Development
+          </h1>
 
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Performance</h3>
-            <p class="text-gray-300">
-              Optimized Angular applications at scale.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Technical Skills -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12 text-center">Technical Proficiency</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <h3 class="text-xl font-bold mb-6">Core Competencies</h3>
-            <ul class="space-y-4">
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">Angular (12.x to 17.x)</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">TypeScript</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">RxJS</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <h3 class="text-xl font-bold mb-6">Additional Skills</h3>
-            <ul class="space-y-4">
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">Jasmine / Karma</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">NgRx / NGXS</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                </svg>
-                <span class="text-gray-300">Angular Material / PrimeNG</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Why Choose Us -->
-      <div class="mb-20">
-        <h2 class="text-3xl font-bold mb-12 text-center">Why Choose Us for Angular Development</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Enterprise Focus</h3>
-            <p class="text-gray-300">
-              Specialized in building and maintaining large-scale Angular applications for enterprise clients.
-            </p>
-          </div>
-
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Modern Practices</h3>
-            <p class="text-gray-300">
-              Up-to-date with the latest Angular features, best practices, and performance optimization techniques.
-            </p>
-          </div>
-
-          <div class="bg-navy-700 p-8 rounded-2xl">
-            <div class="text-yellow-400 mb-6">
-              <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Full-Stack Integration</h3>
-            <p class="text-gray-300">
-              Seamless integration with various backend technologies and third-party services.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Start Your Project Section -->
-      <div class="bg-navy-700 rounded-2xl p-12">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-6">Ready to Build Your Angular Solution?</h2>
-          <p class="text-xl text-gray-300 mb-8">
-            Whether you're starting a new project or need to scale your existing Angular application, our team is ready to help. Let's discuss how we can bring your vision to life with modern Angular development.
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl">
+            Angular for teams that need structure at scale. TypeScript-first, well-tested, and built to grow
+            with your product. Our engineers have worked on complex Angular applications across fintech,
+            healthcare, and enterprise SaaS.
           </p>
-          <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <NuxtLink 
-              to="/contact" 
-              class="inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
-            >
-              Start Your Project
-            </NuxtLink>
-            <NuxtLink 
-              to="/services/resource-augmentation" 
-              class="inline-block bg-navy-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-navy-600 transition-colors"
-            >
-              Explore Our Services
-            </NuxtLink>
+
+          <div class="grid sm:grid-cols-2 gap-6 max-w-xl">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">6+ Years of Experience</h3>
+              <p class="text-gray-600 text-sm">Deep expertise in the Angular ecosystem</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Enterprise-Grade Delivery</h3>
+              <p class="text-gray-600 text-sm">Complex applications across multiple industries</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </section>
+
+    <!-- Our Expertise -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Our Angular Expertise</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <Building class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Enterprise Apps</h3>
+            <p class="text-gray-600">Large-scale applications with Angular 12+.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <Layers class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Micro Frontends</h3>
+            <p class="text-gray-600">Scalable architecture with Module Federation.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <Zap class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Performance</h3>
+            <p class="text-gray-600">Optimized Angular applications at scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Technical Proficiency</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 mb-6">Core Competencies</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">Angular (12.x to 17.x)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">TypeScript</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">RxJS</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 mb-6">Additional Skills</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">Jasmine / Karma</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">NgRx / NGXS</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span class="text-gray-700">Angular Material / PrimeNG</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Why Work With Us for Angular</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <Building class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Enterprise Focus</h3>
+            <p class="text-gray-600">
+              We've built and maintained large-scale Angular applications for enterprise clients across multiple industries.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <Shield class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Clean Architecture</h3>
+            <p class="text-gray-600">
+              Proper structure and patterns so your team can maintain the codebase long after we're done.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
+              <FileText class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Built for Your Independence</h3>
+            <p class="text-gray-600">
+              Your code, your product, full documentation. We build so you're never locked in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Need Angular engineers?</h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Whether you're building something new or scaling an existing Angular application, we can help.
+          Our engineers embed with your team or deliver end-to-end.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+          >
+            Let's Talk
+            <ArrowRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
+          <NuxtLink
+            to="/services"
+            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
+          >
+            See Our Services
+            <ArrowRight class="h-5 w-5 ml-2" />
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup>
+import {
+  ArrowRight, CheckCircle, Code, Layers, Building, Zap, Shield, FileText
+} from 'lucide-vue-next'
+
+definePageMeta({
+  layout: 'default'
+})
+
 useSeoMeta({
   title: 'Angular Development Services | AcornGlobus',
-  description: 'Professional Angular development services with expertise in building enterprise-grade applications. Specializing in Angular 12+ and modern web development.',
-  keywords: 'Angular development, Angular.js, TypeScript, enterprise applications, Angular developers, front-end development',
+  description: 'Angular development for enterprise and complex web applications. TypeScript-first, well-tested, built to scale. Our engineers embed with your team or deliver end-to-end.',
+  keywords: 'Angular development, Angular, TypeScript, enterprise applications, Angular developers, front-end development',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'Angular Development Services | AcornGlobus',
-  ogDescription: 'Expert Angular development services with 6+ years of experience. Building enterprise-grade applications with modern best practices.',
+  ogDescription: 'Angular development for enterprise and complex web applications. TypeScript-first, well-tested, built to scale.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/technologies/angular',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Angular Development Services | AcornGlobus',
-  twitterDescription: 'Professional Angular development services for enterprise-grade applications.',
+  twitterDescription: 'Angular development for enterprise and complex web applications.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -211,7 +216,7 @@ useBreadcrumbSchema([
   { name: 'Technologies', path: '/technologies/angular' },
   { name: 'Angular', path: '/technologies/angular' },
 ])
-// Keep canonical link
+
 useHead({
   link: [
     {
