@@ -17,6 +17,7 @@ createdAt: 2023-10-25T03:17:10.538Z
 coverImg: /img/abstract3.png
 coverImgAlt: Nginx for Beginners
 published: true
+topic: Tech
 ---
 Well, we have all heard about Nginx as a web server, reverse proxy, load balancer, and proxy server for email communications, and it is also known for its performance and stability. Let us start with some hands-on with Nginx and see what it can do.
 

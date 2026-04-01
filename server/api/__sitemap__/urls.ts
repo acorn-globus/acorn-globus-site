@@ -1,7 +1,9 @@
 import { defineSitemapEventHandler } from '#imports'
+import { serverQueryContent } from '#content/server'
 
-export default defineSitemapEventHandler(() => {
-  return [
+export default defineSitemapEventHandler(async (event) => {
+  // Static pages
+  const staticUrls = [
     // Homepage
     { loc: '/', changefreq: 'weekly', priority: 1.0 },
 
@@ -33,10 +35,21 @@ export default defineSitemapEventHandler(() => {
     { loc: '/technologies/dotnet', changefreq: 'monthly', priority: 0.6 },
     { loc: '/technologies/ruby-on-rails', changefreq: 'monthly', priority: 0.6 },
 
-    // Blog
+    // Blog index
     { loc: '/blog', changefreq: 'weekly', priority: 0.7 },
 
     // Legal
     { loc: '/privacy-policy', changefreq: 'yearly', priority: 0.3 },
   ]
+
+  // Dynamic blog post URLs from Nuxt Content
+  const blogPosts = await serverQueryContent(event, 'blog').find()
+  const blogUrls = blogPosts.map((post) => ({
+    loc: post._path,
+    changefreq: 'monthly' as const,
+    priority: 0.6,
+    ...(post.createdAt ? { lastmod: new Date(post.createdAt).toISOString() } : {}),
+  }))
+
+  return [...staticUrls, ...blogUrls]
 })

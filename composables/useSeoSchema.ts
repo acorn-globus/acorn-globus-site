@@ -105,6 +105,56 @@ export function useServiceSchema(service: {
 }
 
 /**
+ * Injects BlogPosting JSON-LD schema for individual blog posts.
+ */
+export function useBlogPostSchema(post: {
+  title: string
+  description: string
+  slug: string
+  datePublished: string
+  dateModified?: string
+  author?: string
+  image?: string
+}) {
+  useHead({
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.description || post.title,
+          url: `${SITE_URL}/blog/${post.slug}`,
+          datePublished: post.datePublished,
+          dateModified: post.dateModified || post.datePublished,
+          author: {
+            '@type': post.author && post.author !== 'AcornGlobus Team'
+              ? 'Person'
+              : 'Organization',
+            name: post.author || 'AcornGlobus Team',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: ORG_NAME,
+            url: SITE_URL,
+            logo: {
+              '@type': 'ImageObject',
+              url: ORG_LOGO,
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `${SITE_URL}/blog/${post.slug}`,
+          },
+          ...(post.image ? { image: post.image.startsWith('http') ? post.image : `${SITE_URL}${post.image}` } : {}),
+        }),
+      },
+    ],
+  })
+}
+
+/**
  * Injects FAQPage JSON-LD schema.
  * @param faqs Array of { question, answer } pairs.
  */

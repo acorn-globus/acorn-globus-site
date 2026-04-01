@@ -1,7 +1,4 @@
 <template>
-  <div class="bg__primary">
-    <Nav />
-  </div>
   <div class="nuxt-content container__wrapper">
     <ContentDoc>
       <template v-slot="{ doc }">
@@ -14,93 +11,157 @@
             class="blog__back"
             :class="doc.toc && doc.toc.length ? 'blog__back__margin' : ''"
           >
-            <span>← Back</span>
+            <span>&larr; Back</span>
           </NuxtLink>
-          <!-- <nav
-              v-if="doc.toc && doc.toc.length"
-              class="navbar navbar-expand bg-white sticky-top py-3"
-            >
-              <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="dropdown-toggle"
-                      href="#"
-                      id="tocMenuLink"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Table of Contents
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="tocMenuLink">
-                      <li v-for="link of doc.toc" :key="link.id">
-                        <NuxtLink class="dropdown-link" :to="`#${link.id}`">
-                          {{ link.text }}
-                        </NuxtLink>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </nav> -->
+
+          <!-- Category badge -->
+          <div v-if="doc.topic || doc.category" class="mb-3">
+            <span class="article__category">{{ doc.topic || doc.category }}</span>
+          </div>
+
           <h1 class="mb-1 article__heading">{{ doc.title }}</h1>
           <div class="flex sm-text my-2 datentimeToRead">
             <span>{{ formatDate(doc.createdAt) }}</span>
-            <!-- <span>|</span>
-              <div class="flex items-center justify-center timeToRead">
-                <svg
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
-                    fill="#8c8c8c"
-                  ></path>
-                </svg>
-                <span>{{ doc.readingStats.text }}</span>
-              </div> -->
           </div>
-          <div class="sm-text mt-1">
+          <div class="sm-text mt-1 article__author-line">
             by
-            <span class="article__author">{{ doc.author }}</span>
+            <span class="article__author">{{ doc.author || 'AcornGlobus Team' }}</span>
+            <span v-if="doc.authorProfile">
+              &mdash;
+              <a :href="doc.authorProfile" target="_blank" rel="noopener noreferrer" class="author-link">
+                View Profile
+              </a>
+            </span>
           </div>
           <p class="article__desc mt-4">{{ doc.description }}</p>
           <ContentRenderer :value="doc" />
         </article>
+
+        <!-- Related Posts -->
+        <div v-if="relatedPosts && relatedPosts.length" class="max-w-4xl mx-auto mt-16 mb-12">
+          <hr class="related-divider" />
+          <h2 class="related-heading">More from our blog</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <NuxtLink
+              v-for="post in relatedPosts"
+              :key="post._path"
+              :to="post._path"
+              class="related-card"
+            >
+              <img
+                v-if="post.coverImg"
+                :src="post.coverImg"
+                :alt="post.coverImgAlt || post.title"
+                class="related-card__img"
+              />
+              <div class="related-card__body">
+                <span v-if="post.topic" class="related-card__topic">{{ post.topic }}</span>
+                <h3 class="related-card__title">{{ post.title }}</h3>
+                <span class="related-card__author">{{ post.author || 'AcornGlobus Team' }}</span>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
       </template>
     </ContentDoc>
   </div>
 </template>
 
 <script setup>
-// let article = await useAsyncData("articles-list", () =>
-//   queryContent("blog")
-//     .where({
-//       _path: { $eq: `/blog/${route.params.slug}` },
-//     })
-//     .findOne()
-// ).data.value;
-// console.log("article", article);
+const route = useRoute()
+const slug = route.params.slug
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
   return new Date(date).toLocaleDateString("en", options);
 };
-// const to = () => {
-//   route.push("/blog/");
-// };
 
-const route = useRoute()
-const slug = route.params.slug
+// Fetch the current article for SEO metadata
+const { data: article } = await useAsyncData(`blog-${slug}`, () =>
+  queryContent('blog')
+    .where({ _path: `/blog/${slug}` })
+    .findOne()
+)
+
+// Fetch related posts (same topic, or fallback to recent)
+const { data: relatedPosts } = await useAsyncData(`related-${slug}`, async () => {
+  const currentArticle = await queryContent('blog')
+    .where({ _path: `/blog/${slug}` })
+    .findOne()
+
+  let related = []
+  if (currentArticle?.topic) {
+    related = await queryContent('blog')
+      .where({
+        topic: currentArticle.topic,
+        _path: { $ne: `/blog/${slug}` },
+      })
+      .limit(2)
+      .find()
+  }
+
+  // If not enough from same topic, fill with recent posts
+  if (related.length < 2) {
+    const recent = await queryContent('blog')
+      .where({ _path: { $ne: `/blog/${slug}` } })
+      .sort({ createdAt: -1 })
+      .limit(2)
+      .find()
+    const existingPaths = new Set(related.map((r) => r._path))
+    for (const r of recent) {
+      if (!existingPaths.has(r._path) && related.length < 2) {
+        related.push(r)
+      }
+    }
+  }
+
+  return related
+})
+
+// Dynamic SEO meta from article content
+if (article.value) {
+  const doc = article.value
+  const title = doc.metaTitle || doc.title
+  const description = doc.metaDescription || doc.description || doc.title
+  const image = doc.coverImg
+    ? (doc.coverImg.startsWith('http') ? doc.coverImg : `https://acornglobus.com${doc.coverImg}`)
+    : 'https://acornglobus.com/acorn-globus.png'
+
+  useSeoMeta({
+    title: `${title} | AcornGlobus Blog`,
+    description,
+    keywords: doc.keywords || '',
+    author: doc.author || 'AcornGlobus Team',
+    robots: 'index, follow',
+    ogTitle: title,
+    ogDescription: description,
+    ogImage: image,
+    ogUrl: `https://acornglobus.com/blog/${slug}`,
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: title,
+    twitterDescription: description,
+    twitterImage: image,
+  })
+
+  // BlogPosting JSON-LD schema
+  useBlogPostSchema({
+    title: doc.title,
+    description: description,
+    slug: String(slug),
+    datePublished: typeof doc.createdAt === 'string' ? doc.createdAt : new Date(doc.createdAt).toISOString(),
+    dateModified: doc.updatedAt
+      ? (typeof doc.updatedAt === 'string' ? doc.updatedAt : new Date(doc.updatedAt).toISOString())
+      : undefined,
+    author: doc.author || 'AcornGlobus Team',
+    image: doc.coverImg || undefined,
+  })
+}
 
 useHead({
   link: [
     {
-      rel: "canonical",
+      rel: 'canonical',
       href: `https://acornglobus.com/blog/${slug}`,
     },
   ],
@@ -118,6 +179,34 @@ useBreadcrumbSchema([
   font-weight: 700;
   line-height: 44px;
   color: hsla(0, 0%, 20%, 1);
+}
+
+.article__category {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #eff6ff;
+  color: #3b82f6;
+  text-transform: capitalize;
+}
+
+.article__author-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.author-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.author-link:hover {
+  text-decoration: underline;
 }
 
 .nuxt-content h1,
@@ -205,10 +294,6 @@ useBreadcrumbSchema([
   gap: 0.75rem;
 }
 
-.timeToRead {
-  gap: 0.5rem;
-}
-
 .blog__back {
   margin-top: -4rem;
   position: absolute;
@@ -220,54 +305,67 @@ useBreadcrumbSchema([
   margin-top: -3rem;
 }
 
-#tocMenuLink {
-  color: #777;
-  font-size: 16px;
+/* Related Posts */
+.related-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
 }
 
-.dropdown-menu {
-  border: 0 solid #e4e4e7;
-  backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.8);
-  max-height: 450px;
-  overflow-y: auto;
-  overflow-x: hidden;
+.related-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsla(0, 0%, 20%, 1);
+  margin-bottom: 1.5rem;
 }
 
-.dropdown-link {
-  padding: 0.5em;
-  min-width: 750px;
+.related-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s ease;
+}
+
+.related-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.related-card__img {
   width: 100%;
-  display: block;
+  height: 160px;
+  object-fit: cover;
 }
 
-@media only screen and (max-width: 992px) {
-  .dropdown-link {
-    min-width: 680px;
-  }
+.related-card__body {
+  padding: 16px;
 }
 
-@media only screen and (max-width: 768px) {
-  .dropdown-link {
-    min-width: 480px;
-  }
+.related-card__topic {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-@media only screen and (max-width: 576px) {
-  .dropdown-link {
-    min-width: 370px;
-  }
+.related-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: hsla(0, 0%, 20%, 1);
+  margin: 6px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 432px) {
-  .dropdown-link {
-    min-width: 320px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .dropdown-link {
-    min-width: 250px;
-  }
+.related-card__author {
+  font-size: 13px;
+  color: #64748b;
 }
 </style>
