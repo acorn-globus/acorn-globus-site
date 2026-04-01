@@ -58,7 +58,7 @@
             to="/contact"
             class="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
           >
-            Start Project
+            Let's Talk
           </NuxtLink>
         </div>
 
@@ -132,7 +132,7 @@
               class="block px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300 text-center"
               @click="isMobileMenuOpen = false"
             >
-              Start Project
+              Let's Talk
             </NuxtLink>
           </div>
         </div>

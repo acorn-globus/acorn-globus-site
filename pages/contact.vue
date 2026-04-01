@@ -14,15 +14,15 @@
           </div>
 
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Let's Build Something
+            Let's talk about
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              Great Together
+              what you're building.
             </span>
           </h1>
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Have a product idea, a team that needs more hands, or a question about how we work?
-            We'd love to hear from you.
+            Whether you're launching something new or growing something that's working --
+            we'd love to hear what you're building.
           </p>
 
           <div class="flex justify-center gap-4">
@@ -30,7 +30,7 @@
               href="#contact-form"
               class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
             >
-              Send a Message
+              Start a conversation
               <Send class="h-5 w-5 ml-2" />
             </a>
             <a
@@ -39,7 +39,7 @@
               class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
             >
               <Calendar class="h-5 w-5 mr-2" />
-              Book a Free Consultation
+              Schedule a Call
             </a>
           </div>
         </div>
@@ -65,7 +65,7 @@
           <!-- Contact Form - 2 columns -->
           <div id="contact-form" class="lg:col-span-2">
             <div class="bg-white rounded-3xl shadow-xl p-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-8">Tell Us About Your Product</h2>
+              <h2 class="text-3xl font-bold text-gray-900 mb-8">Tell us what you're building</h2>
 
               <form @submit.prevent="handleSubmit" class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -187,7 +187,7 @@
                   </span>
                   <span v-else-if="isSubmitting">Sending...</span>
                   <span v-else class="inline-flex items-center">
-                    Send Message
+                    Start the conversation
                     <Send class="h-5 w-5 ml-2" />
                   </span>
                 </button>
@@ -212,7 +212,7 @@
                 >
                   <span class="flex items-center">
                     <Calendar class="h-5 w-5 text-blue-600 mr-3" />
-                    <span class="font-medium text-gray-700">Book a Free Consultation</span>
+                    <span class="font-medium text-gray-700">Schedule a call</span>
                   </span>
                   <ChevronRight class="h-4 w-4 text-gray-400" />
                 </a>

@@ -238,7 +238,7 @@
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">From the people we build with</h2>
           <p class="text-gray-600">Success is best measured by client satisfaction</p>
         </div>
 
@@ -271,17 +271,17 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Have a Project in Mind?
+          Want to build something like this?
         </h2>
         <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          Let's build your next success story together. We'd love to hear about your idea.
+          We'd love to hear what you're working on. No pitch decks -- just a conversation about your product.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
-            Start Your Project
+            Start a conversation
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink
@@ -295,14 +295,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 text-gray-600 border-t border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="text-center">
-          <p class="text-gray-600">&copy; 2024 Acorn Globus. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 

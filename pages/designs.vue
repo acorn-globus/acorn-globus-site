@@ -148,18 +148,18 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Ready to Bring Your Vision to Life?
+          Like what you see? Let's talk.
         </h2>
         <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          Let's create something extraordinary together. From concept to launch,
-          we'll craft designs that captivate your audience and drive results.
+          Whether you need a full product design or a refresh of what you have --
+          we'd love to hear what you're working on.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
           >
-            Start Your Design Project
+            Start a conversation
             <ArrowRight class="ml-2 h-5 w-5" />
           </NuxtLink>
           <NuxtLink

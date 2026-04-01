@@ -38,7 +38,7 @@
           <h4 class="text-gray-900 font-semibold mb-4">Services</h4>
           <ul class="space-y-2 text-sm">
             <li><NuxtLink to="/services/resource-augmentation" class="hover:text-purple-600 transition-colors">Resource Augmentation</NuxtLink></li>
-            <li><NuxtLink to="/services/long-term-projects" class="hover:text-purple-600 transition-colors">Long-Term Projects</NuxtLink></li>
+            <li><NuxtLink to="/services/full-project-delivery" class="hover:text-purple-600 transition-colors">Full Project Delivery</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support" class="hover:text-purple-600 transition-colors">Maintenance & Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development" class="hover:text-purple-600 transition-colors">MVP Development</NuxtLink></li>
           </ul>

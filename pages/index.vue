@@ -570,7 +570,7 @@ const services = [
     title: 'Full Project Delivery',
     hook: 'One team, one relationship, start to finish.',
     description: 'We take on your project end-to-end with milestone-based delivery. You see progress every two weeks. Clean code, full documentation, zero lock-in.',
-    link: '/services/long-term-projects'
+    link: '/services/full-project-delivery'
   },
   {
     icon: Shield,

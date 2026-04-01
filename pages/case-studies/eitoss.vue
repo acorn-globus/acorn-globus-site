@@ -32,7 +32,7 @@
               {{ projectOverview.tagline }}
             </p>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              A revolutionary platform implementing Kaizen principles to transform workplace
+              A platform implementing Kaizen principles to transform workplace
               communication, creating seamless channels between management and frontline workers.
             </p>
 
@@ -141,7 +141,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Features Delivered</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            We built a comprehensive platform that revolutionizes workplace communication
+            We built a comprehensive platform that transforms workplace communication
           </p>
         </div>
 
@@ -261,54 +261,30 @@
 
       <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Ready to Transform Your Vision Into Reality?
+          Building something like this?
         </h2>
         <p class="text-xl text-gray-600 mb-8">
-          Just like Eitoss, we can help you build and launch your MVP in weeks, not months
+          We'd love to hear what you're working on. Let's talk about whether we're the right fit.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
-            Start Your Project
+            Start a conversation
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
             to="/portfolio"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-green-200"
           >
-            View More Projects
+            See our work
             <ChevronRight class="h-5 w-5 ml-2" />
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="flex items-center space-x-3 mb-4 md:mb-0">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500">Digital Solutions Partner</div>
-            </div>
-          </div>
-
-          <div class="flex items-center space-x-6">
-            <a href="mailto:business@acornglobus.com" class="text-gray-600 hover:text-purple-600 transition-colors">
-              business@acornglobus.com
-            </a>
-            <span class="text-gray-400">|</span>
-            <span class="text-gray-600">© 2024 Acorn Globus</span>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -457,7 +433,7 @@ const timeline = [
 
 const impact = {
   title: 'Business Impact',
-  description: 'Eitoss has transformed from a concept to a funded startup, revolutionizing workplace communication',
+  description: 'Eitoss has transformed from a concept to a funded startup, reshaping workplace communication',
   achievements: [
     {
       title: 'Successful Funding Round',

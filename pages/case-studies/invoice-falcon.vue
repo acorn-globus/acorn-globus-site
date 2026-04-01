@@ -292,54 +292,30 @@
     <section class="py-24 bg-white">
       <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Ready to Transform Your Platform?
+          Building a platform like this?
         </h2>
         <p class="text-xl text-gray-600 mb-8">
-          Let's discuss how we can help modernize and scale your business
+          We'd love to hear what you're working on.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
-            Start Your Transformation
+            Start a conversation
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
             to="/portfolio"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
           >
-            View More Projects
+            See our work
             <ChevronRight class="h-5 w-5 ml-2" />
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="flex items-center space-x-3 mb-4 md:mb-0">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500">Digital Solutions Partner</div>
-            </div>
-          </div>
-
-          <div class="flex items-center space-x-6">
-            <a href="mailto:business@acornglobus.com" class="text-gray-600 hover:text-purple-600 transition-colors">
-              business@acornglobus.com
-            </a>
-            <span class="text-gray-400">|</span>
-            <span class="text-gray-600">© 2024 Acorn Globus</span>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
