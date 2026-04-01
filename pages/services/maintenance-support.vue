@@ -217,8 +217,41 @@
       </div>
     </section>
 
-    <!-- Engagement Details -->
+    <!-- What Goes Into Pricing -->
     <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">What goes into pricing</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            We'd rather be honest about what drives cost than give you a number that doesn't mean anything yet.
+          </p>
+          <p class="text-lg text-gray-600 mt-4 leading-relaxed">
+            Maintenance retainers typically range from <span class="font-semibold text-gray-900">$1,500 to $5,000+ per month</span>, depending on four things:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div v-for="(factor, idx) in pricingFactors" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-xl mb-4">
+              <component :is="factor.icon" class="h-6 w-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ factor.title }}</h3>
+            <p class="text-gray-600">{{ factor.description }}</p>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-12">
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Every maintenance plan starts with a conversation about your product — what it does,
+            how it's used, and what kind of care it needs. We'll give you a specific number once
+            we understand the scope. No surprises.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Details -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">The details</h2>
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
@@ -285,7 +318,7 @@
 import {
   ArrowRight, ArrowLeft, Shield, Clock, Users, TrendingUp,
   CheckCircle, ChevronRight, Heart, Activity, RefreshCw, Eye,
-  Search, Settings, BarChart3
+  Search, Settings, BarChart3, Layers, UserCheck, DollarSign
 } from 'lucide-vue-next'
 
 definePageMeta({
@@ -381,11 +414,34 @@ const included = [
   'Monthly health report with full hour breakdown'
 ]
 
+const pricingFactors = [
+  {
+    icon: Layers,
+    title: 'Project complexity',
+    description: 'A stable app with a small user base needs less than a growing platform handling payments and integrations. We size the retainer to what your product actually needs.'
+  },
+  {
+    icon: UserCheck,
+    title: 'Engineer experience',
+    description: "Senior engineers cost more per hour — but they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity."
+  },
+  {
+    icon: Clock,
+    title: 'Hours commitment',
+    description: "More hours per month means a lower effective rate. We'll help you figure out the right number based on your product's age, user base, and pace of change."
+  },
+  {
+    icon: Users,
+    title: 'Availability model',
+    description: 'Dedicated engineers (assigned only to your product) vs. shared support (part of a rotation). Dedicated costs more but gives you faster response and deeper context.'
+  }
+]
+
 const engagementDetails = [
-  { label: 'Model', value: 'Monthly retainer (hours-based tiers)' },
-  { label: 'Minimum commitment', value: '3 months' },
-  { label: 'Team', value: '1-2 dedicated engineers familiar with your codebase' },
-  { label: 'Scaling', value: 'Add improvement sprints for larger feature work' }
+  { label: 'Model', value: 'Monthly retainer, scoped to your product' },
+  { label: 'Minimum commitment', value: '3 months — enough time to learn your product and prove the value' },
+  { label: 'Team', value: '1-2 dedicated engineers who know your codebase' },
+  { label: 'Scaling', value: 'Need more? Add improvement sprints or expand the team as your product grows' }
 ]
 
 const audiences = [
