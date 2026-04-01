@@ -23,6 +23,11 @@
           :article="article"
         />
       </div>
+
+      <!-- Email signup after posts -->
+      <div class="max-w-2xl mx-auto mt-16">
+        <LeadCaptureBlogEmailSignup :compact="true" />
+      </div>
     </div>
   </div>
 </template>

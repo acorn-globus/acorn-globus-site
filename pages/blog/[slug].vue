@@ -37,6 +37,11 @@
           <ContentRenderer :value="doc" />
         </article>
 
+        <!-- Email Signup -->
+        <div class="max-w-4xl mx-auto">
+          <LeadCaptureBlogEmailSignup />
+        </div>
+
         <!-- Related Posts -->
         <div v-if="relatedPosts && relatedPosts.length" class="max-w-4xl mx-auto mt-16 mb-12">
           <hr class="related-divider" />
@@ -64,6 +69,15 @@
         </div>
       </template>
     </ContentDoc>
+
+    <ClientOnly>
+      <LeadCaptureSmartCta
+        text="Enjoyed this article? We'd love to hear about what you're building."
+        cta-label="Let's chat"
+        cta-link="/contact"
+        dismiss-key="smart_cta_blog"
+      />
+    </ClientOnly>
   </div>
 </template>
 

@@ -270,6 +270,15 @@
         </div>
       </div>
     </section>
+
+    <ClientOnly>
+      <LeadCaptureSmartCta
+        text="Ready to turn your idea into a product? We'd love to hear about it."
+        cta-label="Book a 15-minute call"
+        cta-link="/contact"
+        dismiss-key="smart_cta_mvp"
+      />
+    </ClientOnly>
   </div>
 </template>
 

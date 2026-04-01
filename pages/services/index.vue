@@ -303,6 +303,15 @@
         </div>
       </div>
     </section>
+
+    <ClientOnly>
+      <LeadCaptureSmartCta
+        text="Not sure which service fits? Let's figure it out together."
+        cta-label="Book a 15-minute call"
+        cta-link="/contact"
+        dismiss-key="smart_cta_services"
+      />
+    </ClientOnly>
   </div>
 </template>
 

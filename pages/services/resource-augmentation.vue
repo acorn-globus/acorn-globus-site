@@ -256,6 +256,15 @@
         </div>
       </div>
     </section>
+
+    <ClientOnly>
+      <LeadCaptureSmartCta
+        text="Looking for engineers who feel like your own team? Let's talk."
+        cta-label="Book a 15-minute call"
+        cta-link="/contact"
+        dismiss-key="smart_cta_resource_aug"
+      />
+    </ClientOnly>
   </div>
 </template>
 

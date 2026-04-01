@@ -311,6 +311,15 @@
         </div>
       </div>
     </section>
+
+    <ClientOnly>
+      <LeadCaptureSmartCta
+        text="Need a team that keeps your product healthy and improving? Let's talk."
+        cta-label="Book a 15-minute call"
+        cta-link="/contact"
+        dismiss-key="smart_cta_maintenance"
+      />
+    </ClientOnly>
   </div>
 </template>
 
