@@ -111,6 +111,9 @@
       </div>
     </section>
 
+    <!-- Client Logos -->
+    <ClientLogos />
+
     <!-- Formester Proof Section -->
     <section class="py-24 bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -422,7 +425,11 @@
             <div class="relative">
               <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full blur-2xl opacity-60"></div>
               <div class="relative bg-gradient-to-br from-white to-blue-50/30 rounded-3xl p-10 border border-blue-100">
-                <Quote class="h-12 w-12 text-blue-200 mb-6" />
+                <Quote class="h-12 w-12 text-blue-200 mb-4" />
+
+                <p v-if="testimonials[0].framing" class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4">
+                  {{ testimonials[0].framing }}
+                </p>
 
                 <p class="text-2xl text-gray-800 leading-relaxed mb-8 font-light">
                   "{{ testimonials[0].content }}"
@@ -471,6 +478,9 @@
                       <Star v-for="i in testimonial.rating" :key="i" class="h-3 w-3 fill-yellow-400 text-yellow-400" />
                     </div>
                   </div>
+                  <p v-if="testimonial.framing" class="text-xs font-semibold text-blue-600 mb-1">
+                    {{ testimonial.framing }}
+                  </p>
                   <p class="text-sm text-gray-700 leading-relaxed">
                     "{{ testimonial.content }}"
                   </p>
@@ -617,6 +627,7 @@ const testimonials = [
     name: 'Bogdan Arsenie',
     role: 'CTO',
     company: 'PerformLine',
+    framing: 'Started with 1 engineer. Now 8+ deep.',
     content: 'Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.',
     avatar: '/images/testimonials/bogdan.jpeg',
     rating: 5
@@ -625,6 +636,7 @@ const testimonials = [
     name: 'Enzo Zadrima',
     role: 'CTO',
     company: 'Viewber',
+    framing: 'They don\'t wait to be asked.',
     content: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
     avatar: '/images/testimonials/enzo.jpeg',
     rating: 5
@@ -633,6 +645,7 @@ const testimonials = [
     name: 'Alon Diamant',
     role: 'CTO',
     company: 'Mayple',
+    framing: 'Built to last.',
     content: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
     avatar: '/images/testimonials/alon.jpeg',
     rating: 5

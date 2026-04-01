@@ -245,6 +245,7 @@
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
             <Quote class="h-8 w-8 text-blue-200 mb-4" />
+            <p v-if="testimonial.framing" class="text-sm font-semibold text-blue-600 mb-3">{{ testimonial.framing }}</p>
             <p class="text-gray-700 mb-6 italic">{{ testimonial.content }}</p>
             <div class="flex items-center">
               <img
@@ -466,13 +467,15 @@ const testimonials = [
     name: 'Alon Diamant',
     role: 'CTO',
     company: 'Mayple',
+    framing: 'Built to last.',
     content: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
     avatar: '/images/testimonials/alon.jpeg'
   },
   {
     name: 'Enzo Zadrima',
-    role: 'Chief Technology Officer',
+    role: 'CTO',
     company: 'Viewber',
+    framing: 'They don\'t wait to be asked.',
     content: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
     avatar: '/images/testimonials/enzo.jpeg'
   }

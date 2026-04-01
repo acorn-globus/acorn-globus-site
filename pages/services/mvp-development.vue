@@ -212,24 +212,47 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Social Proof -->
     <section class="py-20 bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What our clients say</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Products we've shipped</h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-white rounded-2xl p-8 shadow-lg">
-            <div class="flex mb-4">
-              <Star v-for="i in 5" :key="i" class="h-5 w-5 text-yellow-400 fill-yellow-400" />
-            </div>
-            <blockquote class="text-gray-700 italic mb-6 leading-relaxed">
-              "{{ testimonial.quote }}"
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Eitoss</h3>
+            <p class="text-sm font-semibold text-green-600 mb-4">MVP in 3 months. Raised funding. Still building together.</p>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Demoable product in 8 weeks. Live in production in 3 months. They raised funding
+              and we're still their engineering team 2+ years later.
+            </p>
+          </div>
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Formester</h3>
+            <p class="text-sm font-semibold text-purple-600 mb-4">Our own SaaS. 1,000+ users. 4.8 rating.</p>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              We built our own product from scratch -- it taught us what real ownership feels like.
+              We bring that same care to every MVP we build.
+            </p>
+          </div>
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <p class="text-sm font-semibold text-blue-600 mb-3">They don't wait to be asked.</p>
+            <blockquote class="text-gray-700 italic mb-6 text-sm leading-relaxed">
+              "Acorn Globus is a gifted team with a rare combination of attention to detail and an
+              overall sense for the big picture. They are very passionate about what they do and
+              come up proactively with improvement ideas."
             </blockquote>
-            <div class="border-t pt-4">
-              <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
-              <div class="text-sm text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</div>
+            <div class="flex items-center">
+              <img
+                src="/images/testimonials/enzo.jpeg"
+                alt="Enzo Zadrima"
+                class="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <div class="font-semibold text-gray-900 text-sm">Enzo Zadrima</div>
+                <div class="text-xs text-gray-600">CTO, Viewber</div>
+              </div>
             </div>
           </div>
         </div>
@@ -285,7 +308,7 @@
 <script setup>
 import {
   ArrowRight, ArrowLeft, Rocket, Clock, Package, TrendingUp, Shield,
-  CheckCircle, ChevronRight, Star, Zap, Heart, Target, FileCode
+  CheckCircle, ChevronRight, Zap, Heart, Target, FileCode
 } from 'lucide-vue-next'
 
 definePageMeta({
@@ -385,24 +408,4 @@ const engagementDetails = [
   { label: 'Code ownership', value: '100% yours from day one' }
 ]
 
-const testimonials = [
-  {
-    quote: "Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.",
-    author: "Alon Diamant",
-    role: "CTO",
-    company: "Mayple"
-  },
-  {
-    quote: "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.",
-    author: "Enzo Zadrima",
-    role: "Chief Technology Officer",
-    company: "Viewber"
-  },
-  {
-    quote: "Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.",
-    author: "Bogdan Arsenie",
-    role: "CTO",
-    company: "PerformLine & Social Impact Advocate"
-  }
-]
 </script>

@@ -12,7 +12,7 @@
     </h2>
 
     <div class="space-y-16">
-      <!-- 5+ years experience -->
+      <!-- 6+ years experience -->
       <div class="flex items-center gap-8">
         <div class="text-white w-16">
           <svg viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16">
@@ -21,7 +21,7 @@
           </svg>
         </div>
         <div>
-          <h3 class="text-4xl font-bold text-white mb-2">5+ years of experience</h3>
+          <h3 class="text-4xl font-bold text-white mb-2">7+ years of experience</h3>
           <p class="text-xl text-gray-400">We can handle projects of all complexities.</p>
         </div>
       </div>

@@ -198,11 +198,14 @@
           <h2 class="text-3xl font-bold text-gray-900 mb-4">What our clients say</h2>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div class="flex items-start mb-6">
+            <div class="flex items-start mb-4">
               <Star v-for="i in 5" :key="i" class="h-5 w-5 text-yellow-400 fill-yellow-400" />
             </div>
+            <p v-if="testimonial.framing" class="text-sm font-semibold text-blue-600 mb-3">
+              {{ testimonial.framing }}
+            </p>
             <blockquote class="text-gray-700 mb-6 italic">
               "{{ testimonial.content }}"
             </blockquote>
@@ -371,25 +374,20 @@ const engagementDetails = [
 
 const testimonials = [
   {
-    content: "Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.",
-    author: "Alon Diamant",
-    role: "CTO",
-    company: "Mayple",
-    avatar: "/images/testimonials/alon.jpeg"
-  },
-  {
-    content: "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.",
-    author: "Enzo Zadrima",
-    role: "Chief Technology Officer",
-    company: "Viewber",
-    avatar: "/images/testimonials/enzo.jpeg"
-  },
-  {
+    framing: "Started with 1 engineer. Now 8+ deep.",
     content: "Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.",
     author: "Bogdan Arsenie",
     role: "CTO",
-    company: "PerformLine & Social Impact Advocate",
+    company: "PerformLine",
     avatar: "/images/testimonials/bogdan.jpeg"
+  },
+  {
+    framing: "They don't wait to be asked.",
+    content: "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.",
+    author: "Enzo Zadrima",
+    role: "CTO",
+    company: "Viewber",
+    avatar: "/images/testimonials/enzo.jpeg"
   }
 ]
 </script>

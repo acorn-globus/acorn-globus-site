@@ -59,6 +59,9 @@
       </div>
     </section>
 
+    <!-- Client Logos -->
+    <ClientLogos />
+
     <!-- Our Story Section -->
     <section class="py-24 bg-gradient-to-b from-white to-blue-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
