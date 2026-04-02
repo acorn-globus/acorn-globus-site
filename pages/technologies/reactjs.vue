@@ -184,12 +184,12 @@ definePageMeta({
 
 useSeoMeta({
   title: 'React.js Development Services | AcornGlobus',
-  description: 'React.js development from a team that\'s shipped real products -- from educational platforms to SaaS tools. React 18, Next.js, TypeScript. We build with you, not just for you.',
+  description: 'React.js development from a team that\'s shipped real products - from educational platforms to SaaS tools. React 18, Next.js, TypeScript. We build with you, not just for you.',
   keywords: 'React development, React.js, Next.js, React developers, front-end development, React consulting',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'React.js Development Services | AcornGlobus',
-  ogDescription: 'React.js development from a team that\'s shipped real products -- from educational platforms to SaaS tools.',
+  ogDescription: 'React.js development from a team that\'s shipped real products - from educational platforms to SaaS tools.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/technologies/reactjs',
   ogType: 'website',

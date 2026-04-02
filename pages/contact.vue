@@ -347,12 +347,12 @@ definePageMeta({
 // SEO Meta Tags
 useSeoMeta({
   title: 'Contact Us | Let\'s Build Together | AcornGlobus',
-  description: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you -- resource augmentation, MVP development, and full project delivery.',
+  description: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you - resource augmentation, MVP development, and full project delivery.',
   keywords: 'contact AcornGlobus, software development inquiry, IT consultation, project quote, business inquiry, tech partner',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'Contact Us | Let\'s Build Together | AcornGlobus',
-  ogDescription: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you -- resource augmentation, MVP development, and full project delivery.',
+  ogDescription: 'Have a product idea or need more engineering hands? Let\'s talk. AcornGlobus builds software products with you - resource augmentation, MVP development, and full project delivery.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/contact',
   ogType: 'website',
@@ -442,7 +442,7 @@ const contactInfo = [
     icon: Clock,
     title: 'Response Time',
     details: 'Within 8 hours',
-    description: "During business hours -- we won't keep you waiting"
+    description: "During business hours - we won't keep you waiting"
   }
 ]
 

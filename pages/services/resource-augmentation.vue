@@ -29,7 +29,7 @@
 
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
               We don't send resumes and disappear. We embed dedicated engineers into your
-              team — same tools, same standups, same codebase. They'll know your product
+              team - same tools, same standups, same codebase. They'll know your product
               because they'll care about it.
             </p>
 
@@ -84,7 +84,7 @@
           </p>
           <p>
             You don't need more bodies. You need engineers who show up, ramp fast, and build
-            like they belong — because they do.
+            like they belong - because they do.
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Engineers who join your team, not just your Slack.</h2>
           <p class="text-lg text-gray-600 leading-relaxed">
             Our engineers work inside your workflows. Your Jira, your Git, your standups. They're
-            not external — they're teammates who happen to sit in a different office.
+            not external - they're teammates who happen to sit in a different office.
           </p>
           <p class="text-lg text-gray-600 mt-4 leading-relaxed">Here's what makes this work:</p>
         </div>
@@ -126,7 +126,7 @@
             </p>
             <p>
               That one engineer earned trust. Then they needed a second. Then a third. Over two
-              years, the engagement grew to 8+ engineers — full-stack developers, DevOps, data
+              years, the engagement grew to 8+ engineers - full-stack developers, DevOps, data
               engineers, QA, and frontend specialists.
             </p>
             <p>
@@ -239,7 +239,7 @@
         <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
           Tell us what roles you need and how your team works. We'll propose specific engineers
           and let you meet them before anything starts. If the fit isn't right in the first two
-          weeks, you walk away — no cost, no commitment.
+          weeks, you walk away - no cost, no commitment.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
@@ -283,24 +283,24 @@ definePageMeta({
 
 useSeoMeta({
   title: 'Resource Augmentation | Engineers Who Become Part of Your Team | AcornGlobus',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
+  description: 'Embed dedicated engineers into your team - same tools, same standups, same codebase. 20+ engineers, no rotating pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
   keywords: 'resource augmentation, dedicated developers, team augmentation, staff augmentation, hire developers, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'Resource Augmentation | Engineers Who Become Part of Your Team | AcornGlobus',
-  ogDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
+  ogDescription: 'Embed dedicated engineers into your team - same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/services/resource-augmentation',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Resource Augmentation | Engineers Who Become Part of Your Team',
-  twitterDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
+  twitterDescription: 'Embed dedicated engineers into your team - same tools, same standups, same codebase. 20+ engineers, no rotating pool.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useServiceSchema({
   name: 'Resource Augmentation',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. Named engineers, not a talent pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
+  description: 'Embed dedicated engineers into your team - same tools, same standups, same codebase. Named engineers, not a talent pool. PerformLine grew from 1 to 8+ engineers over 2 years with us.',
   url: '/services/resource-augmentation',
 })
 
@@ -368,7 +368,7 @@ const engagementDetails = [
   { label: 'Minimum', value: '1 engineer' },
   { label: 'Typical', value: '2-5 engineers per client' },
   { label: 'Duration', value: '3-12+ months' },
-  { label: 'Model', value: 'Dedicated — full-time on your project, not shared' },
+  { label: 'Model', value: 'Dedicated - full-time on your project, not shared' },
   { label: 'Pricing', value: 'Monthly per-engineer rate, volume discounts for 3+' }
 ]
 

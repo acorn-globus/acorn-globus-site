@@ -19,7 +19,7 @@
           </h1>
 
           <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl">
-            Vue.js and Nuxt are at the heart of products we've built -- including Formester, our own SaaS,
+            Vue.js and Nuxt are at the heart of products we've built - including Formester, our own SaaS,
             and the site you're reading right now. We know this ecosystem deeply because we use it daily.
           </p>
 
@@ -159,7 +159,7 @@
       <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">Building with Vue?</h2>
         <p class="text-xl text-gray-600 mb-8">
-          We've shipped Vue products for ourselves and our clients. Tell us about your product -- we'd love to help.
+          We've shipped Vue products for ourselves and our clients. Tell us about your product - we'd love to help.
         </p>
         <NuxtLink
           to="/contact"

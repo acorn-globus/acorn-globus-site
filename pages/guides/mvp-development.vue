@@ -17,7 +17,7 @@
         </div>
 
         <h1 class="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-tight mb-6">
-          MVP Development: From Idea to Product -- The Complete Guide (2026)
+          MVP Development: From Idea to Product - The Complete Guide (2026)
         </h1>
 
         <p class="text-lg text-gray-600 leading-relaxed mb-6">
@@ -66,7 +66,7 @@
             </p>
             <p>
               The minimum viable product exists to prevent that. An MVP lets you put a real product
-              in front of real users as quickly as possible -- not to impress them with features, but
+              in front of real users as quickly as possible - not to impress them with features, but
               to learn whether you're solving a problem worth solving.
             </p>
             <p>
@@ -75,7 +75,7 @@
               prototype that collects dust.
             </p>
             <p>
-              We wrote this guide from experience. We built Formester -- our own SaaS product, live
+              We wrote this guide from experience. We built Formester - our own SaaS product, live
               and growing with real users. We also shipped Eitoss's MVP in 3 months; they raised
               funding on the back of it, and we're still building together two years later. So when
               we talk about MVP development, we're not theorizing. We've been the builders and the
@@ -91,13 +91,13 @@
             <p>
               A minimum viable product is the smallest version of your product that delivers real
               value to real users. It's not a sketch. It's not a clickable prototype. It's a working
-              product -- small, focused, and functional enough that someone can use it to solve a
+              product - small, focused, and functional enough that someone can use it to solve a
               real problem.
             </p>
             <p><strong>What an MVP is:</strong></p>
             <ul>
               <li>A product with one core value proposition, built well enough to use</li>
-              <li>A learning tool -- it exists to validate (or invalidate) your assumptions</li>
+              <li>A learning tool - it exists to validate (or invalidate) your assumptions</li>
               <li>A foundation you can build on when you know what works</li>
             </ul>
             <p><strong>What an MVP is NOT:</strong></p>
@@ -175,8 +175,8 @@
               closes that gap with data, not guesswork.
             </p>
             <p>
-              <strong>Raise with proof.</strong> Investors in 2026 want to see traction -- active
-              users, retention metrics, early revenue -- not just slide decks. An MVP gives you
+              <strong>Raise with proof.</strong> Investors in 2026 want to see traction - active
+              users, retention metrics, early revenue - not just slide decks. An MVP gives you
               something tangible to demo and data to back your pitch. Eitoss raised funding on the
               back of an MVP we built together in 3 months.
             </p>
@@ -186,7 +186,7 @@
               use it, and let their behavior guide what you build next.
             </p>
             <p>
-              We learned this building Formester. We started with a focused set of features -- form
+              We learned this building Formester. We started with a focused set of features - form
               building and submission management. We launched, listened to users, and grew from there.
               That experience taught us what real product ownership feels like, and we bring that same
               thinking to every product we touch.
@@ -195,11 +195,11 @@
             <!-- Section: Process Step by Step -->
             <h2 id="process">The MVP Development Process: Step by Step</h2>
             <p>
-              Here's how we think about building an MVP. Not a theoretical framework -- this is the
+              Here's how we think about building an MVP. Not a theoretical framework - this is the
               process we use with our clients and used ourselves with Formester.
             </p>
 
-            <h3 id="step-1">Step 1 -- Define the Problem (Not the Solution)</h3>
+            <h3 id="step-1">Step 1 - Define the Problem (Not the Solution)</h3>
             <p>
               Before you write a line of code, you need to be clear about one thing: what problem
               are you solving, and for whom?
@@ -213,7 +213,7 @@
               spend more time talking to potential users before building anything.
             </p>
 
-            <h3 id="step-2">Step 2 -- Scope Ruthlessly (The Art of Saying No)</h3>
+            <h3 id="step-2">Step 2 - Scope Ruthlessly (The Art of Saying No)</h3>
             <p>
               This is where most MVPs go wrong. Founders add features because they're afraid the
               product won't be "enough." But every feature you add is a week you delay learning from
@@ -234,7 +234,7 @@
               want you to succeed faster.
             </p>
 
-            <h3 id="step-3">Step 3 -- Choose Your Tech Stack</h3>
+            <h3 id="step-3">Step 3 - Choose Your Tech Stack</h3>
             <p>
               The right tech stack depends on what you're building, not on what's trendy. Here's how
               we think about it:
@@ -251,9 +251,9 @@
               microservices architecture that takes three months longer to build and serves 100 users.
             </p>
 
-            <h3 id="step-4">Step 4 -- Design and Build in Sprints</h3>
+            <h3 id="step-4">Step 4 - Design and Build in Sprints</h3>
             <p>
-              We work in 2-week sprints. At the end of each sprint, you see a working demo -- not a
+              We work in 2-week sprints. At the end of each sprint, you see a working demo - not a
               progress report, not a slide deck, but the actual product running.
             </p>
             <p>
@@ -268,7 +268,7 @@
               you know the product is working.
             </p>
 
-            <h3 id="step-5">Step 5 -- Launch, Measure, Learn</h3>
+            <h3 id="step-5">Step 5 - Launch, Measure, Learn</h3>
             <p>
               Launch doesn't mean a press release and a Product Hunt campaign. For most MVPs, launch
               means getting the product in front of 20-50 real users and watching what happens.
@@ -285,7 +285,7 @@
               If people keep coming back, you're on to something.
             </p>
 
-            <h3 id="step-6">Step 6 -- Iterate or Pivot</h3>
+            <h3 id="step-6">Step 6 - Iterate or Pivot</h3>
             <p>
               The MVP is the beginning, not the end. Once you have real user data, you face one of
               three paths:
@@ -442,7 +442,7 @@
               enough that users can experience the core value, and iterate from there.
             </p>
             <p>
-              The hardest part of MVP development isn't building -- it's cutting. Every feature you
+              The hardest part of MVP development isn't building - it's cutting. Every feature you
               say "yes" to delays the moment you learn whether your idea works. That delay has a
               cost, and it's measured in runway, not dollars.
             </p>
@@ -464,7 +464,7 @@
               <li>Describe the problem your users face in your own words</li>
               <li>List what a user should be able to do with your product (use "As a user, I want to..." format)</li>
               <li>Show examples of products you admire and explain what you like about them</li>
-              <li>Be honest about what you don't know -- that's what your development partner is for</li>
+              <li>Be honest about what you don't know - that's what your development partner is for</li>
             </ul>
             <p><strong>What to look for in a development partner:</strong></p>
             <ul>
@@ -482,7 +482,7 @@
             <p>
               You stay in control of the product. A good partner handles the engineering and walks
               you through every decision. You don't need to understand React to build a great
-              product. You need to understand your users -- and you already do.
+              product. You need to understand your users - and you already do.
             </p>
 
             <!-- Section: Choosing a Partner -->
@@ -494,10 +494,10 @@
 
             <h3 id="questions-to-ask">6 Questions to Ask</h3>
             <ol>
-              <li><strong>"Have you built your own product?"</strong> This one matters. A partner who's shipped their own product understands the anxiety of launching, the pressure of limited runway, and the trade-offs that don't show up in a requirements document. If they've only built for clients, they may be skilled engineers -- but they haven't walked in your shoes.</li>
+              <li><strong>"Have you built your own product?"</strong> This one matters. A partner who's shipped their own product understands the anxiety of launching, the pressure of limited runway, and the trade-offs that don't show up in a requirements document. If they've only built for clients, they may be skilled engineers - but they haven't walked in your shoes.</li>
               <li><strong>"Can I see the code and deploy independently?"</strong> You should own 100% of the code from day one. If the partner hosts it on their infrastructure or uses proprietary frameworks, you're locked in.</li>
               <li><strong>"What's your process for helping me cut scope?"</strong> If they say "yes" to everything you ask for, be cautious. A good partner pushes back on scope because they care about your outcome, not just the invoice.</li>
-              <li><strong>"What happens after launch? Do you stay or disappear?"</strong> The weeks after launch are when you need the most support -- bug fixes, user feedback, quick iterations. A partner who disappears after delivery isn't a partner.</li>
+              <li><strong>"What happens after launch? Do you stay or disappear?"</strong> The weeks after launch are when you need the most support - bug fixes, user feedback, quick iterations. A partner who disappears after delivery isn't a partner.</li>
               <li><strong>"Can I talk to a founder you've worked with?"</strong> Not a testimonial on a website. A real conversation with someone who's been through the MVP journey with them.</li>
               <li><strong>"What's included in post-launch support?"</strong> Get specifics: how many weeks, what's covered, what costs extra.</li>
             </ol>
@@ -544,14 +544,14 @@
             <p>
               <strong>The partnership continues.</strong> Eitoss started as an MVP we built together.
               They raised funding on the back of it. Two years later, we're still building together
-              -- adding features, scaling infrastructure, growing the product. The MVP was the
+              - adding features, scaling infrastructure, growing the product. The MVP was the
               beginning of a partnership, not a transaction.
             </p>
 
             <!-- Section: Real Stories -->
             <h2 id="real-stories">Real Stories: How We Build MVPs</h2>
 
-            <h3 id="eitoss-story">Eitoss -- From Idea to Funded Product</h3>
+            <h3 id="eitoss-story">Eitoss - From Idea to Funded Product</h3>
             <p>
               Eitoss came to us with an idea and a timeline. They needed a working demo fast enough
               to show investors, and a production-ready product soon after.
@@ -563,23 +563,23 @@
             </p>
             <p>
               They raised funding on the strength of that MVP. Two years later, we're still building
-              together -- adding features, scaling the platform, growing the team.
+              together - adding features, scaling the platform, growing the team.
             </p>
             <p>That's what the right MVP engagement looks like. Not a handoff, but a beginning.</p>
             <p>
               <NuxtLink to="/case-studies/eitoss" class="guide-link">Read the full Eitoss story</NuxtLink>
             </p>
 
-            <h3 id="formester-story">Formester -- Our Own MVP Journey</h3>
+            <h3 id="formester-story">Formester - Our Own MVP Journey</h3>
             <p>
-              We didn't just build MVPs for clients -- we built our own. Formester is a form-building
+              We didn't just build MVPs for clients - we built our own. Formester is a form-building
               SaaS product we created from scratch. We went through every stage ourselves: scoping,
               building, launching, watching real users struggle, iterating, and growing.
             </p>
             <p>
               That experience changed how we work with clients. We know what it feels like to obsess
               over a feature nobody uses. We know the anxiety of launching something that feels
-              incomplete. And we know that the MVP is never really "done" -- it's the foundation for
+              incomplete. And we know that the MVP is never really "done" - it's the foundation for
               everything that comes after.
             </p>
             <p>
@@ -597,7 +597,7 @@
               where to start:
             </p>
             <ol>
-              <li><strong>Clarify the problem.</strong> Can you describe -- in one sentence -- what problem your product solves and for whom? If not, spend more time with potential users.</li>
+              <li><strong>Clarify the problem.</strong> Can you describe - in one sentence - what problem your product solves and for whom? If not, spend more time with potential users.</li>
               <li><strong>Scope ruthlessly.</strong> What's the one thing your MVP must do? Start there.</li>
               <li><strong>Find a partner, not a vendor.</strong> Someone who'll help you cut scope, explain trade-offs, and stay beyond launch.</li>
               <li><strong>Budget for learning, not perfection.</strong> The MVP's job is to teach you what to build next.</li>
@@ -605,7 +605,7 @@
             </ol>
             <p>
               We've built our own product and helped founders build theirs. If you want to talk
-              through your idea -- what to build, what to skip, what it might cost -- we're happy
+              through your idea - what to build, what to skip, what it might cost - we're happy
               to have that conversation.
             </p>
             <div class="flex flex-wrap gap-4 my-8">
@@ -653,7 +653,7 @@
               </h3>
               <p class="text-gray-600 mb-6">
                 We've built our own SaaS (Formester) and helped founders like Eitoss go from idea to
-                funded product. Let's talk about what you're building -- no commitment, just an
+                funded product. Let's talk about what you're building - no commitment, just an
                 honest conversation.
               </p>
               <NuxtLink
@@ -714,34 +714,34 @@ const faqs = [
   },
   {
     question: "How much does MVP development cost?",
-    answer: 'Depending on the product type and team location, MVP costs typically range from $15,000 to $80,000. A simple SaaS MVP is $15,000-$40,000; a marketplace or AI-integrated product can reach $80,000-$100,000+. The biggest cost driver is scope -- fewer features means lower cost and faster learning. See our <a href="/blog/mvp-development-cost" class="guide-link">detailed cost breakdown</a>.'
+    answer: 'Depending on the product type and team location, MVP costs typically range from $15,000 to $80,000. A simple SaaS MVP is $15,000-$40,000; a marketplace or AI-integrated product can reach $80,000-$100,000+. The biggest cost driver is scope - fewer features means lower cost and faster learning. See our <a href="/blog/mvp-development-cost" class="guide-link">detailed cost breakdown</a>.'
   },
   {
     question: "What's the difference between an MVP and a prototype?",
-    answer: "A prototype tests design and usability -- it's often a clickable mockup shown to stakeholders for feedback. An MVP is a real, working product deployed to real users. Prototypes generate design feedback. MVPs generate market validation data: are people using it, coming back, and paying for it?"
+    answer: "A prototype tests design and usability - it's often a clickable mockup shown to stakeholders for feedback. An MVP is a real, working product deployed to real users. Prototypes generate design feedback. MVPs generate market validation data: are people using it, coming back, and paying for it?"
   },
   {
     question: "Do I need a technical co-founder to build an MVP?",
-    answer: "No. You need a development partner who explains technical decisions in plain English and helps you make product decisions with confidence. Many successful products were built by non-technical founders working with the right engineering partner. What matters is that you deeply understand your users -- the technical execution can be partnered on."
+    answer: "No. You need a development partner who explains technical decisions in plain English and helps you make product decisions with confidence. Many successful products were built by non-technical founders working with the right engineering partner. What matters is that you deeply understand your users - the technical execution can be partnered on."
   },
   {
     question: "What happens after the MVP launches?",
-    answer: "You measure, learn, and iterate. Watch how users interact with the product. Identify what's working, what's confusing, and what's missing. Build the next set of features based on data, not assumptions. If the product resonates, this is also when many founders raise their first round of funding -- investors want to see traction, and a live MVP with real users provides that."
+    answer: "You measure, learn, and iterate. Watch how users interact with the product. Identify what's working, what's confusing, and what's missing. Build the next set of features based on data, not assumptions. If the product resonates, this is also when many founders raise their first round of funding - investors want to see traction, and a live MVP with real users provides that."
   },
   {
     question: "Can I own the code?",
-    answer: "Yes -- and you should insist on it. Any reputable development partner gives you 100% code ownership from day one. The code lives in your repositories, you control deployment, and you can take it to another team at any time. If a partner won't agree to this, that's a red flag. Your product is yours."
+    answer: "Yes - and you should insist on it. Any reputable development partner gives you 100% code ownership from day one. The code lives in your repositories, you control deployment, and you can take it to another team at any time. If a partner won't agree to this, that's a red flag. Your product is yours."
   }
 ]
 
 // SEO Meta
 useSeoMeta({
-  title: 'MVP Development: From Idea to Product -- The Complete Guide (2026) | AcornGlobus',
+  title: 'MVP Development: From Idea to Product - The Complete Guide (2026) | AcornGlobus',
   description: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch. Written by a team that built its own product.',
   keywords: 'MVP development, how to build an MVP, minimum viable product, MVP development cost, MVP for startups, MVP development process, MVP development company',
   author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'MVP Development: From Idea to Product -- The Complete Guide (2026)',
+  ogTitle: 'MVP Development: From Idea to Product - The Complete Guide (2026)',
   ogDescription: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/guides/mvp-development',
@@ -760,7 +760,7 @@ useHead({
 
 // Article JSON-LD schema
 useArticleSchema({
-  title: 'MVP Development: From Idea to Product -- The Complete Guide (2026)',
+  title: 'MVP Development: From Idea to Product - The Complete Guide (2026)',
   description: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch. Written by a team that built its own product.',
   url: '/guides/mvp-development',
   datePublished: '2026-04-01',

@@ -22,7 +22,7 @@
           </h1>
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Every partnership starts with a conversation and grows from there. Here's exactly what working with us looks like -- no surprises, no fine print.
+            Every partnership starts with a conversation and grows from there. Here's exactly what working with us looks like - no surprises, no fine print.
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@
             We've been asked this question hundreds of times: "So... how does this actually work?"
           </p>
           <p>
-            Fair question. You're about to trust a team with your product -- something you've been thinking about for months, maybe years. You deserve to know exactly what happens after that first handshake.
+            Fair question. You're about to trust a team with your product - something you've been thinking about for months, maybe years. You deserve to know exactly what happens after that first handshake.
           </p>
           <p>
             So here it is. Our entire process, laid bare. The same way we'd explain it sitting across the table from you.
@@ -62,7 +62,7 @@
         <div class="grid lg:grid-cols-2 gap-12">
           <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
             <p>
-              The first thing we do is understand your product. Not your tech stack wish list -- your product. What problem does it solve? Who uses it? What does success look like in 6 months?
+              The first thing we do is understand your product. Not your tech stack wish list - your product. What problem does it solve? Who uses it? What does success look like in 6 months?
             </p>
             <p>
               We typically spend 1-2 weeks in discovery, depending on complexity. This isn't a sales exercise. It's the work that makes everything after it go right.
@@ -93,7 +93,7 @@
               <h4 class="font-bold text-gray-900">For non-technical founders</h4>
             </div>
             <p class="text-gray-600 text-sm leading-relaxed">
-              You don't need to show up with a spec sheet. Show up with your vision. We'll ask the right questions, translate your ideas into a technical plan, and walk you through every decision -- in plain English, not jargon.
+              You don't need to show up with a spec sheet. Show up with your vision. We'll ask the right questions, translate your ideas into a technical plan, and walk you through every decision - in plain English, not jargon.
             </p>
           </div>
           <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-100">
@@ -141,7 +141,7 @@
               <strong class="text-gray-900">We match engineers to your project, not the other way around.</strong> Need someone who's built real-time dashboards in React? We'll pair you with someone who's done exactly that. Need a backend engineer who understands healthcare compliance? We've got you.
             </p>
             <p>
-              <strong class="text-gray-900">The people you meet are the people who build.</strong> No bait-and-switch. No senior engineer in the pitch meeting and a junior writing the code. Both of our founders -- Ankit and Tarun -- stay involved throughout. They code, they join client calls, they review pull requests.
+              <strong class="text-gray-900">The people you meet are the people who build.</strong> No bait-and-switch. No senior engineer in the pitch meeting and a junior writing the code. Both of our founders - Ankit and Tarun - stay involved throughout. They code, they join client calls, they review pull requests.
             </p>
           </div>
 
@@ -154,7 +154,7 @@
                 <div>
                   <h3 class="text-lg font-bold text-gray-900 mb-2">No bench. No rotating contractors.</h3>
                   <p class="text-gray-600 leading-relaxed">
-                    Your team stays your team. When PerformLine started working with us, they had one engineer from our team. Two years later, that relationship has grown to 8+ engineers -- and the original engineer is still on the project. That's trust earned over time.
+                    Your team stays your team. When PerformLine started working with us, they had one engineer from our team. Two years later, that relationship has grown to 8+ engineers - and the original engineer is still on the project. That's trust earned over time.
                   </p>
                 </div>
               </div>
@@ -215,7 +215,7 @@
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Communication is daily, not monthly.</h3>
             <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                We join your Slack (or you join ours). We use your project management tools -- Jira, Linear, Notion, whatever your team runs on. We join your standups if you want us there. The goal is simple: you should never have to wonder what's happening with your product.
+                We join your Slack (or you join ours). We use your project management tools - Jira, Linear, Notion, whatever your team runs on. We join your standups if you want us there. The goal is simple: you should never have to wonder what's happening with your product.
               </p>
               <p>
                 <strong class="text-gray-900">Feedback loops are tight.</strong> When you see something in a demo that's not quite right, it goes into the next sprint. No waiting 6 weeks for a "change request process." We're building with you, not delivering to you.
@@ -248,7 +248,7 @@
               <h4 class="font-bold text-gray-900">For non-technical founders</h4>
             </div>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Every demo is a chance to see your vision coming to life. We'll explain what we built, why we made certain choices, and what's coming next. No jargon -- just your product, working, on screen.
+              Every demo is a chance to see your vision coming to life. We'll explain what we built, why we made certain choices, and what's coming next. No jargon - just your product, working, on screen.
             </p>
           </div>
           <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
@@ -279,7 +279,7 @@
         </h2>
 
         <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mb-12">
-          The weeks before launch are where discipline matters most. Eitoss shipped their MVP in 3 months and raised their round on the back of it. We know what "launch-ready" actually means -- and it's more than passing QA.
+          The weeks before launch are where discipline matters most. Eitoss shipped their MVP in 3 months and raised their round on the back of it. We know what "launch-ready" actually means - and it's more than passing QA.
         </p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -351,7 +351,7 @@
             <h3 class="text-xl font-bold text-gray-900 mb-2">PerformLine</h3>
             <p class="text-sm font-semibold text-blue-600 mb-4">1 engineer to 8+ in 2 years</p>
             <p class="text-gray-600 leading-relaxed">
-              PerformLine started with one engineer from our team. That was over two years ago. Today, we have 8+ engineers embedded with their team. New hires at PerformLine sometimes forget our engineers are external -- that's how deeply integrated we are.
+              PerformLine started with one engineer from our team. That was over two years ago. Today, we have 8+ engineers embedded with their team. New hires at PerformLine sometimes forget our engineers are external - that's how deeply integrated we are.
             </p>
           </div>
           <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-green-100">
@@ -364,7 +364,7 @@
         </div>
 
         <p class="text-xl text-gray-700 font-medium text-center max-w-3xl mx-auto">
-          80%+ of our clients continue working with us beyond the initial engagement. Not because of a contract -- because the partnership works.
+          80%+ of our clients continue working with us beyond the initial engagement. Not because of a contract - because the partnership works.
         </p>
       </div>
     </section>
@@ -434,7 +434,7 @@
         </div>
 
         <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto leading-relaxed">
-          You'll have a direct line to the engineers building your product -- not a project manager translating messages back and forth. Questions get answered in hours, not days.
+          You'll have a direct line to the engineers building your product - not a project manager translating messages back and forth. Questions get answered in hours, not days.
         </p>
       </div>
     </section>
@@ -495,10 +495,10 @@
           Ready to Start?
         </h2>
         <p class="text-xl text-gray-700 mb-4 max-w-3xl mx-auto">
-          The first step is a conversation. No pitch deck, no commitment -- just a real talk about your product, your timeline, and whether we're the right fit.
+          The first step is a conversation. No pitch deck, no commitment - just a real talk about your product, your timeline, and whether we're the right fit.
         </p>
         <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          We'll be honest with you from minute one. If we're not the right team for your project, we'll tell you -- and point you in the right direction if we can.
+          We'll be honest with you from minute one. If we're not the right team for your project, we'll tell you - and point you in the right direction if we can.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
@@ -530,18 +530,18 @@ definePageMeta({
 // SEO Meta Tags
 useSeoMeta({
   title: 'How We Work | AcornGlobus',
-  description: 'See exactly what it\'s like to work with AcornGlobus -- from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
+  description: 'See exactly what it\'s like to work with AcornGlobus - from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
   keywords: 'how we work software development partner, software development process, agile development partner, transparent software agency process, dedicated development team process',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'How We Work | AcornGlobus',
-  ogDescription: 'See exactly what it\'s like to work with AcornGlobus -- from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
+  ogDescription: 'See exactly what it\'s like to work with AcornGlobus - from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/how-we-work',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'How We Work | AcornGlobus',
-  twitterDescription: 'See exactly what it\'s like to work with AcornGlobus -- from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
+  twitterDescription: 'See exactly what it\'s like to work with AcornGlobus - from the first conversation to long-term partnership. Transparent process, weekly demos, and a team you\'ll know by name.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -555,7 +555,7 @@ const scopingItems = [
   'Your product vision and the problem it solves',
   'Who your users are and what they need',
   'What\'s already built (if anything) and what shape it\'s in',
-  'Your timeline -- and whether it\'s realistic (we\'ll be honest)',
+  'Your timeline - and whether it\'s realistic (we\'ll be honest)',
   'Budget range, so we can design a plan that fits',
   'What "done" means for your first milestone',
 ]
@@ -563,13 +563,13 @@ const scopingItems = [
 const weeklyRhythm = [
   {
     day: 'Monday',
-    description: 'Sprint planning -- you\'re invited. Your priorities shape the sprint.',
+    description: 'Sprint planning - you\'re invited. Your priorities shape the sprint.',
     icon: CalendarDays,
     iconColor: 'text-blue-600',
   },
   {
     day: 'Daily',
-    description: 'Async standups on Slack -- what\'s done, what\'s in progress, any blockers.',
+    description: 'Async standups on Slack - what\'s done, what\'s in progress, any blockers.',
     icon: MessageSquare,
     iconColor: 'text-indigo-600',
   },
@@ -588,10 +588,10 @@ const weeklyRhythm = [
 ]
 
 const sprintCadence = [
-  { label: 'Sprint 1', description: 'Foundation -- project setup, architecture decisions, first working screens or endpoints.', color: 'bg-blue-100 text-blue-700' },
-  { label: 'Sprint 2-3', description: 'Core features -- the things your users will actually touch.', color: 'bg-indigo-100 text-indigo-700' },
-  { label: 'Sprint 4-5', description: 'Integration and polish -- connecting the pieces, handling edge cases.', color: 'bg-purple-100 text-purple-700' },
-  { label: 'Sprint 6+', description: 'Iteration -- refinement, performance, launch readiness.', color: 'bg-green-100 text-green-700' },
+  { label: 'Sprint 1', description: 'Foundation - project setup, architecture decisions, first working screens or endpoints.', color: 'bg-blue-100 text-blue-700' },
+  { label: 'Sprint 2-3', description: 'Core features - the things your users will actually touch.', color: 'bg-indigo-100 text-indigo-700' },
+  { label: 'Sprint 4-5', description: 'Integration and polish - connecting the pieces, handling edge cases.', color: 'bg-purple-100 text-purple-700' },
+  { label: 'Sprint 6+', description: 'Iteration - refinement, performance, launch readiness.', color: 'bg-green-100 text-green-700' },
 ]
 
 const launchItems = [
@@ -647,7 +647,7 @@ const postLaunchPhases = [
   },
   {
     title: 'Growth partnership',
-    description: 'When you\'re ready to build the next feature, expand to a new market, or scale your infrastructure -- we\'re already up to speed. No re-onboarding. No ramp-up time.',
+    description: 'When you\'re ready to build the next feature, expand to a new market, or scale your infrastructure - we\'re already up to speed. No re-onboarding. No ramp-up time.',
     icon: Rocket,
     iconColor: 'text-green-600',
   },
@@ -739,7 +739,7 @@ const communicationChannels = [
 const engagementModels = [
   {
     title: 'Resource Augmentation',
-    description: 'Your team, plus ours. Our engineers embed in your existing workflow -- same tools, same standups, same Git workflow. You manage priorities; we deliver.',
+    description: 'Your team, plus ours. Our engineers embed in your existing workflow - same tools, same standups, same Git workflow. You manage priorities; we deliver.',
     bestFor: 'Teams that need more capacity or specific skills without the hiring cycle.',
     icon: Users,
     bgColor: 'bg-blue-100',

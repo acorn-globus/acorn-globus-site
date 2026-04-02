@@ -68,7 +68,7 @@
             </p>
             <p>Sound familiar?</p>
             <p>
-              Staff augmentation exists to solve this problem -- but only if you understand how it
+              Staff augmentation exists to solve this problem - but only if you understand how it
               works, when it fits, and when it doesn't. This guide covers all of that. We wrote it
               from experience: we've helped clients grow their engineering teams from a single
               developer to 8+ engineers over multi-year partnerships, with the same people showing
@@ -83,14 +83,14 @@
             <h2 id="what-is-it">What Is IT Staff Augmentation?</h2>
             <p>
               IT staff augmentation is a model where you bring external engineers into your existing
-              team. They work alongside your people -- same tools, same standups, same Slack channels,
+              team. They work alongside your people - same tools, same standups, same Slack channels,
               same codebase. They're not building something in a separate room and handing it over.
               They're part of your team.
             </p>
             <p>
               The key difference from outsourcing: you keep control. Your product manager sets
               priorities. Your architects make technical decisions. The augmented engineers follow
-              your process and contribute to your goals -- they just happen to be employed by someone
+              your process and contribute to your goals - they just happen to be employed by someone
               else.
             </p>
             <p>Think of it as extending your team without the 6-month hiring timeline.</p>
@@ -111,9 +111,9 @@
                 <tbody>
                   <tr>
                     <td class="font-medium">Control</td>
-                    <td>Full -- your process, your tools</td>
-                    <td>Limited -- vendor manages work</td>
-                    <td>Variable -- depends on the person</td>
+                    <td>Full - your process, your tools</td>
+                    <td>Limited - vendor manages work</td>
+                    <td>Variable - depends on the person</td>
                     <td>Full</td>
                   </tr>
                   <tr>
@@ -156,7 +156,7 @@
             </div>
             <p>
               Each model has its place. Staff augmentation works best when you have internal
-              technical leadership and need more hands -- not more management.
+              technical leadership and need more hands - not more management.
             </p>
             <p>
               For a deeper comparison, see our article on
@@ -169,10 +169,10 @@
               The process should feel straightforward. If it doesn't, that's a red flag about the partner.
             </p>
 
-            <h3 id="step-1">Step 1 -- Discovery and Requirements</h3>
+            <h3 id="step-1">Step 1 - Discovery and Requirements</h3>
             <p>
               It starts with a conversation. What roles do you need? What's your stack? What does
-              your workflow look like -- Jira or Linear, GitHub or GitLab, Slack or Teams? What
+              your workflow look like - Jira or Linear, GitHub or GitLab, Slack or Teams? What
               timezone are you in?
             </p>
             <p>
@@ -180,18 +180,18 @@
               find engineers who fit naturally.
             </p>
 
-            <h3 id="step-2">Step 2 -- Engineer Matching</h3>
+            <h3 id="step-2">Step 2 - Engineer Matching</h3>
             <p>
               A good staff augmentation partner doesn't pull from a generic bench. They match specific
-              engineers to your requirements -- people whose experience aligns with your stack, your
+              engineers to your requirements - people whose experience aligns with your stack, your
               domain, and your team culture.
             </p>
             <p>
               You should meet the engineers before they start. Names, backgrounds, relevant experience.
-              Not a resume dump -- a real introduction.
+              Not a resume dump - a real introduction.
             </p>
 
-            <h3 id="step-3">Step 3 -- Trial Period and Onboarding</h3>
+            <h3 id="step-3">Step 3 - Trial Period and Onboarding</h3>
             <p>
               The first 2 weeks matter most. During this trial period, augmented engineers join your
               team, get access to your codebase, attend your standups, and start contributing.
@@ -202,11 +202,11 @@
               two, they're contributing meaningfully.
             </p>
             <p>
-              If the fit isn't right during the trial, a good partner will replace the engineer -- no
+              If the fit isn't right during the trial, a good partner will replace the engineer - no
               questions, no friction.
             </p>
 
-            <h3 id="step-4">Step 4 -- Embedded Work</h3>
+            <h3 id="step-4">Step 4 - Embedded Work</h3>
             <p>
               Once onboarded, augmented engineers work like any other team member. Same sprint
               planning, same code reviews, same deploy process. The goal is that after a few weeks,
@@ -217,11 +217,11 @@
               builds deep context that a rotating contractor never will.
             </p>
 
-            <h3 id="step-5">Step 5 -- Scaling Up or Down</h3>
+            <h3 id="step-5">Step 5 - Scaling Up or Down</h3>
             <p>
               Your needs will change. Maybe you need two more frontend engineers for a product launch,
               or you need to scale back after a major release. Staff augmentation gives you that
-              flexibility -- typically with just 2 weeks' notice.
+              flexibility - typically with just 2 weeks' notice.
             </p>
 
             <!-- Section: Types and Models -->
@@ -288,7 +288,7 @@
             <p>
               <strong>Cost efficiency.</strong> For US and UK companies working with offshore or
               nearshore teams, augmentation can reduce engineering costs by 40-65% compared to local
-              full-time hires -- without sacrificing quality. The global staff augmentation market is
+              full-time hires - without sacrificing quality. The global staff augmentation market is
               projected to reach $317.96 billion by 2026 (Grand View Research), which tells you how
               many companies have done this math.
             </p>
@@ -300,13 +300,13 @@
             </p>
             <p>
               <strong>You keep control.</strong> Unlike outsourcing, you manage priorities, you own the
-              architecture, and you set the standards. The engineers are part of your team -- they just
+              architecture, and you set the standards. The engineers are part of your team - they just
               happen to be on a different payroll.
             </p>
             <p>
               <strong>Flexibility.</strong> Scale from 3 engineers to 6 in two weeks. Scale back to 2
               after launch. No severance, no awkward conversations, no HR paperwork. PerformLine
-              started with 1 engineer and grew to 8+ over 2 years -- that kind of organic scaling is
+              started with 1 engineer and grew to 8+ over 2 years - that kind of organic scaling is
               exactly what this model enables.
             </p>
             <p>
@@ -318,7 +318,7 @@
             <!-- Section: Costs -->
             <h2 id="costs">The Real Costs: What to Expect</h2>
             <p>
-              Let's be honest about money. Staff augmentation isn't always the cheapest option -- but
+              Let's be honest about money. Staff augmentation isn't always the cheapest option - but
               it often delivers the best value-for-speed ratio.
             </p>
 
@@ -351,7 +351,7 @@
             <p>Staff augmentation isn't free of overhead. Be realistic about these:</p>
             <ul>
               <li><strong>Onboarding time.</strong> Even a great engineer needs 1-2 weeks to ramp on your codebase. Budget for reduced output early on.</li>
-              <li><strong>Management overhead.</strong> Your team leads will spend time onboarding, reviewing PRs, and mentoring augmented engineers -- especially in the first month.</li>
+              <li><strong>Management overhead.</strong> Your team leads will spend time onboarding, reviewing PRs, and mentoring augmented engineers - especially in the first month.</li>
               <li><strong>Context switching.</strong> If augmented engineers are juggling multiple clients, their focus suffers. Insist on dedicated (full-time) allocation.</li>
               <li><strong>Vendor management.</strong> Someone on your side needs to manage the relationship, handle escalations, and track performance.</li>
             </ul>
@@ -367,24 +367,24 @@
 
             <h3 id="use-it-when">Use It When...</h3>
             <ul>
-              <li><strong>Your team has capacity gaps, not leadership gaps.</strong> You have a CTO, architects, and engineering managers -- you just need more hands. Augmented engineers plug into your existing structure.</li>
+              <li><strong>Your team has capacity gaps, not leadership gaps.</strong> You have a CTO, architects, and engineering managers - you just need more hands. Augmented engineers plug into your existing structure.</li>
               <li><strong>Hiring is too slow for your timeline.</strong> You have a product launch in Q3 and three open reqs that have been sitting since January. Augmentation bridges the gap.</li>
-              <li><strong>You need specialized skills temporarily.</strong> A DevOps migration, a mobile app build, a data pipeline project -- skills you need for 6 months, not permanently.</li>
+              <li><strong>You need specialized skills temporarily.</strong> A DevOps migration, a mobile app build, a data pipeline project - skills you need for 6 months, not permanently.</li>
               <li><strong>You're scaling and testing capacity.</strong> Start with 2 augmented engineers. If the workload sustains, convert some roles to full-time later.</li>
             </ul>
 
             <h3 id="dont-use-when">Don't Use It When...</h3>
             <ul>
-              <li><strong>You don't have internal technical leadership.</strong> If nobody on your team can review PRs, set architecture, and manage engineering priorities, augmented engineers will drift. You need a CTO or tech lead first -- or consider a full project delivery model where the partner provides leadership.</li>
+              <li><strong>You don't have internal technical leadership.</strong> If nobody on your team can review PRs, set architecture, and manage engineering priorities, augmented engineers will drift. You need a CTO or tech lead first - or consider a full project delivery model where the partner provides leadership.</li>
               <li><strong>Your project has a fixed scope and clear deliverables.</strong> If you know exactly what you need built and when it needs to ship, project-based delivery might be more efficient. You pay for an outcome, not hours.</li>
               <li><strong>You need 1-2 weeks of ad hoc help.</strong> For short bursts, a freelancer is simpler and cheaper. Augmentation has onboarding costs that don't make sense for micro-engagements.</li>
-              <li><strong>Your team culture isn't ready for external contributors.</strong> If your codebase has no documentation, no PR process, and no onboarding path, augmented engineers will struggle -- and so will your team. Fix the foundation first.</li>
+              <li><strong>Your team culture isn't ready for external contributors.</strong> If your codebase has no documentation, no PR process, and no onboarding path, augmented engineers will struggle - and so will your team. Fix the foundation first.</li>
             </ul>
             <p>This honesty matters to us. We'd rather help you find the right model than sell you the wrong one.</p>
 
             <!-- Section: Risks -->
             <h2 id="risks">Risks and How to Mitigate Them</h2>
-            <p>Staff augmentation has real risks. Here's how to think about them -- and what to do.</p>
+            <p>Staff augmentation has real risks. Here's how to think about them - and what to do.</p>
 
             <h3 id="risk-knowledge">Knowledge Silos and Tribal Knowledge Loss</h3>
             <p>
@@ -395,7 +395,7 @@
               <strong>How to mitigate:</strong> Require documentation as part of the workflow. Pair
               augmented engineers with internal team members on critical systems. Insist on code
               comments, architecture decision records, and runbooks. A good partner builds knowledge
-              transfer into the engagement from day one -- not as an afterthought at the end.
+              transfer into the engagement from day one - not as an afterthought at the end.
             </p>
 
             <h3 id="risk-culture">Cultural and Communication Misalignment</h3>
@@ -406,7 +406,7 @@
             <p>
               <strong>How to mitigate:</strong> Start with a trial period. Ensure at least 4 hours
               of timezone overlap for real-time collaboration. Include augmented engineers in team
-              rituals -- retros, planning, social channels. The more embedded they are, the better
+              rituals - retros, planning, social channels. The more embedded they are, the better
               the alignment.
             </p>
 
@@ -430,7 +430,7 @@
               <strong>How to mitigate:</strong> Treat augmentation as a bridge, not a permanent crutch
               (unless it's working and you've accepted the model intentionally). Gradually hire for
               critical roles while augmenting for flexibility. And choose a partner with strong
-              engineer retention -- turnover on the partner's side is your problem too.
+              engineer retention - turnover on the partner's side is your problem too.
             </p>
 
             <!-- Section: Choosing a Partner -->
@@ -442,11 +442,11 @@
 
             <h3 id="questions-to-ask">7 Questions to Ask Before Signing</h3>
             <ol>
-              <li><strong>"Will I know the engineers by name before they start?"</strong> If the answer is no -- if they're pulling from a faceless bench -- walk away.</li>
+              <li><strong>"Will I know the engineers by name before they start?"</strong> If the answer is no - if they're pulling from a faceless bench - walk away.</li>
               <li><strong>"What's the trial period? What happens if it's not a fit?"</strong> A confident partner offers a trial. 2 weeks is standard.</li>
               <li><strong>"How do you handle engineer turnover?"</strong> People leave jobs. What's their plan when it happens? Do they have backup? How do they ensure knowledge transfer?</li>
               <li><strong>"What's the typical ramp-up time to first contribution?"</strong> Ask for specifics. "A few weeks" is vague. "First PR in 3-5 days" is specific and measurable.</li>
-              <li><strong>"Do you offer a team lead for larger engagements?"</strong> If you're bringing in 3+ engineers, you want someone on the partner's side helping coordinate -- not just extra hands with no leadership.</li>
+              <li><strong>"Do you offer a team lead for larger engagements?"</strong> If you're bringing in 3+ engineers, you want someone on the partner's side helping coordinate - not just extra hands with no leadership.</li>
               <li><strong>"What does the handoff look like when we're done?"</strong> Documentation, knowledge transfer sessions, transition plan. It should be defined before the engagement starts.</li>
               <li><strong>"Can I talk to a current long-term client?"</strong> Not a testimonial on a website. A real conversation with someone who's been working with them for 12+ months.</li>
             </ol>
@@ -464,19 +464,19 @@
             <h2 id="performline-story">Real Partnership in Practice: The PerformLine Story</h2>
             <p>We can talk about philosophy all day. Here's what it looks like in practice.</p>
             <p>
-              PerformLine came to us needing one engineer -- a senior full-stack developer to join
+              PerformLine came to us needing one engineer - a senior full-stack developer to join
               their existing team. They had a strong internal engineering org but were struggling to
               fill a specialized role quickly enough.
             </p>
             <p>
-              We matched them with an engineer. That engineer joined their team -- same Jira board,
+              We matched them with an engineer. That engineer joined their team - same Jira board,
               same GitHub repos, same daily standups. Within the first week, they were submitting PRs.
               Within a month, they were as embedded as any internal team member.
             </p>
             <p>
               That was two years ago. Today, we have 8+ engineers working with PerformLine across five
               disciplines: full-stack, DevOps, data engineering, QA, and frontend. The team grew
-              because the partnership worked -- not because of a sales pitch, but because the engineers
+              because the partnership worked - not because of a sales pitch, but because the engineers
               delivered.
             </p>
             <p>
@@ -499,7 +499,7 @@
             <ol>
               <li><strong>Start small.</strong> One engineer, one team, one trial period. See the fit before scaling.</li>
               <li><strong>Choose a partner, not a vendor.</strong> Look for named engineers, trial periods, and long-term client references.</li>
-              <li><strong>Be honest about your readiness.</strong> If you don't have internal technical leadership, address that first -- either by hiring a lead or by choosing a model that includes leadership from the partner.</li>
+              <li><strong>Be honest about your readiness.</strong> If you don't have internal technical leadership, address that first - either by hiring a lead or by choosing a model that includes leadership from the partner.</li>
               <li><strong>Plan for onboarding.</strong> Budget 1-2 weeks of ramp time. Set up your repos, docs, and access before the engineer starts.</li>
               <li><strong>Measure what matters.</strong> Time-to-first-PR, sprint velocity contribution, and team satisfaction are better metrics than hours logged.</li>
             </ol>
@@ -509,7 +509,7 @@
             </p>
             <p>
               If you want to explore whether it's the right fit for your team, we're happy to talk it
-              through -- no commitment, no pitch. Just an honest conversation about what you need.
+              through - no commitment, no pitch. Just an honest conversation about what you need.
             </p>
             <div class="flex flex-wrap gap-4 my-8">
               <NuxtLink
@@ -556,7 +556,7 @@
               </h3>
               <p class="text-gray-600 mb-6">
                 We've helped companies like PerformLine grow from 1 engineer to 8+ over 2 years.
-                Let's talk about what your team needs -- no commitment, just an honest conversation.
+                Let's talk about what your team needs - no commitment, just an honest conversation.
               </p>
               <NuxtLink
                 to="/contact"
@@ -623,15 +623,15 @@ const faqs = [
   },
   {
     question: "Is staff augmentation good for startups?",
-    answer: 'Yes -- if you have a technical co-founder or CTO who can manage the engineering work. Augmentation gives startups the ability to scale their team quickly without the 3-6 month hiring cycle. If you don\'t have technical leadership, consider an <a href="/services/mvp-development" class="guide-link">MVP development</a> or full project delivery model instead, where the partner provides both the engineers and the technical direction.'
+    answer: 'Yes - if you have a technical co-founder or CTO who can manage the engineering work. Augmentation gives startups the ability to scale their team quickly without the 3-6 month hiring cycle. If you don\'t have technical leadership, consider an <a href="/services/mvp-development" class="guide-link">MVP development</a> or full project delivery model instead, where the partner provides both the engineers and the technical direction.'
   },
   {
     question: "How do you ensure quality with external engineers?",
-    answer: "The same way you ensure quality with anyone on your team: code reviews, testing standards, and a strong engineering culture. Augmented engineers follow your PR process, your CI/CD pipeline, and your quality gates. A good partner also vets engineers before proposing them -- technical assessments, portfolio review, and reference checks."
+    answer: "The same way you ensure quality with anyone on your team: code reviews, testing standards, and a strong engineering culture. Augmented engineers follow your PR process, your CI/CD pipeline, and your quality gates. A good partner also vets engineers before proposing them - technical assessments, portfolio review, and reference checks."
   },
   {
     question: "Can I scale the team up or down?",
-    answer: "Yes. Most augmentation engagements allow you to add or reduce engineers with 2 weeks' notice. This flexibility is one of the model's key advantages -- you can ramp up for a product launch and scale back afterward without the complexity of hiring and layoffs."
+    answer: "Yes. Most augmentation engagements allow you to add or reduce engineers with 2 weeks' notice. This flexibility is one of the model's key advantages - you can ramp up for a product launch and scale back afterward without the complexity of hiring and layoffs."
   }
 ]
 

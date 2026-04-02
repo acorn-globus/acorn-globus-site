@@ -19,7 +19,7 @@
           </h1>
 
           <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl">
-            Production-grade .NET applications -- from web APIs to microservices to Azure-native cloud solutions.
+            Production-grade .NET applications - from web APIs to microservices to Azure-native cloud solutions.
             Our team has shipped .NET across enterprise and SaaS contexts, with a focus on clean architecture
             and long-term maintainability.
           </p>
@@ -125,7 +125,7 @@
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">Production Experience</h3>
             <p class="text-gray-600">
-              We've shipped .NET applications in enterprise and SaaS environments -- real products with real users.
+              We've shipped .NET applications in enterprise and SaaS environments - real products with real users.
             </p>
           </div>
 
@@ -135,7 +135,7 @@
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">Clean Architecture</h3>
             <p class="text-gray-600">
-              .NET 8, ASP.NET Core, Entity Framework -- built with proper structure so your team can maintain it long after we're done.
+              .NET 8, ASP.NET Core, Entity Framework - built with proper structure so your team can maintain it long after we're done.
             </p>
           </div>
 

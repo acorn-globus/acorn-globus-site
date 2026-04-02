@@ -32,7 +32,7 @@
               From 1 Engineer to 8+ in 2 Years
             </p>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              One engineer. One chance to prove we belonged. Two years later, we're eight engineers deep — and still growing.
+              One engineer. One chance to prove we belonged. Two years later, we're eight engineers deep - and still growing.
             </p>
 
             <div class="flex flex-wrap gap-4 mb-8">
@@ -112,7 +112,7 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-6">Who PerformLine Is</h2>
         <div class="prose prose-lg text-gray-600 max-w-none">
           <p class="leading-relaxed mb-4">
-            PerformLine builds compliance monitoring software trusted by major U.S. banks. Their platform helps financial institutions and other regulated organizations automatically review, monitor, and remediate marketing content across every consumer channel — web, social, email, calls, and chat.
+            PerformLine builds compliance monitoring software trusted by major U.S. banks. Their platform helps financial institutions and other regulated organizations automatically review, monitor, and remediate marketing content across every consumer channel - web, social, email, calls, and chat.
           </p>
           <p class="leading-relaxed">
             Based in Morristown, New Jersey, with a team of around 80 people, PerformLine operates in a space where precision matters. When your customers are heavily regulated financial institutions, there's no room for "good enough."
@@ -135,7 +135,7 @@
                 It started small. One engineer. A defined scope. A team on the other side that needed capacity but wasn't ready to hand over the keys.
               </p>
               <p class="text-gray-600 mb-6 leading-relaxed">
-                PerformLine had a growing product and a lean engineering team. They needed developers who could ship — not just write code, but understand the codebase, adopt their workflows, and contribute from day one.
+                PerformLine had a growing product and a lean engineering team. They needed developers who could ship - not just write code, but understand the codebase, adopt their workflows, and contribute from day one.
               </p>
               <ul class="space-y-3">
                 <li v-for="(point, idx) in startPoints" :key="idx" class="flex items-start">
@@ -153,10 +153,10 @@
               </div>
               <h2 class="text-3xl font-bold text-gray-900 mb-4">How It Grew</h2>
               <p class="text-gray-600 mb-6 leading-relaxed">
-                Within weeks, our engineer was shipping production code. Not because we threw someone exceptionally senior at the problem — but because that's how we work. Our engineers ramp fast because they care about the product, not just the ticket.
+                Within weeks, our engineer was shipping production code. Not because we threw someone exceptionally senior at the problem - but because that's how we work. Our engineers ramp fast because they care about the product, not just the ticket.
               </p>
               <p class="text-gray-600 mb-6 leading-relaxed">
-                PerformLine needed more capacity. Not because we pitched them on it — because the work was good, the communication was clean, and the trust was real. So they asked for another engineer. Then another.
+                PerformLine needed more capacity. Not because we pitched them on it - because the work was good, the communication was clean, and the trust was real. So they asked for another engineer. Then another.
               </p>
               <ul class="space-y-3">
                 <li v-for="(point, idx) in growthPoints" :key="idx" class="flex items-start">
@@ -220,7 +220,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">What Made This Work</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Some things about this engagement are worth naming — because they're the reasons it lasted.
+            Some things about this engagement are worth naming - because they're the reasons it lasted.
           </p>
         </div>
 
@@ -266,7 +266,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">The Growth Story</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Every addition followed the same pattern — earned through trust, not pitched through sales.
+            Every addition followed the same pattern - earned through trust, not pitched through sales.
           </p>
         </div>
 
@@ -298,7 +298,7 @@
             PerformLine didn't sign a two-year contract on day one. They gave us one engineer's worth of trust, and we earned the rest. Every additional team member was a decision PerformLine made because the previous one worked out.
           </p>
           <p class="leading-relaxed">
-            That's what real partnership looks like. Not a pitch deck. Not a proposal. Just consistent, reliable, high-quality work — month after month, until one day you look up and realize you've been building together for two years.
+            That's what real partnership looks like. Not a pitch deck. Not a proposal. Just consistent, reliable, high-quality work - month after month, until one day you look up and realize you've been building together for two years.
           </p>
         </div>
       </div>
@@ -334,7 +334,7 @@
           Let's Build Together
         </h2>
         <p class="text-xl text-gray-600 mb-8">
-          If you're looking for engineers who become part of your team — not names on an invoice — we'd love to hear what you're building. We start small. We prove we belong. And if the partnership is right, we stay.
+          If you're looking for engineers who become part of your team - not names on an invoice - we'd love to hear what you're building. We start small. We prove we belong. And if the partnership is right, we stay.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
@@ -398,8 +398,8 @@ definePageMeta({
 useSeoMeta({
   title: 'PerformLine: From 1 Engineer to 8+ in 2 Years | AcornGlobus Case Study',
   ogTitle: 'PerformLine: From 1 Engineer to 8+ in 2 Years | AcornGlobus Case Study',
-  description: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years — a resource augmentation partnership built on trust.',
-  ogDescription: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years — a resource augmentation partnership built on trust.',
+  description: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years - a resource augmentation partnership built on trust.',
+  ogDescription: 'How PerformLine grew from 1 AcornGlobus engineer to 8+ across full-stack, DevOps, data, and QA over 2 years - a resource augmentation partnership built on trust.',
 })
 
 useBreadcrumbSchema([
@@ -422,12 +422,12 @@ const results = [
 ]
 
 const quickFacts = [
-  { label: 'Client', value: 'PerformLine -- AI-powered compliance monitoring for regulated industries' },
+  { label: 'Client', value: 'PerformLine - AI-powered compliance monitoring for regulated industries' },
   { label: 'Engagement', value: 'Resource Augmentation' },
   { label: 'Starting Point', value: '1 engineer' },
   { label: 'Today', value: '8+ engineers (full-stack, frontend, DevOps, data engineering, QA)' },
   { label: 'Duration', value: '2+ years and counting' },
-  { label: 'Outcome', value: 'A partnership that grew because the work -- and the trust -- earned it' }
+  { label: 'Outcome', value: 'A partnership that grew because the work - and the trust - earned it' }
 ]
 
 const startPoints = [
@@ -438,11 +438,11 @@ const startPoints = [
 ]
 
 const growthPoints = [
-  'Full-stack development -- core platform features, API integrations',
-  'Frontend engineering -- user-facing dashboards and monitoring interfaces',
-  'DevOps -- infrastructure, CI/CD pipelines, deployment automation',
-  'Data engineering -- data pipelines for compliance analytics',
-  'Quality assurance -- test coverage across the platform'
+  'Full-stack development - core platform features, API integrations',
+  'Frontend engineering - user-facing dashboards and monitoring interfaces',
+  'DevOps - infrastructure, CI/CD pipelines, deployment automation',
+  'Data engineering - data pipelines for compliance analytics',
+  'Quality assurance - test coverage across the platform'
 ]
 
 const disciplines = [
@@ -459,7 +459,7 @@ const disciplines = [
   {
     icon: Settings,
     title: 'DevOps',
-    description: 'Infrastructure, CI/CD pipelines, and deployment automation -- keeping the platform reliable and deployable at speed.'
+    description: 'Infrastructure, CI/CD pipelines, and deployment automation - keeping the platform reliable and deployable at speed.'
   },
   {
     icon: Database,
@@ -500,12 +500,12 @@ const timeline = [
   {
     title: 'Trust Earned',
     period: 'First Few Months',
-    description: 'Shipping production code within weeks. PerformLine asked for a second engineer — not because we pitched it, but because the work earned it.'
+    description: 'Shipping production code within weeks. PerformLine asked for a second engineer - not because we pitched it, but because the work earned it.'
   },
   {
     title: 'Team Expansion',
     period: 'Year One',
-    description: 'Growing across disciplines — full-stack, frontend, DevOps, data engineering, and QA. Each addition following the same pattern of earned trust.'
+    description: 'Growing across disciplines - full-stack, frontend, DevOps, data engineering, and QA. Each addition following the same pattern of earned trust.'
   },
   {
     title: '8+ Engineers Strong',
@@ -518,7 +518,7 @@ const engagementSummary = [
   { label: 'Service Model', value: 'Resource Augmentation' },
   { label: 'Team Growth', value: '1 engineer to 8+ engineers over 2 years' },
   { label: 'Roles Covered', value: 'Full-stack, frontend, DevOps, data engineering, QA' },
-  { label: 'Integration Model', value: 'Fully embedded -- same tools, standups, and workflows' },
+  { label: 'Integration Model', value: 'Fully embedded - same tools, standups, and workflows' },
   { label: 'Duration', value: '2+ years (ongoing)' },
   { label: 'Key Outcome', value: 'Organic team growth driven by trust, not contracts' }
 ]

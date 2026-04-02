@@ -22,7 +22,7 @@
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Whether you need a team to build your MVP, engineers who embed with yours,
-            or a partner for the long haul -- here's how we can help.
+            or a partner for the long haul - here's how we can help.
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@
                 <Users class="h-6 w-6" />
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">The Complete Guide to IT Staff Augmentation</h3>
-              <p class="text-gray-600 mb-4">Everything you need to know about scaling your engineering team -- models, costs, when to use it, and how to make it work.</p>
+              <p class="text-gray-600 mb-4">Everything you need to know about scaling your engineering team - models, costs, when to use it, and how to make it work.</p>
               <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
                 Read the guide
                 <ChevronRight class="h-4 w-4 ml-1" />
@@ -159,7 +159,7 @@
                 <Rocket class="h-6 w-6" />
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">The Complete Guide to MVP Development</h3>
-              <p class="text-gray-600 mb-4">From idea to working product -- costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
+              <p class="text-gray-600 mb-4">From idea to working product - costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
               <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
                 Read the guide
                 <ChevronRight class="h-4 w-4 ml-1" />
@@ -222,7 +222,7 @@
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-4">How We Work Together</h2>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-              We don't just work for you -- we work with you. Same tools, same standups,
+              We don't just work for you - we work with you. Same tools, same standups,
               shared responsibility for the outcome.
             </p>
           </div>
@@ -260,7 +260,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Technology Stack</h2>
           <p class="text-lg text-gray-600">
-            We're stack-agnostic -- we pick the right technology for your problem, not the other way around. Here's what we work with daily.
+            We're stack-agnostic - we pick the right technology for your problem, not the other way around. Here's what we work with daily.
           </p>
         </div>
 
@@ -282,7 +282,7 @@
             <Cpu class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Production-Proven</h3>
             <p class="text-gray-600">
-              Every technology in our stack has been used to ship real products -- including Formester, our own SaaS.
+              Every technology in our stack has been used to ship real products - including Formester, our own SaaS.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg">
@@ -296,7 +296,7 @@
             <Shield class="h-10 w-10 text-blue-600 mb-4" />
             <h3 class="text-xl font-bold text-gray-900 mb-3">Security by Default</h3>
             <p class="text-gray-600">
-              Security practices baked into every project from the start -- not bolted on at the end.
+              Security practices baked into every project from the start - not bolted on at the end.
             </p>
           </div>
         </div>
@@ -315,7 +315,7 @@
           Have a Product in Mind?
         </h2>
         <p class="text-xl text-gray-600 mb-8">
-          Tell us about it. We'll share how we'd approach it -- honestly.
+          Tell us about it. We'll share how we'd approach it - honestly.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
@@ -387,13 +387,13 @@ const activeTab = ref('services')
 const serviceSections = [
   {
     title: 'For Startups',
-    intro: "You've got the vision and the funding. You need a team that ships real products -- not prototypes you'll rewrite in six months.",
+    intro: "You've got the vision and the funding. You need a team that ships real products - not prototypes you'll rewrite in six months.",
     cards: [
       {
         id: 'startup-mvp',
         icon: Rocket,
         headline: 'Ship a real product in 6-12 weeks',
-        description: 'We take your product idea and build it with you -- from concept to a working, deployable MVP. Production-quality from day one, with clean code and proper architecture. We\'ve been through this ourselves with Formester.',
+        description: 'We take your product idea and build it with you - from concept to a working, deployable MVP. Production-quality from day one, with clean code and proper architecture. We\'ve been through this ourselves with Formester.',
         features: [
           'Production-ready code, not a throwaway prototype',
           '100% code ownership from day one',
@@ -409,13 +409,13 @@ const serviceSections = [
         id: 'startup-fpd',
         icon: Clock,
         headline: 'Your product, built end-to-end by a team that cares',
-        description: 'From architecture to launch -- one team, one relationship, no surprises. We walk with you through every decision and build it like it\'s our own.',
+        description: 'From architecture to launch - one team, one relationship, no surprises. We walk with you through every decision and build it like it\'s our own.',
         features: [
-          'Milestone transparency -- you see progress, not just reports',
-          'Built to hand over -- zero lock-in',
+          'Milestone transparency - you see progress, not just reports',
+          'Built to hand over - zero lock-in',
           '4-week post-launch warranty'
         ],
-        proof: 'We built Formester end-to-end -- our own SaaS product, live and growing with real users.',
+        proof: 'We built Formester end-to-end - our own SaaS product, live and growing with real users.',
         gradient: 'from-blue-500 to-pink-600',
         ctaText: "Tell us what you're building",
         ctaLink: '/contact',
@@ -430,14 +430,14 @@ const serviceSections = [
       {
         id: 'founder-mvp',
         icon: Rocket,
-        headline: 'From idea to working product -- with a team that explains every step',
+        headline: 'From idea to working product - with a team that explains every step',
         description: "We'll help you define what to build first, guide you through the trade-offs, and ship something real. Milestone-based pricing so you know exactly what you're getting.",
         features: [
-          'We scope the product with you -- honest about what to build first and what can wait',
+          'We scope the product with you - honest about what to build first and what can wait',
           'Weekly demos so you see progress, not just hear about it',
-          'Clean handoff -- your code, ready for your future in-house team'
+          'Clean handoff - your code, ready for your future in-house team'
         ],
-        proof: 'We built Formester ourselves. We know what it\'s like to care deeply about a product -- and we bring that same care to yours.',
+        proof: 'We built Formester ourselves. We know what it\'s like to care deeply about a product - and we bring that same care to yours.',
         gradient: 'from-orange-500 to-red-600',
         ctaText: "Let's figure this out together",
         ctaLink: '/contact',
@@ -449,11 +449,11 @@ const serviceSections = [
         headline: 'A product engineering team that feels like co-founders',
         description: 'You define the what. We walk with you through the how. Every milestone is visible, every decision is explained in terms that make sense.',
         features: [
-          'One team, one relationship -- people you know by name',
+          'One team, one relationship - people you know by name',
           'Milestone-based pricing for budget predictability',
           'Full documentation and knowledge transfer'
         ],
-        proof: "We guide, not just execute. We'll tell you honestly what you need -- and what can wait.",
+        proof: "We guide, not just execute. We'll tell you honestly what you need - and what can wait.",
         gradient: 'from-blue-500 to-pink-600',
         ctaText: 'Start a conversation',
         ctaLink: '/contact',
@@ -468,14 +468,14 @@ const serviceSections = [
       {
         id: 'leader-ra',
         icon: Users,
-        headline: "Engineers who embed with your team -- not outsiders filling seats",
+        headline: "Engineers who embed with your team - not outsiders filling seats",
         description: "Same tools, same standups, same codebase. Our engineers become part of your team because that's how we think about it. You'll know them by name.",
         features: [
           '2-week trial before any commitment',
           'Engineers ramp on your codebase in 1-2 weeks',
           'Scale up or down with 2-week notice'
         ],
-        proof: 'PerformLine started with 1 engineer. Two years later, we\'re 8+ deep -- full-stack, DevOps, QA, frontend.',
+        proof: 'PerformLine started with 1 engineer. Two years later, we\'re 8+ deep - full-stack, DevOps, QA, frontend.',
         gradient: 'from-blue-500 to-cyan-600',
         ctaText: 'Tell us what your team needs',
         ctaLink: '/contact',
@@ -485,11 +485,11 @@ const serviceSections = [
         id: 'leader-ms',
         icon: Shield,
         headline: 'We stay with your product after launch',
-        description: 'Bug fixes, security updates, performance monitoring, and incremental improvements. When possible, the same team that built it maintains it -- because they know your product deeply.',
+        description: 'Bug fixes, security updates, performance monitoring, and incremental improvements. When possible, the same team that built it maintains it - because they know your product deeply.',
         features: [
-          'Proactive monitoring -- we fix before you notice',
-          'Transparent hours -- you see exactly what we spend time on',
-          'No lock-in -- full documentation means you can leave anytime'
+          'Proactive monitoring - we fix before you notice',
+          'Transparent hours - you see exactly what we spend time on',
+          'No lock-in - full documentation means you can leave anytime'
         ],
         proof: '80%+ client retention. Most of our maintenance relationships started as MVP or project delivery. Same team, same trust.',
         gradient: 'from-green-500 to-emerald-600',
@@ -583,12 +583,12 @@ const differentiators = [
   },
   {
     title: 'We Guide, Not Just Execute',
-    description: "We'll tell you honestly what you need -- and what can wait.",
+    description: "We'll tell you honestly what you need - and what can wait.",
     icon: Award
   },
   {
     title: 'We Stay',
-    description: "PerformLine: 1 engineer to 8+ in 2 years. We don't just deliver -- we grow with you.",
+    description: "PerformLine: 1 engineer to 8+ in 2 years. We don't just deliver - we grow with you.",
     icon: TrendingUp
   }
 ]

@@ -95,7 +95,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our React Developers Build</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our React developers don't just know the library -- they know the ecosystem that makes
+            Our React developers don't just know the library - they know the ecosystem that makes
             production applications work.
           </p>
         </div>
@@ -196,8 +196,8 @@
           <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
             <p>
               PerformLine needed one senior engineer to help with their React frontend. That was
-              two years ago. Today, we're eight engineers deep -- full-stack, DevOps, data engineering,
-              and QA -- building across their entire product.
+              two years ago. Today, we're eight engineers deep - full-stack, DevOps, data engineering,
+              and QA - building across their entire product.
             </p>
             <p>
               They didn't grow the team because we asked them to. They grew it because the first
@@ -352,12 +352,12 @@ const whyCards = [
   {
     icon: TrendingUp,
     title: 'Partnerships That Actually Grow',
-    description: "PerformLine started with one of our engineers. Two years later, we're eight engineers deep -- full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building."
+    description: "PerformLine started with one of our engineers. Two years later, we're eight engineers deep - full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building."
   },
   {
     icon: Heart,
     title: 'We Built Our Own Product',
-    description: 'Formester is our SaaS product -- live, with real users and a 4.8-star rating. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.'
+    description: 'Formester is our SaaS product - live, with real users and a 4.8-star rating. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.'
   },
   {
     icon: Zap,
@@ -406,7 +406,7 @@ const techStack = [
 const steps = [
   {
     title: 'Discovery Call',
-    description: "We learn about your stack, your team, and what you're building. Not a sales pitch -- a conversation about your product.",
+    description: "We learn about your stack, your team, and what you're building. Not a sales pitch - a conversation about your product.",
     icon: Target
   },
   {
@@ -447,7 +447,7 @@ const engagementModels = [
 const faqs = [
   {
     question: 'How much does it cost to hire a React developer from India?',
-    answer: "Rates depend on seniority and engagement model. Our senior React developers are priced competitively for dedicated, long-term engagements. We'll share specific numbers on a discovery call once we understand your needs -- we don't believe in one-size-fits-all pricing."
+    answer: "Rates depend on seniority and engagement model. Our senior React developers are priced competitively for dedicated, long-term engagements. We'll share specific numbers on a discovery call once we understand your needs - we don't believe in one-size-fits-all pricing."
   },
   {
     question: 'How quickly can React developers start on my project?',
@@ -455,7 +455,7 @@ const faqs = [
   },
   {
     question: "What's the difference between hiring freelance React developers and a dedicated team?",
-    answer: "A freelancer is one person. If they get sick, take another project, or aren't the right fit, you're back to square one. With us, you get a team behind your project -- knowledge stays even if an individual moves. Plus, you get engineers who've worked together and can collaborate across frontend, backend, and DevOps."
+    answer: "A freelancer is one person. If they get sick, take another project, or aren't the right fit, you're back to square one. With us, you get a team behind your project - knowledge stays even if an individual moves. Plus, you get engineers who've worked together and can collaborate across frontend, backend, and DevOps."
   },
   {
     question: 'Do your React developers work in my timezone?',
@@ -467,7 +467,7 @@ const faqs = [
   },
   {
     question: "What happens if a developer isn't a good fit?",
-    answer: "That's what the two-week trial is for. If the fit isn't right during the trial, there's no commitment. After the trial, we offer an engineer replacement guarantee -- we want this to work as much as you do."
+    answer: "That's what the two-week trial is for. If the fit isn't right during the trial, there's no commitment. After the trial, we offer an engineer replacement guarantee - we want this to work as much as you do."
   },
   {
     question: 'Do you work with Next.js and React Native too?',
@@ -478,18 +478,18 @@ const faqs = [
 // SEO Meta
 useSeoMeta({
   title: 'Hire React Developers in India | AcornGlobus',
-  description: 'Hire senior React developers from a 20+ person team -- not a marketplace. Named engineers who join your team, 2-week trial, no bench. Talk to us today.',
+  description: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers who join your team, 2-week trial, no bench. Talk to us today.',
   keywords: 'hire react developers, hire react developers India, react developer India, dedicated react developer, react development team',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'Hire React Developers in India | AcornGlobus',
-  ogDescription: 'Hire senior React developers from a 20+ person team -- not a marketplace. Named engineers who join your team, 2-week trial, no bench.',
+  ogDescription: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers who join your team, 2-week trial, no bench.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-react-developer',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire React Developers in India | AcornGlobus',
-  twitterDescription: 'Hire senior React developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial.',
+  twitterDescription: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers, 2-week trial.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 

@@ -28,7 +28,7 @@
             </h1>
 
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Launching is just the beginning. We stay with your product — monitoring, fixing,
+              Launching is just the beginning. We stay with your product - monitoring, fixing,
               updating, and improving it with the same team that built it in the first place.
             </p>
 
@@ -97,7 +97,7 @@
           <p class="text-lg text-gray-600 leading-relaxed">
             Most of our maintenance relationships started as MVP or full project delivery. The
             engineers who maintain your product are the same ones who built it. They know every
-            line of code because they wrote it — and they care about it because they've been
+            line of code because they wrote it - and they care about it because they've been
             invested in it from the start.
           </p>
           <p class="text-lg text-gray-600 mt-4 leading-relaxed">Here's what makes our maintenance different:</p>
@@ -128,7 +128,7 @@
             <p>
               PerformLine's engagement grew from 1 engineer to 8+ over 2 years. Eitoss is still
               with us more than 2 years after we shipped their MVP. These aren't maintenance
-              contracts — they're ongoing partnerships where we keep building, keep improving,
+              contracts - they're ongoing partnerships where we keep building, keep improving,
               and keep caring about the product.
             </p>
             <p>
@@ -242,7 +242,7 @@
 
         <div class="max-w-3xl mx-auto mt-12">
           <p class="text-lg text-gray-600 leading-relaxed">
-            Every maintenance plan starts with a conversation about your product — what it does,
+            Every maintenance plan starts with a conversation about your product - what it does,
             how it's used, and what kind of care it needs. We'll give you a specific number once
             we understand the scope. No surprises.
           </p>
@@ -290,7 +290,7 @@
           Your product deserves the same care after launch as it got during build.
         </h2>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Tell us about your product — what it does, who built it, and what kind of support you need.
+          Tell us about your product - what it does, who built it, and what kind of support you need.
           We'll put together a maintenance plan that keeps it healthy and improving, not just alive.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -371,7 +371,7 @@ const approach = [
   {
     icon: Activity,
     title: 'Proactive, not just reactive.',
-    description: "We monitor and fix before you notice. We treat your product like our own — because that's how we've always worked."
+    description: "We monitor and fix before you notice. We treat your product like our own - because that's how we've always worked."
   },
   {
     icon: RefreshCw,
@@ -386,7 +386,7 @@ const approach = [
   {
     icon: Shield,
     title: 'No lock-in.',
-    description: "Full documentation means you can leave anytime. But most clients don't — because the partnership works."
+    description: "Full documentation means you can leave anytime. But most clients don't - because the partnership works."
   }
 ]
 
@@ -432,7 +432,7 @@ const pricingFactors = [
   {
     icon: UserCheck,
     title: 'Engineer experience',
-    description: "Senior engineers cost more per hour — but they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity."
+    description: "Senior engineers cost more per hour - but they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity."
   },
   {
     icon: Clock,
@@ -448,7 +448,7 @@ const pricingFactors = [
 
 const engagementDetails = [
   { label: 'Model', value: 'Monthly retainer, scoped to your product' },
-  { label: 'Minimum commitment', value: '3 months — enough time to learn your product and prove the value' },
+  { label: 'Minimum commitment', value: '3 months - enough time to learn your product and prove the value' },
   { label: 'Team', value: '1-2 dedicated engineers who know your codebase' },
   { label: 'Scaling', value: 'Need more? Add improvement sprints or expand the team as your product grows' }
 ]

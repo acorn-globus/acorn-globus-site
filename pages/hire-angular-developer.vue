@@ -22,7 +22,7 @@
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
               Angular is chosen for applications that need to scale, stay maintainable, and last.
               That's exactly how we think about engineering. Our Angular developers build for the
-              long term -- structured, tested, and ready for teams of any size to work in.
+              long term - structured, tested, and ready for teams of any size to work in.
             </p>
 
             <div class="flex flex-wrap gap-4">
@@ -93,7 +93,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Modern Angular. Production-Grade.</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our Angular developers work with the modern framework -- not legacy AngularJS patterns
+            Our Angular developers work with the modern framework - not legacy AngularJS patterns
             carried forward.
           </p>
         </div>
@@ -164,7 +164,7 @@
 
         <div class="mt-8 text-center">
           <p class="text-gray-600 italic">
-            "Our developers integrate with your existing Angular team -- same coding standards, same PR process, same architectural decisions."
+            "Our developers integrate with your existing Angular team - same coding standards, same PR process, same architectural decisions."
           </p>
         </div>
       </div>
@@ -197,7 +197,7 @@
           <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
             <p>
               Our engineering partnerships span multiple stacks and years. PerformLine started with
-              one engineer and grew to eight over two years -- full-stack, DevOps, data, and QA.
+              one engineer and grew to eight over two years - full-stack, DevOps, data, and QA.
               Eitoss started as an MVP; they raised funding, and we're still building together two
               years later.
             </p>
@@ -341,7 +341,7 @@ const whyCards = [
   {
     icon: Code,
     title: 'Modern Angular Expertise',
-    description: "We build with Angular 17+ -- standalone components, signals, new control flow syntax, SSR with Angular Universal. Not every agency has kept up with Angular's evolution. We have, because the modern framework is significantly better than what came before."
+    description: "We build with Angular 17+ - standalone components, signals, new control flow syntax, SSR with Angular Universal. Not every agency has kept up with Angular's evolution. We have, because the modern framework is significantly better than what came before."
   },
   {
     icon: Building,
@@ -425,7 +425,7 @@ const capabilities = [
   {
     icon: Code,
     title: 'Form-Heavy Business Applications',
-    description: "Insurance portals, healthcare intake systems, financial tools -- applications where forms are the product and validation logic is complex. Angular's reactive forms were built for this."
+    description: "Insurance portals, healthcare intake systems, financial tools - applications where forms are the product and validation logic is complex. Angular's reactive forms were built for this."
   },
   {
     icon: Zap,
@@ -435,7 +435,7 @@ const capabilities = [
   {
     icon: Globe,
     title: 'AngularJS to Angular Migrations',
-    description: "Still running AngularJS? We help companies migrate to modern Angular -- incrementally, safely, without rewriting everything at once. This is an underserved need, and we've seen the patterns that make migrations succeed."
+    description: "Still running AngularJS? We help companies migrate to modern Angular - incrementally, safely, without rewriting everything at once. This is an underserved need, and we've seen the patterns that make migrations succeed."
   }
 ]
 
@@ -492,14 +492,14 @@ const faqs = [
   },
   {
     question: 'Do your developers work with the latest Angular version?',
-    answer: "Yes. We build with Angular 17+ -- standalone components, signals, new control flow, and Angular Universal for SSR. We keep up with Angular's evolution because the modern framework is meaningfully better."
+    answer: "Yes. We build with Angular 17+ - standalone components, signals, new control flow, and Angular Universal for SSR. We keep up with Angular's evolution because the modern framework is meaningfully better."
   },
   {
     question: 'Can your Angular developers help migrate from AngularJS?',
     answer: "Yes. AngularJS to Angular migration is a common need, and we've seen the patterns that work: incremental migration with ngUpgrade, running both frameworks side by side, and converting components progressively. We won't push you to rewrite everything at once."
   },
   {
-    question: 'Angular vs React -- which should I choose for my enterprise application?',
+    question: 'Angular vs React - which should I choose for my enterprise application?',
     answer: "Angular's opinionated structure, built-in dependency injection, and TypeScript-first approach make it a strong fit for large teams and complex applications. React offers more flexibility and a larger ecosystem. We work with both and can recommend based on your team, project, and existing codebase."
   },
   {
@@ -508,7 +508,7 @@ const faqs = [
   },
   {
     question: 'Do your Angular developers use TypeScript?',
-    answer: "Always. Angular is TypeScript-first, and our developers leverage TypeScript's type system fully -- strict mode, interfaces, generics, and type guards. It's not optional for serious Angular development."
+    answer: "Always. Angular is TypeScript-first, and our developers leverage TypeScript's type system fully - strict mode, interfaces, generics, and type guards. It's not optional for serious Angular development."
   },
   {
     question: 'Can you provide a full Angular team (frontend + backend)?',

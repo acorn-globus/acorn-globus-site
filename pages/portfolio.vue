@@ -22,7 +22,7 @@
 
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             From our own SaaS product to funded startups and global nonprofits, here's the work
-            we're proud of -- and the partnerships that made it happen.
+            we're proud of - and the partnerships that made it happen.
           </p>
         </div>
       </div>
@@ -275,7 +275,7 @@
           Want to build something like this?
         </h2>
         <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          We'd love to hear what you're working on. No pitch decks -- just a conversation about your product.
+          We'd love to hear what you're working on. No pitch decks - just a conversation about your product.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <NuxtLink
@@ -354,8 +354,8 @@ const projects = [
     name: 'Formester',
     category: 'saas',
     tagline: 'AI-Powered No-Code Form Builder',
-    description: 'Our own SaaS product -- a no-code form builder with AI capabilities. Build complex forms with advanced logic without writing a single line of code.',
-    longDescription: 'We built Formester ourselves -- it\'s proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.8 rating. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.',
+    description: 'Our own SaaS product - a no-code form builder with AI capabilities. Build complex forms with advanced logic without writing a single line of code.',
+    longDescription: 'We built Formester ourselves - it\'s proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.8 rating. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.',
     isOwnProduct: true,
     technologies: ['Ruby on Rails', 'Vue.js', 'PostgreSQL', 'AI Integration', 'AWS'],
     features: [
@@ -403,7 +403,7 @@ const projects = [
     category: 'enterprise',
     tagline: 'Regulatory Compliance at Scale',
     description: 'A regulatory technology platform that monitors marketing content across channels for compliance. We started with 1 engineer and grew to 8+ over 2 years.',
-    longDescription: 'PerformLine automates compliance monitoring across web, calls, emails, messages, and social media. We embedded with their team from day one -- 1 engineer became 8+ across full-stack, DevOps, QA, and frontend over a 2-year partnership.',
+    longDescription: 'PerformLine automates compliance monitoring across web, calls, emails, messages, and social media. We embedded with their team from day one - 1 engineer became 8+ across full-stack, DevOps, QA, and frontend over a 2-year partnership.',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Microservices'],
     features: [
       'Multi-channel compliance monitoring',
@@ -425,7 +425,7 @@ const projects = [
     name: 'Invoice Falcon',
     category: 'ecommerce',
     tagline: 'Shopify Invoicing Made Simple',
-    description: 'A full-featured invoicing app for Shopify merchants -- automated generation, multi-currency support, and tax compliance across 30+ countries.',
+    description: 'A full-featured invoicing app for Shopify merchants - automated generation, multi-currency support, and tax compliance across 30+ countries.',
     longDescription: 'Invoice Falcon simplifies invoicing for Shopify stores with automated generation, multi-currency support, and compliance with global tax regulations, serving 500+ merchants worldwide.',
     technologies: ['Ruby on Rails', 'React', 'Shopify API', 'AWS', 'Stripe'],
     features: [

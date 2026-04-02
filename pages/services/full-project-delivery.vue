@@ -29,7 +29,7 @@
 
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
               You define the what. We walk with you through the how. From architecture to launch,
-              you get a product engineering team that's genuinely invested in your success — not
+              you get a product engineering team that's genuinely invested in your success - not
               just your deadline.
             </p>
 
@@ -79,7 +79,7 @@
         <div class="text-lg text-gray-600 space-y-4 leading-relaxed">
           <p>
             Maybe you don't have the engineering team to take this on. Maybe your team is stretched
-            thin and this project needs dedicated focus. Either way, you need more than code — you
+            thin and this project needs dedicated focus. Either way, you need more than code - you
             need a team that understands your product, makes smart technical decisions, and delivers
             something that works in production, not just in a demo.
           </p>
@@ -127,14 +127,14 @@
             <p class="text-gray-700 leading-relaxed">
               Eitoss came to us needing an MVP built from scratch. We had a demoable product in 8 weeks
               and shipped it into production in 3 months. They raised funding. Two years later, we're still
-              building together — the project became a partnership.
+              building together - the project became a partnership.
             </p>
           </div>
 
           <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
             <h3 class="text-xl font-bold text-gray-900 mb-3">PerformLine</h3>
             <p class="text-gray-700 leading-relaxed">
-              PerformLine started with resource augmentation and grew to 8+ engineers over 2 years —
+              PerformLine started with resource augmentation and grew to 8+ engineers over 2 years -
               full-stack, DevOps, data, QA, and frontend. What started as extra hands became a core
               part of their engineering operation.
             </p>
@@ -143,7 +143,7 @@
           <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
             <h3 class="text-xl font-bold text-gray-900 mb-3">Formester</h3>
             <p class="text-gray-700 leading-relaxed">
-              Formester is our own SaaS product — live, growing, with real users and a 4.8 rating.
+              Formester is our own SaaS product - live, growing, with real users and a 4.8 rating.
               We built it ourselves, which means we understand what it takes to ship a product that
               has to work in the real world. We bring that same standard to every project we deliver.
             </p>
@@ -215,7 +215,7 @@
           You have the vision. Let's build it together.
         </h2>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Tell us about your project — what you're building, who it's for, and where you are today.
+          Tell us about your project - what you're building, who it's for, and where you are today.
           We'll have an honest conversation about scope, timeline, and approach. No generic proposals.
           Just a real plan for your product.
         </p>
@@ -301,7 +301,7 @@ const approach = [
   {
     icon: Shield,
     title: 'Built to hand over.',
-    description: "Your code, your product, clean documentation. We build for your independence — zero lock-in. If you want to bring it in-house someday, we'll help you do that."
+    description: "Your code, your product, clean documentation. We build for your independence - zero lock-in. If you want to bring it in-house someday, we'll help you do that."
   },
   {
     icon: DollarSign,
@@ -347,7 +347,7 @@ const included = [
   'System architecture and technical design',
   'Full-stack development',
   'UI/UX implementation (from your designs, or we provide wireframes)',
-  'QA and testing — unit, integration, end-to-end',
+  'QA and testing - unit, integration, end-to-end',
   'DevOps and infrastructure setup',
   'Deployment and go-live support',
   'Technical and user-facing documentation',
@@ -359,7 +359,7 @@ const engagementDetails = [
   { label: 'Timeline', value: '3-12+ months depending on scope' },
   { label: 'Team', value: '3-8 engineers + project manager + QA' },
   { label: 'Pricing', value: 'Milestone-based fixed price or capped T&M' },
-  { label: 'Code ownership', value: '100% yours — code and IP' },
+  { label: 'Code ownership', value: '100% yours - code and IP' },
   { label: 'Communication', value: 'Weekly status reports, bi-weekly demos, dedicated Slack channel' }
 ]
 </script>

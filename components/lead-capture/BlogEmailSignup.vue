@@ -6,7 +6,7 @@
           Get practical engineering insights
         </h3>
         <p class="blog-signup__description">
-          {{ compact ? 'Get practical engineering insights.' : 'Real lessons from building products — ours and our clients\'.' }}
+          {{ compact ? 'Get practical engineering insights.' : 'Real lessons from building products - ours and our clients\'.' }}
           No spam. Monthly.
         </p>
       </div>

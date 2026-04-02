@@ -27,7 +27,7 @@
 
             <p class="text-lg text-gray-600 mb-8 leading-relaxed">
               We're a 20+ person product engineering team. Our Node.js developers build backends
-              that serve real products -- not tutorial projects. They think about the system your
+              that serve real products - not tutorial projects. They think about the system your
               API lives in, not just the endpoints.
             </p>
 
@@ -77,7 +77,7 @@
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Backend Engineers, Not Just Node.js Coders</h2>
           <p class="text-lg text-gray-600">
             Writing JavaScript on the server is the easy part. Building backends that scale, stay
-            maintainable, and serve your product well -- that takes engineering judgment.
+            maintainable, and serve your product well - that takes engineering judgment.
           </p>
         </div>
 
@@ -119,7 +119,7 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">When to Choose Node.js for Your Backend</h2>
         <p class="text-lg text-gray-600 mb-8">
-          We don't push Node.js on every project. Here's when it genuinely shines -- and when
+          We don't push Node.js on every project. Here's when it genuinely shines - and when
           you might want to consider alternatives.
         </p>
 
@@ -207,7 +207,7 @@
           <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12">
             <h3 class="text-2xl font-bold text-gray-900 mb-4">PerformLine</h3>
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              What started as one engineer grew to eight over two years -- full-stack, DevOps, data
+              What started as one engineer grew to eight over two years - full-stack, DevOps, data
               engineering, and QA. Our Node.js developers have been part of building and scaling
               PerformLine's backend services, working alongside their existing team in the same
               tools and workflows.
@@ -247,7 +247,7 @@
             <p class="text-gray-700 leading-relaxed mb-4">
               We shipped the MVP in three months. They raised funding. Two years later, we're still
               building together. The backend architecture we set up from day one has scaled with the
-              product -- because we designed it to.
+              product - because we designed it to.
             </p>
             <div class="flex flex-wrap gap-6 text-sm mb-4">
               <span><span class="font-semibold text-gray-900">MVP:</span> <span class="text-gray-600">Shipped in 3 months</span></span>
@@ -371,7 +371,7 @@ const whyCards = [
   {
     icon: Layers,
     title: 'System Design Thinking',
-    description: "Our Node.js developers think beyond the endpoint. API architecture, database modeling, caching layers, message queues, rate limiting -- the decisions that determine whether your backend holds up at scale."
+    description: "Our Node.js developers think beyond the endpoint. API architecture, database modeling, caching layers, message queues, rate limiting - the decisions that determine whether your backend holds up at scale."
   },
   {
     icon: UserCheck,
@@ -458,7 +458,7 @@ const nodeGoodFit = [
   },
   {
     title: 'You\'re building APIs that serve multiple clients.',
-    description: 'Mobile app, web app, third-party integrations -- Node.js with Express or NestJS is a proven choice for API-first architectures.'
+    description: 'Mobile app, web app, third-party integrations - Node.js with Express or NestJS is a proven choice for API-first architectures.'
   },
   {
     title: 'I/O-intensive workloads.',
@@ -469,7 +469,7 @@ const nodeGoodFit = [
 const nodeAlternatives = [
   {
     title: 'CPU-intensive computation.',
-    description: 'Heavy data processing, ML pipelines, or complex calculations -- Python or Go will serve you better.'
+    description: 'Heavy data processing, ML pipelines, or complex calculations - Python or Go will serve you better.'
   },
   {
     title: 'Extreme concurrency requirements.',
@@ -533,15 +533,15 @@ const faqs = [
   },
   {
     question: 'Do your Node.js developers work with databases like PostgreSQL and MongoDB?',
-    answer: "Yes. Our backend engineers work with PostgreSQL, MongoDB, Redis, and other databases daily. Database design, migrations, query optimization, and caching strategies are part of the job -- not an add-on."
+    answer: "Yes. Our backend engineers work with PostgreSQL, MongoDB, Redis, and other databases daily. Database design, migrations, query optimization, and caching strategies are part of the job - not an add-on."
   },
   {
-    question: 'Node.js vs Python -- which is better for my backend?',
+    question: 'Node.js vs Python - which is better for my backend?',
     answer: 'It depends on your use case. Node.js excels at real-time features, I/O-heavy workloads, and JavaScript-stack consistency. Python is stronger for data processing, ML, and scientific computing. We work with both and can recommend honestly based on your project.'
   },
   {
     question: 'Can I hire Node.js developers for API-only projects?',
-    answer: 'Absolutely. Many of our engagements are API-focused -- building RESTful or GraphQL APIs that serve web and mobile clients. We can scope a project-based engagement around your API requirements.'
+    answer: 'Absolutely. Many of our engagements are API-focused - building RESTful or GraphQL APIs that serve web and mobile clients. We can scope a project-based engagement around your API requirements.'
   },
   {
     question: 'Do your developers work with NestJS?',
@@ -549,7 +549,7 @@ const faqs = [
   },
   {
     question: 'How do you ensure backend code quality and security?',
-    answer: "Code reviews on every pull request, automated testing (unit, integration, and API tests), CI/CD pipelines, and security best practices (input validation, authentication, rate limiting, dependency auditing). These aren't extras -- they're how we work."
+    answer: "Code reviews on every pull request, automated testing (unit, integration, and API tests), CI/CD pipelines, and security best practices (input validation, authentication, rate limiting, dependency auditing). These aren't extras - they're how we work."
   },
   {
     question: 'Can your Node.js developers handle DevOps and deployment?',

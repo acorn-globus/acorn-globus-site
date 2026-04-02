@@ -28,7 +28,7 @@
             </h1>
 
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              We build MVPs that are production-ready from day one — clean code, proper architecture,
+              We build MVPs that are production-ready from day one - clean code, proper architecture,
               ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.
             </p>
 
@@ -83,7 +83,7 @@
           </p>
           <p>
             You need a team that can start now, ship something real in weeks, and stick around
-            after launch — not disappear when the invoice clears.
+            after launch - not disappear when the invoice clears.
           </p>
         </div>
       </div>
@@ -95,7 +95,7 @@
         <div class="max-w-3xl mx-auto mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">We build it like it's ours. Because we've built our own.</h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            We created Formester — our own SaaS product, live and growing with real users and a
+            We created Formester - our own SaaS product, live and growing with real users and a
             4.8 rating. That taught us what it actually feels like to ship something you care about.
             The anxiety of launch day. The trade-offs between speed and quality. The difference
             between a demo and a product.
@@ -126,7 +126,7 @@
               had a demoable product in 8 weeks, and launched into production in 3 months.
             </p>
             <p>
-              They used that product to raise funding. And then they kept building with us — not
+              They used that product to raise funding. And then they kept building with us - not
               because they had to, but because the partnership worked. Two years later, we're still
               growing the product together.
             </p>
@@ -232,7 +232,7 @@
             <h3 class="text-xl font-bold text-gray-900 mb-2">Formester</h3>
             <p class="text-sm font-semibold text-purple-600 mb-4">Our own SaaS. 1,000+ users. 4.8 rating.</p>
             <p class="text-gray-600 text-sm leading-relaxed">
-              We built our own product from scratch -- it taught us what real ownership feels like.
+              We built our own product from scratch - it taught us what real ownership feels like.
               We bring that same care to every MVP we build.
             </p>
           </div>
@@ -272,7 +272,7 @@
         </h2>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
           Tell us what you're building. We'll have an honest conversation about scope, timeline,
-          and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the
+          and what your MVP actually needs - no sales pitch, no inflated estimates. If we're the
           right fit, we'll scope it together.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -352,7 +352,7 @@ const approach = [
   {
     icon: Target,
     title: 'Honest guidance on scope.',
-    description: "We'll tell you what to build first and what can wait. Not to bill less — because we want you to succeed faster."
+    description: "We'll tell you what to build first and what can wait. Not to bill less - because we want you to succeed faster."
   },
   {
     icon: FileCode,
@@ -390,7 +390,7 @@ const steps = [
 ]
 
 const included = [
-  'Product scoping and feature prioritization — what to build first, what to skip',
+  'Product scoping and feature prioritization - what to build first, what to skip',
   'Technical architecture and stack selection',
   'UI/UX wireframes (we recommend a dedicated designer for pixel-perfect design)',
   'Full-stack development',
@@ -398,7 +398,7 @@ const included = [
   'Cloud deployment (AWS, GCP, or Azure)',
   'CI/CD pipeline setup',
   '2 weeks of post-launch support',
-  "Complete documentation and code handoff — it's your product"
+  "Complete documentation and code handoff - it's your product"
 ]
 
 const engagementDetails = [

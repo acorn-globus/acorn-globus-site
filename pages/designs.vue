@@ -319,7 +319,7 @@ const designs = [
   {
     id: 1,
     title: 'Travel and Hospitality App',
-    description: 'Here’s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
+    description: 'Here\'s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/travel.jpg',
@@ -339,7 +339,7 @@ const designs = [
   {
     id: 2,
     title: 'Financial Dashboard',
-    description: 'Here’s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
+    description: 'Here\'s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/finance-dashboard.jpg',
@@ -379,7 +379,7 @@ const designs = [
   {
     id: 4,
     title: 'Custom Financial App',
-    description: 'Here’s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
+    description: 'Here\'s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/finance-app.jpg',
@@ -419,7 +419,7 @@ const designs = [
   {
     id: 6,
     title: 'HR Software',
-    description: 'Here’s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
+    description: 'Here\'s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/hr.jpg',
@@ -459,7 +459,7 @@ const designs = [
   {
     id: 8,
     title: 'Travel & Hospitality Dashboard',
-    description: 'Here’s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
+    description: 'Here\'s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/hospitality-web.jpg',
@@ -479,7 +479,7 @@ const designs = [
   {
     id: 9,
     title: 'Job Search App',
-    description: 'Here’s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
+    description: 'Here\'s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/job-app.jpg',

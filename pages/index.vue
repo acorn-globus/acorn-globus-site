@@ -21,7 +21,7 @@
                 </span>
               </h1>
               <p class="text-xl text-gray-600 mb-8">
-                We're a product engineering team that built our own SaaS (Formester) -- and we bring that same ownership to every product we touch. Not a vendor. Not a body shop. A team that cares about your outcome as much as you do.
+                We're a product engineering team that built our own SaaS (Formester) - and we bring that same ownership to every product we touch. Not a vendor. Not a body shop. A team that cares about your outcome as much as you do.
               </p>
             </div>
 
@@ -129,7 +129,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1">
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-              Formester is our AI-powered form builder -- live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night.
+              Formester is our AI-powered form builder - live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night.
             </p>
             <p class="text-lg text-gray-600 mb-8 leading-relaxed">
               We bring that same care to your product. Not because a contract says to. Because that's how we're wired.
@@ -211,7 +211,7 @@
                 <span class="block text-xl text-gray-600 mt-2">From 1 engineer to 8+. Two years and counting.</span>
               </h3>
               <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep -- full-stack, DevOps, data, QA -- embedded in their team like we've always been there. Same tools, same standups, same standards.
+                PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep - full-stack, DevOps, data, QA - embedded in their team like we've always been there. Same tools, same standups, same standards.
               </p>
               <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                 That's not a contract scaling up. That's trust being earned, sprint by sprint.
@@ -297,7 +297,7 @@
                 <span class="block text-xl text-gray-600 mt-2">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</span>
               </h3>
               <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team -- not because they're locked in, but because the partnership works.
+                Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team - not because they're locked in, but because the partnership works.
               </p>
 
               <div class="flex items-center space-x-8 mb-8">
@@ -504,7 +504,7 @@
           Let's build something together.
         </h2>
         <p class="text-xl text-gray-700 mb-4 max-w-3xl mx-auto">
-          Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product -- we'd love to hear what you're working on.
+          Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product - we'd love to hear what you're working on.
         </p>
         <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
           No pitch decks. No sales pressure. Just a conversation about your product and how we might help.
@@ -541,12 +541,12 @@ definePageMeta({
 
 // SEO Meta Tags
 useSeoMeta({
-  title: 'AcornGlobus -- Product Engineering Team That Builds It Like It\'s Ours',
+  title: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
   description: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
   keywords: 'product engineering, software development, resource augmentation, MVP development, web development, mobile app development, SaaS development, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'AcornGlobus -- Product Engineering Team That Builds It Like It\'s Ours',
+  ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
   ogDescription: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com',
@@ -555,7 +555,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@acornglobus',
   twitterCreator: '@acornglobus',
-  twitterTitle: 'AcornGlobus -- Product Engineering Team That Builds It Like It\'s Ours',
+  twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
   twitterDescription: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
@@ -565,14 +565,14 @@ const services = [
     icon: Users,
     title: 'Resource Augmentation',
     hook: 'Your team, plus ours.',
-    description: 'Our engineers embed with your team -- same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
+    description: 'Our engineers embed with your team - same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
     link: '/services/resource-augmentation'
   },
   {
     icon: Rocket,
     title: 'MVP Development',
     hook: 'From idea to launch in 8-12 weeks.',
-    description: 'We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready -- not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
+    description: 'We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready - not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
     link: '/services/mvp-development'
   },
   {
@@ -586,7 +586,7 @@ const services = [
     icon: Shield,
     title: 'Maintenance & Support',
     hook: 'We stay after launch.',
-    description: 'Launching is just the beginning. We monitor, fix, and improve -- with the same engineers who built it. Because they know your product and they care about it.',
+    description: 'Launching is just the beginning. We monitor, fix, and improve - with the same engineers who built it. Because they know your product and they care about it.',
     link: '/services/maintenance-support'
   }
 ]
@@ -602,7 +602,7 @@ const differentiators = [
   {
     icon: Handshake,
     title: 'We Guide, Not Just Execute',
-    description: 'We\'ll tell you honestly what you need -- and what can wait. Not to bill less, but because your success matters more than our invoice.',
+    description: 'We\'ll tell you honestly what you need - and what can wait. Not to bill less, but because your success matters more than our invoice.',
     bgClass: 'from-green-50 to-emerald-50',
     iconClass: 'text-green-600'
   },
@@ -616,7 +616,7 @@ const differentiators = [
   {
     icon: Code,
     title: 'Stack-Agnostic',
-    description: 'React, Node, Python, Flutter, AWS, Azure -- we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.',
+    description: 'React, Node, Python, Flutter, AWS, Azure - we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.',
     bgClass: 'from-orange-50 to-amber-50',
     iconClass: 'text-orange-600'
   }

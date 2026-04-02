@@ -28,7 +28,7 @@
               We Built Our Own SaaS. Here's What It Taught Us About Building Yours.
             </h1>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Formester is our SaaS product -- a no-code, AI-powered form builder used by real
+              Formester is our SaaS product - a no-code, AI-powered form builder used by real
               businesses every day. Building it changed how we work with every client.
             </p>
 
@@ -100,7 +100,7 @@
           </p>
           <p class="text-gray-600 leading-relaxed mb-6">
             When a client asked us to build a feature, we built it. When they asked us to fix a bug,
-            we fixed it. But we wanted to know what it feels like on the other side -- to be the ones
+            we fixed it. But we wanted to know what it feels like on the other side - to be the ones
             deciding what gets built, the ones losing sleep over churn, the ones watching real users
             struggle with something you designed.
           </p>
@@ -118,7 +118,7 @@
         <div class="max-w-3xl mx-auto mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Built</h2>
           <p class="text-lg text-gray-600">
-            Formester is a form builder -- but that understates it. The surface is simple. What's
+            Formester is a form builder - but that understates it. The surface is simple. What's
             underneath is not.
           </p>
         </div>
@@ -140,7 +140,7 @@
         <div class="max-w-3xl mx-auto mt-12">
           <p class="text-gray-500 text-sm">
             Under the hood: Ruby on Rails, Vue.js, PostgreSQL, Redis, AWS, and OpenAI API. Each
-            chosen for a specific reason -- Rails for iteration speed, PostgreSQL for data integrity
+            chosen for a specific reason - Rails for iteration speed, PostgreSQL for data integrity
             at scale.
           </p>
         </div>
@@ -269,18 +269,18 @@ definePageMeta({
 
 useSeoMeta({
   title: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
-  description: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  description: 'Formester is our own SaaS product - a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
   keywords: 'product engineering team that builds its own products, Formester case study, AcornGlobus SaaS, form builder, product ownership',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
-  ogDescription: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  ogDescription: 'Formester is our own SaaS product - a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/case-studies/formester',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'We Built Our Own SaaS. Here\'s What It Taught Us About Building Yours.',
-  twitterDescription: 'Formester is our own SaaS product -- a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
+  twitterDescription: 'Formester is our own SaaS product - a live form builder with real users and a 4.7-star G2 rating. Building it taught us what true product ownership feels like.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -312,12 +312,12 @@ const features = [
   {
     icon: GitBranch,
     title: 'Conditional Logic for Everyone',
-    description: 'Branch paths, skip logic, calculated fields -- all configured visually. Built because we watched users struggle with tools that required code for anything beyond a basic contact form.',
+    description: 'Branch paths, skip logic, calculated fields - all configured visually. Built because we watched users struggle with tools that required code for anything beyond a basic contact form.',
   },
   {
     icon: CreditCard,
     title: 'Payment Processing Baked In',
-    description: 'Stripe and PayPal integration for subscriptions, one-time payments, donations, and product orders. Not a bolt-on -- a core part of the product.',
+    description: 'Stripe and PayPal integration for subscriptions, one-time payments, donations, and product orders. Not a bolt-on - a core part of the product.',
   },
   {
     icon: Users,
@@ -340,16 +340,16 @@ const lessons = [
   {
     title: 'The spec is never the product',
     story: 'When we wrote Formester\'s initial requirements, we thought we knew what users wanted. We were wrong about a lot of it. The feature we were most excited about got almost no usage. The feature we added as an afterthought became one of the most-used parts of the product.',
-    clientImpact: 'We don\'t just build what\'s in the spec. We ask why each feature exists, who it\'s for, and what outcome it should drive. When we see a feature that might not land with users, we say so -- honestly and early.',
+    clientImpact: 'We don\'t just build what\'s in the spec. We ask why each feature exists, who it\'s for, and what outcome it should drive. When we see a feature that might not land with users, we say so - honestly and early.',
   },
   {
     title: 'Technical debt is personal when it\'s your product',
-    story: 'When you\'re building for someone else, shortcuts feel like trade-offs. When you\'re building for yourself, shortcuts feel like setting a trap for future-you. We\'ve lived with every architectural decision we made on Formester -- the good ones and the ones we wish we could take back.',
+    story: 'When you\'re building for someone else, shortcuts feel like trade-offs. When you\'re building for yourself, shortcuts feel like setting a trap for future-you. We\'ve lived with every architectural decision we made on Formester - the good ones and the ones we wish we could take back.',
     clientImpact: 'We build for the team that comes after us. Clean code, clear documentation, no lock-in. Because we know what it\'s like to inherit your own mess six months later.',
   },
   {
     title: 'Shipping is the beginning, not the end',
-    story: 'Formester\'s launch was the easiest part. What came after -- monitoring, user support, performance tuning, iterating based on feedback, deciding what not to build -- that\'s where the real work lives.',
+    story: 'Formester\'s launch was the easiest part. What came after - monitoring, user support, performance tuning, iterating based on feedback, deciding what not to build - that\'s where the real work lives.',
     clientImpact: 'We think about Day 2 from Day 1. How will this be monitored? How will the team debug this at 2 AM? What happens when traffic spikes? We plan for the product\'s life, not just its launch.',
   },
   {
@@ -359,8 +359,8 @@ const lessons = [
   },
   {
     title: 'Ownership means staying',
-    story: 'We didn\'t ship Formester and move on. We\'re still building it. Still improving it. Still fixing the things that break. That\'s what ownership actually means -- not a mindset you put on for a meeting, but a commitment you live with every day.',
-    clientImpact: 'PerformLine started with 1 engineer and grew to 8+ over 2 years. Eitoss started as an MVP we shipped in 3 months -- they raised funding, and we\'re still building together more than 2 years later. We stay because that\'s what partners do.',
+    story: 'We didn\'t ship Formester and move on. We\'re still building it. Still improving it. Still fixing the things that break. That\'s what ownership actually means - not a mindset you put on for a meeting, but a commitment you live with every day.',
+    clientImpact: 'PerformLine started with 1 engineer and grew to 8+ over 2 years. Eitoss started as an MVP we shipped in 3 months - they raised funding, and we\'re still building together more than 2 years later. We stay because that\'s what partners do.',
   },
 ]
 
@@ -380,7 +380,7 @@ const audiences = [
   },
   {
     title: 'For non-technical founders',
-    description: 'You need a team that explains what they\'re building and why. Because we\'ve been on both sides -- the builders and the product owners -- we translate technical decisions into business impact. You\'ll always understand what you\'re paying for.',
+    description: 'You need a team that explains what they\'re building and why. Because we\'ve been on both sides - the builders and the product owners - we translate technical decisions into business impact. You\'ll always understand what you\'re paying for.',
   },
   {
     title: 'For growing companies',

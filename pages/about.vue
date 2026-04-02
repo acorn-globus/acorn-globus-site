@@ -22,7 +22,7 @@
 
           <div class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed space-y-4">
             <p>
-              Before we built for anyone else, we built Formester -- our own SaaS product. Live, growing, used by thousands of people to create forms with AI.
+              Before we built for anyone else, we built Formester - our own SaaS product. Live, growing, used by thousands of people to create forms with AI.
             </p>
             <p>
               That experience taught us something most agencies never learn: what it feels like when the product is yours. The weight of every decision. The 2 AM alerts. The feedback from real users who depend on what you built.
@@ -75,19 +75,19 @@
             </h2>
             <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                AcornGlobus started the way most real things do -- small, scrappy, and driven by curiosity.
+                AcornGlobus started the way most real things do - small, scrappy, and driven by curiosity.
               </p>
               <p>
-                In 2018, Ankit started building Formester from scratch -- an AI-powered form builder. Something he wanted to exist in the world. That project became the foundation for everything that followed.
+                In 2018, Ankit started building Formester from scratch - an AI-powered form builder. Something he wanted to exist in the world. That project became the foundation for everything that followed.
               </p>
               <p>
-                By 2019, Tarun landed a project from Eitoss, a Japanese client, and called Ankit. They shipped it together, and AcornGlobus took seed. Not from a business plan, but from two friends who'd always wanted to build something of their own. The care we put into Formester, the ownership mindset, the obsession with getting it right -- that's what we wanted to bring to every product we touched.
+                By 2019, Tarun landed a project from Eitoss, a Japanese client, and called Ankit. They shipped it together, and AcornGlobus took seed. Not from a business plan, but from two friends who'd always wanted to build something of their own. The care we put into Formester, the ownership mindset, the obsession with getting it right - that's what we wanted to bring to every product we touched.
               </p>
               <p>
                 So we started doing exactly that. One client at a time. One relationship at a time.
               </p>
               <p>
-                Seven years later, we're a 20+ person team. We've shipped 25+ products across SaaS, fintech, healthtech, e-commerce, and more. Formester is still live, still growing -- 1,000+ users, 50,000+ forms created, 4.8-star rating. It keeps us honest. It reminds us every day what ownership feels like.
+                Seven years later, we're a 20+ person team. We've shipped 25+ products across SaaS, fintech, healthtech, e-commerce, and more. Formester is still live, still growing - 1,000+ users, 50,000+ forms created, 4.8-star rating. It keeps us honest. It reminds us every day what ownership feels like.
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@
               We're a team of 20+ engineers. No bench. No rotating juniors. No account managers standing between you and the people doing the work.
             </p>
             <p>
-              The engineer you meet in the first call is the engineer who writes your code. When you message us on Slack, a real person who knows your codebase answers. We're small enough that every relationship matters -- and experienced enough to build what you need.
+              The engineer you meet in the first call is the engineer who writes your code. When you message us on Slack, a real person who knows your codebase answers. We're small enough that every relationship matters - and experienced enough to build what you need.
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@
                 PerformLine needed a frontend engineer to plug into their existing team. We sent one. That was two years ago.
               </p>
               <p>
-                Today, we're 8+ engineers deep -- full-stack, DevOps, data engineering, QA, frontend. Same tools. Same standups. Same Slack channels. Our team is so embedded that new PerformLine hires sometimes don't realize we're a separate company.
+                Today, we're 8+ engineers deep - full-stack, DevOps, data engineering, QA, frontend. Same tools. Same standups. Same Slack channels. Our team is so embedded that new PerformLine hires sometimes don't realize we're a separate company.
               </p>
               <p>
                 That didn't happen because of a contract expansion clause. It happened because sprint after sprint, we earned their trust.
@@ -196,7 +196,7 @@
                 Eitoss came to us with a product vision and a tight timeline. We scoped it honestly, built it in sprints, and shipped a demoable MVP in 8 weeks. The product was live in production in 3 months.
               </p>
               <p>
-                They took that MVP and raised funding. That was over two years ago. We're still their engineering team -- not because they're locked in (they own 100% of the code), but because the partnership works.
+                They took that MVP and raised funding. That was over two years ago. We're still their engineering team - not because they're locked in (they own 100% of the code), but because the partnership works.
               </p>
             </div>
             <div class="flex items-center justify-center">
@@ -272,7 +272,7 @@
           Let's talk about what you're building.
         </h2>
         <p class="text-xl text-gray-700 mb-4 max-w-3xl mx-auto">
-          Whether you're a founder with an idea, a CTO who needs more hands, or a team looking for a long-term engineering partner -- we'd love to hear what you're working on.
+          Whether you're a founder with an idea, a CTO who needs more hands, or a team looking for a long-term engineering partner - we'd love to hear what you're working on.
         </p>
         <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
           No pitch decks. No pressure. Just a conversation about your product and whether we're the right fit.
@@ -310,18 +310,18 @@ definePageMeta({
 
 // SEO Meta Tags
 useSeoMeta({
-  title: 'About AcornGlobus -- The Team That Builds It Like It\'s Ours',
+  title: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   description: 'We built Formester, our own SaaS product. That taught us what real ownership feels like. Meet the 20+ person team behind AcornGlobus and the partnerships we\'ve built over 7+ years.',
   keywords: 'about AcornGlobus, product engineering team, founders, Ankit Singhania, Tarun Bhukya, Formester, company story, partnership engineering',
   author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'About AcornGlobus -- The Team That Builds It Like It\'s Ours',
+  ogTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   ogDescription: 'We built Formester, our own SaaS product. That taught us what real ownership feels like. Meet the 20+ person team behind AcornGlobus and the partnerships we\'ve built over 7+ years.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/about',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'About AcornGlobus -- The Team That Builds It Like It\'s Ours',
+  twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   twitterDescription: 'We built Formester, our own SaaS product. That taught us what real ownership feels like. Meet the 20+ person team and the partnerships we\'ve built over 7+ years.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
@@ -343,7 +343,7 @@ const principles = [
   {
     icon: Heart,
     title: 'Every product is someone\'s whole world',
-    description: 'Whether it\'s a startup founder\'s first MVP or an enterprise team\'s critical platform -- someone is counting on this. We build with that weight in mind.',
+    description: 'Whether it\'s a startup founder\'s first MVP or an enterprise team\'s critical platform - someone is counting on this. We build with that weight in mind.',
     color: 'from-pink-50 to-red-50',
     iconColor: 'text-pink-600'
   },
@@ -364,7 +364,7 @@ const principles = [
   {
     icon: Code,
     title: 'The right tool, not the familiar one',
-    description: 'React, Node, Python, Flutter, Go, AWS, Azure, GCP -- we\'re stack-agnostic because we\'re outcome-focused. We pick the technology that solves your problem best, not the one we used last time.',
+    description: 'React, Node, Python, Flutter, Go, AWS, Azure, GCP - we\'re stack-agnostic because we\'re outcome-focused. We pick the technology that solves your problem best, not the one we used last time.',
     color: 'from-green-50 to-emerald-50',
     iconColor: 'text-green-600'
   }
@@ -374,14 +374,14 @@ const founders = [
   {
     name: 'Ankit Singhania',
     role: 'Co-Founder',
-    bio: 'While Tarun was still in startups, Ankit went out on his own -- freelancing and building Formester from scratch as a one-man army. When Tarun called about Eitoss, their visions clicked. Both had always wanted to build a company of their own. Ankit is as technical as he is relationship-driven. He codes, he builds, and he\'s also the reason partnerships last years. If you\'re working with us, you\'ll probably hear from Ankit first.',
+    bio: 'While Tarun was still in startups, Ankit went out on his own - freelancing and building Formester from scratch as a one-man army. When Tarun called about Eitoss, their visions clicked. Both had always wanted to build a company of their own. Ankit is as technical as he is relationship-driven. He codes, he builds, and he\'s also the reason partnerships last years. If you\'re working with us, you\'ll probably hear from Ankit first.',
     image: '/images/ankit.jpeg',
     linkedin: '#'
   },
   {
     name: 'Tarun Bhukya',
     role: 'Co-Founder',
-    bio: 'Tarun and Ankit met at a startup, worked together for a year, and became close friends. When Tarun landed a project from a Japanese client -- Eitoss -- he joined hands with Ankit. They shipped it together, and that\'s where AcornGlobus started. Not from a business plan, but from two friends building something side by side. Tarun\'s the kind of engineer who thinks the best code is the code the next person can understand.',
+    bio: 'Tarun and Ankit met at a startup, worked together for a year, and became close friends. When Tarun landed a project from a Japanese client - Eitoss - he joined hands with Ankit. They shipped it together, and that\'s where AcornGlobus started. Not from a business plan, but from two friends building something side by side. Tarun\'s the kind of engineer who thinks the best code is the code the next person can understand.',
     image: '/images/tarun.jpeg',
     linkedin: '#'
   }

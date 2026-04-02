@@ -22,7 +22,7 @@
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
               Rails is about convention, speed, and getting things done. So are we. Whether you're
               building something new or maintaining a codebase that's been running for years, our
-              Rails developers understand the framework's philosophy -- not just its syntax.
+              Rails developers understand the framework's philosophy - not just its syntax.
             </p>
 
             <div class="flex flex-wrap gap-4">
@@ -221,7 +221,7 @@
           <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
             <p>
               We've built long-term engineering partnerships across multiple technology stacks.
-              PerformLine started with one engineer and grew to eight over two years -- full-stack,
+              PerformLine started with one engineer and grew to eight over two years - full-stack,
               DevOps, data engineering, and QA. Eitoss started as an MVP we shipped in three months;
               they raised funding, and we're still building together.
             </p>
@@ -364,12 +364,12 @@ const whyCards = [
   {
     icon: Wrench,
     title: 'Legacy Rails Expertise',
-    description: "Running a Rails 5 or 6 application that needs upgrading? We've handled Rails upgrade paths -- navigating deprecations, updating gems, and modernizing codebases without breaking what works."
+    description: "Running a Rails 5 or 6 application that needs upgrading? We've handled Rails upgrade paths - navigating deprecations, updating gems, and modernizing codebases without breaking what works."
   },
   {
     icon: Layers,
     title: 'Full-Stack Rails Thinking',
-    description: "Our developers understand the \"Rails way\" -- models, views, controllers, background jobs, mailers, tests. Not just backend API work, but the full-stack productivity that makes Rails powerful."
+    description: "Our developers understand the \"Rails way\" - models, views, controllers, background jobs, mailers, tests. Not just backend API work, but the full-stack productivity that makes Rails powerful."
   },
   {
     icon: Heart,
@@ -482,7 +482,7 @@ const railsAlternatives = [
 const steps = [
   {
     title: 'Discovery Call',
-    description: "We learn about your Rails project -- new build, legacy modernization, or additional capacity.",
+    description: "We learn about your Rails project - new build, legacy modernization, or additional capacity.",
     icon: Target
   },
   {
@@ -536,7 +536,7 @@ const faqs = [
   },
   {
     question: 'Can your Rails developers upgrade legacy Rails 5/6 applications?',
-    answer: 'Yes. We have experience navigating Rails upgrade paths -- handling deprecations, updating dependencies, and testing thoroughly at each step. Legacy modernization is one of our engagement types.'
+    answer: 'Yes. We have experience navigating Rails upgrade paths - handling deprecations, updating dependencies, and testing thoroughly at each step. Legacy modernization is one of our engagement types.'
   },
   {
     question: 'Do your developers work with Hotwire, Turbo, and Stimulus?',
@@ -548,10 +548,10 @@ const faqs = [
   },
   {
     question: 'Do your Rails developers also handle frontend work?',
-    answer: 'Our Rails developers are comfortable with full-stack Rails -- views, Hotwire, Stimulus, and CSS. For dedicated frontend work with React or Vue, we can also match you with frontend-specific engineers.'
+    answer: 'Our Rails developers are comfortable with full-stack Rails - views, Hotwire, Stimulus, and CSS. For dedicated frontend work with React or Vue, we can also match you with frontend-specific engineers.'
   },
   {
-    question: 'Ruby on Rails vs Node.js -- which should I choose?',
+    question: 'Ruby on Rails vs Node.js - which should I choose?',
     answer: 'Different tools for different jobs. Rails excels at rapid development, convention-driven applications, and full-stack web apps. Node.js is stronger for real-time features and JavaScript-stack consistency. We work with both and can advise honestly.'
   },
   {

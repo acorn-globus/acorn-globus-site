@@ -20,7 +20,7 @@
             </h1>
 
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              We didn't just add Vue.js to a skills list. We built Formester -- our own SaaS product -- on it.
+              We didn't just add Vue.js to a skills list. We built Formester - our own SaaS product - on it.
               Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped
               real Vue applications to real users.
             </p>
@@ -105,7 +105,7 @@
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Deep Vue.js Ecosystem Expertise</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our Vue developers work across the full modern Vue ecosystem -- not just the core library.
+            Our Vue developers work across the full modern Vue ecosystem - not just the core library.
           </p>
         </div>
 
@@ -199,7 +199,7 @@
 
         <div class="space-y-8">
           <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Formester -- Our Own SaaS Product</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Formester - Our Own SaaS Product</h3>
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
               A form builder and data collection platform, built from the ground up on Vue.js. Live,
               growing, and serving real users daily. 4.8-star rating.
@@ -356,7 +356,7 @@ const capabilities = [
   {
     icon: Layers,
     title: 'SaaS Dashboards and Admin Panels',
-    description: "Complex, interactive interfaces with real-time data. Formester's dashboard is one example -- built for daily use by thousands of users."
+    description: "Complex, interactive interfaces with real-time data. Formester's dashboard is one example - built for daily use by thousands of users."
   },
   {
     icon: Code,
@@ -376,7 +376,7 @@ const capabilities = [
   {
     icon: Target,
     title: 'Internal Business Tools',
-    description: 'Admin panels, CRM interfaces, reporting dashboards -- the tools your team uses every day that need to be fast and reliable.'
+    description: 'Admin panels, CRM interfaces, reporting dashboards - the tools your team uses every day that need to be fast and reliable.'
   }
 ]
 
@@ -424,18 +424,18 @@ const engagementModels = [
 const faqs = [
   {
     question: 'How much does it cost to hire a Vue.js developer in India?',
-    answer: "Rates depend on seniority and engagement type. We price competitively for dedicated, long-term engagements. We'll share specifics on a discovery call -- no generic rate cards."
+    answer: "Rates depend on seniority and engagement type. We price competitively for dedicated, long-term engagements. We'll share specifics on a discovery call - no generic rate cards."
   },
   {
     question: 'Do your developers work with Nuxt.js?',
-    answer: "Yes -- extensively. Our own website runs on Nuxt 4. We have experience with SSR, SSG, hybrid rendering, API routes, and Nuxt middleware. If your project is Nuxt-based, we'll match you with engineers who've shipped Nuxt applications."
+    answer: "Yes - extensively. Our own website runs on Nuxt 4. We have experience with SSR, SSG, hybrid rendering, API routes, and Nuxt middleware. If your project is Nuxt-based, we'll match you with engineers who've shipped Nuxt applications."
   },
   {
     question: 'What Vue.js version do your developers use?',
     answer: 'Vue 3 with Composition API and TypeScript is our standard. If you have a Vue 2 application that needs migrating to Vue 3, we can help with that too.'
   },
   {
-    question: 'Vue.js vs React -- which should I choose for my project?',
+    question: 'Vue.js vs React - which should I choose for my project?',
     answer: "It depends on your team, your project, and your preferences. Vue tends to have a gentler learning curve and excellent documentation. React has a larger ecosystem and more third-party libraries. We work with both and can give you an honest recommendation based on your specific situation. We won't push one over the other."
   },
   {
@@ -455,18 +455,18 @@ const faqs = [
 // SEO Meta
 useSeoMeta({
   title: 'Hire Vue.js Developers in India | AcornGlobus',
-  description: 'Hire Vue.js developers from the team that built Formester -- a live SaaS product running on Vue. 20+ person team, named engineers, 2-week trial. Talk to us.',
+  description: 'Hire Vue.js developers from the team that built Formester - a live SaaS product running on Vue. 20+ person team, named engineers, 2-week trial. Talk to us.',
   keywords: 'hire vue.js developers, hire vuejs developers India, vue developer India, dedicated vue developer, nuxt developer, vue.js development team',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'Hire Vue.js Developers in India | AcornGlobus',
-  ogDescription: 'Hire Vue.js developers from the team that built Formester -- a live SaaS product running on Vue. 20+ person team, named engineers, 2-week trial.',
+  ogDescription: 'Hire Vue.js developers from the team that built Formester - a live SaaS product running on Vue. 20+ person team, named engineers, 2-week trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-vuejs-developer',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Vue.js Developers in India | AcornGlobus',
-  twitterDescription: 'Hire Vue.js developers from the team that built Formester -- a live SaaS product on Vue.',
+  twitterDescription: 'Hire Vue.js developers from the team that built Formester - a live SaaS product on Vue.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -478,7 +478,7 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Vue.js Developers',
-  description: 'Hire Vue.js developers from the team that built Formester -- a live SaaS product running on Vue. Named engineers, 2-week embedded trial, Nuxt expertise.',
+  description: 'Hire Vue.js developers from the team that built Formester - a live SaaS product running on Vue. Named engineers, 2-week embedded trial, Nuxt expertise.',
   url: '/hire-vuejs-developer',
 })
 
