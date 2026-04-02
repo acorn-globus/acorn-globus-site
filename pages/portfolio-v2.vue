@@ -21,7 +21,7 @@
             </span>
           </h1>
 
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
             From our own SaaS product to funded startups and global nonprofits, here's the work
             we're proud of - and the partnerships that made it happen.
           </p>
@@ -38,11 +38,11 @@
     </section>
 
     <!-- Stats Section -->
-    <section ref="statsSection" class="py-16 bg-white" :class="{ 'reveal-visible': sectionsVisible.stats, 'reveal-hidden': !sectionsVisible.stats }">
+    <section ref="statsSection" class="py-20 bg-white" :class="{ 'reveal-visible': sectionsVisible.stats, 'reveal-hidden': !sectionsVisible.stats }">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(stat, index) in stats" :key="index" class="text-center">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 text-blue-600 rounded-xl mb-3">
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-50 text-blue-600 rounded-xl mb-4">
               <component :is="stat.icon" class="h-6 w-6" />
             </div>
             <div class="text-2xl font-semibold text-gray-900 mb-0.5">{{ stat.value }}</div>
@@ -83,22 +83,22 @@
             </p>
 
             <div class="grid grid-cols-3 gap-3 mb-8">
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-100">
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
                 <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.users }}</div>
                 <div class="text-sm font-normal text-gray-500 mt-1">Active Users</div>
               </div>
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-100">
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
                 <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.forms }}</div>
                 <div class="text-sm font-normal text-gray-500 mt-1">Forms Created</div>
               </div>
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-100">
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
                 <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.rating }}&#9733;</div>
                 <div class="text-sm font-normal text-gray-500 mt-1">User Rating</div>
               </div>
             </div>
 
             <div class="flex flex-wrap gap-1.5 mb-8">
-              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">
+              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium">
                 {{ tech }}
               </span>
             </div>
@@ -118,7 +118,7 @@
     </section>
 
     <!-- Projects Grid (with integrated filters) -->
-    <section class="pt-16 pb-20 bg-white">
+    <section class="pt-20 pb-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section header with filters -->
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-12">
@@ -137,7 +137,7 @@
                 'inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0',
                 'focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none',
                 activeFilter === filter.id
-                  ? 'text-blue-600 bg-blue-50'
+                  ? 'text-blue-600 bg-blue-50 ring-1 ring-blue-200'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
               ]"
             >
@@ -170,7 +170,7 @@
             @mouseleave="hoveredProject = null"
           >
             <!-- Image Section -->
-            <div class="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
+            <div class="relative h-52 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
               <img
                 v-if="!imageErrors[project.id]"
                 :src="project.image"
@@ -215,7 +215,7 @@
               </div>
 
               <!-- Metrics -->
-              <div v-if="project.metrics" class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div v-if="project.metrics" class="grid grid-cols-2 pt-4 border-t border-gray-100">
                 <div v-for="(value, key, idx) in Object.fromEntries(Object.entries(project.metrics).slice(0, 2))" :key="idx" class="text-center">
                   <div class="text-lg font-semibold text-gray-900">
                     {{ value }}
@@ -239,9 +239,10 @@
 
         <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-white border border-gray-200 rounded-xl p-8">
-            <Quote class="h-6 w-6 text-gray-300 mb-4" />
-            <p v-if="testimonial.framing" class="text-sm font-semibold text-gray-900 mb-2">{{ testimonial.framing }}</p>
+            <Quote class="h-6 w-6 text-blue-200 mb-4" />
+            <p v-if="testimonial.framing" class="text-base font-semibold text-gray-900 mb-2">{{ testimonial.framing }}</p>
             <p class="text-base text-gray-600 mb-6 italic leading-relaxed">{{ testimonial.content }}</p>
+
             <div class="flex items-center">
               <img
                 :src="testimonial.avatar"
@@ -277,7 +278,7 @@
           </NuxtLink>
           <NuxtLink
             to="/services"
-            class="px-8 py-4 text-gray-600 font-medium hover:text-gray-900 transition-colors duration-200"
+            class="px-8 py-4 text-gray-600 font-medium hover:text-gray-900 transition-colors duration-200 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
           >
             View Services
           </NuxtLink>
@@ -575,7 +576,7 @@ const testimonials = [
 .reveal-visible {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* TransitionGroup for filter transitions */
