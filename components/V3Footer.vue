@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-gray-100 text-gray-600 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
         <div>
           <div class="mb-6">
             <img
@@ -41,6 +41,17 @@
             <li><NuxtLink to="/services/full-project-delivery" class="hover:text-purple-600 transition-colors">Full Project Delivery</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support" class="hover:text-purple-600 transition-colors">Maintenance & Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development" class="hover:text-purple-600 transition-colors">MVP Development</NuxtLink></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-gray-900 font-semibold mb-4">Hire Developers</h4>
+          <ul class="space-y-2 text-sm">
+            <li><NuxtLink to="/hire-react-developer" class="hover:text-purple-600 transition-colors">Hire React Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-angular-developer" class="hover:text-purple-600 transition-colors">Hire Angular Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-vuejs-developer" class="hover:text-purple-600 transition-colors">Hire Vue.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-nodejs-developer" class="hover:text-purple-600 transition-colors">Hire Node.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-rails-developer" class="hover:text-purple-600 transition-colors">Hire Rails Developers</NuxtLink></li>
           </ul>
         </div>
 
