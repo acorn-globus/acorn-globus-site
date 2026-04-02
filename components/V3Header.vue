@@ -31,16 +31,16 @@
             Services
           </NuxtLink>
           <NuxtLink
+            to="/how-we-work"
+            :class="['font-medium transition-colors', currentPath === '/how-we-work' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
+          >
+            How We Work
+          </NuxtLink>
+          <NuxtLink
             to="/portfolio"
             :class="['font-medium transition-colors', currentPath === '/portfolio' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
           >
             Portfolio
-          </NuxtLink>
-          <NuxtLink
-            to="/designs"
-            :class="['font-medium transition-colors', currentPath === '/designs' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600']"
-          >
-            Designs
           </NuxtLink>
           <NuxtLink
             to="/blog"
@@ -99,18 +99,18 @@
             Services
           </NuxtLink>
           <NuxtLink
+            to="/how-we-work"
+            :class="['block px-3 py-2 rounded-md font-medium transition-colors', currentPath === '/how-we-work' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100']"
+            @click="isMobileMenuOpen = false"
+          >
+            How We Work
+          </NuxtLink>
+          <NuxtLink
             to="/portfolio"
             :class="['block px-3 py-2 rounded-md font-medium transition-colors', currentPath === '/portfolio' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100']"
             @click="isMobileMenuOpen = false"
           >
             Portfolio
-          </NuxtLink>
-          <NuxtLink
-            to="/designs"
-            :class="['block px-3 py-2 rounded-md font-medium transition-colors', currentPath === '/designs' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100']"
-            @click="isMobileMenuOpen = false"
-          >
-            Designs
           </NuxtLink>
           <NuxtLink
             to="/blog"

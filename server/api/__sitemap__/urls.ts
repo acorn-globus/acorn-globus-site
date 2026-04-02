@@ -46,6 +46,9 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/guides/it-staff-augmentation', changefreq: 'monthly', priority: 0.9 },
     { loc: '/guides/mvp-development', changefreq: 'monthly', priority: 0.9 },
 
+    // How We Work
+    { loc: '/how-we-work', changefreq: 'monthly', priority: 0.8 },
+
     // Blog index
     { loc: '/blog', changefreq: 'weekly', priority: 0.7 },
 

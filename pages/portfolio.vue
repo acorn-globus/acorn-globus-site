@@ -398,6 +398,29 @@ const projects = [
     featured: true
   },
   {
+    id: 5,
+    name: 'PerformLine',
+    category: 'enterprise',
+    tagline: 'Regulatory Compliance at Scale',
+    description: 'A regulatory technology platform that monitors marketing content across channels for compliance. We started with 1 engineer and grew to 8+ over 2 years.',
+    longDescription: 'PerformLine automates compliance monitoring across web, calls, emails, messages, and social media. We embedded with their team from day one -- 1 engineer became 8+ across full-stack, DevOps, QA, and frontend over a 2-year partnership.',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Microservices'],
+    features: [
+      'Multi-channel compliance monitoring',
+      'Automated content scanning',
+      'Real-time alerting',
+      'Custom rule engine',
+      'Analytics dashboards'
+    ],
+    metrics: {
+      team: '8+',
+      duration: '2+ years',
+      channels: '5+'
+    },
+    image: '/images/performline-mockup.png',
+    featured: true
+  },
+  {
     id: 3,
     name: 'Invoice Falcon',
     category: 'ecommerce',
@@ -490,6 +513,8 @@ const handleProjectClick = (projectId) => {
     router.push('/case-studies/invoice-falcon')
   } else if (projectId === 4) {
     router.push('/case-studies/rumie')
+  } else if (projectId === 5) {
+    router.push('/case-studies/performline')
   }
 }
 </script>

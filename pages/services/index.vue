@@ -136,6 +136,38 @@
           </div>
         </div>
 
+        <!-- In-Depth Guides -->
+        <div class="mt-20 mb-20">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Go Deeper</h2>
+          <p class="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            Explore our comprehensive guides to make informed decisions about your next project.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <NuxtLink to="/guides/it-staff-augmentation" class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                <Users class="h-6 w-6" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">The Complete Guide to IT Staff Augmentation</h3>
+              <p class="text-gray-600 mb-4">Everything you need to know about scaling your engineering team -- models, costs, when to use it, and how to make it work.</p>
+              <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
+                Read the guide
+                <ChevronRight class="h-4 w-4 ml-1" />
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/guides/mvp-development" class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="inline-flex items-center justify-center w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                <Rocket class="h-6 w-6" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">The Complete Guide to MVP Development</h3>
+              <p class="text-gray-600 mb-4">From idea to working product -- costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
+              <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
+                Read the guide
+                <ChevronRight class="h-4 w-4 ml-1" />
+              </span>
+            </NuxtLink>
+          </div>
+        </div>
+
         <!-- Differentiators -->
         <div class="mt-20">
           <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">What Sets Us Apart</h2>
