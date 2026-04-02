@@ -1,6 +1,7 @@
 <template>
-  <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+  <div class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div class="absolute inset-0">
         <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
@@ -13,84 +14,91 @@
             Our Portfolio
           </div>
 
-          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Products We've Built
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
               And Stories Behind Them
             </span>
           </h1>
 
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
             From our own SaaS product to funded startups and global nonprofits, here's the work
             we're proud of - and the partnerships that made it happen.
           </p>
+
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 group"
+          >
+            Let's build together
+            <ArrowRight class="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+          </NuxtLink>
         </div>
       </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <section ref="statsSection" class="py-20 bg-white" :class="{ 'reveal-visible': sectionsVisible.stats, 'reveal-hidden': !sectionsVisible.stats }">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(stat, index) in stats" :key="index" class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl mb-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-50 text-blue-600 rounded-xl mb-4">
               <component :is="stat.icon" class="h-6 w-6" />
             </div>
-            <div class="text-3xl font-bold text-gray-900 mb-1">{{ stat.value }}</div>
-            <div class="text-gray-600">{{ stat.label }}</div>
+            <div class="text-2xl font-semibold text-gray-900 mb-0.5">{{ stat.value }}</div>
+            <div class="text-sm text-gray-500">{{ stat.label }}</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Featured Project -->
-    <section v-if="featuredProject" class="py-20 bg-gradient-to-b from-white to-blue-50/30">
+    <section v-if="featuredProject" ref="featuredSection" class="py-20 bg-gradient-to-b from-white to-blue-50/30" :class="{ 'reveal-visible': sectionsVisible.featured, 'reveal-hidden': !sectionsVisible.featured }">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
             <Award class="h-4 w-4 mr-2" />
             Featured Success Story
           </div>
-          <h2 class="text-3xl font-bold text-gray-900">Our Flagship Product</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Our Flagship Product</h2>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 class="text-4xl font-bold text-gray-900 mb-4">
+          <!-- Image: show first on mobile, second on desktop -->
+          <div class="order-1 lg:order-2 relative">
+            <img
+              :src="featuredProject.image"
+              :alt="featuredProject.altText"
+              class="relative rounded-xl shadow-md"
+            />
+          </div>
+          <!-- Content: show second on mobile, first on desktop -->
+          <div class="order-2 lg:order-1">
+            <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
               {{ featuredProject.name }}
-              <span class="block text-xl text-blue-600 mt-2">{{ featuredProject.tagline }}</span>
+              <span class="block text-base font-medium text-blue-600 mt-2">{{ featuredProject.tagline }}</span>
             </h3>
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed max-w-xl">
               {{ featuredProject.longDescription }}
             </p>
 
-            <div class="grid grid-cols-3 gap-4 mb-8">
-              <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.users }}</div>
-                <div class="text-sm text-gray-600">Active Users</div>
+            <div class="grid grid-cols-3 gap-3 mb-8">
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
+                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.users }}</div>
+                <div class="text-sm font-normal text-gray-500 mt-1">Active Users</div>
               </div>
-              <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.forms }}</div>
-                <div class="text-sm text-gray-600">Forms Created</div>
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
+                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.forms }}</div>
+                <div class="text-sm font-normal text-gray-500 mt-1">Forms Created</div>
               </div>
-              <div class="text-center p-4 bg-white rounded-xl shadow-sm">
-                <div class="text-2xl font-bold text-blue-600">{{ featuredProject.metrics.rating }}★</div>
-                <div class="text-sm text-gray-600">User Rating</div>
-              </div>
-            </div>
-
-            <div class="mb-8">
-              <h4 class="text-lg font-semibold text-gray-900 mb-3">Key Features</h4>
-              <div class="space-y-2">
-                <div v-for="(feature, index) in featuredProject.features" :key="index" class="flex items-center text-gray-600">
-                  <CheckCircle class="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                  {{ feature }}
-                </div>
+              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
+                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.rating }}&#9733;</div>
+                <div class="text-sm font-normal text-gray-500 mt-1">User Rating</div>
               </div>
             </div>
 
-            <div class="flex flex-wrap gap-3 mb-8">
-              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+            <div class="flex flex-wrap gap-1.5 mb-8">
+              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium">
                 {{ tech }}
               </span>
             </div>
@@ -99,163 +107,151 @@
               :href="featuredProject.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 group"
             >
               Visit Formester
-              <ExternalLink class="ml-2 h-4 w-4" />
+              <ExternalLink class="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-2xl"></div>
-            <img
-              :src="featuredProject.image"
-              :alt="featuredProject.name"
-              class="relative rounded-3xl shadow-2xl"
-            />
+    <!-- Projects Grid (with integrated filters) -->
+    <section class="pt-20 pb-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section header with filters -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-12">
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 sm:mb-0">
+            Our Work
+          </h2>
+          <div class="flex flex-nowrap gap-2 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide" role="tablist" aria-label="Filter projects by category">
+            <button
+              v-for="filter in filters"
+              :key="filter.id"
+              @click="activeFilter = filter.id"
+              role="tab"
+              :aria-selected="activeFilter === filter.id"
+              :aria-pressed="activeFilter === filter.id"
+              :class="[
+                'inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0',
+                'focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none',
+                activeFilter === filter.id
+                  ? 'text-blue-600 bg-blue-50 ring-1 ring-blue-200'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+              ]"
+            >
+              <component :is="filter.icon" class="h-4 w-4 mr-1.5" />
+              <span>{{ filter.label }}</span>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Filter Section -->
-    <section class="py-12 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center gap-4">
-          <button
-            v-for="filter in filters"
-            :key="filter.id"
-            @click="activeFilter = filter.id"
-            :class="[
-              'inline-flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300',
-              activeFilter === filter.id
-                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            ]"
-          >
-            <component :is="filter.icon" class="h-4 w-4" />
-            <span class="ml-2">{{ filter.label }}</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div
-            v-for="project in filteredProjects"
+        <!-- Grid with TransitionGroup -->
+        <TransitionGroup
+          name="card"
+          tag="div"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          role="tabpanel"
+          aria-label="Project list"
+        >
+          <NuxtLink
+            v-for="(project, index) in filteredProjects"
             :key="project.id"
-            class="group relative bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 cursor-pointer"
-            @mouseenter="hoveredProject = project.id"
-            @mouseleave="hoveredProject = null"
-            @click="handleProjectClick(project.id)"
+            :to="getProjectLink(project.id)"
+            class="group relative bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:outline-none"
             :style="{
               boxShadow: hoveredProject === project.id
-                ? '0 20px 40px -10px rgba(147, 51, 234, 0.3)'
-                : '0 10px 30px -10px rgba(0, 0, 0, 0.1)'
+                ? '0 20px 40px -10px rgba(37, 99, 235, 0.12)'
+                : '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+              transitionDelay: sectionsVisible.grid ? `${Math.min(index * 100, 400)}ms` : '0ms'
             }"
+            @mouseenter="hoveredProject = project.id"
+            @mouseleave="hoveredProject = null"
           >
             <!-- Image Section -->
-            <div class="relative h-56 overflow-hidden">
+            <div class="relative h-52 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
               <img
+                v-if="!imageErrors[project.id]"
                 :src="project.image"
-                :alt="project.name"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                :alt="project.altText"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                @error="handleImageError(project.id)"
               />
-              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-opacity duration-300"></div>
-
-              <!-- Category Badge on Image -->
-              <div class="absolute top-4 left-4 flex gap-2">
-                <span class="px-4 py-1.5 bg-white/90 backdrop-blur-sm text-gray-800 rounded-full text-xs font-semibold capitalize inline-flex items-center">
-                  <Cloud v-if="project.category === 'saas'" class="h-3 w-3 mr-1.5" />
-                  <Building v-if="project.category === 'enterprise'" class="h-3 w-3 mr-1.5" />
-                  <ShoppingCart v-if="project.category === 'ecommerce'" class="h-3 w-3 mr-1.5" />
-                  <Heart v-if="project.category === 'nonprofit'" class="h-3 w-3 mr-1.5" />
-                  {{ project.category }}
-                </span>
-                <span v-if="project.isOwnProduct" class="px-4 py-1.5 bg-blue-600/90 backdrop-blur-sm text-white rounded-full text-xs font-semibold inline-flex items-center">
-                  <Rocket class="h-3 w-3 mr-1.5" />
-                  Our Product
-                </span>
+              <div v-else class="absolute inset-0 flex flex-col items-center justify-center">
+                <component :is="getCategoryIcon(project.category)" class="h-12 w-12 text-gray-300 mb-3" />
+                <span class="text-sm font-medium text-gray-400">{{ project.name }}</span>
               </div>
 
-              <div v-if="project.featured" class="absolute top-4 right-4">
-                <div class="p-2 bg-yellow-400/90 backdrop-blur-sm rounded-full">
-                  <Star class="h-4 w-4 text-white fill-white" />
-                </div>
+              <!-- Category Badge on Image -->
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-gray-700 rounded-lg text-xs font-medium capitalize inline-flex items-center">
+                  <component :is="getCategoryIcon(project.category)" class="h-3 w-3 mr-1" />
+                  {{ project.category }}
+                </span>
+                <span v-if="project.isOwnProduct" class="px-3 py-1 bg-blue-600/90 backdrop-blur-sm text-white rounded-lg text-xs font-medium inline-flex items-center">
+                  <Rocket class="h-3 w-3 mr-1" />
+                  Our Product
+                </span>
               </div>
             </div>
 
             <!-- Content Section -->
-            <div class="p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
                 {{ project.name }}
               </h3>
-              <p class="text-sm text-blue-600 font-semibold mb-4">{{ project.tagline }}</p>
-              <p class="text-gray-600 mb-6 line-clamp-2 leading-relaxed">{{ project.description }}</p>
+              <p class="text-sm font-medium text-blue-600 mb-3">{{ project.tagline }}</p>
+              <p class="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">{{ project.description }}</p>
 
-              <!-- Technologies -->
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span v-for="(tech, idx) in project.technologies.slice(0, 3)" :key="idx" class="text-xs px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg font-medium">
+              <!-- Technologies (gray, metadata style) -->
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span v-for="(tech, idx) in project.technologies.slice(0, 3)" :key="idx" class="text-xs px-2.5 py-1 bg-gray-100 text-gray-600 rounded-lg font-medium">
                   {{ tech }}
                 </span>
-                <span v-if="project.technologies.length > 3" class="text-xs px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg font-medium">
+                <span v-if="project.technologies.length > 3" class="text-xs px-2.5 py-1 bg-gray-100 text-gray-500 rounded-lg font-medium">
                   +{{ project.technologies.length - 3 }}
                 </span>
               </div>
 
               <!-- Metrics -->
-              <div v-if="project.metrics" class="flex items-center justify-around pt-6 border-t border-gray-100">
+              <div v-if="project.metrics" class="grid grid-cols-2 pt-4 border-t border-gray-100">
                 <div v-for="(value, key, idx) in Object.fromEntries(Object.entries(project.metrics).slice(0, 2))" :key="idx" class="text-center">
-                  <div class="text-2xl font-bold text-blue-600">
+                  <div class="text-lg font-semibold text-gray-900">
                     {{ value }}
                   </div>
-                  <div class="text-xs text-gray-500 capitalize mt-1">{{ key }}</div>
+                  <div class="text-xs text-gray-500 capitalize mt-0.5">{{ key }}</div>
                 </div>
               </div>
             </div>
-
-            <!-- View Case Study Button for projects with case studies -->
-            <div v-if="[1, 2, 3, 4].includes(project.id)" class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-white/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700 transition-all">
-                View Case Study →
-              </button>
-            </div>
-
-            <!-- Hover Effect Bottom Bar -->
-            <div :class="[
-              'absolute inset-x-0 bottom-0 h-1 bg-blue-500 transform transition-transform duration-300',
-              hoveredProject === project.id ? 'scale-x-100' : 'scale-x-0'
-            ]"></div>
-          </div>
-        </div>
+          </NuxtLink>
+        </TransitionGroup>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-white">
+    <section ref="testimonialsSection" class="py-20 bg-gray-50" :class="{ 'reveal-visible': sectionsVisible.testimonials, 'reveal-hidden': !sectionsVisible.testimonials }">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">From the people we build with</h2>
-          <p class="text-gray-600">Success is best measured by client satisfaction</p>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">From the people we build with</h2>
+          <p class="text-base text-gray-600">Success is best measured by client satisfaction</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <Quote class="h-8 w-8 text-blue-200 mb-4" />
-            <p v-if="testimonial.framing" class="text-sm font-semibold text-blue-600 mb-3">{{ testimonial.framing }}</p>
-            <p class="text-gray-700 mb-6 italic">{{ testimonial.content }}</p>
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-white border border-gray-200 rounded-xl p-8">
+            <Quote class="h-6 w-6 text-blue-200 mb-4" />
+            <p v-if="testimonial.framing" class="text-base font-semibold text-gray-900 mb-2">{{ testimonial.framing }}</p>
+            <p class="text-base text-gray-600 mb-6 italic leading-relaxed">{{ testimonial.content }}</p>
+
             <div class="flex items-center">
               <img
                 :src="testimonial.avatar"
                 :alt="testimonial.name"
-                class="w-12 h-12 rounded-full mr-4"
+                class="w-10 h-10 rounded-full mr-3"
               />
               <div>
-                <h4 class="font-semibold text-gray-900">{{ testimonial.name }}</h4>
-                <p class="text-sm text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</p>
+                <h4 class="text-sm font-semibold text-gray-900">{{ testimonial.name }}</h4>
+                <p class="text-xs text-gray-500">{{ testimonial.role }}, {{ testimonial.company }}</p>
               </div>
             </div>
           </div>
@@ -264,33 +260,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+    <section ref="ctaSection" class="py-20 bg-white" :class="{ 'reveal-visible': sectionsVisible.cta, 'reveal-hidden': !sectionsVisible.cta }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
           Want to build something like this?
         </h2>
-        <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
           We'd love to hear what you're working on. No pitch decks - just a conversation about your product.
         </p>
-        <div class="flex flex-wrap gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300 group w-full sm:w-auto justify-center"
           >
             Start a conversation
-            <ArrowRight class="ml-2 h-5 w-5" />
+            <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
           </NuxtLink>
           <NuxtLink
             to="/services"
-            class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
+            class="px-8 py-4 text-gray-600 font-medium hover:text-gray-900 transition-colors duration-200 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
           >
             View Services
-            <ChevronRight class="ml-2 h-5 w-5" />
           </NuxtLink>
         </div>
       </div>
@@ -300,7 +290,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import {
   ArrowRight, Filter, ExternalLink, Award, Globe, Zap,
   BookOpen, Rocket, Target, Users, Star, Quote, ArrowUpRight,
@@ -336,9 +326,73 @@ useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio' },
 ])
 
-const router = useRouter()
 const activeFilter = ref('all')
 const hoveredProject = ref(null)
+const imageErrors = ref({})
+
+// Scroll reveal refs
+const statsSection = ref(null)
+const featuredSection = ref(null)
+const testimonialsSection = ref(null)
+const ctaSection = ref(null)
+
+const sectionsVisible = ref({
+  stats: false,
+  featured: false,
+  grid: false,
+  testimonials: false,
+  cta: false
+})
+
+// Intersection Observer for scroll-reveal
+let observers = []
+
+const setupObserver = (element, key) => {
+  if (!element) return
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          sectionsVisible.value[key] = true
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.1 }
+  )
+  observer.observe(element)
+  observers.push(observer)
+}
+
+onMounted(() => {
+  nextTick(() => {
+    setupObserver(statsSection.value, 'stats')
+    setupObserver(featuredSection.value, 'featured')
+    setupObserver(testimonialsSection.value, 'testimonials')
+    setupObserver(ctaSection.value, 'cta')
+    // Grid visible by default after a small delay for entrance animation
+    setTimeout(() => { sectionsVisible.value.grid = true }, 200)
+  })
+})
+
+onUnmounted(() => {
+  observers.forEach((obs) => obs.disconnect())
+  observers = []
+})
+
+const handleImageError = (projectId) => {
+  imageErrors.value[projectId] = true
+}
+
+const getCategoryIcon = (category) => {
+  const icons = { saas: Cloud, enterprise: Building, ecommerce: ShoppingCart, nonprofit: Heart }
+  return icons[category] || Building
+}
+
+const getProjectLink = (projectId) => {
+  const slugMap = { 1: 'formester', 2: 'eitoss', 3: 'invoice-falcon', 4: 'rumie', 5: 'performline' }
+  return `/case-studies/${slugMap[projectId] || ''}`
+}
 
 const filters = [
   { id: 'all', label: 'All Projects', icon: Layers },
@@ -370,6 +424,7 @@ const projects = [
       forms: '50K+',
       rating: '4.8'
     },
+    altText: 'Screenshot of Formester drag-and-drop form builder interface',
     image: '/images/formester-mockup.png',
     link: 'https://formester.com',
     featured: true
@@ -394,6 +449,7 @@ const projects = [
       adoption: '95%',
       roi: '3x'
     },
+    altText: 'Screenshot of Eitoss management-frontline communication platform',
     image: '/images/eitoss-mockup.png',
     featured: true
   },
@@ -417,6 +473,7 @@ const projects = [
       duration: '2+ years',
       channels: '5+'
     },
+    altText: 'PerformLine regulatory compliance monitoring platform',
     image: '/images/performline-mockup.png',
     featured: true
   },
@@ -440,6 +497,7 @@ const projects = [
       invoices: '100K+',
       countries: '30+'
     },
+    altText: 'Screenshot of Invoice Falcon Shopify invoicing dashboard',
     image: '/images/invoice-falcon-mockup.png',
     link: '#',
     featured: false
@@ -464,16 +522,19 @@ const projects = [
       learners: '1M+',
       lessons: '10K+'
     },
+    altText: 'Screenshot of Rumie micro-learning platform interface',
     image: '/images/rumie-mockup.png',
     link: '#',
     featured: true
   }
 ]
 
+// Exclude Formester from grid (featured section handles it)
 const filteredProjects = computed(() => {
+  const nonFeatured = projects.filter(p => p.id !== 1)
   return activeFilter.value === 'all'
-    ? projects
-    : projects.filter(project => project.category === activeFilter.value)
+    ? nonFeatured
+    : nonFeatured.filter(project => project.category === activeFilter.value)
 })
 
 const featuredProject = computed(() => projects.find(p => p.featured && p.id === 1))
@@ -503,18 +564,52 @@ const testimonials = [
     avatar: '/images/testimonials/enzo.jpeg'
   }
 ]
-
-const handleProjectClick = (projectId) => {
-  if (projectId === 1) {
-    router.push('/case-studies/formester')
-  } else if (projectId === 2) {
-    router.push('/case-studies/eitoss')
-  } else if (projectId === 3) {
-    router.push('/case-studies/invoice-falcon')
-  } else if (projectId === 4) {
-    router.push('/case-studies/rumie')
-  } else if (projectId === 5) {
-    router.push('/case-studies/performline')
-  }
-}
 </script>
+
+<style scoped>
+/* Scroll reveal animations */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* TransitionGroup for filter transitions */
+.card-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.card-leave-active {
+  transition: all 0.2s ease-in;
+  position: absolute;
+}
+
+.card-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.card-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.card-move {
+  transition: transform 0.3s ease;
+}
+
+/* Hide scrollbar for filter pills on mobile */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
