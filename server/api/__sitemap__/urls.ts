@@ -9,10 +9,12 @@ export default defineSitemapEventHandler(async (event) => {
 
     // Main pages
     { loc: '/about', changefreq: 'monthly', priority: 0.9 },
+    { loc: '/how-we-work', changefreq: 'monthly', priority: 0.8 },
     { loc: '/contact', changefreq: 'monthly', priority: 0.8 },
-    { loc: '/process', changefreq: 'monthly', priority: 0.6 },
     { loc: '/portfolio', changefreq: 'monthly', priority: 0.7 },
-    { loc: '/projects', changefreq: 'monthly', priority: 0.7 },
+    { loc: '/designs', changefreq: 'monthly', priority: 0.6 },
+    { loc: '/process', changefreq: 'monthly', priority: 0.5 },
+    { loc: '/projects', changefreq: 'monthly', priority: 0.5 },
 
     // Services
     { loc: '/services', changefreq: 'monthly', priority: 0.9 },
@@ -45,9 +47,6 @@ export default defineSitemapEventHandler(async (event) => {
     // Guides (pillar pages)
     { loc: '/guides/it-staff-augmentation', changefreq: 'monthly', priority: 0.9 },
     { loc: '/guides/mvp-development', changefreq: 'monthly', priority: 0.9 },
-
-    // How We Work
-    { loc: '/how-we-work', changefreq: 'monthly', priority: 0.8 },
 
     // Blog index
     { loc: '/blog', changefreq: 'weekly', priority: 0.7 },
