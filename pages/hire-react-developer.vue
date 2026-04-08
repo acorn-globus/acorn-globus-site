@@ -1,495 +1,325 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+  <div>
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <div class="hero-eyebrow"><span>Hire React Developers</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire React Developers Who Stay</h1>
+          <p class="text-body-lg">You're not hiring a random developer from a pool. You're getting a team member who learns your codebase, joins your standups, and stays for the long run. We're a 20+ person product engineering team. The React developers you meet are the ones who'll build your product. No bench. No rotating contractors. Just engineers who care about your code as much as you do.</p>
+          <div style="margin-top: 32px;">
+            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+          </div>
+        </div>
+        <div class="stats-row" style="margin-top: 56px;">
+          <div class="stat"><span class="stat-value">7+</span><span class="stat-label">Years in Business</span></div>
+          <div class="stat"><span class="stat-value">80%+</span><span class="stat-label">Client Retention</span></div>
+          <div class="stat"><span class="stat-value">20+</span><span class="stat-label">Engineers</span></div>
+          <div class="stat"><span class="stat-value">2-Week</span><span class="stat-label">Embedded Trial</span></div>
+        </div>
       </div>
+    </section>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-              <Code class="h-4 w-4 mr-2" />
-              Hire React Developers
-            </div>
+    <!-- WHY TEAMS CHOOSE US -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Why Teams Choose Us Over Marketplaces</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">Marketplaces give you a resume. We give you a teammate.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <div class="feature-card">
+            <h3>Named Engineers, Not a Rotating Pool</h3>
+            <p>You'll know your React developer by name. They'll know your codebase, your product decisions, and why that component was built the way it was. We don't rotate people off your project when something shinier comes along.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Two-Week Embedded Trial</h3>
+            <p>Before any long-term commitment, your React developer joins your team for two weeks. Same Slack, same Jira, same code reviews. You see how they work before you decide.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Partnerships That Actually Grow</h3>
+            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep — full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
+          </div>
+          <div class="feature-card">
+            <h3>We Built Our Own Product</h3>
+            <p>Formester is our SaaS product — live, with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.</p>
+          </div>
+          <div class="feature-card" style="grid-column: span 2;">
+            <h3>Productive From Week One</h3>
+            <p>Our engineers ramp on your codebase in one to two weeks. We track time-to-first-PR because we know you're hiring for output, not warm bodies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Hire React Developers Who Stay
-            </h1>
+    <!-- WHAT WE BUILD -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">What Our React Developers Build</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">Our React developers don't just know the library — they know the ecosystem that makes production applications work.</p>
+        </div>
+        <div class="build-cards-grid">
+          <div class="build-card">
+            <h3>Single-Page Applications</h3>
+            <p>Fast, fluid interfaces that feel native. Complex state management, client-side routing, and optimistic UI updates — built for real users at scale.</p>
+          </div>
+          <div class="build-card">
+            <h3>Server-Side Rendering (Next.js)</h3>
+            <p>SEO-friendly, fast-loading applications with Next.js. Static generation, incremental regeneration, and API routes — the full production stack.</p>
+          </div>
+          <div class="build-card">
+            <h3>Real-Time Dashboards</h3>
+            <p>Live data visualizations, WebSocket integrations, and interactive charts. The kind of dashboards your users actually want to look at.</p>
+          </div>
+          <div class="build-card">
+            <h3>E-Commerce Frontends</h3>
+            <p>Product catalogs, checkout flows, payment integrations, and inventory management — fast storefronts that convert.</p>
+          </div>
+          <div class="build-card">
+            <h3>Progressive Web Apps</h3>
+            <p>Offline-capable, installable web apps with push notifications and background sync. Native-like experiences without the app store.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p class="text-xl text-gray-600 mb-4 leading-relaxed">
-              You're not hiring a random developer from a pool. You're getting a team member who
-              learns your codebase, joins your standups, and stays for the long run.
-            </p>
-
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're a 20+ person product engineering team. The React developers you meet are the
-              ones who'll build your product. No bench. No rotating contractors. Just engineers
-              who care about your code as much as you do.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Talk to Us
-                <ArrowRight class="h-5 w-5 ml-2" />
-              </NuxtLink>
+    <!-- TECH STACK -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Tech Stack</h2>
+        </div>
+        <div class="tech-stack-grid">
+          <div class="tech-group">
+            <h3>Core</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">React 18+</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Next.js</span>
             </div>
           </div>
-
-          <div class="relative">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Clock class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">6+</div>
-                <p class="text-sm text-gray-600">Years in Business</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <TrendingUp class="h-8 w-8 text-green-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">80%+</div>
-                <p class="text-sm text-gray-600">Client Retention</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Users class="h-8 w-8 text-indigo-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">20+</div>
-                <p class="text-sm text-gray-600">Engineers</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Shield class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">2-Week</div>
-                <p class="text-sm text-gray-600">Embedded Trial</p>
-              </div>
+          <div class="tech-group">
+            <h3>State</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Redux Toolkit</span>
+              <span class="tech-tag">Zustand</span>
+              <span class="tech-tag">React Query</span>
+              <span class="tech-tag">Jotai</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Styling</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">CSS Modules</span>
+              <span class="tech-tag">Styled Components</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Testing</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Jest</span>
+              <span class="tech-tag">React Testing Library</span>
+              <span class="tech-tag">Cypress</span>
+              <span class="tech-tag">Playwright</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Build</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Webpack</span>
+              <span class="tech-tag">Turborepo</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>APIs</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">REST</span>
+              <span class="tech-tag">GraphQL (Apollo, urql)</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why AcornGlobus Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Teams Choose Us Over Marketplaces</h2>
-          <p class="text-lg text-gray-600">Marketplaces give you a resume. We give you a teammate.</p>
+    <!-- PROCESS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">From First Call to First Commit</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(card, idx) in whyCards" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
-              <component :is="card.icon" class="h-6 w-6" />
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Discovery Call</h3>
+              <p>We learn about your product, your team's workflow, and the kind of React developer you need. No generic pitches — just a real conversation about your codebase and goals.</p>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ card.title }}</h3>
-            <p class="text-gray-600">{{ card.description }}</p>
           </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Engineer Matching</h3>
+              <p>Based on your stack, domain, and team culture, we propose specific engineers — not resumes from a database. You interview them directly. No account managers in between.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Two-Week Trial</h3>
+              <p>Your React developer joins your team for a two-week embedded trial. Same tools, same standups, same code reviews. You see real output before any long-term commitment.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Ongoing Partnership</h3>
+              <p>If the trial works, we keep building together. Monthly rolling engagement after the initial commitment. Scale up, scale down, or add complementary skills as your product grows.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pull-quote" style="margin-top: 48px;">
+          <p>You talk to the engineers who will actually build your product. No account managers translating in between.</p>
         </div>
       </div>
     </section>
 
-    <!-- Technology Expertise Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our React Developers Build</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our React developers don't just know the library - they know the ecosystem that makes
-            production applications work.
-          </p>
+    <!-- FLEXIBLE HIRING -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Flexible Hiring, No Lock-In</h2>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          <div v-for="(cap, idx) in capabilities" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="inline-flex items-center justify-center w-10 h-10 bg-blue-100 text-blue-600 rounded-xl mb-4">
-              <component :is="cap.icon" class="h-5 w-5" />
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ cap.title }}</h3>
-            <p class="text-sm text-gray-600">{{ cap.description }}</p>
+        <div class="hiring-grid">
+          <div class="hiring-card">
+            <h3>Dedicated (Full-Time)</h3>
+            <div class="best-for">Best for: Long-term product development</div>
+            <p>A full-time React developer embedded in your team. They attend your standups, use your tools, and work exclusively on your product. The closest thing to an in-house hire without the overhead.</p>
+          </div>
+          <div class="hiring-card">
+            <h3>Part-Time</h3>
+            <div class="best-for">Best for: Ongoing feature work or maintenance</div>
+            <p>A dedicated React developer for 20 hours per week. Ideal when you need consistent, reliable output but don't have a full-time workload. Same engineer, every week.</p>
+          </div>
+          <div class="hiring-card">
+            <h3>Project-Based</h3>
+            <div class="best-for">Best for: Defined scope with clear deliverables</div>
+            <p>A React developer (or small team) for a specific project with fixed milestones. We scope it together, agree on deliverables, and build it. Clear start, clear end, clean handoff.</p>
           </div>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 class="text-xl font-bold text-gray-900 mb-6">Tech Stack</h3>
-            <div class="space-y-3">
-              <div v-for="(item, idx) in techStack" :key="idx" class="flex items-center gap-3">
-                <CheckCircle class="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <div>
-                  <span class="font-semibold text-gray-900">{{ item.category }}:</span>
-                  <span class="text-gray-600 ml-1">{{ item.tools }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 flex flex-col justify-center">
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              Interested in our broader React.js capabilities?
-            </p>
-            <NuxtLink
-              to="/technologies/reactjs"
-              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-            >
-              See our React.js expertise page
-              <ArrowRight class="h-4 w-4 ml-2" />
-            </NuxtLink>
-          </div>
-        </div>
+        <p class="text-body" style="margin-top: 32px; text-align: center; color: var(--text-secondary);">All models start with a two-week trial. Monthly rolling after the initial three-month commitment. No long-term lock-in.</p>
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">From First Call to First Commit</h2>
+    <!-- PROJECTS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">React Projects We've Shipped</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(step, idx) in steps" :key="idx" class="relative">
-            <div v-if="idx < steps.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
-                <component :is="step.icon" class="h-5 w-5" />
-              </div>
-              <div class="text-sm text-blue-600 font-semibold mb-2">Step {{ idx + 1 }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-sm text-gray-600">{{ step.description }}</p>
+        <div class="case-study-card" style="margin-top: 48px;">
+          <h3>PerformLine</h3>
+          <p class="text-body" style="margin-top: 8px;">PerformLine needed React developers who could embed with their existing engineering team and ship production features from week one. We started with a single frontend engineer. Within six months, we'd grown to a cross-functional squad — React, Node.js, DevOps, QA — all working inside PerformLine's workflows, their Git repos, their deployment pipelines. Two years later, we're still building together.</p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <div class="value">1</div>
+              <div class="label">Started</div>
             </div>
-          </div>
-        </div>
-
-        <div class="mt-8 text-center">
-          <p class="text-gray-600 italic">
-            "You talk to the engineers who will actually build your product. No account managers translating in between."
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Engagement Models Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Flexible Hiring, No Lock-In</h2>
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="divide-y divide-gray-100">
-            <div v-for="(model, idx) in engagementModels" :key="idx" class="p-6">
-              <h3 class="text-lg font-bold text-gray-900 mb-1">{{ model.name }}</h3>
-              <p class="text-sm text-blue-600 font-medium mb-2">{{ model.bestFor }}</p>
-              <p class="text-gray-600">{{ model.details }}</p>
+            <div class="project-stat">
+              <div class="value">8+</div>
+              <div class="label">Grew to</div>
             </div>
-          </div>
-        </div>
-        <p class="text-gray-600 mt-6 text-sm">
-          All models start with a two-week trial. Monthly rolling after the initial three-month commitment. No long-term lock-in.
-        </p>
-      </div>
-    </section>
-
-    <!-- Proof Story Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">React Projects We've Shipped</h2>
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">PerformLine</h3>
-          <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
-            <p>
-              PerformLine needed one senior engineer to help with their React frontend. That was
-              two years ago. Today, we're eight engineers deep - full-stack, DevOps, data engineering,
-              and QA - building across their entire product.
-            </p>
-            <p>
-              They didn't grow the team because we asked them to. They grew it because the first
-              engineer earned their trust, and the second one did too, and the pattern held.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">1</div>
-              <p class="text-sm text-gray-600">Started with</p>
+            <div class="project-stat">
+              <div class="value">2+</div>
+              <div class="label">Years</div>
             </div>
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">8+</div>
-              <p class="text-sm text-gray-600">Grew to</p>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">2+</div>
-              <p class="text-sm text-gray-600">Years ongoing</p>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <NuxtLink to="/services/resource-augmentation" class="text-sm text-blue-600 font-medium hover:text-blue-700">
-                Resource Augmentation
-              </NuxtLink>
-            </div>
-          </div>
-
-          <div class="mt-8">
-            <NuxtLink
-              to="/case-studies/performline"
-              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-            >
-              Read the full story
-              <ArrowRight class="h-4 w-4 ml-2" />
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-        </div>
-
-        <div class="space-y-4">
-          <div
-            v-for="(faq, index) in faqs"
-            :key="index"
-            class="border border-gray-200 rounded-xl overflow-hidden"
-          >
-            <button
-              class="w-full text-left px-6 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
-              @click="toggleFaq(index)"
-            >
-              <span class="font-semibold text-gray-900 pr-4">{{ faq.question }}</span>
-              <ChevronDown
-                class="h-5 w-5 text-gray-500 shrink-0 transition-transform duration-200"
-                :class="{ 'rotate-180': openFaqs.includes(index) }"
-              />
-            </button>
-            <div
-              v-show="openFaqs.includes(index)"
-              class="px-6 py-4 text-gray-600 leading-relaxed border-t border-gray-200"
-            >
-              <p>{{ faq.answer }}</p>
+            <div class="project-stat">
+              <div class="value">RA</div>
+              <div class="label">Resource Augmentation</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Meet Your React Team?</h2>
-        <p class="text-xl text-gray-600 mb-4">
-          No pitches. No pressure. Just a conversation about your product and whether our React
-          developers are the right fit.
-        </p>
-        <p class="text-lg text-gray-600 mb-8">
-          Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Book a Call
-            <ArrowRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
-          <a
-            href="mailto:hello@acornglobus.com"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
-          >
-            Or email us at hello@acornglobus.com
-          </a>
+    <!-- FAQ -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
 
-    <ClientOnly>
-      <LeadCaptureSmartCta
-        text="Looking for React developers who feel like your own team? Let's talk."
-        cta-label="Book a 15-minute call"
-        cta-link="/contact"
-        dismiss-key="smart_cta_hire_react"
-      />
-    </ClientOnly>
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Ready to Meet Your React Team?</h2>
+        <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your product and whether our React developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import {
-  ArrowRight, Users, TrendingUp, Clock, Shield, Code,
-  CheckCircle, ChevronDown, Layers, Globe, Zap, Heart, Target, UserCheck
-} from 'lucide-vue-next'
-
 definePageMeta({
   layout: 'default'
 })
 
-const openFaqs = ref([])
-
-const toggleFaq = (index) => {
-  const idx = openFaqs.value.indexOf(index)
-  if (idx > -1) {
-    openFaqs.value.splice(idx, 1)
-  } else {
-    openFaqs.value.push(index)
-  }
-}
-
-const whyCards = [
-  {
-    icon: UserCheck,
-    title: 'Named Engineers, Not a Rotating Pool',
-    description: "You'll know your React developer by name. They'll know your codebase, your product decisions, and why that component was built the way it was. We don't rotate people off your project when something shinier comes along."
-  },
-  {
-    icon: Shield,
-    title: 'Two-Week Embedded Trial',
-    description: 'Before any long-term commitment, your React developer joins your team for two weeks. Same Slack, same Jira, same code reviews. You see how they work before you decide.'
-  },
-  {
-    icon: TrendingUp,
-    title: 'Partnerships That Actually Grow',
-    description: "PerformLine started with one of our engineers. Two years later, we're eight engineers deep - full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building."
-  },
-  {
-    icon: Heart,
-    title: 'We Built Our Own Product',
-    description: 'Formester is our SaaS product - live, with real users and a 4.8-star rating. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.'
-  },
-  {
-    icon: Zap,
-    title: 'Productive From Week One',
-    description: 'Our engineers ramp on your codebase in one to two weeks. We track time-to-first-PR because we know you\'re hiring for output, not warm bodies.'
-  }
-]
-
-const capabilities = [
-  {
-    icon: Layers,
-    title: 'Single-Page Applications',
-    description: 'Complex, interactive UIs with React 18+ and concurrent features.'
-  },
-  {
-    icon: Globe,
-    title: 'Server-Side Rendering',
-    description: 'Next.js applications for performance and SEO.'
-  },
-  {
-    icon: Zap,
-    title: 'Real-Time Dashboards',
-    description: 'Live data visualizations, admin panels, monitoring tools.'
-  },
-  {
-    icon: Code,
-    title: 'E-Commerce Frontends',
-    description: 'Fast, accessible storefronts with dynamic product experiences.'
-  },
-  {
-    icon: Target,
-    title: 'Progressive Web Apps',
-    description: 'Offline-capable, installable web applications.'
-  }
-]
-
-const techStack = [
-  { category: 'Core', tools: 'React 18+, TypeScript, Next.js' },
-  { category: 'State Management', tools: 'Redux Toolkit, Zustand, React Query, Jotai' },
-  { category: 'Styling', tools: 'Tailwind CSS, CSS Modules, Styled Components' },
-  { category: 'Testing', tools: 'Jest, React Testing Library, Cypress, Playwright' },
-  { category: 'Build Tools', tools: 'Vite, Webpack, Turborepo' },
-  { category: 'APIs', tools: 'REST, GraphQL (Apollo, urql)' }
-]
-
-const steps = [
-  {
-    title: 'Discovery Call',
-    description: "We learn about your stack, your team, and what you're building. Not a sales pitch - a conversation about your product.",
-    icon: Target
-  },
-  {
-    title: 'Engineer Matching',
-    description: "We propose specific engineers with relevant experience. You'll see their work and talk to them directly.",
-    icon: Users
-  },
-  {
-    title: 'Two-Week Trial',
-    description: 'Your React developer joins your team. Same tools, same standups, same pull requests. You evaluate the fit with real work.',
-    icon: CheckCircle
-  },
-  {
-    title: 'Ongoing Partnership',
-    description: "Monthly rolling engagement after an initial three-month commitment. Scale up or down with two weeks' notice.",
-    icon: Heart
-  }
-]
-
-const engagementModels = [
-  {
-    name: 'Dedicated (Full-Time)',
-    bestFor: 'Best for: Long-term product development',
-    details: 'Your React developer works exclusively on your project. Full integration with your team.'
-  },
-  {
-    name: 'Part-Time',
-    bestFor: 'Best for: Specific features or sprints',
-    details: '20 hours/week, ideal when you need React expertise but not a full seat.'
-  },
-  {
-    name: 'Project-Based',
-    bestFor: 'Best for: Defined scope with clear deliverables',
-    details: 'Fixed scope, fixed timeline. Good for greenfield React applications or major refactors.'
-  }
-]
-
 const faqs = [
   {
     question: 'How much does it cost to hire a React developer from India?',
-    answer: "Rates depend on seniority and engagement model. Our senior React developers are priced competitively for dedicated, long-term engagements. We'll share specific numbers on a discovery call once we understand your needs - we don't believe in one-size-fits-all pricing."
+    answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
     question: 'How quickly can React developers start on my project?',
-    answer: 'Most engagements start within one to two weeks of the discovery call. We match engineers based on availability and relevant experience, then begin with a two-week embedded trial.'
+    answer: 'Most engagements kick off within one to two weeks of the initial call. We match engineers based on your stack and domain, you interview them directly, and the two-week trial begins. If you have an urgent need, we can sometimes start within a few days.'
   },
   {
     question: "What's the difference between hiring freelance React developers and a dedicated team?",
-    answer: "A freelancer is one person. If they get sick, take another project, or aren't the right fit, you're back to square one. With us, you get a team behind your project - knowledge stays even if an individual moves. Plus, you get engineers who've worked together and can collaborate across frontend, backend, and DevOps."
+    answer: "Freelancers work across multiple clients and projects. Our dedicated developers work exclusively on your product — same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a backend integration, they have senior engineers to consult with. Freelancers are on their own."
   },
   {
     question: 'Do your React developers work in my timezone?',
-    answer: "We guarantee a minimum of four hours of timezone overlap. Many of our engineers work US-shifted hours for US-based clients. We'll match based on your team's working schedule."
+    answer: "We have significant overlap with US, UK, and European timezones. Our developers adjust their schedules to match your team's working hours — typically 4 to 6 hours of direct overlap for real-time collaboration, with async work covering the rest. We've done this for years with clients across multiple timezones."
   },
   {
     question: 'Can I scale the team up or down?',
-    answer: "Yes. After the initial three-month commitment, you can scale with two weeks' notice. PerformLine started with one engineer and scaled to eight over two years. We grow with what you need."
+    answer: "Yes. That's one of the core advantages of working with us. PerformLine started with one engineer and scaled to eight-plus over two years. You can add React developers, backend engineers, QA, or DevOps as your product grows — and scale back when you need to. Monthly rolling engagement after the initial three-month period."
   },
   {
     question: "What happens if a developer isn't a good fit?",
-    answer: "That's what the two-week trial is for. If the fit isn't right during the trial, there's no commitment. After the trial, we offer an engineer replacement guarantee - we want this to work as much as you do."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   },
   {
     question: 'Do you work with Next.js and React Native too?',
-    answer: 'Yes. Our React developers have deep Next.js experience for server-rendered applications. For React Native mobile work, let us know during discovery and we\'ll match engineers with mobile-specific experience.'
+    answer: "Yes. Several of our React developers have deep experience with Next.js — server-side rendering, static generation, API routes, the full stack. For React Native, we have engineers who've shipped cross-platform mobile apps to both app stores. If your project spans web and mobile, we can put together a team that covers both."
   }
 ]
 
-// SEO Meta
 useSeoMeta({
-  title: 'Hire React Developers in India | AcornGlobus',
-  description: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers who join your team, 2-week trial, no bench. Talk to us today.',
-  keywords: 'hire react developers, hire react developers India, react developer India, dedicated react developer, react development team',
-  author: 'AcornGlobus',
-  robots: 'index, follow',
-  ogTitle: 'Hire React Developers in India | AcornGlobus',
-  ogDescription: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers who join your team, 2-week trial, no bench.',
+  title: 'Hire React Developers | Dedicated React Engineers | AcornGlobus',
+  description: 'Hire dedicated React developers who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial, no rotating contractors.',
+  ogTitle: 'Hire React Developers | Dedicated React Engineers | AcornGlobus',
+  ogDescription: 'Hire dedicated React developers who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial, no rotating contractors.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-react-developer',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire React Developers in India | AcornGlobus',
-  twitterDescription: 'Hire senior React developers from a 20+ person team - not a marketplace. Named engineers, 2-week trial.',
+  twitterTitle: 'Hire React Developers | Dedicated React Engineers | AcornGlobus',
+  twitterDescription: 'Hire dedicated React developers who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -499,18 +329,196 @@ useHead({
   ],
 })
 
-// Service schema
 useServiceSchema({
   name: 'Hire React Developers',
   description: 'Hire senior React developers from a 20+ person product engineering team. Named engineers who embed with your team, 2-week trial, no bench, no rotating contractors.',
   url: '/hire-react-developer',
 })
 
-// FAQ schema
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
-// Breadcrumb schema
 useBreadcrumbSchema([
   { name: 'Hire React Developers', path: '/hire-react-developer' },
 ])
 </script>
+
+<style scoped>
+/* ===== WHAT WE BUILD CARDS ===== */
+.build-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.build-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.build-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.build-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 10px;
+}
+.build-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* ===== TECH STACK ===== */
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.tech-group h3 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  margin-bottom: 12px;
+}
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-tag {
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--on-surface);
+}
+
+/* ===== HIRING MODELS ===== */
+.hiring-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.hiring-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.hiring-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.hiring-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 6px;
+}
+.hiring-card .best-for {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin-bottom: 12px;
+}
+.hiring-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 780px;
+  margin-top: 48px;
+}
+.faq-list details {
+  border-bottom: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list details:first-child {
+  border-top: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--on-surface);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-list details[open] summary::after {
+  content: '\2212';
+}
+.faq-list .faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  padding-bottom: 20px;
+}
+
+/* ===== PROJECT STATS ===== */
+.project-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+.project-stat {
+  text-align: center;
+  padding: 16px;
+  background: rgba(0, 88, 189, 0.04);
+  border-radius: 12px;
+}
+.project-stat .value {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+}
+.project-stat .label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .build-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
+  .hiring-grid { grid-template-columns: 1fr; }
+  .project-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .build-cards-grid { grid-template-columns: 1fr; }
+  .tech-stack-grid { grid-template-columns: 1fr; }
+  .project-stats { grid-template-columns: repeat(2, 1fr); }
+}
+</style>

@@ -1,580 +1,391 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+  <div>
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <div class="hero-eyebrow"><span>Hire Rails Developers</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers Who Respect the Framework</h1>
+          <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy — not just its syntax.</p>
+          <div style="margin-top: 32px;">
+            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+          </div>
+        </div>
+        <div class="stats-row" style="margin-top: 56px;">
+          <div class="stat"><span class="stat-value">6+</span><span class="stat-label">Years in Business</span></div>
+          <div class="stat"><span class="stat-value">80%+</span><span class="stat-label">Client Retention</span></div>
+          <div class="stat"><span class="stat-value">20+</span><span class="stat-label">Engineers</span></div>
+          <div class="stat"><span class="stat-value">2-Week</span><span class="stat-label">Risk-Free Trial</span></div>
+        </div>
       </div>
+    </section>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-              <Code class="h-4 w-4 mr-2" />
-              Hire Rails Developers
+    <!-- WHY US -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <span class="label-redesign">Why Us</span>
+          <h2 class="text-display-sm">Rails Developers Who Ship, Not Just Code</h2>
+        </div>
+        <div class="why-cards-grid">
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
+            <h3>Named Engineers</h3>
+            <p>You'll know who's writing your code. No rotating bench, no anonymous offshore team. The Rails engineer you interview is the one who builds your product.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Deep Rails Knowledge</h3>
+            <p>ActiveRecord, ActionCable, Hotwire, Turbo, Stimulus — our developers don't just know these tools exist. They know when to use each one, and when not to.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Legacy Rails Expertise</h3>
+            <p>Still running Rails 5 or 6? We've handled the upgrade path before — incrementally, safely, and without breaking production. We'll get you to Rails 7+ without the drama.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Full-Stack Rails Thinking</h3>
+            <p>Our Rails engineers think beyond the model layer. They understand views, Hotwire interactions, database optimization, background jobs, and deployment — the full picture.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Partnership Model</h3>
+            <p>We don't do drive-by development. Our engineers embed with your team, understand your domain, and stay long enough to see the impact of what they build.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Hire Ruby on Rails Developers Who Respect the Framework
-            </h1>
-
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Rails is about convention, speed, and getting things done. So are we. Whether you're
-              building something new or maintaining a codebase that's been running for years, our
-              Rails developers understand the framework's philosophy - not just its syntax.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Talk to Us
-                <ArrowRight class="h-5 w-5 ml-2" />
-              </NuxtLink>
+    <!-- WHAT WE BUILD -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">What We Build</span>
+          <h2 class="text-display-sm">Ruby on Rails Capabilities</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-group">
+            <h3>Web Applications</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Rails 7+</span>
+              <span class="tech-tag">Hotwire</span>
+              <span class="tech-tag">Turbo</span>
+              <span class="tech-tag">Stimulus</span>
             </div>
           </div>
-
-          <div class="relative">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Clock class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">6+</div>
-                <p class="text-sm text-gray-600">Years in Business</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <TrendingUp class="h-8 w-8 text-green-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">80%+</div>
-                <p class="text-sm text-gray-600">Client Retention</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Users class="h-8 w-8 text-indigo-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">20+</div>
-                <p class="text-sm text-gray-600">Engineers</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Shield class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">2-Week</div>
-                <p class="text-sm text-gray-600">Embedded Trial</p>
-              </div>
+          <div class="tech-group">
+            <h3>APIs</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">REST</span>
+              <span class="tech-tag">GraphQL</span>
+              <span class="tech-tag">Versioning</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Background Processing</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Sidekiq</span>
+              <span class="tech-tag">ActiveJob</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Databases</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Migrations</span>
+              <span class="tech-tag">N+1 Prevention</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Authentication &amp; Authorization</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Devise</span>
+              <span class="tech-tag">OmniAuth</span>
+              <span class="tech-tag">Pundit</span>
+              <span class="tech-tag">CanCanCan</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Testing</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">RSpec</span>
+              <span class="tech-tag">Minitest</span>
+              <span class="tech-tag">Capybara</span>
+              <span class="tech-tag">FactoryBot</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Deployment</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Heroku</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kamal</span>
+              <span class="tech-tag">Capistrano</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Legacy Modernization</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Rails 5 to 7+</span>
+              <span class="tech-tag">Rails 6 to 7+</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why AcornGlobus Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Rails Developers Who Ship, Not Just Code</h2>
-          <p class="text-lg text-gray-600">
-            The Rails community values craftsmanship, convention, and shipping products that work. We share those values.
-          </p>
+    <!-- RAILS IN 2026 -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Guidance</span>
+          <h2 class="text-display-sm">Is Ruby on Rails Still Worth It in 2026?</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(card, idx) in whyCards" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
-              <component :is="card.icon" class="h-6 w-6" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ card.title }}</h3>
-            <p class="text-gray-600">{{ card.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technology Expertise Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Rails Developers Build</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div v-for="(group, idx) in expertiseGroups" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg">
-            <h3 class="text-lg font-bold text-gray-900 mb-4">{{ group.title }}</h3>
-            <ul class="space-y-2">
-              <li v-for="(item, i) in group.items" :key="i" class="flex items-center gap-3">
-                <CheckCircle class="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span class="text-gray-600 text-sm">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="text-center mt-8">
-          <NuxtLink
-            to="/technologies/ruby-on-rails"
-            class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-          >
-            See our full Ruby on Rails capabilities
-            <ArrowRight class="h-4 w-4 ml-2" />
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- Is Rails Still Worth It Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Is Ruby on Rails Still Worth It in 2026?</h2>
-        <p class="text-lg text-gray-600 mb-8">
-          We get asked this a lot. Here's our honest take.
-        </p>
-
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 mb-8">
-          <p class="text-lg text-gray-800 font-medium mb-4">
-            Yes, Rails is alive and well.
-          </p>
-          <p class="text-gray-700 leading-relaxed">
-            Rails 7+ with Hotwire has answered the "modern frontend" question. The framework is
-            actively maintained, the community is engaged, and Rails continues to be one of the
-            most productive frameworks for building web applications.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
-              <CheckCircle class="h-6 w-6 text-green-600 mr-3" />
+        <p class="when-intro">We get asked this a lot. The honest answer: Rails is more focused and capable than it's ever been. Hotwire changed the game for building interactive applications without JavaScript complexity. But it's not the right choice for everything — and we'll tell you that upfront.</p>
+        <div class="when-grid">
+          <div class="when-col strong">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
               Rails shines when
             </h3>
-            <ul class="space-y-4">
-              <li v-for="(item, idx) in railsGoodFit" :key="idx">
-                <p class="font-semibold text-gray-900 text-sm">{{ item.title }}</p>
-                <p class="text-gray-600 text-sm">{{ item.description }}</p>
-              </li>
+            <ul>
+              <li>You need to move fast — Rails convention-over-configuration means less decision fatigue and more shipping. Ideal for MVPs, startups, and products finding their market.</li>
+              <li>You're building a content-heavy or CRUD-heavy application — admin panels, marketplaces, SaaS platforms, internal tools. This is where Rails has always been strongest.</li>
+              <li>You want a full-stack framework — with Hotwire, Turbo, and Stimulus, you can build rich interactive experiences without maintaining a separate frontend application.</li>
+              <li>You have an existing Rails codebase — modernizing a running Rails app is almost always better than rewriting it. Rails upgrades are well-documented and incremental.</li>
             </ul>
           </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
-              <AlertCircle class="h-6 w-6 text-amber-500 mr-3" />
+          <div class="when-col consider">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               Consider alternatives when
             </h3>
-            <ul class="space-y-4">
-              <li v-for="(item, idx) in railsAlternatives" :key="idx">
-                <p class="font-semibold text-gray-900 text-sm">{{ item.title }}</p>
-                <p class="text-gray-600 text-sm">{{ item.description }}</p>
-              </li>
+            <ul>
+              <li>You're building a heavily interactive SPA — if your frontend needs complex client-side state management and real-time reactivity beyond what Hotwire provides, React or Vue may be a better fit.</li>
+              <li>You need extreme concurrency or low-latency — Go, Rust, or Elixir can outperform Ruby in high-throughput, CPU-bound scenarios.</li>
+              <li>Your team is entirely JavaScript/TypeScript — if everyone already thinks in TypeScript, Node.js or Next.js might reduce context switching.</li>
             </ul>
           </div>
         </div>
-
-        <p class="text-gray-600 mt-8 italic">
-          We'll recommend Rails when it's the right tool. And if your project genuinely needs
-          something else, we'll tell you that too.
-        </p>
+        <p class="when-closing">Rails isn't going anywhere — Shopify, GitHub, Basecamp, and thousands of production applications prove that daily. We'll help you decide honestly whether Rails is the right fit for your project, and if it is, we'll build it the Rails way.</p>
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">From First Call to First Commit</h2>
+    <!-- PROCESS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <span class="label-redesign">How It Works</span>
+          <h2 class="text-display-sm">From First Call to First Commit</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(step, idx) in steps" :key="idx" class="relative">
-            <div v-if="idx < steps.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
-                <component :is="step.icon" class="h-5 w-5" />
-              </div>
-              <div class="text-sm text-blue-600 font-semibold mb-2">Step {{ idx + 1 }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-sm text-gray-600">{{ step.description }}</p>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Discovery Call</h3>
+              <p>We learn about your product, your Rails version, your team, and what you're trying to accomplish. No sales pitch — just a conversation about what you need and whether we're a good fit.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Engineer Matching</h3>
+              <p>We match you with a Rails developer based on your codebase, domain, and working style. You interview them directly — same person who'll be writing your code.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>2-Week Trial</h3>
+              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving — all before any long-term commitment.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Ongoing Partnership</h3>
+              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus — we adapt as your product evolves.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Engagement Models Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Flexible Hiring, No Lock-In</h2>
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-          <div class="divide-y divide-gray-100">
-            <div v-for="(model, idx) in engagementModels" :key="idx" class="p-6">
-              <h3 class="text-lg font-bold text-gray-900 mb-1">{{ model.name }}</h3>
-              <p class="text-sm text-blue-600 font-medium mb-2">{{ model.bestFor }}</p>
-              <p class="text-gray-600">{{ model.details }}</p>
-            </div>
-          </div>
+    <!-- FLEXIBLE HIRING MODELS -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Engagement Models</span>
+          <h2 class="text-display-sm">Flexible Hiring Models</h2>
         </div>
-        <p class="text-gray-600 mt-6 text-sm">All models start with a two-week trial. No long-term lock-in.</p>
-      </div>
-    </section>
-
-    <!-- Proof Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Rails Projects We've Delivered</h2>
-
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Partnership Track Record</h3>
-          <div class="text-lg text-gray-700 space-y-4 leading-relaxed">
-            <p>
-              We've built long-term engineering partnerships across multiple technology stacks.
-              PerformLine started with one engineer and grew to eight over two years - full-stack,
-              DevOps, data engineering, and QA. Eitoss started as an MVP we shipped in three months;
-              they raised funding, and we're still building together.
-            </p>
-            <p>
-              These stories demonstrate something more important: we stay. We grow with your product.
-              Whether the stack is Rails, React, or Node.js, the partnership model is the same.
-            </p>
+        <div class="models-grid">
+          <div class="model-card">
+            <h3>Dedicated Developer</h3>
+            <p class="model-desc">A full-time Rails engineer embedded in your team. Same hours, same tools, same standups. They become part of your team — you'll forget they're external.</p>
+            <ul>
+              <li>Full-time (40 hrs/week)</li>
+              <li>Works in your tools and workflows</li>
+              <li>Joins your standups and retrospectives</li>
+              <li>Monthly billing, cancel anytime</li>
+            </ul>
           </div>
-
-          <div class="grid grid-cols-3 gap-4 mt-8">
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">1 to 8+</div>
-              <p class="text-sm text-gray-600">PerformLine (2 years)</p>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">3 months</div>
-              <p class="text-sm text-gray-600">Eitoss MVP to funding</p>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 text-center">
-              <div class="text-lg font-bold text-gray-900">80%+</div>
-              <p class="text-sm text-gray-600">Client retention</p>
-            </div>
+          <div class="model-card">
+            <h3>Part-Time Developer</h3>
+            <p class="model-desc">Need Rails expertise but not a full-time commitment? Our engineers can work part-time on your project while you scale at your own pace.</p>
+            <ul>
+              <li>20 hours/week minimum</li>
+              <li>Predictable weekly schedule</li>
+              <li>Scale up to full-time when ready</li>
+              <li>Great for early-stage products</li>
+            </ul>
+          </div>
+          <div class="model-card">
+            <h3>Project-Based</h3>
+            <p class="model-desc">Have a defined scope? We'll scope it, price it, and deliver it. Fixed milestones, predictable budget, clear deliverables.</p>
+            <ul>
+              <li>Fixed scope and price</li>
+              <li>Milestone-based delivery</li>
+              <li>Full documentation and handoff</li>
+              <li>Post-delivery support available</li>
+            </ul>
+          </div>
+          <div class="model-card">
+            <h3>Legacy Modernization</h3>
+            <p class="model-desc">Running an older Rails version? We'll upgrade your application incrementally — Rails 5 or 6 to 7+, Ruby version bumps, gem updates — without breaking what works.</p>
+            <ul>
+              <li>Incremental, safe upgrades</li>
+              <li>Comprehensive test coverage first</li>
+              <li>Zero-downtime migration strategy</li>
+              <li>Dependency audit and cleanup</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+    <!-- PROJECTS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Partnerships</span>
+          <h2 class="text-display-sm">Teams We've Built With</h2>
         </div>
-
-        <div class="space-y-4">
-          <div
-            v-for="(faq, index) in faqs"
-            :key="index"
-            class="border border-gray-200 rounded-xl overflow-hidden"
-          >
-            <button
-              class="w-full text-left px-6 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
-              @click="toggleFaq(index)"
-            >
-              <span class="font-semibold text-gray-900 pr-4">{{ faq.question }}</span>
-              <ChevronDown
-                class="h-5 w-5 text-gray-500 shrink-0 transition-transform duration-200"
-                :class="{ 'rotate-180': openFaqs.includes(index) }"
-              />
-            </button>
-            <div
-              v-show="openFaqs.includes(index)"
-              class="px-6 py-4 text-gray-600 leading-relaxed border-t border-gray-200"
-            >
-              <p>{{ faq.answer }}</p>
+        <p class="projects-intro">We don't have a portfolio of logos. We have a track record of partnerships — teams that started small, grew together, and kept working with us because the relationship works.</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>PerformLine</h3>
+            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many — the partnership just kept proving its value, sprint after sprint.</p>
+            <div class="project-meta-tags">
+              <span class="project-meta-tag">1 to 8+ Engineers</span>
+              <span class="project-meta-tag">2+ Years</span>
+              <span class="project-meta-tag">Resource Augmentation</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Eitoss</h3>
+            <p>We shipped their MVP in 3 months. They raised funding. We're still building together over 2 years later. What started as a sprint to launch became a long-term partnership that's still growing.</p>
+            <div class="project-meta-tags">
+              <span class="project-meta-tag">MVP in 3 Months</span>
+              <span class="project-meta-tag">Raised Funding</span>
+              <span class="project-meta-tag">2+ Years Ongoing</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Build With Rails?</h2>
-        <p class="text-xl text-gray-600 mb-4">
-          Whether you're starting a new Rails project or modernizing a codebase that's been
-          running for years, we'd like to hear about it.
-        </p>
-        <p class="text-lg text-gray-600 mb-8">
-          Start with a conversation. If we're the right fit, your Rails developer begins with a two-week trial.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Book a Call
-            <ArrowRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
-          <a
-            href="mailto:hello@acornglobus.com"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
-          >
-            Or email us at hello@acornglobus.com
-          </a>
+    <!-- FAQ -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="label-redesign">FAQ</span>
+          <h2 class="text-headline">Common Questions About Hiring Rails Developers</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index" class="faq-item" :open="index === 0">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
 
-    <ClientOnly>
-      <LeadCaptureSmartCta
-        text="Building with Rails? We'd like to hear about your project."
-        cta-label="Book a 15-minute call"
-        cta-link="/contact"
-        dismiss-key="smart_cta_hire_rails"
-      />
-    </ClientOnly>
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Ready to Build With Rails?</h2>
+        <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <NuxtLink to="/contact" class="btn btn-primary">Book a Call</NuxtLink>
+        </div>
+        <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import {
-  ArrowRight, Users, TrendingUp, Clock, Shield, Code, Heart,
-  CheckCircle, ChevronDown, Layers, Zap, Target, UserCheck,
-  AlertCircle, Wrench
-} from 'lucide-vue-next'
-
 definePageMeta({
   layout: 'default'
 })
 
-const openFaqs = ref([])
-
-const toggleFaq = (index) => {
-  const idx = openFaqs.value.indexOf(index)
-  if (idx > -1) {
-    openFaqs.value.splice(idx, 1)
-  } else {
-    openFaqs.value.push(index)
-  }
-}
-
-const whyCards = [
-  {
-    icon: UserCheck,
-    title: 'Named Engineers, Not Rotating Contractors',
-    description: "You'll know your Rails developer by name. They'll learn your domain, your conventions, and your codebase's history. When someone understands why a migration was structured a certain way, they make better decisions about the next one."
-  },
-  {
-    icon: Code,
-    title: 'Deep Rails Knowledge',
-    description: "ActiveRecord patterns, ActionCable for real-time features, Hotwire and Turbo for modern frontends, Stimulus for JavaScript sprinkles. Our Rails developers know the framework's opinions and work with them, not against them."
-  },
-  {
-    icon: Wrench,
-    title: 'Legacy Rails Expertise',
-    description: "Running a Rails 5 or 6 application that needs upgrading? We've handled Rails upgrade paths - navigating deprecations, updating gems, and modernizing codebases without breaking what works."
-  },
-  {
-    icon: Layers,
-    title: 'Full-Stack Rails Thinking',
-    description: "Our developers understand the \"Rails way\" - models, views, controllers, background jobs, mailers, tests. Not just backend API work, but the full-stack productivity that makes Rails powerful."
-  },
-  {
-    icon: Heart,
-    title: 'Partnership Model',
-    description: "PerformLine started with one of our engineers and grew to eight over two years. We don't disappear after delivery. We stay and grow with your product."
-  }
-]
-
-const expertiseGroups = [
-  {
-    title: 'Web Applications',
-    items: [
-      'Rails 7+ with Hotwire, Turbo, and Stimulus',
-      'Full-stack Rails with server-rendered views',
-      'Admin panels and internal tools'
-    ]
-  },
-  {
-    title: 'APIs',
-    items: [
-      'REST APIs with Rails API mode',
-      'GraphQL APIs with graphql-ruby',
-      'API versioning and documentation'
-    ]
-  },
-  {
-    title: 'Background Processing',
-    items: [
-      'Sidekiq and ActiveJob',
-      'Scheduled tasks and cron workflows',
-      'Queue management and monitoring'
-    ]
-  },
-  {
-    title: 'Databases',
-    items: [
-      'PostgreSQL with ActiveRecord',
-      'Complex migrations and schema design',
-      'Query optimization and N+1 detection'
-    ]
-  },
-  {
-    title: 'Auth and Authorization',
-    items: [
-      'Devise, OmniAuth',
-      'Pundit and CanCanCan',
-      'Multi-tenancy patterns'
-    ]
-  },
-  {
-    title: 'Testing',
-    items: [
-      'RSpec and Minitest',
-      'Capybara for integration tests',
-      'FactoryBot for test data'
-    ]
-  },
-  {
-    title: 'Deployment',
-    items: [
-      'Heroku, AWS, Docker',
-      'Kamal for container deployments',
-      'Capistrano for traditional deploys'
-    ]
-  },
-  {
-    title: 'Legacy Modernization',
-    items: [
-      'Rails 5/6 to Rails 7+ upgrade paths',
-      'Gem updates and dependency management',
-      'Performance profiling and optimization'
-    ]
-  }
-]
-
-const railsGoodFit = [
-  {
-    title: "You're building a CRUD-heavy web application.",
-    description: "Admin panels, content management, e-commerce backends, SaaS platforms. Rails' conventions make these fast to build and easy to maintain."
-  },
-  {
-    title: 'Rapid development matters.',
-    description: "Rails' \"convention over configuration\" philosophy means less time on boilerplate and more time on product features."
-  },
-  {
-    title: 'You value developer happiness.',
-    description: 'The Rails community cares about developer experience. Readable code, sensible defaults, and a framework that gets out of your way.'
-  },
-  {
-    title: 'You have a legacy Rails codebase.',
-    description: 'If your product runs on Rails, investing in Rails expertise is almost always the right move. Migration to another framework is rarely worth the cost and risk.'
-  }
-]
-
-const railsAlternatives = [
-  {
-    title: 'Real-time is the core feature.',
-    description: 'Heavy WebSocket workloads at scale may suit Node.js or Elixir better, though ActionCable handles many real-time use cases well.'
-  },
-  {
-    title: 'You need ML/data processing backends.',
-    description: "Python's ecosystem for machine learning is unmatched."
-  },
-  {
-    title: 'Extreme concurrency.',
-    description: 'Go or Rust may be better fits for systems handling millions of concurrent connections.'
-  }
-]
-
-const steps = [
-  {
-    title: 'Discovery Call',
-    description: "We learn about your Rails project - new build, legacy modernization, or additional capacity.",
-    icon: Target
-  },
-  {
-    title: 'Engineer Matching',
-    description: "We propose Rails developers with relevant experience. Upgrading from Rails 5? You'll meet someone who's done it.",
-    icon: Users
-  },
-  {
-    title: 'Two-Week Trial',
-    description: 'Your developer joins your team. Same tools, same standups, same pull requests. Real work on your codebase.',
-    icon: CheckCircle
-  },
-  {
-    title: 'Ongoing Partnership',
-    description: "Monthly rolling after an initial three-month commitment. Scale up or down with two weeks' notice.",
-    icon: Heart
-  }
-]
-
-const engagementModels = [
-  {
-    name: 'Dedicated (Full-Time)',
-    bestFor: 'Best for: Ongoing Rails product development',
-    details: 'Full integration with your team. Your Rails developer works exclusively on your project.'
-  },
-  {
-    name: 'Part-Time',
-    bestFor: 'Best for: Maintenance, bug fixes, specific features',
-    details: '20 hours/week. Good for teams that need steady Rails capacity without a full seat.'
-  },
-  {
-    name: 'Project-Based',
-    bestFor: 'Best for: Rails upgrades, new builds, defined scope',
-    details: 'Fixed scope and timeline. Ideal for legacy modernization or greenfield Rails applications.'
-  },
-  {
-    name: 'Legacy Modernization',
-    bestFor: 'Best for: Rails 5/6 to 7+ upgrades',
-    details: 'Dedicated engagement focused on upgrading your Rails application safely.'
-  }
-]
-
 const faqs = [
   {
-    question: 'How much does it cost to hire a Ruby on Rails developer in India?',
-    answer: "Rates depend on seniority and engagement type. Senior Rails developers are priced competitively for dedicated engagements. We'll share specifics on a discovery call."
+    question: 'How much does it cost to hire a Ruby on Rails developer?',
+    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
   },
   {
-    question: 'Is Ruby on Rails still a good choice for new projects in 2026?',
-    answer: "For many use cases, yes. Rails 7+ with Hotwire is a mature, productive framework. It's especially strong for CRUD-heavy web applications, admin tools, and SaaS platforms. We'll give you an honest recommendation based on your specific project."
+    question: 'Is Ruby on Rails still a good choice in 2026?',
+    answer: "Yes — for the right projects. Rails powers Shopify, GitHub, Basecamp, and thousands of production applications. With Hotwire and Turbo, Rails has become even more capable for building interactive web applications without the complexity of a separate JavaScript framework. It's mature, stable, well-documented, and has a strong community. We'll tell you honestly if it's the right fit for your specific project."
   },
   {
-    question: 'Can your Rails developers upgrade legacy Rails 5/6 applications?',
-    answer: 'Yes. We have experience navigating Rails upgrade paths - handling deprecations, updating dependencies, and testing thoroughly at each step. Legacy modernization is one of our engagement types.'
+    question: 'Can you upgrade our legacy Rails application?',
+    answer: "Absolutely. We've handled Rails 5 and 6 upgrades to Rails 7+ before. The key is doing it incrementally — adding test coverage first, then upgrading Ruby, then Rails, then individual gems. We won't push for a rewrite when a careful upgrade will get you there safely. We also audit your dependency tree for abandoned or vulnerable gems."
   },
   {
-    question: 'Do your developers work with Hotwire, Turbo, and Stimulus?',
-    answer: 'Yes. Hotwire and Turbo are part of modern Rails development, and our developers use them for building reactive interfaces without heavy JavaScript frameworks.'
+    question: 'Do your developers work with Hotwire and Turbo?',
+    answer: "Yes. Hotwire, Turbo Frames, Turbo Streams, and Stimulus are core parts of modern Rails development. Our engineers understand when to use Turbo for real-time updates versus when a full-page reload is actually simpler and better. We follow the Rails way — using Hotwire where it genuinely improves the user experience, not just because it's new."
   },
   {
-    question: 'How quickly can Rails developers start?',
-    answer: 'Most engagements start within one to two weeks. We match based on availability and relevant Rails experience.'
+    question: 'How quickly can a Rails developer start?',
+    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. For legacy codebases, we factor in onboarding time — understanding your app's domain and architecture before making changes."
   },
   {
-    question: 'Do your Rails developers also handle frontend work?',
-    answer: 'Our Rails developers are comfortable with full-stack Rails - views, Hotwire, Stimulus, and CSS. For dedicated frontend work with React or Vue, we can also match you with frontend-specific engineers.'
+    question: 'Can your Rails developers handle frontend work too?',
+    answer: "Rails developers are inherently full-stack — views, partials, Stimulus controllers, and Turbo interactions are part of the framework. For projects that also need React or Vue on the frontend, we have dedicated frontend engineers who can work alongside your Rails developer. We'll help you decide what makes sense for your architecture."
   },
   {
-    question: 'Ruby on Rails vs Node.js - which should I choose?',
-    answer: 'Different tools for different jobs. Rails excels at rapid development, convention-driven applications, and full-stack web apps. Node.js is stronger for real-time features and JavaScript-stack consistency. We work with both and can advise honestly.'
+    question: 'Should I use Rails or Node.js for my project?',
+    answer: "It depends on what you're building and who's building it. Rails excels at convention-driven web applications, CRUD-heavy products, and rapid prototyping. Node.js is stronger for real-time systems, microservices, and JavaScript-heavy stacks. If your team already knows Ruby or you need to move fast with a proven full-stack framework, Rails is hard to beat. We work with both and have no incentive to push one over the other."
   },
   {
     question: 'Can you help migrate from Rails to another framework?',
-    answer: "We can, but we'll always ask \"should you?\" first. Migration is expensive and risky. Often, upgrading your existing Rails application is faster, cheaper, and less disruptive. We'll walk through the trade-offs with you before recommending anything."
+    answer: "We can, but we'd want to have an honest conversation first about whether migration is actually the right move. Often, modernizing your existing Rails app — upgrading to Rails 7+, adopting Hotwire, improving test coverage — delivers better ROI than a full rewrite. If migration truly makes sense for your business, we'll plan it carefully with a strangler fig approach rather than a risky big-bang rewrite."
   }
 ]
 
-// SEO Meta
 useSeoMeta({
-  title: 'Hire Ruby on Rails Developers India | AcornGlobus',
-  description: 'Hire senior Ruby on Rails developers who respect the framework. Legacy modernization, new builds, API development. 20+ person team, 2-week trial. Talk to us.',
-  keywords: 'hire ruby on rails developers, hire rails developers India, ruby on rails developer India, rails development team, ruby developer India',
-  author: 'AcornGlobus',
-  robots: 'index, follow',
-  ogTitle: 'Hire Ruby on Rails Developers India | AcornGlobus',
-  ogDescription: 'Hire senior Ruby on Rails developers who respect the framework. Legacy modernization, new builds, API development.',
+  title: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
+  description: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
+  ogTitle: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
+  ogDescription: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-rails-developer',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Ruby on Rails Developers India | AcornGlobus',
-  twitterDescription: 'Hire senior Ruby on Rails developers who respect the framework.',
+  twitterTitle: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
+  twitterDescription: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -586,13 +397,381 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Ruby on Rails Developers',
-  description: 'Hire senior Ruby on Rails developers who respect the framework. Legacy modernization, new builds, API development. 20+ person team, 2-week embedded trial.',
+  description: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
   url: '/hire-rails-developer',
 })
 
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Rails Developers', path: '/hire-rails-developer' },
+  { name: 'Hire Ruby on Rails Developers', path: '/hire-rails-developer' },
 ])
 </script>
+
+<style scoped>
+/* ===== HERO BODY ===== */
+.hero-body {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+}
+
+/* ===== LABEL ===== */
+.label-redesign {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* ===== WHY US CARDS ===== */
+.why-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.why-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.why-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.why-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-fixed-dim);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.why-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.why-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* ===== TECH GROUPS ===== */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.tech-group {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.tech-group:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.tech-group h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 12px;
+}
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-tag {
+  background: var(--surface-container);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+}
+
+/* ===== WHEN RAILS ===== */
+.when-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+.when-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+.when-col h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.when-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+.when-col ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  padding-left: 28px;
+  position: relative;
+}
+.when-col.strong li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: rgba(52, 168, 83, 0.12);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2334A853' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.when-col.consider li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: rgba(251, 188, 5, 0.12);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23FBBC05' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Ccircle cx='12' cy='17' r='1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.when-closing {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  margin-top: 32px;
+  max-width: 680px;
+}
+
+/* ===== HIRING MODELS ===== */
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.model-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  border-top: 3px solid var(--primary-fixed-dim);
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.model-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.model-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.model-card .model-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
+}
+.model-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+.model-card ul li {
+  font-size: 14px;
+  color: var(--on-surface-variant);
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+.model-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--primary-fixed-dim);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 24 24' fill='none' stroke='%230058bd' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.projects-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.project-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.project-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.project-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
+}
+.project-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project-meta-tag {
+  background: var(--primary-fixed-dim);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 800px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-item {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 24px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--on-surface);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background var(--duration-fast) var(--ease-premium);
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23424753' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+.faq-item summary:hover {
+  background: var(--surface-container-low);
+}
+.faq-item .faq-answer {
+  padding: 0 28px 24px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* ===== SECTION HEADER CENTERED ===== */
+.section-header.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ===== CTA ALT ===== */
+.cta-alt {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 20px;
+}
+
+/* ===== HEADLINE ===== */
+.text-headline {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .why-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .models-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .why-cards-grid { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: 1fr; }
+  .when-grid { grid-template-columns: 1fr; gap: 32px; }
+  .models-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+</style>

@@ -1,184 +1,109 @@
 <template>
-  <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Content Section -->
-          <div class="order-2 lg:order-1">
-            <div class="mb-6">
-              <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-                Product Engineering Team
-              </span>
-              <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                We build it
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-                  like it's ours.
-                </span>
-              </h1>
-              <p class="text-xl text-gray-600 mb-8">
-                We're a product engineering team that built our own SaaS (Formester) - and we bring that same ownership to every product we touch. Not a vendor. Not a body shop. A team that cares about your outcome as much as you do.
-              </p>
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container-redesign">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span>Product Engineering Team</span>
             </div>
-
-            <!-- Stats Row -->
-            <div class="grid grid-cols-4 gap-6 mb-8">
-              <div class="text-center lg:text-left">
-                <div class="text-3xl font-bold text-gray-900">20+</div>
-                <div class="text-sm text-gray-600">Engineers</div>
+            <h1 class="text-display-lg">We build it like<br>it's ours.</h1>
+            <p class="hero-body">We're a product engineering team that built our own SaaS (Formester) -- and we bring that same ownership to every product we touch. A team that cares about your outcome as much as you do.</p>
+            <div class="hero-stats">
+              <div>
+                <div class="hero-stat-value">20+</div>
+                <div class="hero-stat-label">Engineers</div>
               </div>
-              <div class="text-center lg:text-left">
-                <div class="text-3xl font-bold text-gray-900">25+</div>
-                <div class="text-sm text-gray-600">Products Shipped</div>
+              <div>
+                <div class="hero-stat-value">25+</div>
+                <div class="hero-stat-label">Products Shipped</div>
               </div>
-              <div class="text-center lg:text-left">
-                <div class="text-3xl font-bold text-gray-900">80%+</div>
-                <div class="text-sm text-gray-600">Client Retention</div>
+              <div>
+                <div class="hero-stat-value">80%+</div>
+                <div class="hero-stat-label">Client Retention</div>
               </div>
-              <div class="text-center lg:text-left">
-                <div class="text-3xl font-bold text-gray-900">7+</div>
-                <div class="text-sm text-gray-600">Years Building Together</div>
+              <div>
+                <div class="hero-stat-value">7+</div>
+                <div class="hero-stat-label">Years Building Together</div>
               </div>
             </div>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
-              >
-                Let's talk about your product
-                <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </NuxtLink>
-              <NuxtLink
-                to="/portfolio"
-                class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
-              >
-                <Sparkles class="mr-2 h-5 w-5" />
-                See our work
-              </NuxtLink>
+            <div class="hero-ctas">
+              <NuxtLink to="/contact" class="btn btn-primary">Let's talk about your product</NuxtLink>
+              <NuxtLink to="/portfolio" class="btn btn-secondary">See our work</NuxtLink>
             </div>
           </div>
-
-          <!-- Image Section -->
-          <div class="order-1 lg:order-2 relative">
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div class="relative h-[400px] lg:h-[600px]">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
-                  alt="AcornGlobus team collaborating on product engineering"
-                  class="w-full h-full object-cover"
-                >
-                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
-              </div>
-
-              <!-- Overlay Info Cards -->
-              <div class="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-4">
-                <div class="bg-white/90 backdrop-blur-md rounded-lg p-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-blue-100 rounded-lg">
-                      <Rocket class="h-5 w-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-gray-900">Our Own SaaS</div>
-                      <div class="text-xs text-gray-600">Formester</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-white/90 backdrop-blur-md rounded-lg p-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="p-2 bg-green-100 rounded-lg">
-                      <Heart class="h-5 w-5 text-green-600" />
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-gray-900">80%+ Retention</div>
-                      <div class="text-xs text-gray-600">Clients stay</div>
-                    </div>
-                  </div>
-                </div>
+          <div class="hero-illustration">
+            <img src="/images/hero.png" alt="AcornGlobus team collaborating on product engineering" class="hero-img">
+            <div class="floating-badge badge-formester">
+              <div class="badge-dot" style="background: var(--success);"></div>
+              <div>
+                <div class="badge-text">Our Own SaaS</div>
+                <div class="badge-sub">Formester</div>
               </div>
             </div>
-
-            <!-- Decorative Elements -->
-            <div class="absolute -z-10 -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full opacity-20 blur-2xl"></div>
-            <div class="absolute -z-10 -bottom-4 -left-4 w-72 h-72 bg-indigo-100 rounded-full opacity-20 blur-2xl"></div>
+            <div class="floating-badge badge-retention">
+              <div class="badge-dot" style="background: var(--brand-blue);"></div>
+              <div>
+                <div class="badge-text">80%+ Retention</div>
+                <div class="badge-sub">Clients stay</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Client Logos -->
-    <ClientLogos />
-
-    <!-- Formester Proof Section -->
-    <section class="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            Built from experience
-          </span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            We built our own SaaS. We build yours the same way.
-          </h2>
+    <!-- ===== LOGO BAR ===== -->
+    <div class="logo-bar">
+      <div class="container-redesign">
+        <div class="logo-bar-label">Trusted by teams building real products</div>
+        <div class="logo-bar-grid">
+          <span class="logo-bar-item">PerformLine</span>
+          <span class="logo-bar-item">Mayple</span>
+          <span class="logo-bar-item">Viewber</span>
+          <span class="logo-bar-item">Eitoss</span>
+          <span class="logo-bar-item">Rumie</span>
+          <span class="logo-bar-item">Qualfon</span>
+          <span class="logo-bar-item">Formester</span>
         </div>
+      </div>
+    </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="order-2 lg:order-1">
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-              Formester is our AI-powered form builder - live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night.
-            </p>
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-              We bring that same care to your product. Not because a contract says to. Because that's how we're wired.
-            </p>
-
-            <div class="flex items-center space-x-8 mb-8">
-              <div>
-                <div class="text-3xl font-bold text-blue-600">1,000+</div>
-                <div class="text-sm text-gray-600">Active Users</div>
+    <!-- ===== FORMESTER ===== -->
+    <section class="formester section-redesign">
+      <div class="container-redesign">
+        <div class="formester-inner">
+          <div>
+            <span class="text-label">Built from experience</span>
+            <h2 class="text-display-sm" style="margin-top: 16px;">We built our own SaaS. We build yours the same way.</h2>
+            <p class="text-body-lg" style="margin-top: 20px;">Formester is our AI-powered form builder — live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night. We bring that same care to your product. Not because a contract says to. Because that's how we're wired.</p>
+            <div class="formester-stats">
+              <div class="formester-stat">
+                <div class="formester-stat-value">1,000+</div>
+                <div class="formester-stat-label">Active Users</div>
               </div>
-              <div>
-                <div class="text-3xl font-bold text-blue-600">50K+</div>
-                <div class="text-sm text-gray-600">Forms Created</div>
+              <div class="formester-stat">
+                <div class="formester-stat-value">50K+</div>
+                <div class="formester-stat-label">Forms Created</div>
               </div>
-              <div>
-                <div class="text-3xl font-bold text-blue-600">4.8</div>
-                <div class="text-sm text-gray-600">Star Rating</div>
+              <div class="formester-stat">
+                <div class="formester-stat-value">4.7</div>
+                <div class="formester-stat-label">Rating on G2</div>
               </div>
             </div>
-
-            <a
-              href="https://formester.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-            >
+            <a href="https://formester.com" target="_blank" rel="noopener noreferrer" class="btn-text">
               Learn more about Formester
-              <ArrowUpRight class="ml-1 h-4 w-4" />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </a>
           </div>
-
-          <div class="order-1 lg:order-2 relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-400 rounded-3xl opacity-10 blur-2xl"></div>
-            <div class="relative bg-gradient-to-br from-blue-50 to-blue-50 rounded-3xl p-8">
-              <img
-                src="/images/formester-mockup.png"
-                alt="Formester Platform - AI Form Builder Interface"
-                class="rounded-2xl shadow-xl"
-              >
-              <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
-                <div class="flex items-center space-x-3">
-                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <Rocket class="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <div class="text-sm font-semibold text-gray-900">Our Product</div>
-                    <div class="text-xs text-gray-600">Live & Growing</div>
-                  </div>
-                </div>
+          <div class="hero-illustration">
+            <img src="/images/formester.png" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy">
+            <div class="floating-badge" style="bottom: 40px; right: -10px;">
+              <div class="badge-dot" style="background: var(--success);"></div>
+              <div>
+                <div class="badge-text">Our Product</div>
+                <div class="badge-sub">Live & Growing</div>
               </div>
             </div>
           </div>
@@ -186,141 +111,79 @@
       </div>
     </section>
 
-    <!-- Partnership Proof Stories Section -->
-    <section class="py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">
-            Partnerships, not projects
-          </span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            We don't just deliver. We stay.
-          </h2>
+    <!-- ===== PARTNERSHIPS ===== -->
+    <section class="partnerships section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="text-label">Partnerships, not projects</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">We don't just deliver. We stay.</h2>
         </div>
 
-        <!-- PerformLine Story -->
-        <div class="mb-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- PerformLine -->
+        <div class="partnership-story">
+          <div class="partnership-story-grid">
             <div>
-              <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-                <Users class="h-4 w-4 mr-2" />
-                Resource Augmentation
+              <span class="partnership-label">Resource Augmentation</span>
+              <h3 class="text-headline">PerformLine</h3>
+              <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">From 1 engineer to 8+. Two years and counting.</p>
+              <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep — full-stack, DevOps, data, QA — embedded in their team like we've always been there. Same tools, same standups, same standards. That's not a contract scaling up. That's trust being earned, sprint by sprint.</p>
+              <div class="partnership-stats">
+                <div>
+                  <div class="partnership-stat-value">1 to 8+</div>
+                  <div class="partnership-stat-label">Engineers</div>
+                </div>
+                <div>
+                  <div class="partnership-stat-value">2+</div>
+                  <div class="partnership-stat-label">Years Together</div>
+                </div>
               </div>
-              <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                PerformLine
-                <span class="block text-xl text-gray-600 mt-2">From 1 engineer to 8+. Two years and counting.</span>
-              </h3>
-              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep - full-stack, DevOps, data, QA - embedded in their team like we've always been there. Same tools, same standups, same standards.
-              </p>
-              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                That's not a contract scaling up. That's trust being earned, sprint by sprint.
-              </p>
-
-              <div class="flex items-center space-x-8">
-                <div>
-                  <div class="text-3xl font-bold text-blue-600">1 to 8+</div>
-                  <div class="text-sm text-gray-600">Engineers</div>
-                </div>
-                <div>
-                  <div class="text-3xl font-bold text-blue-600">2+</div>
-                  <div class="text-sm text-gray-600">Years Together</div>
-                </div>
+              <div class="partnership-tags">
+                <span class="partnership-tag">Compliance Technology</span>
+                <span class="partnership-tag">Full-stack, DevOps, QA</span>
+                <span class="partnership-tag">Embedded in their team</span>
               </div>
             </div>
-
-            <div class="relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl opacity-10 blur-2xl"></div>
-              <div class="relative bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                  <div class="flex items-center space-x-4 mb-6">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                      <TrendingUp class="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <div class="text-lg font-semibold text-gray-900">PerformLine</div>
-                      <div class="text-sm text-gray-600">Compliance Technology</div>
-                    </div>
-                  </div>
-                  <div class="space-y-4">
-                    <div class="flex items-center space-x-3">
-                      <CheckCircle class="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span class="text-gray-700">Full-stack, DevOps, data, QA</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <CheckCircle class="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span class="text-gray-700">Same tools, same standups</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <CheckCircle class="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span class="text-gray-700">Embedded in their team</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="hero-illustration">
+              <img src="/images/performline.png" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy">
             </div>
           </div>
         </div>
 
-        <!-- Eitoss Story -->
-        <div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="relative order-2 lg:order-1">
-              <div class="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-400 rounded-3xl opacity-10 blur-2xl"></div>
-              <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8">
-                <img
-                  src="/images/eitoss-mockup.png"
-                  alt="Eitoss Platform - Analytics Dashboard"
-                  class="rounded-2xl shadow-xl"
-                >
-                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                      <Target class="h-6 w-6 text-green-600" />
-                    </div>
-                    <div>
-                      <div class="text-sm font-semibold text-gray-900">MVP Success</div>
-                      <div class="text-xs text-gray-600">Secured Funding</div>
-                    </div>
-                  </div>
+        <!-- Eitoss -->
+        <div class="partnership-story">
+          <div class="partnership-story-grid">
+            <div class="hero-illustration">
+              <img src="/images/eitoss.png" alt="Product development journey from idea to funding" class="hero-img" loading="lazy">
+              <div class="floating-badge" style="top: 20px; left: -10px;">
+                <div class="badge-dot" style="background: var(--success);"></div>
+                <div>
+                  <div class="badge-text">MVP Success</div>
+                  <div class="badge-sub">Secured Funding</div>
                 </div>
               </div>
             </div>
-
-            <div class="order-1 lg:order-2">
-              <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-6">
-                <Award class="h-4 w-4 mr-2" />
-                MVP Development
-              </div>
-              <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Eitoss
-                <span class="block text-xl text-gray-600 mt-2">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</span>
-              </h3>
-              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team - not because they're locked in, but because the partnership works.
-              </p>
-
-              <div class="flex items-center space-x-8 mb-8">
+            <div>
+              <span class="partnership-label">MVP Development</span>
+              <h3 class="text-headline">Eitoss</h3>
+              <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</p>
+              <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team — not because they're locked in, but because the partnership works.</p>
+              <div class="partnership-stats">
                 <div>
-                  <div class="text-3xl font-bold text-green-600">8 Weeks</div>
-                  <div class="text-sm text-gray-600">To Demoable MVP</div>
+                  <div class="partnership-stat-value">8 Weeks</div>
+                  <div class="partnership-stat-label">To Demoable MVP</div>
                 </div>
                 <div>
-                  <div class="text-3xl font-bold text-green-600">3 Months</div>
-                  <div class="text-sm text-gray-600">To Production</div>
+                  <div class="partnership-stat-value">3 Months</div>
+                  <div class="partnership-stat-label">To Production</div>
                 </div>
                 <div>
-                  <div class="text-3xl font-bold text-green-600">2+</div>
-                  <div class="text-sm text-gray-600">Years Together</div>
+                  <div class="partnership-stat-value">2+</div>
+                  <div class="partnership-stat-label">Years Together</div>
                 </div>
               </div>
-
-              <NuxtLink
-                to="/portfolio"
-                class="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors"
-              >
+              <NuxtLink to="/how-we-work" class="btn-text" style="margin-top: 24px; display: inline-flex;">
                 See how we work with teams like yours
-                <ArrowRight class="ml-2 h-4 w-4" />
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
               </NuxtLink>
             </div>
           </div>
@@ -328,163 +191,60 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            Your product, your way
-          </span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Four ways to build together
-          </h2>
+    <!-- ===== SERVICES ===== -->
+    <section class="services section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="text-label">Your product, your way</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">Four ways to build together</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div
-            v-for="(service, index) in services"
-            :key="index"
-            class="group relative"
-          >
-            <div class="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div class="mb-6">
-                <div class="w-14 h-14 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-300">
-                  <component :is="service.icon" class="h-8 w-8 text-blue-600" />
-                </div>
-              </div>
-
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                {{ service.title }}
-              </h3>
-
-              <p class="text-blue-600 font-semibold text-sm mb-3">
-                {{ service.hook }}
-              </p>
-
-              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
-                {{ service.description }}
-              </p>
-
-              <NuxtLink
-                :to="service.link"
-                class="inline-flex items-center text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
-              >
-                Learn more
-                <ArrowUpRight class="ml-1 h-3 w-3" />
-              </NuxtLink>
-            </div>
-
-            <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-b-2xl"></div>
+        <div class="services-grid">
+          <div v-for="service in services" :key="service.title" class="service-card">
+            <div class="service-icon" v-html="service.icon"></div>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+            <NuxtLink :to="service.link" class="btn-text">
+              Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </NuxtLink>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- What Makes Us Different Section -->
-    <section class="py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            Why teams choose us
-          </span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            The people you meet are the people who build.
-          </h2>
+    <!-- ===== WHY US ===== -->
+    <section class="why-us section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="text-label">Why teams choose us</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">The people you meet are the people who build.</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div
-            v-for="(diff, index) in differentiators"
-            :key="index"
-            class="bg-gradient-to-br rounded-3xl p-8"
-            :class="diff.bgClass"
-          >
-            <component :is="diff.icon" class="h-12 w-12 mb-6" :class="diff.iconClass" />
-            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ diff.title }}</h3>
-            <p class="text-gray-600 leading-relaxed">{{ diff.description }}</p>
+        <div class="why-us-grid">
+          <div v-for="item in whyUs" :key="item.title" class="why-card">
+            <div class="why-icon" v-html="item.icon"></div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            From the people we build with
-          </span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Don't take our word for it.
-          </h2>
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="text-label">From the people we build with</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">Don't take our word for it.</h2>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <!-- Featured Testimonial (Bogdan first) -->
-          <div class="order-2 lg:order-1">
-            <div class="relative">
-              <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full blur-2xl opacity-60"></div>
-              <div class="relative bg-gradient-to-br from-white to-blue-50/30 rounded-3xl p-10 border border-blue-100">
-                <Quote class="h-12 w-12 text-blue-200 mb-4" />
-
-                <p v-if="testimonials[0].framing" class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4">
-                  {{ testimonials[0].framing }}
-                </p>
-
-                <p class="text-2xl text-gray-800 leading-relaxed mb-8 font-light">
-                  "{{ testimonials[0].content }}"
-                </p>
-
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center">
-                    <img
-                      :src="testimonials[0].avatar"
-                      :alt="testimonials[0].name"
-                      class="w-16 h-16 rounded-full mr-4 border-3 border-blue-200"
-                    >
-                    <div>
-                      <h4 class="text-lg font-bold text-gray-900">{{ testimonials[0].name }}</h4>
-                      <p class="text-gray-600">{{ testimonials[0].role }}, {{ testimonials[0].company }}</p>
-                    </div>
-                  </div>
-                  <div class="flex">
-                    <Star v-for="i in testimonials[0].rating" :key="i" class="h-6 w-6 fill-blue-400 text-blue-400" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Other Testimonials Grid -->
-          <div class="order-1 lg:order-2 space-y-4">
-            <div
-              v-for="(testimonial, index) in testimonials.slice(1)"
-              :key="index"
-              class="bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-gray-100"
-            >
-              <div class="flex items-start space-x-4">
-                <img
-                  :src="testimonial.avatar"
-                  :alt="testimonial.name"
-                  class="w-10 h-10 rounded-full flex-shrink-0"
-                >
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <div>
-                      <h5 class="font-semibold text-gray-900">{{ testimonial.name }}</h5>
-                      <p class="text-xs text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</p>
-                    </div>
-                    <div class="flex">
-                      <Star v-for="i in testimonial.rating" :key="i" class="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                    </div>
-                  </div>
-                  <p v-if="testimonial.framing" class="text-xs font-semibold text-blue-600 mb-1">
-                    {{ testimonial.framing }}
-                  </p>
-                  <p class="text-sm text-gray-700 leading-relaxed">
-                    "{{ testimonial.content }}"
-                  </p>
-                </div>
+        <div class="testimonials-grid">
+          <div v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial-card">
+            <div class="testimonial-context">{{ testimonial.context }}</div>
+            <p class="testimonial-quote">"{{ testimonial.quote }}"</p>
+            <div class="testimonial-author">
+              <img :src="testimonial.avatar" :alt="testimonial.name" class="testimonial-avatar" loading="lazy">
+              <div>
+                <div class="testimonial-name">{{ testimonial.name }}</div>
+                <div class="testimonial-title">{{ testimonial.role }}</div>
               </div>
             </div>
           </div>
@@ -492,62 +252,35 @@
       </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Let's build something together.
-        </h2>
-        <p class="text-xl text-gray-700 mb-4 max-w-3xl mx-auto">
-          Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product - we'd love to hear what you're working on.
-        </p>
-        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          No pitch decks. No sales pressure. Just a conversation about your product and how we might help.
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
-          >
-            Start a conversation
-            <ArrowRight class="ml-2 h-5 w-5" />
-          </NuxtLink>
+    <!-- ===== CTA ===== -->
+    <section class="cta-section section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <h2 class="text-display-sm">Let's build something together.</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product — we'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
         </div>
-        <p class="text-gray-500 mt-6">
-          Or email us at <a href="mailto:business@acornglobus.com" class="text-blue-600 hover:text-blue-700 font-medium">business@acornglobus.com</a>
-        </p>
+        <div class="cta-actions">
+          <NuxtLink to="/contact" class="btn btn-primary cta-btn-lg">Start a conversation</NuxtLink>
+          <p class="cta-alt">Or email us at <a href="mailto:business@acornglobus.com">business@acornglobus.com</a></p>
+        </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script setup>
-import {
-  ArrowRight, Users, Award, Sparkles,
-  Rocket, Target, CheckCircle, ArrowUpRight, Quote, Star,
-  Heart, TrendingUp, Clock, Shield, Handshake, Lightbulb, Code
-} from 'lucide-vue-next'
-
-// Use the default layout
 definePageMeta({
   layout: 'default'
 })
 
-// SEO Meta Tags
 useSeoMeta({
   title: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  description: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
+  description: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
   keywords: 'product engineering, software development, resource augmentation, MVP development, web development, mobile app development, SaaS development, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  ogDescription: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
+  ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com',
   ogType: 'website',
@@ -556,112 +289,637 @@ useSeoMeta({
   twitterSite: '@acornglobus',
   twitterCreator: '@acornglobus',
   twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  twitterDescription: 'We\'re a 20+ person product engineering team that treats your product like our own. We built Formester, our own SaaS. We bring that same care to everything we build with you.',
+  twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 const services = [
   {
-    icon: Users,
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     title: 'Resource Augmentation',
-    hook: 'Your team, plus ours.',
-    description: 'Our engineers embed with your team - same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
+    description: 'Your team, plus ours. Our engineers embed with your team — same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
     link: '/services/resource-augmentation'
   },
   {
-    icon: Rocket,
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
     title: 'MVP Development',
-    hook: 'From idea to launch in 8-12 weeks.',
-    description: 'We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready - not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
+    description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready — not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
     link: '/services/mvp-development'
   },
   {
-    icon: Target,
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
     title: 'Full Project Delivery',
-    hook: 'One team, one relationship, start to finish.',
-    description: 'We take on your project end-to-end with milestone-based delivery. You see progress every two weeks. Clean code, full documentation, zero lock-in.',
+    description: 'One team, one relationship, start to finish. We take on your project end-to-end with milestone-based delivery. You see progress every two weeks. Clean code, full documentation, zero lock-in.',
     link: '/services/full-project-delivery'
   },
   {
-    icon: Shield,
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
     title: 'Maintenance & Support',
-    hook: 'We stay after launch.',
-    description: 'Launching is just the beginning. We monitor, fix, and improve - with the same engineers who built it. Because they know your product and they care about it.',
+    description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve — with the same engineers who built it. Because they know your product and they care about it.',
     link: '/services/maintenance-support'
   }
 ]
 
-const differentiators = [
+const whyUs = [
   {
-    icon: Users,
+    icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
     title: 'You\'ll Know Us By Name',
-    description: '20+ engineers. No bench. No rotating juniors. The engineer you meet in the intro call is the engineer who writes your code. Real relationships, real accountability.',
-    bgClass: 'from-blue-50 to-indigo-50',
-    iconClass: 'text-blue-600'
+    description: '20+ engineers. No bench. No rotating juniors. The engineer you meet in the intro call is the engineer who writes your code. Real relationships, real accountability.'
   },
   {
-    icon: Handshake,
+    icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>',
     title: 'We Guide, Not Just Execute',
-    description: 'We\'ll tell you honestly what you need - and what can wait. Not to bill less, but because your success matters more than our invoice.',
-    bgClass: 'from-green-50 to-emerald-50',
-    iconClass: 'text-green-600'
+    description: 'We\'ll tell you honestly what you need — and what can wait. Not to bill less, but because your success matters more than our invoice.'
   },
   {
-    icon: Lightbulb,
+    icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
     title: 'Built to Hand Over',
-    description: 'Your code. Your product. Your freedom. We build clean, documented, ready for your in-house team. Zero lock-in. Though most clients choose to stay.',
-    bgClass: 'from-purple-50 to-violet-50',
-    iconClass: 'text-purple-600'
+    description: 'Your code. Your product. Your freedom. We build clean, documented, ready for your in-house team. Zero lock-in. Though most clients choose to stay.'
   },
   {
-    icon: Code,
+    icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
     title: 'Stack-Agnostic',
-    description: 'React, Node, Python, Flutter, AWS, Azure - we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.',
-    bgClass: 'from-orange-50 to-amber-50',
-    iconClass: 'text-orange-600'
+    description: 'React, Node, Python, Flutter, AWS, Azure — we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.'
   }
 ]
 
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/' }],
+})
+
+useBreadcrumbSchema([])
+
 const testimonials = [
   {
+    context: 'Started with 1 engineer. Now 8+ deep.',
+    quote: 'Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.',
     name: 'Bogdan Arsenie',
-    role: 'CTO',
-    company: 'PerformLine',
-    framing: 'Started with 1 engineer. Now 8+ deep.',
-    content: 'Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.',
-    avatar: '/images/testimonials/bogdan.jpeg',
-    rating: 5
+    role: 'CTO, PerformLine',
+    avatar: '/images/testimonials/bogdan.jpeg'
   },
   {
+    context: 'They don\'t wait to be asked.',
+    quote: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
     name: 'Enzo Zadrima',
-    role: 'CTO',
-    company: 'Viewber',
-    framing: 'They don\'t wait to be asked.',
-    content: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
-    avatar: '/images/testimonials/enzo.jpeg',
-    rating: 5
+    role: 'CTO, Viewber',
+    avatar: '/images/testimonials/enzo.jpeg'
   },
   {
+    context: 'Built to last.',
+    quote: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
     name: 'Alon Diamant',
-    role: 'CTO',
-    company: 'Mayple',
-    framing: 'Built to last.',
-    content: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
-    avatar: '/images/testimonials/alon.jpeg',
-    rating: 5
+    role: 'CTO, Mayple',
+    avatar: '/images/testimonials/alon.jpeg'
   }
 ]
 </script>
 
 <style scoped>
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+/* ===== HERO ===== */
+.hero {
+  padding-top: 140px;
+  padding-bottom: var(--section-gap);
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-bright);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-body {
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(194, 198, 213, 0.15);
+}
+
+.hero-stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--on-surface);
+  letter-spacing: -0.02em;
+}
+
+.hero-stat-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-illustration {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* Floating badges */
+.floating-badge {
+  position: absolute;
+  background: var(--surface-container-lowest);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: var(--shadow-float);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.floating-badge .badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.floating-badge .badge-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.floating-badge .badge-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.badge-formester {
+  bottom: 40px;
+  left: -20px;
+}
+
+.badge-retention {
+  top: 40px;
+  right: -20px;
+}
+
+/* ===== LOGO BAR ===== */
+.logo-bar {
+  padding: 64px 0;
+  background: var(--surface);
+}
+
+.logo-bar-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-bottom: 32px;
+}
+
+.logo-bar-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.logo-bar-item {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  transition: opacity var(--duration-normal) var(--ease-premium);
+}
+
+.logo-bar-item:hover {
+  opacity: 0.8;
+}
+
+/* ===== FORMESTER ===== */
+.formester {
+  background: var(--surface-bright);
+}
+
+.formester-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.formester-stats {
+  display: flex;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.formester-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.formester-stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+.formester-stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* ===== PARTNERSHIPS ===== */
+.partnerships {
+  background: var(--surface);
+}
+
+.partnership-story {
+  background: var(--surface-container-lowest);
+  border-radius: 20px;
+  padding: 56px;
+  margin-top: 48px;
+  position: relative;
+}
+
+.partnership-story + .partnership-story {
+  margin-top: 32px;
+}
+
+.partnership-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.partnership-label {
+  display: inline-block;
+  background: var(--primary-fixed-dim);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.partnership-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.partnership-stat-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--brand-blue);
+}
+
+.partnership-stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.partnership-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.partnership-tag {
+  background: var(--surface);
+  color: var(--on-surface-variant);
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+}
+
+/* ===== SERVICES ===== */
+.services {
+  background: var(--surface-bright);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.service-card {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  transition: all var(--duration-normal) var(--ease-premium);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(180deg, var(--primary), var(--primary-container));
+  border-radius: 0 2px 2px 0;
+  transition: height var(--duration-slow) var(--ease-premium);
+}
+
+.service-card:hover::before {
+  height: 100%;
+}
+
+.service-card:hover {
+  background: var(--surface-container-lowest);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-fixed-dim);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--on-surface);
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 20px;
+}
+
+/* ===== WHY US ===== */
+.why-us {
+  background: var(--surface);
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.why-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+
+.why-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.why-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--primary-fixed-dim);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--on-surface);
+}
+
+.why-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  background: var(--surface-bright);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.testimonial-card {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.testimonial-context {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin-bottom: 16px;
+}
+
+.testimonial-quote {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  flex: 1;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(194, 198, 213, 0.15);
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.testimonial-title {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+  background: var(--surface);
+  text-align: center;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.cta-btn-lg {
+  font-size: 18px;
+  padding: 18px 40px;
+}
+
+.cta-alt {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.cta-alt a {
+  color: var(--brand-blue);
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVE — Tablet ===== */
+@media (max-width: 1024px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero-illustration {
+    order: -1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formester-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .partnership-story {
+    padding: 40px;
+  }
+
+  .partnership-story-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== RESPONSIVE — Mobile ===== */
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .hero-stat-value {
+    font-size: 22px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-bar-grid {
+    gap: 32px;
+  }
+
+  .formester-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .partnership-story {
+    padding: 24px;
+  }
+
+  .partnership-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .why-us-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-badge {
+    display: none;
   }
 }
 </style>

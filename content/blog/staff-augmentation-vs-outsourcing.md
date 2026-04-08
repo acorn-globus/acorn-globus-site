@@ -3,9 +3,11 @@ title: "Staff Augmentation vs. Outsourcing: What's Actually Different?"
 description: "Staff augmentation keeps you in control. Outsourcing hands off the work. We break down costs, control, culture, and when each model makes sense for your team."
 topic: Resource Augmentation
 author: AcornGlobus
-coverImg: /img/abstract1.png
+coverImg: /images/blog/staff-aug-vs-outsourcing.png
 coverImgAlt: "Staff augmentation vs outsourcing — understanding the real differences"
 published: true
+toc: true
+readingTime: "15 min read"
 createdAt: "2026-04-05"
 keywords:
   - staff augmentation vs outsourcing

@@ -2,10 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Legacy utility classes (keep for unmigrated pages) */
 .section__heading {
   @apply text-3xl lg:text-5xl font-semibold leading-tight lg:leading-tight;
 }
 
 .container__wrapper {
   @apply container mx-auto px-4 md:px-8 xl:px-24;
+}
+
+/* ===== Redesign typography utility classes ===== */
+@layer utilities {
+  .text-display-lg {
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .text-display-sm {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .text-headline {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+
+  .text-title-lg {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .text-body-lg {
+    font-size: 20px;
+    line-height: 1.65;
+    color: var(--on-surface-variant);
+  }
+
+  .text-body {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--on-surface-variant);
+  }
+
+  .text-label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-blue);
+  }
+}
+
+/* ===== Responsive typography overrides ===== */
+@media (max-width: 1024px) {
+  .text-display-lg {
+    font-size: 52px;
+  }
+
+  .text-display-sm {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-display-lg {
+    font-size: 36px;
+  }
+
+  .text-display-sm {
+    font-size: 28px;
+  }
+
+  .text-headline {
+    font-size: 24px;
+  }
+
+  .text-body-lg {
+    font-size: 17px;
+  }
 }

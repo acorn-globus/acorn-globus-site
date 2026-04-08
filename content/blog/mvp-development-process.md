@@ -3,9 +3,11 @@ title: "MVP Development Process: What 8 Weeks Really Looks Like"
 description: "A week-by-week breakdown of our real MVP development process -- from discovery to launch -- with the honest details most agencies leave out."
 topic: MVP Development
 author: AcornGlobus
-coverImg: /img/abstract1.png
+coverImg: /images/blog/mvp-development-process.png
 coverImgAlt: "MVP Development Process — a week-by-week breakdown of what building an MVP really looks like"
 published: true
+toc: true
+readingTime: "16 min read"
 createdAt: "2026-04-09"
 keywords:
   - mvp development process

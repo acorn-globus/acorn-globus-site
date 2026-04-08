@@ -1,577 +1,363 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+  <div>
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <div class="hero-eyebrow"><span>Hire Node.js Developers</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers Who Think in Systems, Not Just Code</h1>
+          <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products — not tutorial projects.</p>
+          <div style="margin-top: 32px;">
+            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+          </div>
+        </div>
+        <div class="stats-row" style="margin-top: 56px;">
+          <div class="stat"><span class="stat-value">7+</span><span class="stat-label">Years in Business</span></div>
+          <div class="stat"><span class="stat-value">80%+</span><span class="stat-label">Client Retention</span></div>
+          <div class="stat"><span class="stat-value">20+</span><span class="stat-label">Engineers</span></div>
+          <div class="stat"><span class="stat-value">2-Week</span><span class="stat-label">Risk-Free Trial</span></div>
+        </div>
       </div>
+    </section>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-              <Code class="h-4 w-4 mr-2" />
-              Hire Node.js Developers
+    <!-- WHY US -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <span class="label-redesign">Why Us</span>
+          <h2 class="text-display-sm">Backend Engineers, Not Just Node.js Coders</h2>
+        </div>
+        <p class="why-us-intro">Anyone can install Express and return JSON. We hire engineers who understand why you'd choose a message queue over a synchronous call, when to denormalize your database, and how to design APIs that won't need a rewrite in six months.</p>
+        <div class="why-cards-grid">
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
+            <h3>System Design Thinking</h3>
+            <p>Our developers think beyond the endpoint. They consider caching layers, failure modes, data consistency, and how your system will behave when traffic spikes at 3 AM.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Named Engineers</h3>
+            <p>You'll know who's writing your code. No rotating bench, no anonymous offshore team. The engineer you interview is the one who builds your product.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Full-Stack Context</h3>
+            <p>Our Node.js engineers understand the frontend they're serving. They write APIs that make the client developer's life easier, not harder.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Honest Technology Advice</h3>
+            <p>We'll tell you when Node.js is the right choice — and when it isn't. We'd rather recommend the right tool than sell you hours on the wrong one.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+            </div>
+            <h3>Productive From Week One</h3>
+            <p>We've onboarded into dozens of existing codebases. Our engineers ramp up fast — reading your code, understanding your patterns, and shipping meaningful work within the first week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Hire Node.js Developers Who Think in Systems, Not Just Code
-            </h1>
-
-            <p class="text-xl text-gray-600 mb-4 leading-relaxed">
-              Your backend needs more than someone who knows Express.js. It needs engineers who
-              understand API design, database architecture, caching strategies, and how systems
-              behave under load.
-            </p>
-
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're a 20+ person product engineering team. Our Node.js developers build backends
-              that serve real products - not tutorial projects. They think about the system your
-              API lives in, not just the endpoints.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Talk to Us
-                <ArrowRight class="h-5 w-5 ml-2" />
-              </NuxtLink>
+    <!-- WHAT WE BUILD -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">What We Build</span>
+          <h2 class="text-display-sm">Node.js Capabilities</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-group">
+            <h3>API Development</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Fastify</span>
+              <span class="tech-tag">NestJS</span>
+              <span class="tech-tag">GraphQL</span>
             </div>
           </div>
-
-          <div class="relative">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Clock class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">6+</div>
-                <p class="text-sm text-gray-600">Years in Business</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <TrendingUp class="h-8 w-8 text-green-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">80%+</div>
-                <p class="text-sm text-gray-600">Client Retention</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Users class="h-8 w-8 text-indigo-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">20+</div>
-                <p class="text-sm text-gray-600">Engineers</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Shield class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">2-Week</div>
-                <p class="text-sm text-gray-600">Embedded Trial</p>
-              </div>
+          <div class="tech-group">
+            <h3>Real-Time Systems</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">WebSocket</span>
+              <span class="tech-tag">Socket.io</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Microservices</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">Bull</span>
+              <span class="tech-tag">gRPC</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Databases</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Infrastructure</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">CI/CD</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">GCP</span>
+              <span class="tech-tag">Azure</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3>Testing</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Jest</span>
+              <span class="tech-tag">Supertest</span>
+              <span class="tech-tag">Load Testing</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why AcornGlobus Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Backend Engineers, Not Just Node.js Coders</h2>
-          <p class="text-lg text-gray-600">
-            Writing JavaScript on the server is the easy part. Building backends that scale, stay
-            maintainable, and serve your product well - that takes engineering judgment.
-          </p>
+    <!-- WHEN TO CHOOSE NODE.JS -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Guidance</span>
+          <h2 class="text-display-sm">When to Choose Node.js for Your Backend</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(card, idx) in whyCards" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-6">
-              <component :is="card.icon" class="h-6 w-6" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ card.title }}</h3>
-            <p class="text-gray-600">{{ card.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technology Expertise Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Node.js Developers Build</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="(group, idx) in expertiseGroups" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg">
-            <h3 class="text-lg font-bold text-gray-900 mb-4">{{ group.title }}</h3>
-            <ul class="space-y-2">
-              <li v-for="(item, i) in group.items" :key="i" class="flex items-center gap-3">
-                <CheckCircle class="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span class="text-gray-600 text-sm">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- When to Choose Node.js Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">When to Choose Node.js for Your Backend</h2>
-        <p class="text-lg text-gray-600 mb-8">
-          We don't push Node.js on every project. Here's when it genuinely shines - and when
-          you might want to consider alternatives.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
-              <CheckCircle class="h-6 w-6 text-green-600 mr-3" />
-              Node.js is a strong fit when
+        <div class="when-grid">
+          <div class="when-col strong">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Strong fit when
             </h3>
-            <ul class="space-y-4">
-              <li v-for="(item, idx) in nodeGoodFit" :key="idx">
-                <p class="font-semibold text-gray-900 text-sm">{{ item.title }}</p>
-                <p class="text-gray-600 text-sm">{{ item.description }}</p>
-              </li>
+            <ul>
+              <li>Your stack is already JavaScript-heavy — shared language across frontend and backend reduces context switching and lets you move faster.</li>
+              <li>You're building real-time features — chat, notifications, live dashboards, collaborative editing. Node's event-driven model handles persistent connections well.</li>
+              <li>You're building an API-first product — REST or GraphQL APIs that serve multiple clients (web, mobile, third-party). Node excels at I/O-bound request handling.</li>
+              <li>Your workload is I/O-intensive — lots of database queries, external API calls, file processing. Node's non-blocking I/O handles concurrent operations efficiently.</li>
             </ul>
           </div>
-
-          <div class="bg-white rounded-2xl p-8 border border-gray-200">
-            <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
-              <AlertCircle class="h-6 w-6 text-amber-500 mr-3" />
+          <div class="when-col consider">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               Consider alternatives when
             </h3>
-            <ul class="space-y-4">
-              <li v-for="(item, idx) in nodeAlternatives" :key="idx">
-                <p class="font-semibold text-gray-900 text-sm">{{ item.title }}</p>
-                <p class="text-gray-600 text-sm">{{ item.description }}</p>
-              </li>
+            <ul>
+              <li>Your workload is CPU-intensive — heavy computation, image/video processing, or machine learning inference. Python or Go may serve you better here.</li>
+              <li>You need extreme concurrency with heavy processing — Go's goroutines or Rust's memory model can outperform Node in these scenarios.</li>
+              <li>You want strong static typing throughout — while TypeScript helps, languages like Java, C#, or Go offer more mature type systems for large enterprise codebases.</li>
             </ul>
           </div>
         </div>
-
-        <p class="text-gray-600 mt-8 italic">
-          This isn't a sales pitch. It's what we'd tell you on a discovery call. We'd rather
-          recommend the right tool than sell you Node.js hours.
-        </p>
+        <p class="when-closing">We're not here to sell you Node.js for everything. If your project would be better served by Python, Go, or something else entirely, we'll tell you that. Honest advice builds partnerships — overselling builds regret.</p>
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">From First Call to First Commit</h2>
+    <!-- PROCESS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <span class="label-redesign">How It Works</span>
+          <h2 class="text-display-sm">From First Call to First Commit</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(step, idx) in steps" :key="idx" class="relative">
-            <div v-if="idx < steps.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
-                <component :is="step.icon" class="h-5 w-5" />
-              </div>
-              <div class="text-sm text-blue-600 font-semibold mb-2">Step {{ idx + 1 }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-sm text-gray-600">{{ step.description }}</p>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Discovery Call</h3>
+              <p>We learn about your product, your stack, your team, and what you're trying to accomplish. No sales pitch — just a conversation about what you need and whether we're a good fit.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Engineer Matching</h3>
+              <p>We match you with a Node.js engineer based on your tech stack, domain, and working style. You interview them directly — same person who'll be writing your code.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>2-Week Trial</h3>
+              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving — all before any long-term commitment.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Ongoing Partnership</h3>
+              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus — we adapt as your product evolves.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Engagement Models Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Flexible Hiring, No Lock-In</h2>
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-          <div class="divide-y divide-gray-100">
-            <div v-for="(model, idx) in engagementModels" :key="idx" class="p-6">
-              <h3 class="text-lg font-bold text-gray-900 mb-1">{{ model.name }}</h3>
-              <p class="text-sm text-blue-600 font-medium mb-2">{{ model.bestFor }}</p>
-              <p class="text-gray-600">{{ model.details }}</p>
-            </div>
-          </div>
+    <!-- FLEXIBLE HIRING MODELS -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Engagement Models</span>
+          <h2 class="text-display-sm">Flexible Hiring Models</h2>
         </div>
-        <p class="text-gray-600 mt-6 text-sm">All models start with a two-week trial. No long-term lock-in.</p>
-      </div>
-    </section>
-
-    <!-- Proof Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Node.js Projects We've Delivered</h2>
-
-        <div class="space-y-8">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">PerformLine</h3>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              What started as one engineer grew to eight over two years - full-stack, DevOps, data
-              engineering, and QA. Our Node.js developers have been part of building and scaling
-              PerformLine's backend services, working alongside their existing team in the same
-              tools and workflows.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-              <div class="bg-white/80 rounded-xl p-4 text-center">
-                <div class="text-lg font-bold text-gray-900">1</div>
-                <p class="text-sm text-gray-600">Started with</p>
-              </div>
-              <div class="bg-white/80 rounded-xl p-4 text-center">
-                <div class="text-lg font-bold text-gray-900">8+</div>
-                <p class="text-sm text-gray-600">Grew to</p>
-              </div>
-              <div class="bg-white/80 rounded-xl p-4 text-center">
-                <div class="text-lg font-bold text-gray-900">2+</div>
-                <p class="text-sm text-gray-600">Years ongoing</p>
-              </div>
-              <div class="bg-white/80 rounded-xl p-4 text-center">
-                <NuxtLink to="/services/resource-augmentation" class="text-sm text-blue-600 font-medium hover:text-blue-700">
-                  Resource Augmentation
-                </NuxtLink>
-              </div>
-            </div>
-            <div class="mt-6">
-              <NuxtLink
-                to="/case-studies/performline"
-                class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-              >
-                Read the full story
-                <ArrowRight class="h-4 w-4 ml-2" />
-              </NuxtLink>
-            </div>
+        <div class="models-grid">
+          <div class="model-card">
+            <h3>Dedicated Developer</h3>
+            <p class="model-desc">A full-time Node.js engineer embedded in your team. Same hours, same tools, same standups. They become part of your team — you'll forget they're external.</p>
+            <ul>
+              <li>Full-time (40 hrs/week)</li>
+              <li>Works in your tools and workflows</li>
+              <li>Joins your standups and retrospectives</li>
+              <li>Monthly billing, cancel anytime</li>
+            </ul>
           </div>
-
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Eitoss</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
-              We shipped the MVP in three months. They raised funding. Two years later, we're still
-              building together. The backend architecture we set up from day one has scaled with the
-              product - because we designed it to.
-            </p>
-            <div class="flex flex-wrap gap-6 text-sm mb-4">
-              <span><span class="font-semibold text-gray-900">MVP:</span> <span class="text-gray-600">Shipped in 3 months</span></span>
-              <span><span class="font-semibold text-gray-900">Outcome:</span> <span class="text-gray-600">Raised funding</span></span>
-              <span><span class="font-semibold text-gray-900">Duration:</span> <span class="text-gray-600">2+ years ongoing</span></span>
-            </div>
-            <NuxtLink
-              to="/case-studies/eitoss"
-              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
-            >
-              Read the full story
-              <ArrowRight class="h-4 w-4 ml-2" />
-            </NuxtLink>
+          <div class="model-card">
+            <h3>Part-Time Developer</h3>
+            <p class="model-desc">Need Node.js expertise but not a full-time commitment? Our engineers can work part-time on your project while you scale at your own pace.</p>
+            <ul>
+              <li>20 hours/week minimum</li>
+              <li>Predictable weekly schedule</li>
+              <li>Scale up to full-time when ready</li>
+              <li>Great for early-stage products</li>
+            </ul>
+          </div>
+          <div class="model-card">
+            <h3>Project-Based</h3>
+            <p class="model-desc">Have a defined scope? We'll scope it, price it, and deliver it. Fixed milestones, predictable budget, clear deliverables.</p>
+            <ul>
+              <li>Fixed scope and price</li>
+              <li>Milestone-based delivery</li>
+              <li>Full documentation and handoff</li>
+              <li>Post-delivery support available</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+    <!-- PROJECTS -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <span class="label-redesign">Partnerships</span>
+          <h2 class="text-display-sm">Teams We've Built With</h2>
         </div>
-
-        <div class="space-y-4">
-          <div
-            v-for="(faq, index) in faqs"
-            :key="index"
-            class="border border-gray-200 rounded-xl overflow-hidden"
-          >
-            <button
-              class="w-full text-left px-6 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
-              @click="toggleFaq(index)"
-            >
-              <span class="font-semibold text-gray-900 pr-4">{{ faq.question }}</span>
-              <ChevronDown
-                class="h-5 w-5 text-gray-500 shrink-0 transition-transform duration-200"
-                :class="{ 'rotate-180': openFaqs.includes(index) }"
-              />
-            </button>
-            <div
-              v-show="openFaqs.includes(index)"
-              class="px-6 py-4 text-gray-600 leading-relaxed border-t border-gray-200"
-            >
-              <p>{{ faq.answer }}</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>PerformLine</h3>
+            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many — the partnership just kept proving its value, sprint after sprint.</p>
+            <div class="project-meta-tags">
+              <span class="project-meta-tag">1 to 8+ Engineers</span>
+              <span class="project-meta-tag">2+ Years</span>
+              <span class="project-meta-tag">Resource Augmentation</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Eitoss</h3>
+            <p>We shipped their MVP in 3 months. They raised funding. We're still building together over 2 years later. What started as a sprint to launch became a long-term partnership that's still growing.</p>
+            <div class="project-meta-tags">
+              <span class="project-meta-tag">MVP in 3 Months</span>
+              <span class="project-meta-tag">Raised Funding</span>
+              <span class="project-meta-tag">2+ Years Ongoing</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Scale Your Backend Team?</h2>
-        <p class="text-xl text-gray-600 mb-4">
-          Tell us about your backend challenges. Whether you need API development, real-time features,
-          or additional Node.js capacity, we'll match you with engineers who've built systems like yours.
-        </p>
-        <p class="text-lg text-gray-600 mb-8">
-          Start with a two-week trial. No risk, no lock-in.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Book a Call
-            <ArrowRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
-          <a
-            href="mailto:hello@acornglobus.com"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
-          >
-            Or email us at hello@acornglobus.com
-          </a>
+    <!-- FAQ -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="label-redesign">FAQ</span>
+          <h2 class="text-headline">Common Questions About Hiring Node.js Developers</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index" class="faq-item" :open="index === 0">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
 
-    <ClientOnly>
-      <LeadCaptureSmartCta
-        text="Need backend engineers who think in systems? Let's talk."
-        cta-label="Book a 15-minute call"
-        cta-link="/contact"
-        dismiss-key="smart_cta_hire_node"
-      />
-    </ClientOnly>
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Ready to Scale Your Backend Team?</h2>
+        <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <NuxtLink to="/contact" class="btn btn-primary">Book a Call</NuxtLink>
+        </div>
+        <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import {
-  ArrowRight, Users, TrendingUp, Clock, Shield, Code, Heart,
-  CheckCircle, ChevronDown, Layers, Globe, Zap, Target, UserCheck,
-  AlertCircle, Database, Server
-} from 'lucide-vue-next'
-
 definePageMeta({
   layout: 'default'
 })
 
-const openFaqs = ref([])
-
-const toggleFaq = (index) => {
-  const idx = openFaqs.value.indexOf(index)
-  if (idx > -1) {
-    openFaqs.value.splice(idx, 1)
-  } else {
-    openFaqs.value.push(index)
-  }
-}
-
-const whyCards = [
-  {
-    icon: Layers,
-    title: 'System Design Thinking',
-    description: "Our Node.js developers think beyond the endpoint. API architecture, database modeling, caching layers, message queues, rate limiting - the decisions that determine whether your backend holds up at scale."
-  },
-  {
-    icon: UserCheck,
-    title: 'Named Engineers on Your Team',
-    description: "You'll meet the person who'll build your backend. They'll join your standups, review your pull requests, and understand your domain. Not an anonymous contractor from a pool."
-  },
-  {
-    icon: Globe,
-    title: 'Full-Stack Context',
-    description: 'Our Node.js developers understand the frontends they serve. Because we build complete products, our backend engineers think about API contracts, response shapes, and how the data flows to the UI.'
-  },
-  {
-    icon: Heart,
-    title: 'Honest Technology Advice',
-    description: "We're stack-agnostic. We'll recommend Node.js when it's the right fit and tell you honestly when Python or Go might serve you better. We'd rather lose a Node.js engagement than build you the wrong backend."
-  },
-  {
-    icon: Zap,
-    title: 'Productive From Week One',
-    description: "Our engineers ramp on your codebase in one to two weeks. We track time-to-first-PR because you're hiring for output, not presence."
-  }
-]
-
-const expertiseGroups = [
-  {
-    title: 'API Development',
-    items: [
-      'RESTful APIs with Express.js, Fastify, or NestJS',
-      'GraphQL APIs with Apollo Server or Mercurius',
-      'API versioning, documentation, and contract testing'
-    ]
-  },
-  {
-    title: 'Real-Time Applications',
-    items: [
-      'WebSocket servers with Socket.io',
-      'Live notifications, chat, collaborative editing',
-      'Event-driven architectures'
-    ]
-  },
-  {
-    title: 'Microservices',
-    items: [
-      'Service decomposition and inter-service communication',
-      'Message queues with RabbitMQ, Bull/BullMQ',
-      'gRPC for internal service communication'
-    ]
-  },
-  {
-    title: 'Databases and Data',
-    items: [
-      'PostgreSQL, MongoDB, Redis',
-      'Database schema design and migrations',
-      'Caching strategies and query optimization'
-    ]
-  },
-  {
-    title: 'Infrastructure',
-    items: [
-      'Docker containerization',
-      'CI/CD pipelines (GitHub Actions, GitLab CI)',
-      'AWS, GCP, or Azure deployment',
-      'Monitoring and logging (Datadog, ELK, Prometheus)'
-    ]
-  },
-  {
-    title: 'Testing',
-    items: [
-      'Jest for unit and integration tests',
-      'Supertest for API testing',
-      'Load testing and performance profiling'
-    ]
-  }
-]
-
-const nodeGoodFit = [
-  {
-    title: 'Your stack is JavaScript-heavy.',
-    description: 'React or Vue frontend, Node.js backend. One language across the stack means faster context switching and shared code.'
-  },
-  {
-    title: 'You need real-time features.',
-    description: "Chat, live notifications, collaborative editing, streaming. Node's event-driven architecture handles concurrent connections well."
-  },
-  {
-    title: 'You\'re building APIs that serve multiple clients.',
-    description: 'Mobile app, web app, third-party integrations - Node.js with Express or NestJS is a proven choice for API-first architectures.'
-  },
-  {
-    title: 'I/O-intensive workloads.',
-    description: "Applications that spend most of their time waiting on databases, external APIs, or file systems. Node's non-blocking I/O model is built for this."
-  }
-]
-
-const nodeAlternatives = [
-  {
-    title: 'CPU-intensive computation.',
-    description: 'Heavy data processing, ML pipelines, or complex calculations - Python or Go will serve you better.'
-  },
-  {
-    title: 'Extreme concurrency requirements.',
-    description: "If you need millions of concurrent connections, Go's goroutines or Rust's async model may be more efficient."
-  },
-  {
-    title: 'Strong typing is critical from day one.',
-    description: 'While TypeScript helps, languages like Java or C# have more mature type systems for very large codebases.'
-  }
-]
-
-const steps = [
-  {
-    title: 'Discovery Call',
-    description: "We learn about your backend needs, your current architecture, and what you're building.",
-    icon: Target
-  },
-  {
-    title: 'Engineer Matching',
-    description: 'We propose Node.js developers with relevant backend experience matched to your specific needs.',
-    icon: Users
-  },
-  {
-    title: 'Two-Week Trial',
-    description: 'Your developer joins your team. Same tools, same standups, same code reviews. Real production work.',
-    icon: CheckCircle
-  },
-  {
-    title: 'Ongoing Partnership',
-    description: "Monthly rolling after an initial three-month commitment. Scale up or down with two weeks' notice.",
-    icon: Heart
-  }
-]
-
-const engagementModels = [
-  {
-    name: 'Dedicated (Full-Time)',
-    bestFor: 'Best for: Ongoing backend development',
-    details: 'Your Node.js developer works exclusively on your project. Full team integration.'
-  },
-  {
-    name: 'Part-Time',
-    bestFor: 'Best for: API development or specific backend features',
-    details: '20 hours/week. Good for defined backend work that doesn\'t need a full seat.'
-  },
-  {
-    name: 'Project-Based',
-    bestFor: 'Best for: New API builds or backend rewrites',
-    details: 'Fixed scope and timeline. Ideal for greenfield Node.js services or migrations.'
-  }
-]
-
 const faqs = [
   {
-    question: 'How much does it cost to hire a Node.js developer in India?',
-    answer: "Rates depend on seniority and engagement model. Senior Node.js developers are priced competitively for dedicated engagements. We'll discuss specifics on a discovery call once we understand your backend needs."
+    question: 'How much does it cost to hire a Node.js developer?',
+    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
   },
   {
-    question: 'How quickly can Node.js developers start on my project?',
-    answer: 'Most engagements start within one to two weeks. We match engineers based on availability and relevant backend experience, then begin with a two-week trial.'
+    question: 'How quickly can a developer start?',
+    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. We don't keep a bench — our engineers are experienced and ready to ramp up fast."
   },
   {
-    question: 'Do your Node.js developers work with databases like PostgreSQL and MongoDB?',
-    answer: "Yes. Our backend engineers work with PostgreSQL, MongoDB, Redis, and other databases daily. Database design, migrations, query optimization, and caching strategies are part of the job - not an add-on."
+    question: 'Which databases do your Node.js developers work with?',
+    answer: "Our engineers work with PostgreSQL, MongoDB, Redis, and MySQL regularly. They're comfortable with ORMs like Prisma, TypeORM, and Sequelize, as well as writing raw queries when performance demands it. Database choice depends on your use case — we'll help you pick the right one."
   },
   {
-    question: 'Node.js vs Python - which is better for my backend?',
-    answer: 'It depends on your use case. Node.js excels at real-time features, I/O-heavy workloads, and JavaScript-stack consistency. Python is stronger for data processing, ML, and scientific computing. We work with both and can recommend honestly based on your project.'
+    question: 'Should I use Node.js or Python for my backend?',
+    answer: "It depends on what you're building. Node.js excels at real-time applications, API-heavy products, and JavaScript-heavy stacks. Python is stronger for data processing, machine learning, and scientific computing. If you're unsure, we'll help you evaluate both honestly — we work with both and have no incentive to push one over the other."
   },
   {
-    question: 'Can I hire Node.js developers for API-only projects?',
-    answer: 'Absolutely. Many of our engagements are API-focused - building RESTful or GraphQL APIs that serve web and mobile clients. We can scope a project-based engagement around your API requirements.'
+    question: 'Can you build just the API without the frontend?',
+    answer: "Absolutely. Many of our engagements are API-only — we build the backend and your team (or another team) handles the frontend. We design APIs with clear documentation, consistent patterns, and proper versioning so your frontend developers have a smooth experience."
   },
   {
     question: 'Do your developers work with NestJS?',
-    answer: "Yes. NestJS is one of our go-to frameworks for structured Node.js applications, especially for microservices architectures. We also work with Express, Fastify, and other Node.js frameworks depending on your project's needs."
+    answer: "Yes. We have engineers experienced with NestJS and its module-based architecture. NestJS is a solid choice for larger applications that benefit from structure and dependency injection. We also work with Express and Fastify for projects that need something lighter."
   },
   {
-    question: 'How do you ensure backend code quality and security?',
-    answer: "Code reviews on every pull request, automated testing (unit, integration, and API tests), CI/CD pipelines, and security best practices (input validation, authentication, rate limiting, dependency auditing). These aren't extras - they're how we work."
+    question: 'How do you ensure code quality?',
+    answer: "Code reviews, automated testing, CI/CD pipelines, and consistent coding standards. Every pull request gets reviewed. We write unit tests and integration tests as part of the development process — not as an afterthought. We also set up linting, formatting, and commit hooks to keep the codebase clean."
   },
   {
-    question: 'Can your Node.js developers handle DevOps and deployment?',
-    answer: 'Many of our backend engineers are comfortable with Docker, CI/CD pipelines, and cloud deployment. For dedicated DevOps work, we can also match you with engineers who specialize in infrastructure.'
+    question: 'Can your Node.js developers handle DevOps too?',
+    answer: "Our senior engineers are comfortable with Docker, CI/CD pipelines, AWS/GCP/Azure deployments, and infrastructure-as-code. For complex infrastructure needs, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on — it makes them better engineers."
   }
 ]
 
-// SEO Meta
 useSeoMeta({
-  title: 'Hire Node.js Developers in India | AcornGlobus',
-  description: 'Hire senior Node.js developers who think in systems, not just code. API design, real-time apps, microservices. 20+ person team, 2-week trial. Book a call.',
-  keywords: 'hire node.js developers, hire nodejs developers India, node developer India, backend developer India, node.js development team',
-  author: 'AcornGlobus',
-  robots: 'index, follow',
-  ogTitle: 'Hire Node.js Developers in India | AcornGlobus',
-  ogDescription: 'Hire senior Node.js developers who think in systems, not just code. API design, real-time apps, microservices.',
+  title: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
+  description: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
+  ogTitle: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
+  ogDescription: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-nodejs-developer',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Node.js Developers in India | AcornGlobus',
-  twitterDescription: 'Hire senior Node.js developers who think in systems, not just code.',
+  twitterTitle: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
+  twitterDescription: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -583,7 +369,7 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Node.js Developers',
-  description: 'Hire senior Node.js developers who think in systems. API design, real-time applications, microservices architecture. 20+ person team, 2-week embedded trial.',
+  description: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   url: '/hire-nodejs-developer',
 })
 
@@ -593,3 +379,363 @@ useBreadcrumbSchema([
   { name: 'Hire Node.js Developers', path: '/hire-nodejs-developer' },
 ])
 </script>
+
+<style scoped>
+/* ===== HERO BODY ===== */
+.hero-body {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+}
+
+/* ===== LABEL ===== */
+.label-redesign {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* ===== WHY US CARDS ===== */
+.why-us-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+.why-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.why-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.why-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.why-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-fixed-dim);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.why-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.why-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* ===== TECH GROUPS ===== */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.tech-group {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.tech-group:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.tech-group h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 12px;
+}
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-tag {
+  background: var(--surface-container);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+}
+
+/* ===== WHEN NODE.JS ===== */
+.when-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+.when-col h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.when-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+.when-col ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  padding-left: 28px;
+  position: relative;
+}
+.when-col.strong li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: rgba(52, 168, 83, 0.12);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2334A853' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.when-col.consider li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: rgba(251, 188, 5, 0.12);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23FBBC05' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Ccircle cx='12' cy='17' r='1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.when-closing {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  margin-top: 32px;
+  max-width: 680px;
+}
+
+/* ===== HIRING MODELS ===== */
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.model-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  border-top: 3px solid var(--primary-fixed-dim);
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.model-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.model-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.model-card .model-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
+}
+.model-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+.model-card ul li {
+  font-size: 14px;
+  color: var(--on-surface-variant);
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+.model-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--primary-fixed-dim);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 24 24' fill='none' stroke='%230058bd' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.project-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.project-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.project-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
+}
+.project-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project-meta-tag {
+  background: var(--primary-fixed-dim);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 800px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-item {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 24px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--on-surface);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background var(--duration-fast) var(--ease-premium);
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23424753' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+.faq-item summary:hover {
+  background: var(--surface-container-low);
+}
+.faq-item .faq-answer {
+  padding: 0 28px 24px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* ===== SECTION HEADER CENTERED ===== */
+.section-header.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ===== CTA ALT ===== */
+.cta-alt {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 20px;
+}
+
+/* ===== HEADLINE ===== */
+.text-headline {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .why-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .models-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .why-cards-grid { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: 1fr; }
+  .when-grid { grid-template-columns: 1fr; gap: 32px; }
+  .models-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+</style>

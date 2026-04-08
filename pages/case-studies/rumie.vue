@@ -1,538 +1,456 @@
 <template>
-
-  <div class="min-h-screen bg-white">
-
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-orange-50 via-white to-red-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <NuxtLink
-          to="/portfolio"
-          class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium mb-6 transition-colors"
-        >
-          <ArrowLeft class="h-4 w-4 mr-2" />
-          Back to Portfolio
-        </NuxtLink>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-6">
-              <Heart class="h-4 w-4 mr-2" />
-              Non-Profit EdTech
-            </div>
-
-            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Rumie
-            </h1>
-            <p class="text-2xl text-orange-600 font-semibold mb-4">
-              {{ projectOverview.tagline }}
-            </p>
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Empowering learners worldwide through accessible, bite-sized education.
-              Our 4+ year partnership has transformed how Rumie delivers learning to
-              underserved communities across 176 countries.
-            </p>
-
-            <div class="flex flex-wrap gap-4 mb-8">
-              <a
-                :href="`https://${projectOverview.website}`"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Visit Rumie.org
-                <ExternalLink class="h-4 w-4 ml-2" />
-              </a>
-              <div class="inline-flex items-center px-6 py-3 bg-green-100 text-green-800 rounded-full font-semibold">
-                <Globe class="h-4 w-4 mr-2" />
-                176 Countries
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div v-for="[key, value] in Object.entries({
-                Client: projectOverview.client,
-                Type: projectOverview.type,
-                Duration: projectOverview.duration,
-                Status: projectOverview.status
-              })" :key="key">
-                <p class="text-sm text-gray-500 mb-1">{{ key }}</p>
-                <p class="font-semibold text-gray-900">{{ value }}</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative">
-            <div class="aspect-w-16 aspect-h-10 rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
-                alt="Rumie Platform"
-                class="w-full h-full object-cover"
-              />
-              <div class="absolute inset-0 bg-gradient-to-tr from-orange-600/20 to-transparent"></div>
-            </div>
-            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
-              <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                  <School class="h-6 w-6 text-orange-600" />
-                </div>
-                <div>
-                  <div class="text-sm font-semibold text-gray-900">Global Impact</div>
-                  <div class="text-xs text-gray-600">Transforming Education</div>
-                </div>
-              </div>
-            </div>
+  <div>
+    <!-- HERO -->
+    <section class="case-hero">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <NuxtLink to="/portfolio" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back to Portfolio
+          </NuxtLink>
+          <span class="text-label">Non-Profit EdTech</span>
+          <h1 class="text-display-lg" style="margin-top: 12px; margin-bottom: 8px;">Rumie</h1>
+          <p class="text-headline" style="color: var(--on-surface-variant); font-weight: 500; margin-bottom: 20px;">Democratizing Education Globally</p>
+          <p class="text-body-lg">Empowering learners worldwide through accessible, bite-sized education. Our 4+ year partnership has transformed how Rumie delivers learning to underserved communities across 176 countries.</p>
+          <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <a href="#" class="btn btn-primary">Visit Rumie.org</a>
+            <span class="hero-badge">176 Countries</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Results Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(result, idx) in results" :key="idx" class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl mb-4">
-              <component :is="result.icon" class="h-6 w-6" />
-            </div>
-            <div class="text-3xl font-bold text-gray-900 mb-1">{{ result.metric }}</div>
-            <div class="text-gray-600">{{ result.label }}</div>
+    <!-- META -->
+    <section style="background: var(--surface); padding: 48px 0;">
+      <div class="container-redesign">
+        <div class="meta-strip">
+          <div>
+            <div class="meta-item-label">Client</div>
+            <div class="meta-item-value">Rumie</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Type</div>
+            <div class="meta-item-value">Platform Modernization</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Duration</div>
+            <div class="meta-item-value">4+ Years</div>
+          </div>
+          <div>
+            <div class="meta-item-label">Status</div>
+            <div class="meta-item-value">Ongoing Partnership</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Challenge & Solution -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Challenge -->
-          <div>
-            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-red-100 text-red-600 rounded-2xl mb-6">
-                <Target class="h-7 w-7" />
-              </div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ challenge.title }}</h2>
-              <p class="text-gray-600 mb-6 leading-relaxed">{{ challenge.description }}</p>
-              <ul class="space-y-3">
-                <li v-for="(point, idx) in challenge.points" :key="idx" class="flex items-start">
-                  <ChevronRight class="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700">{{ point }}</span>
-                </li>
-              </ul>
-            </div>
+    <!-- STATS -->
+    <section style="padding: 80px 0;">
+      <div class="container-redesign">
+        <div class="stats-row" style="border-top: none; padding-top: 0; margin-top: 0;">
+          <div class="stat">
+            <span class="stat-value">176</span>
+            <span class="stat-label">Countries Reached</span>
           </div>
-
-          <!-- Solution -->
-          <div>
-            <div class="bg-white rounded-3xl p-8 shadow-lg h-full">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-green-100 text-green-600 rounded-2xl mb-6">
-                <CheckCircle class="h-7 w-7" />
-              </div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ solution.title }}</h2>
-              <p class="text-gray-600 mb-6 leading-relaxed">{{ solution.description }}</p>
-              <ul class="space-y-3">
-                <li v-for="(point, idx) in solution.points" :key="idx" class="flex items-start">
-                  <CheckCircle class="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700">{{ point }}</span>
-                </li>
-              </ul>
-            </div>
+          <div class="stat">
+            <span class="stat-value">45%</span>
+            <span class="stat-label">Mobile Engagement Increase</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">60%</span>
+            <span class="stat-label">Speed Improvement</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">4+</span>
+            <span class="stat-label">Years Partnership</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Features Delivered</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Innovative solutions enabling education access for everyone, everywhere
-          </p>
+    <!-- CHALLENGE -->
+    <section style="padding-top: 0;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">The Challenge</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Rumie needed to modernize their platform to reach learners in underserved communities worldwide, facing challenges with legacy systems and limited mobile accessibility.</p>
+          <ul class="check-list" style="margin-top: 28px;">
+            <li>Legacy tech limiting scalability</li>
+            <li>Lack of mobile-first solution</li>
+            <li>Need for offline functionality</li>
+            <li>Platform performance issues</li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div
-            v-for="(feature, idx) in features"
-            :key="idx"
-            :class="`bg-white rounded-3xl p-8 cursor-pointer transition-all duration-300 ${
-              activeFeature === idx
-                ? 'shadow-2xl scale-105 border-2 border-orange-500'
-                : 'shadow-lg hover:shadow-xl'
-            }`"
-            @click="activeFeature = idx"
-          >
-            <div class="inline-flex items-center justify-center w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl mb-6">
-              <component :is="feature.icon" class="h-6 w-6" />
+    <!-- SOLUTION -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Our Solution</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">We transformed Rumie's platform with modern architecture, developed a cross-platform mobile app, and implemented offline capabilities to ensure education reaches everyone, everywhere.</p>
+          <ul class="check-list" style="margin-top: 28px;">
+            <li>Complete platform modernization</li>
+            <li>Cross-platform mobile app with offline</li>
+            <li>60% performance improvement</li>
+            <li>SEO optimization expanding reach to 176 countries</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <h2 class="text-display-sm">Key Features</h2>
+        </div>
+        <div class="key-features-grid">
+          <div class="key-feature-card">
+            <div class="key-feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ feature.title }}</h3>
-            <p class="text-gray-600 mb-6">{{ feature.description }}</p>
-            <ul class="space-y-2">
-              <li v-for="(detail, detailIdx) in feature.details" :key="detailIdx" class="flex items-center text-sm text-gray-700">
-                <CheckCircle class="h-4 w-4 text-orange-500 mr-2" />
-                {{ detail }}
-              </li>
+            <h3>Mobile Learning Platform</h3>
+            <p>Cross-platform mobile application enabling learning on any device, reaching communities with limited computer access.</p>
+            <ul class="sub-features">
+              <li>Native iOS &amp; Android apps</li>
+              <li>PWA</li>
+              <li>Responsive design</li>
+              <li>Touch-optimized</li>
+            </ul>
+          </div>
+          <div class="key-feature-card">
+            <div class="key-feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3>Offline Learning</h3>
+            <p>Revolutionary offline functionality allowing learners to access content without internet connectivity.</p>
+            <ul class="sub-features">
+              <li>Content caching</li>
+              <li>Offline progress tracking</li>
+              <li>Smart sync</li>
+              <li>Minimal data usage</li>
+            </ul>
+          </div>
+          <div class="key-feature-card">
+            <div class="key-feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Global Accessibility</h3>
+            <p>Platform optimized for global reach with multi-language support and accessibility features.</p>
+            <ul class="sub-features">
+              <li>Multi-language</li>
+              <li>Accessibility compliance</li>
+              <li>Low-bandwidth optimization</li>
+              <li>Cultural localization</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Transformation Comparison -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Platform Evolution</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            4+ years of continuous improvement and global expansion
-          </p>
+    <!-- PLATFORM EVOLUTION -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Platform Evolution</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8">
-            <h3 class="text-xl font-bold text-gray-900 mb-6">Before Partnership</h3>
-            <div class="space-y-4">
-              <div v-for="[key, value] in Object.entries(stats.before)" :key="key" class="flex items-center justify-between">
-                <span class="text-gray-600 capitalize">{{ key.replace('_', ' ') }}</span>
-                <span class="font-semibold text-red-600">{{ value }}</span>
-              </div>
-            </div>
+        <div class="evolution-grid">
+          <div class="evolution-col evolution-before">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              Before
+            </h3>
+            <ul>
+              <li>Limited regions</li>
+              <li>No mobile app</li>
+              <li>Slow loading</li>
+              <li>Online only</li>
+            </ul>
           </div>
-
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8">
-            <h3 class="text-xl font-bold text-gray-900 mb-6">After Transformation</h3>
-            <div class="space-y-4">
-              <div v-for="[key, value] in Object.entries(stats.after)" :key="key" class="flex items-center justify-between">
-                <span class="text-gray-600 capitalize">{{ key.replace('_', ' ') }}</span>
-                <span class="font-semibold text-green-600">{{ value }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social Impact -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ impact.title }}</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            {{ impact.description }}
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div v-for="(achievement, idx) in impact.achievements" :key="idx" class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center">
-                  <component :is="achievement.icon" class="h-5 w-5" />
-                </div>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">{{ achievement.title }}</h3>
-                <p class="text-gray-600">{{ achievement.description }}</p>
-              </div>
-            </div>
+          <div class="evolution-col evolution-after">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              After
+            </h3>
+            <ul>
+              <li>176 countries</li>
+              <li>Full mobile suite</li>
+              <li>60% faster</li>
+              <li>Full offline mode</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Partnership Timeline -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Partnership Journey</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Building lasting impact through continuous innovation
-          </p>
+    <!-- SOCIAL IMPACT -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <h2 class="text-display-sm">Social Impact</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">Transforming lives through accessible education worldwide</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div v-for="(milestone, idx) in milestones" :key="idx" class="relative">
-            <div v-if="idx < milestones.length - 1" class="hidden md:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-orange-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10">
-              <div class="text-orange-600 font-bold text-sm mb-2">{{ milestone.year }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ milestone.title }}</h3>
-              <p class="text-sm text-gray-600">{{ milestone.description }}</p>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
+            <h3>Global Reach</h3>
+            <p>Education now accessible in 176 countries, including remote areas</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Inclusive Learning</h3>
+            <p>Bite-sized content accessible to learners with varying literacy levels</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Offline Access</h3>
+            <p>Learning continues even without internet connectivity</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3>Mobile First</h3>
+            <p>45% increase in mobile engagement democratizing access</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technologies -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Technology Stack</h2>
-          <p class="text-lg text-gray-600">
-            Modern technologies enabling global education access
-          </p>
+    <!-- PARTNERSHIP JOURNEY -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Partnership Journey</h2>
         </div>
-
-        <div class="flex flex-wrap justify-center gap-4">
-          <span
-            v-for="(tech, idx) in technologies"
-            :key="idx"
-            class="px-6 py-3 bg-gradient-to-br from-orange-50 to-red-50 text-orange-700 rounded-full font-semibold hover:shadow-md transition-all duration-300"
-          >
-            {{ tech }}
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission Statement -->
-    <section class="py-20 bg-gradient-to-br from-orange-50 to-red-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <BookOpen class="h-16 w-16 text-orange-600 mx-auto mb-6" />
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">
-          Making Education Accessible to All
-        </h2>
-        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-          Through our partnership with Rumie, we're proud to contribute to a mission that
-          transforms lives through education. Together, we've built technology that breaks
-          down barriers and brings learning opportunities to communities worldwide.
-        </p>
-        <div class="inline-flex items-center px-6 py-3 bg-white rounded-full text-orange-600 font-semibold shadow-lg">
-          <Heart class="h-5 w-5 mr-2" />
-          Proud Technology Partner
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="journey-year">Year 1</div>
+            <h3>Platform Assessment</h3>
+            <p>Comprehensive audit and modernization strategy</p>
+          </div>
+          <div class="journey-step">
+            <div class="journey-year">Year 2</div>
+            <h3>Infrastructure Overhaul</h3>
+            <p>Migration to modern, scalable architecture</p>
+          </div>
+          <div class="journey-step">
+            <div class="journey-year">Year 3</div>
+            <h3>Mobile Development</h3>
+            <p>Launch of cross-platform mobile applications</p>
+          </div>
+          <div class="journey-step">
+            <div class="journey-year">Year 4+</div>
+            <h3>Continuous Innovation</h3>
+            <p>Ongoing enhancements and global expansion</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-white">
-      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Want to build something that matters?
-        </h2>
-        <p class="text-xl text-gray-600 mb-8">
-          We'd love to hear what you're working on.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Start a conversation
-            <ArrowRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
-          <NuxtLink
-            to="/portfolio"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-orange-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-orange-200"
-          >
-            See our work
-            <ChevronRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
+    <!-- TECH STACK -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="text-label">Technology</span>
+          <h2 class="text-display-sm" style="margin-top: 12px;">Tech Stack</h2>
+        </div>
+        <div class="tech-tags" style="justify-content: center;">
+          <span class="tech-tag">React Native</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Progressive Web App</span>
+          <span class="tech-tag">Service Workers</span>
+          <span class="tech-tag">CDN</span>
+          <span class="tech-tag">ElasticSearch</span>
+          <span class="tech-tag">Redis Cache</span>
         </div>
       </div>
     </section>
 
+    <!-- IMAGE -->
+    <section style="padding-top: 0;">
+      <div class="container-redesign">
+        <img src="/images/case-study-rumie.png" alt="Rumie — Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="closing-block">
+          <p>Through our partnership with Rumie, we're proud to contribute to a mission that transforms lives through education. Together, we've built technology that breaks down barriers and brings learning opportunities to communities worldwide.</p>
+          <span class="text-label" style="display: block; margin-top: 20px;">Proud Technology Partner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Want to build something that matters?</h2>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">We'd love to hear what you're working on.</p>
+        <div style="margin-top: 36px; display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio" class="btn btn-secondary" style="font-size: 18px; padding: 18px 40px;">See our work</NuxtLink>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import {
-  ArrowRight, Globe, BookOpen, Heart, Rocket,
-  CheckCircle, Star, ChevronRight, Smartphone, Wifi, WifiOff,
-  ArrowLeft, ExternalLink, Clock, Target, Award, Sparkles,
-  Users, TrendingUp, Zap, School, MapPin, Download
-} from 'lucide-vue-next'
-
-// Use the v3 layout
 definePageMeta({
   layout: 'default'
 })
 
 useSeoMeta({
-  title: 'Rumie Case Study | Democratizing Education in 176 Countries | AcornGlobus',
-  description: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, 60% speed improvement, reaching learners in 176 countries. 4+ year ongoing partnership.',
-  keywords: 'Rumie case study, EdTech platform, education technology, offline learning, mobile app, AcornGlobus portfolio',
-  author: 'AcornGlobus',
-  robots: 'index, follow',
-  ogTitle: 'Rumie Case Study | Education in 176 Countries | AcornGlobus',
-  ogDescription: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, 60% speed improvement, reaching 176 countries.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  title: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  description: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
+  ogTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  ogDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
+  ogImage: 'https://acornglobus.com/images/case-study-rumie.png',
   ogUrl: 'https://acornglobus.com/case-studies/rumie',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Rumie Case Study | Education in 176 Countries',
-  twitterDescription: 'How we modernized Rumie\'s EdTech platform: mobile app with offline learning, reaching 176 countries.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/rumie' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'Case Studies', path: '/projects' },
+  { name: 'Portfolio', path: '/portfolio' },
   { name: 'Rumie', path: '/case-studies/rumie' },
 ])
-
-const activeFeature = ref(0)
-
-const projectOverview = {
-  client: 'Rumie',
-  industry: 'Non-Profit / EdTech',
-  type: 'Platform Modernization',
-  duration: '4+ Years',
-  status: 'Ongoing Partnership',
-  website: 'rumie.org',
-  tagline: 'Democratizing Education Globally'
-}
-
-const challenge = {
-  title: 'The Challenge',
-  description: 'Rumie needed to modernize their platform to reach learners in underserved communities worldwide, facing challenges with legacy systems and limited mobile accessibility.',
-  points: [
-    'Legacy technology infrastructure limiting scalability',
-    'Lack of mobile-first learning solution',
-    'Need for offline functionality in low-connectivity areas',
-    'Platform performance issues affecting user experience'
-  ]
-}
-
-const solution = {
-  title: 'Our Solution',
-  description: 'We transformed Rumie\'s platform with modern architecture, developed a cross-platform mobile app, and implemented offline capabilities to ensure education reaches everyone, everywhere.',
-  points: [
-    'Complete platform modernization with scalable architecture',
-    'Cross-platform mobile app with offline functionality',
-    '60% performance improvement for faster learning',
-    'SEO optimization expanding global reach to 176 countries'
-  ]
-}
-
-const features = [
-  {
-    icon: Smartphone,
-    title: 'Mobile Learning Platform',
-    description: 'Cross-platform mobile application enabling learning on any device, reaching communities with limited computer access.',
-    details: [
-      'Native iOS & Android apps',
-      'Progressive Web App (PWA)',
-      'Responsive design',
-      'Touch-optimized interface'
-    ]
-  },
-  {
-    icon: WifiOff,
-    title: 'Offline Learning',
-    description: 'Revolutionary offline functionality allowing learners to access content without internet connectivity.',
-    details: [
-      'Content caching system',
-      'Offline progress tracking',
-      'Smart sync when online',
-      'Minimal data usage'
-    ]
-  },
-  {
-    icon: Globe,
-    title: 'Global Accessibility',
-    description: 'Platform optimized for global reach with multi-language support and accessibility features.',
-    details: [
-      'Multi-language interface',
-      'Accessibility compliance',
-      'Low-bandwidth optimization',
-      'Cultural localization'
-    ]
-  }
-]
-
-const results = [
-  { metric: '176', label: 'Countries Reached', icon: Globe },
-  { metric: '45%', label: 'Mobile Engagement Increase', icon: Smartphone },
-  { metric: '60%', label: 'Speed Improvement', icon: Zap },
-  { metric: '4+', label: 'Years Partnership', icon: Heart }
-]
-
-const impact = {
-  title: 'Social Impact',
-  description: 'Transforming lives through accessible education worldwide',
-  achievements: [
-    {
-      title: 'Global Reach',
-      description: 'Education now accessible in 176 countries, including remote areas',
-      icon: MapPin
-    },
-    {
-      title: 'Inclusive Learning',
-      description: 'Bite-sized content accessible to learners with varying literacy levels',
-      icon: Users
-    },
-    {
-      title: 'Offline Access',
-      description: 'Learning continues even without internet connectivity',
-      icon: WifiOff
-    },
-    {
-      title: 'Mobile First',
-      description: '45% increase in mobile engagement democratizing access',
-      icon: Smartphone
-    }
-  ]
-}
-
-const technologies = [
-  'React Native',
-  'Node.js',
-  'MongoDB',
-  'AWS',
-  'Progressive Web App',
-  'Service Workers',
-  'CDN',
-  'ElasticSearch',
-  'Redis Cache'
-]
-
-const milestones = [
-  {
-    year: 'Year 1',
-    title: 'Platform Assessment',
-    description: 'Comprehensive audit and modernization strategy'
-  },
-  {
-    year: 'Year 2',
-    title: 'Infrastructure Overhaul',
-    description: 'Migration to modern, scalable architecture'
-  },
-  {
-    year: 'Year 3',
-    title: 'Mobile Development',
-    description: 'Launch of cross-platform mobile applications'
-  },
-  {
-    year: 'Year 4+',
-    title: 'Continuous Innovation',
-    description: 'Ongoing enhancements and global expansion'
-  }
-]
-
-const stats = {
-  before: {
-    reach: 'Limited regions',
-    mobile: 'No mobile app',
-    speed: 'Slow loading',
-    offline: 'Online only'
-  },
-  after: {
-    reach: '176 countries',
-    mobile: 'Full mobile suite',
-    speed: '60% faster',
-    offline: 'Full offline mode'
-  }
-}
 </script>
+
+<style scoped>
+/* Case Study Hero */
+.case-hero { padding-top: 140px; padding-bottom: 80px; }
+.case-hero .hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--primary-fixed-dim); padding: 8px 18px;
+  border-radius: var(--radius-pill); font-size: 14px; font-weight: 700;
+  color: var(--primary); margin-top: 24px;
+}
+
+/* Meta strip */
+.meta-strip {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+  padding: 32px 0;
+}
+.meta-item-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-tertiary); margin-bottom: 4px; }
+.meta-item-value { font-size: 16px; font-weight: 600; color: var(--on-surface); }
+
+/* Before / After */
+.evolution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 40px; }
+.evolution-col h3 { font-size: 18px; font-weight: 700; color: var(--on-surface); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+.evolution-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.evolution-col li { font-size: 16px; color: var(--on-surface-variant); padding-left: 28px; position: relative; line-height: 1.5; }
+.evolution-before li::before {
+  content: ''; position: absolute; left: 0; top: 6px; width: 16px; height: 16px;
+  border-radius: 50%; background: rgba(251, 188, 5, 0.15);
+  border: 2px solid var(--amber);
+}
+.evolution-after li::before {
+  content: ''; position: absolute; left: 0; top: 6px; width: 16px; height: 16px;
+  border-radius: 50%; background: rgba(52, 168, 83, 0.15);
+  border: 2px solid var(--success);
+}
+
+/* Impact cards */
+.impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.impact-card {
+  background: var(--surface-container-lowest); border-radius: var(--radius-card);
+  padding: 28px; transition: all var(--duration-normal) var(--ease-premium);
+}
+.impact-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.impact-card-icon {
+  width: 44px; height: 44px; background: var(--primary-fixed-dim);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.impact-card h3 { font-size: 17px; font-weight: 700; color: var(--on-surface); margin-bottom: 8px; }
+.impact-card p { font-size: 15px; line-height: 1.6; color: var(--on-surface-variant); }
+
+/* Key feature cards */
+.key-features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.key-feature-card {
+  background: var(--surface-container-lowest); border-radius: var(--radius-card);
+  padding: 32px; transition: all var(--duration-normal) var(--ease-premium);
+}
+.key-feature-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.key-feature-icon {
+  width: 48px; height: 48px; background: var(--primary-fixed-dim);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.key-feature-card h3 { font-size: 20px; font-weight: 700; color: var(--on-surface); margin-bottom: 10px; }
+.key-feature-card > p { font-size: 16px; line-height: 1.6; color: var(--on-surface-variant); margin-bottom: 20px; }
+.sub-features { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.sub-features li {
+  font-size: 14px; color: var(--on-surface-variant); padding-left: 24px; position: relative; line-height: 1.5;
+}
+.sub-features li::before {
+  content: ''; position: absolute; left: 0; top: 5px; width: 14px; height: 14px;
+  background: var(--primary-fixed-dim); border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 24 24' fill='none' stroke='%230058bd' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: center; background-size: 8px;
+}
+
+/* Tech tags */
+.tech-tags { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.tech-tag {
+  padding: 10px 20px; background: var(--surface-container-lowest);
+  border-radius: var(--radius-pill); font-size: 15px; font-weight: 600;
+  color: var(--on-surface); border: 1px solid var(--outline-variant);
+  transition: all var(--duration-fast) var(--ease-premium);
+}
+.tech-tag:hover { background: var(--primary-fixed-dim); border-color: var(--primary-fixed-dim); color: var(--primary); }
+
+/* Journey timeline */
+.journey-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.journey-step { position: relative; padding-top: 24px; }
+.journey-step::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-container));
+  border-radius: 2px;
+}
+.journey-year {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--brand-blue); margin-bottom: 8px;
+}
+.journey-step h3 { font-size: 18px; font-weight: 700; color: var(--on-surface); margin-bottom: 8px; }
+.journey-step p { font-size: 15px; line-height: 1.6; color: var(--on-surface-variant); }
+
+/* Closing quote */
+.closing-block {
+  max-width: 720px; margin: 0 auto; text-align: center;
+}
+.closing-block p { font-size: 20px; line-height: 1.65; color: var(--on-surface-variant); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .meta-strip { grid-template-columns: repeat(2, 1fr); }
+  .key-features-grid { grid-template-columns: 1fr; }
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .journey-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .case-hero { padding-top: 100px; }
+  .meta-strip { grid-template-columns: 1fr; gap: 20px; }
+  .evolution-grid { grid-template-columns: 1fr; gap: 32px; }
+  .impact-grid { grid-template-columns: 1fr; }
+  .journey-steps { grid-template-columns: 1fr; }
+}
+</style>

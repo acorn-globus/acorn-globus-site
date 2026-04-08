@@ -1,257 +1,127 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container-redesign">
+        <div class="hero-eyebrow"><span>Our Portfolio</span></div>
+        <h1 class="text-display-lg" style="max-width: 800px;">Products We've Built And Stories Behind Them</h1>
+        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of — and the partnerships that made it happen.</p>
+        <NuxtLink to="/contact" class="btn btn-primary" style="margin-top: 40px;">Let's build together</NuxtLink>
       </div>
+    </section>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-            <Briefcase class="h-4 w-4 mr-2" />
-            Our Portfolio
+    <!-- ===== STATS BAR ===== -->
+    <section style="padding: 48px 0; background: var(--surface);">
+      <div class="container-redesign">
+        <div class="stats-row" style="border-top: none; margin-top: 0; padding-top: 0;">
+          <div><div class="stat-value">25+</div><div class="stat-label">Products Shipped</div></div>
+          <div><div class="stat-value">80%+</div><div class="stat-label">Client Retention</div></div>
+          <div><div class="stat-value">7+</div><div class="stat-label">Years Building Together</div></div>
+          <div><div class="stat-value">20+</div><div class="stat-label">Engineers</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED SUCCESS STORY ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="text-label">Featured Success Story</span>
+          <p class="text-title-lg" style="color: var(--on-surface-variant); margin-top: 8px;">Our Flagship Product</p>
+        </div>
+        <div class="featured-grid">
+          <div class="featured-image">
+            <img src="/images/formester.png" alt="Formester Platform" style="width:100%;border-radius:16px;" loading="lazy">
           </div>
+          <div class="featured-content">
+            <h2>Formester</h2>
+            <p class="text-title-lg">AI-Powered No-Code Form Builder</p>
+            <p class="text-body" style="margin-top: 16px;">We built Formester ourselves — it's proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.7 on G2. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.</p>
+            <div class="featured-stats">
+              <div><div class="featured-stat-value">1000+</div><div class="featured-stat-label">Active Users</div></div>
+              <div><div class="featured-stat-value">50K+</div><div class="featured-stat-label">Forms Created</div></div>
+              <div><div class="featured-stat-value">4.7</div><div class="featured-stat-label">Rating on G2</div></div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Ruby on Rails</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">AI Integration</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+            <a href="https://formester.com" target="_blank" rel="noopener noreferrer" class="btn-text">Visit Formester <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Products We've Built
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              And Stories Behind Them
-            </span>
-          </h1>
-
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            From our own SaaS product to funded startups and global nonprofits, here's the work
-            we're proud of - and the partnerships that made it happen.
-          </p>
-
+    <!-- ===== PROJECT CARDS ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <h2 class="text-display-sm">Our Work</h2>
+        </div>
+        <div class="filter-tabs" style="justify-content: center;">
+          <button
+            v-for="filter in filters"
+            :key="filter.value"
+            class="tab-btn"
+            :class="{ active: activeFilter === filter.value }"
+            @click="activeFilter = filter.value"
+          >{{ filter.label }}</button>
+        </div>
+        <div class="projects-grid">
           <NuxtLink
-            to="/contact"
-            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 group"
+            v-for="project in filteredProjects"
+            :key="project.name"
+            :to="project.link"
+            class="project-card"
           >
-            Let's build together
-            <ArrowRight class="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+            <span class="project-category">{{ project.category }}</span>
+            <h3>{{ project.name }}</h3>
+            <p class="project-subtitle">{{ project.subtitle }}</p>
+            <p>{{ project.description }}</p>
+            <div class="tech-tags">
+              <span v-for="tag in project.tags" :key="tag" class="tech-tag">{{ tag }}</span>
+            </div>
+            <div class="project-stats">
+              <div v-for="stat in project.stats" :key="stat.label">
+                <div class="project-stat-value">{{ stat.value }}</div>
+                <div class="project-stat-label">{{ stat.label }}</div>
+              </div>
+            </div>
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section ref="statsSection" class="py-20 bg-white" :class="{ 'reveal-visible': sectionsVisible.stats, 'reveal-hidden': !sectionsVisible.stats }">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          <div v-for="(stat, index) in stats" :key="index" class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-50 text-blue-600 rounded-xl mb-4">
-              <component :is="stat.icon" class="h-6 w-6" />
-            </div>
-            <div class="text-2xl font-semibold text-gray-900 mb-0.5">{{ stat.value }}</div>
-            <div class="text-sm text-gray-500">{{ stat.label }}</div>
-          </div>
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <span class="text-label">From the people we build with</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">Success is best measured by client satisfaction</h2>
         </div>
-      </div>
-    </section>
-
-    <!-- Featured Project -->
-    <section v-if="featuredProject" ref="featuredSection" class="py-20 bg-gradient-to-b from-white to-blue-50/30" :class="{ 'reveal-visible': sectionsVisible.featured, 'reveal-hidden': !sectionsVisible.featured }">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            <Award class="h-4 w-4 mr-2" />
-            Featured Success Story
-          </div>
-          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Our Flagship Product</h2>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Image: show first on mobile, second on desktop -->
-          <div class="order-1 lg:order-2 relative">
-            <img
-              :src="featuredProject.image"
-              :alt="featuredProject.altText"
-              class="relative rounded-xl shadow-md"
-            />
-          </div>
-          <!-- Content: show second on mobile, first on desktop -->
-          <div class="order-2 lg:order-1">
-            <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
-              {{ featuredProject.name }}
-              <span class="block text-base font-medium text-blue-600 mt-2">{{ featuredProject.tagline }}</span>
-            </h3>
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed max-w-xl">
-              {{ featuredProject.longDescription }}
-            </p>
-
-            <div class="grid grid-cols-3 gap-3 mb-8">
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
-                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.users }}</div>
-                <div class="text-sm font-normal text-gray-500 mt-1">Active Users</div>
-              </div>
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
-                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.forms }}</div>
-                <div class="text-sm font-normal text-gray-500 mt-1">Forms Created</div>
-              </div>
-              <div class="text-center p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
-                <div class="text-2xl font-semibold text-blue-600">{{ featuredProject.metrics.rating }}&#9733;</div>
-                <div class="text-sm font-normal text-gray-500 mt-1">User Rating</div>
-              </div>
-            </div>
-
-            <div class="flex flex-wrap gap-1.5 mb-8">
-              <span v-for="(tech, index) in featuredProject.technologies" :key="index" class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium">
-                {{ tech }}
-              </span>
-            </div>
-
-            <a
-              :href="featuredProject.link"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 group"
-            >
-              Visit Formester
-              <ExternalLink class="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Grid (with integrated filters) -->
-    <section class="pt-20 pb-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section header with filters -->
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-12">
-          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 sm:mb-0">
-            Our Work
-          </h2>
-          <div class="flex flex-nowrap gap-2 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide" role="tablist" aria-label="Filter projects by category">
-            <button
-              v-for="filter in filters"
-              :key="filter.id"
-              @click="activeFilter = filter.id"
-              role="tab"
-              :aria-selected="activeFilter === filter.id"
-              :aria-pressed="activeFilter === filter.id"
-              :class="[
-                'inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0',
-                'focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none',
-                activeFilter === filter.id
-                  ? 'text-blue-600 bg-blue-50 ring-1 ring-blue-200'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-              ]"
-            >
-              <component :is="filter.icon" class="h-4 w-4 mr-1.5" />
-              <span>{{ filter.label }}</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Grid with TransitionGroup -->
-        <TransitionGroup
-          name="card"
-          tag="div"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-          role="tabpanel"
-          aria-label="Project list"
-        >
-          <NuxtLink
-            v-for="(project, index) in filteredProjects"
-            :key="project.id"
-            :to="getProjectLink(project.id)"
-            class="group relative bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:outline-none"
-            :style="{
-              boxShadow: hoveredProject === project.id
-                ? '0 20px 40px -10px rgba(37, 99, 235, 0.12)'
-                : '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-              transitionDelay: sectionsVisible.grid ? `${Math.min(index * 100, 400)}ms` : '0ms'
-            }"
-            @mouseenter="hoveredProject = project.id"
-            @mouseleave="hoveredProject = null"
-          >
-            <!-- Image Section -->
-            <div class="relative h-52 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
-              <img
-                v-if="!imageErrors[project.id]"
-                :src="project.image"
-                :alt="project.altText"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                @error="handleImageError(project.id)"
-              />
-              <div v-else class="absolute inset-0 flex flex-col items-center justify-center">
-                <component :is="getCategoryIcon(project.category)" class="h-12 w-12 text-gray-300 mb-3" />
-                <span class="text-sm font-medium text-gray-400">{{ project.name }}</span>
-              </div>
-
-              <!-- Category Badge on Image -->
-              <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-gray-700 rounded-lg text-xs font-medium capitalize inline-flex items-center">
-                  <component :is="getCategoryIcon(project.category)" class="h-3 w-3 mr-1" />
-                  {{ project.category }}
-                </span>
-                <span v-if="project.isOwnProduct" class="px-3 py-1 bg-blue-600/90 backdrop-blur-sm text-white rounded-lg text-xs font-medium inline-flex items-center">
-                  <Rocket class="h-3 w-3 mr-1" />
-                  Our Product
-                </span>
-              </div>
-            </div>
-
-            <!-- Content Section -->
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
-                {{ project.name }}
-              </h3>
-              <p class="text-sm font-medium text-blue-600 mb-3">{{ project.tagline }}</p>
-              <p class="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">{{ project.description }}</p>
-
-              <!-- Technologies (gray, metadata style) -->
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                <span v-for="(tech, idx) in project.technologies.slice(0, 3)" :key="idx" class="text-xs px-2.5 py-1 bg-gray-100 text-gray-600 rounded-lg font-medium">
-                  {{ tech }}
-                </span>
-                <span v-if="project.technologies.length > 3" class="text-xs px-2.5 py-1 bg-gray-100 text-gray-500 rounded-lg font-medium">
-                  +{{ project.technologies.length - 3 }}
-                </span>
-              </div>
-
-              <!-- Metrics -->
-              <div v-if="project.metrics" class="grid grid-cols-2 pt-4 border-t border-gray-100">
-                <div v-for="(value, key, idx) in Object.fromEntries(Object.entries(project.metrics).slice(0, 2))" :key="idx" class="text-center">
-                  <div class="text-lg font-semibold text-gray-900">
-                    {{ value }}
-                  </div>
-                  <div class="text-xs text-gray-500 capitalize mt-0.5">{{ key }}</div>
-                </div>
-              </div>
-            </div>
-          </NuxtLink>
-        </TransitionGroup>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section ref="testimonialsSection" class="py-20 bg-gray-50" :class="{ 'reveal-visible': sectionsVisible.testimonials, 'reveal-hidden': !sectionsVisible.testimonials }">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">From the people we build with</h2>
-          <p class="text-base text-gray-600">Success is best measured by client satisfaction</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div v-for="(testimonial, index) in testimonials" :key="index" class="bg-white border border-gray-200 rounded-xl p-8">
-            <Quote class="h-6 w-6 text-blue-200 mb-4" />
-            <p v-if="testimonial.framing" class="text-base font-semibold text-gray-900 mb-2">{{ testimonial.framing }}</p>
-            <p class="text-base text-gray-600 mb-6 italic leading-relaxed">{{ testimonial.content }}</p>
-
-            <div class="flex items-center">
-              <img
-                :src="testimonial.avatar"
-                :alt="testimonial.name"
-                class="w-10 h-10 rounded-full mr-3"
-              />
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-context">Built to last.</div>
+            <blockquote>"Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day."</blockquote>
+            <div class="testimonial-author-row">
+              <img src="/images/testimonials/alon.jpeg" alt="Alon Diamant" loading="lazy">
               <div>
-                <h4 class="text-sm font-semibold text-gray-900">{{ testimonial.name }}</h4>
-                <p class="text-xs text-gray-500">{{ testimonial.role }}, {{ testimonial.company }}</p>
+                <div class="testimonial-author">Alon Diamant</div>
+                <div class="testimonial-role">CTO, Mayple</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-context">They don't wait to be asked.</div>
+            <blockquote>"Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas."</blockquote>
+            <div class="testimonial-author-row">
+              <img src="/images/testimonials/enzo.jpeg" alt="Enzo Zadrima" loading="lazy">
+              <div>
+                <div class="testimonial-author">Enzo Zadrima</div>
+                <div class="testimonial-role">CTO, Viewber</div>
               </div>
             </div>
           </div>
@@ -259,357 +129,156 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section ref="ctaSection" class="py-20 bg-white" :class="{ 'reveal-visible': sectionsVisible.cta, 'reveal-hidden': !sectionsVisible.cta }">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-          Want to build something like this?
-        </h2>
-        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-          We'd love to hear what you're working on. No pitch decks - just a conversation about your product.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300 group w-full sm:w-auto justify-center"
-          >
-            Start a conversation
-            <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
-          </NuxtLink>
-          <NuxtLink
-            to="/services"
-            class="px-8 py-4 text-gray-600 font-medium hover:text-gray-900 transition-colors duration-200 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-          >
-            View Services
-          </NuxtLink>
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center; max-width: 640px;">
+        <h2 class="text-display-sm">Want to build something like this?</h2>
+        <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks — just a conversation about your product.</p>
+        <div class="cta-actions" style="justify-content: center;">
+          <NuxtLink to="/contact" class="btn btn-primary">Start a conversation</NuxtLink>
+          <NuxtLink to="/services" class="btn btn-secondary">View Services</NuxtLink>
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
-import {
-  ArrowRight, Filter, ExternalLink, Award, Globe, Zap,
-  BookOpen, Rocket, Target, Users, Star, Quote, ArrowUpRight,
-  ShoppingCart, Briefcase, Heart, School, Package, Layers,
-  CheckCircle, TrendingUp, Building2, ChevronRight, Sparkles,
-  Building, Cloud
-} from 'lucide-vue-next'
+import { ref, computed } from 'vue'
 
-// Use the v3 layout without default header/footer
-definePageMeta({
-  layout: 'default'
-})
+definePageMeta({ layout: 'default' })
 
-// SEO Meta Tags
 useSeoMeta({
-  title: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
-  description: 'Explore our portfolio: Formester (our own SaaS, 1000+ users), Eitoss (MVP to funding in 8 weeks), Rumie (1M+ learners in 176 countries). Real products, real outcomes.',
-  keywords: 'acorn globus portfolio, case studies, software development projects, formester, eitoss, rumie initiative, invoice falcon, success stories',
-  author: 'Acorn Globus',
-  robots: 'index, follow',
-  ogTitle: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
-  ogDescription: 'Explore our portfolio: Formester (our own SaaS, 1000+ users), Eitoss (MVP to funding in 8 weeks), Rumie (1M+ learners in 176 countries). Real products, real outcomes.',
+  title: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  description: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
+  ogTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/portfolio',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Portfolio - Acorn Globus | Products We\'ve Built & Case Studies',
-  twitterDescription: 'Explore our portfolio: Formester (our own SaaS), Eitoss (MVP to funding), Rumie (1M+ learners). Real products, real outcomes.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio' }] })
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio' },
 ])
 
-const activeFilter = ref('all')
-const hoveredProject = ref(null)
-const imageErrors = ref({})
-
-// Scroll reveal refs
-const statsSection = ref(null)
-const featuredSection = ref(null)
-const testimonialsSection = ref(null)
-const ctaSection = ref(null)
-
-const sectionsVisible = ref({
-  stats: false,
-  featured: false,
-  grid: false,
-  testimonials: false,
-  cta: false
-})
-
-// Intersection Observer for scroll-reveal
-let observers = []
-
-const setupObserver = (element, key) => {
-  if (!element) return
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          sectionsVisible.value[key] = true
-          observer.unobserve(entry.target)
-        }
-      })
-    },
-    { threshold: 0.1 }
-  )
-  observer.observe(element)
-  observers.push(observer)
-}
-
-onMounted(() => {
-  nextTick(() => {
-    setupObserver(statsSection.value, 'stats')
-    setupObserver(featuredSection.value, 'featured')
-    setupObserver(testimonialsSection.value, 'testimonials')
-    setupObserver(ctaSection.value, 'cta')
-    // Grid visible by default after a small delay for entrance animation
-    setTimeout(() => { sectionsVisible.value.grid = true }, 200)
-  })
-})
-
-onUnmounted(() => {
-  observers.forEach((obs) => obs.disconnect())
-  observers = []
-})
-
-const handleImageError = (projectId) => {
-  imageErrors.value[projectId] = true
-}
-
-const getCategoryIcon = (category) => {
-  const icons = { saas: Cloud, enterprise: Building, ecommerce: ShoppingCart, nonprofit: Heart }
-  return icons[category] || Building
-}
-
-const getProjectLink = (projectId) => {
-  const slugMap = { 1: 'formester', 2: 'eitoss', 3: 'invoice-falcon', 4: 'rumie', 5: 'performline' }
-  return `/case-studies/${slugMap[projectId] || ''}`
-}
-
 const filters = [
-  { id: 'all', label: 'All Projects', icon: Layers },
-  { id: 'saas', label: 'SaaS', icon: Cloud },
-  { id: 'enterprise', label: 'Enterprise', icon: Building2 },
-  { id: 'ecommerce', label: 'E-Commerce', icon: ShoppingCart },
-  { id: 'nonprofit', label: 'Non-Profit', icon: Heart }
+  { value: 'all', label: 'All Projects' },
+  { value: 'saas', label: 'SaaS' },
+  { value: 'enterprise', label: 'Enterprise' },
+  { value: 'ecommerce', label: 'E-Commerce' },
+  { value: 'nonprofit', label: 'Non-Profit' },
 ]
+const activeFilter = ref('all')
 
 const projects = [
   {
-    id: 1,
-    name: 'Formester',
-    category: 'saas',
-    tagline: 'AI-Powered No-Code Form Builder',
-    description: 'Our own SaaS product - a no-code form builder with AI capabilities. Build complex forms with advanced logic without writing a single line of code.',
-    longDescription: 'We built Formester ourselves - it\'s proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.8 rating. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.',
-    isOwnProduct: true,
-    technologies: ['Ruby on Rails', 'Vue.js', 'PostgreSQL', 'AI Integration', 'AWS'],
-    features: [
-      'AI-powered form generation',
-      'No-code drag & drop builder',
-      'Advanced conditional logic',
-      '100+ integrations',
-      'Real-time analytics'
-    ],
-    metrics: {
-      users: '1000+',
-      forms: '50K+',
-      rating: '4.8'
-    },
-    altText: 'Screenshot of Formester drag-and-drop form builder interface',
-    image: '/images/formester-mockup.png',
-    link: 'https://formester.com',
-    featured: true
-  },
-  {
-    id: 2,
     name: 'Eitoss',
-    category: 'enterprise',
-    tagline: 'Bridging Management & Frontline Workers',
+    subtitle: 'Bridging Management & Frontline Workers',
     description: 'A platform implementing Kaizen principles to bridge the communication gap between management and frontline workers, driving continuous improvement.',
-    longDescription: 'Eitoss connects decision-makers with ground-level employees through a seamless communication channel, fostering a culture of continuous improvement. We shipped the MVP in 8 weeks, they raised funding, and we\'re still building together 2+ years later.',
-    technologies: ['Ruby on Rails', 'React', 'PostgreSQL', 'AI Integration', 'Real-time Analytics'],
-    features: [
-      'Real-time communication channels',
-      'Kaizen implementation tools',
-      'Performance analytics',
-      'Mobile-first design',
-      'Automated workflow management'
-    ],
-    metrics: {
-      efficiency: '+40%',
-      adoption: '95%',
-      roi: '3x'
-    },
-    altText: 'Screenshot of Eitoss management-frontline communication platform',
-    image: '/images/eitoss-mockup.png',
-    featured: true
+    category: 'Enterprise',
+    filterKey: 'enterprise',
+    tags: ['Ruby on Rails', 'React', 'PostgreSQL'],
+    stats: [{ value: '+40%', label: 'efficiency' }, { value: '95%', label: 'adoption' }],
+    link: '/case-studies/eitoss',
   },
   {
-    id: 5,
     name: 'PerformLine',
-    category: 'enterprise',
-    tagline: 'Regulatory Compliance at Scale',
+    subtitle: 'Regulatory Compliance at Scale',
     description: 'A regulatory technology platform that monitors marketing content across channels for compliance. We started with 1 engineer and grew to 8+ over 2 years.',
-    longDescription: 'PerformLine automates compliance monitoring across web, calls, emails, messages, and social media. We embedded with their team from day one - 1 engineer became 8+ across full-stack, DevOps, QA, and frontend over a 2-year partnership.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Microservices'],
-    features: [
-      'Multi-channel compliance monitoring',
-      'Automated content scanning',
-      'Real-time alerting',
-      'Custom rule engine',
-      'Analytics dashboards'
-    ],
-    metrics: {
-      team: '8+',
-      duration: '2+ years',
-      channels: '5+'
-    },
-    altText: 'PerformLine regulatory compliance monitoring platform',
-    image: '/images/performline-mockup.png',
-    featured: true
+    category: 'Enterprise',
+    filterKey: 'enterprise',
+    tags: ['React', 'Node.js', 'PostgreSQL'],
+    stats: [{ value: '8+', label: 'team' }, { value: '2+', label: 'years duration' }],
+    link: '/case-studies/performline',
   },
   {
-    id: 3,
     name: 'Invoice Falcon',
-    category: 'ecommerce',
-    tagline: 'Shopify Invoicing Made Simple',
-    description: 'A full-featured invoicing app for Shopify merchants - automated generation, multi-currency support, and tax compliance across 30+ countries.',
-    longDescription: 'Invoice Falcon simplifies invoicing for Shopify stores with automated generation, multi-currency support, and compliance with global tax regulations, serving 500+ merchants worldwide.',
-    technologies: ['Ruby on Rails', 'React', 'Shopify API', 'AWS', 'Stripe'],
-    features: [
-      'Automated invoice generation',
-      'Multi-currency support',
-      'Tax compliance automation',
-      'Custom branding options',
-      'Bulk operations'
-    ],
-    metrics: {
-      merchants: '500+',
-      invoices: '100K+',
-      countries: '30+'
-    },
-    altText: 'Screenshot of Invoice Falcon Shopify invoicing dashboard',
-    image: '/images/invoice-falcon-mockup.png',
-    link: '#',
-    featured: false
+    subtitle: 'Shopify Invoicing Made Simple',
+    description: 'A full-featured invoicing app for Shopify merchants — automated generation, multi-currency support, and tax compliance across 30+ countries.',
+    category: 'E-Commerce',
+    filterKey: 'ecommerce',
+    tags: ['Ruby on Rails', 'React', 'Shopify API'],
+    stats: [{ value: '500+', label: 'merchants' }, { value: '100K+', label: 'invoices' }],
+    link: '/case-studies/invoice-falcon',
   },
   {
-    id: 4,
     name: 'Rumie',
-    category: 'nonprofit',
-    tagline: 'Democratizing Education Globally',
+    subtitle: 'Democratizing Education Globally',
     description: 'Democratizing education through bite-sized learning experiences, reaching learners across 176 countries with accessible, quality content.',
-    longDescription: 'Rumie breaks down barriers to education by providing micro-learning content that works on any device, anywhere in the world, making quality education accessible to everyone.',
-    technologies: ['Nuxt', 'Vue.js', 'Flutter', 'AWS', 'Firebase'],
-    features: [
-      'Offline-first architecture',
-      'Multi-language support',
-      'Bite-sized lessons',
-      'Progress tracking',
-      'Community features'
-    ],
-    metrics: {
-      countries: '176',
-      learners: '1M+',
-      lessons: '10K+'
-    },
-    altText: 'Screenshot of Rumie micro-learning platform interface',
-    image: '/images/rumie-mockup.png',
-    link: '#',
-    featured: true
-  }
-]
-
-// Exclude Formester from grid (featured section handles it)
-const filteredProjects = computed(() => {
-  const nonFeatured = projects.filter(p => p.id !== 1)
-  return activeFilter.value === 'all'
-    ? nonFeatured
-    : nonFeatured.filter(project => project.category === activeFilter.value)
-})
-
-const featuredProject = computed(() => projects.find(p => p.featured && p.id === 1))
-
-const stats = [
-  { value: '25+', label: 'Products Shipped', icon: Rocket },
-  { value: '80%+', label: 'Client Retention', icon: Star },
-  { value: '15+', label: 'Industries Served', icon: Globe },
-  { value: '1M+', label: 'End Users Impacted', icon: Users }
-]
-
-const testimonials = [
-  {
-    name: 'Alon Diamant',
-    role: 'CTO',
-    company: 'Mayple',
-    framing: 'Built to last.',
-    content: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
-    avatar: '/images/testimonials/alon.jpeg'
+    category: 'Non-Profit',
+    filterKey: 'nonprofit',
+    tags: ['Nuxt', 'Vue.js', 'Flutter'],
+    stats: [{ value: '176', label: 'countries' }, { value: '1M+', label: 'learners' }],
+    link: '/case-studies/rumie',
   },
-  {
-    name: 'Enzo Zadrima',
-    role: 'CTO',
-    company: 'Viewber',
-    framing: 'They don\'t wait to be asked.',
-    content: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
-    avatar: '/images/testimonials/enzo.jpeg'
-  }
 ]
+
+const filteredProjects = computed(() => {
+  if (activeFilter.value === 'all') return projects
+  return projects.filter(p => p.filterKey === activeFilter.value)
+})
 </script>
 
 <style scoped>
-/* Scroll reveal animations */
-.reveal-hidden {
-  opacity: 0;
-  transform: translateY(16px);
-}
+.hero { padding-top: 140px; }
 
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
+/* Featured story */
+.featured-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 48px; }
+.featured-content h2 { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+.featured-stats { display: flex; gap: 32px; margin: 24px 0; }
+.featured-stat-value { font-size: 24px; font-weight: 800; color: var(--on-surface); letter-spacing: -0.01em; }
+.featured-stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
 
-/* TransitionGroup for filter transitions */
-.card-enter-active {
-  transition: all 0.3s ease-out;
-}
+/* Tech tags */
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.tech-tag { padding: 6px 14px; font-size: 13px; font-weight: 600; color: var(--on-surface-variant); background: var(--surface-container-high); border-radius: var(--radius-pill); }
 
-.card-leave-active {
-  transition: all 0.2s ease-in;
-  position: absolute;
-}
+/* Filter tabs */
+.filter-tabs { display: flex; gap: 8px; margin-top: 32px; margin-bottom: 40px; }
+.tab-btn { padding: 10px 24px; font-size: 15px; font-weight: 600; font-family: inherit; border: none; border-radius: var(--radius-pill); cursor: pointer; background: var(--surface-container-high); color: var(--on-surface-variant); transition: all var(--duration-normal) var(--ease-premium); }
+.tab-btn.active { background: linear-gradient(135deg, var(--primary), var(--primary-container)); color: white; box-shadow: 0 4px 16px rgba(0, 88, 189, 0.25); }
+.tab-btn:hover:not(.active) { background: var(--surface-container); color: var(--on-surface); }
 
-.card-enter-from {
-  opacity: 0;
-  transform: translateY(12px);
-}
+/* Project cards */
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.project-card { display: block; color: inherit; text-decoration: none; background: var(--surface-container-lowest); border-radius: var(--radius-card); padding: 40px; transition: all var(--duration-normal) var(--ease-premium); }
+.project-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.project-category { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-blue); margin-bottom: 12px; display: inline-block; }
+.project-card h3 { font-size: 24px; font-weight: 700; color: var(--on-surface); margin-bottom: 4px; }
+.project-subtitle { font-size: 16px; font-weight: 500; color: var(--text-secondary); margin-bottom: 12px; }
+.project-card > p { font-size: 16px; line-height: 1.6; color: var(--on-surface-variant); margin-bottom: 16px; }
+.project-stats { display: flex; gap: 24px; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(194, 198, 213, 0.15); }
+.project-stat-value { font-size: 20px; font-weight: 800; color: var(--on-surface); letter-spacing: -0.01em; }
+.project-stat-label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
 
-.card-leave-to {
-  opacity: 0;
-  transform: scale(0.95);
-}
+/* Testimonials */
+.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
+.testimonial-card { background: var(--surface-container-lowest); border-radius: var(--radius-card); padding: 36px; transition: all var(--duration-normal) var(--ease-premium); }
+.testimonial-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.testimonial-context { font-size: 14px; font-weight: 600; color: var(--brand-blue); margin-bottom: 16px; }
+.testimonial-card blockquote { font-size: 17px; line-height: 1.65; color: var(--on-surface-variant); font-style: italic; margin-bottom: 20px; }
+.testimonial-author-row { display: flex; align-items: center; gap: 12px; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(194, 198, 213, 0.15); }
+.testimonial-author-row img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+.testimonial-author { font-size: 15px; font-weight: 600; color: var(--on-surface); }
+.testimonial-role { font-size: 13px; color: var(--text-secondary); }
 
-.card-move {
-  transition: transform 0.3s ease;
-}
+/* CTA */
+.cta-actions { display: flex; gap: 16px; margin-top: 32px; }
 
-/* Hide scrollbar for filter pills on mobile */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+@media (max-width: 1024px) {
+  .featured-grid { grid-template-columns: 1fr; gap: 40px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
 }
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+@media (max-width: 640px) {
+  .hero { padding-top: 100px; }
+  .featured-content h2 { font-size: 28px; }
+  .featured-stats { flex-wrap: wrap; gap: 20px; }
+  .filter-tabs { flex-wrap: wrap; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .cta-actions { flex-direction: column; align-items: flex-start; }
+  .project-stats { flex-wrap: wrap; gap: 16px; }
 }
 </style>

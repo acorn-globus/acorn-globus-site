@@ -1,93 +1,100 @@
 <template>
-  <footer class="bg-gray-100 text-gray-600 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
-        <div>
-          <div class="mb-6">
+  <footer class="footer-redesign">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <div class="footer-logo">
             <img
-              src="/images/acorn-globus-logo-dark.svg"
+              src="/images/acorn-globus-logo.svg"
               alt="Acorn Globus"
-              class="h-10 w-auto"
+              class="h-6 w-auto"
             >
           </div>
-          <p class="text-sm mb-4">
-            We build products like they're our own. 20+ engineers, 80%+ client retention, and partnerships that last years.
+          <p>
+            We build products like they're our own. 20+ engineers, 80%+ client
+            retention, and partnerships that last years.
           </p>
-          <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/company/acornglobus" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <Linkedin class="h-5 w-5" />
-            </a>
-            <a href="https://www.instagram.com/acornglobus/?hl=en" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
-              <Instagram class="h-5 w-5" />
-            </a>
-          </div>
         </div>
 
-        <div>
-          <h4 class="text-gray-900 font-semibold mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/about" class="hover:text-blue-600 transition-colors">About Us</NuxtLink></li>
-            <li><NuxtLink to="/services" class="hover:text-blue-600 transition-colors">Services</NuxtLink></li>
-            <li><NuxtLink to="/portfolio" class="hover:text-blue-600 transition-colors">Portfolio</NuxtLink></li>
-            <li><NuxtLink to="/how-we-work" class="hover:text-blue-600 transition-colors">How We Work</NuxtLink></li>
-            <li><NuxtLink to="/blog" class="hover:text-blue-600 transition-colors">Blog</NuxtLink></li>
-            <li><NuxtLink to="/contact" class="hover:text-blue-600 transition-colors">Contact</NuxtLink></li>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><NuxtLink to="/about">About Us</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
+            <li><NuxtLink to="/how-we-work">How We Work</NuxtLink></li>
+            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+            <li><NuxtLink to="/contact">Contact</NuxtLink></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="text-gray-900 font-semibold mb-4">Services</h4>
-          <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/services/resource-augmentation" class="hover:text-blue-600 transition-colors">Resource Augmentation</NuxtLink></li>
-            <li><NuxtLink to="/services/full-project-delivery" class="hover:text-blue-600 transition-colors">Full Project Delivery</NuxtLink></li>
-            <li><NuxtLink to="/services/maintenance-support" class="hover:text-blue-600 transition-colors">Maintenance & Support</NuxtLink></li>
-            <li><NuxtLink to="/services/mvp-development" class="hover:text-blue-600 transition-colors">MVP Development</NuxtLink></li>
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><NuxtLink to="/services/resource-augmentation">Resource Augmentation</NuxtLink></li>
+            <li><NuxtLink to="/services/full-project-delivery">Full Project Delivery</NuxtLink></li>
+            <li><NuxtLink to="/services/maintenance-support">Maintenance &amp; Support</NuxtLink></li>
+            <li><NuxtLink to="/services/mvp-development">MVP Development</NuxtLink></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="text-gray-900 font-semibold mb-4">Hire Developers</h4>
-          <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/hire-react-developer" class="hover:text-blue-600 transition-colors">Hire React Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-angular-developer" class="hover:text-blue-600 transition-colors">Hire Angular Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-vuejs-developer" class="hover:text-blue-600 transition-colors">Hire Vue.js Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-nodejs-developer" class="hover:text-blue-600 transition-colors">Hire Node.js Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-rails-developer" class="hover:text-blue-600 transition-colors">Hire Rails Developers</NuxtLink></li>
+        <!-- Hire Developers -->
+        <div class="footer-col">
+          <h4>Hire Developers</h4>
+          <ul>
+            <li><NuxtLink to="/hire-react-developer">Hire React Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-angular-developer">Hire Angular Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-vuejs-developer">Hire Vue.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-nodejs-developer">Hire Node.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-rails-developer">Hire Rails Developers</NuxtLink></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="text-gray-900 font-semibold mb-4">Resources</h4>
-          <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/guides/it-staff-augmentation" class="hover:text-blue-600 transition-colors">IT Staff Augmentation Guide</NuxtLink></li>
-            <li><NuxtLink to="/guides/mvp-development" class="hover:text-blue-600 transition-colors">MVP Development Guide</NuxtLink></li>
-            <li><NuxtLink to="/case-studies/formester" class="hover:text-blue-600 transition-colors">Formester Case Study</NuxtLink></li>
-            <li><NuxtLink to="/case-studies/performline" class="hover:text-blue-600 transition-colors">PerformLine Case Study</NuxtLink></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-gray-900 font-semibold mb-4">Contact Info</h4>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start space-x-3">
-              <MapPin class="h-4 w-4 mt-1 flex-shrink-0" />
-              <span>Nagpur, Maharashtra, India</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <Mail class="h-4 w-4 flex-shrink-0" />
-              <span>business@acornglobus.com</span>
-            </li>
+        <!-- Resources -->
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><NuxtLink to="/guides/it-staff-augmentation">IT Staff Augmentation Guide</NuxtLink></li>
+            <li><NuxtLink to="/guides/mvp-development">MVP Development Guide</NuxtLink></li>
+            <li><NuxtLink to="/case-studies/formester">Formester Case Study</NuxtLink></li>
+            <li><NuxtLink to="/case-studies/performline">PerformLine Case Study</NuxtLink></li>
           </ul>
         </div>
       </div>
 
-      <div class="border-t border-gray-300 mt-12 pt-8">
-        <div class="flex flex-col md:flex-row justify-between items-center text-sm">
-          <p class="text-gray-600">&copy; 2026 Acorn Globus. All rights reserved.</p>
-          <div class="mt-4 md:mt-0">
-            <NuxtLink to="/privacy-policy" class="text-gray-600 hover:text-blue-600 transition-colors">
-              Privacy Policy
-            </NuxtLink>
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <span>&copy; {{ currentYear }} Acorn Globus. All rights reserved.</span>
+        <div class="footer-bottom-right">
+          <NuxtLink to="/privacy-policy" class="footer-privacy">
+            Privacy Policy
+          </NuxtLink>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/company/acornglobus"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="https://x.com/AcornGlobus"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -96,5 +103,158 @@
 </template>
 
 <script setup>
-import { MapPin, Mail, Linkedin, Instagram } from 'lucide-vue-next'
+const currentYear = new Date().getFullYear()
 </script>
+
+<style scoped>
+.footer-redesign {
+  background: var(--on-surface);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 80px 0 40px;
+}
+
+.footer-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 48px;
+}
+
+.footer-brand p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color var(--duration-fast) var(--ease-premium);
+}
+
+.footer-col a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-bottom {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-privacy {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color var(--duration-fast) var(--ease-premium);
+}
+
+.footer-privacy:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--duration-fast) var(--ease-premium);
+}
+
+.footer-social a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive — Tablet */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 0 32px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* Responsive — Mobile */
+@media (max-width: 640px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+</style>
