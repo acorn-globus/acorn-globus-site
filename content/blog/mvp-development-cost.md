@@ -3,7 +3,7 @@ title: "How Much Does MVP Development Cost in 2026?"
 description: "MVP development costs $15,000 to $200,000+ in 2026. We break down real pricing by type, team model, and complexity — plus hidden costs most guides skip."
 topic: MVP Development
 author: AcornGlobus
-coverImg: /images/blog/mvp-development-cost.png
+coverImg: /images/blog/mvp-development-cost.webp
 coverImgAlt: "How much does MVP development cost in 2026 — a founder's honest guide"
 published: true
 toc: true

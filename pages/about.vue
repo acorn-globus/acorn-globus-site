@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="origin-illustration">
-            <img src="/images/about-origin.png" alt="AcornGlobus journey from side project to 20+ person team" loading="lazy">
+            <img src="/images/about-origin.webp" alt="AcornGlobus journey from side project to 20+ person team" loading="lazy">
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@
               </div>
             </div>
             <div>
-              <img src="/images/performline.png" alt="Engineering team scaling from 1 to 8+ engineers" style="width: 100%; border-radius: 16px;" loading="lazy">
+              <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+ engineers" style="width: 100%; border-radius: 16px;" loading="lazy">
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
         <div class="partnership-story">
           <div class="partnership-story-grid">
             <div>
-              <img src="/images/eitoss.png" alt="Product development journey from idea to funding" style="width: 100%; border-radius: 16px;" loading="lazy">
+              <img src="/images/eitoss.webp" alt="Product development journey from idea to funding" style="width: 100%; border-radius: 16px;" loading="lazy">
             </div>
             <div>
               <h3 class="text-headline">Eitoss</h3>

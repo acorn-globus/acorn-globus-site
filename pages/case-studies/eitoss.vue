@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <img src="/images/case-study-eitoss.png" alt="Eitoss -- Kaizen communication platform connecting management and frontline workers" style="width: 100%; border-radius: 16px; margin-top: 32px;">
+        <img src="/images/case-study-eitoss.webp" alt="Eitoss -- Kaizen communication platform connecting management and frontline workers" style="width: 100%; border-radius: 16px; margin-top: 32px;">
       </div>
     </section>
 
@@ -242,7 +242,7 @@ useSeoMeta({
   description: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
   ogTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
   ogDescription: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
-  ogImage: 'https://acornglobus.com/images/case-study-eitoss.png',
+  ogImage: 'https://acornglobus.com/images/case-study-eitoss.webp',
   ogUrl: 'https://acornglobus.com/case-studies/eitoss',
   ogType: 'article',
   twitterCard: 'summary_large_image',

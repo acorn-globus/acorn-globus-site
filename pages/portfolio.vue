@@ -31,7 +31,7 @@
         </div>
         <div class="featured-grid">
           <div class="featured-image">
-            <img src="/images/formester.png" alt="Formester Platform" style="width:100%;border-radius:16px;" loading="lazy">
+            <img src="/images/formester.webp" alt="Formester Platform" style="width:100%;border-radius:16px;" loading="lazy">
           </div>
           <div class="featured-content">
             <h2>Formester</h2>

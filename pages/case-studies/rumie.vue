@@ -280,7 +280,7 @@
     <!-- IMAGE -->
     <section style="padding-top: 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-rumie.png" alt="Rumie — Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-rumie.webp" alt="Rumie — Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 
@@ -318,7 +318,7 @@ useSeoMeta({
   description: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   ogTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
   ogDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
-  ogImage: 'https://acornglobus.com/images/case-study-rumie.png',
+  ogImage: 'https://acornglobus.com/images/case-study-rumie.webp',
   ogUrl: 'https://acornglobus.com/case-studies/rumie',
   ogType: 'article',
   twitterCard: 'summary_large_image',

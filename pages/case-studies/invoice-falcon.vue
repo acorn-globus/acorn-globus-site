@@ -101,7 +101,7 @@
     <!-- IMAGE -->
     <section style="padding: 80px 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-invoice-falcon.png" alt="Invoice Falcon — Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-invoice-falcon.webp" alt="Invoice Falcon — Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 
@@ -283,7 +283,7 @@ useSeoMeta({
   description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   ogTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
   ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
-  ogImage: 'https://acornglobus.com/images/case-study-invoice-falcon.png',
+  ogImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
   ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon',
   ogType: 'article',
   twitterCard: 'summary_large_image',

@@ -3,7 +3,7 @@ title: "Code Shop vs. Product Engineering Team: What's the Difference?"
 description: "Not every dev team thinks about your product the same way. Here's how to tell a code shop from a product engineering team -- and why it matters."
 topic: Product Engineering
 author: AcornGlobus
-coverImg: /images/blog/code-shop-vs-product-engineering.png
+coverImg: /images/blog/code-shop-vs-product-engineering.webp
 coverImgAlt: "Code Shop vs Product Engineering Team — understanding the difference and why it matters"
 published: true
 createdAt: "2026-04-11"

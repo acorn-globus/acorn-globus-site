@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="hero-illustration">
-            <img src="/images/hero.png" alt="AcornGlobus team collaborating on product engineering" class="hero-img">
+            <img src="/images/hero.webp" alt="AcornGlobus team collaborating on product engineering" class="hero-img">
             <div class="floating-badge badge-formester">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -98,7 +98,7 @@
             </a>
           </div>
           <div class="hero-illustration">
-            <img src="/images/formester.png" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy">
+            <img src="/images/formester.webp" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy">
             <div class="floating-badge" style="bottom: 40px; right: -10px;">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -144,7 +144,7 @@
               </div>
             </div>
             <div class="hero-illustration">
-              <img src="/images/performline.png" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy">
+              <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy">
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="partnership-story">
           <div class="partnership-story-grid">
             <div class="hero-illustration">
-              <img src="/images/eitoss.png" alt="Product development journey from idea to funding" class="hero-img" loading="lazy">
+              <img src="/images/eitoss.webp" alt="Product development journey from idea to funding" class="hero-img" loading="lazy">
               <div class="floating-badge" style="top: 20px; left: -10px;">
                 <div class="badge-dot" style="background: var(--success);"></div>
                 <div>

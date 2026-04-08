@@ -97,7 +97,7 @@
           <p class="text-body-lg" style="margin-top: 20px;">Within weeks, our engineer was shipping production code. Not because we threw someone exceptionally senior at the problem — but because that's how we work. Our engineers ramp fast because they care about the product, not just the ticket.</p>
           <p class="text-body-lg" style="margin-top: 16px;">PerformLine needed more capacity. Not because we pitched them on it — because the work was good, the communication was clean, and the trust was real. So they asked for another engineer. Then another.</p>
         </div>
-        <img src="/images/performline.png" alt="Engineering team scaling from 1 to 8+" style="width:100%;border-radius:16px;margin-top:48px;" loading="lazy">
+        <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+" style="width:100%;border-radius:16px;margin-top:48px;" loading="lazy">
       </div>
     </section>
 
@@ -295,7 +295,7 @@ useSeoMeta({
   description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
   ogTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
   ogDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
-  ogImage: 'https://acornglobus.com/images/performline.png',
+  ogImage: 'https://acornglobus.com/images/performline.webp',
   ogUrl: 'https://acornglobus.com/case-studies/performline',
   ogType: 'article',
   twitterCard: 'summary_large_image',

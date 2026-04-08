@@ -2,7 +2,7 @@
 title: "Hiring Freelancers vs. Agencies: Which is Right for Your Business?"
 author: Ankit Singhaniya
 topic: Business
-coverImg: /images/blog/freelancer-or-agency-business.png
+coverImg: /images/blog/freelancer-or-agency-business.webp
 coverImgAlt: Cover image for the blog, "Understanding the difference between Ruby class method and instance method"
 published: true
 createdAt: "2023-10-06"

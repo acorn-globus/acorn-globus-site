@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="hero-image">
-            <img src="/images/formester.png" alt="Formester Platform" style="width:100%;border-radius:16px;" loading="lazy">
+            <img src="/images/formester.webp" alt="Formester Platform" style="width:100%;border-radius:16px;" loading="lazy">
           </div>
         </div>
       </div>
@@ -281,7 +281,7 @@ useSeoMeta({
   description: 'Formester is our SaaS product — a no-code, AI-powered form builder. Building it changed how we work with every client. Here\'s the full story.',
   ogTitle: 'Formester Case Study | We Built Our Own SaaS | AcornGlobus',
   ogDescription: 'Formester is our SaaS product — a no-code, AI-powered form builder. Building it changed how we work with every client. Here\'s the full story.',
-  ogImage: 'https://acornglobus.com/images/formester.png',
+  ogImage: 'https://acornglobus.com/images/formester.webp',
   ogUrl: 'https://acornglobus.com/case-studies/formester',
   ogType: 'article',
   twitterCard: 'summary_large_image',

@@ -3,7 +3,7 @@ title: "How to Hire Developers for Your Startup"
 description: "Hiring developers is one of the scariest decisions a founder makes. Here's how to evaluate, hire, and avoid getting burned — from a team that's been hired 25+ times."
 topic: Hiring Developers
 author: AcornGlobus
-coverImg: /images/blog/hire-developers-startup.png
+coverImg: /images/blog/hire-developers-startup.webp
 coverImgAlt: "How to hire developers for your startup without getting burned"
 published: true
 createdAt: "2026-04-07"

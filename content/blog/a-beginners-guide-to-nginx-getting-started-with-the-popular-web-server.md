@@ -14,7 +14,7 @@ keywords: Nginx, web server, beginner, tutorial, guide, installation,
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z
-coverImg: /images/blog/nginx-guide.png
+coverImg: /images/blog/nginx-guide.webp
 coverImgAlt: Nginx for Beginners
 published: true
 topic: Tech
