@@ -24,7 +24,7 @@ You're about to hand a big part of your budget — and your product vision — t
 
 Research from the Harvard Business Review puts the cost of a bad hire at 30% of first-year earnings. For startups, the math is worse. A bad hire doesn't just cost salary — it costs runway. And for many founders, it costs confidence.
 
-This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/case-studies).
+This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/portfolio).
 
 ## The 4 Hiring Models (and When Each Makes Sense)
 
