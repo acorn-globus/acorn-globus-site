@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="hero-illustration">
-            <img src="/images/hero.webp" alt="AcornGlobus team collaborating on product engineering" class="hero-img">
+            <img src="/images/hero.webp" alt="AcornGlobus team collaborating on product engineering" class="hero-img" width="1536" height="1024" fetchpriority="high">
             <div class="floating-badge badge-formester">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -98,7 +98,7 @@
             </a>
           </div>
           <div class="hero-illustration">
-            <img src="/images/formester.webp" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy">
+            <img src="/images/formester.webp" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy" width="1536" height="1024">
             <div class="floating-badge" style="bottom: 40px; right: -10px;">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -144,7 +144,7 @@
               </div>
             </div>
             <div class="hero-illustration">
-              <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy">
+              <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy" width="1536" height="1024">
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="partnership-story">
           <div class="partnership-story-grid">
             <div class="hero-illustration">
-              <img src="/images/eitoss.webp" alt="Product development journey from idea to funding" class="hero-img" loading="lazy">
+              <img src="/images/eitoss.webp" alt="Product development journey from idea to funding" class="hero-img" loading="lazy" width="1536" height="1024">
               <div class="floating-badge" style="top: 20px; left: -10px;">
                 <div class="badge-dot" style="background: var(--success);"></div>
                 <div>
@@ -204,7 +204,7 @@
             <h3>{{ service.title }}</h3>
             <p>{{ service.description }}</p>
             <NuxtLink :to="service.link" class="btn-text">
-              Learn more
+              Learn more about {{ service.title }}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </NuxtLink>
           </div>
@@ -241,7 +241,7 @@
             <div class="testimonial-context">{{ testimonial.context }}</div>
             <p class="testimonial-quote">"{{ testimonial.quote }}"</p>
             <div class="testimonial-author">
-              <img :src="testimonial.avatar" :alt="testimonial.name" class="testimonial-avatar" loading="lazy">
+              <img :src="testimonial.avatar" :alt="testimonial.name" class="testimonial-avatar" loading="lazy" width="44" height="44">
               <div>
                 <div class="testimonial-name">{{ testimonial.name }}</div>
                 <div class="testimonial-title">{{ testimonial.role }}</div>
@@ -344,7 +344,10 @@ const whyUs = [
 ]
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/' }],
+  link: [
+    { rel: 'canonical', href: 'https://acornglobus.com/' },
+    { rel: 'preload', as: 'image', href: '/images/hero.webp', type: 'image/webp' },
+  ],
 })
 
 useBreadcrumbSchema([])

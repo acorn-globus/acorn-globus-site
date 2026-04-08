@@ -1,7 +1,9 @@
 <template>
   <div>
     <V3Header />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <V3Footer />
   </div>
 </template>

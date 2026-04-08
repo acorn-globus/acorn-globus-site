@@ -83,7 +83,7 @@
       <div class="container-redesign">
         <div class="team-intro">
           <span class="text-label">The people behind the code</span>
-          <h3 class="text-display-sm" style="margin-top: 16px;">You'll know us by name.</h3>
+          <h2 class="text-display-sm" style="margin-top: 16px;">You'll know us by name.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">We're a team of 20+ engineers. No bench. No rotating juniors. No account managers standing between you and the people doing the work.</p>
           <p class="text-body-lg" style="margin-top: 16px;">The engineer you meet in the first call is the engineer who writes your code. When you message us on Slack, a real person who knows your codebase answers. We're small enough that every relationship matters — and experienced enough to build what you need.</p>
         </div>

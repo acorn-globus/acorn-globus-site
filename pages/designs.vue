@@ -39,6 +39,7 @@
     <!-- ===== GALLERY SECTION ===== -->
     <section class="section-redesign">
       <div class="container-redesign">
+        <h2 class="sr-only">Design Projects Gallery</h2>
         <div class="designs-grid">
           <div
             v-for="design in filteredDesigns"

@@ -26,7 +26,7 @@
       <section style="padding-top: 0;">
         <div class="container-redesign">
           <div class="audience-header">
-            <span class="text-label">For Startups</span>
+            <h2 class="text-label audience-heading">For Startups</h2>
             <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You've got the vision and the funding. You need a team that ships real products — not prototypes you'll rewrite in six months.</p>
           </div>
           <div class="service-offerings-grid">
@@ -48,7 +48,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</NuxtLink>
-                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
 
@@ -70,7 +70,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</NuxtLink>
-                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
       <section class="section-redesign" style="background: var(--surface);">
         <div class="container-redesign">
           <div class="audience-header">
-            <span class="text-label">For Non-Technical Founders</span>
+            <h2 class="text-label audience-heading">For Non-Technical Founders</h2>
             <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You don't need a CTO yet. You need a team that translates your vision into a technical plan and walks you through every decision.</p>
           </div>
           <div class="service-offerings-grid">
@@ -102,7 +102,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</NuxtLink>
-                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
             <div class="service-offering-card">
@@ -122,7 +122,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</NuxtLink>
-                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
       <section class="section-redesign">
         <div class="container-redesign">
           <div class="audience-header">
-            <span class="text-label">For Engineering Leaders</span>
+            <h2 class="text-label audience-heading">For Engineering Leaders</h2>
             <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">Your team is great. We make it bigger without making it harder to manage.</p>
           </div>
           <div class="service-offerings-grid">
@@ -154,7 +154,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</NuxtLink>
-                <NuxtLink to="/services/resource-augmentation" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/resource-augmentation" class="btn-text">Learn more about Resource Augmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
             <div class="service-offering-card">
@@ -174,7 +174,7 @@
               </div>
               <div class="card-ctas">
                 <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</NuxtLink>
-                <NuxtLink to="/services/maintenance-support" class="btn-text">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/services/maintenance-support" class="btn-text">Learn more about Maintenance &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -587,6 +587,11 @@ const technologies = [
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Audience heading — h2 styled like text-label for proper heading hierarchy */
+.audience-heading {
+  margin: 0;
 }
 
 /* ===== RESPONSIVE - Mobile ===== */

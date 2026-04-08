@@ -19,14 +19,14 @@
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
-            <h3>Schedule a Call</h3>
+            <h2 class="contact-method-title">Schedule a Call</h2>
             <p>Start a conversation</p>
           </div>
           <div class="contact-method-card">
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
-            <h3>Email Us</h3>
+            <h2 class="contact-method-title">Email Us</h2>
             <p>business@acornglobus.com</p>
             <small>For partnerships and project conversations</small>
           </div>
@@ -34,7 +34,7 @@
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <h3>Visit Us</h3>
+            <h2 class="contact-method-title">Visit Us</h2>
             <p>Nagpur, Maharashtra</p>
             <small>India</small>
           </div>
@@ -42,7 +42,7 @@
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <h3>Response Time</h3>
+            <h2 class="contact-method-title">Response Time</h2>
             <p>Within 8 hours</p>
             <small>During business hours — we won't keep you waiting</small>
           </div>
@@ -289,7 +289,7 @@ const handleSubmit = async () => {
 .contact-method-card { background: var(--surface); border-radius: var(--radius-card); padding: 32px 24px; text-align: center; transition: all var(--duration-normal) var(--ease-premium); }
 .contact-method-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
 .contact-method-icon { width: 56px; height: 56px; background: var(--primary-fixed-dim); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
-.contact-method-card h3 { font-size: 18px; font-weight: 700; color: var(--on-surface); margin-bottom: 8px; }
+.contact-method-title { font-size: 18px; font-weight: 700; color: var(--on-surface); margin-bottom: 8px; }
 .contact-method-card p { font-size: 15px; color: var(--on-surface-variant); line-height: 1.5; }
 .contact-method-card small { font-size: 13px; color: var(--text-tertiary); display: block; margin-top: 4px; }
 .contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: flex-start; }

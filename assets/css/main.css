@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Google Fonts loaded via <link> in nuxt.config.ts for performance (non-render-blocking) */
 
 /* ===== DESIGN SYSTEM — CSS custom properties ===== */
 :root {
@@ -16,7 +16,7 @@
   --on-surface: #191c1d;
   --on-surface-variant: #424753;
   --text-secondary: #5F6368;
-  --text-tertiary: #80868b;
+  --text-tertiary: #6b7075;
   --success: #34A853;
   --amber: #FBBC05;
   --outline-variant: #c2c6d5;
