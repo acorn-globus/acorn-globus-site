@@ -226,6 +226,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/contact',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Contact AcornGlobus - Let\'s Talk About What You\'re Building',
+  twitterDescription: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/contact' }] })
 

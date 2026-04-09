@@ -265,6 +265,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/mvp-development',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
+  twitterDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

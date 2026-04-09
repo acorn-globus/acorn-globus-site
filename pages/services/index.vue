@@ -378,6 +378,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  twitterDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

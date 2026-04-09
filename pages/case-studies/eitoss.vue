@@ -246,6 +246,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/case-studies/eitoss',
   ogType: 'article',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
+  twitterDescription: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
+  twitterImage: 'https://acornglobus.com/images/case-study-eitoss.webp',
 })
 
 useHead({

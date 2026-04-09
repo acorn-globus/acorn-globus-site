@@ -245,6 +245,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/about',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
+  twitterDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

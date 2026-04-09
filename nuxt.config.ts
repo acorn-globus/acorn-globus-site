@@ -14,6 +14,11 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://client.crisp.chat' },
         { rel: 'preconnect', href: 'https://www.clarity.ms' },
       ],
+      meta: [
+        { property: 'og:site_name', content: 'AcornGlobus' },
+        { name: 'twitter:site', content: '@acornglobus' },
+        { name: 'twitter:creator', content: '@acornglobus' },
+      ],
       noscript: [
         {
           // Only the noscript iframe for body

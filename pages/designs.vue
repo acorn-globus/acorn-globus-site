@@ -206,6 +206,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/designs',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
+  twitterDescription: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions.',
+  twitterImage: 'https://acornglobus.com/acorn-globus-designs.png',
 })
 
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/designs' }] })

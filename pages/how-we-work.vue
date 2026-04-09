@@ -347,6 +347,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/how-we-work',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
+  twitterDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/how-we-work' }] })
 
