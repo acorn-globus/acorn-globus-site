@@ -1,270 +1,206 @@
 <template>
-  <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <NuxtLink
-          to="/services"
-          class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium mb-6 transition-colors"
-        >
-          <ArrowLeft class="h-4 w-4 mr-2" />
-          Back to Services
-        </NuxtLink>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-              <Users class="h-4 w-4 mr-2" />
-              Team Augmentation
-            </div>
-
-            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Scale Your Team with
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-                Top-Tier Talent
-              </span>
-            </h1>
-
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Access skilled professionals who seamlessly integrate into your team,
-              bringing expertise across various technologies and domains to accelerate
-              your project delivery.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Build Your Team
-                <ArrowRight class="h-5 w-5 ml-2" />
-              </NuxtLink>
-              <button class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200">
-                <Clock class="h-5 w-5 mr-2" />
-                Quick Integration
-              </button>
-            </div>
-          </div>
-
-          <div class="relative">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Users class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">50+</div>
-                <p class="text-sm text-gray-600">Expert Developers</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Globe class="h-8 w-8 text-indigo-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">15+</div>
-                <p class="text-sm text-gray-600">Technologies</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <TrendingUp class="h-8 w-8 text-green-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">98%</div>
-                <p class="text-sm text-gray-600">Client Retention</p>
-              </div>
-              <div class="bg-white rounded-2xl p-6 shadow-lg">
-                <Clock class="h-8 w-8 text-blue-600 mb-3" />
-                <div class="text-2xl font-bold text-gray-900">48hr</div>
-                <p class="text-sm text-gray-600">Quick Start</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Resource Augmentation?</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Get the right talent at the right time to accelerate your projects
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(benefit, idx) in benefits" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-white text-blue-600 rounded-xl mb-4 shadow-sm">
-              <component :is="benefit.icon" class="h-6 w-6" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ benefit.title }}</h3>
-            <p class="text-gray-600">{{ benefit.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Technical Expertise</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Deep expertise across modern technology stacks
-          </p>
-        </div>
-
-        <!-- Tabs -->
-        <div class="flex justify-center space-x-4 mb-12">
-          <button
-            v-for="(exp, key) in expertise"
-            :key="key"
-            @click="activeTab = key"
-            :class="[
-              'px-6 py-3 rounded-full font-medium transition-all duration-300',
-              activeTab === key
-                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
-                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
-            ]"
-          >
-            <span class="flex items-center">
-              <component :is="exp.icon" class="h-6 w-6" />
-              <span class="ml-2">{{ exp.title }}</span>
-            </span>
-          </button>
-        </div>
-
-        <!-- Content -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="(tech, idx) in expertise[activeTab].technologies" :key="idx" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="flex justify-between items-start mb-3">
-              <h4 class="text-lg font-bold text-gray-900">{{ tech.name }}</h4>
-              <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
-                {{ tech.level }}
-              </span>
-            </div>
-            <div class="flex items-center text-sm text-gray-600">
-              <Sparkles class="h-4 w-4 text-blue-500 mr-2" />
-              {{ tech.projects }} Projects Delivered
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Engagement Process</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Simple, transparent, and efficient process to get you started quickly
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(step, idx) in process" :key="idx" class="relative">
-            <div v-if="idx < process.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
-                <component :is="step.icon" class="h-5 w-5" />
-              </div>
-              <div class="text-sm text-blue-600 font-semibold mb-2">Step {{ step.step }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-sm text-gray-600">{{ step.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Engagement Models -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Flexible Engagement Models</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Choose the model that best fits your project needs
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="(model, idx) in engagementModels" :key="idx" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ model.title }}</h3>
-            <p class="text-gray-600 mb-6">{{ model.description }}</p>
-            <ul class="space-y-3 mb-6">
-              <li v-for="(feature, featureIdx) in model.features" :key="featureIdx" class="flex items-center text-gray-700">
-                <CheckCircle class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
-                {{ feature }}
-              </li>
-            </ul>
-            <div class="pt-6 border-t border-gray-100">
-              <p class="text-sm text-blue-600 font-medium">{{ model.ideal }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Hear from companies that have scaled successfully with our talent
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div class="flex items-start mb-6">
-              <Star v-for="i in 5" :key="i" class="h-5 w-5 text-yellow-400 fill-yellow-400" />
-            </div>
-            <blockquote class="text-gray-700 mb-6 italic">
-              "{{ testimonial.content }}"
-            </blockquote>
-            <div class="flex items-center">
-              <img
-                :src="testimonial.avatar"
-                :alt="testimonial.author"
-                class="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
-                <div class="text-sm text-gray-600">{{ testimonial.role }}, {{ testimonial.company }}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Ready to Scale Your Team?
-        </h2>
-        <p class="text-xl text-gray-600 mb-8">
-          Get access to pre-vetted talent and start building within 48 hours
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Get Started Now
-            <ArrowRight class="h-5 w-5 ml-2" />
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <NuxtLink to="/services" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back to Services
           </NuxtLink>
-          <NuxtLink
-            to="/portfolio"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
-          >
-            View Success Stories
-            <ChevronRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
+          <div class="hero-eyebrow"><span>Resource Augmentation</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Your team, plus engineers who actually care about your product.</h1>
+          <p class="text-body-lg">We don't send resumes and disappear. We embed dedicated engineers into your team — same tools, same standups, same codebase. They'll know your product because they'll care about it.</p>
+          <div style="margin-top: 32px;">
+            <NuxtLink to="/contact" class="btn-text" style="font-size: 17px;">Let's talk about your team needs <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          </div>
+        </div>
+        <div class="stats-row" style="margin-top: 56px;">
+          <div class="stat"><span class="stat-value">20+</span><span class="stat-label">Engineers</span></div>
+          <div class="stat"><span class="stat-value">15+</span><span class="stat-label">Technologies</span></div>
+          <div class="stat"><span class="stat-value">80%+</span><span class="stat-label">Client Retention</span></div>
+          <div class="stat"><span class="stat-value">7+</span><span class="stat-label">Years in Business</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAIN POINT ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">You've tried scaling before. It didn't feel right.</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">You posted the req six months ago. The pipeline is thin. The contractors you tried lasted a sprint before context-switching to another client. The agency sent someone who needed more hand-holding than your junior devs.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">You don't need more bodies. You need engineers who show up, ramp fast, and build like they belong — because they do.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VALUE PROPOSITION ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Engineers who join your team, not just your Slack.</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Our engineers work inside your workflows. Your Jira, your Git, your standups. They're not external — they're teammates who happen to sit in a different office.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Here's what makes this work:</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <div class="feature-card">
+            <h3 class="text-title-lg">Named engineers, not a talent pool.</h3>
+            <p class="text-body" style="margin-top: 12px;">You'll know them by name. They'll know your codebase like their own. No rotating contractors, no surprise substitutions.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Fast ramp, real output.</h3>
+            <p class="text-body" style="margin-top: 12px;">Our engineers ship their first PR within 1-2 weeks. We track time-to-first-PR because we take ramp-up seriously.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">We stay.</h3>
+            <p class="text-body" style="margin-top: 12px;">This isn't project work with an end date. It's a partnership that grows with your needs. Scale up for a launch, scale down after. We flex with you.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Technical leadership built in.</h3>
+            <p class="text-body" style="margin-top: 12px;">For engagements of 3+ engineers, we include a team lead who bridges communication and keeps quality high.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASE STUDY ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">PerformLine: 1 engineer to 8+ in 2 years.</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">PerformLine started with a single engineer from our team. They needed someone who could integrate with their existing team and contribute from week one.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">That one engineer earned trust. Then they needed a second. Then a third. Over two years, the engagement grew to 8+ engineers — full-stack developers, DevOps, data engineers, QA, and frontend specialists.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">They didn't grow because we pushed for it. They grew because the partnership worked.</p>
+          <div class="pull-quote">
+            <p>"The people you meet are the people who build."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">How it works</h2>
+        </div>
+        <div class="process-steps" style="margin-top: 48px;">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3 class="text-title-lg">Discovery call</h3>
+              <p class="text-body" style="margin-top: 8px;">We learn your stack, your team culture, and exactly what roles you need. No generic proposals.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3 class="text-title-lg">Engineer matching</h3>
+              <p class="text-body" style="margin-top: 8px;">We propose specific engineers with relevant experience. You'll meet them before anything starts.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3 class="text-title-lg">2-week trial</h3>
+              <p class="text-body" style="margin-top: 8px;">Our engineers join your team. You evaluate fit and productivity with zero commitment.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3 class="text-title-lg">Ongoing partnership</h3>
+              <p class="text-body" style="margin-top: 8px;">Monthly rolling engagement. Scale up or down with 2 weeks' notice. No long-term lock-in after the initial 3-month commitment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT YOU GET ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">What you get</h2>
+          <ul class="deliverables-list" style="margin-top: 32px;">
+            <li>Dedicated senior and mid-level engineers matched to your stack</li>
+            <li>Team lead for engagements of 3+ engineers</li>
+            <li>Weekly sync with your dedicated AcornGlobus team lead</li>
+            <li>Engineer replacement guarantee if someone isn't the right fit</li>
+            <li>Minimum 4 hours of timezone overlap, guaranteed</li>
+            <li>Knowledge transfer documentation when the engagement wraps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FLEXIBLE BY DESIGN ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Flexible by design</h2>
+          <div class="details-table" style="margin-top: 32px;">
+            <div class="details-row">
+              <span class="details-label">Minimum</span>
+              <span class="details-value">1 engineer</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Typical</span>
+              <span class="details-value">2-5 engineers per client</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Duration</span>
+              <span class="details-value">3-12+ months</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Model</span>
+              <span class="details-value">Dedicated — full-time on your project, not shared</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Pricing</span>
+              <span class="details-value">Monthly per-engineer rate, volume discounts for 3+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">What our clients say</h2>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <div class="feature-card">
+            <p class="text-body" style="color: var(--text-secondary); margin-bottom: 12px;">Started with 1 engineer. Now 8+ deep.</p>
+            <p class="text-body" style="font-style: italic;">"Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement."</p>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+              <img src="/images/testimonials/bogdan.jpeg" alt="Bogdan Arsenie" style="width:40px;height:40px;border-radius:50%;object-fit:cover;" loading="lazy">
+              <p class="text-body" style="font-weight:600;margin:0;">Bogdan Arsenie, CTO, PerformLine</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <p class="text-body" style="color: var(--text-secondary); margin-bottom: 12px;">They don't wait to be asked.</p>
+            <p class="text-body" style="font-style: italic;">"Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas."</p>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+              <img src="/images/testimonials/enzo.jpeg" alt="Enzo Zadrima" style="width:40px;height:40px;border-radius:50%;object-fit:cover;" loading="lazy">
+              <p class="text-body" style="font-weight:600;margin:0;">Enzo Zadrima, CTO, Viewber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Your team is great. Let's make it bigger without making it harder to manage.</h2>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what roles you need and how your team works. We'll propose specific engineers and let you meet them before anything starts. If the fit isn't right in the first two weeks, you walk away — no cost, no commitment.</p>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your team</NuxtLink>
+          <NuxtLink to="/portfolio" class="btn-text">See how PerformLine scaled with us <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -272,186 +208,49 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import {
-  ArrowRight, Users, Zap, Shield, CheckCircle,
-  Clock, TrendingUp, Layers, Globe, Award, Star,
-  ChevronRight, ArrowLeft, Sparkles, Settings, GitBranch,
-  Rocket, Target, Brain, Package, Database, Cloud
-} from 'lucide-vue-next'
-
-// Use the v3 layout without default header/footer
-definePageMeta({
-  layout: 'default'
+useSeoMeta({
+  title: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
+  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  ogTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
+  ogDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/resource-augmentation',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 
-const activeTab = ref('frontend')
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/resource-augmentation' }],
+})
 
-const benefits = [
-  {
-    icon: Zap,
-    title: 'Flexible Scaling',
-    description: 'Scale your team up or down based on project requirements with minimal notice period.'
-  },
-  {
-    icon: Users,
-    title: 'Seamless Integration',
-    description: 'Our professionals adapt to your workflows and culture, becoming true extensions of your team.'
-  },
-  {
-    icon: Shield,
-    title: 'Vetted Talent',
-    description: 'Rigorously screened professionals with proven expertise and technical excellence.'
-  },
-  {
-    icon: TrendingUp,
-    title: 'Cost Effective',
-    description: 'Access top-tier talent without the overhead of full-time hiring and training.'
-  },
-  {
-    icon: Clock,
-    title: 'Quick Onboarding',
-    description: 'Get skilled professionals integrated into your team within days, not months.'
-  },
-  {
-    icon: Award,
-    title: 'Domain Expertise',
-    description: 'Specialists across various technologies and industries at your disposal.'
-  }
-]
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'Resource Augmentation', path: '/services/resource-augmentation' },
+])
 
-const expertise = {
-  frontend: {
-    title: 'Frontend Development',
-    icon: Package,
-    technologies: [
-      { name: 'React.js', level: 'Expert', projects: '50+' },
-      { name: 'Vue.js', level: 'Expert', projects: '30+' },
-      { name: 'Next.js', level: 'Advanced', projects: '25+' },
-      { name: 'Angular', level: 'Advanced', projects: '20+' },
-      { name: 'TypeScript', level: 'Expert', projects: '40+' },
-      { name: 'Nuxt.js', level: 'Advanced', projects: '15+' }
-    ]
-  },
-  backend: {
-    title: 'Backend Development',
-    icon: Database,
-    technologies: [
-      { name: 'Node.js', level: 'Expert', projects: '45+' },
-      { name: 'Ruby on Rails', level: 'Expert', projects: '60+' },
-      { name: 'Python/Django', level: 'Advanced', projects: '35+' },
-      { name: 'Java Spring', level: 'Advanced', projects: '25+' },
-      { name: 'PHP/Laravel', level: 'Advanced', projects: '20+' },
-      { name: '.NET Core', level: 'Intermediate', projects: '15+' }
-    ]
-  },
-  cloud: {
-    title: 'Cloud & DevOps',
-    icon: Cloud,
-    technologies: [
-      { name: 'AWS', level: 'Expert', projects: '50+' },
-      { name: 'Google Cloud', level: 'Advanced', projects: '30+' },
-      { name: 'Azure', level: 'Advanced', projects: '20+' },
-      { name: 'Docker', level: 'Expert', projects: '60+' },
-      { name: 'Kubernetes', level: 'Advanced', projects: '35+' },
-      { name: 'CI/CD', level: 'Expert', projects: '70+' }
-    ]
-  },
-  other: {
-    title: 'Other Skills',
-    icon: Layers,
-    technologies: [
-      { name: 'UI/UX Design', level: 'Advanced', projects: '40+' },
-      { name: 'Mobile Development', level: 'Advanced', projects: '25+' },
-      { name: 'QA & Testing', level: 'Expert', projects: '50+' },
-      { name: 'Project Management', level: 'Expert', projects: '60+' },
-      { name: 'Technical Writing', level: 'Advanced', projects: '30+' },
-      { name: 'Data Science', level: 'Intermediate', projects: '15+' }
-    ]
+useServiceSchema({
+  name: 'Resource Augmentation',
+  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  url: '/services/resource-augmentation',
+})
+</script>
+
+<style scoped>
+/* Hero top padding to clear fixed nav */
+.hero {
+  padding-top: 140px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px;
   }
 }
 
-const process = [
-  {
-    step: 1,
-    title: 'Requirement Analysis',
-    description: 'We understand your project needs, team dynamics, and technical requirements.',
-    icon: Target
-  },
-  {
-    step: 2,
-    title: 'Talent Matching',
-    description: 'We identify the perfect professionals from our pre-vetted talent pool.',
-    icon: Users
-  },
-  {
-    step: 3,
-    title: 'Technical Assessment',
-    description: 'Candidates undergo rigorous technical evaluation specific to your needs.',
-    icon: Brain
-  },
-  {
-    step: 4,
-    title: 'Client Interview',
-    description: 'You interview shortlisted candidates to ensure the perfect fit.',
-    icon: CheckCircle
-  },
-  {
-    step: 5,
-    title: 'Quick Onboarding',
-    description: 'Selected professionals integrate seamlessly into your team.',
-    icon: Rocket
-  },
-  {
-    step: 6,
-    title: 'Ongoing Support',
-    description: 'Continuous monitoring and support to ensure project success.',
-    icon: Shield
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 48px !important;
   }
-]
-
-const engagementModels = [
-  {
-    title: 'Dedicated Team',
-    description: 'Full-time professionals working exclusively on your projects.',
-    features: ['100% dedicated resources', 'Direct team management', 'Long-term engagement', 'Scalable team size'],
-    ideal: 'Ideal for long-term projects and product development'
-  },
-  {
-    title: 'Part-Time Resources',
-    description: 'Skilled professionals for specific hours or days per week.',
-    features: ['Flexible hours', 'Cost-effective', 'Multiple skill sets', 'Quick scaling'],
-    ideal: 'Perfect for specific tasks and ongoing support'
-  },
-  {
-    title: 'Project-Based',
-    description: 'Resources allocated for the duration of specific projects.',
-    features: ['Fixed timeline', 'Clear deliverables', 'Milestone-based', 'Result-oriented'],
-    ideal: 'Best for well-defined projects with clear scope'
-  }
-]
-
-const testimonials = [
-  {
-    content: "Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.",
-    author: "Alon Diamant",
-    role: "CTO",
-    company: "Mayple",
-    avatar: "/images/testimonials/alon.jpeg"
-  },
-  {
-    content: "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.",
-    author: "Enzo Zadrima",
-    role: "Chief Technology Officer",
-    company: "Viewber",
-    avatar: "/images/testimonials/enzo.jpeg"
-  },
-  {
-    content: "Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.",
-    author: "Bogdan Arsenie",
-    role: "CTO",
-    company: "PerformLine & Social Impact Advocate",
-    avatar: "/images/testimonials/bogdan.jpeg"
-  }
-]
-</script>
+}
+</style>

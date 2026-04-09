@@ -1,306 +1,226 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container-redesign">
+        <div class="hero-eyebrow"><span>Design Portfolio</span></div>
+        <h1 class="text-display-lg" style="max-width: 800px;">Where Creativity Meets Functionality</h1>
+        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">Explore our diverse collection of design projects that have helped businesses create memorable digital experiences and drive meaningful results.</p>
       </div>
+    </section>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="mb-6">
-          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            Design Portfolio
-          </span>
-          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Where Creativity Meets
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              Functionality
-            </span>
-          </h1>
-          <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Explore our diverse collection of design projects that have helped businesses
-            create memorable digital experiences and drive meaningful results.
-          </p>
-        </div>
-
-        <!-- Stats Row -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
-          <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900">50+</div>
-            <div class="text-sm text-gray-600">Designs</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900">15+</div>
-            <div class="text-sm text-gray-600">Industries</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900">6+</div>
-            <div class="text-sm text-gray-600">Years</div>
-          </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900">100%</div>
-            <div class="text-sm text-gray-600">Satisfaction</div>
-          </div>
+    <!-- ===== STATS BAR ===== -->
+    <section style="padding: 48px 0; background: var(--surface);">
+      <div class="container-redesign">
+        <div class="stats-row" style="border-top: none; margin-top: 0; padding-top: 0;">
+          <div><div class="stat-value">50+</div><div class="stat-label">Designs</div></div>
+          <div><div class="stat-value">15+</div><div class="stat-label">Industries</div></div>
+          <div><div class="stat-value">6+</div><div class="stat-label">Years</div></div>
+          <div><div class="stat-value">100%</div><div class="stat-label">Satisfaction</div></div>
         </div>
       </div>
     </section>
 
-    <!-- Filter Section -->
-    <section class="py-12 bg-white border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center gap-4">
+    <!-- ===== FILTER SECTION ===== -->
+    <section class="section-redesign" style="background: var(--surface-bright); padding-bottom: 0;">
+      <div class="container-redesign">
+        <div class="filter-tabs" style="justify-content: center;">
           <button
             v-for="category in categories"
             :key="category.id"
+            class="tab-btn"
+            :class="{ active: activeCategory === category.id }"
             @click="activeCategory = category.id"
-            :class="[
-              'px-6 py-3 rounded-full font-medium transition-all duration-300',
-              activeCategory === category.id
-                ? 'bg-blue-600 text-white shadow-lg'
-                : 'bg-gray-100 text-gray-700 hover:bg-blue-50 hover:text-blue-600'
-            ]"
-          >
-            {{ category.name }}
-          </button>
+          >{{ category.name }}</button>
         </div>
       </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <h2 class="sr-only">Design Projects Gallery</h2>
+        <div class="designs-grid">
           <div
             v-for="design in filteredDesigns"
             :key="design.id"
-            class="group cursor-pointer"
+            class="design-card"
             @click="openModal(design)"
           >
-            <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-              <div class="aspect-w-16 aspect-h-12 relative">
-                <img
-                  :src="design.image"
-                  :alt="design.title"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                  @error="handleImageError"
-                  @load="handleImageLoad"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div class="bg-white/90 backdrop-blur-sm rounded-full p-3">
-                    <Eye class="h-6 w-6 text-blue-600" />
-                  </div>
+            <div class="design-card-image">
+              <img
+                :src="design.image"
+                :alt="design.title"
+                loading="lazy"
+                @error="handleImageError"
+              />
+              <div class="design-card-overlay">
+                <div class="design-card-eye">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="design-card-body">
+              <div class="design-card-meta">
+                <span class="design-category-tag">{{ design.category }}</span>
+                <div class="design-rating">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--amber)" stroke="var(--amber)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span>{{ design.rating }}</span>
                 </div>
               </div>
 
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-2">
-                  <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
-                    {{ design.category }}
-                  </span>
-                  <div class="flex items-center text-yellow-400">
-                    <Star class="h-4 w-4 fill-current" />
-                    <span class="text-sm text-gray-600 ml-1">{{ design.rating }}</span>
-                  </div>
+              <h3>{{ design.title }}</h3>
+
+              <p class="design-card-desc">{{ design.description }}</p>
+
+              <div class="design-card-footer">
+                <div class="design-timeline">
+                  <span class="timeline-dot"></span>
+                  <span>{{ design.timeline }}</span>
                 </div>
-
-                <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                  {{ design.title }}
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-4 line-clamp-2">
-                  {{ design.description }}
-                </p>
-
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-2">
-                    <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span class="text-sm text-gray-500">{{ design.timeline }}</span>
-                  </div>
-                  <ArrowUpRight class="h-5 w-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
-                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Load More Button -->
-        <div class="text-center mt-12" v-if="hasMoreDesigns">
-          <button
-            @click="loadMore"
-            class="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300"
-          >
+        <div class="load-more" v-if="hasMoreDesigns">
+          <button class="btn btn-primary" @click="loadMore">
             Load More Designs
-            <ChevronDown class="ml-2 h-5 w-5" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Ready to Bring Your Vision to Life?
-        </h2>
-        <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          Let's create something extraordinary together. From concept to launch,
-          we'll craft designs that captivate your audience and drive results.
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300"
-          >
-            Start Your Design Project
-            <ArrowRight class="ml-2 h-5 w-5" />
-          </NuxtLink>
-          <NuxtLink
-            to="/portfolio"
-            class="inline-flex items-center px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300"
-          >
-            View Case Studies
-            <ExternalLink class="ml-2 h-5 w-5" />
-          </NuxtLink>
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center; max-width: 640px;">
+        <h2 class="text-display-sm">Like what you see? Let's talk.</h2>
+        <p class="text-body-lg" style="margin-top: 16px;">Whether you need a full product design or a refresh of what you have -- we'd love to hear what you're working on.</p>
+        <div class="cta-actions" style="justify-content: center;">
+          <NuxtLink to="/contact" class="btn btn-primary">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio" class="btn btn-secondary">View Case Studies</NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Modal -->
-    <div
-      v-if="selectedDesign"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
-      @click="closeModal"
-    >
+    <!-- ===== MODAL ===== -->
+    <Teleport to="body">
       <div
-        class="relative bg-white rounded-3xl max-w-4xl mx-4 max-h-[90vh] overflow-auto"
-        @click.stop
+        v-if="selectedDesign"
+        class="modal-backdrop"
+        @click="closeModal"
       >
-        <button
-          @click="closeModal"
-          class="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-colors"
-        >
-          <X class="h-6 w-6 text-gray-600" />
-        </button>
+        <div class="modal-content" @click.stop>
+          <button class="modal-close" @click="closeModal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
 
-        <div class="p-8">
-          <div class="aspect-w-16 aspect-h-10 mb-6 rounded-2xl overflow-hidden">
-            <img
-              :src="selectedDesign.image"
-              :alt="selectedDesign.title"
-              class="w-full h-80 object-cover"
-              @error="handleImageError"
-              @load="handleImageLoad"
-            />
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <div class="flex items-center space-x-3 mb-4">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  {{ selectedDesign.category }}
-                </span>
-                <div class="flex items-center text-yellow-400">
-                  <Star class="h-4 w-4 fill-current" />
-                  <span class="text-sm text-gray-600 ml-1">{{ selectedDesign.rating }}</span>
-                </div>
-              </div>
-
-              <h3 class="text-3xl font-bold text-gray-900 mb-4">{{ selectedDesign.title }}</h3>
-              <p class="text-gray-600 mb-6 leading-relaxed">{{ selectedDesign.description }}</p>
-
-              <div class="grid grid-cols-2 gap-4 mb-6">
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-2">Client</h4>
-                  <p class="text-gray-600">{{ selectedDesign.client }}</p>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-2">Timeline</h4>
-                  <p class="text-gray-600">{{ selectedDesign.timeline }}</p>
-                </div>
-              </div>
+          <div class="modal-body">
+            <div class="modal-image">
+              <img
+                :src="selectedDesign.image"
+                :alt="selectedDesign.title"
+                @error="handleImageError"
+              />
             </div>
 
-            <div>
-              <h4 class="font-semibold text-gray-900 mb-4">Technologies Used</h4>
-              <div class="flex flex-wrap gap-2 mb-6">
-                <span
-                  v-for="tech in selectedDesign.technologies"
-                  :key="tech"
-                  class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                >
-                  {{ tech }}
-                </span>
+            <div class="modal-details">
+              <div class="modal-left">
+                <div class="design-card-meta" style="margin-bottom: 16px;">
+                  <span class="design-category-tag">{{ selectedDesign.category }}</span>
+                  <div class="design-rating">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--amber)" stroke="var(--amber)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>{{ selectedDesign.rating }}</span>
+                  </div>
+                </div>
+
+                <h3 class="text-headline">{{ selectedDesign.title }}</h3>
+                <p class="text-body" style="margin-top: 16px;">{{ selectedDesign.description }}</p>
+
+                <div class="modal-info-grid">
+                  <div>
+                    <h4>Client</h4>
+                    <p>{{ selectedDesign.client }}</p>
+                  </div>
+                  <div>
+                    <h4>Timeline</h4>
+                    <p>{{ selectedDesign.timeline }}</p>
+                  </div>
+                </div>
               </div>
 
-              <h4 class="font-semibold text-gray-900 mb-4">Key Features</h4>
-              <ul class="space-y-2 mb-6">
-                <li
-                  v-for="feature in selectedDesign.features"
-                  :key="feature"
-                  class="flex items-start space-x-2"
-                >
-                  <CheckCircle class="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-600">{{ feature }}</span>
-                </li>
-              </ul>
+              <div class="modal-right">
+                <h4>Technologies Used</h4>
+                <div class="tech-tags">
+                  <span
+                    v-for="tech in selectedDesign.technologies"
+                    :key="tech"
+                    class="tech-tag"
+                  >{{ tech }}</span>
+                </div>
 
-              <div class="flex gap-4">
-                <button
-                  v-if="selectedDesign.liveUrl"
-                  class="flex-1 inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  View Live Site
-                  <ExternalLink class="ml-2 h-4 w-4" />
-                </button>
-                <button
-                  v-if="selectedDesign.caseStudyUrl"
-                  class="flex-1 inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors"
-                >
-                  Case Study
-                  <ArrowUpRight class="ml-2 h-4 w-4" />
-                </button>
+                <h4 style="margin-top: 24px;">Key Features</h4>
+                <ul class="check-list">
+                  <li
+                    v-for="feature in selectedDesign.features"
+                    :key="feature"
+                  >{{ feature }}</li>
+                </ul>
+
+                <div class="modal-actions">
+                  <a
+                    v-if="selectedDesign.liveUrl"
+                    :href="selectedDesign.liveUrl"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Site
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                  <a
+                    v-if="selectedDesign.caseStudyUrl"
+                    :href="selectedDesign.caseStudyUrl"
+                    class="btn btn-secondary"
+                  >
+                    Case Study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Teleport>
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue'
-import {
-  Eye, Star, ArrowUpRight, ChevronDown, ArrowRight, ExternalLink,
-  X, CheckCircle
-} from 'lucide-vue-next'
 
-// Page metadata
-definePageMeta({
-  layout: 'default'
-})
+definePageMeta({ layout: 'default' })
 
-// SEO Meta Tags
 useSeoMeta({
-  title: 'Design Portfolio - Acorn Globus Creative Gallery',
+  title: 'Design Portfolio | Creative Gallery | AcornGlobus',
   description: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions. See how we create memorable digital experiences.',
-  keywords: 'design portfolio, web design, mobile app design, UI/UX, branding, graphic design, creative services',
-  author: 'Acorn Globus',
-  robots: 'index, follow',
-  ogTitle: 'Design Portfolio - Acorn Globus Creative Gallery',
+  ogTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
   ogDescription: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions.',
   ogImage: 'https://acornglobus.com/acorn-globus-designs.png',
   ogUrl: 'https://acornglobus.com/designs',
-  ogType: 'website'
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
+
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/designs' }] })
+
+useBreadcrumbSchema([
+  { name: 'Designs', path: '/designs' },
+])
 
 const activeCategory = ref('all')
 const selectedDesign = ref(null)
@@ -319,7 +239,7 @@ const designs = [
   {
     id: 1,
     title: 'Travel and Hospitality App',
-    description: 'Here’s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
+    description: 'Here\'s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/travel.jpg',
@@ -339,7 +259,7 @@ const designs = [
   {
     id: 2,
     title: 'Financial Dashboard',
-    description: 'Here’s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
+    description: 'Here\'s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/finance-dashboard.jpg',
@@ -379,7 +299,7 @@ const designs = [
   {
     id: 4,
     title: 'Custom Financial App',
-    description: 'Here’s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
+    description: 'Here\'s a glimpse of our custom financial software design. It simplifies secure transactions, real-time reporting.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/finance-app.jpg',
@@ -419,7 +339,7 @@ const designs = [
   {
     id: 6,
     title: 'HR Software',
-    description: 'Here’s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
+    description: 'Here\'s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/hr.jpg',
@@ -459,7 +379,7 @@ const designs = [
   {
     id: 8,
     title: 'Travel & Hospitality Dashboard',
-    description: 'Here’s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
+    description: 'Here\'s a sneak peek of our travel and hospitality app design. It allows users to book trips, view real-time availability, and get instant updates about their stay.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/hospitality-web.jpg',
@@ -479,7 +399,7 @@ const designs = [
   {
     id: 9,
     title: 'Job Search App',
-    description: 'Here’s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
+    description: 'Here\'s a look at our new HR software. It streamlines employee management, performance tracking, and payroll processing with a clean, easy-to-use design.',
     category: 'Mobile Apps',
     categoryId: 'mobile',
     image: '/images/designs/job-app.jpg',
@@ -499,7 +419,7 @@ const designs = [
   {
     id: 10,
     title: 'Healthcare App',
-    description: 'ake a look at our healthcare app design! It makes scheduling appointments, accessing medical records, and communicating with doctors simple and secure.',
+    description: 'Take a look at our healthcare app design! It makes scheduling appointments, accessing medical records, and communicating with doctors simple and secure.',
     category: 'Web Design',
     categoryId: 'web',
     image: '/images/designs/health-app.jpg',
@@ -536,46 +456,281 @@ const closeModal = () => {
 }
 
 const loadMore = () => {
-  // In a real app, this would load more designs from an API
   hasMoreDesigns.value = false
 }
 
 const handleImageError = (event) => {
-  console.warn('Failed to load image:', event.target.src)
-  // You can set a fallback image here
-  // event.target.src = '/images/design-placeholder.jpg'
+  event.target.style.display = 'none'
 }
 
-const handleImageLoad = (event) => {
-  console.log('Image loaded successfully:', event.target.src)
-}
-
-// Cleanup on unmount
 onUnmounted(() => {
   document.body.style.overflow = 'auto'
 })
 </script>
 
 <style scoped>
-.line-clamp-2 {
+.hero { padding-top: 140px; }
+
+/* Filter tabs (reuse portfolio pattern) */
+.filter-tabs { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+.tab-btn { padding: 10px 24px; font-size: 15px; font-weight: 600; font-family: inherit; border: none; border-radius: var(--radius-pill); cursor: pointer; background: var(--surface-container-high); color: var(--on-surface-variant); transition: all var(--duration-normal) var(--ease-premium); }
+.tab-btn.active { background: linear-gradient(135deg, var(--primary), var(--primary-container)); color: white; box-shadow: 0 4px 16px rgba(0, 88, 189, 0.25); }
+.tab-btn:hover:not(.active) { background: var(--surface-container); color: var(--on-surface); }
+
+/* Designs grid */
+.designs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* Design card */
+.design-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.design-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.design-card-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+.design-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-premium);
+}
+.design-card:hover .design-card-image img {
+  transform: scale(1.06);
+}
+
+.design-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-premium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design-card:hover .design-card-overlay { opacity: 1; }
+
+.design-card-eye {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.design-card-body { padding: 24px; }
+
+.design-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.design-category-tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  background: var(--primary-fixed-dim);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.design-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.design-card-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+  transition: color var(--duration-fast) var(--ease-premium);
+}
+.design-card:hover .design-card-body h3 { color: var(--primary); }
+
+.design-card-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.aspect-w-16 {
-  position: relative;
-  padding-bottom: 75%; /* 16:12 aspect ratio */
+.design-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid rgba(194, 198, 213, 0.15);
 }
 
-.aspect-w-16 > * {
-  position: absolute;
-  height: 100%;
+.design-timeline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+}
+
+.arrow-icon {
+  color: var(--text-tertiary);
+  transition: color var(--duration-fast) var(--ease-premium);
+}
+.design-card:hover .arrow-icon { color: var(--primary); }
+
+/* Load more */
+.load-more { text-align: center; margin-top: 56px; }
+
+/* CTA actions */
+.cta-actions { display: flex; gap: 16px; margin-top: 32px; }
+
+/* Tech tags (reuse from portfolio) */
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.tech-tag { padding: 6px 14px; font-size: 13px; font-weight: 600; color: var(--on-surface-variant); background: var(--surface-container-high); border-radius: var(--radius-pill); }
+
+/* ===== MODAL ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  padding: 20px;
+}
+
+.modal-content {
+  position: relative;
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  max-width: 900px;
   width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--on-surface-variant);
+  transition: all var(--duration-fast) var(--ease-premium);
+}
+.modal-close:hover { background: white; color: var(--on-surface); }
+
+.modal-body { padding: 32px; }
+
+.modal-image {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.modal-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.modal-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.modal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+.modal-info-grid h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 4px;
+}
+.modal-info-grid p {
+  font-size: 15px;
+  color: var(--on-surface-variant);
+}
+
+.modal-right h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+.modal-actions .btn { flex: 1; padding: 12px 20px; font-size: 15px; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero { padding-top: 120px; }
+  .designs-grid { grid-template-columns: repeat(2, 1fr); }
+  .modal-details { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: 100px; }
+  .designs-grid { grid-template-columns: 1fr; }
+  .filter-tabs { justify-content: flex-start; }
+  .cta-actions { flex-direction: column; align-items: flex-start; }
+  .modal-body { padding: 20px; }
+  .modal-image img { height: 200px; }
+  .modal-actions { flex-direction: column; }
+  .modal-actions .btn { flex: none; width: 100%; }
 }
 </style>

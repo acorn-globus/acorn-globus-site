@@ -18,7 +18,7 @@
             <p class="text-gray-300">Delivered across various industries and technologies.</p>
           </div>
           <div class="bg-navy-700 p-6 rounded-xl">
-            <h3 class="text-lg font-semibold mb-2">98% Client Satisfaction</h3>
+            <h3 class="text-lg font-semibold mb-2">80%+ Client Retention</h3>
             <p class="text-gray-300">Long-term partnerships built on trust and quality.</p>
           </div>
         </div>
@@ -159,35 +159,24 @@
 <script setup>
 import ReviewsSection from '../components/ReviewsSection.vue'
 
-useHead({
-  title: 'Our Projects & Case Studies | Acorn Globus',
-  meta: [
-    {
-      name: 'description',
-      content: 'Discover our portfolio of successful digital projects. From SaaS platforms to enterprise solutions, explore how we help businesses transform through technology.'
-    },
-    {
-      name: 'keywords',
-      content: 'software projects, case studies, digital transformation, web development, mobile apps, enterprise solutions'
-    },
-    {
-      property: 'og:title',
-      content: 'Our Projects & Case Studies | Acorn Globus'
-    },
-    {
-      property: 'og:description',
-      content: 'Explore our portfolio of successful digital transformations and innovative solutions that help businesses thrive in the digital age.'
-    },
-    {
-      property: 'og:type',
-      content: 'website'
-    }
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://acornglobus.com/projects'
-    }
-  ]
+useSeoMeta({
+  title: 'Our Projects & Case Studies | AcornGlobus',
+  description: 'Discover our portfolio of successful digital projects. From SaaS platforms to enterprise solutions, explore how we help businesses transform through technology.',
+  keywords: 'software projects, case studies, digital transformation, web development, mobile apps, enterprise solutions',
+  author: 'AcornGlobus',
+  robots: 'index, follow',
+  ogTitle: 'Our Projects & Case Studies | AcornGlobus',
+  ogDescription: 'Explore our portfolio of successful digital transformations and solutions that help businesses thrive.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/projects',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Our Projects & Case Studies | AcornGlobus',
+  twitterDescription: 'Explore our portfolio of successful digital projects and case studies.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
+
+useBreadcrumbSchema([
+  { name: 'Projects', path: '/projects' },
+])
 </script>

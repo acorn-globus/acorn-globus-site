@@ -1,333 +1,254 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <!-- Navigation Header -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-yellow-600 rounded-xl flex items-center justify-center">
-              <Code2 class="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <div class="text-xl font-bold text-gray-900">Acorn Globus</div>
-              <div class="text-xs text-gray-500">MVP Development</div>
-            </div>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Home</NuxtLink>
-            <NuxtLink to="/about" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">About</NuxtLink>
-            <NuxtLink to="/services" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Services</NuxtLink>
-            <NuxtLink to="/portfolio" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Portfolio</NuxtLink>
-            <NuxtLink to="/contact" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contact</NuxtLink>
-          </div>
-
-          <NuxtLink
-            to="/contact"
-            class="hidden lg:inline-flex items-center px-6 py-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
-          >
-            Start Your MVP
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <NuxtLink to="/services" class="breadcrumb">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back to Services
           </NuxtLink>
-
-          <button class="lg:hidden p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 overflow-hidden">
-      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-amber-200 rounded-full blur-3xl opacity-30" />
-      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-200 rounded-full blur-3xl opacity-30" />
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto">
-          <div class="inline-flex items-center px-4 py-2 bg-amber-100 rounded-full text-amber-800 text-sm font-medium mb-6">
-            <Rocket class="w-4 h-4 mr-2" />
-            MVP Development Service
+          <div class="hero-eyebrow"><span>MVP Development</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Ship a real product. Not a prototype you'll rewrite in six months.</h1>
+          <p class="text-body-lg">We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.</p>
+          <div style="margin-top: 36px;">
+            <NuxtLink to="/contact" class="btn btn-primary">Tell us about your product idea</NuxtLink>
           </div>
-          <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Launch Your Product
-            <span class="block text-amber-600 mt-2">In Just 8-12 Weeks</span>
-          </h1>
-          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-            Transform your idea into a market-ready MVP. We help startups and enterprises
-            validate product concepts quickly with professional-grade minimum viable products.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center px-8 py-4 bg-amber-600 text-white font-semibold rounded-xl hover:bg-amber-700 transition-all transform hover:scale-105"
-            >
-              Start Your MVP
-              <ArrowRight class="ml-2 w-5 h-5" />
-            </NuxtLink>
-            <button class="inline-flex items-center px-8 py-4 bg-white text-amber-600 font-semibold rounded-xl border-2 border-amber-200 hover:bg-amber-50 transition-all">
-              View Success Stories
-              <ChevronDown class="ml-2 w-5 h-5" />
-            </button>
+        </div>
+        <div class="stats-row">
+          <div>
+            <div class="stat-value">8-12</div>
+            <div class="stat-label">Weeks to Launch</div>
+          </div>
+          <div>
+            <div class="stat-value">25+</div>
+            <div class="stat-label">Products Shipped</div>
+          </div>
+          <div>
+            <div class="stat-value">80%+</div>
+            <div class="stat-label">Client Retention</div>
+          </div>
+          <div>
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Code Ownership</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Stats -->
-    <section class="py-16 bg-white border-b">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div
-            v-for="(stat, index) in keyStats"
-            :key="index"
-            class="text-center"
-          >
-            <div class="text-3xl md:text-4xl font-bold text-amber-600 mb-2">
-              {{ stat.value }}{{ stat.suffix }}
+    <!-- ===== PAIN POINT ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">Your runway is ticking. You need builders, not promises.</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">You've got the vision. Maybe the funding too. What you don't have is six months to hire a team, three months to onboard them, and patience for a prototype that falls apart under real users.</p>
+          <p class="text-body-lg">You need a team that can start now, ship something real in weeks, and stick around after launch — not disappear when the invoice clears.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VALUE PROP ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">We build it like it's ours. Because we've built our own.</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">We created Formester — our own SaaS product, live and growing with real users and a 4.7 rating on G2. That taught us what it actually feels like to ship something you care about. The anxiety of launch day. The trade-offs between speed and quality. The difference between a demo and a product.</p>
+          <p class="text-body-lg">We bring that same ownership to your MVP:</p>
+        </div>
+        <div class="feature-cards-grid">
+          <div class="feature-card">
+            <h3>Production-quality from day one.</h3>
+            <p>Clean code, proper architecture, CI/CD pipeline. Built to grow, not to be thrown away.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Honest guidance on scope.</h3>
+            <p>We'll tell you what to build first and what can wait. Not to bill less — because we want you to succeed faster.</p>
+          </div>
+          <div class="feature-card">
+            <h3>You own everything.</h3>
+            <p>Your code, your product, your freedom. Full ownership from day one, documented and ready for your future in-house team.</p>
+          </div>
+          <div class="feature-card">
+            <h3>We don't disappear after launch.</h3>
+            <p>Eitoss started as an MVP we shipped in 3 months. They raised funding. Two years later, we're still building together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASE STUDY ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <span class="text-label" style="display: block; margin-bottom: 16px;">Case Study</span>
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">Eitoss: MVP in 3 months. Raised funding. Still building together.</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">Eitoss came to us with a product vision and a timeline. We scoped the MVP together, had a demoable product in 8 weeks, and launched into production in 3 months.</p>
+          <p class="text-body-lg" style="margin-bottom: 16px;">They used that product to raise funding. And then they kept building with us — not because they had to, but because the partnership worked. Two years later, we're still growing the product together.</p>
+          <p class="text-body-lg" style="font-weight: 600; color: var(--on-surface);">That's not a vendor relationship. That's what partnership looks like.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">How it works</h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Discovery and scoping (1-2 weeks)</h3>
+              <p>We understand your vision, define what the MVP actually needs, and create a technical plan with a realistic timeline and budget. No guesswork.</p>
             </div>
-            <div class="text-gray-600">{{ stat.label }}</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-20 bg-gradient-to-br from-amber-50 to-yellow-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Our MVP Development?
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get to market faster, validate your ideas, and attract investors with a professional MVP
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="(benefit, index) in benefits"
-            :key="index"
-            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group"
-          >
-            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
-              <component :is="benefit.icon" class="w-7 h-7 text-amber-600" />
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Design and architecture (1 week)</h3>
+              <p>UI/UX wireframes, technical architecture, stack selection. The foundation matters.</p>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">
-              {{ benefit.title }}
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              {{ benefit.description }}
-            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Build sprints (4-8 weeks)</h3>
+              <p>Two-week sprints with a working demo at the end of each one. You see real progress every two weeks, not just status updates.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Launch prep (1 week)</h3>
+              <p>Deployment, monitoring, documentation, handoff. Ready for real users.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <div>
+              <h3>Post-launch support (2 weeks included)</h3>
+              <p>Bug fixes and critical issues after launch, because launching is just the beginning.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Development Process -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Our MVP Development Process
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            A proven agile methodology that delivers results in 8-12 weeks
-          </p>
+    <!-- ===== DELIVERABLES ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">What you get</h2>
         </div>
+        <ul class="deliverables-list">
+          <li>Product scoping and feature prioritization — what to build first, what to skip</li>
+          <li>Technical architecture and stack selection</li>
+          <li>UI/UX wireframes (we recommend a dedicated designer for pixel-perfect design)</li>
+          <li>Full-stack development</li>
+          <li>Testing and QA</li>
+          <li>Cloud deployment (AWS, GCP, or Azure)</li>
+          <li>CI/CD pipeline setup</li>
+          <li>2 weeks of post-launch support</li>
+          <li>Complete documentation and code handoff — it's your product</li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="grid lg:grid-cols-3 gap-8 mb-12">
-          <div
-            v-for="(phase, index) in phases"
-            :key="index"
-            @click="activePhase = index"
-            :class="`cursor-pointer p-8 rounded-2xl transition-all ${
-              activePhase === index
-                ? 'bg-gradient-to-br from-amber-100 to-yellow-100 shadow-xl'
-                : 'bg-gray-50 hover:bg-gray-100'
-            }`"
-          >
-            <div class="flex items-start justify-between mb-4">
-              <div :class="`w-14 h-14 rounded-xl flex items-center justify-center ${
-                activePhase === index ? 'bg-amber-200' : 'bg-gray-200'
-              }`">
-                <component :is="phase.icon" :class="`w-7 h-7 ${
-                  activePhase === index ? 'text-amber-700' : 'text-gray-600'
-                }`" />
+    <!-- ===== DETAILS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">The details</h2>
+        </div>
+        <div class="details-table">
+          <div class="details-row">
+            <div class="details-label">Timeline</div>
+            <div class="details-value">6-12 weeks typical</div>
+          </div>
+          <div class="details-row">
+            <div class="details-label">Team</div>
+            <div class="details-value">2-4 engineers + 1 project lead</div>
+          </div>
+          <div class="details-row">
+            <div class="details-label">Pricing</div>
+            <div class="details-value">Fixed-price or capped time-and-materials</div>
+          </div>
+          <div class="details-row">
+            <div class="details-label">Code ownership</div>
+            <div class="details-value">100% yours from day one</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AUDIENCE MESSAGING ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Built for builders</h2>
+        </div>
+        <div class="audience-cards-grid">
+          <div class="audience-card">
+            <h3>For funded startups</h3>
+            <p>You've got the vision and the funding. We'll be the team that brings it to life. Fixed-price and milestone-based options keep your budget predictable while your product takes shape.</p>
+          </div>
+          <div class="audience-card">
+            <h3>For non-technical founders</h3>
+            <p>You don't need a CTO yet. You need a team that feels like co-founders. We'll translate your vision into a technical plan, guide you through every decision, and build it with you. Milestone-based pricing so you know exactly what you're getting at every step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS SHIPPED ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Products we've shipped</h2>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 32px;">
+          <div class="case-study-card">
+            <h3>Eitoss</h3>
+            <p class="text-body" style="font-weight: 600; color: var(--text-secondary); margin-bottom: 12px;">MVP in 3 months. Raised funding. Still building together.</p>
+            <p class="text-body">Demoable product in 8 weeks. Live in production in 3 months. They raised funding and we're still their engineering team 2+ years later.</p>
+          </div>
+          <div class="case-study-card">
+            <h3>Formester</h3>
+            <p class="text-body" style="font-weight: 600; color: var(--text-secondary); margin-bottom: 12px;">Our own SaaS. 1,000+ users. 4.8 rating.</p>
+            <p class="text-body">We built our own product from scratch — it taught us what real ownership feels like. We bring that same care to every MVP we build.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <span class="text-label" style="display: block; margin-bottom: 16px;">They don't wait to be asked.</span>
+          <div class="testimonial-inline">
+            <blockquote>"Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas."</blockquote>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <img src="/images/testimonials/enzo.jpeg" alt="Enzo Zadrima" style="width:44px;height:44px;border-radius:50%;object-fit:cover;" loading="lazy">
+              <div>
+                <div class="author">Enzo Zadrima</div>
+                <div class="author-title">CTO, Viewber</div>
               </div>
-              <span :class="`text-sm font-medium px-3 py-1 rounded-full ${
-                activePhase === index ? 'bg-amber-200 text-amber-800' : 'bg-gray-200 text-gray-600'
-              }`">
-                {{ phase.duration }}
-              </span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">
-              Phase {{ index + 1 }}: {{ phase.title }}
-            </h3>
-            <ul class="space-y-2">
-              <li v-for="(activity, i) in phase.activities.slice(0, 3)" :key="i" class="flex items-start">
-                <CheckCircle :class="`w-5 h-5 mr-2 mt-0.5 flex-shrink-0 ${
-                  activePhase === index ? 'text-amber-600' : 'text-gray-400'
-                }`" />
-                <span class="text-sm text-gray-600">{{ activity }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Active Phase Details -->
-        <div
-          :key="activePhase"
-          class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8"
-        >
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ phases[activePhase].title }} - Detailed Activities
-          </h3>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div v-for="(activity, index) in phases[activePhase].activities" :key="index" class="flex items-start">
-              <CheckCircle class="w-5 h-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">{{ activity }}</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Deliverables -->
-    <section class="py-20 bg-gradient-to-br from-yellow-50 to-amber-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            What You'll Get
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to launch, test, and scale your product
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            v-for="(deliverable, index) in deliverables"
-            :key="index"
-            class="bg-white p-6 rounded-2xl shadow-lg"
-          >
-            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
-              <component :is="deliverable.icon" class="w-6 h-6 text-amber-600" />
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-3">
-              {{ deliverable.title }}
-            </h3>
-            <ul class="space-y-2">
-              <li v-for="(item, i) in deliverable.items" :key="i" class="flex items-start">
-                <ArrowRight class="w-4 h-4 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span class="text-sm text-gray-600">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technologies -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Technologies We Use
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modern tech stack for scalable and maintainable MVPs
-          </p>
-        </div>
-
-        <div class="flex flex-wrap gap-3 justify-center">
-          <span
-            v-for="(tech, index) in technologies"
-            :key="index"
-            class="px-4 py-2 bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800 rounded-lg text-sm font-medium"
-          >
-            {{ tech.name }}
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-20 bg-gradient-to-br from-amber-50 to-yellow-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            Success Stories
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from founders who launched successful MVPs with us
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8">
-          <div
-            v-for="(testimonial, index) in testimonials"
-            :key="index"
-            class="bg-white p-8 rounded-2xl shadow-lg"
-          >
-            <div class="flex mb-4">
-              <svg
-                v-for="i in 5"
-                :key="i"
-                class="w-5 h-5 text-amber-400 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-            <p class="text-gray-700 italic mb-6 leading-relaxed">
-              "{{ testimonial.quote }}"
-            </p>
-            <div class="border-t pt-4">
-              <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
-              <div class="text-sm text-gray-600">{{ testimonial.role }}</div>
-              <div class="text-sm text-amber-600">{{ testimonial.company }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-amber-600 to-yellow-600 relative overflow-hidden">
-      <div class="absolute inset-0 bg-grid-pattern opacity-10" />
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center">
-          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Launch Your MVP?
-          </h2>
-          <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Join 50+ startups who validated their ideas and secured funding with our MVP development service
-          </p>
-          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center px-8 py-4 bg-white text-amber-600 font-semibold rounded-xl hover:bg-amber-50 transition-all transform hover:scale-105"
-            >
-              Get Started Today
-              <ArrowRight class="ml-2 w-5 h-5" />
-            </NuxtLink>
-            <button class="inline-flex items-center px-8 py-4 bg-amber-700 text-white font-semibold rounded-xl hover:bg-amber-800 transition-all">
-              Schedule a Consultation
-              <Calendar class="ml-2 w-5 h-5" />
-            </button>
-          </div>
-          <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-white">
-            <div class="flex items-center">
-              <Mail class="w-5 h-5 mr-3 text-amber-200" />
-              <span>business@acornglobus.com</span>
-            </div>
-            <div class="flex items-center">
-              <MapPin class="w-5 h-5 mr-3 text-amber-200" />
-              <span>Nagpur, Maharashtra</span>
-            </div>
-          </div>
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Your idea deserves a real product, not a throwaway prototype.</h2>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what you're building. We'll have an honest conversation about scope, timeline, and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the right fit, we'll scope it together.</p>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <NuxtLink to="/portfolio" class="btn-text">See how we built Eitoss's MVP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -335,196 +256,47 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import {
-  ArrowRight,
-  ChevronDown,
-  Rocket,
-  Clock,
-  Users,
-  TrendingUp,
-  Target,
-  Zap,
-  Shield,
-  BarChart,
-  FileCode,
-  MessageSquare,
-  CheckCircle,
-  Lightbulb,
-  Package,
-  GitBranch,
-  Repeat,
-  Calendar,
-  DollarSign,
-  Award,
-  ArrowUpRight,
-  Mail,
-  Phone,
-  MapPin
-} from 'lucide-vue-next'
+useSeoMeta({
+  title: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
+  description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  ogTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
+  ogDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/mvp-development',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
 
-definePageMeta({ layout: 'default' })
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/mvp-development' }],
+})
 
-const activePhase = ref(0)
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'MVP Development', path: '/services/mvp-development' },
+])
 
-const phases = [
-  {
-    title: 'Discovery & Planning',
-    duration: '1-2 weeks',
-    icon: Lightbulb,
-    activities: [
-      'Define core features',
-      'Create user stories',
-      'Establish success metrics',
-      'Technical architecture planning',
-      'Risk assessment',
-      'Resource allocation'
-    ]
-  },
-  {
-    title: 'Rapid Development',
-    duration: '6-8 weeks',
-    icon: Zap,
-    activities: [
-      'Agile sprints',
-      'Weekly demonstrations',
-      'Continuous feedback integration',
-      'Core feature implementation',
-      'UI/UX development',
-      'API integration'
-    ]
-  },
-  {
-    title: 'Launch & Iterate',
-    duration: '1-2 weeks',
-    icon: Rocket,
-    activities: [
-      'Quick market launch',
-      'Data-driven improvements',
-      'User feedback collection',
-      'Performance optimization',
-      'Bug fixes and refinements',
-      'Analytics implementation'
-    ]
-  }
-]
-
-const benefits = [
-  {
-    icon: Clock,
-    title: 'Fast Time-to-Market',
-    description: '8-12 week development cycle to get your product in front of users quickly'
-  },
-  {
-    icon: DollarSign,
-    title: 'Cost-Effective Validation',
-    description: 'Test your product idea without the investment of a full-scale application'
-  },
-  {
-    icon: TrendingUp,
-    title: 'Investor-Ready',
-    description: 'Professional-grade MVPs designed to impress investors and secure funding'
-  },
-  {
-    icon: Users,
-    title: 'User-Centric Design',
-    description: 'Focus on core features that deliver real value to your target users'
-  },
-  {
-    icon: Shield,
-    title: 'Scalable Foundation',
-    description: 'Clean, production-ready codebase that can grow with your business'
-  },
-  {
-    icon: BarChart,
-    title: 'Data-Driven Insights',
-    description: 'Built-in analytics to track user behavior and validate assumptions'
-  }
-]
-
-const deliverables = [
-  {
-    icon: Package,
-    title: 'Core Product Features',
-    items: [
-      'Essential functionality',
-      'User authentication',
-      'Data management',
-      'Core workflows'
-    ]
-  },
-  {
-    icon: GitBranch,
-    title: 'Clean Codebase',
-    items: [
-      'Modular architecture',
-      'Version control setup',
-      'CI/CD pipeline',
-      'Testing framework'
-    ]
-  },
-  {
-    icon: FileCode,
-    title: 'Documentation',
-    items: [
-      'Technical documentation',
-      'API documentation',
-      'User guides',
-      'Deployment guides'
-    ]
-  },
-  {
-    icon: BarChart,
-    title: 'Analytics & Monitoring',
-    items: [
-      'User tracking',
-      'Performance metrics',
-      'Error monitoring',
-      'Usage analytics'
-    ]
-  }
-]
-
-const technologies = [
-  { name: 'React', category: 'Frontend' },
-  { name: 'Angular', category: 'Frontend' },
-  { name: 'Vue.js', category: 'Frontend' },
-  { name: 'Node.js', category: 'Backend' },
-  { name: 'Python', category: 'Backend' },
-  { name: '.NET', category: 'Backend' },
-  { name: 'AWS', category: 'Cloud' },
-  { name: 'Google Cloud', category: 'Cloud' },
-  { name: 'MongoDB', category: 'Database' },
-  { name: 'PostgreSQL', category: 'Database' },
-  { name: 'Redis', category: 'Database' },
-  { name: 'Docker', category: 'DevOps' }
-]
-
-const testimonials = [
-  {
-    quote: "Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.",
-    author: "Alon Diamant",
-    role: "CTO",
-    company: "Mayple"
-  },
-  {
-    quote: "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.",
-    author: "Enzo Zadrima",
-    role: "Chief Technology Officer",
-    company: "Viewber"
-  },
-  {
-    quote: "Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.",
-    author: "Bogdan Arsenie",
-    role: "CTO",
-    company: "PerformLine & Social Impact Advocate"
-  }
-]
-
-const keyStats = [
-  { value: '8-12', label: 'Weeks to Launch', suffix: '' },
-  { value: '50+', label: 'MVPs Delivered', suffix: '' },
-  { value: '85', label: 'Success Rate', suffix: '%' },
-  { value: '3x', label: 'Faster to Market', suffix: '' }
-]
+useServiceSchema({
+  name: 'MVP Development',
+  description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  url: '/services/mvp-development',
+})
 </script>
+
+<style scoped>
+.hero {
+  padding-top: 140px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 100px;
+  }
+}
+</style>

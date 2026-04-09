@@ -14,9 +14,10 @@ keywords: Nginx, web server, beginner, tutorial, guide, installation,
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z
-coverImg: /img/abstract3.png
+coverImg: /images/blog/nginx-guide.webp
 coverImgAlt: Nginx for Beginners
 published: true
+topic: Tech
 ---
 Well, we have all heard about Nginx as a web server, reverse proxy, load balancer, and proxy server for email communications, and it is also known for its performance and stability. Let us start with some hands-on with Nginx and see what it can do.
 

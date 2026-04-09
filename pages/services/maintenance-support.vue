@@ -1,300 +1,277 @@
 <template>
-  <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <NuxtLink
-          to="/services"
-          class="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-6 transition-colors"
-        >
-          <ArrowLeft class="h-4 w-4 mr-2" />
-          Back to Services
-        </NuxtLink>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-6">
-              <Shield class="h-4 w-4 mr-2" />
-              Maintenance & Support
-            </div>
-
-            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Keep Your Systems
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 block mt-2">
-                Running at Peak Performance
-              </span>
-            </h1>
-
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Comprehensive maintenance and support services to ensure your applications
-              remain secure, efficient, and up-to-date with 24/7 monitoring and rapid
-              issue resolution.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <NuxtLink
-                to="/contact"
-                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Get Started
-                <ArrowRight class="h-5 w-5 ml-2" />
-              </NuxtLink>
-              <button class="inline-flex items-center px-6 py-3 bg-white text-green-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-green-200">
-                <Headphones class="h-5 w-5 mr-2" />
-                24/7 Support
-              </button>
-            </div>
-          </div>
-
-          <div class="relative">
-            <div class="grid grid-cols-2 gap-4">
-              <div v-for="(stat, idx) in stats" :key="idx" class="bg-white rounded-2xl p-6 shadow-lg">
-                <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-xl mb-3">
-                  <component :is="stat.icon" />
-                </div>
-                <div class="text-2xl font-bold text-gray-900">{{ stat.value }}</div>
-                <p class="text-sm text-gray-600">{{ stat.label }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Maintenance Services?</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Proactive maintenance to prevent issues before they impact your business
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(benefit, idx) in benefits" :key="idx" class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-white text-green-600 rounded-xl mb-4 shadow-sm">
-              <component :is="benefit.icon" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ benefit.title }}</h3>
-            <p class="text-gray-600">{{ benefit.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Support Plans -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Support Plans</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Choose the plan that best fits your needs
-          </p>
-        </div>
-
-        <!-- Plan Tabs -->
-        <div class="flex justify-center space-x-4 mb-12">
-          <button
-            v-for="key in Object.keys(supportPlans)"
-            :key="key"
-            @click="activeTab = key"
-            :class="`px-6 py-3 rounded-full font-medium transition-all duration-300 capitalize ${
-              activeTab === key
-                ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg'
-                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
-            }`"
-          >
-            {{ supportPlans[key].title }}
-          </button>
-        </div>
-
-        <!-- Plan Details -->
-        <div class="max-w-4xl mx-auto">
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-            <div v-if="supportPlans[activeTab].recommended" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-2 text-sm font-semibold">
-              RECOMMENDED
-            </div>
-
-            <div class="p-8">
-              <div class="text-center mb-8">
-                <h3 class="text-3xl font-bold text-gray-900 mb-2">
-                  {{ supportPlans[activeTab].title }}
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  {{ supportPlans[activeTab].description }}
-                </p>
-                <div class="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                  {{ supportPlans[activeTab].price }}
-                </div>
-              </div>
-
-              <div class="space-y-4">
-                <div v-for="(feature, idx) in supportPlans[activeTab].features" :key="idx" class="flex items-center">
-                  <CheckCircle v-if="feature.included" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                  <div v-else class="h-5 w-5 rounded-full border-2 border-gray-300 mr-3 flex-shrink-0"></div>
-                  <span :class="feature.included ? 'text-gray-700' : 'text-gray-400'">
-                    {{ feature.text }}
-                  </span>
-                </div>
-              </div>
-
-              <div class="mt-8 text-center">
-                <NuxtLink
-                  to="/contact"
-                  :class="`inline-flex items-center px-8 py-3 bg-gradient-to-r ${supportPlans[activeTab].gradient} text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300`"
-                >
-                  Get Started
-                  <ArrowRight class="h-5 w-5 ml-2" />
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Maintenance Services</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive services to keep your applications running smoothly
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div v-for="(service, idx) in services" :key="idx" class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="flex items-start mb-6">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-xl mr-4">
-                <component :is="service.icon" />
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ service.title }}</h3>
-                <p class="text-gray-600">{{ service.description }}</p>
-              </div>
-            </div>
-
-            <ul class="grid grid-cols-2 gap-3">
-              <li v-for="(item, itemIdx) in service.items" :key="itemIdx" class="flex items-center text-sm text-gray-700">
-                <Sparkles class="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                {{ item }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Maintenance Process</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            A systematic approach to ensure optimal performance and reliability
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(step, idx) in process" :key="idx" class="relative">
-            <div v-if="idx < process.length - 1" class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-green-300 to-transparent z-0"></div>
-            <div class="bg-white rounded-2xl p-6 shadow-lg relative z-10 hover:shadow-xl transition-shadow">
-              <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-xl mb-4">
-                <component :is="step.icon" />
-              </div>
-              <div class="text-sm text-green-600 font-semibold mb-2">Step {{ step.step }}</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ step.title }}</h3>
-              <p class="text-sm text-gray-600">{{ step.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technologies -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Technologies We Support</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Expert maintenance across all major technologies and platforms
-          </p>
-        </div>
-
-        <div class="flex flex-wrap justify-center gap-4">
-          <span
-            v-for="(tech, idx) in technologies"
-            :key="idx"
-            class="px-6 py-3 bg-gradient-to-br from-green-50 to-emerald-50 text-green-700 rounded-full font-semibold hover:shadow-md transition-all duration-300"
-          >
-            {{ tech }}
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Emergency Support -->
-    <section class="py-20 bg-gradient-to-br from-red-50 to-orange-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <AlertCircle class="h-16 w-16 text-red-600 mx-auto mb-6" />
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Emergency Support Available</h2>
-          <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            Critical issues? Our emergency support team is available 24/7 to help resolve
-            urgent problems and minimize downtime.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-            >
-              <Bell class="h-5 w-5 mr-2" />
-              Get Emergency Support
-            </NuxtLink>
-            <button class="inline-flex items-center justify-center px-8 py-3 bg-white text-red-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-red-200">
-              <Headphones class="h-5 w-5 mr-2" />
-              Talk to Support
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-green-50 to-emerald-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Keep Your Systems Running Smoothly
-        </h2>
-        <p class="text-xl text-gray-600 mb-8">
-          Let us handle the maintenance while you focus on growing your business
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Get Started Today
-            <ArrowRight class="h-5 w-5 ml-2" />
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <NuxtLink to="/services" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back to Services
           </NuxtLink>
-          <NuxtLink
-            to="/services"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-green-200"
-          >
-            View All Services
-            <ChevronRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
+          <div class="hero-eyebrow"><span>Maintenance &amp; Support</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">We built it. We keep it running. And we make it better.</h1>
+          <p class="text-body-lg">Launching is just the beginning. We stay with your product — monitoring, fixing, updating, and improving it with the same team that built it in the first place.</p>
+          <div style="margin-top: 32px;">
+            <NuxtLink to="/contact" class="btn-text" style="font-size: 17px;">Let's talk about your product <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          </div>
+        </div>
+        <div class="stats-row" style="margin-top: 56px;">
+          <div class="stat"><span class="stat-value">20+</span><span class="stat-label">Engineers</span></div>
+          <div class="stat"><span class="stat-value">80%+</span><span class="stat-label">Client Retention</span></div>
+          <div class="stat"><span class="stat-value">7+</span><span class="stat-label">Years in Business</span></div>
+          <div class="stat"><span class="stat-value">Same Team</span><span class="stat-label">That Built It</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAIN POINT ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Your product is live. Now what?</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">The launch went well. Users are coming in. But things break. Dependencies get outdated. Security patches pile up. Performance degrades. And the team that built it? They moved on to the next project.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">You need someone who knows your codebase, who cares about keeping it healthy, and who treats maintenance as more than just keeping the lights on.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VALUE PROPOSITION ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Same team. Same care. Continuing the journey.</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Most of our maintenance relationships started as MVP or full project delivery. The engineers who maintain your product are the same ones who built it. They know every line of code because they wrote it — and they care about it because they've been invested in it from the start.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Here's what makes our maintenance different:</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <div class="feature-card">
+            <h3 class="text-title-lg">Same engineers, same relationship.</h3>
+            <p class="text-body" style="margin-top: 12px;">When possible, the team that built it maintains it. No re-learning your codebase with strangers. No lost context.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Proactive, not just reactive.</h3>
+            <p class="text-body" style="margin-top: 12px;">We monitor and fix before you notice. We treat your product like our own — because that's how we've always worked.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Improvement mindset.</h3>
+            <p class="text-body" style="margin-top: 12px;">We don't just keep the lights on. Quarterly improvement sprints let us make your product better over time, not just stable.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Transparent hours.</h3>
+            <p class="text-body" style="margin-top: 12px;">You see exactly what we spent time on each month. Monthly health reports. No mystery invoices.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">No lock-in.</h3>
+            <p class="text-body" style="margin-top: 12px;">Full documentation means you can leave anytime. But most clients don't — because the partnership works.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NATURAL NEXT STEP ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">The natural next step.</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">This service exists because our clients asked for it. After we built their products, they didn't want to hand maintenance to a team that had never seen the code.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">PerformLine's engagement grew from 1 engineer to 8+ over 2 years. Eitoss is still with us more than 2 years after we shipped their MVP. These aren't maintenance contracts — they're ongoing partnerships where we keep building, keep improving, and keep caring about the product.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">When you've invested in building something right, you want the people who built it to keep it running right.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">How it works</h2>
+        </div>
+        <div class="process-steps" style="margin-top: 48px;">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div>
+              <h3 class="text-title-lg">Onboarding (1-2 weeks)</h3>
+              <p class="text-body" style="margin-top: 8px;">We audit the codebase, set up monitoring, document the system, and establish SLAs. If we built it, this step is already half done.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div>
+              <h3 class="text-title-lg">Ongoing support</h3>
+              <p class="text-body" style="margin-top: 8px;">Monthly retainer with defined SLAs for response and resolution. You know exactly what to expect.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div>
+              <h3 class="text-title-lg">Improvement sprints (optional)</h3>
+              <p class="text-body" style="margin-top: 8px;">Quarterly sprints for feature additions, refactoring, or performance improvements. Your product keeps getting better.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div>
+              <h3 class="text-title-lg">Monthly reporting</h3>
+              <p class="text-body" style="margin-top: 8px;">Uptime, issues resolved, improvements made. Full transparency on where your retainer hours go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DELIVERABLES ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">What you get</h2>
+          <ul class="deliverables-list" style="margin-top: 32px;">
+            <li>Bug fixing and incident response</li>
+            <li>Security patching and dependency updates</li>
+            <li>Performance monitoring and optimization</li>
+            <li>Database maintenance</li>
+            <li>Infrastructure monitoring (if we manage your cloud)</li>
+            <li>Minor feature additions within retainer hours</li>
+            <li>Monthly health report with full hour breakdown</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SUPPORT PLANS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Support plans that fit how you work</h2>
+        </div>
+        <table class="plans-table" style="margin-top: 32px;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Standard</th>
+              <th>Priority</th>
+              <th>Emergency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response time</td>
+              <td>24 hours</td>
+              <td>4 hours</td>
+              <td>1 hour (critical)</td>
+            </tr>
+            <tr>
+              <td>Critical resolution</td>
+              <td>72 hours</td>
+              <td>24 hours</td>
+              <td>Same day</td>
+            </tr>
+            <tr>
+              <td>Best for</td>
+              <td>Stable products with low urgency</td>
+              <td>Active products with regular users</td>
+              <td>Mission-critical systems</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">What goes into pricing</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">We'd rather be honest about what drives cost than give you a number that doesn't mean anything yet.</p>
+          <div class="pricing-highlight" style="margin-top: 32px;">
+            <p class="text-body-lg" style="color: var(--on-surface); font-weight: 600;">Maintenance retainers typically range from $1,500 to $5,000+ per month, depending on four things:</p>
+          </div>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <div class="feature-card">
+            <h3 class="text-title-lg">Project complexity</h3>
+            <p class="text-body" style="margin-top: 12px;">A stable app with a small user base needs less than a growing platform handling payments and integrations. We size the retainer to what your product actually needs.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Engineer experience</h3>
+            <p class="text-body" style="margin-top: 12px;">Senior engineers cost more per hour — but they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Hours commitment</h3>
+            <p class="text-body" style="margin-top: 12px;">More hours per month means a lower effective rate. We'll help you figure out the right number based on your product's age, user base, and pace of change.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-title-lg">Availability model</h3>
+            <p class="text-body" style="margin-top: 12px;">Dedicated engineers (assigned only to your product) vs. shared support (part of a rotation). Dedicated costs more but gives you faster response and deeper context.</p>
+          </div>
+        </div>
+        <div style="max-width: 720px; margin-top: 48px;">
+          <p class="text-body-lg">Every maintenance plan starts with a conversation about your product — what it does, how it's used, and what kind of care it needs. We'll give you a specific number once we understand the scope. No surprises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DETAILS ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">The details</h2>
+          <div class="details-table" style="margin-top: 32px;">
+            <div class="details-row">
+              <span class="details-label">Model</span>
+              <span class="details-value">Monthly retainer, scoped to your product</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Minimum commitment</span>
+              <span class="details-value">3 months — enough time to learn your product and prove the value</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Team</span>
+              <span class="details-value">1-2 dedicated engineers who know your codebase</span>
+            </div>
+            <div class="details-row">
+              <span class="details-label">Scaling</span>
+              <span class="details-value">Need more? Add improvement sprints or expand the team as your product grows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THIS IS FOR YOU IF ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">This is for you if...</h2>
+        </div>
+        <div class="audience-cards-grid" style="margin-top: 40px;">
+          <div class="audience-card">
+            <h3>We built your product</h3>
+            <p>And you want the same team to maintain it. This is the natural continuation of our MVP or full project delivery work.</p>
+          </div>
+          <div class="audience-card">
+            <h3>You acquired a product</h3>
+            <p>And need a team to take ownership of a codebase they didn't write.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Your original dev team left</h3>
+            <p>And you need engineers who can learn the codebase and keep it healthy.</p>
+          </div>
+          <div class="audience-card">
+            <h3>You want to keep a product alive</h3>
+            <p>Without hiring a full-time in-house team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Your product deserves the same care after launch as it got during build.</h2>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your product — what it does, who built it, and what kind of support you need. We'll put together a maintenance plan that keeps it healthy and improving, not just alive.</p>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <NuxtLink to="/contact" class="btn-text">Already our client? Let's discuss ongoing support. <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -302,207 +279,48 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import {
-  ArrowRight,
-  Shield,
-  Clock,
-  AlertCircle,
-  CheckCircle,
-  Activity,
-  Bug,
-  Lock,
-  TrendingUp,
-  Headphones,
-  Monitor,
-  ChevronRight,
-  ArrowLeft,
-  Sparkles,
-  Settings,
-  Zap,
-  BarChart3,
-  Bell,
-  RefreshCw,
-  Users,
-  Award,
-  Star,
-  Package,
-  Cloud,
-  Database,
-  Search
-} from 'lucide-vue-next'
+useSeoMeta({
+  title: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  ogTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  ogDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services/maintenance-support',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
 
-definePageMeta({ layout: 'default' })
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/maintenance-support' }],
+})
 
-const activeTab = ref('basic')
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+  { name: 'Maintenance & Support', path: '/services/maintenance-support' },
+])
 
-const benefits = [
-  {
-    icon: Shield,
-    title: 'Proactive Monitoring',
-    description: '24/7 system monitoring to identify and resolve issues before they impact your business.'
-  },
-  {
-    icon: Clock,
-    title: 'Rapid Response',
-    description: 'Quick resolution of critical issues with guaranteed response times based on priority levels.'
-  },
-  {
-    icon: Lock,
-    title: 'Security Updates',
-    description: 'Regular security patches and updates to protect against vulnerabilities and threats.'
-  },
-  {
-    icon: TrendingUp,
-    title: 'Performance Optimization',
-    description: 'Continuous performance tuning to ensure your applications run at peak efficiency.'
-  },
-  {
-    icon: Bug,
-    title: 'Bug Resolution',
-    description: 'Swift identification and fixing of bugs to maintain seamless user experience.'
-  },
-  {
-    icon: RefreshCw,
-    title: 'Regular Backups',
-    description: 'Automated backup systems to ensure your data is always safe and recoverable.'
-  }
-]
+useServiceSchema({
+  name: 'Maintenance & Support',
+  description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  url: '/services/maintenance-support',
+})
+</script>
 
-const supportPlans = {
-  basic: {
-    title: 'Basic Maintenance',
-    price: 'Starting at $999/month',
-    description: 'Essential maintenance for small to medium applications',
-    features: [
-      { text: 'Regular updates and patches', included: true },
-      { text: 'Security monitoring', included: true },
-      { text: 'Monthly health reports', included: true },
-      { text: 'Business hours support (9-6 PM)', included: true },
-      { text: 'Response time: 24 hours', included: true },
-      { text: 'Bug fixes', included: true },
-      { text: '24/7 emergency support', included: false },
-      { text: 'Dedicated support team', included: false },
-      { text: 'On-site support', included: false }
-    ],
-    gradient: 'from-green-500 to-emerald-600',
-    recommended: false
-  },
-  premium: {
-    title: 'Premium Support',
-    price: 'Starting at $2,499/month',
-    description: 'Comprehensive support for mission-critical applications',
-    features: [
-      { text: 'All Basic features', included: true },
-      { text: '24/7 emergency support', included: true },
-      { text: 'Priority response times', included: true },
-      { text: 'Response time: 4 hours', included: true },
-      { text: 'Dedicated support team', included: true },
-      { text: 'Weekly health reports', included: true },
-      { text: 'Performance optimization', included: true },
-      { text: 'Database maintenance', included: true },
-      { text: 'On-site support', included: false }
-    ],
-    gradient: 'from-blue-500 to-indigo-600',
-    recommended: true
-  },
-  enterprise: {
-    title: 'Enterprise Care',
-    price: 'Custom Pricing',
-    description: 'Tailored solutions for large-scale enterprise applications',
-    features: [
-      { text: 'All Premium features', included: true },
-      { text: 'Custom SLA agreements', included: true },
-      { text: 'Response time: 1 hour', included: true },
-      { text: 'On-site support options', included: true },
-      { text: 'Proactive monitoring', included: true },
-      { text: 'Strategic consulting', included: true },
-      { text: 'Disaster recovery planning', included: true },
-      { text: 'Compliance management', included: true },
-      { text: 'Dedicated account manager', included: true }
-    ],
-    gradient: 'from-orange-500 to-red-600',
-    recommended: false
+<style scoped>
+.hero {
+  padding-top: 140px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px;
   }
 }
 
-const services = [
-  {
-    icon: Bug,
-    title: 'Bug Fixes',
-    description: 'Quick identification and resolution of software bugs',
-    items: ['Critical bug fixes', 'Regression testing', 'Code debugging', 'Error tracking']
-  },
-  {
-    icon: Lock,
-    title: 'Security Updates',
-    description: 'Regular security patches and vulnerability assessments',
-    items: ['Security patches', 'Vulnerability scanning', 'SSL certificates', 'Compliance updates']
-  },
-  {
-    icon: Activity,
-    title: 'Performance Tuning',
-    description: 'Optimization for speed and efficiency',
-    items: ['Database optimization', 'Code refactoring', 'Caching strategies', 'Load balancing']
-  },
-  {
-    icon: Monitor,
-    title: 'System Monitoring',
-    description: '24/7 monitoring of your applications and infrastructure',
-    items: ['Uptime monitoring', 'Error tracking', 'Performance metrics', 'Automated alerts']
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 48px !important;
   }
-]
-
-const process = [
-  {
-    step: 1,
-    title: 'System Assessment',
-    description: 'Comprehensive evaluation of your current infrastructure and applications.',
-    icon: Search
-  },
-  {
-    step: 2,
-    title: 'Maintenance Plan',
-    description: 'Custom maintenance strategy tailored to your specific needs.',
-    icon: Settings
-  },
-  {
-    step: 3,
-    title: 'Implementation',
-    description: 'Set up monitoring tools, establish procedures, and integrate with your team.',
-    icon: Package
-  },
-  {
-    step: 4,
-    title: 'Continuous Monitoring',
-    description: '24/7 system monitoring with automated alerts and issue detection.',
-    icon: Activity
-  },
-  {
-    step: 5,
-    title: 'Regular Maintenance',
-    description: 'Scheduled updates, patches, and performance optimization.',
-    icon: RefreshCw
-  },
-  {
-    step: 6,
-    title: 'Reporting & Review',
-    description: 'Regular reports on system health, performance, and recommendations.',
-    icon: BarChart3
-  }
-]
-
-const stats = [
-  { value: '99.9%', label: 'Uptime SLA', icon: TrendingUp },
-  { value: '24/7', label: 'Support Available', icon: Clock },
-  { value: '<4hr', label: 'Avg Response Time', icon: Zap },
-  { value: '500+', label: 'Systems Maintained', icon: Shield }
-]
-
-const technologies = [
-  'Ruby on Rails', 'Node.js', 'React', 'Vue.js', 'Angular',
-  'Python', 'PHP', '.NET', 'Java', 'PostgreSQL',
-  'MySQL', 'MongoDB', 'Redis', 'AWS', 'Azure',
-  'Google Cloud', 'Docker', 'Kubernetes', 'Jenkins', 'GitLab'
-]
-</script>
+}
+</style>

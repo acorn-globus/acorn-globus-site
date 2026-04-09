@@ -77,7 +77,7 @@ export default (meta) => {
         },
         {
             name: 'twitter:site',
-            content: '@_formester_'
+            content: '@acornglobus'
         },
         {
             hid: 'twitter:card',

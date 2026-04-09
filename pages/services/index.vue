@@ -1,291 +1,361 @@
 <template>
-  <div class="min-h-screen bg-white"><!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div class="absolute inset-0">
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-            <Settings class="h-4 w-4 mr-2" />
-            Our Services
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" style="padding-bottom: 80px;">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <div class="hero-eyebrow"><span>Our Services</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">How We Work With You</h1>
+          <p class="text-body-lg" ref="heroDesc">{{ activeTabDesc }}</p>
+          <div class="tabs">
+            <button
+              v-for="tab in tabs"
+              :key="tab.id"
+              class="tab-btn"
+              :class="{ active: activeTab === tab.id }"
+              @click="switchTab(tab)"
+            >{{ tab.label }}</button>
           </div>
-
-          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Comprehensive Digital Solutions
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block mt-2">
-              For Your Business Growth
-            </span>
-          </h1>
-
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            From resource augmentation to full-scale development, we provide the expertise and
-            partnership your business needs to thrive in the digital age.
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- Tab Navigation -->
-    <section class="sticky top-20 bg-white border-b border-gray-100 z-40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center space-x-8 py-4">
-          <button
-            @click="activeTab = 'services'"
-            :class="[
-              'px-6 py-2 font-medium transition-all duration-300',
-              activeTab === 'services'
-                ? 'text-blue-600 border-b-2 border-blue-600'
-                : 'text-gray-600 hover:text-blue-600'
-            ]"
-          >
-            Services
-          </button>
-          <button
-            @click="activeTab = 'process'"
-            :class="[
-              'px-6 py-2 font-medium transition-all duration-300',
-              activeTab === 'process'
-                ? 'text-blue-600 border-b-2 border-blue-600'
-                : 'text-gray-600 hover:text-blue-600'
-            ]"
-          >
-            Our Process
-          </button>
-          <button
-            @click="activeTab = 'technologies'"
-            :class="[
-              'px-6 py-2 font-medium transition-all duration-300',
-              activeTab === 'technologies'
-                ? 'text-blue-600 border-b-2 border-blue-600'
-                : 'text-gray-600 hover:text-blue-600'
-            ]"
-          >
-            Technologies
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section v-if="activeTab === 'services'" class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div
-            v-for="service in services"
-            :key="service.id"
-            class="group relative bg-white rounded-3xl p-8 transition-all duration-500 hover:-translate-y-1"
-            @mouseenter="hoveredService = service.id"
-            @mouseleave="hoveredService = null"
-            :style="{
-              boxShadow: hoveredService === service.id
-                ? '0 20px 40px -10px rgba(147, 51, 234, 0.3)'
-                : '0 10px 30px -10px rgba(0, 0, 0, 0.1)'
-            }"
-          >
-            <div :class="[
-              'inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r text-white mb-6 group-hover:scale-110 transition-transform',
-              service.gradient
-            ]">
-              <component :is="service.icon" class="h-8 w-8" />
+    <!-- ===== TAB: SERVICES ===== -->
+    <div v-show="activeTab === 'services'">
+      <!-- FOR STARTUPS -->
+      <section style="padding-top: 0;">
+        <div class="container-redesign">
+          <div class="audience-header">
+            <h2 class="text-label audience-heading">For Startups</h2>
+            <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You've got the vision and the funding. You need a team that ships real products — not prototypes you'll rewrite in six months.</p>
+          </div>
+          <div class="service-offerings-grid">
+            <!-- MVP Development -->
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3 class="text-title-lg">Ship a real product in 8-12 weeks</h3>
+              <p class="text-body" style="margin-top: 12px;">We take your product idea and build it with you — from concept to a working, deployable MVP. Production-quality from day one, with clean code and proper architecture. We've been through this ourselves with Formester.</p>
+              <ul class="check-list">
+                <li>Production-ready code, not a throwaway prototype</li>
+                <li>100% code ownership from day one</li>
+                <li>Post-launch support included</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Eitoss: MVP shipped in 3 months. They raised funding. We're still building together 2 years later.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</NuxtLink>
+                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
             </div>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-              {{ service.title }}
-            </h3>
-
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              {{ service.description }}
-            </p>
-
-            <ul class="space-y-3 mb-6">
-              <li v-for="(feature, idx) in service.features" :key="idx" class="flex items-start">
-                <CheckCircle class="h-5 w-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
-                <span class="text-gray-700">{{ feature }}</span>
-              </li>
-            </ul>
-
-            <NuxtLink
-              v-if="service.link"
-              :to="service.link"
-              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors cursor-pointer"
-            >
-              Learn More
-              <ArrowRight class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </NuxtLink>
-            <span v-else class="inline-flex items-center text-gray-400 font-semibold cursor-default">
-              Coming Soon
-              <ArrowRight class="h-4 w-4 ml-2" />
-            </span>
-          </div>
-        </div>
-
-        <!-- Differentiators -->
-        <div class="mt-20">
-          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">What Sets Us Apart</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div v-for="(item, idx) in differentiators" :key="idx" class="text-center">
-              <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl mb-4">
-                <component :is="item.icon" class="h-6 w-6" />
+            <!-- Full Project Delivery -->
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               </div>
-              <h4 class="font-semibold text-gray-900 mb-2">{{ item.title }}</h4>
-              <p class="text-sm text-gray-600">{{ item.description }}</p>
+              <h3 class="text-title-lg">Your product, built end-to-end by a team that cares</h3>
+              <p class="text-body" style="margin-top: 12px;">From architecture to launch — one team, one relationship, no surprises. We walk with you through every decision and build it like it's our own.</p>
+              <ul class="check-list">
+                <li>Milestone transparency — you see progress, not just reports</li>
+                <li>Built to hand over — zero lock-in</li>
+                <li>4-week post-launch warranty</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>We built Formester end-to-end — our own SaaS product, live and growing with real users.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</NuxtLink>
+                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Process Section -->
-    <section v-if="activeTab === 'process'" class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(phase, index) in process" :key="phase.id" class="relative">
-            <!-- Connection Line -->
-            <div
-              v-if="index < process.length - 1"
-              class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-transparent z-0"
-            ></div>
-
-            <div class="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 z-10">
-              <div :class="[
-                'inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4',
-                `bg-${phase.color}-100 text-${phase.color}-600`
-              ]">
-                <component :is="phase.icon" class="h-6 w-6" />
+      <!-- FOR NON-TECHNICAL FOUNDERS -->
+      <section class="section-redesign" style="background: var(--surface);">
+        <div class="container-redesign">
+          <div class="audience-header">
+            <h2 class="text-label audience-heading">For Non-Technical Founders</h2>
+            <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You don't need a CTO yet. You need a team that translates your vision into a technical plan and walks you through every decision.</p>
+          </div>
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               </div>
+              <h3 class="text-title-lg">From idea to working product — with a team that explains every step</h3>
+              <p class="text-body" style="margin-top: 12px;">We'll help you define what to build first, guide you through the trade-offs, and ship something real. Milestone-based pricing so you know exactly what you're getting.</p>
+              <ul class="check-list">
+                <li>We scope the product with you — honest about what to build first and what can wait</li>
+                <li>Weekly demos so you see progress, not just hear about it</li>
+                <li>Clean handoff — your code, ready for your future in-house team</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>We built Formester ourselves. We know what it's like to care deeply about a product — and we bring that same care to yours.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</NuxtLink>
+                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="text-title-lg">A product engineering team that feels like co-founders</h3>
+              <p class="text-body" style="margin-top: 12px;">You define the what. We walk with you through the how. Every milestone is visible, every decision is explained in terms that make sense.</p>
+              <ul class="check-list">
+                <li>One team, one relationship — people you know by name</li>
+                <li>Milestone-based pricing for budget predictability</li>
+                <li>Full documentation and knowledge transfer</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>We guide, not just execute. We'll tell you honestly what you need — and what can wait.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</NuxtLink>
+                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div class="text-sm font-semibold text-blue-600 mb-2">Phase {{ phase.id }}</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">{{ phase.title }}</h3>
-              <p class="text-gray-600 mb-4 text-sm">{{ phase.description }}</p>
+      <!-- FOR ENGINEERING LEADERS -->
+      <section class="section-redesign">
+        <div class="container-redesign">
+          <div class="audience-header">
+            <h2 class="text-label audience-heading">For Engineering Leaders</h2>
+            <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">Your team is great. We make it bigger without making it harder to manage.</p>
+          </div>
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+              </div>
+              <h3 class="text-title-lg">Engineers who embed with your team — not outsiders filling seats</h3>
+              <p class="text-body" style="margin-top: 12px;">Same tools, same standups, same codebase. Our engineers become part of your team because that's how we think about it. You'll know them by name.</p>
+              <ul class="check-list">
+                <li>2-week trial before any commitment</li>
+                <li>Engineers ramp on your codebase in 1-2 weeks</li>
+                <li>Scale up or down with 2-week notice</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>PerformLine started with 1 engineer. Two years later, we're 8+ deep — full-stack, DevOps, QA, frontend.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</NuxtLink>
+                <NuxtLink to="/services/resource-augmentation" class="btn-text">Learn more about Resource Augmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="text-title-lg">We stay with your product after launch</h3>
+              <p class="text-body" style="margin-top: 12px;">Bug fixes, security updates, performance monitoring, and incremental improvements. When possible, the same team that built it maintains it — because they know your product deeply.</p>
+              <ul class="check-list">
+                <li>Proactive monitoring — we fix before you notice</li>
+                <li>Transparent hours — you see exactly what we spend time on</li>
+                <li>No lock-in — full documentation means you can leave anytime</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>80%+ client retention. Most of our maintenance relationships started as MVP or project delivery. Same team, same trust.</span>
+              </div>
+              <div class="card-ctas">
+                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</NuxtLink>
+                <NuxtLink to="/services/maintenance-support" class="btn-text">Learn more about Maintenance &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <ul class="space-y-2">
-                <li v-for="(activity, idx) in phase.activities" :key="idx" class="flex items-center text-sm text-gray-700">
-                  <ChevronRight class="h-4 w-4 text-blue-400 mr-2" />
-                  {{ activity }}
-                </li>
+      <!-- GUIDES -->
+      <section class="section-redesign" style="background: var(--surface);">
+        <div class="container-redesign">
+          <div class="section-header">
+            <span class="text-label">Resources</span>
+            <h2 class="text-display-sm" style="margin-top: 16px;">Go Deeper</h2>
+            <p class="text-body-lg" style="margin-top: 12px;">Explore our comprehensive guides to make informed decisions about your next project.</p>
+          </div>
+          <div class="guides-grid">
+            <div class="guide-card">
+              <div class="guide-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h3 class="text-title-lg">The Complete Guide to IT Staff Augmentation</h3>
+              <p class="text-body" style="margin-top: 8px;">Everything you need to know about scaling your engineering team — models, costs, when to use it, and how to make it work.</p>
+              <NuxtLink to="/guides/it-staff-augmentation" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+            </div>
+            <div class="guide-card">
+              <div class="guide-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h3 class="text-title-lg">The Complete Guide to MVP Development</h3>
+              <p class="text-body" style="margin-top: 8px;">From idea to working product — costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
+              <NuxtLink to="/guides/mvp-development" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== TAB: OUR PROCESS ===== -->
+    <div v-show="activeTab === 'process'">
+      <section class="section-redesign">
+        <div class="container-redesign">
+          <div class="process-phases">
+            <div class="phase-card">
+              <div class="phase-number">1</div>
+              <h3>Understanding Your Vision</h3>
+              <p>We begin with in-depth problem analysis and market research to understand your goals and challenges.</p>
+              <ul class="phase-activities">
+                <li>Problem Analysis</li>
+                <li>Market Research</li>
+                <li>Resource Assessment</li>
+                <li>Team Structure Planning</li>
+              </ul>
+            </div>
+            <div class="phase-card">
+              <div class="phase-number">2</div>
+              <h3>Planning for Success</h3>
+              <p>We develop a clear strategy that aligns with your business objectives and technical requirements.</p>
+              <ul class="phase-activities">
+                <li>Architecture Design</li>
+                <li>Technology Selection</li>
+                <li>Roadmap Creation</li>
+                <li>Risk Assessment</li>
+              </ul>
+            </div>
+            <div class="phase-card">
+              <div class="phase-number">3</div>
+              <h3>Building Your Product</h3>
+              <p>Our team executes the plan with agile methodology, ensuring quality and timely delivery.</p>
+              <ul class="phase-activities">
+                <li>Agile Development</li>
+                <li>Code Reviews</li>
+                <li>Testing &amp; QA</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+            <div class="phase-card">
+              <div class="phase-number">4</div>
+              <h3>Launch &amp; Beyond</h3>
+              <p>We ensure smooth deployment and provide ongoing support to guarantee long-term success.</p>
+              <ul class="phase-activities">
+                <li>Deployment</li>
+                <li>Training</li>
+                <li>Monitoring</li>
+                <li>Continuous Support</li>
               </ul>
             </div>
           </div>
-        </div>
 
-        <!-- Process Benefits -->
-        <div class="mt-20 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Collaborative Approach</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-              We believe in daily collaboration and shared responsibility. Your success is our success,
-              and we work together to achieve your goals.
-            </p>
+          <div class="benefits-row">
+            <div class="benefit-card">
+              <h3>Daily Communication</h3>
+              <p>Stand-ups and updates so you always know where your product stands.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Iterative Delivery</h3>
+              <p>2-week sprints with demos at the end of each. You see progress, not just hear about it.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Your Outcome Is Our Outcome</h3>
+              <p>We make decisions based on what's right for your product, not what's easiest to build.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== TAB: TECHNOLOGIES ===== -->
+    <div v-show="activeTab === 'technologies'">
+      <section class="section-redesign">
+        <div class="container-redesign">
+          <div class="tech-grid">
+            <div v-for="tech in technologies" :key="tech.name" class="tech-card">
+              <div class="tech-emoji">{{ tech.emoji }}</div>
+              <h3>{{ tech.name }}</h3>
+              <span class="tech-type">{{ tech.type }}</span>
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
-                <Users class="h-8 w-8" />
-              </div>
-              <h4 class="font-semibold text-gray-900 mb-2">Daily Communication</h4>
-              <p class="text-gray-600">Regular stand-ups and updates keep everyone aligned</p>
+          <div class="benefits-row">
+            <div class="benefit-card">
+              <h3>Production-Proven</h3>
+              <p>Every technology in our stack has been used to ship real products — including Formester, our own SaaS.</p>
             </div>
-            <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
-                <GitBranch class="h-8 w-8" />
-              </div>
-              <h4 class="font-semibold text-gray-900 mb-2">Agile Methodology</h4>
-              <p class="text-gray-600">Iterative development ensures flexibility and quality</p>
+            <div class="benefit-card">
+              <h3>Built to Hand Over</h3>
+              <p>Your code, your product, your freedom. Clean code, full documentation, zero lock-in.</p>
             </div>
-            <div class="text-center">
-              <div class="inline-flex items-center justify-center w-16 h-16 bg-white text-blue-600 rounded-2xl mb-4 shadow-lg">
-                <Target class="h-8 w-8" />
-              </div>
-              <h4 class="font-semibold text-gray-900 mb-2">Goal-Oriented</h4>
-              <p class="text-gray-600">Every decision aligns with your business objectives</p>
+            <div class="benefit-card">
+              <h3>Security by Default</h3>
+              <p>Security practices baked into every project from the start — not bolted on at the end.</p>
             </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== WHAT SETS US APART (always visible) ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header centered">
+          <h2 class="text-display-sm">What Sets Us Apart</h2>
+        </div>
+        <div class="differentiators-grid">
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>We Build It Like It's Ours</h3>
+            <p>We built Formester, our own SaaS. We bring that same ownership to every product we touch.</p>
+          </div>
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>You'll Know Us By Name</h3>
+            <p>20+ engineers. No bench, no rotating juniors. The people you meet are the people who build.</p>
+          </div>
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
+            <h3>We Guide, Not Just Execute</h3>
+            <p>We'll tell you honestly what you need — and what can wait.</p>
+          </div>
+          <div class="diff-card">
+            <div class="diff-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>We Stay</h3>
+            <p>PerformLine: 1 engineer to 8+ in 2 years. We don't just deliver — we grow with you.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technologies Section -->
-    <section v-if="activeTab === 'technologies'" class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Technology Stack</h2>
-          <p class="text-lg text-gray-600">
-            We use cutting-edge technologies to build robust and scalable solutions
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div
-            v-for="(tech, idx) in technologies"
-            :key="idx"
-            class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <div class="text-4xl mb-3">{{ tech.icon }}</div>
-            <h4 class="font-semibold text-gray-900 mb-1">{{ tech.name }}</h4>
-            <span class="text-sm text-gray-500">{{ tech.category }}</span>
-          </div>
-        </div>
-
-        <!-- Technology Benefits -->
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Cpu class="h-10 w-10 text-blue-600 mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Modern Stack</h3>
-            <p class="text-gray-600">
-              We stay updated with the latest technologies to give you a competitive edge.
-            </p>
-          </div>
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Layers class="h-10 w-10 text-blue-600 mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Scalable Architecture</h3>
-            <p class="text-gray-600">
-              Our solutions are built to grow with your business, ensuring long-term success.
-            </p>
-          </div>
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <Shield class="h-10 w-10 text-blue-600 mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Security First</h3>
-            <p class="text-gray-600">
-              We implement best security practices to protect your data and applications.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
-          Ready to Transform Your Business?
-        </h2>
-        <p class="text-xl text-gray-600 mb-8">
-          Let's discuss how our services can help you achieve your goals
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-          >
-            Start Your Project
-            <ArrowRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
-          <NuxtLink
-            to="/portfolio"
-            class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
-          >
-            View Our Work
-            <ChevronRight class="h-5 w-5 ml-2" />
-          </NuxtLink>
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="container-redesign" style="text-align: center;">
+        <h2 class="text-display-sm">Have a Product in Mind?</h2>
+        <p class="text-body-lg" style="max-width: 520px; margin: 16px auto 0;">Tell us about it. We'll share how we'd approach it — honestly.</p>
+        <div style="margin-top: 36px;">
+          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
         </div>
       </div>
     </section>
@@ -294,168 +364,252 @@
 
 <script setup>
 import { ref } from 'vue'
-import {
-  ArrowRight, Users, Clock, Shield, Rocket, Building, CheckCircle,
-  Cpu, Layers, GitBranch, Search, Lightbulb, Target, Zap, Heart,
-  ChevronRight, Star, Award, TrendingUp, Settings, Package, Globe
-} from 'lucide-vue-next'
 
-// Use the v3 layout without default header/footer
 definePageMeta({
   layout: 'default'
 })
 
-const hoveredService = ref(null)
+useSeoMeta({
+  title: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  description: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  ogTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  ogDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/services',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services' }],
+})
+
+useBreadcrumbSchema([
+  { name: 'Services', path: '/services' },
+])
+
+const tabs = [
+  { id: 'services', label: 'Services', heading: 'How We Work With You', desc: "Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here's how we can help." },
+  { id: 'process', label: 'Our Process', heading: 'How We Work Together', desc: "We don't just work for you — we work with you. Same tools, same standups, shared responsibility for the outcome." },
+  { id: 'technologies', label: 'Technologies', heading: 'Our Technology Stack', desc: "We're stack-agnostic — we pick the right technology for your problem, not the other way around. Here's what we work with daily." },
+]
+
 const activeTab = ref('services')
+const activeTabHeading = ref(tabs[0].heading)
+const activeTabDesc = ref(tabs[0].desc)
 
-const services = [
-  {
-    id: 1,
-    icon: Users,
-    title: 'Resource Augmentation',
-    description: 'Integrate our skilled professionals seamlessly into your existing workflows. Our experts become an extension of your team, bringing specialized knowledge and experience.',
-    features: [
-      'Skilled developers & designers',
-      'Flexible engagement models',
-      'Quick onboarding process',
-      'Cultural fit assessment'
-    ],
-    gradient: 'from-blue-500 to-cyan-600',
-    link: '/services/resource-augmentation'
-  },
-  {
-    id: 2,
-    icon: Shield,
-    title: 'Maintenance & Support',
-    description: 'Keep your systems running smoothly with our dedicated maintenance and support services. We ensure your applications stay updated, secure, and performant.',
-    features: [
-      '24/7 monitoring',
-      'Regular updates & patches',
-      'Performance optimization',
-      'Security audits'
-    ],
-    gradient: 'from-green-500 to-emerald-600',
-    link: '/services/maintenance-support'
-  },
-  {
-    id: 3,
-    icon: Clock,
-    title: 'Short & Long-Term Projects',
-    description: 'Partner with us for comprehensive development projects. We handle everything from initial planning to deployment and beyond, ensuring project success.',
-    features: [
-      'End-to-end development',
-      'Agile methodology',
-      'Regular milestones',
-      'Continuous delivery'
-    ],
-    gradient: 'from-blue-500 to-pink-600',
-    link: '/services/long-term-projects'
-  },
-  {
-    id: 4,
-    icon: Rocket,
-    title: 'MVP Development',
-    description: 'Transform your ideas into reality quickly with our MVP development service. Launch your product in just 8-12 weeks with professional-grade quality.',
-    features: [
-      '8-12 week timeline',
-      'Investor-ready MVPs',
-      'Agile development',
-      'Built-in analytics'
-    ],
-    gradient: 'from-orange-500 to-red-600',
-    link: '/services/mvp-development'
-  }
-]
-
-const process = [
-  {
-    id: 1,
-    phase: 'Discovery',
-    title: 'Understanding Your Vision',
-    description: 'We begin with in-depth problem analysis and market research to understand your goals and challenges.',
-    activities: [
-      'Problem Analysis',
-      'Market Research',
-      'Resource Assessment',
-      'Team Structure Planning'
-    ],
-    icon: Search,
-    color: 'purple'
-  },
-  {
-    id: 2,
-    phase: 'Strategy',
-    title: 'Planning for Success',
-    description: 'We develop a comprehensive strategy that aligns with your business objectives and technical requirements.',
-    activities: [
-      'Architecture Design',
-      'Technology Selection',
-      'Roadmap Creation',
-      'Risk Assessment'
-    ],
-    icon: Lightbulb,
-    color: 'indigo'
-  },
-  {
-    id: 3,
-    phase: 'Development',
-    title: 'Building Your Solution',
-    description: 'Our team executes the plan with agile methodology, ensuring quality and timely delivery.',
-    activities: [
-      'Agile Development',
-      'Code Reviews',
-      'Testing & QA',
-      'Documentation'
-    ],
-    color: 'blue'
-  },
-  {
-    id: 4,
-    phase: 'Delivery',
-    title: 'Launch & Beyond',
-    description: 'We ensure smooth deployment and provide ongoing support to guarantee long-term success.',
-    activities: [
-      'Deployment',
-      'Training',
-      'Monitoring',
-      'Continuous Support'
-    ],
-    icon: Rocket,
-    color: 'green'
-  }
-]
+const switchTab = (tab) => {
+  activeTab.value = tab.id
+  activeTabHeading.value = tab.heading
+  activeTabDesc.value = tab.desc
+}
 
 const technologies = [
-  { name: 'Ruby on Rails', category: 'Backend', icon: '💎' },
-  { name: 'React.js', category: 'Frontend', icon: '⚛️' },
-  { name: 'Vue.js', category: 'Frontend', icon: '🟢' },
-  { name: 'Angular', category: 'Frontend', icon: '🔺' },
-  { name: '.NET', category: 'Backend', icon: '🟦' },
-  { name: 'Node.js', category: 'Backend', icon: '🟩' },
-  { name: 'PostgreSQL', category: 'Database', icon: '🐘' },
-  { name: 'AWS', category: 'Cloud', icon: '☁️' }
-]
-
-const differentiators = [
-  {
-    title: 'True Partnership Mindset',
-    description: "We don't just work for you - we work with you, treating your goals as our own.",
-    icon: Heart
-  },
-  {
-    title: 'Beyond Project Scope',
-    description: 'We think ahead, considering scalability and future requirements in every decision.',
-    icon: TrendingUp
-  },
-  {
-    title: 'Quality-First Approach',
-    description: 'Rigorous code reviews and testing ensure robust, maintainable solutions.',
-    icon: Award
-  },
-  {
-    title: 'Proactive Problem Solving',
-    description: 'We identify and address potential challenges before they become issues.',
-    icon: Target
-  }
+  { emoji: '\u{1F48E}', name: 'Ruby on Rails', type: 'Backend' },
+  { emoji: '\u269B\uFE0F', name: 'React.js', type: 'Frontend' },
+  { emoji: '\u{1F7E2}', name: 'Vue.js', type: 'Frontend' },
+  { emoji: '\u{1F53A}', name: 'Angular', type: 'Frontend' },
+  { emoji: '\u{1F7E6}', name: '.NET', type: 'Backend' },
+  { emoji: '\u{1F7E9}', name: 'Node.js', type: 'Backend' },
+  { emoji: '\u{1F418}', name: 'PostgreSQL', type: 'Database' },
+  { emoji: '\u2601\uFE0F', name: 'AWS', type: 'Cloud' },
 ]
 </script>
+
+<style scoped>
+/* ===== HERO ===== */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+/* ===== TABS ===== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+.tab-btn {
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  background: var(--surface-container-high);
+  color: var(--on-surface-variant);
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-container));
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 88, 189, 0.25);
+}
+.tab-btn:hover:not(.active) {
+  background: var(--surface-container);
+  color: var(--on-surface);
+}
+
+/* ===== PROCESS PHASES ===== */
+.process-phases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.phase-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.phase-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.phase-number {
+  width: 36px;
+  height: 36px;
+  background: var(--primary-fixed-dim);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.phase-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--on-surface);
+}
+.phase-card > p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: 16px;
+}
+.phase-activities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.phase-activities li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+}
+.phase-activities li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background: var(--brand-blue);
+  border-radius: 50%;
+}
+
+/* ===== BENEFITS ROW ===== */
+.benefits-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.benefit-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.benefit-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.benefit-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--on-surface);
+}
+.benefit-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--on-surface-variant);
+}
+
+/* ===== TECH GRID ===== */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+.tech-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+.tech-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.tech-emoji {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.tech-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 4px;
+}
+.tech-type {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ===== RESPONSIVE - Tablet ===== */
+@media (max-width: 1024px) {
+  .process-phases {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Audience heading — h2 styled like text-label for proper heading hierarchy */
+.audience-heading {
+  margin: 0;
+}
+
+/* ===== RESPONSIVE - Mobile ===== */
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 100px;
+  }
+  .process-phases {
+    grid-template-columns: 1fr;
+  }
+  .benefits-row {
+    grid-template-columns: 1fr;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+}
+</style>

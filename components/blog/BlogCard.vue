@@ -11,22 +11,19 @@
     />
     <div class="flex flex-col overflow-hidden">
       <div class="flex align-items-baseline gap-2">
-        <span class="sm__text">{{ article.topic }}</span>
-        <!-- <span class="text-gray">•</span>
-        <span class="sm__text">{{ article?.readingStats?.text }}</span> -->
+        <span class="blog__category-badge">{{ article.topic || article.category || 'General' }}</span>
       </div>
       <h2 class="blog__heading my-2">
         {{ article.title }}
       </h2>
-      <h3 class="name__text mt-2">{{ article.author }}</h3>
+      <h3 class="name__text mt-2">{{ article.author || 'AcornGlobus Team' }}</h3>
       <span class="sm__text">{{ formatDate(article.createdAt) }}</span>
     </div>
   </NuxtLink>
 </template>
 
 <script setup>
-const props = defineProps(["article"]);
-console.log(props.article);
+defineProps(["article"]);
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
@@ -40,12 +37,15 @@ const formatDate = (date) => {
   text-decoration: none;
 }
 
-.badge {
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--clr-primary);
+.blog__category-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #eff6ff;
+  color: #3b82f6;
   text-transform: capitalize;
-  font-weight: 400;
 }
 
 .blog__heading {
@@ -62,7 +62,6 @@ const formatDate = (date) => {
   font-size: 14px;
   line-height: 21px;
   color: #495f92;
-  /* letter-spacing: 1px; */
 }
 
 .name__text {
@@ -70,9 +69,5 @@ const formatDate = (date) => {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-}
-
-.text-gray {
-  color: #b9b9b9;
 }
 </style>
