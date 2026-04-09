@@ -270,7 +270,7 @@ useHead({
 
 useBreadcrumbSchema([
   { name: 'Blog', path: '/blog' },
-  { name: String(slug), path: `/blog/${slug}` },
+  { name: article.value?.title || String(slug), path: `/blog/${slug}` },
 ])
 </script>
 
