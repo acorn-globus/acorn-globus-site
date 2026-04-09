@@ -72,7 +72,7 @@
         <div class="lg:col-span-1">
           <div class="w-full h-full min-h-[400px] flex items-center justify-center">
             <img
-              src="~/assets/images/projects/formester-main.png"
+              src="~/assets/images/projects/formester-main.webp"
               alt="Formester"
               class="w-full h-full object-cover rounded-2xl"
             />

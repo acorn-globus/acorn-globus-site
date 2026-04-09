@@ -1,0 +1,4 @@
+# Netlify 301 redirects for legacy pages
+/process  /how-we-work  301
+/projects  /portfolio  301
+/services/long-term-projects  /services/full-project-delivery  301
