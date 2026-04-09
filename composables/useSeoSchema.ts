@@ -21,7 +21,12 @@ export function useOrganizationSchema() {
           '@type': 'Organization',
           name: ORG_NAME,
           url: SITE_URL,
-          logo: ORG_LOGO,
+          logo: {
+            '@type': 'ImageObject',
+            url: ORG_LOGO,
+            width: 512,
+            height: 512,
+          },
           description: 'AcornGlobus is a product engineering team that builds with you, not just for you. We treat every client\'s product like our own.',
           foundingDate: '2019',
           numberOfEmployees: {
@@ -36,6 +41,7 @@ export function useOrganizationSchema() {
           contactPoint: {
             '@type': 'ContactPoint',
             contactType: 'sales',
+            email: 'business@acornglobus.com',
             url: `${SITE_URL}/contact`,
           },
         }),
@@ -98,6 +104,20 @@ export function useServiceSchema(service: {
             name: ORG_NAME,
             url: SITE_URL,
           },
+          areaServed: [
+            { '@type': 'Country', name: 'United States' },
+            { '@type': 'Country', name: 'United Kingdom' },
+            { '@type': 'Country', name: 'Australia' },
+            { '@type': 'Country', name: 'India' },
+          ],
+          offers: {
+            '@type': 'Offer',
+            availability: 'https://schema.org/InStock',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'USD',
+            },
+          },
         }),
       },
     ],
@@ -129,7 +149,7 @@ export function useBlogPostSchema(post: {
           datePublished: post.datePublished,
           dateModified: post.dateModified || post.datePublished,
           author: {
-            '@type': post.author && post.author !== 'AcornGlobus Team'
+            '@type': post.author && post.author !== 'AcornGlobus Team' && post.author !== 'AcornGlobus'
               ? 'Person'
               : 'Organization',
             name: post.author || 'AcornGlobus Team',
@@ -197,7 +217,9 @@ export function useArticleSchema(article: {
             '@type': 'WebPage',
             '@id': `${SITE_URL}${article.url}`,
           },
-          ...(article.image ? { image: article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}` } : {}),
+          image: article.image
+            ? (article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}`)
+            : ORG_LOGO,
           ...(article.wordCount ? { wordCount: article.wordCount } : {}),
         }),
       },
