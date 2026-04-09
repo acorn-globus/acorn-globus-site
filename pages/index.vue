@@ -142,6 +142,10 @@
                 <span class="partnership-tag">Full-stack, DevOps, QA</span>
                 <span class="partnership-tag">Embedded in their team</span>
               </div>
+              <NuxtLink to="/case-studies/performline" class="btn-text" style="margin-top: 24px; display: inline-flex;">
+                Read the full story
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </NuxtLink>
             </div>
             <div class="hero-illustration">
               <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+ engineers" class="hero-img" loading="lazy" width="1536" height="1024">
@@ -181,11 +185,50 @@
                   <div class="partnership-stat-label">Years Together</div>
                 </div>
               </div>
-              <NuxtLink to="/how-we-work" class="btn-text" style="margin-top: 24px; display: inline-flex;">
-                See how we work with teams like yours
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-              </NuxtLink>
+              <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px;">
+                <NuxtLink to="/case-studies/eitoss" class="btn-text" style="display: inline-flex;">
+                  Read the full story
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </NuxtLink>
+                <NuxtLink to="/how-we-work" class="btn-text" style="display: inline-flex;">
+                  See how we work
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </NuxtLink>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <!-- More Case Studies -->
+        <div class="more-case-studies">
+          <h3 class="text-title-lg" style="margin-bottom: 24px;">More from our portfolio</h3>
+          <div class="case-study-links-grid">
+            <NuxtLink to="/case-studies/formester" class="case-study-link-card">
+              <span class="case-study-link-label">Our Own SaaS</span>
+              <span class="case-study-link-name">Formester</span>
+              <span class="case-study-link-desc">AI-powered form builder. 1,000+ active users. 4.7 on G2.</span>
+            </NuxtLink>
+            <NuxtLink to="/case-studies/eitoss" class="case-study-link-card">
+              <span class="case-study-link-label">MVP Development</span>
+              <span class="case-study-link-name">Eitoss</span>
+              <span class="case-study-link-desc">MVP in 3 months. Raised funding. Still building 2+ years later.</span>
+            </NuxtLink>
+            <NuxtLink to="/case-studies/rumie" class="case-study-link-card">
+              <span class="case-study-link-label">Non-Profit EdTech</span>
+              <span class="case-study-link-name">Rumie</span>
+              <span class="case-study-link-desc">Bite-sized learning reaching learners across 176 countries.</span>
+            </NuxtLink>
+            <NuxtLink to="/case-studies/invoice-falcon" class="case-study-link-card">
+              <span class="case-study-link-label">Shopify App</span>
+              <span class="case-study-link-name">Invoice Falcon</span>
+              <span class="case-study-link-desc">Comprehensive invoicing for Shopify merchants worldwide.</span>
+            </NuxtLink>
+          </div>
+          <div style="margin-top: 24px;">
+            <NuxtLink to="/portfolio" class="btn-text">
+              View all case studies
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -622,6 +665,56 @@ const testimonials = [
   border-radius: var(--radius-pill);
 }
 
+/* ===== MORE CASE STUDIES ===== */
+.more-case-studies {
+  margin-top: 80px;
+  padding-top: 64px;
+  border-top: 1px solid rgba(194, 198, 213, 0.15);
+}
+
+.case-study-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.case-study-link-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease-premium);
+}
+
+.case-study-link-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.case-study-link-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  margin-bottom: 8px;
+}
+
+.case-study-link-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+
+.case-study-link-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--on-surface-variant);
+}
+
 /* ===== SERVICES ===== */
 .services {
   background: var(--surface-bright);
@@ -866,6 +959,10 @@ const testimonials = [
     gap: 32px;
   }
 
+  .case-study-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -892,6 +989,10 @@ const testimonials = [
 
   .hero-ctas {
     flex-direction: column;
+  }
+
+  .case-study-links-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-ctas .btn {

@@ -353,6 +353,37 @@ useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/how-we-work'
 useBreadcrumbSchema([
   { name: 'How We Work', path: '/how-we-work' },
 ])
+
+useFaqSchema([
+  {
+    question: 'What does the discovery and scoping process look like?',
+    answer: 'We typically spend 1-2 weeks in discovery, depending on complexity. We focus on understanding your product vision, users, existing codebase (if any), timeline, budget, and success criteria. By the end, you get a clear scope document, a realistic timeline, and an honest recommendation on what to build first.'
+  },
+  {
+    question: 'How quickly can you assemble a team after scoping?',
+    answer: 'We typically need 3-5 business days to assemble your team after scoping is complete. For resource augmentation, our engineers are usually submitting their first pull request within the first week.'
+  },
+  {
+    question: 'How do you run build sprints?',
+    answer: 'We work in 2-week sprints. Every sprint has a clear goal, defined deliverables, and a demo at the end. Sprint planning happens on Monday (you are invited), daily async standups on Slack, mid-sprint check-ins as needed, and a demo of working features on staging every Friday.'
+  },
+  {
+    question: 'What communication tools and cadence do you use?',
+    answer: 'We join your Slack (or you join ours) for daily async updates. We use your project management tools -- Jira, Linear, Notion, whatever your team runs on. Sprint planning and demos happen every 2 weeks, weekly syncs with the project lead, and monthly partnership reviews.'
+  },
+  {
+    question: 'What engagement models do you offer?',
+    answer: 'We offer four engagement models: Resource Augmentation (our engineers embed in your team), MVP Development (idea to working product in 8-12 weeks), Full Project Delivery (end-to-end with milestone-based delivery), and Maintenance & Support (ongoing bug fixes, features, and monitoring).'
+  },
+  {
+    question: 'What happens after launch?',
+    answer: 'We stay. For the first 2 weeks after launch, we are on standby with prioritized bug fixes and performance monitoring. After that, we offer ongoing maintenance including dependency updates, security patches, and incremental improvements. 80%+ of our clients continue working with us beyond the initial engagement.'
+  },
+  {
+    question: 'Do we own the code?',
+    answer: 'Yes. Full repository access from day one. Your code, your IP, always. We also provide architecture documentation, API docs, setup guides, infrastructure access, CI/CD pipelines, and knowledge transfer. Zero lock-in.'
+  },
+])
 </script>
 
 <style scoped>

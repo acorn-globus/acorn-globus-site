@@ -5,7 +5,7 @@
                 {{ props.title }}
             </h2>
             <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-16">
-                <img src="~/assets/images/people-working-office.png" alt="people working if office image" />
+                <img src="~/assets/images/people-working-office.webp" alt="people working in office" />
                 <div class="flex flex-col gap-8">
                     <div v-for="row in props.rows" class="flex items-start gap-3">
                         <img src="~/assets/images/icons/check.svg" alt="check" />

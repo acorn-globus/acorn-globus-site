@@ -6,7 +6,7 @@
       <NuxtLink to="/" class="nav-logo">
         <img
           src="/images/acorn-globus-logo-dark.svg"
-          alt="Acorn Globus"
+          alt="AcornGlobus"
           class="h-8 w-auto"
         >
       </NuxtLink>
