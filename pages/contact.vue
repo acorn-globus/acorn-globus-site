@@ -15,13 +15,13 @@
     <section style="padding-top: 0; padding-bottom: 0;">
       <div class="container-redesign">
         <div class="contact-methods">
-          <div class="contact-method-card">
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="contact-method-card">
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
             <h2 class="contact-method-title">Schedule a Call</h2>
             <p>Start a conversation</p>
-          </div>
+          </a>
           <div class="contact-method-card">
             <div class="contact-method-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -149,7 +149,7 @@
           <div class="contact-sidebar">
             <div class="sidebar-section">
               <h3>Quick Actions</h3>
-              <a href="#" class="sidebar-link">
+              <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="sidebar-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Schedule a call
               </a>
@@ -164,10 +164,14 @@
             </div>
             <div class="sidebar-section">
               <h3>Connect With Us</h3>
-              <div class="sidebar-social">
+              <a href="https://www.linkedin.com/company/acornglobus" target="_blank" rel="noopener noreferrer" class="sidebar-social">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-blue)"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <span>@acornglobus</span>
-              </div>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://x.com/AcornGlobus" target="_blank" rel="noopener noreferrer" class="sidebar-social">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-blue)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <span>X (Twitter)</span>
+              </a>
             </div>
             <div class="sidebar-section">
               <h3>Office Hours</h3>
@@ -286,7 +290,7 @@ const handleSubmit = async () => {
 .trust-stats .stat-label { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
 .trust-strip-text { text-align: center; max-width: 640px; margin: 32px auto 0; font-size: 16px; line-height: 1.6; color: var(--on-surface-variant); }
 .contact-methods { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
-.contact-method-card { background: var(--surface); border-radius: var(--radius-card); padding: 32px 24px; text-align: center; transition: all var(--duration-normal) var(--ease-premium); }
+.contact-method-card { background: var(--surface); border-radius: var(--radius-card); padding: 32px 24px; text-align: center; transition: all var(--duration-normal) var(--ease-premium); text-decoration: none; display: block; color: inherit; }
 .contact-method-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
 .contact-method-icon { width: 56px; height: 56px; background: var(--primary-fixed-dim); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
 .contact-method-title { font-size: 18px; font-weight: 700; color: var(--on-surface); margin-bottom: 8px; }
@@ -316,7 +320,8 @@ const handleSubmit = async () => {
 .sidebar-link { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: var(--on-surface-variant); padding: 8px 0; transition: color var(--duration-fast) var(--ease-premium); }
 .sidebar-link:hover { color: var(--primary); }
 .sidebar-link svg { flex-shrink: 0; }
-.sidebar-social { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--on-surface-variant); padding: 6px 0; }
+.sidebar-social { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--on-surface-variant); padding: 6px 0; text-decoration: none; transition: color var(--duration-fast) var(--ease-premium); }
+.sidebar-social:hover { color: var(--primary); }
 .sidebar-social svg { flex-shrink: 0; }
 .office-hours-row { display: flex; justify-content: space-between; font-size: 15px; padding: 6px 0; }
 .day { color: var(--on-surface); font-weight: 500; }

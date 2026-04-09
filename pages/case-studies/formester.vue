@@ -291,6 +291,15 @@ useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/formester' }],
 })
 
+useArticleSchema({
+  title: 'Formester Case Study | We Built Our Own SaaS',
+  description: "Formester is our SaaS product — a no-code, AI-powered form builder. Building it changed how we work with every client. Here's the full story.",
+  url: '/case-studies/formester',
+  datePublished: '2025-01-01',
+  dateModified: '2025-01-01',
+  image: 'https://acornglobus.com/images/formester.webp',
+})
+
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'Formester', path: '/case-studies/formester' },

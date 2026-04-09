@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Angular Developers</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Angular Developers Built for Complex Applications</h1>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Angular Developers in India Built for Complex Applications</h1>
           <p class="text-body-lg">Angular is chosen for applications that need to scale, stay maintainable, and last. That's exactly how we think about engineering. Our Angular developers build for the long term — structured, tested, and ready for teams of any size to work in.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
@@ -323,10 +323,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Angular Developers | Dedicated Angular Engineers | AcornGlobus',
-  description: 'Hire dedicated Angular developers who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
-  ogTitle: 'Hire Angular Developers | Dedicated Angular Engineers | AcornGlobus',
-  ogDescription: 'Hire dedicated Angular developers who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
+  title: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  description: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
+  ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-angular-developer',
   ogType: 'website',

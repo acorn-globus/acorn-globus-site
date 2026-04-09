@@ -212,6 +212,8 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/dotnet' }] })
+
 useBreadcrumbSchema([
   { name: 'Technologies', path: '/technologies/dotnet' },
   { name: '.NET', path: '/technologies/dotnet' },

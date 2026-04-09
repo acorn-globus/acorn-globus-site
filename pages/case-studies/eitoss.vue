@@ -13,7 +13,7 @@
           <p class="text-headline" style="margin-bottom: 16px; color: var(--on-surface-variant);">From an Idea to a Funded Product in 12 Weeks</p>
           <p class="text-body-lg">Eitoss came to us with a vision for better workplace communication. We shipped a demoable MVP in 8 weeks and had the product live in 3 months. They raised 60 million yen in funding. Two years later, we're still building together.</p>
           <div style="margin-top: 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <a href="#" class="btn btn-primary">Visit Live Site</a>
+            <a href="https://eitoss.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site</a>
             <span class="badge-floating">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
               Funded &amp; Growing
@@ -250,6 +250,15 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/eitoss' }],
+})
+
+useArticleSchema({
+  title: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks',
+  description: "How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we're still building together.",
+  url: '/case-studies/eitoss',
+  datePublished: '2025-01-01',
+  dateModified: '2025-01-01',
+  image: 'https://acornglobus.com/images/case-study-eitoss.webp',
 })
 
 useBreadcrumbSchema([

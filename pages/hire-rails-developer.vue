@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Rails Developers</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers Who Respect the Framework</h1>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers in India Who Respect the Framework</h1>
           <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy — not just its syntax.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
@@ -376,10 +376,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
-  description: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
-  ogTitle: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
-  ogDescription: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
+  title: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
+  description: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
+  ogTitle: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
+  ogDescription: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-rails-developer',
   ogType: 'website',

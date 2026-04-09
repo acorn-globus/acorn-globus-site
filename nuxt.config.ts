@@ -102,5 +102,10 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/process': { redirect: { to: '/how-we-work', statusCode: 301 } },
+    '/projects': { redirect: { to: '/portfolio', statusCode: 301 } },
+  },
+
   compatibilityDate: '2025-02-06',
 });

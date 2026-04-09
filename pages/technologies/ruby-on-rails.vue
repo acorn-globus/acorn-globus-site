@@ -187,6 +187,8 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/ruby-on-rails' }] })
+
 useBreadcrumbSchema([
   { name: 'Technologies', path: '/technologies/ruby-on-rails' },
   { name: 'Ruby on Rails', path: '/technologies/ruby-on-rails' },

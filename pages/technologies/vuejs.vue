@@ -199,6 +199,8 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/vuejs' }] })
+
 useBreadcrumbSchema([
   { name: 'Technologies', path: '/technologies/vuejs' },
   { name: 'Vue.js', path: '/technologies/vuejs' },

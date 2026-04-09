@@ -13,10 +13,10 @@
     <section style="padding: 48px 0; background: var(--surface);">
       <div class="container-redesign">
         <div class="stats-row" style="border-top: none; margin-top: 0; padding-top: 0;">
-          <div><div class="stat-value">50+</div><div class="stat-label">Designs</div></div>
+          <div><div class="stat-value">25+</div><div class="stat-label">Projects Delivered</div></div>
           <div><div class="stat-value">15+</div><div class="stat-label">Industries</div></div>
-          <div><div class="stat-value">6+</div><div class="stat-label">Years</div></div>
-          <div><div class="stat-value">100%</div><div class="stat-label">Satisfaction</div></div>
+          <div><div class="stat-value">7+</div><div class="stat-label">Years</div></div>
+          <div><div class="stat-value">80%+</div><div class="stat-label">Client Retention</div></div>
         </div>
       </div>
     </section>
@@ -64,10 +64,6 @@
             <div class="design-card-body">
               <div class="design-card-meta">
                 <span class="design-category-tag">{{ design.category }}</span>
-                <div class="design-rating">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--amber)" stroke="var(--amber)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <span>{{ design.rating }}</span>
-                </div>
               </div>
 
               <h3>{{ design.title }}</h3>
@@ -132,10 +128,6 @@
               <div class="modal-left">
                 <div class="design-card-meta" style="margin-bottom: 16px;">
                   <span class="design-category-tag">{{ selectedDesign.category }}</span>
-                  <div class="design-rating">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--amber)" stroke="var(--amber)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    <span>{{ selectedDesign.rating }}</span>
-                  </div>
                 </div>
 
                 <h3 class="text-headline">{{ selectedDesign.title }}</h3>
@@ -553,15 +545,6 @@ onUnmounted(() => {
   background: var(--primary-fixed-dim);
   padding: 4px 12px;
   border-radius: var(--radius-pill);
-}
-
-.design-rating {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  color: var(--text-secondary);
-  font-weight: 500;
 }
 
 .design-card-body h3 {
