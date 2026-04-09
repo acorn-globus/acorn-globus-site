@@ -4,7 +4,7 @@
  */
 
 const SITE_URL = 'https://acornglobus.com'
-const ORG_NAME = 'AcornGlobus'
+const ORG_NAME = 'Acorn Globus'
 const ORG_LOGO = `${SITE_URL}/acorn-globus.png`
 
 /**
