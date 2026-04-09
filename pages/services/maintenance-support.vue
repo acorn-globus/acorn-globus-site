@@ -288,6 +288,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/maintenance-support',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  twitterDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

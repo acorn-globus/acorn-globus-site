@@ -7,7 +7,7 @@
           <div class="footer-logo">
             <img
               src="/images/acorn-globus-logo.svg"
-              alt="AcornGlobus"
+              alt="Acorn Globus"
               class="h-6 w-auto"
             >
           </div>
@@ -69,7 +69,7 @@
 
       <!-- Bottom bar -->
       <div class="footer-bottom">
-        <span>&copy; {{ currentYear }} AcornGlobus. All rights reserved.</span>
+        <span>&copy; {{ currentYear }} Acorn Globus. All rights reserved.</span>
         <div class="footer-bottom-right">
           <NuxtLink to="/privacy-policy" class="footer-privacy">
             Privacy Policy

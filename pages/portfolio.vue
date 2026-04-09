@@ -157,6 +157,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/portfolio',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio' }] })
 

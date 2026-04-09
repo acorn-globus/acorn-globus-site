@@ -217,6 +217,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/resource-augmentation',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
+  twitterDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

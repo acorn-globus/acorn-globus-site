@@ -619,7 +619,12 @@ useSeoMeta({
   description: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
   ogDescription: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/guides/mvp-development',
+  ogType: 'article',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'MVP Development: From Idea to Product — The Complete Guide (2026) | AcornGlobus',
+  twitterDescription: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

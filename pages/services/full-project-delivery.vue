@@ -218,6 +218,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/full-project-delivery',
   ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
+  twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

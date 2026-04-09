@@ -610,7 +610,12 @@ useSeoMeta({
   description: 'What is IT staff augmentation, how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogDescription: 'What is IT staff augmentation, how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation',
+  ogType: 'article',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
+  twitterDescription: 'What is IT staff augmentation, how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
 useHead({

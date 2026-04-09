@@ -87,8 +87,13 @@ useSeoMeta({
   robots: 'index, follow',
   ogTitle: 'Privacy Policy - AcornGlobus',
   ogDescription: 'Learn how AcornGlobus collects, uses, and protects your personal information.',
+  ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/privacy-policy',
   ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Privacy Policy - AcornGlobus',
+  twitterDescription: 'Learn how AcornGlobus collects, uses, and protects your personal information.',
+  twitterImage: 'https://acornglobus.com/acorn-globus.png',
 });
 
 useHead({

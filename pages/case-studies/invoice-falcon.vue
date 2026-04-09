@@ -287,6 +287,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon',
   ogType: 'article',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
+  twitterDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  twitterImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
 
 useHead({

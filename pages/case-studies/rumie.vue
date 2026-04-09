@@ -322,6 +322,9 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/case-studies/rumie',
   ogType: 'article',
   twitterCard: 'summary_large_image',
+  twitterTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  twitterDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
+  twitterImage: 'https://acornglobus.com/images/case-study-rumie.webp',
 })
 
 useHead({
