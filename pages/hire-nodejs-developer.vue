@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Node.js Developers</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers Who Think in Systems, Not Just Code</h1>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers in India Who Think in Systems, Not Just Code</h1>
           <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products — not tutorial projects.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
@@ -348,10 +348,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
-  description: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
-  ogTitle: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
-  ogDescription: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
+  title: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
+  description: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
+  ogTitle: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
+  ogDescription: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-nodejs-developer',
   ogType: 'website',

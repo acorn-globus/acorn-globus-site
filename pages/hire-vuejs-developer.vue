@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Vue.js Developers</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Vue.js Developers Who Build With Vue Every Day</h1>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Vue.js Developers in India Who Build With Vue Every Day</h1>
           <p class="text-body-lg">We didn't just add Vue.js to a skills list. We built Formester — our own SaaS product — on it. Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped real Vue applications to real users.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</NuxtLink>
@@ -275,10 +275,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  description: 'Hire Vue.js developers who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
-  ogTitle: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  ogDescription: 'Hire Vue.js developers who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  title: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
+  description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  ogTitle: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
+  ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-vuejs-developer',
   ogType: 'website',

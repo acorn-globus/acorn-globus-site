@@ -12,7 +12,7 @@
         <p class="text-display-sm" style="max-width: 700px; margin-top: 8px; color: var(--on-surface-variant); font-weight: 600;">Shopify Invoicing Revolution</p>
         <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">A comprehensive invoicing solution for Shopify merchants, transforming how businesses handle their billing and compliance needs globally through our 2+ year partnership.</p>
         <div style="display: flex; align-items: center; gap: 16px; margin-top: 32px; flex-wrap: wrap;">
-          <a href="#" class="btn btn-primary">Visit Live Site</a>
+          <a href="https://apps.shopify.com/invoice-falcon" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site</a>
           <span class="badge">Ongoing Partnership</span>
         </div>
       </div>
@@ -291,6 +291,15 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/invoice-falcon' }],
+})
+
+useArticleSchema({
+  title: 'Invoice Falcon Case Study | Shopify Invoicing Revolution',
+  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  url: '/case-studies/invoice-falcon',
+  datePublished: '2025-01-01',
+  dateModified: '2025-01-01',
+  image: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
 
 useBreadcrumbSchema([

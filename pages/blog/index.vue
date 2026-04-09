@@ -4,8 +4,8 @@
     <section class="hero">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <div class="hero-eyebrow"><span>Our Blog</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Our Blog</h1>
+          <div class="hero-eyebrow"><span>Blog</span></div>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Engineering Insights &amp; Product Thinking</h1>
           <p class="text-body-lg">Practical engineering insights, product thinking, and lessons from building real products.</p>
 
           <!-- CATEGORY FILTERS -->

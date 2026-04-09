@@ -199,6 +199,8 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/reactjs' }] })
+
 useBreadcrumbSchema([
   { name: 'Technologies', path: '/technologies/reactjs' },
   { name: 'React.js', path: '/technologies/reactjs' },

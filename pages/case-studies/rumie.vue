@@ -13,7 +13,7 @@
           <p class="text-headline" style="color: var(--on-surface-variant); font-weight: 500; margin-bottom: 20px;">Democratizing Education Globally</p>
           <p class="text-body-lg">Empowering learners worldwide through accessible, bite-sized education. Our 4+ year partnership has transformed how Rumie delivers learning to underserved communities across 176 countries.</p>
           <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <a href="#" class="btn btn-primary">Visit Rumie.org</a>
+            <a href="https://rumie.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Rumie.org</a>
             <span class="hero-badge">176 Countries</span>
           </div>
         </div>
@@ -326,6 +326,15 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/rumie' }],
+})
+
+useArticleSchema({
+  title: 'Rumie Case Study | Democratizing Education Globally',
+  description: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
+  url: '/case-studies/rumie',
+  datePublished: '2025-01-01',
+  dateModified: '2025-01-01',
+  image: 'https://acornglobus.com/images/case-study-rumie.webp',
 })
 
 useBreadcrumbSchema([

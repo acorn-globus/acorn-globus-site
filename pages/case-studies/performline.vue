@@ -13,7 +13,7 @@
           <p class="text-headline" style="color: var(--on-surface-variant); font-weight: 600; margin-bottom: 16px;">From 1 Engineer to 8+ in 2 Years</p>
           <p class="text-body-lg">One engineer. One chance to prove we belonged. Two years later, we're eight engineers deep — and still growing.</p>
           <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <a href="#" class="btn btn-primary">Visit PerformLine</a>
+            <a href="https://performline.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit PerformLine</a>
             <span class="cs-badge">2+ Years &amp; Counting</span>
           </div>
         </div>
@@ -303,6 +303,15 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/performline' }],
+})
+
+useArticleSchema({
+  title: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years',
+  description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
+  url: '/case-studies/performline',
+  datePublished: '2025-01-01',
+  dateModified: '2025-01-01',
+  image: 'https://acornglobus.com/images/performline.webp',
 })
 
 useBreadcrumbSchema([
