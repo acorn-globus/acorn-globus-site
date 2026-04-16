@@ -3,6 +3,7 @@ title: "How to Evaluate if Your Agency's Code Is Handoff-Ready"
 description: "A practical checklist to evaluate whether the code your agency is writing can survive without them -- before it's too late to fix."
 topic: Code Quality and Handoff
 author: Tarun Bhukya
+authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 coverImg: /images/blog/code-handoff.webp
 coverImgAlt: "Code handoff checklist — how to evaluate if your agency's code is ready to hand over"
 published: true
