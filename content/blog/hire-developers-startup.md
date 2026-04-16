@@ -24,7 +24,7 @@ You're about to hand a big part of your budget — and your product vision — t
 
 Research from the Harvard Business Review puts the cost of a bad hire at 30% of first-year earnings. For startups, the math is worse. A bad hire doesn't just cost salary — it costs runway. And for many founders, it costs confidence.
 
-This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/portfolio).
+This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/portfolio/).
 
 ## The 4 Hiring Models (and When Each Makes Sense)
 
@@ -78,9 +78,9 @@ There's no single "right" way to hire developers. There are four models, each wi
 - Potential for vendor lock-in (always check code ownership terms)
 - Less daily control than in-house or augmentation
 
-**Best for:** [MVP development](/services/mvp-development) when you need a full team without building one. When you don't have a CTO. When speed matters more than total control.
+**Best for:** [MVP development](/services/mvp-development/) when you need a full team without building one. When you don't have a CTO. When speed matters more than total control.
 
-We shipped [Eitoss's MVP](/case-studies/eitoss) in 3 months — from concept to live product with real users. They raised funding on it. The agency model worked because they had a clear vision and needed a team that could execute without hand-holding.
+We shipped [Eitoss's MVP](/case-studies/eitoss/) in 3 months — from concept to live product with real users. They raised funding on it. The agency model worked because they had a clear vision and needed a team that could execute without hand-holding.
 
 ### Staff Augmentation
 
@@ -99,9 +99,9 @@ We shipped [Eitoss's MVP](/case-studies/eitoss) in 3 months — from concept to 
 
 **Best for:** Scaling an existing team. Filling specific skill gaps. Companies with a CTO who needs more hands.
 
-[PerformLine](/case-studies/performline) started with 1 augmented engineer from our team. Over 2 years, that grew to 8+ — full-stack, DevOps, data, QA, frontend. Same standup every morning. They forget our engineers are external.
+[PerformLine](/case-studies/performline/) started with 1 augmented engineer from our team. Over 2 years, that grew to 8+ — full-stack, DevOps, data, QA, frontend. Same standup every morning. They forget our engineers are external.
 
-For a deeper comparison of the last two models, read our [Staff Augmentation vs. Outsourcing guide](/blog/staff-augmentation-vs-outsourcing).
+For a deeper comparison of the last two models, read our [Staff Augmentation vs. Outsourcing guide](/blog/staff-augmentation-vs-outsourcing/).
 
 ## Red Flags: How to Spot a Bad Hire (or Bad Partner) Early
 
@@ -140,7 +140,7 @@ Ask to speak with the engineers who'll actually work on your product. If the com
 Check their portfolio for products that are in production, serving real users. Not designs. Not demos. Working software.
 
 **Step 3: Start with a paid trial.**
-Whether it's a freelancer or an agency, a 2-week trial with a specific deliverable is the best signal you'll get. It tests skill, communication, and reliability all at once. We offer [2-week trials](/services/resource-augmentation) for augmentation engagements — because we want the fit to be right for both sides.
+Whether it's a freelancer or an agency, a 2-week trial with a specific deliverable is the best signal you'll get. It tests skill, communication, and reliability all at once. We offer [2-week trials](/services/resource-augmentation/) for augmentation engagements — because we want the fit to be right for both sides.
 
 **Step 4: Evaluate communication during the trial.**
 How fast do they respond? Do they ask clarifying questions? Do they flag problems proactively or wait until you notice? Communication quality during a trial is communication quality during the engagement.
@@ -177,16 +177,16 @@ We've been the team that gets hired. We've sat on the other side of this evaluat
 
 **Code ownership from day one.** Your code. Your repo. Your product. No lock-in, no proprietary frameworks. If you want to bring development in-house later, we'll help you do that.
 
-**We'll tell you if we're not the right fit.** If your project needs something we can't deliver well, we'd rather say so upfront than take your money and underdeliver. That honesty is why we have [80%+ client retention](/about) — the clients who stay, stay because the partnership works.
+**We'll tell you if we're not the right fit.** If your project needs something we can't deliver well, we'd rather say so upfront than take your money and underdeliver. That honesty is why we have [80%+ client retention](/about/) — the clients who stay, stay because the partnership works.
 
 **We stay.** PerformLine started with 1 engineer and grew to 8+ over 2 years. Eitoss started as an MVP and became a 2+ year partnership. We don't build and leave. We build and grow with you.
 
 ## Ready to Start?
 
-If you're looking for developers for your startup — whether that's [augmented engineers](/services/resource-augmentation) who join your team or a [full team to build your MVP](/services/mvp-development) — we'd love to talk.
+If you're looking for developers for your startup — whether that's [augmented engineers](/services/resource-augmentation/) who join your team or a [full team to build your MVP](/services/mvp-development/) — we'd love to talk.
 
-Not sure which model fits? [Let's figure it out together](/contact). We'll give you an honest recommendation based on where you are right now.
+Not sure which model fits? [Let's figure it out together](/contact/). We'll give you an honest recommendation based on where you are right now.
 
 ---
 
-*Related reading: [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost) | [Why We Built Formester — and What It Taught Us](/blog/why-we-built-formester) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business)*
+*Related reading: [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing/) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost/) | [Why We Built Formester — and What It Taught Us](/blog/why-we-built-formester/) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business/)*

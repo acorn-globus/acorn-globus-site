@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/services" class="breadcrumb">
+          <NuxtLink to="/services/" class="breadcrumb">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Services
           </NuxtLink>
@@ -12,7 +12,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Ship a real product. Not a prototype you'll rewrite in six months.</h1>
           <p class="text-body-lg">We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.</p>
           <div style="margin-top: 36px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Tell us about your product idea</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Tell us about your product idea</NuxtLink>
           </div>
         </div>
         <div class="stats-row">
@@ -247,8 +247,8 @@
         <h2 class="text-display-sm">Your idea deserves a real product, not a throwaway prototype.</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what you're building. We'll have an honest conversation about scope, timeline, and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the right fit, we'll scope it together.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn-text">See how we built Eitoss's MVP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn-text">See how we built Eitoss's MVP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -262,7 +262,7 @@ useSeoMeta({
   ogTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
   ogDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/services/mvp-development',
+  ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
@@ -271,12 +271,12 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/mvp-development' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/mvp-development/' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'Services', path: '/services' },
-  { name: 'MVP Development', path: '/services/mvp-development' },
+  { name: 'Services', path: '/services/' },
+  { name: 'MVP Development', path: '/services/mvp-development/' },
 ])
 
 useServiceSchema({

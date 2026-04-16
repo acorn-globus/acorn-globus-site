@@ -155,7 +155,7 @@ Our philosophy is simple: your code, your product, your freedom. We mean that li
 - Clean deployment process documented in runbooks
 - Code quality standards enforced through automated linting and review
 
-We build this way because we've been on the other side. When we built [Formester](/blog/why-we-built-formester), our own SaaS product, we experienced firsthand what it means to live with a codebase for years. Every shortcut you take during development becomes a tax you pay during maintenance. We don't take those shortcuts on our products, and we don't take them on yours.
+We build this way because we've been on the other side. When we built [Formester](/blog/why-we-built-formester/), our own SaaS product, we experienced firsthand what it means to live with a codebase for years. Every shortcut you take during development becomes a tax you pay during maintenance. We don't take those shortcuts on our products, and we don't take them on yours.
 
 The goal isn't to keep clients dependent on us. It's the opposite. We want you to stay because the partnership works -- not because you can't leave. Our 80%+ client retention rate tells us that building for your independence actually makes for stronger, longer relationships.
 
@@ -185,6 +185,6 @@ Every codebase has tech debt. A team that can't articulate theirs either doesn't
 
 The code your agency writes is one of your most valuable assets. It represents months of decisions, iterations, and investment. Whether you plan to work with your current agency for another five years or transition to an in-house team next quarter, the code should be ready.
 
-Handoff-readiness isn't about planning to leave. It's about owning what you've paid for. A product built to hand over is a product [built to last](/blog/mvp-development-cost).
+Handoff-readiness isn't about planning to leave. It's about owning what you've paid for. A product built to hand over is a product [built to last](/blog/mvp-development-cost/).
 
 If you're not sure where your codebase stands, we do honest code audits. We'll tell you what's working, what needs attention, and whether your code is ready for a handoff -- no matter who built it.

@@ -7,7 +7,7 @@
         <header :class="doc.toc ? 'article-hero-guide' : 'article-hero-simple'">
           <div :class="doc.toc ? 'container-redesign' : 'article-container'">
             <div :style="doc.toc ? 'max-width: 800px;' : ''">
-              <NuxtLink to="/blog" class="breadcrumb">
+              <NuxtLink to="/blog/" class="breadcrumb">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
                 <template v-if="doc.toc">
                   Blog
@@ -81,7 +81,7 @@
                 <div class="guide-cta">
                   <h2 class="cta-title">Have a project in mind?</h2>
                   <p class="cta-description">We'd love to hear what you're building. Let's talk about how we can help.</p>
-                  <NuxtLink to="/contact" class="btn btn-primary">Let's Talk</NuxtLink>
+                  <NuxtLink to="/contact/" class="btn btn-primary">Let's Talk</NuxtLink>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@
             <div class="cta-inner-redesign">
               <h2>Want a team that builds it like it's theirs?</h2>
               <p>We built Formester. We'll bring the same ownership to your product. Let's talk.</p>
-              <NuxtLink to="/contact" class="btn btn-primary">Let's Talk</NuxtLink>
+              <NuxtLink to="/contact/" class="btn btn-primary">Let's Talk</NuxtLink>
             </div>
           </div>
         </section>
@@ -126,7 +126,7 @@
                 <NuxtLink
                   v-for="post in relatedPosts"
                   :key="post._path"
-                  :to="post._path"
+                  :to="`${post._path}/`"
                   class="related-card-redesign"
                 >
                   <img
@@ -237,7 +237,7 @@ if (article.value) {
     ogTitle: title,
     ogDescription: description,
     ogImage: image,
-    ogUrl: `https://acornglobus.com/blog/${slug}`,
+    ogUrl: `https://acornglobus.com/blog/${slug}/`,
     ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: title,
@@ -263,14 +263,14 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: `https://acornglobus.com/blog/${slug}`,
+      href: `https://acornglobus.com/blog/${slug}/`,
     },
   ],
 })
 
 useBreadcrumbSchema([
-  { name: 'Blog', path: '/blog' },
-  { name: article.value?.title || String(slug), path: `/blog/${slug}` },
+  { name: 'Blog', path: '/blog/' },
+  { name: article.value?.title || String(slug), path: `/blog/${slug}/` },
 ])
 </script>
 

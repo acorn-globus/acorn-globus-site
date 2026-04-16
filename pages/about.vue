@@ -223,7 +223,7 @@
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Whether you're a founder with an idea, a CTO who needs more hands, or a team looking for a long-term engineering partner — we'd love to hear what you're working on.</p>
         <p class="text-body-lg" style="max-width: 640px; margin: 12px auto 0;">No pitch decks. No pressure. Just a conversation about your product and whether we're the right fit.</p>
         <div class="cta-actions">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
           <p class="cta-alt">Or reach out directly at <a href="mailto:business@acornglobus.com">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -242,7 +242,7 @@ useSeoMeta({
   ogTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   ogDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/about',
+  ogUrl: 'https://acornglobus.com/about/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
@@ -251,11 +251,11 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/about' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/about/' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'About', path: '/about' },
+  { name: 'About', path: '/about/' },
 ])
 </script>
 

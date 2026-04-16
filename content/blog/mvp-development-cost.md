@@ -22,7 +22,7 @@ keywords:
 
 You're trying to figure out how much it costs to build an MVP. You've probably seen answers ranging from $5,000 to $500,000, which isn't helpful. Let's fix that.
 
-Here's the honest answer — from a team that's built MVPs for clients and [built our own SaaS product](/blog/why-we-built-formester) from scratch.
+Here's the honest answer — from a team that's built MVPs for clients and [built our own SaaS product](/blog/why-we-built-formester/) from scratch.
 
 ## The Short Answer
 
@@ -59,9 +59,9 @@ Here's a framework we use with every client: separate your features into "must-h
 - Third-party integrations beyond the essentials
 - Mobile app (if your web app is the core)
 
-When we built [Formester](/case-studies/formester), we started with a list of 30+ features. We launched with eight. Users didn't miss the other 22 — they told us what to build next based on how they actually used the product. That taught us more in two weeks than our feature planning taught us in two months.
+When we built [Formester](/case-studies/formester/), we started with a list of 30+ features. We launched with eight. Users didn't miss the other 22 — they told us what to build next based on how they actually used the product. That taught us more in two weeks than our feature planning taught us in two months.
 
-We apply the same discipline with clients. When we scoped [Eitoss's MVP](/case-studies/eitoss), we focused on the features that would let them put the product in front of real users and demonstrate traction to investors. Everything else waited.
+We apply the same discipline with clients. When we scoped [Eitoss's MVP](/case-studies/eitoss/), we focused on the features that would let them put the product in front of real users and demonstrate traction to investors. Everything else waited.
 
 ### Team Structure and Location
 
@@ -74,7 +74,7 @@ Who builds your MVP significantly affects cost:
 | Freelancers | $15 -- $150 | Flexible but variable quality, availability risk |
 | Agency (US/Europe) | $100 -- $200 | High quality, but pricing often matches in-house costs |
 
-A note on the agency model: not all agencies are the same. Some assign a rotating pool of developers. Others — [like us](/services/mvp-development) — assign dedicated engineers who stay on your project from start to finish. You'll know them by name. The difference shows in the product.
+A note on the agency model: not all agencies are the same. Some assign a rotating pool of developers. Others — [like us](/services/mvp-development/) — assign dedicated engineers who stay on your project from start to finish. You'll know them by name. The difference shows in the product.
 
 ### Platform Choice
 
@@ -105,7 +105,7 @@ The most expensive word in startups is "also."
 
 "Can we also add..." is how a $30,000 MVP becomes a $60,000 one. It happens slowly — a feature here, a "small change" there. Each one seems reasonable in isolation. Together, they double your timeline and budget.
 
-This is why we scope aggressively upfront and push back on additions during the build. Not because we don't want to help — because we've seen what happens when scope isn't disciplined. We've felt it on [our own product](/blog/why-we-built-formester).
+This is why we scope aggressively upfront and push back on additions during the build. Not because we don't want to help — because we've seen what happens when scope isn't disciplined. We've felt it on [our own product](/blog/why-we-built-formester/).
 
 ### The Cost of Getting It Wrong
 
@@ -137,7 +137,7 @@ This is the section most MVP guides skip — and it might be the most important 
 
 Investors don't want a polished, feature-complete product. They want proof that your team can execute and that your hypothesis has legs. A focused MVP that costs $30,000 and has 50 active users is more compelling than a $150,000 product that nobody's using.
 
-When we shipped [Eitoss's MVP](/case-studies/eitoss), we focused on what they needed to demonstrate traction to investors. Demoable product in 8 weeks. Live with real users in 3 months. They raised funding. The MVP didn't need to do everything — it needed to prove the concept.
+When we shipped [Eitoss's MVP](/case-studies/eitoss/), we focused on what they needed to demonstrate traction to investors. Demoable product in 8 weeks. Live with real users in 3 months. They raised funding. The MVP didn't need to do everything — it needed to prove the concept.
 
 ## How to Spend Less Without Building Less
 
@@ -170,13 +170,13 @@ We offer both. The right model depends on how well-defined your scope is when we
 
 Before you commit to anyone — agency, freelancer, or in-house hire — ask these questions:
 
-**Do they build their own products?** A team that's built and maintained their own product understands the founder experience in a way that pure service companies don't. We built [Formester](/blog/why-we-built-formester). It taught us what ownership really means.
+**Do they build their own products?** A team that's built and maintained their own product understands the founder experience in a way that pure service companies don't. We built [Formester](/blog/why-we-built-formester/). It taught us what ownership really means.
 
 **Do they guide scope or just take orders?** If your development partner says yes to everything, they're not protecting your budget or your timeline. You want a team that tells you what you need — and what can wait.
 
 **Who owns the code?** You should own 100% of your code from day one. No proprietary frameworks. No lock-in. If you want to bring development in-house later, your code should be ready for that.
 
-**What happens after launch?** An MVP that ships and then gets abandoned is a waste of money. Ask what post-launch support looks like. Ask if they've stayed with clients beyond the initial build. [We have](/case-studies/eitoss) — Eitoss started as an MVP engagement, and we've been building together for over 2 years.
+**What happens after launch?** An MVP that ships and then gets abandoned is a waste of money. Ask what post-launch support looks like. Ask if they've stayed with clients beyond the initial build. [We have](/case-studies/eitoss/) — Eitoss started as an MVP engagement, and we've been building together for over 2 years.
 
 ## What Happens After the MVP Ships?
 
@@ -186,16 +186,16 @@ Your MVP is the beginning, not the end. Here's what to budget for after launch:
 
 **Iteration based on user feedback:** This is where the real product gets built. Budget for 2-3 months of iteration after launch. The features users ask for will surprise you — and they'll be different from what you planned.
 
-**Scaling:** Once you find product-market fit, you'll need to scale the team, the infrastructure, or both. This is where the engagement model often shifts from project-based to [resource augmentation](/services/resource-augmentation).
+**Scaling:** Once you find product-market fit, you'll need to scale the team, the infrastructure, or both. This is where the engagement model often shifts from project-based to [resource augmentation](/services/resource-augmentation/).
 
 Eitoss followed this exact path. MVP in 3 months. Raised funding. Kept building. We're still their engineering team 2+ years later. That continuity — having a team that knows the codebase, the users, and the product vision — saves months of ramp-up time.
 
 ## Ready to Scope Your MVP?
 
-If you're planning an MVP and want honest guidance on what to build, what to skip, and what it'll cost — [let's talk](/contact). We'll give you a realistic timeline and budget, not a sales pitch.
+If you're planning an MVP and want honest guidance on what to build, what to skip, and what it'll cost — [let's talk](/contact/). We'll give you a realistic timeline and budget, not a sales pitch.
 
-You can also explore our [MVP development service](/services/mvp-development) or read about how we [shipped Eitoss from concept to funding](/case-studies/eitoss).
+You can also explore our [MVP development service](/services/mvp-development/) or read about how we [shipped Eitoss from concept to funding](/case-studies/eitoss/).
 
 ---
 
-*Related reading: [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup) | [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business)*
+*Related reading: [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup/) | [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing/) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business/)*

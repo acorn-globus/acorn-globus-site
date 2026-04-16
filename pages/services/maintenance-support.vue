@@ -4,7 +4,7 @@
     <section class="hero" style="padding-bottom: 80px;">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/services" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
+          <NuxtLink to="/services/" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Services
           </NuxtLink>
@@ -12,7 +12,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">We built it. We keep it running. And we make it better.</h1>
           <p class="text-body-lg">Launching is just the beginning. We stay with your product — monitoring, fixing, updating, and improving it with the same team that built it in the first place.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn-text" style="font-size: 17px;">Let's talk about your product <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+            <NuxtLink to="/contact/" class="btn-text" style="font-size: 17px;">Let's talk about your product <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -270,8 +270,8 @@
         <h2 class="text-display-sm">Your product deserves the same care after launch as it got during build.</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your product — what it does, who built it, and what kind of support you need. We'll put together a maintenance plan that keeps it healthy and improving, not just alive.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
-          <NuxtLink to="/contact" class="btn-text">Already our client? Let's discuss ongoing support. <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <NuxtLink to="/contact/" class="btn-text">Already our client? Let's discuss ongoing support. <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -285,7 +285,7 @@ useSeoMeta({
   ogTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
   ogDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/services/maintenance-support',
+  ogUrl: 'https://acornglobus.com/services/maintenance-support/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
@@ -294,12 +294,12 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/maintenance-support' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/maintenance-support/' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'Services', path: '/services' },
-  { name: 'Maintenance & Support', path: '/services/maintenance-support' },
+  { name: 'Services', path: '/services/' },
+  { name: 'Maintenance & Support', path: '/services/maintenance-support/' },
 ])
 
 useServiceSchema({

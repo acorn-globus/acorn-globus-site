@@ -88,7 +88,7 @@ We have 20+ engineers. That's small enough that our clients know the people buil
 
 **Code shop approach:** Delivered code, a final invoice, and a handoff document. The project is complete.
 
-**Product engineering approach:** A production-ready product with documented architecture, clean deployment pipelines, and a team that's ready to keep building with you. [The code is yours, fully handoff-ready](/blog/hire-developers-startup), and you're never locked in.
+**Product engineering approach:** A production-ready product with documented architecture, clean deployment pipelines, and a team that's ready to keep building with you. [The code is yours, fully handoff-ready](/blog/hire-developers-startup/), and you're never locked in.
 
 The difference shows up six months later. Code from a product engineering team is built to grow with the product. Code from a code shop is built to match the spec.
 
@@ -147,7 +147,7 @@ A team that has built and maintained its own product understands ownership in a 
 
 This isn't a sales pitch. It's context for why we think about this distinction the way we do.
 
-We built [Formester](/blog/why-we-built-formester) -- our own SaaS product, from scratch. Live, growing, real users. Building your own product teaches you something that client work alone can't: what it feels like when the codebase is yours. When the users are yours. When the technical debt is yours to live with.
+We built [Formester](/blog/why-we-built-formester/) -- our own SaaS product, from scratch. Live, growing, real users. Building your own product teaches you something that client work alone can't: what it feels like when the codebase is yours. When the users are yours. When the technical debt is yours to live with.
 
 That experience changed how we work with clients. We stopped thinking in terms of deliverables and started thinking in terms of outcomes. We stopped saying "that's a change request" and started saying "let's figure out the right solution."
 
@@ -175,7 +175,7 @@ The real question isn't "code shop or product team?" It's: what does your projec
 
 If you're building something that needs to grow, evolve, and respond to users -- something your business will run on -- you want a team that thinks about your product, not just your code.
 
-If you have a [clearly defined project](/blog/staff-augmentation-vs-outsourcing) with internal oversight and a specific deliverable, a code shop might be the efficient choice.
+If you have a [clearly defined project](/blog/staff-augmentation-vs-outsourcing/) with internal oversight and a specific deliverable, a code shop might be the efficient choice.
 
 The expensive mistake isn't choosing the wrong model. It's not knowing which model you're choosing. Now you know what to look for.
 

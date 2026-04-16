@@ -124,7 +124,7 @@
               Built a cross-platform educational platform reaching learners in 176 countries.
             </p>
             <NuxtLink
-              to="/case-studies/rumie"
+              to="/case-studies/rumie/"
               class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
             >
               View Case Study
@@ -138,7 +138,7 @@
               Developed a comprehensive Shopify invoicing solution with React frontend.
             </p>
             <NuxtLink
-              to="/case-studies/invoice-falcon"
+              to="/case-studies/invoice-falcon/"
               class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
             >
               View Case Study
@@ -162,7 +162,7 @@
           We'd love to hear about your product. Whether you need a full team or a few React engineers to embed with yours, let's talk.
         </p>
         <NuxtLink
-          to="/contact"
+          to="/contact/"
           class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
         >
           Let's Talk
@@ -191,7 +191,7 @@ useSeoMeta({
   ogTitle: 'React.js Development Services | AcornGlobus',
   ogDescription: 'React.js development from a team that\'s shipped real products - from educational platforms to SaaS tools.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/technologies/reactjs',
+  ogUrl: 'https://acornglobus.com/technologies/reactjs/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'React.js Development Services | AcornGlobus',
@@ -199,10 +199,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/reactjs' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/reactjs/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Technologies', path: '/technologies/reactjs' },
-  { name: 'React.js', path: '/technologies/reactjs' },
+  { name: 'Technologies', path: '/technologies/reactjs/' },
+  { name: 'React.js', path: '/technologies/reactjs/' },
 ])
 </script>

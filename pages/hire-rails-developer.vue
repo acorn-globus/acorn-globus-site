@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers in India Who Respect the Framework</h1>
           <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy — not just its syntax.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -327,7 +327,7 @@
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Build With Rails?</h2>
         <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-          <NuxtLink to="/contact" class="btn btn-primary">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Book a Call</NuxtLink>
         </div>
         <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
       </div>
@@ -381,7 +381,7 @@ useSeoMeta({
   ogTitle: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
   ogDescription: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-rails-developer',
+  ogUrl: 'https://acornglobus.com/hire-rails-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
@@ -391,7 +391,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-rails-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-rails-developer/' },
   ],
 })
 
@@ -404,7 +404,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Ruby on Rails Developers', path: '/hire-rails-developer' },
+  { name: 'Hire Ruby on Rails Developers', path: '/hire-rails-developer/' },
 ])
 </script>
 

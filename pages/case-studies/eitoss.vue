@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/portfolio" class="breadcrumb">
+          <NuxtLink to="/portfolio/" class="breadcrumb">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Portfolio
           </NuxtLink>
@@ -224,8 +224,8 @@
         <h2 class="text-display-sm">Have a product idea you want to bring to life?</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">We shipped Eitoss's MVP in 12 weeks and we're still building together 2 years later. If you're looking for a team that builds with you for the long run, we'd love to hear what you're working on.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn-text">See our work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn-text">See our work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -243,7 +243,7 @@ useSeoMeta({
   ogTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
   ogDescription: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
   ogImage: 'https://acornglobus.com/images/case-study-eitoss.webp',
-  ogUrl: 'https://acornglobus.com/case-studies/eitoss',
+  ogUrl: 'https://acornglobus.com/case-studies/eitoss/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
@@ -252,7 +252,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/eitoss' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/eitoss/' }],
 })
 
 useArticleSchema({
@@ -265,8 +265,8 @@ useArticleSchema({
 })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'Eitoss', path: '/case-studies/eitoss' },
+  { name: 'Portfolio', path: '/portfolio/' },
+  { name: 'Eitoss', path: '/case-studies/eitoss/' },
 ])
 </script>
 

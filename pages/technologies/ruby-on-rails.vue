@@ -130,7 +130,7 @@
               Developed a comprehensive invoicing solution for Shopify merchants using Ruby on Rails.
             </p>
             <NuxtLink 
-              to="/case-studies/invoice-falcon"
+              to="/case-studies/invoice-falcon/"
               class="text-yellow-400 hover:text-yellow-500 font-semibold"
             >
               View Case Study →
@@ -143,7 +143,7 @@
               Built a scalable platform for workplace communication and continuous improvement.
             </p>
             <NuxtLink 
-              to="/case-studies/eitoss"
+              to="/case-studies/eitoss/"
               class="text-yellow-400 hover:text-yellow-500 font-semibold"
             >
               View Case Study →
@@ -159,7 +159,7 @@
           Let's discuss how our Rails development expertise can help accelerate your project.
         </p>
         <NuxtLink 
-          to="/contact" 
+          to="/contact/" 
           class="inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
         >
           Get Started
@@ -179,7 +179,7 @@ useSeoMeta({
   ogTitle: 'Ruby on Rails Development Services | AcornGlobus',
   ogDescription: 'Expert Ruby on Rails development services with proven expertise in building scalable, maintainable applications.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/technologies/ruby-on-rails',
+  ogUrl: 'https://acornglobus.com/technologies/ruby-on-rails/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Ruby on Rails Development Services | AcornGlobus',
@@ -187,10 +187,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/ruby-on-rails' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/ruby-on-rails/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Technologies', path: '/technologies/ruby-on-rails' },
-  { name: 'Ruby on Rails', path: '/technologies/ruby-on-rails' },
+  { name: 'Technologies', path: '/technologies/ruby-on-rails/' },
+  { name: 'Ruby on Rails', path: '/technologies/ruby-on-rails/' },
 ])
 </script>

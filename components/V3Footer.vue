@@ -21,12 +21,12 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><NuxtLink to="/about">About Us</NuxtLink></li>
-            <li><NuxtLink to="/services">Services</NuxtLink></li>
-            <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
-            <li><NuxtLink to="/how-we-work">How We Work</NuxtLink></li>
-            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-            <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+            <li><NuxtLink to="/about/">About Us</NuxtLink></li>
+            <li><NuxtLink to="/services/">Services</NuxtLink></li>
+            <li><NuxtLink to="/portfolio/">Portfolio</NuxtLink></li>
+            <li><NuxtLink to="/how-we-work/">How We Work</NuxtLink></li>
+            <li><NuxtLink to="/blog/">Blog</NuxtLink></li>
+            <li><NuxtLink to="/contact/">Contact</NuxtLink></li>
           </ul>
         </div>
 
@@ -34,10 +34,10 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><NuxtLink to="/services/resource-augmentation">Resource Augmentation</NuxtLink></li>
-            <li><NuxtLink to="/services/full-project-delivery">Full Project Delivery</NuxtLink></li>
-            <li><NuxtLink to="/services/maintenance-support">Maintenance &amp; Support</NuxtLink></li>
-            <li><NuxtLink to="/services/mvp-development">MVP Development</NuxtLink></li>
+            <li><NuxtLink to="/services/resource-augmentation/">Resource Augmentation</NuxtLink></li>
+            <li><NuxtLink to="/services/full-project-delivery/">Full Project Delivery</NuxtLink></li>
+            <li><NuxtLink to="/services/maintenance-support/">Maintenance &amp; Support</NuxtLink></li>
+            <li><NuxtLink to="/services/mvp-development/">MVP Development</NuxtLink></li>
           </ul>
         </div>
 
@@ -45,13 +45,13 @@
         <div class="footer-col">
           <h4>Hire Developers</h4>
           <ul>
-            <li><NuxtLink to="/hire-react-developer">Hire React Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-angular-developer">Hire Angular Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-vuejs-developer">Hire Vue.js Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-nodejs-developer">Hire Node.js Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-rails-developer">Hire Rails Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-python-developer">Hire Python Developers</NuxtLink></li>
-            <li><NuxtLink to="/hire-flutter-developer">Hire Flutter Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-react-developer/">Hire React Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-angular-developer/">Hire Angular Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-vuejs-developer/">Hire Vue.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-nodejs-developer/">Hire Node.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-rails-developer/">Hire Rails Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-python-developer/">Hire Python Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-flutter-developer/">Hire Flutter Developers</NuxtLink></li>
           </ul>
         </div>
 
@@ -59,10 +59,10 @@
         <div class="footer-col">
           <h4>Resources</h4>
           <ul>
-            <li><NuxtLink to="/guides/it-staff-augmentation">IT Staff Augmentation Guide</NuxtLink></li>
-            <li><NuxtLink to="/guides/mvp-development">MVP Development Guide</NuxtLink></li>
-            <li><NuxtLink to="/case-studies/formester">Formester Case Study</NuxtLink></li>
-            <li><NuxtLink to="/case-studies/performline">PerformLine Case Study</NuxtLink></li>
+            <li><NuxtLink to="/guides/it-staff-augmentation/">IT Staff Augmentation Guide</NuxtLink></li>
+            <li><NuxtLink to="/guides/mvp-development/">MVP Development Guide</NuxtLink></li>
+            <li><NuxtLink to="/case-studies/formester/">Formester Case Study</NuxtLink></li>
+            <li><NuxtLink to="/case-studies/performline/">PerformLine Case Study</NuxtLink></li>
           </ul>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="footer-bottom">
         <span>&copy; {{ currentYear }} Acorn Globus. All rights reserved.</span>
         <div class="footer-bottom-right">
-          <NuxtLink to="/privacy-policy" class="footer-privacy">
+          <NuxtLink to="/privacy-policy/" class="footer-privacy">
             Privacy Policy
           </NuxtLink>
           <div class="footer-social">

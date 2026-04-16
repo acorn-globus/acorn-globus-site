@@ -4,10 +4,10 @@
     <section class="hero">
       <div class="container-redesign">
         <div class="formester-breadcrumb">
-          <NuxtLink to="/portfolio">
+          <NuxtLink to="/portfolio/">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           </NuxtLink>
-          <NuxtLink to="/portfolio">Back to Portfolio</NuxtLink>
+          <NuxtLink to="/portfolio/">Back to Portfolio</NuxtLink>
         </div>
         <div class="hero-eyebrow"><span>Our Own SaaS Product</span></div>
         <div class="hero-grid">
@@ -16,7 +16,7 @@
             <p class="text-body-lg" style="margin-top: 24px; max-width: 560px;">Formester is our SaaS product — a no-code, AI-powered form builder used by real businesses every day. Building it changed how we work with every client.</p>
             <div style="display: flex; gap: 16px; margin-top: 40px;">
               <a href="https://formester.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Formester</a>
-              <NuxtLink to="/contact" class="btn btn-secondary">Let's Talk</NuxtLink>
+              <NuxtLink to="/contact/" class="btn btn-secondary">Let's Talk</NuxtLink>
             </div>
           </div>
           <div class="hero-image">
@@ -264,7 +264,7 @@
         <p class="text-body-lg" style="margin-bottom: 24px; opacity: 0.9;">Formester is live at formester.com. We built it. We maintain it. We use what we learn from it every single day.</p>
         <h2 class="text-display-sm">Want a team that builds your product with the same care we put into ours?</h2>
         <div class="cta-actions" style="justify-content: center;">
-          <NuxtLink to="/contact" class="btn btn-primary">Let's Talk</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Let's Talk</NuxtLink>
         </div>
       </div>
     </section>
@@ -282,7 +282,7 @@ useSeoMeta({
   ogTitle: 'Formester Case Study | We Built Our Own SaaS | AcornGlobus',
   ogDescription: 'Formester is our SaaS product — a no-code, AI-powered form builder. Building it changed how we work with every client. Here\'s the full story.',
   ogImage: 'https://acornglobus.com/images/formester.webp',
-  ogUrl: 'https://acornglobus.com/case-studies/formester',
+  ogUrl: 'https://acornglobus.com/case-studies/formester/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Formester Case Study | We Built Our Own SaaS | AcornGlobus',
@@ -291,7 +291,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/formester' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/formester/' }],
 })
 
 useArticleSchema({
@@ -304,8 +304,8 @@ useArticleSchema({
 })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'Formester', path: '/case-studies/formester' },
+  { name: 'Portfolio', path: '/portfolio/' },
+  { name: 'Formester', path: '/case-studies/formester/' },
 ])
 </script>
 

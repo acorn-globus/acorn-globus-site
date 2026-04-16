@@ -39,7 +39,7 @@
           </ul>
 
           <NuxtLink
-            to="/case-studies/eitoss"
+            to="/case-studies/eitoss/"
             class="inline-block bg-yellow-400 text-navy-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
           >
             View Eitoss Case Study

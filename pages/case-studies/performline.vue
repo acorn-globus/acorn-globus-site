@@ -4,7 +4,7 @@
     <section class="cs-hero">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/portfolio" class="breadcrumb">
+          <NuxtLink to="/portfolio/" class="breadcrumb">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Portfolio
           </NuxtLink>
@@ -277,8 +277,8 @@
         <h2 class="text-display-sm">Let's Build Together</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">If you're looking for engineers who become part of your team — not names on an invoice — we'd love to hear what you're building.</p>
         <div class="cta-buttons">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn btn-secondary" style="font-size: 16px; padding: 16px 32px;">View More Projects</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn btn-secondary" style="font-size: 16px; padding: 16px 32px;">View More Projects</NuxtLink>
         </div>
       </div>
     </section>
@@ -296,7 +296,7 @@ useSeoMeta({
   ogTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
   ogDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
   ogImage: 'https://acornglobus.com/images/performline.webp',
-  ogUrl: 'https://acornglobus.com/case-studies/performline',
+  ogUrl: 'https://acornglobus.com/case-studies/performline/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
@@ -305,7 +305,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/performline' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/performline/' }],
 })
 
 useArticleSchema({
@@ -318,8 +318,8 @@ useArticleSchema({
 })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'PerformLine', path: '/case-studies/performline' },
+  { name: 'Portfolio', path: '/portfolio/' },
+  { name: 'PerformLine', path: '/case-studies/performline/' },
 ])
 </script>
 
