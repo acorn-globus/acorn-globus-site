@@ -2,7 +2,7 @@
 title: "Freelancer vs. Agency for Software Development: An Honest Comparison"
 description: "Freelancer or agency for your software project? We break down the real trade-offs -- cost, risk, quality, and long-term outcomes -- with honest advice."
 topic: Hiring and Team Building
-author: AcornGlobus
+author: Tarun Bhukya
 coverImg: /images/blog/freelancer-vs-agency.webp
 coverImgAlt: "Freelancer vs Agency for software development — an honest comparison of trade-offs"
 published: true
