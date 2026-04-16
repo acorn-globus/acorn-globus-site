@@ -41,6 +41,10 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://acornglobus.com',
+    // Netlify canonicalizes URLs to trailing-slash form (301 no-slash → slash).
+    // Tell the sitemap module to emit matching trailing-slash URLs so Google
+    // crawls land on 200s directly instead of chasing one redirect per entry.
+    trailingSlash: true,
   },
 
   sitemap: {
