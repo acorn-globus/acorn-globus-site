@@ -3,6 +3,7 @@ title: "Why We Built Formester — and What It Taught Us"
 description: "We built Formester, our own SaaS product. Here's what that journey taught us about ownership, trade-offs, and why we build every client's product like it's ours."
 topic: Thought Leadership
 author: Tarun Bhukya
+authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 coverImg: /images/blog/why-we-built-formester.webp
 coverImgAlt: "Why We Built Formester — lessons from building our own SaaS product"
 published: true

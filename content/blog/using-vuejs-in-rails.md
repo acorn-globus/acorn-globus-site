@@ -1,6 +1,7 @@
 ---
 title: "Using Vue.js in Rails"
 author: Ankit Singhaniya
+authorProfile: https://in.linkedin.com/in/ankitsinghaniyaz
 topic: Tech
 coverImg: /images/blog/vuejs-in-rails.webp
 coverImgAlt: Cover image for the blog, "Using Vue.js in Rails"

@@ -1,6 +1,7 @@
 ---
 title: "Understanding the difference between Ruby class method and instance method"
 author: Ankit Singhaniya
+authorProfile: https://in.linkedin.com/in/ankitsinghaniyaz
 topic: Tech
 coverImg: /images/blog/ruby-class-instance.webp
 coverImgAlt: Cover image for the blog, "Understanding the difference between Ruby class method and instance method"
