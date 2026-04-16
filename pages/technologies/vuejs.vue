@@ -124,7 +124,7 @@
               Built a modern form builder platform using Vue.js and Nuxt, featuring AI-powered form generation.
             </p>
             <NuxtLink
-              to="/case-studies/formester"
+              to="/case-studies/formester/"
               class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
             >
               View Case Study
@@ -138,7 +138,7 @@
               Developed a comprehensive Shopify invoicing solution with Vue.js frontend.
             </p>
             <NuxtLink
-              to="/case-studies/invoice-falcon"
+              to="/case-studies/invoice-falcon/"
               class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
             >
               View Case Study
@@ -162,7 +162,7 @@
           We've shipped Vue products for ourselves and our clients. Tell us about your product - we'd love to help.
         </p>
         <NuxtLink
-          to="/contact"
+          to="/contact/"
           class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
         >
           Let's Talk
@@ -191,7 +191,7 @@ useSeoMeta({
   ogTitle: 'Vue.js Development Services | AcornGlobus',
   ogDescription: 'Vue.js and Nuxt.js development from the team that built Formester and this website.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/technologies/vuejs',
+  ogUrl: 'https://acornglobus.com/technologies/vuejs/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Vue.js Development Services | AcornGlobus',
@@ -199,10 +199,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/vuejs' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/vuejs/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Technologies', path: '/technologies/vuejs' },
-  { name: 'Vue.js', path: '/technologies/vuejs' },
+  { name: 'Technologies', path: '/technologies/vuejs/' },
+  { name: 'Vue.js', path: '/technologies/vuejs/' },
 ])
 </script>

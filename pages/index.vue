@@ -29,8 +29,8 @@
               </div>
             </div>
             <div class="hero-ctas">
-              <NuxtLink to="/contact" class="btn btn-primary">Let's talk about your product</NuxtLink>
-              <NuxtLink to="/portfolio" class="btn btn-secondary">See our work</NuxtLink>
+              <NuxtLink to="/contact/" class="btn btn-primary">Let's talk about your product</NuxtLink>
+              <NuxtLink to="/portfolio/" class="btn btn-secondary">See our work</NuxtLink>
             </div>
           </div>
           <div class="hero-illustration">
@@ -142,7 +142,7 @@
                 <span class="partnership-tag">Full-stack, DevOps, QA</span>
                 <span class="partnership-tag">Embedded in their team</span>
               </div>
-              <NuxtLink to="/case-studies/performline" class="btn-text" style="margin-top: 24px; display: inline-flex;">
+              <NuxtLink to="/case-studies/performline/" class="btn-text" style="margin-top: 24px; display: inline-flex;">
                 Read the full story
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
               </NuxtLink>
@@ -186,11 +186,11 @@
                 </div>
               </div>
               <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px;">
-                <NuxtLink to="/case-studies/eitoss" class="btn-text" style="display: inline-flex;">
+                <NuxtLink to="/case-studies/eitoss/" class="btn-text" style="display: inline-flex;">
                   Read the full story
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </NuxtLink>
-                <NuxtLink to="/how-we-work" class="btn-text" style="display: inline-flex;">
+                <NuxtLink to="/how-we-work/" class="btn-text" style="display: inline-flex;">
                   See how we work
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </NuxtLink>
@@ -203,29 +203,29 @@
         <div class="more-case-studies">
           <h3 class="text-title-lg" style="margin-bottom: 24px;">More from our portfolio</h3>
           <div class="case-study-links-grid">
-            <NuxtLink to="/case-studies/formester" class="case-study-link-card">
+            <NuxtLink to="/case-studies/formester/" class="case-study-link-card">
               <span class="case-study-link-label">Our Own SaaS</span>
               <span class="case-study-link-name">Formester</span>
               <span class="case-study-link-desc">AI-powered form builder. 1,000+ active users. 4.7 on G2.</span>
             </NuxtLink>
-            <NuxtLink to="/case-studies/eitoss" class="case-study-link-card">
+            <NuxtLink to="/case-studies/eitoss/" class="case-study-link-card">
               <span class="case-study-link-label">MVP Development</span>
               <span class="case-study-link-name">Eitoss</span>
               <span class="case-study-link-desc">MVP in 3 months. Raised funding. Still building 2+ years later.</span>
             </NuxtLink>
-            <NuxtLink to="/case-studies/rumie" class="case-study-link-card">
+            <NuxtLink to="/case-studies/rumie/" class="case-study-link-card">
               <span class="case-study-link-label">Non-Profit EdTech</span>
               <span class="case-study-link-name">Rumie</span>
               <span class="case-study-link-desc">Bite-sized learning reaching learners across 176 countries.</span>
             </NuxtLink>
-            <NuxtLink to="/case-studies/invoice-falcon" class="case-study-link-card">
+            <NuxtLink to="/case-studies/invoice-falcon/" class="case-study-link-card">
               <span class="case-study-link-label">Shopify App</span>
               <span class="case-study-link-name">Invoice Falcon</span>
               <span class="case-study-link-desc">Comprehensive invoicing for Shopify merchants worldwide.</span>
             </NuxtLink>
           </div>
           <div style="margin-top: 24px;">
-            <NuxtLink to="/portfolio" class="btn-text">
+            <NuxtLink to="/portfolio/" class="btn-text">
               View all case studies
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </NuxtLink>
@@ -303,7 +303,7 @@
           <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product — we'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
         </div>
         <div class="cta-actions">
-          <NuxtLink to="/contact" class="btn btn-primary cta-btn-lg">Start a conversation</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary cta-btn-lg">Start a conversation</NuxtLink>
           <p class="cta-alt">Or email us at <a href="mailto:business@acornglobus.com">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -341,25 +341,25 @@ const services = [
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     title: 'Resource Augmentation',
     description: 'Your team, plus ours. Our engineers embed with your team — same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
-    link: '/services/resource-augmentation'
+    link: '/services/resource-augmentation/'
   },
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
     title: 'MVP Development',
     description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready — not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
-    link: '/services/mvp-development'
+    link: '/services/mvp-development/'
   },
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
     title: 'Full Project Delivery',
     description: 'One team, one relationship, start to finish. We take on your project end-to-end with milestone-based delivery. You see progress every two weeks. Clean code, full documentation, zero lock-in.',
-    link: '/services/full-project-delivery'
+    link: '/services/full-project-delivery/'
   },
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
     title: 'Maintenance & Support',
     description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve — with the same engineers who built it. Because they know your product and they care about it.',
-    link: '/services/maintenance-support'
+    link: '/services/maintenance-support/'
   }
 ]
 

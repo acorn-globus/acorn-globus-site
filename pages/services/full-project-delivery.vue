@@ -4,7 +4,7 @@
     <section class="hero" style="padding-bottom: 80px;">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/services" class="breadcrumb">
+          <NuxtLink to="/services/" class="breadcrumb">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Services
           </NuxtLink>
@@ -12,7 +12,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Your product, built end-to-end by a team that treats it like their own.</h1>
           <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success — not just your deadline.</p>
           <div style="margin-top: 36px;">
-            <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
           </div>
         </div>
         <div class="stats-row">
@@ -200,8 +200,8 @@
         <h2 class="text-display-sm">You have the vision. Let's build it together.</h2>
         <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project — what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn-text">See our work with Eitoss and PerformLine <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn-text">See our work with Eitoss and PerformLine <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -215,7 +215,7 @@ useSeoMeta({
   ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/services/full-project-delivery',
+  ogUrl: 'https://acornglobus.com/services/full-project-delivery/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
@@ -224,12 +224,12 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/full-project-delivery' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/full-project-delivery/' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'Services', path: '/services' },
-  { name: 'Full Project Delivery', path: '/services/full-project-delivery' },
+  { name: 'Services', path: '/services/' },
+  { name: 'Full Project Delivery', path: '/services/full-project-delivery/' },
 ])
 
 useServiceSchema({

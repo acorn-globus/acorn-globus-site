@@ -22,7 +22,7 @@ You've heard it before. "An MVP takes 4 to 12 weeks." That range is so wide it's
 
 When you're a founder with runway to manage and investors to update, you need more than a range. You need to know what actually happens each week. What decisions you'll face. What your team is building while you're wondering if this is all going to come together.
 
-We've shipped MVPs for startups that went on to raise funding. We've also built our own product, [Formester](/blog/why-we-built-formester), from scratch. Here's what the MVP development process actually looks like when you break it down week by week -- including the parts that are uncomfortable.
+We've shipped MVPs for startups that went on to raise funding. We've also built our own product, [Formester](/blog/why-we-built-formester/), from scratch. Here's what the MVP development process actually looks like when you break it down week by week -- including the parts that are uncomfortable.
 
 ## Why Most MVP Timeline Guides Don't Help
 
@@ -57,7 +57,7 @@ This is where we sit down together and figure out what we're actually building. 
 - A product brief with defined MVP scope
 - Technical architecture document
 - A realistic timeline with milestones
-- [A cost estimate tied to actual scope](/blog/mvp-development-cost)
+- [A cost estimate tied to actual scope](/blog/mvp-development-cost/)
 
 **What this feels like as a founder:**
 This is the hardest part for most founders. You've been thinking about your product for months, maybe years. Every feature feels essential. But an MVP that tries to do everything does nothing well.
@@ -163,13 +163,13 @@ We don't see the MVP launch as the finish line. We see it as the starting line. 
 
 Before you start the 8-week clock, here's what makes the difference between an MVP that gains traction and one that collects dust.
 
-**Validate before you build.** Talk to potential users. Build a waitlist. Test the idea with a landing page. The best MVP development process in the world can't save a product nobody wants. [The cost of building an MVP](/blog/mvp-development-cost) is significant -- make sure you're solving a real problem first.
+**Validate before you build.** Talk to potential users. Build a waitlist. Test the idea with a landing page. The best MVP development process in the world can't save a product nobody wants. [The cost of building an MVP](/blog/mvp-development-cost/) is significant -- make sure you're solving a real problem first.
 
 **Be honest about your budget and timeline.** If you have 12 weeks of runway and need an MVP in 8, that's tight but doable. If you have 6 weeks of runway, we need to have a different conversation. We'll always give you an honest assessment.
 
 **Choose a partner who will tell you "no."** If every agency you talk to says "yes, we can do that" to every feature and every timeline, be suspicious. A good partner pushes back because they care about the outcome, not just the deal.
 
-**Plan for what comes after launch.** Your MVP is the beginning, not the end. Budget for iteration. Plan for user feedback loops. [Think about your team structure](/blog/hire-developers-startup) beyond launch day.
+**Plan for what comes after launch.** Your MVP is the beginning, not the end. Budget for iteration. Plan for user feedback loops. [Think about your team structure](/blog/hire-developers-startup/) beyond launch day.
 
 ## What This Process Is Not
 
@@ -181,6 +181,6 @@ Before you start the 8-week clock, here's what makes the difference between an M
 
 ## Ready to Talk About Your MVP?
 
-If you have a product idea and you're wondering what 8 weeks could look like for you, we're happy to talk it through. We'll give you an honest assessment of scope, timeline, and [what it might cost](/blog/mvp-development-cost) -- no commitment, no pressure.
+If you have a product idea and you're wondering what 8 weeks could look like for you, we're happy to talk it through. We'll give you an honest assessment of scope, timeline, and [what it might cost](/blog/mvp-development-cost/) -- no commitment, no pressure.
 
 The first step is always a conversation. And if we're not the right fit, we'll tell you that too.

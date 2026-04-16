@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Flutter Developers in India Who Stay</h1>
           <p class="text-body-lg">You're not hiring a Flutter freelancer who disappears after launch. You're getting a mobile team member who stays through v1, v2, and beyond. We're a 20+ person product engineering team. The Flutter developers you meet are the ones who'll build your app. No bench. No rotating contractors. Just engineers who care about your product as much as you do.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -238,7 +238,7 @@
         <h2 class="text-display-sm">Ready to Meet Your Flutter Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your app and whether our Flutter developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -284,7 +284,7 @@ useSeoMeta({
   ogTitle: 'Hire Flutter Developers in India | AcornGlobus',
   ogDescription: 'Hire dedicated Flutter developers from a 20+ person team. Cross-platform iOS and Android apps, 2-week trial, named engineers. Talk to us about your app.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-flutter-developer',
+  ogUrl: 'https://acornglobus.com/hire-flutter-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Flutter Developers | Dedicated Flutter Engineers | AcornGlobus',
@@ -294,7 +294,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-flutter-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-flutter-developer/' },
   ],
 })
 
@@ -307,7 +307,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Flutter Developers', path: '/hire-flutter-developer' },
+  { name: 'Hire Flutter Developers', path: '/hire-flutter-developer/' },
 ])
 </script>
 

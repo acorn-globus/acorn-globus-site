@@ -88,7 +88,7 @@ useSeoMeta({
   ogTitle: 'Privacy Policy - AcornGlobus',
   ogDescription: 'Learn how AcornGlobus collects, uses, and protects your personal information.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/privacy-policy',
+  ogUrl: 'https://acornglobus.com/privacy-policy/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Privacy Policy - AcornGlobus',
@@ -97,11 +97,11 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/privacy-policy' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/privacy-policy/' }],
 });
 
 useBreadcrumbSchema([
-  { name: 'Privacy Policy', path: '/privacy-policy' },
+  { name: 'Privacy Policy', path: '/privacy-policy/' },
 ]);
 </script>
 

@@ -601,7 +601,7 @@
               <h3 class="text-display-sm">Have a product idea?</h3>
               <p class="text-body-lg" style="max-width: 560px; margin: 16px auto 0;">We'd love to hear what you're thinking about and explore whether we're the right team to build it with you.</p>
               <div style="margin-top: 32px;">
-                <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
               </div>
             </div>
 
@@ -619,7 +619,7 @@ useSeoMeta({
   description: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
   ogDescription: 'A practical guide to MVP development: scoping, costs, timelines, tech choices, and what to do after launch.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/guides/mvp-development',
+  ogUrl: 'https://acornglobus.com/guides/mvp-development/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'MVP Development: From Idea to Product — The Complete Guide (2026) | AcornGlobus',
@@ -628,7 +628,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/guides/mvp-development' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/guides/mvp-development/' }],
 })
 
 useArticleSchema({
@@ -667,8 +667,8 @@ useFaqSchema([
 ])
 
 useBreadcrumbSchema([
-  { name: 'Guides', path: '/services' },
-  { name: 'MVP Development Guide', path: '/guides/mvp-development' },
+  { name: 'Guides', path: '/services/' },
+  { name: 'MVP Development Guide', path: '/guides/mvp-development/' },
 ])
 </script>
 

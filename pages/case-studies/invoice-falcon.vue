@@ -3,7 +3,7 @@
     <!-- HERO -->
     <section class="case-hero">
       <div class="container-redesign">
-        <NuxtLink to="/portfolio" class="breadcrumb">
+        <NuxtLink to="/portfolio/" class="breadcrumb">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
           Back to Portfolio
         </NuxtLink>
@@ -265,8 +265,8 @@
         <h2 class="text-display-sm">Building a platform like this?</h2>
         <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on.</p>
         <div class="cta-buttons">
-          <NuxtLink to="/contact" class="btn btn-primary">Start a conversation</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn btn-secondary">See our work</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn btn-secondary">See our work</NuxtLink>
         </div>
       </div>
     </section>
@@ -284,7 +284,7 @@ useSeoMeta({
   ogTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
   ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   ogImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
-  ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon',
+  ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
@@ -293,7 +293,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/invoice-falcon' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/invoice-falcon/' }],
 })
 
 useArticleSchema({
@@ -306,8 +306,8 @@ useArticleSchema({
 })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'Invoice Falcon', path: '/case-studies/invoice-falcon' },
+  { name: 'Portfolio', path: '/portfolio/' },
+  { name: 'Invoice Falcon', path: '/case-studies/invoice-falcon/' },
 ])
 </script>
 

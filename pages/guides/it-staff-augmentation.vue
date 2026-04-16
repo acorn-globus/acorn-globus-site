@@ -592,7 +592,7 @@
               <h3 class="text-display-sm">Thinking about augmenting your team?</h3>
               <p class="text-body-lg" style="max-width: 560px; margin: 16px auto 0;">We'd love to hear what you're building and explore whether our team is the right fit for yours.</p>
               <div style="margin-top: 32px;">
-                <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
               </div>
             </div>
 
@@ -610,7 +610,7 @@ useSeoMeta({
   description: 'What is IT staff augmentation, how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogDescription: 'What is IT staff augmentation, how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation',
+  ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
@@ -619,7 +619,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/guides/it-staff-augmentation' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/guides/it-staff-augmentation/' }],
 })
 
 useArticleSchema({
@@ -658,8 +658,8 @@ useFaqSchema([
 ])
 
 useBreadcrumbSchema([
-  { name: 'Guides', path: '/services' },
-  { name: 'IT Staff Augmentation Guide', path: '/guides/it-staff-augmentation' },
+  { name: 'Guides', path: '/services/' },
+  { name: 'IT Staff Augmentation Guide', path: '/guides/it-staff-augmentation/' },
 ])
 </script>
 

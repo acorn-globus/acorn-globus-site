@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Vue.js Developers in India Who Build With Vue Every Day</h1>
           <p class="text-body-lg">We didn't just add Vue.js to a skills list. We built Formester — our own SaaS product — on it. Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped real Vue applications to real users.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -29,7 +29,7 @@
           <p class="text-body-lg" style="margin-top: 16px;">That depth shows up in our client work. Our Vue developers don't just know the API surface — they understand the internals. They know why the Composition API exists, when Pinia is the right choice over provide/inject, how to structure a Nuxt application so it stays fast as it grows. That knowledge comes from building and maintaining a production Vue application every day.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Most marketplaces match you with whoever's available. We're not a marketplace. We're a 20+ person product engineering team, and Vue.js is a core part of our daily work. The developers you'll work with are the same people who build and ship Formester.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/case-studies/formester" class="btn-text-redesign">See Formester <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+            <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">See Formester <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@
             <h3>Formester</h3>
             <p>No-code, AI-powered form builder built entirely on Vue.js and Nuxt. Live in production with real users and a 4.8 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
             <div style="margin-top: 16px;">
-              <NuxtLink to="/case-studies/formester" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
           </div>
           <div class="project-card">
@@ -230,7 +230,7 @@
         <h2 class="text-display-sm">Ready to Work With a Team That Lives Vue.js?</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Vue developers who've built real products — including our own.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -280,7 +280,7 @@ useSeoMeta({
   ogTitle: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
   ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-vuejs-developer',
+  ogUrl: 'https://acornglobus.com/hire-vuejs-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers | AcornGlobus',
@@ -290,7 +290,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-vuejs-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-vuejs-developer/' },
   ],
 })
 
@@ -303,7 +303,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Vue.js Developers', path: '/hire-vuejs-developer' },
+  { name: 'Hire Vue.js Developers', path: '/hire-vuejs-developer/' },
 ])
 </script>
 

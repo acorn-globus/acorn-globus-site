@@ -6,7 +6,7 @@
         <div class="hero-eyebrow"><span>Our Portfolio</span></div>
         <h1 class="text-display-lg" style="max-width: 800px;">Products We've Built And Stories Behind Them</h1>
         <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of — and the partnerships that made it happen.</p>
-        <NuxtLink to="/contact" class="btn btn-primary" style="margin-top: 40px;">Let's build together</NuxtLink>
+        <NuxtLink to="/contact/" class="btn btn-primary" style="margin-top: 40px;">Let's build together</NuxtLink>
       </div>
     </section>
 
@@ -135,8 +135,8 @@
         <h2 class="text-display-sm">Want to build something like this?</h2>
         <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks — just a conversation about your product.</p>
         <div class="cta-actions" style="justify-content: center;">
-          <NuxtLink to="/contact" class="btn btn-primary">Start a conversation</NuxtLink>
-          <NuxtLink to="/services" class="btn btn-secondary">View Services</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
+          <NuxtLink to="/services/" class="btn btn-secondary">View Services</NuxtLink>
         </div>
       </div>
     </section>
@@ -154,17 +154,17 @@ useSeoMeta({
   ogTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
   ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/portfolio',
+  ogUrl: 'https://acornglobus.com/portfolio/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
   twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Portfolio', path: '/portfolio/' },
 ])
 
 const filters = [
@@ -185,7 +185,7 @@ const projects = [
     filterKey: 'enterprise',
     tags: ['Ruby on Rails', 'React', 'PostgreSQL'],
     stats: [{ value: '+40%', label: 'efficiency' }, { value: '95%', label: 'adoption' }],
-    link: '/case-studies/eitoss',
+    link: '/case-studies/eitoss/',
   },
   {
     name: 'PerformLine',
@@ -195,7 +195,7 @@ const projects = [
     filterKey: 'enterprise',
     tags: ['React', 'Node.js', 'PostgreSQL'],
     stats: [{ value: '8+', label: 'team' }, { value: '2+', label: 'years duration' }],
-    link: '/case-studies/performline',
+    link: '/case-studies/performline/',
   },
   {
     name: 'Invoice Falcon',
@@ -205,7 +205,7 @@ const projects = [
     filterKey: 'ecommerce',
     tags: ['Ruby on Rails', 'React', 'Shopify API'],
     stats: [{ value: '500+', label: 'merchants' }, { value: '100K+', label: 'invoices' }],
-    link: '/case-studies/invoice-falcon',
+    link: '/case-studies/invoice-falcon/',
   },
   {
     name: 'Rumie',
@@ -215,7 +215,7 @@ const projects = [
     filterKey: 'nonprofit',
     tags: ['Nuxt', 'Vue.js', 'Flutter'],
     stats: [{ value: '176', label: 'countries' }, { value: '1M+', label: 'learners' }],
-    link: '/case-studies/rumie',
+    link: '/case-studies/rumie/',
   },
 ]
 

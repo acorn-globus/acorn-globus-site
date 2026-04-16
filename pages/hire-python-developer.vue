@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Python Developers in India Who Stay</h1>
           <p class="text-body-lg">You're not hiring from a pool of 80+ anonymous developers. You're getting a Python engineer who learns your architecture, joins your standups, and ships code that matters. We're a 20+ person product engineering team. The Python developers you meet are the ones who'll build your product. No bench. No rotating contractors. Just engineers who care about your codebase as much as you do.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -237,7 +237,7 @@
         <h2 class="text-display-sm">Ready to Meet Your Python Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your product and whether our Python developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -283,7 +283,7 @@ useSeoMeta({
   ogTitle: 'Hire Python Developers in India | AcornGlobus',
   ogDescription: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-python-developer',
+  ogUrl: 'https://acornglobus.com/hire-python-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Python Developers | Dedicated Python Engineers | AcornGlobus',
@@ -293,7 +293,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-python-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-python-developer/' },
   ],
 })
 
@@ -306,7 +306,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Python Developers', path: '/hire-python-developer' },
+  { name: 'Hire Python Developers', path: '/hire-python-developer/' },
 ])
 </script>
 

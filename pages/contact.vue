@@ -153,11 +153,11 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Schedule a call
               </a>
-              <NuxtLink to="/about" class="sidebar-link">
+              <NuxtLink to="/about/" class="sidebar-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 Meet Our Team
               </NuxtLink>
-              <NuxtLink to="/portfolio" class="sidebar-link">
+              <NuxtLink to="/portfolio/" class="sidebar-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 See Our Work
               </NuxtLink>
@@ -223,17 +223,17 @@ useSeoMeta({
   ogTitle: 'Contact AcornGlobus - Let\'s Talk About What You\'re Building',
   ogDescription: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/contact',
+  ogUrl: 'https://acornglobus.com/contact/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Contact AcornGlobus - Let\'s Talk About What You\'re Building',
   twitterDescription: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/contact' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/contact/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Contact', path: '/contact' },
+  { name: 'Contact', path: '/contact/' },
 ])
 
 const formData = ref({

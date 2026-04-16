@@ -47,8 +47,8 @@
                 <span>Eitoss: MVP shipped in 3 months. They raised funding. We're still building together 2 years later.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</NuxtLink>
-                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</NuxtLink>
+                <NuxtLink to="/services/mvp-development/" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
 
@@ -69,8 +69,8 @@
                 <span>We built Formester end-to-end — our own SaaS product, live and growing with real users.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</NuxtLink>
-                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</NuxtLink>
+                <NuxtLink to="/services/full-project-delivery/" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -101,8 +101,8 @@
                 <span>We built Formester ourselves. We know what it's like to care deeply about a product — and we bring that same care to yours.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</NuxtLink>
-                <NuxtLink to="/services/mvp-development" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</NuxtLink>
+                <NuxtLink to="/services/mvp-development/" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
             <div class="service-offering-card">
@@ -121,8 +121,8 @@
                 <span>We guide, not just execute. We'll tell you honestly what you need — and what can wait.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</NuxtLink>
-                <NuxtLink to="/services/full-project-delivery" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</NuxtLink>
+                <NuxtLink to="/services/full-project-delivery/" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -153,8 +153,8 @@
                 <span>PerformLine started with 1 engineer. Two years later, we're 8+ deep — full-stack, DevOps, QA, frontend.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</NuxtLink>
-                <NuxtLink to="/services/resource-augmentation" class="btn-text">Learn more about Resource Augmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</NuxtLink>
+                <NuxtLink to="/services/resource-augmentation/" class="btn-text">Learn more about Resource Augmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
             <div class="service-offering-card">
@@ -173,8 +173,8 @@
                 <span>80%+ client retention. Most of our maintenance relationships started as MVP or project delivery. Same team, same trust.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</NuxtLink>
-                <NuxtLink to="/services/maintenance-support" class="btn-text">Learn more about Maintenance &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</NuxtLink>
+                <NuxtLink to="/services/maintenance-support/" class="btn-text">Learn more about Maintenance &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@
               </div>
               <h3 class="text-title-lg">The Complete Guide to IT Staff Augmentation</h3>
               <p class="text-body" style="margin-top: 8px;">Everything you need to know about scaling your engineering team — models, costs, when to use it, and how to make it work.</p>
-              <NuxtLink to="/guides/it-staff-augmentation" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              <NuxtLink to="/guides/it-staff-augmentation/" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
             <div class="guide-card">
               <div class="guide-icon">
@@ -204,7 +204,7 @@
               </div>
               <h3 class="text-title-lg">The Complete Guide to MVP Development</h3>
               <p class="text-body" style="margin-top: 8px;">From idea to working product — costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
-              <NuxtLink to="/guides/mvp-development" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              <NuxtLink to="/guides/mvp-development/" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
           </div>
         </div>
@@ -355,7 +355,7 @@
         <h2 class="text-display-sm">Have a Product in Mind?</h2>
         <p class="text-body-lg" style="max-width: 520px; margin: 16px auto 0;">Tell us about it. We'll share how we'd approach it — honestly.</p>
         <div style="margin-top: 36px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
         </div>
       </div>
     </section>
@@ -375,7 +375,7 @@ useSeoMeta({
   ogTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
   ogDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/services',
+  ogUrl: 'https://acornglobus.com/services/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
@@ -384,11 +384,11 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/' }],
 })
 
 useBreadcrumbSchema([
-  { name: 'Services', path: '/services' },
+  { name: 'Services', path: '/services/' },
 ])
 
 const tabs = [

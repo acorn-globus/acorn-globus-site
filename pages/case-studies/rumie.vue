@@ -4,7 +4,7 @@
     <section class="case-hero">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <NuxtLink to="/portfolio" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
+          <NuxtLink to="/portfolio/" class="btn-text" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Portfolio
           </NuxtLink>
@@ -300,8 +300,8 @@
         <h2 class="text-display-sm">Want to build something that matters?</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">We'd love to hear what you're working on.</p>
         <div style="margin-top: 36px; display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn btn-secondary" style="font-size: 18px; padding: 18px 40px;">See our work</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn btn-secondary" style="font-size: 18px; padding: 18px 40px;">See our work</NuxtLink>
         </div>
       </div>
     </section>
@@ -319,7 +319,7 @@ useSeoMeta({
   ogTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
   ogDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   ogImage: 'https://acornglobus.com/images/case-study-rumie.webp',
-  ogUrl: 'https://acornglobus.com/case-studies/rumie',
+  ogUrl: 'https://acornglobus.com/case-studies/rumie/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
@@ -328,7 +328,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/rumie' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/case-studies/rumie/' }],
 })
 
 useArticleSchema({
@@ -341,8 +341,8 @@ useArticleSchema({
 })
 
 useBreadcrumbSchema([
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'Rumie', path: '/case-studies/rumie' },
+  { name: 'Portfolio', path: '/portfolio/' },
+  { name: 'Rumie', path: '/case-studies/rumie/' },
 ])
 </script>
 

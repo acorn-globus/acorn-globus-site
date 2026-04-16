@@ -82,7 +82,7 @@ Now the part where we might be biased. We'll try not to be.
 
 **You need continuity over months or years.** If your product will be in development for 6+ months, you need a team that can maintain context across that timeline. An agency that assigns a dedicated team provides that continuity.
 
-**You don't have internal technical leadership.** If you're a non-technical founder, you need more than code. You need someone to [help you make technical decisions](/blog/hire-developers-startup), challenge your assumptions, and translate between your vision and the engineering reality. A solo freelancer might write good code but won't necessarily guide your product decisions.
+**You don't have internal technical leadership.** If you're a non-technical founder, you need more than code. You need someone to [help you make technical decisions](/blog/hire-developers-startup/), challenge your assumptions, and translate between your vision and the engineering reality. A solo freelancer might write good code but won't necessarily guide your product decisions.
 
 **The project is high-stakes.** Investor demos. Production systems with real users. Revenue-critical features. When failure has real consequences, the redundancy and process that a team provides isn't overhead -- it's insurance.
 
@@ -98,7 +98,7 @@ Now the part where we might be biased. We'll try not to be.
 
 **Scalability.** Need to ramp up for a launch? Need to scale down after an initial build? An agency can flex the team size without you having to find, vet, and onboard new people.
 
-**Documentation and standards.** A well-run agency has established practices for code quality, documentation, and handoff. These aren't nice-to-haves -- they're what make your codebase [something you can actually take ownership of](/blog/staff-augmentation-vs-outsourcing).
+**Documentation and standards.** A well-run agency has established practices for code quality, documentation, and handoff. These aren't nice-to-haves -- they're what make your codebase [something you can actually take ownership of](/blog/staff-augmentation-vs-outsourcing/).
 
 ### Where Agencies Struggle (Yes, Agencies Fail Too)
 
@@ -122,7 +122,7 @@ The variables that matter:
 
 **Size.** At a 200-person agency, you're an account number. At a 20-person team, you know the engineers by name and they know your product. There's no buffer of middle managers between you and the people doing the work.
 
-**Ownership mindset.** Does the agency build products like they're building their own? Or are they executing specs for billable hours? This is the hardest thing to evaluate, but it's the most important. Teams that have [built their own products](/blog/why-we-built-formester) tend to think differently about yours.
+**Ownership mindset.** Does the agency build products like they're building their own? Or are they executing specs for billable hours? This is the hardest thing to evaluate, but it's the most important. Teams that have [built their own products](/blog/why-we-built-formester/) tend to think differently about yours.
 
 **Continuity.** Ask: will the same engineers be on my project in six months? If the answer is "we'll do our best" or "it depends on availability," you're at a body shop with a nicer website.
 
@@ -141,7 +141,7 @@ Instead of generic advice, here's a framework based on specific project characte
 | Specialized short-term need (ML model, DevOps setup) | Freelancer (specialist) | Agencies rarely have niche specialists available on demand |
 | Core product, high-stakes (investor demo, production) | Agency (product-focused) | Redundancy, process, and multi-discipline coordination matter |
 | Ongoing maintenance of stable product | Either | Depends on complexity and internal capacity |
-| Rapid scaling needed (3+ developers within a month) | Agency | [Augmentation models](/blog/staff-augmentation-vs-outsourcing) let you scale without individual hiring |
+| Rapid scaling needed (3+ developers within a month) | Agency | [Augmentation models](/blog/staff-augmentation-vs-outsourcing/) let you scale without individual hiring |
 | Budget under $15K, technical founder | Freelancer | You can manage the relationship and evaluate the code yourself |
 | Budget $50K+, non-technical founder | Agency | The investment warrants the process and protection |
 
@@ -174,7 +174,7 @@ We're an agency. We believe in the agency model for product development -- becau
 
 But we also know the agency model has earned some of its bad reputation. Too many agencies treat developers as interchangeable, charge for process that doesn't add value, and disappear after delivery.
 
-That's not us. We're 20+ engineers. The people you meet during the sales process are the people who build your product. We don't rotate developers. We don't pad timelines. We [tell you honestly](/blog/mvp-development-cost) what you need and what can wait.
+That's not us. We're 20+ engineers. The people you meet during the sales process are the people who build your product. We don't rotate developers. We don't pad timelines. We [tell you honestly](/blog/mvp-development-cost/) what you need and what can wait.
 
 We've also recommended freelancers to prospects when they were the better fit. A startup with a technical CTO who needs one React developer for a 4-week project doesn't need us. They need a great freelancer and we'll say so.
 

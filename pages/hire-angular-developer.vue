@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Angular Developers in India Built for Complex Applications</h1>
           <p class="text-body-lg">Angular is chosen for applications that need to scale, stay maintainable, and last. That's exactly how we think about engineering. Our Angular developers build for the long term — structured, tested, and ready for teams of any size to work in.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -274,7 +274,7 @@
         <h2 class="text-display-sm">Ready to Scale Your Angular Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your application and whether our Angular developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -328,7 +328,7 @@ useSeoMeta({
   ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
   ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-angular-developer',
+  ogUrl: 'https://acornglobus.com/hire-angular-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Angular Developers | Dedicated Angular Engineers | AcornGlobus',
@@ -338,7 +338,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-angular-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-angular-developer/' },
   ],
 })
 
@@ -351,7 +351,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Angular Developers', path: '/hire-angular-developer' },
+  { name: 'Hire Angular Developers', path: '/hire-angular-developer/' },
 ])
 </script>
 

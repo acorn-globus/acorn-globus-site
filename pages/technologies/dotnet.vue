@@ -167,14 +167,14 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
-            to="/contact"
+            to="/contact/"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Let's Talk
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
-            to="/services"
+            to="/services/"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
           >
             See Our Services
@@ -204,7 +204,7 @@ useSeoMeta({
   ogTitle: '.NET Development Services | AcornGlobus',
   ogDescription: '.NET development for web APIs, microservices, and enterprise applications. Clean architecture, zero lock-in.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/technologies/dotnet',
+  ogUrl: 'https://acornglobus.com/technologies/dotnet/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: '.NET Development Services | AcornGlobus',
@@ -212,10 +212,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/dotnet' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/technologies/dotnet/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Technologies', path: '/technologies/dotnet' },
-  { name: '.NET', path: '/technologies/dotnet' },
+  { name: 'Technologies', path: '/technologies/dotnet/' },
+  { name: '.NET', path: '/technologies/dotnet/' },
 ])
 </script>

@@ -31,7 +31,7 @@
           <NuxtLink
             v-for="article in filteredArticles"
             :key="article._path"
-            :to="article._path"
+            :to="`${article._path}/`"
             class="blog-card"
           >
             <div class="blog-card-image">
@@ -166,7 +166,7 @@ useSeoMeta({
   ogTitle: 'Blog | Engineering Insights & Product Thinking | AcornGlobus',
   ogDescription: 'Practical engineering insights, product thinking, and lessons from building real products.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/blog',
+  ogUrl: 'https://acornglobus.com/blog/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Blog | AcornGlobus',
@@ -175,11 +175,11 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://acornglobus.com/blog' }],
+  link: [{ rel: 'canonical', href: 'https://acornglobus.com/blog/' }],
 });
 
 useBreadcrumbSchema([
-  { name: 'Blog', path: '/blog' },
+  { name: 'Blog', path: '/blog/' },
 ]);
 </script>
 

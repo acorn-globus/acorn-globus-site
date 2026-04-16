@@ -65,7 +65,7 @@ Staff augmentation works when you already have a team and a process — you just
 
 **You need to scale up (or down) quickly.** Hiring full-time takes 3-6 months. Augmentation takes 2-4 weeks. And when the surge is over, you can scale back without layoffs.
 
-Here's what this looks like in practice: [PerformLine](/case-studies/performline) started with 1 AcornGlobus engineer embedded in their team. Same tools, same standups, same codebase. Over 2 years, that grew to 8+ engineers — full-stack, DevOps, data, QA, frontend. They didn't grow because we upsold them. They grew because the first engineer delivered, and the model worked.
+Here's what this looks like in practice: [PerformLine](/case-studies/performline/) started with 1 AcornGlobus engineer embedded in their team. Same tools, same standups, same codebase. Over 2 years, that grew to 8+ engineers — full-stack, DevOps, data, QA, frontend. They didn't grow because we upsold them. They grew because the first engineer delivered, and the model worked.
 
 ## When Outsourcing Makes Sense
 
@@ -79,7 +79,7 @@ Outsourcing works when you need a complete deliverable — not ongoing capacity.
 
 **You need to move fast without building a management layer.** Outsourcing trades control for speed. The right team can ship an MVP in 8-12 weeks without you hiring a project manager, setting up workflows, or learning to review pull requests.
 
-Our [Eitoss engagement](/case-studies/eitoss) is an example: a non-technical founder with a clear vision and funding. We took ownership of the full build — architecture, development, deployment. Demoable MVP in 8 weeks. Live with real users in 3 months. They raised funding on that product.
+Our [Eitoss engagement](/case-studies/eitoss/) is an example: a non-technical founder with a clear vision and funding. We took ownership of the full build — architecture, development, deployment. Demoable MVP in 8 weeks. Live with real users in 3 months. They raised funding on that product.
 
 ## The Hybrid Path (What Most Guides Skip)
 
@@ -94,7 +94,7 @@ Your team is building the core product. But you need a mobile app, and nobody on
 **Common pattern 3: Augmentation that evolves into partnership.**
 You bring on 2 engineers for a 3-month project. The project finishes, but you realize the engineers know your codebase better than most of your full-time team. You keep them. Three months becomes a year. One engineer becomes four.
 
-This is how we work with most of our clients. We offer both models — [resource augmentation](/services/resource-augmentation) and [full project delivery](/services/full-project-delivery) — because companies need different things at different stages. The engagement grows and changes shape as you do.
+This is how we work with most of our clients. We offer both models — [resource augmentation](/services/resource-augmentation/) and [full project delivery](/services/full-project-delivery/) — because companies need different things at different stages. The engagement grows and changes shape as you do.
 
 ## What Can Go Wrong (Red Flags to Watch For)
 
@@ -150,10 +150,10 @@ What stays consistent is how we work:
 - **Code ownership from day one.** No lock-in. Your code, your product, your freedom.
 - **80%+ client retention.** Clients stay because the partnership works — not because they're locked in.
 
-PerformLine and Eitoss are proof that both models work when done right. One started with [1 augmented engineer and grew to 8+](/case-studies/performline). The other was a [full MVP delivery that turned into a 2+ year partnership](/case-studies/eitoss). Different starting points. Same outcome: a team that stays and grows with you.
+PerformLine and Eitoss are proof that both models work when done right. One started with [1 augmented engineer and grew to 8+](/case-studies/performline/). The other was a [full MVP delivery that turned into a 2+ year partnership](/case-studies/eitoss/). Different starting points. Same outcome: a team that stays and grows with you.
 
-If you're not sure which model fits — [let's figure it out together](/contact). We'll give you an honest recommendation, even if it means suggesting something we don't offer.
+If you're not sure which model fits — [let's figure it out together](/contact/). We'll give you an honest recommendation, even if it means suggesting something we don't offer.
 
 ---
 
-*Related reading: [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business)*
+*Related reading: [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup/) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost/) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business/)*

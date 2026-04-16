@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers in India Who Think in Systems, Not Just Code</h1>
           <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products — not tutorial projects.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -299,7 +299,7 @@
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Scale Your Backend Team?</h2>
         <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-          <NuxtLink to="/contact" class="btn btn-primary">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Book a Call</NuxtLink>
         </div>
         <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
       </div>
@@ -353,7 +353,7 @@ useSeoMeta({
   ogTitle: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
   ogDescription: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-nodejs-developer',
+  ogUrl: 'https://acornglobus.com/hire-nodejs-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
@@ -363,7 +363,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-nodejs-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-nodejs-developer/' },
   ],
 })
 
@@ -376,7 +376,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire Node.js Developers', path: '/hire-nodejs-developer' },
+  { name: 'Hire Node.js Developers', path: '/hire-nodejs-developer/' },
 ])
 </script>
 

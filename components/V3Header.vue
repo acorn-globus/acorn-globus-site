@@ -22,7 +22,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/contact" class="nav-cta">
+          <NuxtLink to="/contact/" class="nav-cta">
             Let's Talk
           </NuxtLink>
         </li>
@@ -78,7 +78,7 @@
         </NuxtLink>
         <div class="nav-mobile-cta-wrapper">
           <NuxtLink
-            to="/contact"
+            to="/contact/"
             class="nav-cta nav-mobile-cta"
             @click="isMobileMenuOpen = false"
           >
@@ -95,12 +95,12 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const navLinks = [
   { to: '/', label: 'Home', exact: true },
-  { to: '/about', label: 'About', exact: true },
-  { to: '/services', label: 'Services', exact: false },
-  { to: '/how-we-work', label: 'How We Work', exact: true },
-  { to: '/portfolio', label: 'Portfolio', exact: true },
-  { to: '/designs', label: 'Designs', exact: true },
-  { to: '/blog', label: 'Blog', exact: false },
+  { to: '/about/', label: 'About', exact: true },
+  { to: '/services/', label: 'Services', exact: false },
+  { to: '/how-we-work/', label: 'How We Work', exact: true },
+  { to: '/portfolio/', label: 'Portfolio', exact: true },
+  { to: '/designs/', label: 'Designs', exact: true },
+  { to: '/blog/', label: 'Blog', exact: false },
 ]
 
 const isMobileMenuOpen = ref(false)

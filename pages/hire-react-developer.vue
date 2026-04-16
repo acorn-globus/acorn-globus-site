@@ -8,7 +8,7 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire React Developers in India Who Stay</h1>
           <p class="text-body-lg">You're not hiring a random developer from a pool. You're getting a team member who learns your codebase, joins your standups, and stays for the long run. We're a 20+ person product engineering team. The React developers you meet are the ones who'll build your product. No bench. No rotating contractors. Just engineers who care about your code as much as you do.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact" class="btn btn-primary">Talk to Us</NuxtLink>
+            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -265,7 +265,7 @@
         <h2 class="text-display-sm">Ready to Meet Your React Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your product and whether our React developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
@@ -315,7 +315,7 @@ useSeoMeta({
   ogTitle: 'Hire React Developers in India | Dedicated React Engineers | AcornGlobus',
   ogDescription: 'Hire dedicated React developers in India who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial, no rotating contractors.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/hire-react-developer',
+  ogUrl: 'https://acornglobus.com/hire-react-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire React Developers | Dedicated React Engineers | AcornGlobus',
@@ -325,7 +325,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://acornglobus.com/hire-react-developer' },
+    { rel: 'canonical', href: 'https://acornglobus.com/hire-react-developer/' },
   ],
 })
 
@@ -338,7 +338,7 @@ useServiceSchema({
 useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 
 useBreadcrumbSchema([
-  { name: 'Hire React Developers', path: '/hire-react-developer' },
+  { name: 'Hire React Developers', path: '/hire-react-developer/' },
 ])
 </script>
 

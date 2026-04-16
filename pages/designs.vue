@@ -97,8 +97,8 @@
         <h2 class="text-display-sm">Like what you see? Let's talk.</h2>
         <p class="text-body-lg" style="margin-top: 16px;">Whether you need a full product design or a refresh of what you have -- we'd love to hear what you're working on.</p>
         <div class="cta-actions" style="justify-content: center;">
-          <NuxtLink to="/contact" class="btn btn-primary">Start a conversation</NuxtLink>
-          <NuxtLink to="/portfolio" class="btn btn-secondary">View Case Studies</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
+          <NuxtLink to="/portfolio/" class="btn btn-secondary">View Case Studies</NuxtLink>
         </div>
       </div>
     </section>
@@ -203,7 +203,7 @@ useSeoMeta({
   ogTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
   ogDescription: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions.',
   ogImage: 'https://acornglobus.com/acorn-globus-designs.png',
-  ogUrl: 'https://acornglobus.com/designs',
+  ogUrl: 'https://acornglobus.com/designs/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
@@ -211,10 +211,10 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/acorn-globus-designs.png',
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/designs' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/designs/' }] })
 
 useBreadcrumbSchema([
-  { name: 'Designs', path: '/designs' },
+  { name: 'Designs', path: '/designs/' },
 ])
 
 const activeCategory = ref('all')

@@ -74,7 +74,7 @@ Formester didn't end at launch. No product does.
 
 After we shipped the first version, the real work started. User feedback. Bug fixes. Performance tuning. New features based on how people actually used it — not how we imagined they would. The "after" is where the product gets good.
 
-This is why we stay with our clients. We know what post-launch feels like from the inside. When we shipped [Eitoss's MVP in 3 months](/case-studies/eitoss), we didn't hand it over and walk away. They raised funding, and we kept building together. Two years later, we're still their engineering team. That's not a coincidence — it's because we know the product only starts at launch.
+This is why we stay with our clients. We know what post-launch feels like from the inside. When we shipped [Eitoss's MVP in 3 months](/case-studies/eitoss/), we didn't hand it over and walk away. They raised funding, and we kept building together. Two years later, we're still their engineering team. That's not a coincidence — it's because we know the product only starts at launch.
 
 ## Formester Today
 
@@ -88,10 +88,10 @@ Most agencies build and leave. We build and stay — because we know what the "a
 
 When we tell a client "this feature can wait," it's because we've made that exact call on our own product and been proven right. When we insist on clean architecture for an MVP, it's because we've lived with the consequences of our own technical decisions for years.
 
-We're not asking you to trust a sales pitch. We're asking you to look at [Formester](/case-studies/formester) — a live product we built, maintain, and care about — and decide if that's the kind of team you want building yours.
+We're not asking you to trust a sales pitch. We're asking you to look at [Formester](/case-studies/formester/) — a live product we built, maintain, and care about — and decide if that's the kind of team you want building yours.
 
-If you want a team that understands what it's like to be in your shoes — because we've literally been there — [let's talk](/contact).
+If you want a team that understands what it's like to be in your shoes — because we've literally been there — [let's talk](/contact/).
 
 ---
 
-*This article is part of our commitment to sharing what we've learned from building products — our own and our clients'. Read about how we [shipped Eitoss's MVP in 3 months](/case-studies/eitoss), or learn about our approach to [MVP development](/services/mvp-development).*
+*This article is part of our commitment to sharing what we've learned from building products — our own and our clients'. Read about how we [shipped Eitoss's MVP in 3 months](/case-studies/eitoss/), or learn about our approach to [MVP development](/services/mvp-development/).*

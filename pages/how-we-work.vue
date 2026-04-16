@@ -316,7 +316,7 @@
           <div class="engagement-card"><div class="engagement-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Maintenance &amp; Support</h3><p>Keep your product healthy, secure, and growing. Bug fixes, feature additions, performance monitoring, and regular updates.</p><p class="best-for">Best for: Any product in production that needs ongoing care.</p></div>
         </div>
         <div style="margin-top: 32px;">
-          <NuxtLink to="/services" class="btn-text">Learn more about our services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+          <NuxtLink to="/services/" class="btn-text">Learn more about our services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
     </section>
@@ -328,7 +328,7 @@
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">The first step is a conversation. No pitch deck, no commitment — just a real talk about your product, your timeline, and whether we're the right fit.</p>
         <p class="text-body" style="max-width: 640px; margin: 12px auto 0;">We'll be honest with you from minute one. If we're not the right team for your project, we'll tell you — and point you in the right direction if we can.</p>
         <div style="margin-top: 36px;">
-          <NuxtLink to="/contact" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
+          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
         </div>
       </div>
     </section>
@@ -344,17 +344,17 @@ useSeoMeta({
   ogTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
   ogDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/how-we-work',
+  ogUrl: 'https://acornglobus.com/how-we-work/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
   twitterDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/how-we-work' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/how-we-work/' }] })
 
 useBreadcrumbSchema([
-  { name: 'How We Work', path: '/how-we-work' },
+  { name: 'How We Work', path: '/how-we-work/' },
 ])
 
 useFaqSchema([

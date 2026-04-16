@@ -167,14 +167,14 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
-            to="/contact"
+            to="/contact/"
             class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Let's Talk
             <ArrowRight class="h-5 w-5 ml-2" />
           </NuxtLink>
           <NuxtLink
-            to="/services"
+            to="/services/"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:shadow-lg transition-all duration-300 border border-blue-200"
           >
             See Our Services
@@ -204,7 +204,7 @@ useSeoMeta({
   ogTitle: 'Angular Development Services | AcornGlobus',
   ogDescription: 'Angular development for enterprise and complex web applications. TypeScript-first, well-tested, built to scale.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
-  ogUrl: 'https://acornglobus.com/technologies/angular',
+  ogUrl: 'https://acornglobus.com/technologies/angular/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Angular Development Services | AcornGlobus',
@@ -213,15 +213,15 @@ useSeoMeta({
 })
 
 useBreadcrumbSchema([
-  { name: 'Technologies', path: '/technologies/angular' },
-  { name: 'Angular', path: '/technologies/angular' },
+  { name: 'Technologies', path: '/technologies/angular/' },
+  { name: 'Angular', path: '/technologies/angular/' },
 ])
 
 useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://acornglobus.com/technologies/angular'
+      href: 'https://acornglobus.com/technologies/angular/'
     }
   ]
 })
