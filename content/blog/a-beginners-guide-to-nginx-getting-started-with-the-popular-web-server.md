@@ -5,15 +5,16 @@ description: Nginx is a lightweight, high-performance web server that is used by
   and reliability. This beginner's guide to Nginx will teach you the basics of
   what you need to know to get started with this popular web server.
 metaTitle: "Nginx for Beginners: A Comprehensive Guide to the Popular Web Server"
-metaDescription: earn the basics of Nginx, one of the most popular web servers
-  in the world, with this beginner-friendly guide. We'll cover everything from
-  installation and configuration to serving static content and setting up a
-  reverse proxy.
+metaDescription: Learn the basics of Nginx, one of the most popular web servers
+  in the world, with this beginner-friendly guide. We'll cover installation on
+  Ubuntu, macOS, and Docker, walk through your first configuration, set up a
+  reverse proxy, and answer the questions everyone asks when starting out.
 keywords: Nginx, web server, beginner, tutorial, guide, installation,
   configuration, static content, reverse proxy
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z
+updatedAt: 2026-04-16T16:30:00.000Z
 coverImg: /images/blog/nginx-guide.webp
 coverImgAlt: Nginx for Beginners
 published: true
