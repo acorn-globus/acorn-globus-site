@@ -257,6 +257,18 @@ if (article.value) {
     author: doc.author || 'AcornGlobus Team',
     image: doc.coverImg || undefined,
   })
+
+  // Optional FAQPage JSON-LD — when the post declares an `faq:` array in
+  // its frontmatter, emit FAQPage schema so Google can surface rich FAQ
+  // results in the SERP. Array shape: [{ question: string, answer: string }].
+  if (Array.isArray(doc.faq) && doc.faq.length > 0) {
+    const faqs = doc.faq
+      .filter((f) => f && typeof f.question === 'string' && typeof f.answer === 'string')
+      .map((f) => ({ question: f.question, answer: f.answer }))
+    if (faqs.length > 0) {
+      useFaqSchema(faqs)
+    }
+  }
 }
 
 useHead({

@@ -14,11 +14,35 @@ keywords: Nginx, web server, beginner, tutorial, guide, installation,
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z
-updatedAt: 2026-04-16T16:30:00.000Z
+updatedAt: 2026-04-17T10:30:00.000Z
 coverImg: /images/blog/nginx-guide.webp
-coverImgAlt: Nginx for Beginners
+coverImgAlt: Nginx beginner's guide — installation, configuration, reverse proxy, and common gotchas
 published: true
 topic: Tech
+toc: true
+faq:
+  - question: "Is Nginx free?"
+    answer: "Yes. The open-source edition is free under a BSD license and does everything most sites ever need. F5 sells Nginx Plus with extras like live activity monitoring, advanced load-balancing algorithms, and commercial support, but you won't need it for a long time."
+  - question: "Where is the nginx.conf file located?"
+    answer: "On Debian/Ubuntu and most Linux distributions it lives at /etc/nginx/nginx.conf, with per-site server blocks in /etc/nginx/sites-available/. On CentOS/RHEL/Fedora it's /etc/nginx/nginx.conf with extra configs in /etc/nginx/conf.d/. On macOS with Homebrew it's /opt/homebrew/etc/nginx/nginx.conf on Apple Silicon or /usr/local/etc/nginx/nginx.conf on Intel. Run `nginx -V 2>&1 | grep -o 'conf-path=\\S*'` to print the compiled-in path."
+  - question: "What port does Nginx use by default?"
+    answer: "Port 80 for HTTP and 443 for HTTPS, matching the IANA-assigned web defaults. On macOS Homebrew the default is 8080 so Nginx can start without root. You change the port in a server block with the `listen` directive, e.g. `listen 8000;`."
+  - question: "How much RAM does Nginx need?"
+    answer: "Very little. A worker process idle uses roughly 2–3 MB of RAM; under load each worker typically uses 10–30 MB depending on active connections and proxy buffering. A $5/month VPS with 1 GB of RAM can comfortably front a small to medium production site. Scale RAM up only when you enable aggressive caching, serve lots of large files, or run many worker processes."
+  - question: "What is the difference between an Nginx reload and a restart?"
+    answer: "`reload` is zero-downtime: Nginx re-reads the config, starts new worker processes with it, and lets old workers finish in-flight requests before exiting them. `restart` kills everything and starts fresh, dropping any connections mid-flight. Use `systemctl reload nginx` (or `nginx -s reload`) for config changes. Reserve `restart` for recovering from a broken state."
+  - question: "How do I reload Nginx without downtime?"
+    answer: "Test the config with `sudo nginx -t` first — a broken config won't load and Nginx will stay on the previous workers. Once it passes, run `sudo systemctl reload nginx` (or `sudo nginx -s reload`). New workers start with the new config, old workers drain gracefully. If a reload silently seems to revert your change, you had a syntax error; `nginx -t` will tell you the exact line."
+  - question: "How do I check which Nginx config file is currently active?"
+    answer: "`nginx -V 2>&1 | tr -- - '\\n' | grep conf` prints the compiled-in config path. `nginx -T` (capital T) dumps the entire loaded configuration, including every included file, which is the quickest way to see exactly what Nginx is running. The active sites come from whatever `include` lines the main `nginx.conf` has — typically `/etc/nginx/sites-enabled/*` on Debian/Ubuntu or `/etc/nginx/conf.d/*.conf` on CentOS/RHEL."
+  - question: "Can I run Nginx on Windows?"
+    answer: "Technically yes — there's a native Windows build — but the Nginx team documents it as a feature-incomplete maintenance port with known limitations (no high-performance I/O, single worker, no UNIX sockets). For anything production-grade on a Windows host, install WSL2 and run Linux Nginx inside it."
+  - question: "Should I use Nginx with Docker?"
+    answer: "For production, yes. The official `nginx` image is tiny (under 10 MB compressed with alpine), well-maintained, and the default in most modern container deployments. You mount your config with `-v ./nginx.conf:/etc/nginx/nginx.conf:ro` and your static assets with another volume. For local development, it depends — a native install is simpler when you're learning, but Docker is great once you care about reproducibility across teammates."
+  - question: "Nginx vs. Apache — which is faster?"
+    answer: "Nginx, on raw throughput and concurrent connections, because of its event-driven architecture. Apache has closed a lot of the gap with its event-MPM module, but Nginx's architecture still wins at the high end. For most sites that handle under 1,000 requests per second either is fine; pick whichever you're more comfortable configuring. Apache is still a better fit for shared hosting because of .htaccess."
+  - question: "How do I redirect HTTP to HTTPS in Nginx?"
+    answer: "Add a dedicated server block on port 80 whose only job is to issue a 301: `server { listen 80; server_name myapp.com; return 301 https://$host$request_uri; }`. If you used `certbot --nginx`, this block is added for you automatically. The 301 tells browsers and search engines the redirect is permanent."
 ---
 
 If you've spent any time on the web, you've used Nginx — you just didn't know it. It sits quietly in front of a huge share of the internet's traffic, handling requests so quickly that most developers only hear its name when something breaks.
@@ -305,15 +329,41 @@ curl -v http://yourdomain.com
 
 ## FAQ
 
-**Is Nginx free?** Yes. The open-source edition is free under a BSD license and does everything most sites ever need. F5 also sells Nginx Plus with extra features (live activity monitoring, advanced load balancing algorithms, support), but you will not need it for a long time.
+**Is Nginx free?** Yes. The open-source edition is free under a BSD license and does everything most sites ever need. F5 also sells Nginx Plus with extras like live activity monitoring, advanced load-balancing algorithms, and commercial support, but you will not need it for a long time.
 
-**Can I run Nginx on Windows?** Technically yes, but the Windows port is a maintenance port with known limitations. If you're on Windows, install WSL2 and run Linux Nginx inside it.
+**Where is the `nginx.conf` file located?** On Debian/Ubuntu and most Linux distributions it lives at `/etc/nginx/nginx.conf`, with per-site server blocks in `/etc/nginx/sites-available/`. On CentOS/RHEL/Fedora it's `/etc/nginx/nginx.conf` with extra configs in `/etc/nginx/conf.d/`. On macOS with Homebrew it's `/opt/homebrew/etc/nginx/nginx.conf` on Apple Silicon or `/usr/local/etc/nginx/nginx.conf` on Intel. Run `nginx -V 2>&1 | grep -o 'conf-path=\S*'` to print the compiled-in path on any system.
 
-**Should I use Nginx with Docker?** For production, absolutely. The official `nginx` image is tiny, well-maintained, and what most modern deployments use. For local development, it depends — Docker is great for reproducibility, but a native install is simpler when you're learning.
+**What port does Nginx use by default?** Port `80` for HTTP and `443` for HTTPS, matching the IANA-assigned web defaults. On macOS Homebrew the default is `8080` so Nginx can start without root. You change the port in a `server` block with the `listen` directive, e.g. `listen 8000;`.
 
-**Nginx vs. Apache — which is faster?** Nginx, on raw throughput and concurrent connections. Apache has closed a lot of the gap with its event-MPM module, but Nginx's architecture still wins at the high end. For most sites that handle less than 1000 requests/second either is fine; pick whichever you're more comfortable configuring.
+**How much RAM does Nginx need?** Very little. An idle worker process uses roughly 2–3 MB of RAM; under load each worker typically uses 10–30 MB depending on active connections and proxy buffering. A $5/month VPS with 1 GB of RAM can comfortably front a small-to-medium production site. Scale RAM up only when you enable aggressive caching, serve lots of large files, or configure many worker processes.
 
-**How do I redirect HTTP to HTTPS?** Add a dedicated server block for port 80 that does nothing but redirect:
+**What's the difference between an Nginx reload and a restart?** `reload` is zero-downtime — Nginx re-reads the config, starts new worker processes with it, and lets old workers finish in-flight requests before exiting them. `restart` kills everything and starts fresh, dropping any connections mid-flight. Use `systemctl reload nginx` (or `nginx -s reload`) for config changes. Reserve `restart` for recovering from a broken state.
+
+**How do I reload Nginx without downtime?** Test the config first:
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx   # or: sudo nginx -s reload
+```
+
+A broken config won't load, and Nginx stays on the previous workers. Once `nginx -t` passes, a reload starts new workers with the new config while old workers drain gracefully. If a reload silently seems to revert your change, you had a syntax error; `nginx -t` will print the exact line.
+
+**How do I check which Nginx config file is currently active?** The quickest answer:
+
+```bash
+nginx -V 2>&1 | tr -- - '\n' | grep conf   # compiled-in paths
+sudo nginx -T                                # full loaded config, all includes inlined
+```
+
+`nginx -T` (capital T) dumps every directive Nginx has loaded — including everything pulled in by `include` lines — so it's the definitive answer to "what is actually running." The active sites on Debian/Ubuntu typically come from `/etc/nginx/sites-enabled/*`; on CentOS/RHEL they come from `/etc/nginx/conf.d/*.conf`.
+
+**Can I run Nginx on Windows?** Technically yes — there's a native Windows build — but the Nginx team documents it as a feature-incomplete maintenance port with known limitations (no high-performance I/O, single worker, no UNIX sockets). For anything production-grade on a Windows host, install WSL2 and run Linux Nginx inside it.
+
+**Should I use Nginx with Docker?** For production, yes. The official `nginx` image is tiny (under 10 MB compressed with alpine), well-maintained, and the default in most modern container deployments. You mount your config with `-v ./nginx.conf:/etc/nginx/nginx.conf:ro` and your static assets with another volume. For local development, it depends — a native install is simpler when you're learning, but Docker is great once you care about reproducibility across teammates.
+
+**Nginx vs. Apache — which is faster?** Nginx, on raw throughput and concurrent connections, because of its event-driven architecture. Apache has closed a lot of the gap with its event-MPM module, but Nginx's architecture still wins at the high end. For most sites that handle less than 1000 requests/second either is fine; pick whichever you're more comfortable configuring. Apache is still a better fit for shared hosting because of `.htaccess`.
+
+**How do I redirect HTTP to HTTPS in Nginx?** Add a dedicated server block on port 80 whose only job is to issue a 301:
 
 ```nginx
 server {
@@ -322,6 +372,8 @@ server {
     return 301 https://$host$request_uri;
 }
 ```
+
+If you used `certbot --nginx`, this block is added for you automatically. The `301` tells browsers and search engines the redirect is permanent, which matters for SEO because it consolidates link equity on the HTTPS URL.
 
 ## Next steps
 
