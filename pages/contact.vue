@@ -82,7 +82,7 @@
           <!-- LEFT: Contact Form -->
           <div class="contact-form-section">
             <h2>Tell us what you're building</h2>
-            <form @submit.prevent="handleSubmit">
+            <form @submit.prevent="handleSubmit" @focusin.once="handleFormStart">
               <div class="form-group">
                 <label for="full-name">Full Name <span class="required">*</span></label>
                 <input type="text" id="full-name" v-model="formData.fullName" class="form-input" placeholder="John Doe" required>
@@ -146,7 +146,7 @@
           </div>
 
           <!-- RIGHT: Sidebar -->
-          <div class="contact-sidebar">
+          <div class="contact-sidebar" data-cta-variant="sidebar">
             <div class="sidebar-section">
               <h3>Quick Actions</h3>
               <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="sidebar-link">
@@ -214,6 +214,9 @@
 <script setup>
 import { ref } from 'vue'
 import axios from 'axios'
+import { useTrack } from '~/composables/useTrack'
+
+const track = useTrack()
 
 definePageMeta({ layout: 'default' })
 
@@ -247,6 +250,10 @@ const formData = ref({
 const isSubmitting = ref(false)
 const submitSuccess = ref(false)
 
+const handleFormStart = () => {
+  track({ event: 'form_start', form_location: 'contact_page' })
+}
+
 const faqs = [
   { question: 'What services does AcornGlobus offer?', answer: 'We offer four core services: Resource Augmentation (dedicated engineers who embed with your team), MVP Development (ship a real product in 8-12 weeks), Full Project Delivery (end-to-end product engineering), and Maintenance & Support (ongoing care from the team that built it).' },
   { question: 'How quickly can you start on a project?', answer: 'For resource augmentation, we can typically match engineers and begin within 1-2 weeks. For MVP and full project delivery, we start with a discovery phase within the first week of engagement.' },
@@ -272,6 +279,11 @@ const handleSubmit = async () => {
       message: formData.value.message
     }
     await axios.post(submissionUrl, submissionData)
+    track({
+      event: 'contact_form_submit',
+      form_location: 'contact_page',
+      services: [...formData.value.services],
+    })
     isSubmitting.value = false
     submitSuccess.value = true
     setTimeout(() => {
