@@ -11,7 +11,7 @@
           {{ text }}
         </p>
         <div class="smart-cta__actions">
-          <NuxtLink :to="ctaLink" class="smart-cta__button">
+          <NuxtLink :to="ctaLink" class="smart-cta__button" @click="handleCtaClick">
             {{ ctaLabel }}
             <ArrowRight class="smart-cta__button-icon" />
           </NuxtLink>
@@ -30,6 +30,11 @@
 
 <script setup>
 import { ArrowRight, X } from 'lucide-vue-next'
+import { useTrack } from '~/composables/useTrack'
+
+const track = useTrack()
+const route = useRoute()
+let impressionFired = false
 
 const props = defineProps({
   text: {
@@ -74,7 +79,16 @@ onMounted(() => {
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
     if (scrollHeight <= 0) return
     const scrollPercent = window.scrollY / scrollHeight
-    visible.value = scrollPercent >= props.scrollThreshold
+    const shouldShow = scrollPercent >= props.scrollThreshold
+    if (shouldShow && !visible.value && !impressionFired) {
+      impressionFired = true
+      track({
+        event: 'smart_cta_impression',
+        source_page: route.fullPath,
+        cta_variant: props.dismissKey,
+      })
+    }
+    visible.value = shouldShow
   }
 
   window.addEventListener('scroll', handleScroll, { passive: true })
@@ -87,6 +101,19 @@ onMounted(() => {
 const dismiss = () => {
   dismissed.value = true
   localStorage.setItem(`ag_cta_dismissed_${props.dismissKey}`, String(Date.now()))
+  track({
+    event: 'smart_cta_dismiss',
+    source_page: route.fullPath,
+    cta_variant: props.dismissKey,
+  })
+}
+
+const handleCtaClick = () => {
+  track({
+    event: 'smart_cta_click',
+    source_page: route.fullPath,
+    cta_variant: props.dismissKey,
+  })
 }
 </script>
 
