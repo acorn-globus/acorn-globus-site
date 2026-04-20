@@ -8,8 +8,12 @@ const withSlash = (path: string): string =>
   path === '/' || path.endsWith('/') ? path : `${path}/`
 
 export default defineSitemapEventHandler(async (event) => {
-  // Static pages
-  const lastmod = '2026-04-09T00:00:00.000Z'
+  // Static pages — lastmod resolves at build time (`nuxi generate`), so each
+  // deploy advertises a fresh lastmod across every static URL. This is the
+  // honest signal: "the rendered bytes changed at deploy time." Without it
+  // the sitemap stayed frozen at a hardcoded date and Google lost the signal
+  // that pages had refreshed.
+  const lastmod = new Date().toISOString()
 
   const staticPaths = [
     // Homepage
@@ -65,14 +69,19 @@ export default defineSitemapEventHandler(async (event) => {
 
   const staticUrls = staticPaths.map((p) => ({ ...p, loc: withSlash(p.loc), lastmod }))
 
-  // Dynamic blog post URLs from Nuxt Content
+  // Dynamic blog post URLs from Nuxt Content. Prefer `updatedAt` over
+  // `createdAt` so content refreshes surface in the sitemap — otherwise
+  // rewriting a post would never tell Google to re-crawl.
   const blogPosts = await serverQueryContent(event, 'blog').find()
-  const blogUrls = blogPosts.map((post) => ({
-    loc: withSlash(post._path),
-    changefreq: 'monthly' as const,
-    priority: 0.6,
-    ...(post.createdAt ? { lastmod: new Date(post.createdAt).toISOString() } : {}),
-  }))
+  const blogUrls = blogPosts.map((post) => {
+    const modDate = post.updatedAt || post.createdAt
+    return {
+      loc: withSlash(post._path),
+      changefreq: 'monthly' as const,
+      priority: 0.6,
+      ...(modDate ? { lastmod: new Date(modDate).toISOString() } : {}),
+    }
+  })
 
   return [...staticUrls, ...blogUrls]
 })

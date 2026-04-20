@@ -7,6 +7,7 @@ coverImg: /images/blog/ruby-class-instance.webp
 coverImgAlt: Cover image for the blog, "Understanding the difference between Ruby class method and instance method"
 published: true
 createdAt: "2022-10-03"
+updatedAt: "2026-04-20"
 ---
 
 Though this is a very simple concept. In my early days of using Ruby, I was always confused about which one to use when and why. I came up with the following way to identify if a method should be a class method or an instance method. I hope this will help you also clear the confusion.
