@@ -111,12 +111,5 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    // Target the trailing-slash canonical form so Netlify's own slash-enforcer
-    // doesn't add a second 301 hop after ours.
-    '/process': { redirect: { to: '/how-we-work/', statusCode: 301 } },
-    '/projects': { redirect: { to: '/portfolio/', statusCode: 301 } },
-  },
-
   compatibilityDate: '2025-02-06',
 });

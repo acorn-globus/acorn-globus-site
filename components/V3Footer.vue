@@ -52,6 +52,7 @@
             <li><NuxtLink to="/hire-rails-developer/">Hire Rails Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-python-developer/">Hire Python Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-flutter-developer/">Hire Flutter Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-dotnet-developer/">Hire .NET Developers</NuxtLink></li>
           </ul>
         </div>
 
