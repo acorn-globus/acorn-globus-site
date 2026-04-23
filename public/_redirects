@@ -1,8 +1,10 @@
 # Netlify 301 redirects for legacy pages
-/process  /how-we-work  301
-/projects  /portfolio  301
-/services/long-term-projects  /services/full-project-delivery  301
-/dotnet-development-company  /hire-dotnet-developer  301
+# Destinations use trailing slash to match site canonical form and skip
+# Netlify's slash-enforcer second hop.
+/process  /how-we-work/  301
+/projects  /portfolio/  301
+/services/long-term-projects  /services/full-project-delivery/  301
+/dotnet-development-company  /hire-dotnet-developer/  301
 
 # Retired v2 pages — collapse to homepage to preserve any latent equity
 /old-v2/*  /  301
