@@ -43,7 +43,7 @@ Here's our honest answer to all of those questions.
 
 This is the process we've refined over years of building MVPs -- for clients and for ourselves. It's not theoretical. It's what we actually do.
 
-A caveat before we start: 8 weeks assumes proper scoping. The biggest reason MVPs take longer than expected isn't slow development -- it's unclear scope. When you try to build everything, you end up shipping nothing. Scoping is where most projects either succeed or fail.
+A caveat before we start: 8 weeks assumes proper scoping. The biggest reason MVPs take longer than expected isn't slow development -- it's unclear scope. When you try to build everything, you end up shipping nothing. Scoping is where most projects either succeed or fail, which is why we wrote a whole guide on [how to scope a software project before you spend a dollar](/blog/scope-software-project/).
 
 ### Weeks 1-2: Discovery and Scoping
 

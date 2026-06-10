@@ -6,6 +6,10 @@
 /services/long-term-projects  /services/full-project-delivery/  301
 /dotnet-development-company  /hire-dotnet-developer/  301
 
+# Blog cannibalization fix — consolidate legacy freelancer-vs-agency post into
+# the stronger, fully-optimized version (same query, kept the better article).
+/blog/hire-freelancer-or-agency-for-business  /blog/freelancer-vs-agency-software-development/  301
+
 # Retired v2 pages — collapse to homepage to preserve any latent equity
 /old-v2/*  /  301
 /technologies/*  /  301
