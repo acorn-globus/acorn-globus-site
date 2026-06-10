@@ -9,8 +9,8 @@ coverImgAlt: "When not to build an MVP — signs you're not ready, from the team
 published: true
 toc: true
 readingTime: "12 min read"
-createdAt: "2026-06-10"
-updatedAt: "2026-06-10"
+createdAt: "2026-05-04"
+updatedAt: "2026-05-04"
 keywords:
   - when not to build an MVP
   - signs you're not ready to build an MVP

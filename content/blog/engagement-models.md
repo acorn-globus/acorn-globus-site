@@ -9,8 +9,8 @@ coverImgAlt: "Choosing a software development engagement model — dedicated tea
 published: true
 toc: true
 readingTime: "12 min read"
-createdAt: "2026-06-10"
-updatedAt: "2026-06-10"
+createdAt: "2026-05-13"
+updatedAt: "2026-05-13"
 keywords:
   - software development engagement models
   - dedicated team vs staff augmentation

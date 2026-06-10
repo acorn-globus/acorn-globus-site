@@ -9,8 +9,8 @@ coverImgAlt: "How to choose an engineering partner who'll still be here in two y
 published: true
 toc: true
 readingTime: "12 min read"
-createdAt: "2026-06-10"
-updatedAt: "2026-06-10"
+createdAt: "2026-06-01"
+updatedAt: "2026-06-01"
 keywords:
   - how to choose a software development partner
   - how to choose a long term software development partner

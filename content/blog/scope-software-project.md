@@ -9,8 +9,8 @@ coverImgAlt: "How to scope a software project before you spend a dollar — a fo
 published: true
 toc: true
 readingTime: "14 min read"
-createdAt: "2026-06-10"
-updatedAt: "2026-06-10"
+createdAt: "2026-04-24"
+updatedAt: "2026-04-24"
 keywords:
   - how to scope a software project
   - software project scope
