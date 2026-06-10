@@ -110,7 +110,7 @@ This is the one that catches most founders off guard.
 - **Third-party accounts in your name.** Cloud hosting (AWS, Azure, GCP), monitoring tools, email services, payment processors, analytics -- all accounts should be registered under your company's email and billing. If your agency set these up under their accounts, you're one contract dispute away from losing access to your own infrastructure.
 - **Domain, SSL, and DNS under your control.** Your domain registrar account, SSL certificates, and DNS records should be in your name and accessible to you.
 - **No proprietary dependencies.** If your agency used their own internal framework, libraries, or tools in your codebase, find out what happens when you leave. Can you still build and deploy without access to their systems?
-- **IP assignment in the contract.** Check your agreement. Code written for you should be owned by you. This should be explicit, not assumed.
+- **IP assignment in the contract.** Check your agreement. Code written for you should be owned by you. This should be explicit, not assumed. This checklist diagnoses code a team has already written; for the contract and structural side -- how to set up IP, open standards, and roadmap ownership before the first commit -- see its sibling, [avoiding vendor lock-in](/blog/avoiding-vendor-lock-in/).
 
 ### 6. Is There a Knowledge Transfer Plan?
 

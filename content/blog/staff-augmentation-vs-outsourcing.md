@@ -139,7 +139,7 @@ Ask yourself these questions:
 **5. What might change in 6 months?**
 This is the question most people skip. If you're likely to scale, shift direction, or bring development in-house — pick a partner who can adapt with you.
 
-The best model is the one that matches where you are right now. And it can change. The right partner won't lock you into one approach.
+The best model is the one that matches where you are right now. And it can change. The right partner won't lock you into one approach. If you want a fuller decision framework that includes dedicated teams alongside these two, our guide to [which engagement model fits you](/blog/engagement-models/) walks through it.
 
 ## Our Take: Why We Offer Both
 
