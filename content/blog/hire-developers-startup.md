@@ -25,7 +25,7 @@ You're about to hand a big part of your budget — and your product vision — t
 
 Research from the Harvard Business Review puts the cost of a bad hire at 30% of first-year earnings. For startups, the math is worse. A bad hire doesn't just cost salary — it costs runway. And for many founders, it costs confidence.
 
-This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/portfolio/).
+This guide won't promise to make hiring easy. But it will give you a framework to hire smarter — from a team that's been on the receiving end of this decision [25+ times](/portfolio/). One thing before you start, though: the best hire in the world can't save a fuzzy brief. If you haven't pinned down what you're building yet, [scope the project first](/blog/scope-software-project/) — it's the cheapest way to make every later decision easier.
 
 ## The 4 Hiring Models (and When Each Makes Sense)
 
@@ -190,4 +190,4 @@ Not sure which model fits? [Let's figure it out together](/contact/). We'll give
 
 ---
 
-*Related reading: [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing/) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost/) | [Why We Built Formester — and What It Taught Us](/blog/why-we-built-formester/) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business/)*
+*Related reading: [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing/) | [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost/) | [Why We Built Formester — and What It Taught Us](/blog/why-we-built-formester/) | [Freelancer vs. Agency for Software Development: An Honest Comparison](/blog/freelancer-vs-agency-software-development/)*

@@ -44,7 +44,7 @@ These ranges are wide because every MVP is different. The next section explains 
 
 ### Scope and Feature Complexity
 
-This is the biggest cost driver — by far.
+This is the biggest cost driver — by far. It's also the one you have the most control over, before you spend a dollar. [Scoping the project tightly up front](/blog/scope-software-project/) is the cheapest way to keep this number down.
 
 Here's a framework we use with every client: separate your features into "must-have for launch" and "important but can wait."
 
@@ -194,10 +194,10 @@ Eitoss followed this exact path. MVP in 3 months. Raised funding. Kept building.
 
 ## Ready to Scope Your MVP?
 
-If you're planning an MVP and want honest guidance on what to build, what to skip, and what it'll cost — [let's talk](/contact/). We'll give you a realistic timeline and budget, not a sales pitch.
+If you're planning an MVP and want honest guidance on what to build, what to skip, and what it'll cost — [let's talk](/contact/). We'll give you a realistic timeline and budget, not a sales pitch. And if you're still weighing whether to build at all, it's worth reading [when NOT to build an MVP](/blog/when-not-to-build-an-mvp/) first — sometimes the cheapest budget is the one you don't spend yet.
 
 You can also explore our [MVP development service](/services/mvp-development/) or read about how we [shipped Eitoss from concept to funding](/case-studies/eitoss/).
 
 ---
 
-*Related reading: [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup/) | [Staff Augmentation vs. Outsourcing: What's Actually Different?](/blog/staff-augmentation-vs-outsourcing/) | [Should You Hire a Freelancer or Agency for Your Business?](/blog/hire-freelancer-or-agency-for-business/)*
+*Related reading: [How to Scope a Software Project Before You Spend a Dollar](/blog/scope-software-project/) | [When NOT to Build an MVP: Signs You're Not Ready](/blog/when-not-to-build-an-mvp/) | [How to Hire Developers for Your Startup Without Getting Burned](/blog/hire-developers-startup/) | [Freelancer vs. Agency for Software Development: An Honest Comparison](/blog/freelancer-vs-agency-software-development/)*
