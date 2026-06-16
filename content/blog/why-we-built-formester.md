@@ -29,7 +29,7 @@ It started with a frustration Ankit kept running into.
 
 Form builders were either too simple — drag-and-drop tools that broke the moment you needed conditional logic — or too complex, requiring a developer to wire up every integration. There was a gap for something that gave non-technical users real power without the engineering overhead.
 
-We could have filed it away as a "someday" idea. Instead, Ankit started building it. Not because we had a business case on a spreadsheet. Because the problem was real, and we wanted to solve it ourselves.
+We could have filed it away as a "someday" idea. Instead, Ankit started building it. Not because we had a business case on a spreadsheet. Because the problem was real, and we wanted to solve it ourselves. We could have stitched it together on a no-code platform, too — but owning the code outright is exactly what gave us the room to grow it the way we wanted, which is the heart of the [no-code vs custom](/blog/no-code-vs-custom-development/) trade-off.
 
 That decision changed how we think about everything we build.
 

@@ -105,7 +105,7 @@ You're ready to build an MVP when you can check these:
 - [ ] You've cut the scope to the one assumption that matters most.
 - [ ] You have evidence that someone has a problem worth paying to solve.
 
-If that's you, stop reading and go build — but build it right. Start with [a tight scope](/blog/scope-software-project/), price it honestly with [our MVP cost guide](/blog/mvp-development-cost/), then follow [the eight-week build process](/blog/mvp-development-process/) that turns a validated idea into a working product.
+If that's you, stop reading and go build — but build it right. Start with [a tight scope](/blog/scope-software-project/), price it honestly with [our MVP cost guide](/blog/mvp-development-cost/), then follow [the eight-week build process](/blog/mvp-development-process/) that turns a validated idea into a working product. And if money's the constraint rather than readiness, here's [how to start building your product on a limited budget](/blog/build-product-limited-budget/) — what to build first and where to spend.
 
 This is exactly the path [Eitoss](/case-studies/eitoss/) took. They came to us *ready* — a clear problem, a real market need they'd already confirmed. There was nothing to second-guess. So we scoped it tight and shipped their MVP in three months. They raised funding, and we've been building together for more than two years since. Readiness is the whole reason that timeline held. Eitoss is what "you're ready" looks like — and proof that the wait, when it's needed, pays off.
 
