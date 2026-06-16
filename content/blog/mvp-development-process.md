@@ -82,7 +82,7 @@ With the scope locked, we design the experience and the system behind it.
 - A development environment ready for sprint 1
 
 **Why this week matters:**
-Decisions made in week 3 affect every week that follows. The stack choice, the database design, the API structure -- these are the foundation. We've seen projects where quick architectural decisions early on cost teams months of rework later.
+Decisions made in week 3 affect every week that follows. The stack choice, the database design, the API structure -- these are the foundation. We've seen projects where quick architectural decisions early on cost teams months of rework later. If you're still weighing options here, we wrote an honest guide on [how to choose a tech stack for your startup](/blog/how-to-choose-a-tech-stack/) -- where your hiring pool usually matters more than the framework.
 
 When we built Formester, the architecture decisions we made in the first weeks are still supporting the product today. That's the standard we hold ourselves to.
 
@@ -159,7 +159,7 @@ We shipped a demoable product for Eitoss in 8 weeks and a production-ready versi
 
 That's not an exception. That's how we work. PerformLine started with 1 engineer from our team. Two years later, we're 8+ engineers deep. They didn't plan for that at the start. The partnership grew because the work was good and the trust was real.
 
-We don't see the MVP launch as the finish line. We see it as the starting line. The first version of your product is never the best version. What matters is whether the team that built it is still there to make it better.
+We don't see the MVP launch as the finish line. We see it as the starting line. The first version of your product is never the best version. What matters is whether the team that built it is still there to make it better. When the traction is real and the pressure to grow kicks in, here's [when and how to scale your MVP into a real product](/blog/scale-mvp-to-product/) without a rewrite.
 
 ## How to Set Your MVP Up for Success
 
