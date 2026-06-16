@@ -9,8 +9,8 @@ coverImgAlt: "How to start building your product on a limited budget — the con
 published: true
 toc: true
 readingTime: "10 min read"
-createdAt: "2026-06-16"
-updatedAt: "2026-06-16"
+createdAt: "2026-06-11"
+updatedAt: "2026-06-11"
 keywords:
   - how to build a startup product on a limited budget
   - how to build an app with a small budget

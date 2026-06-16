@@ -9,8 +9,8 @@ coverImgAlt: "No-code vs custom development — knowing when your no-code app hi
 published: true
 toc: true
 readingTime: "10 min read"
-createdAt: "2026-06-16"
-updatedAt: "2026-06-16"
+createdAt: "2026-06-12"
+updatedAt: "2026-06-12"
 keywords:
   - no-code vs custom development
   - when to switch from no-code to custom

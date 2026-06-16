@@ -9,8 +9,8 @@ coverImgAlt: "Build vs buy software — a founder's framework for deciding what 
 published: true
 toc: true
 readingTime: "11 min read"
-createdAt: "2026-06-16"
-updatedAt: "2026-06-16"
+createdAt: "2026-06-13"
+updatedAt: "2026-06-13"
 keywords:
   - build vs buy software decision framework
   - build vs buy software

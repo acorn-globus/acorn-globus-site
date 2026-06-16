@@ -9,8 +9,8 @@ coverImgAlt: "When and how to scale your MVP into a real product — the honest 
 published: true
 toc: true
 readingTime: "11 min read"
-createdAt: "2026-06-16"
-updatedAt: "2026-06-16"
+createdAt: "2026-06-15"
+updatedAt: "2026-06-15"
 keywords:
   - how to scale an MVP to a full product
   - when to scale an MVP
