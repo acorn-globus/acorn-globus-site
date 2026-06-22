@@ -83,6 +83,8 @@ Formester is live, growing, and serving real users. It holds a 4.7/5 rating on G
 
 It's also our proof point. When we say "we build it like it's ours," we're not reaching for a metaphor. We literally build our own product. The same engineers who work on Formester work on client products. The ownership mindset doesn't switch off.
 
+That same dogfooding instinct shows up in smaller ways too. We test ideas on our own operations before we ever recommend them — like the time we [handed our monthly invoicing to an AI agent named Freddy](/blog/ai-agent-invoicing-freddy/) and cut an hour of work down to five minutes. If we haven't lived with something ourselves, we don't pitch it.
+
 ## Why This Matters When You're Choosing a Development Partner
 
 Most agencies build and leave. We build and stay — because we know what the "after" looks like.
