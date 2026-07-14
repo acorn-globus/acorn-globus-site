@@ -12,7 +12,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Ship a real product. Not a prototype you'll rewrite in six months.</h1>
           <p class="text-body-lg">We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.</p>
           <div style="margin-top: 36px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Tell us about your product idea</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tell us about your product idea</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row">
@@ -241,13 +242,29 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CTA ===== -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your idea deserves a real product, not a throwaway prototype.</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what you're building. We'll have an honest conversation about scope, timeline, and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the right fit, we'll scope it together.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <NuxtLink to="/portfolio/" class="btn-text">See how we built Eitoss's MVP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
@@ -256,6 +273,33 @@
 </template>
 
 <script setup>
+const faqs = [
+  {
+    question: 'How long does it take to build an MVP?',
+    answer: "Most MVPs take 6 to 12 weeks from kickoff to launch. We typically have a demoable product within about 8 weeks and a production launch shortly after — that's the timeline we hit with Eitoss, whose MVP went live in 3 months. The exact timeline depends on scope, which we define together during discovery."
+  },
+  {
+    question: 'What does an MVP from AcornGlobus include?',
+    answer: "Product scoping and feature prioritization, technical architecture and stack selection, UI/UX wireframes, full-stack development, testing and QA, cloud deployment (AWS, GCP, or Azure), CI/CD pipeline setup, 2 weeks of post-launch support, and complete documentation with a full code handoff. You own everything — code and IP — from day one."
+  },
+  {
+    question: 'Will my MVP be production-ready, or just a prototype?',
+    answer: "Production-ready. We build with clean code, proper architecture, and a CI/CD pipeline from day one, so your MVP can handle real users and scale as you grow — not something you'll have to rewrite in six months. We hold it to the same standard we use for our own SaaS product, Formester."
+  },
+  {
+    question: 'How much does MVP development cost?',
+    answer: 'We work on a fixed-price or capped time-and-materials basis, so you know your budget before we start. Cost depends on scope and team size (typically 2-4 engineers plus a project lead). During discovery we help you decide what to build first and what can wait — not to bill less, but so you launch faster with a leaner first version.'
+  },
+  {
+    question: "I'm a non-technical founder. Can you still work with me?",
+    answer: "Yes. Many of our MVP clients are non-technical or first-time founders who don't have a CTO yet. We translate your vision into a technical plan, guide you through each decision, and use milestone-based pricing so you always know what you're getting at every step."
+  },
+  {
+    question: 'What happens after the MVP launches?',
+    answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building — adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
+  }
+]
+
 useSeoMeta({
   title: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
   description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
@@ -284,6 +328,8 @@ useServiceSchema({
   description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
   url: '/services/mvp-development',
 })
+
+useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 </script>
 
 <style scoped>
@@ -301,5 +347,49 @@ useServiceSchema({
   .hero {
     padding-top: 100px;
   }
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 780px;
+  margin-top: 48px;
+}
+.faq-list details {
+  border-bottom: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list details:first-child {
+  border-top: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--on-surface);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-list details[open] summary::after {
+  content: '\2212';
+}
+.faq-list .faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  padding-bottom: 20px;
 }
 </style>

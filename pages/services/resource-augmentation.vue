@@ -41,7 +41,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Engineers who join your team, not just your Slack.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">Our engineers work inside your workflows. Your Jira, your Git, your standups. They're not external — they're teammates who happen to sit in a different office.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Here's what makes this work:</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether you call it resource augmentation, team augmentation, or staff augmentation, the model is the same: dedicated engineers embedded in your team, not a project handed off to a vendor. Here's what makes this work:</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
@@ -193,13 +193,29 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CTA ===== -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your team is great. Let's make it bigger without making it harder to manage.</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what roles you need and how your team works. We'll propose specific engineers and let you meet them before anything starts. If the fit isn't right in the first two weeks, you walk away — no cost, no commitment.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your team</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your team</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <NuxtLink to="/portfolio/" class="btn-text">See how PerformLine scaled with us <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
@@ -208,17 +224,48 @@
 </template>
 
 <script setup>
+const faqs = [
+  {
+    question: "What's the difference between resource augmentation and hiring freelancers?",
+    answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated — full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
+  },
+  {
+    question: 'How quickly can an engineer start and become productive?',
+    answer: 'Most engagements start within one to two weeks. We match specific engineers to your stack, you meet them before anything begins, and a two-week trial follows. Our engineers typically ship their first PR within 1-2 weeks — we track time-to-first-PR because ramp-up matters.'
+  },
+  {
+    question: "What if an engineer isn't the right fit?",
+    answer: "Every engagement starts with a two-week trial at no long-term commitment — if the fit isn't right, you walk away. Beyond the trial, we offer an engineer replacement guarantee: if someone isn't working out later, we'll work with you to address it or propose a replacement."
+  },
+  {
+    question: 'How is resource augmentation priced, and is there a minimum?',
+    answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling — scale up or down with two weeks' notice, with no long-term lock-in."
+  },
+  {
+    question: 'Is resource augmentation the same as team augmentation and staff augmentation?',
+    answer: 'Yes — resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
+  },
+  {
+    question: 'Will the engineers work in our timezone?',
+    answer: 'Yes. We guarantee a minimum of 4 hours of overlap with your team\'s working hours for real-time collaboration, with async work covering the rest. Engineers join your standups and work inside your workflows as if they were in the next room.'
+  },
+  {
+    question: 'Can I scale the team up or down as my needs change?',
+    answer: "That's the point of the model. Add engineers for a launch and scale back after, with two weeks' notice. PerformLine started with one engineer and grew to 8+ over two years across full-stack, DevOps, data, QA, and frontend. For engagements of 3+ engineers we include a team lead to bridge communication and keep quality high."
+  }
+]
+
 useSeoMeta({
-  title: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
-  ogTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  ogDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  title: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  description: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  ogDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/services/resource-augmentation/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  twitterDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  twitterDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -233,9 +280,11 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Resource Augmentation',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  description: 'Resource augmentation (also called team augmentation or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   url: '/services/resource-augmentation',
 })
+
+useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 </script>
 
 <style scoped>
@@ -255,5 +304,49 @@ useServiceSchema({
     padding-top: 100px;
     padding-bottom: 48px !important;
   }
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 780px;
+  margin-top: 48px;
+}
+.faq-list details {
+  border-bottom: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list details:first-child {
+  border-top: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--on-surface);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-list details[open] summary::after {
+  content: '\2212';
+}
+.faq-list .faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  padding-bottom: 20px;
 }
 </style>

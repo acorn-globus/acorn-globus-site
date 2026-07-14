@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Python Developers in India Who Stay</h1>
           <p class="text-body-lg">You're not hiring from a pool of 80+ anonymous developers. You're getting a Python engineer who learns your architecture, joins your standups, and ships code that matters. We're a 20+ person product engineering team. The Python developers you meet are the ones who'll build your product. No bench. No rotating contractors. Just engineers who care about your codebase as much as you do.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -42,7 +43,7 @@
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (33 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
+            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>
@@ -231,13 +232,48 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we work, who we've built with, and where our Python engineers fit into your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>Resource Augmentation</h3>
+            <p>Embed our Python engineers into your existing team — same standups, same repo, same workflow.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>IT Staff Augmentation Guide</h3>
+            <p>How staff augmentation works, when it beats in-house hiring, and how to run an embedded engineer well.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/eitoss/" class="feature-card" style="text-decoration: none;">
+            <h3>Eitoss Case Study</h3>
+            <p>An AI-powered product built with LLM APIs, shipped to a demoable MVP in weeks and still growing years later.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/hiring-python-developers/" class="feature-card" style="text-decoration: none;">
+            <h3>Hiring Python Developers</h3>
+            <p>What to look for when hiring Python engineers and how to tell strong candidates from the rest.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink>,
+          <NuxtLink to="/hire-rails-developer/" style="color: var(--brand-blue); font-weight: 500;">Rails</NuxtLink>, and
+          <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Meet Your Python Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your product and whether our Python developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>

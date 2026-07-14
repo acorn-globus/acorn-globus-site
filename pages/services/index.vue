@@ -47,7 +47,7 @@
                 <span>Eitoss: MVP shipped in 3 months. They raised funding. We're still building together 2 years later.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</a>
                 <NuxtLink to="/services/mvp-development/" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -69,7 +69,7 @@
                 <span>We built Formester end-to-end — our own SaaS product, live and growing with real users.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</a>
                 <NuxtLink to="/services/full-project-delivery/" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -101,7 +101,7 @@
                 <span>We built Formester ourselves. We know what it's like to care deeply about a product — and we bring that same care to yours.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</a>
                 <NuxtLink to="/services/mvp-development/" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -121,7 +121,7 @@
                 <span>We guide, not just execute. We'll tell you honestly what you need — and what can wait.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</a>
                 <NuxtLink to="/services/full-project-delivery/" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -153,7 +153,7 @@
                 <span>PerformLine started with 1 engineer. Two years later, we're 8+ deep — full-stack, DevOps, QA, frontend.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</a>
                 <NuxtLink to="/services/resource-augmentation/" class="btn-text">Learn more about Resource Augmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -173,7 +173,7 @@
                 <span>80%+ client retention. Most of our maintenance relationships started as MVP or project delivery. Same team, same trust.</span>
               </div>
               <div class="card-ctas">
-                <NuxtLink to="/contact/" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</NuxtLink>
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's keep your product healthy</a>
                 <NuxtLink to="/services/maintenance-support/" class="btn-text">Learn more about Maintenance &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
@@ -354,8 +354,9 @@
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Have a Product in Mind?</h2>
         <p class="text-body-lg" style="max-width: 520px; margin: 16px auto 0;">Tell us about it. We'll share how we'd approach it — honestly.</p>
-        <div style="margin-top: 36px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</NuxtLink>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
         </div>
       </div>
     </section>

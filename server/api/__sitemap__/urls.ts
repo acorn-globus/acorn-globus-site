@@ -44,11 +44,17 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/hire-react-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-angular-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-vuejs-developer', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/hire-nuxt-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-nodejs-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-rails-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-python-developer', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/hire-django-developer', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/hire-react-native-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-flutter-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-dotnet-developer', changefreq: 'monthly', priority: 0.8 },
+
+    // Offshore / buyer-intent landing pages
+    { loc: '/offshore-software-development-india', changefreq: 'monthly', priority: 0.8 },
 
     // Guides (pillar pages)
     { loc: '/guides/it-staff-augmentation', changefreq: 'monthly', priority: 0.9 },
