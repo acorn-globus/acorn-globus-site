@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers in India Who Respect the Framework</h1>
           <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy — not just its syntax.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -292,6 +293,7 @@
               <span class="project-meta-tag">2+ Years</span>
               <span class="project-meta-tag">Resource Augmentation</span>
             </div>
+            <div style="margin-top: 16px;"><NuxtLink to="/case-studies/performline/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Read the PerformLine case study &rarr;</NuxtLink></div>
           </div>
           <div class="project-card">
             <h3>Eitoss</h3>
@@ -301,6 +303,7 @@
               <span class="project-meta-tag">Raised Funding</span>
               <span class="project-meta-tag">2+ Years Ongoing</span>
             </div>
+            <div style="margin-top: 16px;"><NuxtLink to="/case-studies/eitoss/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Read the Eitoss case study &rarr;</NuxtLink></div>
           </div>
         </div>
       </div>
@@ -322,14 +325,49 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we work, what we've shipped on Rails, and where our engineers fit into your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/full-project-delivery/" class="feature-card" style="text-decoration: none;">
+            <h3>Full Project Delivery</h3>
+            <p>Hand us the whole product. We design, build, and ship your Rails application — then keep improving it.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>IT Staff Augmentation Guide</h3>
+            <p>How staff augmentation works, when it beats in-house hiring, and how to run an embedded engineer well.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/invoice-falcon/" class="feature-card" style="text-decoration: none;">
+            <h3>Invoice Falcon Case Study</h3>
+            <p>A Ruby on Rails Shopify app serving thousands of merchants with 99.9% uptime and a big performance boost.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/using-vuejs-in-rails/" class="feature-card" style="text-decoration: none;">
+            <h3>Using Vue.js in Rails</h3>
+            <p>How we bring modern front-end interactivity into Rails apps without abandoning the framework's strengths.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>,
+          <NuxtLink to="/hire-vuejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Vue.js</NuxtLink>, and
+          <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Build With Rails?</h2>
         <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-          <NuxtLink to="/contact/" class="btn btn-primary">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
         </div>
         <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
+        <p class="cta-alt">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
       </div>
     </section>
   </div>

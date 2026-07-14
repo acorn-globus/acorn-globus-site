@@ -3,6 +3,11 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      // Declare the document language for accessibility + SEO (screen readers,
+      // translation, and search/AI engines rely on <html lang>).
+      htmlAttrs: {
+        lang: 'en',
+      },
       link: [
         // Google Fonts — preconnect + stylesheet (moved from CSS @import to avoid render-blocking)
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

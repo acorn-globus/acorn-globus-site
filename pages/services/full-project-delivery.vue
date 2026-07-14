@@ -12,7 +12,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Your product, built end-to-end by a team that treats it like their own.</h1>
           <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success — not just your deadline.</p>
           <div style="margin-top: 36px;">
-            <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row">
@@ -194,13 +195,29 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CTA ===== -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">You have the vision. Let's build it together.</h2>
         <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project — what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <NuxtLink to="/portfolio/" class="btn-text">See our work with Eitoss and PerformLine <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
@@ -209,6 +226,33 @@
 </template>
 
 <script setup>
+const faqs = [
+  {
+    question: 'What is full project delivery, and when should I choose it over resource augmentation?',
+    answer: "Full project delivery means we build your product end-to-end — architecture, development, QA, deployment, and handoff — with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
+  },
+  {
+    question: 'How much does full project delivery cost, and how is it priced?',
+    answer: 'We price on a milestone-based fixed price or a capped time-and-materials basis, so your budget stays predictable. Cost depends on scope, team size (typically 3-8 engineers plus a project manager and QA), and timeline (usually 3 to 12+ months). We agree on milestones and deliverables up front — no surprise invoices, and no scope changes without a conversation first.'
+  },
+  {
+    question: 'Who owns the code and intellectual property?',
+    answer: "You do — 100%. The code and IP are yours from day one. We build for your independence with clean documentation and zero lock-in, so you can bring the product in-house whenever you choose. If you decide to do that, we'll help with the transition."
+  },
+  {
+    question: 'How do you keep the project on track and communicate progress?',
+    answer: 'You get one project manager, one dedicated Slack channel, and engineers you know by name. We send weekly status reports, run bi-weekly demos, and show you working software at every milestone — not just at the end. The same people who architect your system build, test, and launch it, so nothing gets lost in handoffs.'
+  },
+  {
+    question: 'What happens after launch?',
+    answer: 'Every project includes a 4-week post-launch warranty covering bug fixes and stability issues, plus documentation, training, and knowledge transfer so your team can fully own the product. Many clients continue on a maintenance retainer or grow the engagement into a long-term partnership — Eitoss and PerformLine both started as projects and are still building with us years later.'
+  },
+  {
+    question: 'Can you work from our designs, or do you handle design too?',
+    answer: 'Both. We implement UI from your existing designs, or we provide wireframes as part of the engagement. Our scope covers product and project management, system architecture, full-stack development, QA, DevOps, deployment, and documentation — the full path from idea to production.'
+  }
+]
+
 useSeoMeta({
   title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
@@ -237,6 +281,8 @@ useServiceSchema({
   description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
   url: '/services/full-project-delivery',
 })
+
+useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 </script>
 
 <style scoped>
@@ -255,5 +301,49 @@ useServiceSchema({
     padding-top: 100px;
     padding-bottom: 48px !important;
   }
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 780px;
+  margin-top: 48px;
+}
+.faq-list details {
+  border-bottom: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list details:first-child {
+  border-top: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--on-surface);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-list details[open] summary::after {
+  content: '\2212';
+}
+.faq-list .faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  padding-bottom: 20px;
 }
 </style>

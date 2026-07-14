@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Vue.js Developers in India Who Build With Vue Every Day</h1>
           <p class="text-body-lg">We didn't just add Vue.js to a skills list. We built Formester — our own SaaS product — on it. Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped real Vue applications to real users.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -224,13 +225,49 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we build products end to end, what we've shipped, and where Vue.js fits.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/full-project-delivery/" class="feature-card" style="text-decoration: none;">
+            <h3>Full Project Delivery</h3>
+            <p>Hand us the whole product. We design, build, and ship it — Vue.js front end included — then keep improving it.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/mvp-development/" class="feature-card" style="text-decoration: none;">
+            <h3>MVP Development Guide</h3>
+            <p>How to scope, build, and launch an MVP that's ready to grow instead of ready to throw away.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/formester/" class="feature-card" style="text-decoration: none;">
+            <h3>Formester Case Study</h3>
+            <p>Our own SaaS, built on Vue.js and Nuxt. What building and running our own product taught us.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/why-we-built-formester/" class="feature-card" style="text-decoration: none;">
+            <h3>Why We Built Formester</h3>
+            <p>The story behind our Vue-powered product and the product-engineering mindset it gave us.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink>,
+          <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>,
+          <NuxtLink to="/hire-angular-developer/" style="color: var(--brand-blue); font-weight: 500;">Angular</NuxtLink>, and
+          <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Work With a Team That Lives Vue.js?</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Vue developers who've built real products — including our own.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>

@@ -12,6 +12,10 @@ const ORG_LOGO = `${SITE_URL}/acorn-globus.png`
  * Call once in the default layout.
  */
 export function useOrganizationSchema() {
+  // Emit the WebSite schema alongside the Organization schema so both render
+  // site-wide from the single call site in the default layout.
+  useWebsiteSchema()
+
   useHead({
     script: [
       {
@@ -36,7 +40,10 @@ export function useOrganizationSchema() {
           sameAs: [
             'https://www.linkedin.com/company/acornglobus/',
             'https://github.com/AcornGlobus',
-            'https://clutch.co/profile/acorn-globus',
+            // NOTE: Removed 'https://clutch.co/profile/acorn-globus' — that Clutch
+            // profile is empty (0 reviews). Asserting it as a sameAs proof point
+            // pointed crawlers/AI at an empty page and undermined trust. Re-add
+            // only once the Clutch profile has real, published reviews.
           ],
           contactPoint: {
             '@type': 'ContactPoint',
@@ -44,6 +51,42 @@ export function useOrganizationSchema() {
             email: 'business@acornglobus.com',
             url: `${SITE_URL}/contact`,
           },
+          // Real, named client testimonials surfaced on the site (see
+          // components/ReviewsSection.vue). All three are displayed with a
+          // 5-star rating, so aggregateRating uses ratingValue 5 over a
+          // reviewCount of 3 — the honest number of published named reviews.
+          // Do not inflate reviewCount without adding more real, attributable
+          // testimonials.
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5',
+            bestRating: '5',
+            worstRating: '1',
+            reviewCount: 3,
+          },
+          review: [
+            {
+              '@type': 'Review',
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              author: { '@type': 'Person', name: 'Alon Diamant', jobTitle: 'CTO', worksFor: { '@type': 'Organization', name: 'Mayple' } },
+              name: 'Proficient and Innovative Development Team',
+              reviewBody: 'Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.',
+            },
+            {
+              '@type': 'Review',
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              author: { '@type': 'Person', name: 'Enzo Zadrima', jobTitle: 'Chief Technology Officer', worksFor: { '@type': 'Organization', name: 'Viewber' } },
+              name: 'Exceptional Development and Vision',
+              reviewBody: 'Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas.',
+            },
+            {
+              '@type': 'Review',
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              author: { '@type': 'Person', name: 'Bogdan Arsenie', jobTitle: 'CTO', worksFor: { '@type': 'Organization', name: 'PerformLine' } },
+              name: 'Reliable Front-End Solutions',
+              reviewBody: 'Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.',
+            },
+          ],
         }),
       },
     ],
@@ -221,6 +264,33 @@ export function useArticleSchema(article: {
             ? (article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}`)
             : ORG_LOGO,
           ...(article.wordCount ? { wordCount: article.wordCount } : {}),
+        }),
+      },
+    ],
+  })
+}
+
+/**
+ * Injects WebSite JSON-LD schema site-wide.
+ * Call once in the default layout (alongside useOrganizationSchema).
+ * Helps search engines and AI answer engines associate the domain with the
+ * brand name (and enables potential sitelinks search box treatment).
+ */
+export function useWebsiteSchema() {
+  useHead({
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: ORG_NAME,
+          url: SITE_URL,
+          publisher: {
+            '@type': 'Organization',
+            name: ORG_NAME,
+            url: SITE_URL,
+          },
         }),
       },
     ],

@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire React Developers in India Who Stay</h1>
           <p class="text-body-lg">You're not hiring a random developer from a pool. You're getting a team member who learns your codebase, joins your standups, and stays for the long run. We're a 20+ person product engineering team. The React developers you meet are the ones who'll build your product. No bench. No rotating contractors. Just engineers who care about your code as much as you do.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -240,6 +241,9 @@
               <div class="label">Resource Augmentation</div>
             </div>
           </div>
+          <div style="margin-top: 24px;">
+            <NuxtLink to="/case-studies/performline/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Read the full PerformLine case study &rarr;</NuxtLink>
+          </div>
         </div>
       </div>
     </section>
@@ -259,13 +263,49 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we work, who we've built with, and where our React engineers fit into your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>Resource Augmentation</h3>
+            <p>Embed our React engineers into your existing team — your standups, your repo, your workflow. The service behind every hire.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>IT Staff Augmentation Guide</h3>
+            <p>How staff augmentation actually works, when it beats hiring in-house, and how to run an embedded engineer well.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/performline/" class="feature-card" style="text-decoration: none;">
+            <h3>PerformLine Case Study</h3>
+            <p>One embedded React engineer grew into an 8+ person cross-functional squad over two years. Here's how.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/hire-developers-startup/" class="feature-card" style="text-decoration: none;">
+            <h3>Hiring Developers for a Startup</h3>
+            <p>A practical look at hiring your first engineers without over-hiring or slowing yourself down.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-vuejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Vue.js</NuxtLink>,
+          <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink>,
+          <NuxtLink to="/hire-angular-developer/" style="color: var(--brand-blue); font-weight: 500;">Angular</NuxtLink>, and
+          <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Meet Your React Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your product and whether our React developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together. If it doesn't, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>

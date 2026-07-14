@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers in India Who Think in Systems, Not Just Code</h1>
           <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products — not tutorial projects.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -264,6 +265,7 @@
               <span class="project-meta-tag">2+ Years</span>
               <span class="project-meta-tag">Resource Augmentation</span>
             </div>
+            <div style="margin-top: 16px;"><NuxtLink to="/case-studies/performline/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Read the PerformLine case study &rarr;</NuxtLink></div>
           </div>
           <div class="project-card">
             <h3>Eitoss</h3>
@@ -273,6 +275,7 @@
               <span class="project-meta-tag">Raised Funding</span>
               <span class="project-meta-tag">2+ Years Ongoing</span>
             </div>
+            <div style="margin-top: 16px;"><NuxtLink to="/case-studies/eitoss/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Read the Eitoss case study &rarr;</NuxtLink></div>
           </div>
         </div>
       </div>
@@ -294,14 +297,49 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we work, who we've built with, and where our Node.js engineers fit into your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>Resource Augmentation</h3>
+            <p>Embed our Node.js engineers into your existing team — same standups, same repo, same deployment pipeline.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>IT Staff Augmentation Guide</h3>
+            <p>How staff augmentation works, when it beats in-house hiring, and how to run an embedded engineer well.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/rumie/" class="feature-card" style="text-decoration: none;">
+            <h3>Rumie Case Study</h3>
+            <p>A Node.js and React Native platform reaching users across dozens of countries — built for scale and speed.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/how-to-choose-a-tech-stack/" class="feature-card" style="text-decoration: none;">
+            <h3>How to Choose a Tech Stack</h3>
+            <p>A practical framework for picking the right stack for your product instead of chasing trends.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>,
+          <NuxtLink to="/hire-python-developer/" style="color: var(--brand-blue); font-weight: 500;">Python</NuxtLink>, and
+          <NuxtLink to="/hire-rails-developer/" style="color: var(--brand-blue); font-weight: 500;">Rails</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Scale Your Backend Team?</h2>
         <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-          <NuxtLink to="/contact/" class="btn btn-primary">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
         </div>
         <p class="cta-alt">Or email us directly at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
+        <p class="cta-alt">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
       </div>
     </section>
   </div>

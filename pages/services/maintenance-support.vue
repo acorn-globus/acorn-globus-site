@@ -264,13 +264,28 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CTA ===== -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your product deserves the same care after launch as it got during build.</h2>
         <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your product — what it does, who built it, and what kind of support you need. We'll put together a maintenance plan that keeps it healthy and improving, not just alive.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</a>
           <NuxtLink to="/contact/" class="btn-text">Already our client? Let's discuss ongoing support. <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
         </div>
       </div>
@@ -279,6 +294,33 @@
 </template>
 
 <script setup>
+const faqs = [
+  {
+    question: 'What does a maintenance and support retainer include?',
+    answer: 'Bug fixing and incident response, security patching and dependency updates, performance monitoring and optimization, database maintenance, infrastructure monitoring (if we manage your cloud), minor feature additions within your retainer hours, and a monthly health report with a full breakdown of where your hours went. Optional quarterly improvement sprints add larger features or refactoring.'
+  },
+  {
+    question: 'How much does maintenance cost?',
+    answer: "Retainers typically range from $1,500 to $5,000+ per month. The price depends on four things: your project's complexity, the experience level of the engineers, the monthly hours committed, and whether you want dedicated or shared engineers. We give you a specific number once we understand your product's scope — no placeholder figures."
+  },
+  {
+    question: "Do you maintain products your team didn't build?",
+    answer: 'Yes. While many maintenance clients continue from an MVP or full project we built, we also take on products you have acquired, products whose original dev team has left, or any codebase you want to keep healthy without hiring in-house. Onboarding starts with a 1-2 week audit where we review the code, set up monitoring, document the system, and agree on SLAs.'
+  },
+  {
+    question: 'What are your response and resolution times?',
+    answer: 'We offer three plans. Standard: 24-hour response and 72-hour critical resolution, for stable, low-urgency products. Priority: 4-hour response and 24-hour critical resolution, for active products with regular users. Emergency: 1-hour response on critical issues and same-day resolution, for mission-critical systems. We match the plan to how much downtime your product can afford.'
+  },
+  {
+    question: 'Is there a minimum commitment, and can I leave?',
+    answer: 'The minimum is 3 months — enough time for us to learn your product and prove the value. After that there is no lock-in: we keep full documentation so you can leave whenever you want. Most clients stay because the partnership works, not because a contract forces them to.'
+  },
+  {
+    question: 'Is maintenance just keeping the lights on, or do you improve the product too?',
+    answer: 'Both. We are proactive — monitoring and fixing issues before you notice them — and we run optional quarterly improvement sprints for new features, refactoring, and performance work. When possible, the same engineers who built your product maintain it, so no context is lost and nothing has to be re-learned.'
+  }
+]
+
 useSeoMeta({
   title: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
   description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
@@ -307,6 +349,8 @@ useServiceSchema({
   description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   url: '/services/maintenance-support',
 })
+
+useFaqSchema(faqs.map(f => ({ question: f.question, answer: f.answer })))
 </script>
 
 <style scoped>
@@ -325,5 +369,49 @@ useServiceSchema({
     padding-top: 100px;
     padding-bottom: 48px !important;
   }
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 780px;
+  margin-top: 48px;
+}
+.faq-list details {
+  border-bottom: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list details:first-child {
+  border-top: 1px solid rgba(194, 198, 213, 0.2);
+}
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--on-surface);
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-premium);
+}
+.faq-list details[open] summary::after {
+  content: '\2212';
+}
+.faq-list .faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+  padding-bottom: 20px;
 }
 </style>

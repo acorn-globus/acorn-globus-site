@@ -48,6 +48,7 @@
             <li><NuxtLink to="/hire-react-developer/">Hire React Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-angular-developer/">Hire Angular Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-vuejs-developer/">Hire Vue.js Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-nuxt-developer/">Hire Nuxt Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-nodejs-developer/">Hire Node.js Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-rails-developer/">Hire Rails Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-python-developer/">Hire Python Developers</NuxtLink></li>

@@ -8,7 +8,8 @@
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Angular Developers in India Built for Complex Applications</h1>
           <p class="text-body-lg">Angular is chosen for applications that need to scale, stay maintainable, and last. That's exactly how we think about engineering. Our Angular developers build for the long term — structured, tested, and ready for teams of any size to work in.</p>
           <div style="margin-top: 32px;">
-            <NuxtLink to="/contact/" class="btn btn-primary">Talk to Us</NuxtLink>
+            <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
+            <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           </div>
         </div>
         <div class="stats-row" style="margin-top: 56px;">
@@ -268,13 +269,49 @@
       </div>
     </section>
 
+    <!-- EXPLORE MORE -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <h2 class="text-display-sm">Explore More</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">How we work, who we've built with, and where our Angular engineers fit into your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>Resource Augmentation</h3>
+            <p>Embed our Angular engineers into your existing team — same standups, same repo, same workflow.</p>
+          </NuxtLink>
+          <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
+            <h3>IT Staff Augmentation Guide</h3>
+            <p>How staff augmentation works, when it beats in-house hiring, and how to run an embedded engineer well.</p>
+          </NuxtLink>
+          <NuxtLink to="/case-studies/performline/" class="feature-card" style="text-decoration: none;">
+            <h3>PerformLine Case Study</h3>
+            <p>One embedded engineer grew into an 8+ person cross-functional squad over two years. Here's how.</p>
+          </NuxtLink>
+          <NuxtLink to="/blog/how-to-choose-a-tech-stack/" class="feature-card" style="text-decoration: none;">
+            <h3>How to Choose a Tech Stack</h3>
+            <p>A practical framework for picking the right stack for your product instead of chasing trends.</p>
+          </NuxtLink>
+        </div>
+        <p class="text-body" style="margin-top: 32px; color: var(--text-secondary);">
+          Building with a different stack? We also help teams hire
+          <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>,
+          <NuxtLink to="/hire-vuejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Vue.js</NuxtLink>,
+          <NuxtLink to="/hire-dotnet-developer/" style="color: var(--brand-blue); font-weight: 500;">.NET</NuxtLink>, and
+          <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink> developers.
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Scale Your Angular Team?</h2>
         <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your application and whether our Angular developers are the right fit. Start with a two-week embedded trial. If it works, we keep building together.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</NuxtLink>
+          <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
+          <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
           <p class="text-body" style="color: var(--text-secondary);">Or email us at <a href="mailto:business@acornglobus.com" style="color: var(--brand-blue); font-weight: 500;">business@acornglobus.com</a></p>
         </div>
       </div>
