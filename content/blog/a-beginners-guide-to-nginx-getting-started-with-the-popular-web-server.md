@@ -11,6 +11,10 @@ metaDescription: Learn the basics of Nginx, one of the most popular web servers
   reverse proxy, and answer the questions everyone asks when starting out.
 keywords: Nginx, web server, beginner, tutorial, guide, installation,
   configuration, static content, reverse proxy
+# Retired from search: this post attracts high-volume junk long-tail impressions
+# (e.g. "nginx tutorial for <audience>") with ~0 clicks that drag site-wide quality
+# signals. Noindexed 2026-07-14 per founder decision. Content kept live for direct visitors.
+robots: "noindex, follow"
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z

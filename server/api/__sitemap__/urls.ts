@@ -73,7 +73,10 @@ export default defineSitemapEventHandler(async (event) => {
   // `createdAt` so content refreshes surface in the sitemap — otherwise
   // rewriting a post would never tell Google to re-crawl.
   const blogPosts = await serverQueryContent(event, 'blog').find()
-  const blogUrls = blogPosts.map((post) => {
+  const blogUrls = blogPosts
+    // Skip noindexed/unpublished posts — don't advertise pages we've told Google to ignore.
+    .filter((post) => !String(post.robots || '').includes('noindex') && post.published !== false)
+    .map((post) => {
     const modDate = post.updatedAt || post.createdAt
     return {
       loc: withSlash(post._path),
