@@ -251,7 +251,7 @@
           <div class="project-card">
             <div class="project-meta">Our own SaaS product</div>
             <h3>Formester</h3>
-            <p>No-code, AI-powered form builder built on Vue and Nuxt. Live in production with real users and a 4.8 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
+            <p>No-code, AI-powered form builder built on Vue and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
             <div style="margin-top: 16px;">
               <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>

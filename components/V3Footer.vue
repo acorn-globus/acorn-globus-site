@@ -38,6 +38,7 @@
             <li><NuxtLink to="/services/full-project-delivery/">Full Project Delivery</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support/">Maintenance &amp; Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development/">MVP Development</NuxtLink></li>
+            <li><NuxtLink to="/offshore-software-development-india/">Offshore Development (India)</NuxtLink></li>
           </ul>
         </div>
 
@@ -52,6 +53,8 @@
             <li><NuxtLink to="/hire-nodejs-developer/">Hire Node.js Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-rails-developer/">Hire Rails Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-python-developer/">Hire Python Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-django-developer/">Hire Django Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-react-native-developer/">Hire React Native Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-flutter-developer/">Hire Flutter Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-dotnet-developer/">Hire .NET Developers</NuxtLink></li>
           </ul>

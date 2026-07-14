@@ -43,7 +43,7 @@
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (33 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
+            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>

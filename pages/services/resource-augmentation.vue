@@ -41,7 +41,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Engineers who join your team, not just your Slack.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">Our engineers work inside your workflows. Your Jira, your Git, your standups. They're not external — they're teammates who happen to sit in a different office.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Here's what makes this work:</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether you call it resource augmentation, team augmentation, or staff augmentation, the model is the same: dedicated engineers embedded in your team, not a project handed off to a vendor. Here's what makes this work:</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
@@ -242,6 +242,10 @@ const faqs = [
     answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling — scale up or down with two weeks' notice, with no long-term lock-in."
   },
   {
+    question: 'Is resource augmentation the same as team augmentation and staff augmentation?',
+    answer: 'Yes — resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
+  },
+  {
     question: 'Will the engineers work in our timezone?',
     answer: 'Yes. We guarantee a minimum of 4 hours of overlap with your team\'s working hours for real-time collaboration, with async work covering the rest. Engineers join your standups and work inside your workflows as if they were in the next room.'
   },
@@ -252,16 +256,16 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
-  ogTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  ogDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  title: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  description: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  ogDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/services/resource-augmentation/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Resource Augmentation | Dedicated Engineers for Your Team | AcornGlobus',
-  twitterDescription: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
+  twitterDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -276,7 +280,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Resource Augmentation',
-  description: 'Embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors. Named engineers who care about your product.',
+  description: 'Resource augmentation (also called team augmentation or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   url: '/services/resource-augmentation',
 })
 

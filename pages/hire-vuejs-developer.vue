@@ -26,7 +26,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">We Built Our Own SaaS Product on Vue.js</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Formester is our no-code, AI-powered form builder — built entirely on Vue.js and Nuxt. It's live, it has real users, and it carries a 4.8 rating on G2. Building our own product taught us things you can't learn on client projects alone: performance tuning under real traffic, accessibility that actually works, component architecture that scales without becoming a maintenance burden.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Formester is our no-code, AI-powered form builder — built entirely on Vue.js and Nuxt. It's live, it has real users, and it carries a 4.7 rating on G2. Building our own product taught us things you can't learn on client projects alone: performance tuning under real traffic, accessibility that actually works, component architecture that scales without becoming a maintenance burden.</p>
           <p class="text-body-lg" style="margin-top: 16px;">That depth shows up in our client work. Our Vue developers don't just know the API surface — they understand the internals. They know why the Composition API exists, when Pinia is the right choice over provide/inject, how to structure a Nuxt application so it stays fast as it grows. That knowledge comes from building and maintaining a production Vue application every day.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Most marketplaces match you with whoever's available. We're not a marketplace. We're a 20+ person product engineering team, and Vue.js is a core part of our daily work. The developers you'll work with are the same people who build and ship Formester.</p>
           <div style="margin-top: 32px;">
@@ -196,7 +196,7 @@
           <div class="project-card">
             <div class="project-meta">Our own SaaS product</div>
             <h3>Formester</h3>
-            <p>No-code, AI-powered form builder built entirely on Vue.js and Nuxt. Live in production with real users and a 4.8 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
+            <p>No-code, AI-powered form builder built entirely on Vue.js and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
             <div style="margin-top: 16px;">
               <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
