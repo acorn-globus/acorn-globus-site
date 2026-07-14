@@ -404,6 +404,18 @@
               <p>"The cheapest rate is rarely the best value. An experienced senior engineer at $7,000/month who ships production-quality code from week one is almost always more cost-effective than a junior at $2,500/month who needs 3 months of guidance."</p>
             </div>
 
+            <!-- MID-GUIDE CONVERSION CTA -->
+            <div class="guide-inline-cta">
+              <div class="guide-inline-cta-text">
+                <h3>Need engineers who ship from week one?</h3>
+                <p>Tell us what your team needs and we'll match vetted senior engineers who embed with you — whether you call it resource, team, or staff augmentation. See how it works on our <NuxtLink to="/services/resource-augmentation/">resource augmentation service</NuxtLink> page, or book a free 30-minute call to talk it through.</p>
+              </div>
+              <div class="guide-inline-cta-actions">
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
+                <NuxtLink to="/services/resource-augmentation/" class="btn btn-secondary">View the Service</NuxtLink>
+              </div>
+            </div>
+
             <!-- SECTION 7: When to Use and When Not -->
             <h2 id="when-to-use">7. When to Use IT Staff Augmentation (And When Not)</h2>
 
@@ -730,6 +742,12 @@ useBreadcrumbSchema([
 
 /* ===== PULL QUOTES (guide-specific) ===== */
 .guide-pull-quote { border-left: 4px solid var(--primary); padding: 20px 28px; margin: 32px 0; background: var(--surface); border-radius: 0 var(--radius-card) var(--radius-card) 0; }
+.guide-inline-cta { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; background: var(--primary-fixed-dim); border-radius: var(--radius-card); padding: 36px 40px; margin: 40px 0; }
+.guide-inline-cta-text { flex: 1; min-width: 260px; }
+.guide-inline-cta-text h3 { font-size: 22px; font-weight: 700; color: var(--on-surface); margin: 0 0 8px; }
+.guide-inline-cta-text p { font-size: 16px; line-height: 1.6; color: var(--on-surface-variant); margin: 0; }
+.guide-inline-cta-actions { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+@media (max-width: 640px) { .guide-inline-cta { padding: 28px 24px; } .guide-inline-cta-actions { width: 100%; } .guide-inline-cta-actions .btn { flex: 1; } }
 .guide-pull-quote p { font-size: 20px; font-weight: 500; line-height: 1.6; color: var(--on-surface); font-style: italic; margin: 0; }
 .guide-pull-quote cite { display: block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--text-secondary); font-style: normal; }
 
