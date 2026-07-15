@@ -9,8 +9,8 @@ coverImgAlt: "How to vet a developer you'll never meet in person — an honest p
 published: true
 toc: true
 readingTime: "9 min read"
-createdAt: "2026-07-15"
-updatedAt: "2026-07-15"
+createdAt: "2026-07-07"
+updatedAt: "2026-07-07"
 keywords:
   - how to vet a developer
   - vet remote developers

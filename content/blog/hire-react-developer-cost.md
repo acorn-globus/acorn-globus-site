@@ -9,8 +9,8 @@ coverImgAlt: "What React developers actually cost in 2026 — an honest breakdow
 published: true
 toc: true
 readingTime: "11 min read"
-createdAt: "2026-07-15"
-updatedAt: "2026-07-15"
+createdAt: "2026-07-14"
+updatedAt: "2026-07-14"
 keywords:
   - react developer hourly rate
   - cost to hire a react developer

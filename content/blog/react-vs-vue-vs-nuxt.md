@@ -9,8 +9,8 @@ coverImgAlt: "React vs. Vue vs. Nuxt — an honest comparison from a team that s
 published: true
 toc: true
 readingTime: "9 min read"
-createdAt: "2026-07-15"
-updatedAt: "2026-07-15"
+createdAt: "2026-06-27"
+updatedAt: "2026-06-27"
 keywords:
   - react vs vue
   - vue vs nuxt
