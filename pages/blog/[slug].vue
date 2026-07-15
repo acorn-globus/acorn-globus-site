@@ -233,7 +233,7 @@ if (article.value) {
     description,
     keywords: doc.keywords || '',
     author: doc.author || 'AcornGlobus Team',
-    robots: 'index, follow',
+    robots: doc.robots || 'index, follow',
     ogTitle: title,
     ogDescription: description,
     ogImage: image,
