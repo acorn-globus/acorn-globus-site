@@ -4,6 +4,8 @@ description: "We're an offshore team in India. So here's the honest version: mos
 topic: How We Work
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
+coverImg: /images/blog/offshore-development-india-what-goes-wrong.webp
+coverImgAlt: "Offshore software development in India — what actually goes wrong and how to prevent it"
 published: true
 toc: true
 readingTime: "10 min read"

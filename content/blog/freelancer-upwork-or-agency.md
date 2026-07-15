@@ -4,6 +4,8 @@ description: "Upwork, Fiverr, Toptal, a direct freelancer, or an agency — each
 topic: Hiring and Team Building
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
+coverImg: /images/blog/freelancer-upwork-or-agency.webp
+coverImgAlt: "Freelancer, Upwork, Toptal, or agency — hiring a React or Python developer without getting burned"
 published: true
 toc: true
 readingTime: "10 min read"

@@ -4,6 +4,8 @@ description: "Anyone can pass a 45-minute interview — that's exactly the probl
 topic: Hiring and Team Building
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
+coverImg: /images/blog/how-to-vet-a-developer.webp
+coverImgAlt: "How to vet a developer you'll never meet in person — an honest playbook"
 published: true
 toc: true
 readingTime: "9 min read"

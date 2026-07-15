@@ -4,6 +4,8 @@ description: "We build in React, Vue, and Nuxt — and run this site and our own
 topic: Engineering and Tech Stack
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
+coverImg: /images/blog/react-vs-vue-vs-nuxt.webp
+coverImgAlt: "React vs. Vue vs. Nuxt — an honest comparison from a team that ships all three"
 published: true
 toc: true
 readingTime: "9 min read"
