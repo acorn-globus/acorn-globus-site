@@ -201,6 +201,11 @@ a {
   border-top: 1px solid rgba(194, 198, 213, 0.15);
 }
 
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
 .stat-value {
   font-size: 32px;
   font-weight: 800;

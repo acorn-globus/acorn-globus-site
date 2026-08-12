@@ -10,6 +10,13 @@
 # the stronger, fully-optimized version (same query, kept the better article).
 /blog/hire-freelancer-or-agency-for-business  /blog/freelancer-vs-agency-software-development/  301
 
+# AI service lines moved under /services/ (founder decision). These old root
+# paths were branch-only and never deployed/indexed — 301s here purely as a
+# safety net so any stray link resolves to the canonical /services/ URL.
+/ai-development-services  /services/ai-development/  301
+/ai-agent-development  /services/ai-agent-development/  301
+/vibe-code-rescue  /services/ai-app-rescue/  301
+
 # Retired v2 pages — collapse to homepage to preserve any latent equity
 /old-v2/*  /  301
 /technologies/*  /  301

@@ -511,6 +511,8 @@
 
             <p>Once you have product-market fit, the focus shifts from learning to growing. This is when you invest in the things you deliberately skipped during the MVP: performance optimization, a design system, comprehensive testing, analytics infrastructure, and the "nice-to-have" features that users have been requesting. The key insight: you now know exactly which features to build because you have real user data guiding every decision.</p>
 
+            <p>Two things come up a lot at this stage. First, if you built your prototype with an AI tool (Lovable, Bubble, Cursor, or "vibe coding") and it's breaking as you add features or you're unsure it's secure, that's a specific problem we solve — see <NuxtLink to="/services/ai-app-rescue/">AI App Rescue</NuxtLink>, where we take AI-built apps to production without starting over. Second, if the next step is putting real AI <em>inside</em> your product — agents, generative features, LLM or RAG — that's <NuxtLink to="/services/ai-development/">AI development services</NuxtLink>.</p>
+
             <h3>The Partnership Continues</h3>
 
             <div class="guide-pull-quote">

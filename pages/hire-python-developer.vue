@@ -262,6 +262,7 @@
           <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink>,
           <NuxtLink to="/hire-rails-developer/" style="color: var(--brand-blue); font-weight: 500;">Rails</NuxtLink>, and
           <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink> developers.
+          Building AI or ML features? We also hire out <NuxtLink to="/hire-ai-developers/" style="color: var(--brand-blue); font-weight: 500;">AI developers</NuxtLink> who've shipped agents, LLM and RAG systems in production.
         </p>
       </div>
     </section>

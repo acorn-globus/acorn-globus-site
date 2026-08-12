@@ -327,6 +327,7 @@
           <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>,
           <NuxtLink to="/hire-python-developer/" style="color: var(--brand-blue); font-weight: 500;">Python</NuxtLink>, and
           <NuxtLink to="/hire-rails-developer/" style="color: var(--brand-blue); font-weight: 500;">Rails</NuxtLink> developers.
+          Building AI into your backend? We also hire out <NuxtLink to="/hire-ai-developers/" style="color: var(--brand-blue); font-weight: 500;">AI developers</NuxtLink> who've shipped agents, LLM and RAG features in production.
         </p>
       </div>
     </section>

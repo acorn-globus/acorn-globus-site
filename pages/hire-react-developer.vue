@@ -349,6 +349,7 @@
           <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink>,
           <NuxtLink to="/hire-angular-developer/" style="color: var(--brand-blue); font-weight: 500;">Angular</NuxtLink>, and
           <NuxtLink to="/hire-nodejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Node.js</NuxtLink> developers.
+          Adding AI to your product? We also hire out <NuxtLink to="/hire-ai-developers/" style="color: var(--brand-blue); font-weight: 500;">AI developers</NuxtLink> who've shipped AI in production.
         </p>
       </div>
     </section>

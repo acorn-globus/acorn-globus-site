@@ -255,6 +255,31 @@
       </div>
     </section>
 
+    <!-- ===== AI SHIFT ===== -->
+    <section class="ai-shift section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header" style="max-width: 720px;">
+          <span class="text-label">The honest version of what AI changed for us</span>
+          <h2 class="text-display-sm" style="margin-top: 16px;">What used to take four months now takes about one.</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">We didn't get cheaper — we got faster, and the quality went up. That's because we know how to code <em>and</em> how to drive AI, which is the rare pairing that separates a working AI feature from a fragile one. If you want AI shipped fast, correctly, and reliably, that's what we do. If you just want the lowest price, we're probably not your team.</p>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 48px;">
+          <NuxtLink to="/services/ai-development/" class="feature-card" style="text-decoration: none;">
+            <h3>AI Development</h3>
+            <p>Real AI inside your product — agents, generative AI, LLM & RAG. We run AI in our own SaaS and operate our own AI agents.</p>
+          </NuxtLink>
+          <NuxtLink to="/services/ai-agent-development/" class="feature-card" style="text-decoration: none;">
+            <h3>AI Agent Development</h3>
+            <p>Agents that take real actions, not chatbots that just talk. We build them, and run three of our own to operate this company.</p>
+          </NuxtLink>
+          <NuxtLink to="/services/ai-app-rescue/" class="feature-card" style="text-decoration: none;">
+            <h3>AI App Rescue</h3>
+            <p>Built it with AI and it's breaking? We take AI-built apps to production — keep what works, fix what's fragile, ship it.</p>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== WHY US ===== -->
     <section class="why-us section-redesign">
       <div class="container-redesign">
