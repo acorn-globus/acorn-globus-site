@@ -221,7 +221,7 @@
           </div>
         </div>
         <p class="text-body" style="margin-top: 32px; max-width: 720px; color: var(--text-secondary);">
-          Want AI inside your MVP? See <NuxtLink to="/ai-development-services/" style="color: var(--brand-blue); font-weight: 500;">AI development services</NuxtLink>. Already built a prototype with AI (Lovable, Bubble, Cursor) and hit the wall? We take AI-built apps to production with <NuxtLink to="/vibe-code-rescue/" style="color: var(--brand-blue); font-weight: 500;">AI App Rescue</NuxtLink>.
+          Want AI inside your MVP? See <NuxtLink to="/services/ai-development/" style="color: var(--brand-blue); font-weight: 500;">AI development services</NuxtLink>. Already built a prototype with AI (Lovable, Bubble, Cursor) and hit the wall? We take AI-built apps to production with <NuxtLink to="/services/ai-app-rescue/" style="color: var(--brand-blue); font-weight: 500;">AI App Rescue</NuxtLink>.
         </p>
       </div>
     </section>

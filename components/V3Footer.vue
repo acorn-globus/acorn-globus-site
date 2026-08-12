@@ -38,8 +38,9 @@
             <li><NuxtLink to="/services/full-project-delivery/">Full Project Delivery</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support/">Maintenance &amp; Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development/">MVP Development</NuxtLink></li>
-            <li><NuxtLink to="/ai-development-services/">AI Development</NuxtLink></li>
-            <li><NuxtLink to="/vibe-code-rescue/">AI App Rescue</NuxtLink></li>
+            <li><NuxtLink to="/services/ai-development/">AI Development</NuxtLink></li>
+            <li><NuxtLink to="/services/ai-agent-development/">AI Agent Development</NuxtLink></li>
+            <li><NuxtLink to="/services/ai-app-rescue/">AI App Rescue</NuxtLink></li>
             <li><NuxtLink to="/offshore-software-development-india/">Offshore Development (India)</NuxtLink></li>
           </ul>
         </div>
