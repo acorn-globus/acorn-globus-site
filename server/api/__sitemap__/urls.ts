@@ -33,6 +33,12 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/services/full-project-delivery', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/maintenance-support', changefreq: 'monthly', priority: 0.8 },
 
+    // AI service lines
+    { loc: '/ai-development-services', changefreq: 'monthly', priority: 0.9 },
+    { loc: '/ai-agent-development', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/hire-ai-developers', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/vibe-code-rescue', changefreq: 'monthly', priority: 0.8 },
+
     // Case studies
     { loc: '/case-studies/eitoss', changefreq: 'monthly', priority: 0.7 },
     { loc: '/case-studies/formester', changefreq: 'monthly', priority: 0.7 },

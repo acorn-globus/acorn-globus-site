@@ -73,6 +73,28 @@
                 <NuxtLink to="/services/full-project-delivery/" class="btn-text">Learn more about Full Project Delivery <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
             </div>
+
+            <!-- AI Development -->
+            <div class="service-offering-card">
+              <div class="service-icon-lg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 14h3"/><path d="M1 9h3"/><path d="M1 14h3"/></svg>
+              </div>
+              <h3 class="text-title-lg">Real AI inside your product — built by a team that ships AI</h3>
+              <p class="text-body" style="margin-top: 12px;">AI agents, generative AI, LLM and RAG features, and AI wired into an app you already have. Not slideware — we run AI in our own SaaS and operate our own AI agents. Built it with AI and it's breaking? We do <NuxtLink to="/vibe-code-rescue/" style="color: var(--brand-blue); font-weight: 500;">AI App Rescue</NuxtLink> too.</p>
+              <ul class="check-list">
+                <li>Agents that take real actions, not chatbots that just talk</li>
+                <li>Grounded in your data with RAG, evaluated and guardrailed</li>
+                <li>Shipped to production and monitored — where most AI dies</li>
+              </ul>
+              <div class="proof-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>We build AI into our own SaaS (Formester) and run our own AI agents to operate the company.</span>
+              </div>
+              <div class="card-ctas">
+                <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Book an honest AI assessment</a>
+                <NuxtLink to="/ai-development-services/" class="btn-text">Learn more about AI Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -56,7 +56,7 @@
         <div class="proof-stats">
           <div class="proof-stat">
             <div class="proof-stat-value">4.7/5</div>
-            <div class="proof-stat-label">G2 Rating (33 Reviews)</div>
+            <div class="proof-stat-label">G2 Rating (13 Reviews)</div>
           </div>
           <div class="proof-stat">
             <div class="proof-stat-value">4.4/5</div>
@@ -199,7 +199,7 @@
           <div class="number-card">
             <div class="number-card-value">4.7/5</div>
             <div class="number-card-title">G2 Rating</div>
-            <div class="number-card-desc">33 verified reviews from real users</div>
+            <div class="number-card-desc">13 verified reviews from real users</div>
           </div>
           <div class="number-card">
             <div class="number-card-value">4.4/5</div>
