@@ -31,6 +31,7 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/services/resource-augmentation', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/mvp-development', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/full-project-delivery', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/services/dedicated-development-team', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/maintenance-support', changefreq: 'monthly', priority: 0.8 },
 
     // AI service lines
@@ -47,6 +48,8 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/case-studies/rumie', changefreq: 'monthly', priority: 0.7 },
 
     // Hire developer pages
+    { loc: '/hire-full-stack-developer', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/hire-mobile-app-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-react-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-angular-developer', changefreq: 'monthly', priority: 0.8 },
     { loc: '/hire-vuejs-developer', changefreq: 'monthly', priority: 0.8 },

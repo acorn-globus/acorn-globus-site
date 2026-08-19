@@ -85,7 +85,7 @@
         </div>
         <div class="case-study-card">
           <h3>Formester</h3>
-          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.8 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
+          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
         </div>
       </div>
     </section>
