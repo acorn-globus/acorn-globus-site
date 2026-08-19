@@ -289,6 +289,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What is the easiest way to hire Python developers for my team?',
+    answer: "Most teams start with a short discovery call, then we propose named engineers matched to your stack and domain. You interview them directly and begin with a two-week embedded trial before any long-term commitment. A typical Python developer hire with us takes one to two weeks from that first call to a developer shipping code in your repo. Whether you want to hire Python developers full-time, part-time, or for a defined project, the process is the same: you meet the actual engineers, not resumes from a database, and you decide."
+  },
+  {
     question: 'How much does it cost to hire a Python developer from India?',
     answer: "Rates depend on seniority and engagement model. Our dedicated Python developers work on monthly engagement rates, not hourly bidding. We're transparent about pricing from the first call -- no hidden fees, no surprise markups. We also offer a two-week embedded trial so you can evaluate the fit before committing. Contact us for a specific quote based on your needs."
   },

@@ -359,6 +359,10 @@ const faqs = [
     answer: "Rates depend on seniority, the AI work involved, and the engagement model. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior AI talent at a fraction of local hiring costs. We're clear about pricing from the first call, with no hidden fees or surprise markups, and if a simpler or off-the-shelf option would serve you better, we'll say so. Contact us for a specific quote based on your use case."
   },
   {
+    question: 'Can I hire a single AI developer, or only a whole team?',
+    answer: "You can hire just one. Plenty of teams hire an AI developer to own a single feature, then scale up later once it proves out. Whether you want to hire an AI developer for one agent or RAG feature, or hire an artificial intelligence developer to lead a larger build, we match you with a named engineer who has actually shipped AI in production and back them with the rest of our team. You start with a two-week trial either way, so a one-person hire carries no more risk than a bigger one."
+  },
+  {
     question: 'What can your AI developers actually build?',
     answer: "AI agents and agentic workflows (that take real actions, not just chat), generative-AI features, LLM and RAG systems grounded in your data, AI chatbots that do real work, and AI wired into an existing product. We also fix AI-built apps that broke on the way to production. Our engineers have shipped AI in our own SaaS (Formester) and for a client (PerformLine)."
   },
