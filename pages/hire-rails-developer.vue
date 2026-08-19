@@ -380,6 +380,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What is the easiest way to hire Ruby on Rails developers?',
+    answer: "Start with a short discovery call. We match you with named engineers for your project, you interview them directly, and you begin with a two-week embedded trial before any long-term commitment. When you hire Rails developers through us, you are hiring full-time members of our team, not freelancers from a bidding site. Whether you want to hire Ruby on Rails developers for a new product, a legacy upgrade, or an existing codebase, you meet the actual engineers and confirm the fit before committing."
+  },
+  {
     question: 'How much does it cost to hire a Ruby on Rails developer?',
     answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
   },

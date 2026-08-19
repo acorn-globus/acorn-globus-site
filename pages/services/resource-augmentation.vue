@@ -35,6 +35,17 @@
       </div>
     </section>
 
+    <!-- ===== WHAT IS RESOURCE AUGMENTATION ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">What is resource augmentation?</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Resource augmentation is a model where you add dedicated engineers to your existing team instead of outsourcing an entire project or waiting months to hire full-time. The engineers work under your direction, inside your tools and processes, and you scale the team up or down as your roadmap changes. It goes by a few names, and resource augmentation, team augmentation, and IT staff augmentation all describe the same thing.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">The line between good and bad team augmentation is whether the engineers stay long enough to build real context in your product. Rotating contractors never do. Our resource augmentation model is built the opposite way: named engineers who ramp in one to two weeks, embed in your team, and stay for the long run.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== VALUE PROPOSITION ===== -->
     <section class="section-redesign">
       <div class="container-redesign">

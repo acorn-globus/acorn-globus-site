@@ -228,6 +228,10 @@
 <script setup>
 const faqs = [
   {
+    question: 'Is full project delivery the same as software development outsourcing?',
+    answer: "It is our version of it, done properly. Full project delivery is software development outsourcing where one team owns the whole build: architecture, development, QA, deployment, and handoff. The problem with most IT service outsourcing is the hand-off-and-hope model, where a vendor disappears with a spec and returns months later with something that misses the mark. We work the opposite way, with a dedicated project manager, milestone check-ins, and code you own from day one, so outsourcing your software development still feels like your project."
+  },
+  {
     question: 'What is full project delivery, and when should I choose it over resource augmentation?',
     answer: "Full project delivery means we build your product end-to-end — architecture, development, QA, deployment, and handoff — with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
   },
@@ -255,7 +259,7 @@ const faqs = [
 
 useSeoMeta({
   title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
   ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
@@ -278,7 +282,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Full Project Delivery',
-  description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
   url: '/services/full-project-delivery',
 })
 

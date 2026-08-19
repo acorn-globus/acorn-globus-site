@@ -1,7 +1,6 @@
 <template>
   <div class="blog-post-page">
-    <ContentDoc>
-      <template v-slot="{ doc }">
+    <template v-if="doc">
 
         <!-- ===== ARTICLE HEADER ===== -->
         <header :class="doc.toc ? 'article-hero-guide' : 'article-hero-simple'">
@@ -146,8 +145,7 @@
           </div>
         </section>
 
-      </template>
-    </ContentDoc>
+    </template>
   </div>
 </template>
 
@@ -185,6 +183,17 @@ const { data: article } = await useAsyncData(`blog-${slug}`, () =>
     .findOne()
 )
 
+if (!article.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Blog post not found', fatal: true })
+}
+
+// `doc` drives the template. We render from our own queryContent result rather
+// than <ContentDoc> on purpose: <ContentDoc> invokes useContentHead, which sets
+// the <title> from the frontmatter `title` (the visible H1) and overrides the
+// useSeoMeta below, so a post's `metaTitle` never reached the <title> tag (#51).
+// Rendering from `article` makes useSeoMeta the single source of the head.
+const doc = computed(() => article.value)
+
 // Fetch related posts: same-topic first, then recent fallback
 const currentTopic = article.value?.topic || null
 
@@ -219,21 +228,24 @@ const relatedPosts = computed(() => {
   return result
 })
 
-// Dynamic SEO meta from article content
-if (article.value) {
-  const doc = article.value
-  const title = doc.metaTitle || doc.title
-  const description = doc.metaDescription || doc.description || doc.title
-  const image = doc.coverImg
-    ? (doc.coverImg.startsWith('http') ? doc.coverImg : `https://acornglobus.com${doc.coverImg}`)
+// Dynamic SEO meta from article content.
+// `metaTitle` (when present) becomes the actual <title> and og:title, used
+// verbatim so the author-crafted SERP title is respected. Posts with no
+// metaTitle keep their `title` (the visible H1) with no appended suffix.
+{
+  const post = article.value
+  const title = post.metaTitle || post.title
+  const description = post.metaDescription || post.description || post.title
+  const image = post.coverImg
+    ? (post.coverImg.startsWith('http') ? post.coverImg : `https://acornglobus.com${post.coverImg}`)
     : 'https://acornglobus.com/acorn-globus.png'
 
   useSeoMeta({
-    title: `${title} | AcornGlobus Blog`,
+    title,
     description,
-    keywords: doc.keywords || '',
-    author: doc.author || 'AcornGlobus Team',
-    robots: doc.robots || 'index, follow',
+    keywords: post.keywords || '',
+    author: post.author || 'AcornGlobus Team',
+    robots: post.robots || 'index, follow',
     ogTitle: title,
     ogDescription: description,
     ogImage: image,
@@ -247,22 +259,22 @@ if (article.value) {
 
   // BlogPosting JSON-LD schema
   useBlogPostSchema({
-    title: doc.title,
+    title: post.title,
     description: description,
     slug: String(slug),
-    datePublished: typeof doc.createdAt === 'string' ? doc.createdAt : new Date(doc.createdAt).toISOString(),
-    dateModified: doc.updatedAt
-      ? (typeof doc.updatedAt === 'string' ? doc.updatedAt : new Date(doc.updatedAt).toISOString())
+    datePublished: typeof post.createdAt === 'string' ? post.createdAt : new Date(post.createdAt).toISOString(),
+    dateModified: post.updatedAt
+      ? (typeof post.updatedAt === 'string' ? post.updatedAt : new Date(post.updatedAt).toISOString())
       : undefined,
-    author: doc.author || 'AcornGlobus Team',
-    image: doc.coverImg || undefined,
+    author: post.author || 'AcornGlobus Team',
+    image: post.coverImg || undefined,
   })
 
   // Optional FAQPage JSON-LD — when the post declares an `faq:` array in
   // its frontmatter, emit FAQPage schema so Google can surface rich FAQ
   // results in the SERP. Array shape: [{ question: string, answer: string }].
-  if (Array.isArray(doc.faq) && doc.faq.length > 0) {
-    const faqs = doc.faq
+  if (Array.isArray(post.faq) && post.faq.length > 0) {
+    const faqs = post.faq
       .filter((f) => f && typeof f.question === 'string' && typeof f.answer === 'string')
       .map((f) => ({ question: f.question, answer: f.answer }))
     if (faqs.length > 0) {

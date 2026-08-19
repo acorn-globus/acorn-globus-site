@@ -289,6 +289,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'How do I hire Django developers, or find a Django developer for hire?',
+    answer: "It is the same simple process either way. Book a short discovery call and we propose named engineers matched to your project, you interview them directly, and you start with a two-week embedded trial before committing. Every Django developer for hire with us is a full-time member of our team, not a freelancer from a marketplace. Whether you want to hire Django developers for a new build, an API, or an existing codebase, you meet the actual engineers and decide the fit yourself."
+  },
+  {
     question: 'What is the difference between Python and Django?',
     answer: "Python is the programming language. Django is a web framework written in Python that gives you a structured way to build database-backed web applications and APIs — an ORM, an admin, authentication, routing, and security defaults out of the box. You hire Python developers for the language and its broad ecosystem; you hire Django developers when the project is specifically a Django web application or API."
   },

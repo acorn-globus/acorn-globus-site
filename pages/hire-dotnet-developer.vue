@@ -296,6 +296,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'Can I hire ASP.NET developers specifically, or just .NET developers?',
+    answer: "Both, and they are the same engineers. ASP.NET is the web framework built on .NET, so when you hire ASP.NET developers from us you get the same people you would hiring .NET developers, screened on real ASP.NET Core, C#, and Azure work. Every ASP.NET developer for hire with us is a full-time member of our team, not a freelancer. Whether you want to hire a .NET developer for an API, a web app, or a legacy migration, you interview the specific engineers we match and confirm the fit during a two-week trial before committing."
+  },
+  {
     question: 'How much does it cost to hire a .NET developer from India?',
     answer: "It depends on the engagement model and seniority level. Our dedicated .NET developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit. The two-week trial lets you evaluate fit before any long-term commitment."
   },

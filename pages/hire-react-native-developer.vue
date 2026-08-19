@@ -283,6 +283,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'Can I hire a dedicated React Native developer for my team?',
+    answer: "Yes. You can hire a dedicated React Native developer who works only on your product, joins your standups, and ships in your repo, or hire React Native developers as a small squad if you need more capacity. Start with a short discovery call, interview the named engineers we match, and begin with a two-week embedded trial before any long-term commitment. Every dedicated React Native developer with us is a full-time member of our team, so you meet the actual engineer and decide the fit yourself."
+  },
+  {
     question: 'Is React Native or Flutter better for my app?',
     answer: "Both are excellent for cross-platform iOS and Android apps from one codebase. Choose React Native if your team already knows React or JavaScript, or you want to share code and developers across web and mobile — it has the larger hiring pool and ecosystem. Choose Flutter if you want pixel-identical, highly custom UI from one rendering engine and are happy to work in Dart. We build in both and will recommend honestly based on your team and product."
   },
