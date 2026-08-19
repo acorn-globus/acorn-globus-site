@@ -4,9 +4,9 @@
     <section class="hero" style="padding-bottom: 80px;">
       <div class="container-redesign">
         <div style="max-width: 760px;">
-          <div class="hero-eyebrow"><span>Hire Mobile App Developers &middot; Cross-Platform (Flutter &amp; React Native)</span></div>
+          <div class="hero-eyebrow"><span>Hire Mobile App Developers &middot; Cross-Platform (Flutter &amp; React Native) and Native (Swift &amp; Kotlin)</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Mobile App Developers for iOS and Android</h1>
-          <p class="text-body-lg">Hire dedicated mobile app developers who ship to both the App Store and Google Play from a single cross-platform codebase. We build with Flutter and React Native, so you get one team, one codebase, and two apps. We are a 20+ person product engineering team serving startups and scale-ups across the US, UK, Canada, and Australia. The engineer you interview is the one who builds your app.</p>
+          <p class="text-body-lg">Hire dedicated mobile app developers who ship to both the App Store and Google Play. We build cross-platform with Flutter and React Native, and we build native with Swift for iOS and Kotlin for Android. We help you pick the right approach for your product, then staff the engineers who work in it day to day. We are a 20+ person product engineering team serving startups and scale-ups across the US, UK, Canada, and Australia. The engineer you interview is the one who builds your app.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -25,10 +25,10 @@
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <h2 class="text-display-sm">The Honest Version: We Build Cross-Platform, Not Native-Only</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Here is the straight answer before you read further. We build cross-platform mobile apps with Flutter and React Native. One codebase compiles to both iOS and Android, so you ship two apps with one team. For most products that is the faster, cheaper, and easier-to-maintain choice, and it is what we do well.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">What we do not do is run native-only teams writing separate Swift and Kotlin codebases. Modern cross-platform frameworks handle the large majority of apps, including native device features like camera, GPS, push notifications, and payments, through native modules. But if your app depends on cutting-edge, platform-specific capabilities, heavy on-device processing, or the very latest OS features on day one, a fully native build may serve you better. If that is you, we will tell you, and we will not take the project just to take it.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">For everyone else, cross-platform is not a compromise. It is the sensible default, and it is what we ship.</p>
+          <h2 class="text-display-sm">The Honest Version: We Build Both Cross-Platform and Native</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Here is the straight answer before you read further. We build mobile apps both ways. Cross-platform with Flutter and React Native, where one codebase compiles to both iOS and Android so you ship two apps with one team. And native with Swift for iOS and Kotlin for Android, where each platform gets its own purpose-built codebase.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">For most products, cross-platform is the sensible default. It is faster to build, cheaper to maintain, and modern frameworks handle the large majority of apps, including native device features like camera, GPS, push notifications, and payments, through native modules. Native wins when your app depends on platform-specific power, the latest OS features on day one, heavy on-device processing, AR/VR, or high-end graphics. For those, a dedicated Swift or Kotlin build serves you better.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">The honest part is this. We offer both, so we have no reason to push you toward the one we would rather sell. We will recommend cross-platform for most products and native when it genuinely wins for yours. If cross-platform is the right call, we will say so. If native is, we will say that too.</p>
         </div>
       </div>
     </section>
@@ -37,10 +37,12 @@
     <section class="section-redesign">
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
-          <h2 class="text-display-sm">Two Ways We Build Your App</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Both are cross-platform, and both ship to iOS and Android from one codebase. Which one fits depends on your product and your team.</p>
+          <h2 class="text-display-sm">The Two Approaches We Build In: Cross-Platform and Native</h2>
+          <p class="text-body-lg" style="margin-top: 16px;">Cross-platform ships to iOS and Android from one codebase. Native gives each platform its own purpose-built codebase. Which one fits depends on your product, your team, and how much platform-specific power you need.</p>
         </div>
-        <div class="decision-grid" style="margin-top: 48px;">
+
+        <h3 class="approach-label" style="margin-top: 48px;">Cross-Platform (one codebase, both stores)</h3>
+        <div class="decision-grid" style="margin-top: 24px;">
           <div class="decision-card">
             <h3>Flutter</h3>
             <p class="text-body" style="margin-bottom: 16px;">Google's cross-platform framework, one codebase in Dart, a single design system across iOS and Android, and strong performance for rich, custom UIs. Best when you want pixel-consistent design and smooth animation across both platforms.</p>
@@ -52,8 +54,21 @@
             <NuxtLink to="/hire-react-native-developer/" style="color: var(--brand-blue); font-weight: 600; text-decoration: none;">Hire React Native developers &rarr;</NuxtLink>
           </div>
         </div>
+
+        <h3 class="approach-label" style="margin-top: 40px;">Native (a purpose-built codebase per platform)</h3>
+        <div class="decision-grid" style="margin-top: 24px;">
+          <div class="decision-card">
+            <h3>Swift for iOS</h3>
+            <p class="text-body">Hire an iOS developer, or a Swift developer, who builds in Swift and SwiftUI. Best when you need the newest Apple features on day one, deep integration with iOS hardware and frameworks, or high-end graphics and performance on iPhone and iPad.</p>
+          </div>
+          <div class="decision-card">
+            <h3>Kotlin for Android</h3>
+            <p class="text-body">Hire an Android developer, or a Kotlin developer, who builds in Kotlin and Jetpack Compose. Best when you need the latest Android APIs, tight integration with the device and Google services, or heavy on-device processing across the Android ecosystem.</p>
+          </div>
+        </div>
+
         <div style="max-width: 720px; margin-top: 32px;">
-          <p class="text-body-lg">Not sure which fits? That is a good first conversation. We will recommend Flutter or React Native based on your product, your team's existing skills, and your design needs, not based on which we would rather sell.</p>
+          <p class="text-body-lg">Not sure which fits? That is a good first conversation. We will recommend cross-platform or native, and the specific framework within it, based on your product, your team's existing skills, and your performance needs, not based on which we would rather sell.</p>
         </div>
       </div>
     </section>
@@ -62,8 +77,8 @@
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <h2 class="text-display-sm">When Cross-Platform Is the Right Call (and When It Is Not)</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Cross-platform is the right choice for the large majority of mobile products. Here is the straight version so you can decide before you hire.</p>
+          <h2 class="text-display-sm">Cross-Platform or Native: When Each One Wins</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">We build both, so this is the straight version to help you decide before you hire. Cross-platform is the right choice for the large majority of mobile products. Native wins when your app needs platform-specific power.</p>
         </div>
         <div class="decision-grid" style="margin-top: 48px;">
           <div class="decision-card decision-yes">
@@ -75,14 +90,15 @@
               <li>You want one team you can scale, not two native teams to hire and coordinate.</li>
             </ul>
           </div>
-          <div class="decision-card decision-no">
-            <h3>You may want native instead when</h3>
+          <div class="decision-card decision-yes">
+            <h3>Native is right when</h3>
             <ul>
               <li>Your app leans on cutting-edge, platform-specific APIs or the newest OS features on launch day.</li>
               <li>You need heavy on-device computation, AR/VR, or very high-performance graphics.</li>
               <li>You have a large existing native codebase you are extending rather than starting fresh.</li>
+              <li>You want the deepest possible integration with iOS or Android hardware and frameworks.</li>
             </ul>
-            <p class="text-body" style="margin-top: 16px; color: var(--text-secondary);">For these, a native Swift or Kotlin team is the better fit, and we will say so.</p>
+            <p class="text-body" style="margin-top: 16px; color: var(--text-secondary);">For these, we staff native Swift (iOS) or Kotlin (Android) engineers, and we will tell you when that is the better fit.</p>
           </div>
         </div>
       </div>
@@ -102,7 +118,7 @@
           </div>
           <div class="feature-card">
             <h3>Vetted Before You Meet Them</h3>
-            <p>Every engineer we propose is a full-time member of our team, screened on real cross-platform work in Flutter or React Native, not keyword-matched. You still interview them directly before deciding.</p>
+            <p>Every engineer we propose is a full-time member of our team, screened on real mobile work in Flutter, React Native, Swift, or Kotlin, not keyword-matched. You still interview them directly before deciding.</p>
           </div>
           <div class="feature-card">
             <h3>Two-Week Embedded Trial</h3>
@@ -133,7 +149,7 @@
         <div class="build-cards-grid">
           <div class="build-card">
             <h3>Consumer Apps for iOS and Android</h3>
-            <p>One codebase, two apps. Shipped to both the App Store and Google Play from a single Flutter or React Native project.</p>
+            <p>Shipped to both the App Store and Google Play, whether cross-platform from one Flutter or React Native codebase or native in Swift and Kotlin.</p>
           </div>
           <div class="build-card">
             <h3>SaaS Companion Apps</h3>
@@ -197,7 +213,7 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your app, your users, and whether Flutter or React Native fits best. No generic pitches, just a real conversation about your product and goals.</p>
+              <p>We learn about your app, your users, and whether cross-platform or native fits best, then which framework within it. No generic pitches, just a real conversation about your product and goals.</p>
             </div>
           </div>
           <div class="process-step">
@@ -248,7 +264,7 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">Explore More</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">The two frameworks we build in, the services behind every hire, and proof of how our partnerships grow.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">The cross-platform frameworks we build in, the services behind every hire, and proof of how our partnerships grow.</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/hire-flutter-developer/" class="feature-card" style="text-decoration: none;">
@@ -282,7 +298,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Build Your App on Both Stores?</h2>
-        <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your app and whether cross-platform is the right call. Start with a two-week embedded trial. If it works, we keep building together. If it does not, no hard feelings.</p>
+        <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">No pitches. No pressure. Just a conversation about your app and whether cross-platform or native is the right call for it. Start with a two-week embedded trial. If it works, we keep building together. If it does not, no hard feelings.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -301,19 +317,23 @@ definePageMeta({
 const faqs = [
   {
     question: 'Do you build native iOS and Android apps, or cross-platform?',
-    answer: 'We build cross-platform apps with Flutter and React Native. One codebase ships to both the App Store and Google Play, which is faster to build and cheaper to maintain than two separate native codebases. We do not run native-only Swift or Kotlin teams. If your app truly needs a fully native build, we will tell you honestly rather than take the project.'
+    answer: 'Both. We build cross-platform apps with Flutter and React Native, where one codebase ships to both the App Store and Google Play, and we build native apps in Swift for iOS and Kotlin for Android. Cross-platform is faster to build and cheaper to maintain, so it is the right call for most products. Native wins when your app needs platform-specific power or the newest OS features on day one. Because we offer both, we recommend the one that fits your product, not the one we would rather sell.'
+  },
+  {
+    question: 'Can I hire a native iOS or Android developer from you?',
+    answer: 'Yes. You can hire a native iOS developer who works in Swift and SwiftUI, or a native Android developer who works in Kotlin and Jetpack Compose. We also staff native mobile app developers who cover both platforms. This is the right path when you need deep hardware integration, day-one support for the latest OS features, heavy on-device processing, AR/VR, or high-end graphics. Every native engineer is a full-time member of our team, and you interview them directly.'
   },
   {
     question: 'Will a cross-platform app feel as good as a native one?',
-    answer: 'For most apps, yes. Flutter and React Native render smooth, responsive interfaces and reach native device features like camera, GPS, push notifications, and payments through native modules. Users generally cannot tell the difference. The cases where native still wins are heavy on-device computation, AR/VR, high-end graphics, or day-one use of the newest platform APIs. We are upfront about which camp your app is in.'
+    answer: 'For most apps, yes. Flutter and React Native render smooth, responsive interfaces and reach native device features like camera, GPS, push notifications, and payments through native modules. Users generally cannot tell the difference. The cases where native still wins are heavy on-device computation, AR/VR, high-end graphics, or day-one use of the newest platform APIs. We build both, so we are upfront about which camp your app is in rather than steering you toward one.'
   },
   {
-    question: 'Should I choose Flutter or React Native?',
-    answer: 'Choose Flutter when you want a consistent custom design and smooth animation across both platforms from one Dart codebase. Choose React Native when you already use React on the web or want to share JavaScript and TypeScript skills across web and mobile. We help you decide based on your product and your team, then staff engineers who work in that framework day to day.'
+    question: 'Should I choose Flutter, React Native, Swift, or Kotlin?',
+    answer: 'For cross-platform, choose Flutter when you want a consistent custom design and smooth animation across both platforms from one Dart codebase, and choose React Native when you already use React on the web or want to share JavaScript and TypeScript skills across web and mobile. For native, choose Swift when you are building for iOS and want the deepest Apple integration, and choose Kotlin for the same on Android. We help you decide based on your product and your team, then staff engineers who work in that stack day to day.'
   },
   {
     question: 'How much does it cost to hire a mobile app developer?',
-    answer: 'Rates depend on seniority and engagement model. Because we are based in India and most clients are in the US, UK, Canada, and Australia, you get senior cross-platform talent at a fraction of local hiring cost, and one codebase for both platforms lowers the total build cost further. Book a call and we will give you a specific quote based on your app and scope.'
+    answer: 'Rates depend on seniority, engagement model, and whether you go cross-platform or native. Because we are based in India and most clients are in the US, UK, Canada, and Australia, you get senior mobile talent, cross-platform or native, at a fraction of local hiring cost. Cross-platform also lowers the total build cost further because one codebase covers both platforms. Book a call and we will give you a specific quote based on your app and scope.'
   },
   {
     question: 'Can you publish my app to the App Store and Google Play?',
@@ -326,16 +346,16 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Mobile App Developers | Cross-Platform iOS & Android | AcornGlobus',
-  description: 'Hire dedicated mobile app developers who ship to iOS and Android from one cross-platform codebase. Flutter and React Native experts, 20+ engineer team, 2-week embedded trial. Honest about cross-platform vs native.',
-  ogTitle: 'Hire Mobile App Developers | Cross-Platform iOS & Android | AcornGlobus',
-  ogDescription: 'Hire dedicated mobile app developers who ship to iOS and Android from one cross-platform codebase. Flutter and React Native experts, 20+ engineer team, 2-week embedded trial.',
+  title: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  description: 'Hire dedicated mobile app developers for iOS and Android. We build cross-platform with Flutter and React Native and native with Swift and Kotlin. 20+ engineer team, 2-week embedded trial. We recommend the right fit for your product.',
+  ogTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  ogDescription: 'Hire dedicated mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 20+ engineer team, 2-week embedded trial.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/hire-mobile-app-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Mobile App Developers | Cross-Platform iOS & Android | AcornGlobus',
-  twitterDescription: 'Hire dedicated mobile app developers who ship to iOS and Android from one cross-platform codebase. Flutter and React Native experts, 2-week embedded trial.',
+  twitterTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  twitterDescription: 'Hire mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 2-week embedded trial.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -347,7 +367,7 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Mobile App Developers',
-  description: 'Hire dedicated cross-platform mobile app developers who ship to iOS and Android from one codebase in Flutter or React Native. Named engineers who embed with your team, a 2-week trial, no bench, and no rotating contractors.',
+  description: 'Hire dedicated mobile app developers for iOS and Android. We build cross-platform in Flutter and React Native and native in Swift and Kotlin, recommending the right fit for your product. Named engineers who embed with your team, a 2-week trial, no bench, and no rotating contractors.',
   url: '/hire-mobile-app-developer',
 })
 
@@ -386,6 +406,15 @@ useBreadcrumbSchema([
   font-size: 16px;
   line-height: 1.6;
   color: var(--on-surface-variant);
+}
+
+/* ===== APPROACH LABEL ===== */
+.approach-label {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
 }
 
 /* ===== DECISION GRID ===== */
