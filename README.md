@@ -2,19 +2,22 @@
 
 ## Build Setup
 
+This project uses **npm** (pinned via the `packageManager` field). Do not use yarn —
+Yarn 4 defaults to PnP, which breaks Nuxt's `postinstall` (`nuxt prepare`), and there is no `yarn.lock`.
+
 ```bash
-# install dependencies
-$ yarn install
+# install dependencies (CI: use `npm ci` for a clean, lockfile-exact install)
+$ npm install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm run build
+$ npm run preview
 
-# generate static project
-$ yarn generate
+# generate static project (this is what deploy runs)
+$ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
