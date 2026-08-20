@@ -256,13 +256,15 @@ useSeoMeta({
   description: 'Built an app with AI (Lovable, Bubble, Cursor, vibe coding) and it started breaking? AI App Rescue takes AI-built apps to production. We keep what works, fix what\'s fragile (testing, security, payments, database, scale), and ship it. Serving US, UK, Canada & Australia.',
   ogTitle: 'AI App Rescue | Take Your Vibe-Coded App to Production | AcornGlobus',
   ogDescription: 'Built an app with AI and it started breaking? AI App Rescue takes AI-built apps to production. We keep what works, fix what\'s fragile, and ship it.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-ai-app-rescue.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/ai-app-rescue/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'AI App Rescue | Take Your Vibe-Coded App to Production | AcornGlobus',
   twitterDescription: 'Built an app with AI and it started breaking? We take AI-built apps to production: keep what works, fix what\'s fragile, ship it.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-ai-app-rescue.webp',
 })
 
 useHead({

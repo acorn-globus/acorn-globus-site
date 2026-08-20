@@ -323,13 +323,15 @@ useSeoMeta({
   description: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
   ogTitle: 'Hire Django Developers in India | Dedicated Django & Python Engineers | AcornGlobus',
   ogDescription: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-django-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-django-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Django Developers | Dedicated Django & Python Engineers | AcornGlobus',
   twitterDescription: 'Hire Django developers who ship production backends. DRF, ORM, Celery, and Postgres from a 20+ person Python team.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-django-developer.webp',
 })
 
 useHead({

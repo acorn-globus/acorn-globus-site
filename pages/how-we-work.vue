@@ -343,13 +343,15 @@ useSeoMeta({
   description: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
   ogTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
   ogDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-how-we-work.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/how-we-work/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
   twitterDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like — no surprises, no fine print.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-how-we-work.webp',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/how-we-work/' }] })
 

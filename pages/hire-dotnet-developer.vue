@@ -334,13 +334,15 @@ useSeoMeta({
   description: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
   ogTitle: 'Hire .NET Developers in India | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
   ogDescription: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-dotnet-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-dotnet-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire .NET Developers | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated .NET developers from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy .NET Framework migration.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-dotnet-developer.webp',
 })
 
 useHead({

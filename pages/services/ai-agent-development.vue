@@ -268,13 +268,15 @@ useSeoMeta({
   description: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots. Formester agentic workflows in production plus three internal agents (finance, dev, code review). Serving the US, UK, Canada & Australia.',
   ogTitle: 'AI Agent Development Company | Agentic Workflows | AcornGlobus',
   ogDescription: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-ai-agent-development.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/ai-agent-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'AI Agent Development Company | Agentic Workflows | AcornGlobus',
   twitterDescription: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-ai-agent-development.webp',
 })
 
 useHead({

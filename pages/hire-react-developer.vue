@@ -418,13 +418,15 @@ useSeoMeta({
   description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors. Serving US, UK, Canada & Australia.',
   ogTitle: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
   ogDescription: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-react-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire React Developers | React.js Development Company | AcornGlobus',
   twitterDescription: 'Hire dedicated React.js developers in India who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
 })
 
 useHead({

@@ -364,13 +364,15 @@ useSeoMeta({
   description: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
   ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-angular-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Angular Developers | Dedicated Angular Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated Angular developers who build structured, scalable applications. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
 })
 
 useHead({

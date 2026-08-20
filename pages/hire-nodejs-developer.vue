@@ -391,13 +391,15 @@ useSeoMeta({
   description: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   ogTitle: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
   ogDescription: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-nodejs-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-nodejs-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Node.js Developers | Backend Engineers Who Think in Systems | AcornGlobus',
   twitterDescription: 'Hire dedicated Node.js developers from a 20+ person product engineering team. API design, microservices, real-time systems.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-nodejs-developer.webp',
 })
 
 useHead({

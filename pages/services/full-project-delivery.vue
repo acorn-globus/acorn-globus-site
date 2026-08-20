@@ -258,13 +258,15 @@ useSeoMeta({
   description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
   ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/full-project-delivery/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
 })
 
 useHead({

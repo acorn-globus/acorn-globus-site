@@ -319,13 +319,15 @@ useSeoMeta({
   description: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
   ogTitle: 'Hire Python Developers in India | AcornGlobus',
   ogDescription: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-python-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-python-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Python Developers | Dedicated Python Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated Python developers who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-python-developer.webp',
 })
 
 useHead({

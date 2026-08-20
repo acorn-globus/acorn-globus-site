@@ -418,13 +418,15 @@ useSeoMeta({
   description: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
   ogTitle: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
   ogDescription: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-rails-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-rails-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Ruby on Rails Developers | Engineers Who Respect the Framework | AcornGlobus',
   twitterDescription: 'Hire dedicated Ruby on Rails developers from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-rails-developer.webp',
 })
 
 useHead({

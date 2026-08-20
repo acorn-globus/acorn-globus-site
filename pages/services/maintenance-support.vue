@@ -326,13 +326,15 @@ useSeoMeta({
   description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   ogTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
   ogDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/maintenance-support/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
   twitterDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
 })
 
 useHead({

@@ -355,13 +355,15 @@ useSeoMeta({
   description: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
   ogTitle: 'Hire Nuxt Developers in India | Dedicated Nuxt & Vue Engineers | AcornGlobus',
   ogDescription: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-nuxt-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-nuxt-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Nuxt Developers | Dedicated Nuxt & Vue Engineers | AcornGlobus',
   twitterDescription: 'Hire Nuxt developers who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-nuxt-developer.webp',
 })
 
 useHead({

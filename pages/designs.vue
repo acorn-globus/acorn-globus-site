@@ -202,13 +202,15 @@ useSeoMeta({
   description: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions. See how we create memorable digital experiences.',
   ogTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
   ogDescription: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions.',
-  ogImage: 'https://acornglobus.com/acorn-globus-designs.png',
+  ogImage: 'https://acornglobus.com/images/og/og-designs.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/designs/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Design Portfolio | Creative Gallery | AcornGlobus',
   twitterDescription: 'Explore our diverse collection of web design, mobile app interfaces, branding projects, and UI/UX solutions.',
-  twitterImage: 'https://acornglobus.com/acorn-globus-designs.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-designs.webp',
 })
 
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/designs/' }] })

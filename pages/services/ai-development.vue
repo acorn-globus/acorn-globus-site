@@ -309,13 +309,15 @@ useSeoMeta({
   description: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features, and AI wired into your product. We run AI in our own SaaS and operate our own AI agents. Serving the US, UK, Canada & Australia.',
   ogTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
   ogDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features. We run AI in our own SaaS and operate our own AI agents.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/ai-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
   twitterDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG. We run AI in our own SaaS.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
 })
 
 useHead({
