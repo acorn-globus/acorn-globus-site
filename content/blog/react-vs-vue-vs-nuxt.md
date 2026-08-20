@@ -1,5 +1,6 @@
 ---
 title: "React vs. Vue vs. Nuxt: Which Should You Actually Build In? (From a Team That Uses All Three)"
+metaTitle: "React vs Vue vs Nuxt: Which Should You Build In? (2026)"
 description: "We build in React, Vue, and Nuxt — and run this site and our own product on Nuxt. So we have no reason to push one. Here's the honest tradeoff, and what we'd actually pick for a SaaS dashboard, a content site, or a greenfield app."
 topic: Engineering and Tech Stack
 author: Tarun Bhukya

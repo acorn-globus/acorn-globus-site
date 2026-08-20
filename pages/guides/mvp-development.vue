@@ -610,6 +610,18 @@
                   <p>You do — if you choose the right partner. Full intellectual property ownership should be assigned to you from day one. This means you have access to all source code repositories, documentation, and deployment configurations. If you ever want to bring development in-house, switch partners, or sell the company, the code is yours. This should be explicitly stated in your contract. Any partner that claims partial ownership of code they built for you is a partner you should avoid.</p>
                 </div>
               </details>
+              <details>
+                <summary>What does MVP development involve?</summary>
+                <div class="faq-answer">
+                  <p>MVP development is the process of building the smallest version of your product that delivers real value, so you can launch, learn from real users, and iterate. It involves defining the core problem, scoping ruthlessly, choosing a tech stack, designing and building in short sprints, then launching and measuring. Done well, MVP development produces production-quality code you can scale, not a throwaway prototype you rewrite in six months.</p>
+                </div>
+              </details>
+              <details>
+                <summary>How do I choose the right MVP development company?</summary>
+                <div class="faq-answer">
+                  <p>Look for an MVP development company that has shipped, and ideally runs, its own products, gives you full code and IP ownership from day one, and is honest about scope instead of padding the build. Ask how they handle scope changes, who owns the code, what happens after launch, and whether you can talk to past clients. Fixed or milestone-based pricing keeps your budget predictable. The strongest partners push back on unnecessary features and plan for iteration after launch.</p>
+                </div>
+              </details>
             </div>
 
             <!-- BOTTOM CTA -->
@@ -680,6 +692,14 @@ useFaqSchema([
   {
     question: 'Who owns the code after the MVP is built?',
     answer: 'You do — if you choose the right partner. Full intellectual property ownership should be assigned to you from day one. This means you have access to all source code repositories, documentation, and deployment configurations. If you ever want to bring development in-house, switch partners, or sell the company, the code is yours. This should be explicitly stated in your contract. Any partner that claims partial ownership of code they built for you is a partner you should avoid.',
+  },
+  {
+    question: 'What does MVP development involve?',
+    answer: 'MVP development is the process of building the smallest version of your product that delivers real value, so you can launch, learn from real users, and iterate. It involves defining the core problem, scoping ruthlessly, choosing a tech stack, designing and building in short sprints, then launching and measuring. Done well, MVP development produces production-quality code you can scale, not a throwaway prototype you rewrite in six months.',
+  },
+  {
+    question: 'How do I choose the right MVP development company?',
+    answer: 'Look for an MVP development company that has shipped, and ideally runs, its own products, gives you full code and IP ownership from day one, and is honest about scope instead of padding the build. Ask how they handle scope changes, who owns the code, what happens after launch, and whether you can talk to past clients. Fixed or milestone-based pricing keeps your budget predictable. The strongest partners push back on unnecessary features and plan for iteration after launch.',
   },
 ])
 

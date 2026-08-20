@@ -265,6 +265,17 @@
       </div>
     </section>
 
+    <!-- HIRE NUXT.JS DEVELOPERS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Hire Nuxt.js Developers Who Have Shipped Nuxt to Production</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">When you hire Nuxt.js developers from us, you are not renting names off a marketplace bench. You get dedicated Nuxt.js developers who build on the framework every day, on our own products and on client work. Hire Nuxt developers full-time, part-time, or for a fixed-scope project, and scale the team up or down as your roadmap changes.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Every engineer we propose has real Nuxt.js experience across SSR, static generation, Nitro server routes, and SEO. You meet them, review their work, and run a two-week embedded trial before you commit. That is how hiring a Nuxt.js developer should feel: low risk, high signal, and no long onboarding.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
@@ -347,6 +358,14 @@ const faqs = [
   {
     question: 'Do your Nuxt developers use TypeScript?',
     answer: "Yes. Nuxt has first-class TypeScript support and we use it across our projects, including Formester and this website. Our developers are comfortable with typed composables, server routes, and component props."
+  },
+  {
+    question: 'Can I hire dedicated Nuxt.js developers through AcornGlobus?',
+    answer: "Yes. You can hire dedicated Nuxt.js developers who work only on your product, full-time or part-time, embedded in your team with the same standups and tools. Because we are a product engineering team and not a marketplace, the developers you hire are the same people who ship Formester and this Nuxt 4 site."
+  },
+  {
+    question: 'Is there a difference between hiring Nuxt developers and Nuxt.js developers?',
+    answer: "No. Nuxt and Nuxt.js are two names for the same framework, so hiring Nuxt developers and hiring Nuxt.js developers means the same thing. Our engineers work across Nuxt 3 and Nuxt 4 with Vue 3, whichever name you use to search for them."
   }
 ]
 
