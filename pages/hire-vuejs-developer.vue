@@ -335,13 +335,15 @@ useSeoMeta({
   description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   ogTitle: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
   ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-vuejs-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-vuejs-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers | AcornGlobus',
   twitterDescription: 'Hire Vue.js developers who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-vuejs-developer.webp',
 })
 
 useHead({

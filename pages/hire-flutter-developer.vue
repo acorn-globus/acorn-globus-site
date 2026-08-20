@@ -323,13 +323,15 @@ useSeoMeta({
   description: 'Hire dedicated Flutter developers from a 20+ person team. Cross-platform iOS and Android apps, 2-week trial, named engineers. Talk to us about your app.',
   ogTitle: 'Hire Flutter Developers in India | AcornGlobus',
   ogDescription: 'Hire dedicated Flutter developers from a 20+ person team. Cross-platform iOS and Android apps, 2-week trial, named engineers. Talk to us about your app.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-flutter-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-flutter-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Flutter Developers | Dedicated Flutter Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated Flutter developers who join your team, build your app, and stay. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-flutter-developer.webp',
 })
 
 useHead({

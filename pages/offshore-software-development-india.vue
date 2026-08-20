@@ -251,13 +251,15 @@ useSeoMeta({
   description: 'An offshore software development company in India for US, UK, Canada & Australia teams. Vetted engineers, real timezone overlap, direct communication, 2-week trial. Book a call.',
   ogTitle: 'Offshore Software Development Company in India | AcornGlobus',
   ogDescription: 'An offshore software development company in India for US, UK, Canada & Australia teams. Vetted engineers, real timezone overlap, direct communication, 2-week trial. Book a call.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-offshore-software-development-india.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/offshore-software-development-india/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Offshore Software Development Company in India | AcornGlobus',
   twitterDescription: 'Offshore software development from India for US, UK, Canada & Australia teams. Vetted engineers, timezone overlap, direct communication, 2-week trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-offshore-software-development-india.webp',
 })
 
 useHead({

@@ -271,13 +271,15 @@ useSeoMeta({
   description: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
   ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
   ogDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/resource-augmentation/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
   twitterDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
 })
 
 useHead({

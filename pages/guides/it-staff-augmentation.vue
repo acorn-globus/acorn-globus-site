@@ -633,13 +633,15 @@ useSeoMeta({
   ogTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
   description: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
   twitterDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
 })
 
 useHead({

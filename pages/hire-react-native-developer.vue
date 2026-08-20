@@ -321,13 +321,15 @@ useSeoMeta({
   description: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
   ogTitle: 'Hire React Native Developers in India | Cross-Platform Mobile Engineers | AcornGlobus',
   ogDescription: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-react-native-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-react-native-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire React Native Developers | Cross-Platform Mobile Engineers | AcornGlobus',
   twitterDescription: 'Hire React Native developers who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-react-native-developer.webp',
 })
 
 useHead({

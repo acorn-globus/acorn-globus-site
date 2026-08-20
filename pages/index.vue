@@ -349,7 +349,9 @@ useSeoMeta({
   robots: 'index, follow',
   ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
   ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-home.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com',
   ogType: 'website',
   ogSiteName: 'AcornGlobus',
@@ -358,7 +360,7 @@ useSeoMeta({
   twitterCreator: '@acornglobus',
   twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
   twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-home.webp',
 })
 
 const services = [

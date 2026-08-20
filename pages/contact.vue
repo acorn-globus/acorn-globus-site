@@ -225,13 +225,15 @@ useSeoMeta({
   description: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
   ogTitle: 'Contact AcornGlobus - Let\'s Talk About What You\'re Building',
   ogDescription: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-contact.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/contact/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Contact AcornGlobus - Let\'s Talk About What You\'re Building',
   twitterDescription: 'Get in touch with AcornGlobus. Whether you\'re launching something new or growing something that\'s working, we\'d love to hear what you\'re building.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-contact.webp',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/contact/' }] })
 
