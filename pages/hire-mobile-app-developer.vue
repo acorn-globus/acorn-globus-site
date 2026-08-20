@@ -350,13 +350,15 @@ useSeoMeta({
   description: 'Hire dedicated mobile app developers for iOS and Android. We build cross-platform with Flutter and React Native and native with Swift and Kotlin. 20+ engineer team, 2-week embedded trial. We recommend the right fit for your product.',
   ogTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
   ogDescription: 'Hire dedicated mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 20+ engineer team, 2-week embedded trial.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-mobile-app-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
   twitterDescription: 'Hire mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
 })
 
 useHead({

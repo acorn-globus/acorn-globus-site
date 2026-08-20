@@ -319,13 +319,15 @@ useSeoMeta({
   description: 'Hire a dedicated development team that works only on your product. You set the roadmap, we handle recruiting, retention, and coordination. 20+ engineers, 80%+ retention, 100% code ownership, 2-week trial.',
   ogTitle: 'Dedicated Development Team | Hire a Dedicated Team | AcornGlobus',
   ogDescription: 'Hire a dedicated development team that works only on your product. You set the roadmap, we handle recruiting, retention, and coordination. 20+ engineers, 80%+ retention, 2-week trial.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-dedicated-development-team.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/dedicated-development-team/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Dedicated Development Team | Hire a Dedicated Team | AcornGlobus',
   twitterDescription: 'Hire a dedicated development team that works only on your product. You set the roadmap, we run the team. 20+ engineers, 80%+ retention, 2-week trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-dedicated-development-team.webp',
 })
 
 useHead({
