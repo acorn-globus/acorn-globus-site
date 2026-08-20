@@ -326,6 +326,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What is the fastest way to hire an Angular developer?',
+    answer: "Start with a short discovery call. We match you with named engineers for your stack, you interview them directly, and you begin with a two-week embedded trial before any long-term commitment. Most teams that want to hire an Angular developer are shipping code within one to two weeks of that first call. Whether you need to hire Angular developers full-time, part-time, or for a fixed project, you meet the actual engineers and decide. No resume databases, no lock-in."
+  },
+  {
     question: 'How much does it cost to hire an Angular developer?',
     answer: "Rates depend on seniority and engagement model. Our dedicated Angular developers typically range from $25 to $50 per hour, depending on experience level and project complexity. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
@@ -364,13 +368,15 @@ useSeoMeta({
   description: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
   ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-angular-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Angular Developers | Dedicated Angular Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated Angular developers who build structured, scalable applications. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
 })
 
 useHead({

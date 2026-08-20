@@ -241,13 +241,15 @@ useSeoMeta({
   description: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
   ogTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   ogDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-about.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/about/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
   twitterDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-about.webp',
 })
 
 useHead({

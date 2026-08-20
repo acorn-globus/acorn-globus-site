@@ -238,6 +238,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'How do I choose an AI agent development company?',
+    answer: "Pick an AI agent development company that runs its own agents in production, not one that only demos them. Ask what agents they operate day to day, how those agents take real actions safely, and how they handle tools, data access, evaluation, and guardrails. We build and run our own: Freddy handles finance and invoicing, a dev agent fixes bugs, and a code-review agent reviews code, alongside agentic workflows live in Formester. You can hire us to build your agent end to end or embed our engineers with your team."
+  },
+  {
     question: 'What is an AI agent, and how is it different from a chatbot?',
     answer: "A chatbot answers questions. An AI agent takes actions with consequences. It sends emails, updates records, creates invoices, opens pull requests, or triggers other systems, and it's trusted to do so correctly. Building an agent means engineering reliable tool-calling, error handling, guardrails, and evaluation, not just wiring up a conversation. That gap is exactly what separates a demo from a production agent."
   },
@@ -268,13 +272,15 @@ useSeoMeta({
   description: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots. Formester agentic workflows in production plus three internal agents (finance, dev, code review). Serving the US, UK, Canada & Australia.',
   ogTitle: 'AI Agent Development Company | Agentic Workflows | AcornGlobus',
   ogDescription: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-ai-agent-development.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/ai-agent-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'AI Agent Development Company | Agentic Workflows | AcornGlobus',
   twitterDescription: 'AI agent development from a team that builds and runs its own agents: agentic workflows that take real actions, not chatbots.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-ai-agent-development.webp',
 })
 
 useHead({

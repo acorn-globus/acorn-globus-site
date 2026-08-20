@@ -36,6 +36,7 @@
           <ul>
             <li><NuxtLink to="/services/resource-augmentation/">Resource Augmentation</NuxtLink></li>
             <li><NuxtLink to="/services/full-project-delivery/">Full Project Delivery</NuxtLink></li>
+            <li><NuxtLink to="/services/dedicated-development-team/">Dedicated Development Team</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support/">Maintenance &amp; Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development/">MVP Development</NuxtLink></li>
             <li><NuxtLink to="/services/ai-development/">AI Development</NuxtLink></li>
@@ -50,6 +51,8 @@
           <h4>Hire Developers</h4>
           <ul>
             <li><NuxtLink to="/hire-ai-developers/">Hire AI Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-full-stack-developer/">Hire Full-Stack Developers</NuxtLink></li>
+            <li><NuxtLink to="/hire-mobile-app-developer/">Hire Mobile App Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-react-developer/">Hire React Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-angular-developer/">Hire Angular Developers</NuxtLink></li>
             <li><NuxtLink to="/hire-vuejs-developer/">Hire Vue.js Developers</NuxtLink></li>

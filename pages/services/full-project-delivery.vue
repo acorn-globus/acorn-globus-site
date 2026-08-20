@@ -85,7 +85,7 @@
         </div>
         <div class="case-study-card">
           <h3>Formester</h3>
-          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.8 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
+          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
         </div>
       </div>
     </section>
@@ -228,6 +228,10 @@
 <script setup>
 const faqs = [
   {
+    question: 'Is full project delivery the same as software development outsourcing?',
+    answer: "It is our version of it, done properly. Full project delivery is software development outsourcing where one team owns the whole build: architecture, development, QA, deployment, and handoff. The problem with most IT service outsourcing is the hand-off-and-hope model, where a vendor disappears with a spec and returns months later with something that misses the mark. We work the opposite way, with a dedicated project manager, milestone check-ins, and code you own from day one, so outsourcing your software development still feels like your project."
+  },
+  {
     question: 'What is full project delivery, and when should I choose it over resource augmentation?',
     answer: "Full project delivery means we build your product end-to-end — architecture, development, QA, deployment, and handoff — with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
   },
@@ -255,16 +259,18 @@ const faqs = [
 
 useSeoMeta({
   title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
   ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/full-project-delivery/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
 })
 
 useHead({
@@ -278,7 +284,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Full Project Delivery',
-  description: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
   url: '/services/full-project-delivery',
 })
 

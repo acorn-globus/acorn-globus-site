@@ -72,6 +72,17 @@
       </div>
     </section>
 
+    <!-- AI DEVELOPMENT COMPANY / GENERATIVE AI / AI SOFTWARE ENGINEERS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">An AI development company, not an AI reseller</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Most teams shopping for AI want one of two things: an AI development company that can own the build end to end, or AI software engineers who slot into a team that already exists. We do both. You can hand us the whole thing, or embed our engineers alongside yours.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our generative AI development services cover the full path to production: model selection, retrieval and RAG over your own data, evaluation, guardrails, and the monitoring that keeps output usable once real users arrive. The difference is that our AI software engineers write production code and drive the AI, so the feature that looked good in a demo still works at scale.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- PROOF, NOT PROMISES -->
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
@@ -279,6 +290,14 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What makes a good AI development company?',
+    answer: "A real AI development company can point to AI it runs in production, not just a capabilities deck. Look for a team that pairs generative AI development services with engineers who write production code, so the AI is grounded in your data, evaluated, guardrailed, and monitored. We run AI in our own SaaS (Formester) and operate our own AI agents, so the discipline comes from shipping, not from theory."
+  },
+  {
+    question: 'Do you provide generative AI development services or just AI consulting?',
+    answer: "We build. Our generative AI development services cover text and content generation, LLM and RAG systems grounded in your knowledge base, and AI agents that take real actions, all wired into your product with evaluation and guardrails. You can hire our AI software engineers to own the build end to end, or embed them alongside your own team. Either way you get shipped software, not a strategy slide deck."
+  },
+  {
     question: 'What does AI development actually mean?',
     answer: "AI development means building artificial intelligence into a real product: AI agents that take actions, generative-AI features, LLM and RAG systems grounded in your own data, chatbots that do real work, and the plumbing to run models reliably in production. It's different from just calling an API once. The hard part is grounding, evaluation, guardrails, and shipping something that keeps working when real users hit it."
   },
@@ -306,16 +325,18 @@ const faqs = [
 
 useSeoMeta({
   title: 'AI Development Services | AI Software Development Company | AcornGlobus',
-  description: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features, and AI wired into your product. We run AI in our own SaaS and operate our own AI agents. Serving the US, UK, Canada & Australia.',
+  description: 'AI development company and generative AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features, and AI wired into your product. We run AI in our own SaaS and operate our own AI agents. Serving the US, UK, Canada & Australia.',
   ogTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
   ogDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features. We run AI in our own SaaS and operate our own AI agents.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/ai-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
   twitterDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG. We run AI in our own SaaS.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
 })
 
 useHead({

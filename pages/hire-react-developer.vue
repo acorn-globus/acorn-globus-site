@@ -380,6 +380,10 @@ const faqs = [
     answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
+    question: 'Can I hire React.js developers specifically, or just React developers?',
+    answer: "It's the same thing. React and React.js are two names for the same library, so when you hire React.js developers from us you're hiring the same engineers you'd get if you searched for React developers. Every React JS developer we propose is a full-time member of our team, screened on real React.js work: components, hooks, state management, TypeScript, and testing. Whether you call it React or React.js, you interview the specific engineers we match and confirm the fit during a two-week trial before committing."
+  },
+  {
     question: 'How quickly can React developers start on my project?',
     answer: 'Most engagements kick off within one to two weeks of the initial call. We match engineers based on your stack and domain, you interview them directly, and the two-week trial begins. If you have an urgent need, we can sometimes start within a few days.'
   },
@@ -418,13 +422,15 @@ useSeoMeta({
   description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors. Serving US, UK, Canada & Australia.',
   ogTitle: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
   ogDescription: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-react-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire React Developers | React.js Development Company | AcornGlobus',
   twitterDescription: 'Hire dedicated React.js developers in India who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
 })
 
 useHead({

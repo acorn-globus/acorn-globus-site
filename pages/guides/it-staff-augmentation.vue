@@ -562,6 +562,12 @@
 
             <div class="faq-list">
               <details>
+                <summary>What is staff augmentation?</summary>
+                <div class="faq-answer">
+                  <p>The simplest definition of staff augmentation is this: you bring in external engineers who work as part of your own team, under your management, using your tools and processes. In plain terms, the meaning of staff augmentation is renting skilled people, not renting a finished project. The engineers are employed by the augmentation partner but they join your standups, push to your repos, and report to your tech lead, exactly like an in-house hire would, minus the recruiting cycle and the long-term payroll commitment.</p>
+                </div>
+              </details>
+              <details>
                 <summary>Is IT staff augmentation the same as resource augmentation and team augmentation?</summary>
                 <div class="faq-answer">
                   <p>Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs — direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.</p>
@@ -627,13 +633,15 @@ useSeoMeta({
   ogTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
   description: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
   ogDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
   twitterDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
 })
 
 useHead({
@@ -649,6 +657,10 @@ useArticleSchema({
 })
 
 useFaqSchema([
+  {
+    question: 'What is staff augmentation?',
+    answer: "The simplest definition of staff augmentation is this: you bring in external engineers who work as part of your own team, under your management, using your tools and processes. In plain terms, the meaning of staff augmentation is renting skilled people, not renting a finished project. The engineers are employed by the augmentation partner but they join your standups, push to your repos, and report to your tech lead, exactly like an in-house hire would, minus the recruiting cycle and the long-term payroll commitment.",
+  },
   {
     question: 'Is IT staff augmentation the same as resource augmentation and team augmentation?',
     answer: "Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs — direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.",

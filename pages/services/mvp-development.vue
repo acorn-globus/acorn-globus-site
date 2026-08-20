@@ -245,8 +245,19 @@
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- ===== MVP DEVELOPMENT SERVICES ===== -->
     <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">MVP development services that ship a real product in 6 to 12 weeks</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">Founders often ask which agencies can actually prototype and ship an MVP in 12 weeks. We can, and we do it regularly. Our MVP development services cover the whole build: scoping, architecture, full-stack development, testing, deployment, and post-launch support, all from one team that owns the outcome.</p>
+          <p class="text-body-lg">As an MVP development company that builds real products under 12 weeks, we hold your first version to the same standard as our own SaaS, Formester. You get production-ready code you own outright, not a throwaway prototype, and the same team can keep building with you after launch. For the full playbook on scope, cost, and timelines, read our <NuxtLink to="/guides/mvp-development/" style="color: var(--brand-blue); font-weight: 500;">MVP development guide</NuxtLink>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
         <div class="section-header">
           <h2 class="text-display-sm">Frequently Asked Questions</h2>
@@ -300,6 +311,14 @@ const faqs = [
   {
     question: 'What happens after the MVP launches?',
     answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building — adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
+  },
+  {
+    question: 'Which agencies can prototype and ship an MVP in 12 weeks?',
+    answer: "We can. Most of our MVPs go from kickoff to a demoable product in about 8 weeks and to a production launch within 6 to 12 weeks. Eitoss is one example: we scoped their MVP, had a demo in 8 weeks, and launched in 3 months, and they raised funding on it. The exact timeline depends on scope, which we define with you during discovery."
+  },
+  {
+    question: 'Why choose an MVP development company over freelancers?',
+    answer: "An MVP development company gives you a full team, not a single freelancer: engineers, a project lead, and shared accountability for shipping on time. If one person is out, the build does not stop. You also get production-quality architecture, documentation, and full code ownership from day one, so the MVP is ready to scale instead of something you rewrite later."
   }
 ]
 
@@ -308,13 +327,15 @@ useSeoMeta({
   description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
   ogTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
   ogDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
   twitterDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
 
 useHead({

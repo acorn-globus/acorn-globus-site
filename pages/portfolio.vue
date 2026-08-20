@@ -153,13 +153,15 @@ useSeoMeta({
   description: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
   ogTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
   ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/portfolio/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
   twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio/' }] })
 

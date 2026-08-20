@@ -289,6 +289,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What is the easiest way to hire Python developers for my team?',
+    answer: "Most teams start with a short discovery call, then we propose named engineers matched to your stack and domain. You interview them directly and begin with a two-week embedded trial before any long-term commitment. A typical Python developer hire with us takes one to two weeks from that first call to a developer shipping code in your repo. Whether you want to hire Python developers full-time, part-time, or for a defined project, the process is the same: you meet the actual engineers, not resumes from a database, and you decide."
+  },
+  {
     question: 'How much does it cost to hire a Python developer from India?',
     answer: "Rates depend on seniority and engagement model. Our dedicated Python developers work on monthly engagement rates, not hourly bidding. We're transparent about pricing from the first call -- no hidden fees, no surprise markups. We also offer a two-week embedded trial so you can evaluate the fit before committing. Contact us for a specific quote based on your needs."
   },
@@ -319,13 +323,15 @@ useSeoMeta({
   description: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
   ogTitle: 'Hire Python Developers in India | AcornGlobus',
   ogDescription: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
-  ogImage: 'https://acornglobus.com/acorn-globus.png',
+  ogImage: 'https://acornglobus.com/images/og/og-hire-python-developer.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/hire-python-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Python Developers | Dedicated Python Engineers | AcornGlobus',
   twitterDescription: 'Hire dedicated Python developers who join your team, learn your codebase, and stay. 20+ engineers, 2-week embedded trial.',
-  twitterImage: 'https://acornglobus.com/acorn-globus.png',
+  twitterImage: 'https://acornglobus.com/images/og/og-hire-python-developer.webp',
 })
 
 useHead({
