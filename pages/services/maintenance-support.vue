@@ -264,8 +264,19 @@
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- ===== SOFTWARE MAINTENANCE SERVICES ===== -->
     <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Software maintenance and support services for the long haul</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Our software maintenance services keep your application secure, fast, and healthy long after launch. Application support and maintenance covers the work that quietly keeps a product alive: bug fixing and incident response, security patching, dependency updates, performance tuning, and database and infrastructure monitoring.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether we built your product or you are handing us a codebase someone else wrote, we treat maintenance as ongoing care, not just keeping the lights on. You get a dedicated team, transparent monthly hours, and optional improvement sprints so the product keeps getting better, not just staying stable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
         <div class="section-header">
           <h2 class="text-display-sm">Frequently Asked Questions</h2>
@@ -318,6 +329,14 @@ const faqs = [
   {
     question: 'Is maintenance just keeping the lights on, or do you improve the product too?',
     answer: 'Both. We are proactive — monitoring and fixing issues before you notice them — and we run optional quarterly improvement sprints for new features, refactoring, and performance work. When possible, the same engineers who built your product maintain it, so no context is lost and nothing has to be re-learned.'
+  },
+  {
+    question: 'What do your software maintenance and support services cover?',
+    answer: 'Our software maintenance services cover bug fixing and incident response, security patching and dependency updates, performance monitoring and optimization, database maintenance, and infrastructure monitoring if we manage your cloud. Application support and maintenance also includes minor feature work within your retainer hours and a monthly health report, with optional quarterly sprints for larger features and refactoring.'
+  },
+  {
+    question: 'Do you offer application maintenance and support for products you did not build?',
+    answer: 'Yes. Alongside products we built ourselves, we take on application support and maintenance for software your original team left behind, products you acquired, or any codebase you want kept healthy without hiring in-house. We start with a short audit to review the code, set up monitoring, document the system, and agree on SLAs before support begins.'
   }
 ]
 

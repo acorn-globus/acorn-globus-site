@@ -289,6 +289,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'What is the easiest way to hire Flutter developers?',
+    answer: "Start with a short discovery call. We match you with named engineers for your app, you interview them directly, and you begin with a two-week embedded trial before any long-term commitment. When you hire a Flutter developer through us, you are hiring a full-time member of our team, not a freelancer from a marketplace. Hiring Flutter developers this way usually takes one to two weeks from the first call to a developer shipping code, and you meet the actual engineers before you decide."
+  },
+  {
     question: 'How much does it cost to hire a Flutter developer from India?',
     answer: "Our Flutter developers work on monthly engagement rates, not hourly bidding. The cost depends on experience level and the complexity of your app. We offer a two-week embedded trial so you can evaluate the fit before committing to a longer engagement. Contact us for a transparent quote based on your specific needs."
   },

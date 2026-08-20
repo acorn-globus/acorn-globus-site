@@ -357,6 +357,10 @@ const faqs = [
     answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
   },
   {
+    question: 'Can I hire Node.js developers for full-stack work, not just the backend?',
+    answer: "Yes. Many teams hire Node.js developers from us for full-stack work, because a JavaScript and TypeScript stack lets the same engineer move between the Node.js backend and a React or Vue frontend. We can hire out Node.js developers who focus purely on APIs and services, or full-stack engineers comfortable across the whole stack. Tell us where you need coverage and we'll match named engineers accordingly, backed by the rest of our 20+ person team."
+  },
+  {
     question: 'How quickly can a developer start?',
     answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. We don't keep a bench — our engineers are experienced and ready to ramp up fast."
   },

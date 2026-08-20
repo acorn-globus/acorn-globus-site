@@ -213,6 +213,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'Is offshore software development the same as IT service outsourcing?',
+    answer: "Offshore software development is one form of IT service outsourcing, where you outsource engineering work to a team in another country instead of hiring locally. To be upfront, we are an offshore team in India, not a nearshore one, so our overlap with US hours is a few hours a day rather than a full workday. The advantage of this kind of IT service outsourcing is a large pool of experienced engineers at a lower cost. The risk is treating it as hand-off-and-hope. We work as an embedded team on your codebase, with direct communication and a two-week trial, so it feels like your own team rather than a faceless vendor."
+  },
+  {
     question: 'Why offshore software development to India specifically?',
     answer: "India combines one of the world's largest pools of experienced, English-speaking software engineers with a cost structure that lets teams in the US, UK, Canada, and Australia stretch their budget further. The workday overlaps with UK/European hours and the US morning, so real-time collaboration is practical. The key is working with a vetted team that communicates well and stays on your codebase — not a rotating pool of anonymous contractors."
   },

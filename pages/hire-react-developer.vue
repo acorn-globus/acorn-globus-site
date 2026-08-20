@@ -380,6 +380,10 @@ const faqs = [
     answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
+    question: 'Can I hire React.js developers specifically, or just React developers?',
+    answer: "It's the same thing. React and React.js are two names for the same library, so when you hire React.js developers from us you're hiring the same engineers you'd get if you searched for React developers. Every React JS developer we propose is a full-time member of our team, screened on real React.js work: components, hooks, state management, TypeScript, and testing. Whether you call it React or React.js, you interview the specific engineers we match and confirm the fit during a two-week trial before committing."
+  },
+  {
     question: 'How quickly can React developers start on my project?',
     answer: 'Most engagements kick off within one to two weeks of the initial call. We match engineers based on your stack and domain, you interview them directly, and the two-week trial begins. If you have an urgent need, we can sometimes start within a few days.'
   },

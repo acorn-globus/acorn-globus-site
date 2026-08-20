@@ -210,6 +210,17 @@
       </div>
     </section>
 
+    <!-- HIRE VUE DEVELOPERS -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm">Hire Vue.js Developers and Vue Developers Who Ship Real Products</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">Whether you want to hire Vue.js developers, hire Vue developers, or hire dedicated Vue.js developers for a longer engagement, you work with the same product engineering team throughout. We are not a marketplace matching you with whoever is free. Every Vue developer we propose has shipped production Vue applications, including our own SaaS, Formester.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Hire a Vue.js developer full-time, part-time, or for a fixed-scope project, meet them before you commit, and run a two-week embedded trial. Need Nuxt on top of Vue? The same engineers cover both, so you can hire Vue and <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt developers</NuxtLink> from one team.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
@@ -308,6 +319,14 @@ const faqs = [
   {
     question: 'Do your Vue developers use TypeScript?',
     answer: "Yes. TypeScript is a standard part of our Vue workflow. Vue 3 was built with TypeScript in mind, and we use it across our projects — including Formester. Our developers are comfortable with strict typing, generics, and type-safe component props."
+  },
+  {
+    question: 'Can I hire dedicated Vue.js developers for my team?',
+    answer: "Yes. You can hire dedicated Vue.js developers who work only on your product, full-time or part-time, embedded with your team using your tools and standups. They are permanent members of our product engineering team, not contractors pulled from a marketplace bench, so you keep the same people as your product grows."
+  },
+  {
+    question: 'Is there a difference between hiring Vue developers and Vue.js developers?',
+    answer: "No. Vue and Vue.js are the same framework, so hiring Vue developers and hiring Vue.js developers means the same thing. Our engineers work in Vue 3 with the Composition API, and most also work in Nuxt, so you can hire for plain Vue or full Nuxt applications from one team."
   }
 ]
 

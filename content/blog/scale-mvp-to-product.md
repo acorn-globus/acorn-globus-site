@@ -1,6 +1,7 @@
 ---
 title: "When (and How) to Scale Your MVP Into a Real Product"
-description: "Your MVP worked, and now the pressure is to scale. Here's how to know it's the right moment — and how to scale without a rewrite."
+metaTitle: "How to Scale Your MVP Into a Full Product (Without a Rewrite)"
+description: "Scaling your MVP into a full product? Here is how to know it is the right moment, and how to scale to production without a rewrite or losing momentum."
 topic: MVP Development
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
