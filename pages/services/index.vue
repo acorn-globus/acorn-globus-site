@@ -50,6 +50,7 @@
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's talk about your product</a>
                 <NuxtLink to="/services/mvp-development/" class="btn-text">Learn more about MVP Development <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
               </div>
+              <p class="text-body" style="margin-top: 16px;">Early-stage and watching your runway? See <NuxtLink to="/mvp-development-for-startups/" style="color: var(--brand-blue); font-weight: 500;">MVP development for startups</NuxtLink>, where we put one core workflow into production in two weeks.</p>
             </div>
 
             <!-- Full Project Delivery -->

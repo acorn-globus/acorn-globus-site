@@ -39,6 +39,7 @@
             <li><NuxtLink to="/services/dedicated-development-team/">Dedicated Development Team</NuxtLink></li>
             <li><NuxtLink to="/services/maintenance-support/">Maintenance &amp; Support</NuxtLink></li>
             <li><NuxtLink to="/services/mvp-development/">MVP Development</NuxtLink></li>
+            <li><NuxtLink to="/mvp-development-for-startups/">MVP Development for Startups</NuxtLink></li>
             <li><NuxtLink to="/services/ai-development/">AI Development</NuxtLink></li>
             <li><NuxtLink to="/services/ai-agent-development/">AI Agent Development</NuxtLink></li>
             <li><NuxtLink to="/services/ai-app-rescue/">AI App Rescue</NuxtLink></li>
