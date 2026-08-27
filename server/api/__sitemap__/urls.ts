@@ -30,6 +30,7 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/services', changefreq: 'monthly', priority: 0.9 },
     { loc: '/services/resource-augmentation', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/mvp-development', changefreq: 'monthly', priority: 0.8 },
+    { loc: '/mvp-development-for-startups', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/full-project-delivery', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/dedicated-development-team', changefreq: 'monthly', priority: 0.8 },
     { loc: '/services/maintenance-support', changefreq: 'monthly', priority: 0.8 },

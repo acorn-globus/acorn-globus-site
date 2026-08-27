@@ -9,8 +9,8 @@
             Back to Services
           </NuxtLink>
           <div class="hero-eyebrow"><span>MVP Development</span></div>
-          <h1 class="text-display-lg" style="margin-bottom: 20px;">Ship a real product. Not a prototype you'll rewrite in six months.</h1>
-          <p class="text-body-lg">We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. We've done it for ourselves with Formester. We'll do it with you.</p>
+          <h1 class="text-display-lg" style="margin-bottom: 20px;">Your first workflow live in two weeks. Not a prototype you'll rewrite in six months.</h1>
+          <p class="text-body-lg">We pick one core workflow of your product and put it into production in two weeks. Real users can use it. Then you find out what they actually do with it, and we build the next thing from what you learn. Full MVP development typically runs 6 to 12 weeks. We've built our own products this way. We'll do it with you.</p>
           <div style="margin-top: 36px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tell us about your product idea</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -18,8 +18,8 @@
         </div>
         <div class="stats-row">
           <div>
-            <div class="stat-value">8-12</div>
-            <div class="stat-label">Weeks to Launch</div>
+            <div class="stat-value">2</div>
+            <div class="stat-label">Weeks to First Workflow Live</div>
           </div>
           <div>
             <div class="stat-value">25+</div>
@@ -44,6 +44,75 @@
           <h2 class="text-display-sm" style="margin-bottom: 20px;">Your runway is ticking. You need builders, not promises.</h2>
           <p class="text-body-lg" style="margin-bottom: 16px;">You've got the vision. Maybe the funding too. What you don't have is six months to hire a team, three months to onboard them, and patience for a prototype that falls apart under real users.</p>
           <p class="text-body-lg">You need a team that can start now, ship something real in weeks, and stick around after launch — not disappear when the invoice clears.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2-WEEK WORKFLOW SPRINT ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">The two-week workflow sprint</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">Twelve weeks is the usual wait before you see anything working. We think that is too long to go without evidence. So we pick one core workflow, agree exactly what it covers before anyone writes code, and put it in production in two weeks. Not a prototype. Not a clickable mockup. Something deployed that your users can actually use.</p>
+          <p class="text-body-lg">Two weeks is short enough that you can afford to be wrong. That is the point.</p>
+        </div>
+
+        <div class="feature-cards-grid" style="margin-top: 36px;">
+          <div class="feature-card">
+            <h3>What fits in two weeks</h3>
+            <p>One core workflow, end to end. Real authentication, real data, deployed to production. For Eitoss we built an industrial data analysis workflow covering 40+ parameters, with time-period comparison, tables, graphs, and comparison against other custom flows. That took two weeks.</p>
+          </div>
+          <div class="feature-card">
+            <h3>What doesn't fit in two weeks</h3>
+            <p>A whole product. Multi-role permission systems, payments plus compliance work, native mobile alongside web, or anything gated behind a long third-party integration. We'll tell you which of these you're asking for before you commit, not halfway through.</p>
+          </div>
+          <div class="feature-card">
+            <h3>We agree the scope first</h3>
+            <p>Before development starts we define exactly which workflow gets built, what "done" means, and how many people it takes. A complex workflow needs more people to hit two weeks. That is our problem to solve, and it is settled upfront, so there is no surprise on the invoice.</p>
+          </div>
+          <div class="feature-card">
+            <h3>You own it from day one</h3>
+            <p>Code, infrastructure, accounts. All yours from the first commit, not handed over at the end if things go well.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VALIDATED LEARNING ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div style="max-width: 720px;">
+          <h2 class="text-display-sm" style="margin-bottom: 20px;">Then the part most agencies skip: find out if anyone uses it</h2>
+          <p class="text-body-lg" style="margin-bottom: 16px;">Plenty of startups build every feature on the list and still don't grow. Users end up using two or three things out of twenty. The teams that get somewhere ship one workflow, watch how people actually use it, and decide the next step from what they see.</p>
+          <p class="text-body-lg" style="margin-bottom: 16px;">So once your workflow is live, we push you to put it in front of real users before we build anything else. What they do with it decides the next set of features and the next timeline. Not the original feature list.</p>
+          <p class="text-body-lg" style="font-weight: 600; color: var(--on-surface);">Our milestone isn't "the code shipped." It's "the workflow shipped and people are using it." We've built and run our own products, so we can help you read what comes back.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROOF: OUR OWN CADENCE ===== -->
+    <section class="section-redesign">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">This is the pace we already work at</h2>
+        </div>
+        <div class="feature-cards-grid" style="margin-top: 32px;">
+          <div class="feature-card">
+            <h3>AI form builder in 5 days</h3>
+            <p>In Formester, building a form meant dragging and dropping every element, and how long it took depended on the size of the form and the UI work involved. We added AI so you describe what you need in plain language, including the logic and the layout, and the form is built in 15 seconds. That feature took 5 days.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Eitoss analytics workflow in 2 weeks</h3>
+            <p>An industrial data analysis workflow across 40+ parameters, with comparison over time periods, tables and graphs, and comparison against other custom flows. Two weeks, in production.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Payment gateways in under a week</h3>
+            <p>Payment gateway integration in Formester, live in less than a week.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Google Sheets integration in under 3 days</h3>
+            <p>Connecting Formester to external apps like Google Sheets took less than three days.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -142,6 +211,7 @@
         <div class="section-header">
           <h2 class="text-display-sm">What you get</h2>
         </div>
+        <p class="text-body-lg" style="max-width: 720px; margin-bottom: 28px;">Our MVP development services cover the whole build, from scoping the minimum viable product through to a production launch you own outright. As an MVP software development company we handle the engineering, the architecture and the deployment, so you are not stitching together freelancers.</p>
         <ul class="deliverables-list">
           <li>Product scoping and feature prioritization — what to build first, what to skip</li>
           <li>Technical architecture and stack selection</li>
@@ -165,7 +235,7 @@
         <div class="details-table">
           <div class="details-row">
             <div class="details-label">Timeline</div>
-            <div class="details-value">6-12 weeks typical</div>
+            <div class="details-value">First workflow live in 2 weeks · full MVP 6-12 weeks</div>
           </div>
           <div class="details-row">
             <div class="details-label">Team</div>
@@ -173,7 +243,7 @@
           </div>
           <div class="details-row">
             <div class="details-label">Pricing</div>
-            <div class="details-value">Fixed-price or capped time-and-materials</div>
+            <div class="details-value">$25-80 per hour depending on complexity · scope and team size agreed before we start</div>
           </div>
           <div class="details-row">
             <div class="details-label">Code ownership</div>
@@ -193,6 +263,10 @@
           <div class="audience-card">
             <h3>For funded startups</h3>
             <p>You've got the vision and the funding. We'll be the team that brings it to life. Fixed-price and milestone-based options keep your budget predictable while your product takes shape.</p>
+          </div>
+          <div class="audience-card">
+            <h3>MVP development for startups</h3>
+            <p>If you are pre-seed or seed and every week of runway counts, the two-week workflow sprint gets something real in front of users before you spend the rest of the budget. You learn whether the idea holds up while you still have room to change direction. <NuxtLink to="/mvp-development-for-startups/" style="color: var(--brand-blue); font-weight: 500;">More on MVP development for startups</NuxtLink>.</p>
           </div>
           <div class="audience-card">
             <h3>For non-technical founders</h3>
@@ -290,7 +364,23 @@
 const faqs = [
   {
     question: 'How long does it take to build an MVP?',
-    answer: "Most MVPs take 6 to 12 weeks from kickoff to launch. We typically have a demoable product within about 8 weeks and a production launch shortly after — that's the timeline we hit with Eitoss, whose MVP went live in 3 months. The exact timeline depends on scope, which we define together during discovery."
+    answer: "You get one core workflow live in production in 2 weeks. A full MVP takes 6 to 12 weeks from kickoff to launch, with a demoable product usually around 8 weeks. That is the timeline we hit with Eitoss, whose full MVP went live in 3 months. The exact timeline depends on scope, which we agree with you before development starts."
+  },
+  {
+    question: 'Can you build an MVP in 2 weeks?',
+    answer: "We can put one core workflow of your product into production in 2 weeks, and that is a real deployed workflow your users can use, not a prototype. A complete MVP with every workflow takes longer, usually 6 to 12 weeks. We tell you exactly which parts fit into the 2 weeks before you commit. As an example, we built an industrial data analysis workflow for Eitoss covering 40+ parameters with time-period comparison, tables and graphs in 2 weeks."
+  },
+  {
+    question: 'Can an agency deliver an MVP in 4, 6 or 8 weeks?',
+    answer: "It depends entirely on how many workflows the MVP contains. We put the first core workflow in production in 2 weeks, and most full MVPs land between 6 and 12 weeks. If someone promises your entire product in 4 weeks without seeing the scope, ask which workflows they are leaving out. We agree the scope in writing first so the timeline means something."
+  },
+  {
+    question: 'What is rapid MVP development?',
+    answer: "Rapid MVP development means shipping the smallest useful piece of your product quickly so you can learn from real users, rather than building every feature before launch. In practice that is our 2-week workflow sprint: one core workflow, in production, then you test it with users and we decide the next step from what they actually do."
+  },
+  {
+    question: 'How much does MVP development cost per hour?',
+    answer: "Our rate is $25 to $80 per hour depending on the complexity of the project and its dependencies. A 2-week workflow sprint is around 80 hours at a team size of one, and more when a complex workflow needs more people. Team size and total hours are agreed with you before development starts, so there are no surprises. This prices one workflow, not an entire product."
   },
   {
     question: 'What does an MVP from AcornGlobus include?',
@@ -323,18 +413,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
-  description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
-  ogTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
-  ogDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  title: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
+  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
+  ogDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
   ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development | Ship a Real Product in 6-12 Weeks | AcornGlobus',
-  twitterDescription: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
+  twitterDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
   twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
 
@@ -349,7 +439,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'MVP Development',
-  description: 'We build MVPs that are production-ready from day one — clean code, proper architecture, ready for users and investors. 6-12 weeks to launch.',
+  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
   url: '/services/mvp-development',
 })
 
