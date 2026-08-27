@@ -413,9 +413,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'MVP Development Company | First Workflow Live in 2 Weeks | AcornGlobus',
+  title: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
   description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
-  ogTitle: 'MVP Development Company | First Workflow Live in 2 Weeks | AcornGlobus',
+  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
   ogDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
   ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
   ogImageWidth: 1200,
@@ -423,7 +423,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development Company | First Workflow Live in 2 Weeks | AcornGlobus',
+  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
   twitterDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
   twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
