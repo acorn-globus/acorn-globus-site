@@ -316,6 +316,10 @@ definePageMeta({
 
 const faqs = [
   {
+    question: 'Do you do MVP mobile app development?',
+    answer: 'Yes. MVP mobile app development is one of the most common reasons founders come to us. We can put one core workflow of your app into production in about 2 weeks so you can get it in front of real users, then decide the next set of features from what they actually do with it. A full mobile MVP typically runs 6 to 12 weeks depending on how many workflows it needs and whether it is cross-platform or native.'
+  },
+  {
     question: 'Do you build native iOS and Android apps, or cross-platform?',
     answer: 'Both. We build cross-platform apps with Flutter and React Native, where one codebase ships to both the App Store and Google Play, and we build native apps in Swift for iOS and Kotlin for Android. Cross-platform is faster to build and cheaper to maintain, so it is the right call for most products. Native wins when your app needs platform-specific power or the newest OS features on day one. Because we offer both, we recommend the one that fits your product, not the one we would rather sell.'
   },
