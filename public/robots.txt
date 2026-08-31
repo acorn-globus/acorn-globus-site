@@ -1,20 +1,23 @@
+# robots.txt for acornglobus.com
+#
+# Two things this file is deliberately shaped to avoid:
+#
+# 1. NO per-bot groups. A crawler obeys the MOST SPECIFIC matching User-agent group
+#    and ignores all others, so the old "User-agent: Googlebot / Allow: /" group made
+#    Googlebot skip every Disallow below. Keep one wildcard group unless a bot
+#    genuinely needs different rules.
+#
+# 2. NO blanket "Allow: /". Google resolves conflicts by longest match, so Allow: /
+#    was harmless there, but simpler parsers match in order and let /admin/ through.
+#    Anything not disallowed is crawlable by default, so the line bought us nothing
+#    and broke stricter parsers.
+#
+# Disallow lines must sit directly under their User-agent with no blank line or
+# non-group directive (like Sitemap) in between, or stricter parsers orphan them.
+
 User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://acornglobus.com/sitemap.xml
-
-# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /_nuxt/
 Disallow: /.nuxt/
 
-# Allow all search engines to crawl
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Crawl delay (optional)
-Crawl-delay: 1
+Sitemap: https://acornglobus.com/sitemap.xml
