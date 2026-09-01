@@ -26,9 +26,9 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What Is Nuxt?</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Nuxt is the meta-framework for Vue.js. Where Vue gives you a fast, component-driven UI layer, Nuxt wraps it in everything a real application needs to go to production: server-side rendering (SSR), static site generation (SSG), file-based routing, an API and server layer through Nitro, automatic code splitting, and first-class SEO controls. You get the productivity of Vue with the structure and performance of a full framework — without wiring it all together yourself.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Nuxt is the meta-framework for Vue.js. Where Vue gives you a fast, component-driven UI layer, Nuxt wraps it in everything a real application needs to go to production: server-side rendering (SSR), static site generation (SSG), file-based routing, an API and server layer through Nitro, automatic code splitting, and first-class SEO controls. You get the productivity of Vue with the structure and performance of a full framework, without wiring it all together yourself.</p>
           <p class="text-body-lg" style="margin-top: 16px;">That rendering flexibility is why teams reach for Nuxt. The same codebase can server-render a marketing site for SEO, statically generate a docs portal at build time, and hydrate into a fully interactive SPA for a logged-in dashboard. Nitro lets it deploy to Node servers, serverless platforms, and edge runtimes from one project. It's the framework you pick when Google needs to see your content and users need pages that load fast.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">We didn't add Nuxt to a skills list to win pitches. We build on it. Formester runs on Nuxt, this website runs on Nuxt 4, and our engineers work in the framework daily — so the knowledge you're hiring is operational, not theoretical.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">We didn't add Nuxt to a skills list to win pitches. We build on it. Formester runs on Nuxt, this website runs on Nuxt 4, and our engineers work in the framework daily. So the knowledge you're hiring is operational, not theoretical.</p>
         </div>
       </div>
     </section>
@@ -44,9 +44,9 @@
           <div class="decision-card decision-yes">
             <h3>Choose Nuxt when</h3>
             <ul>
-              <li>You need SEO to work out of the box — server-rendered HTML that search engines and AI answer engines can read without executing JavaScript.</li>
+              <li>You need SEO to work out of the box, server-rendered HTML that search engines and AI answer engines can read without executing JavaScript.</li>
               <li>You want fast first-contentful paint on content-heavy pages: marketing sites, blogs, e-commerce, docs.</li>
-              <li>Your app mixes page types — static marketing pages, server-rendered listings, and an interactive dashboard — and you want one codebase with per-route rendering.</li>
+              <li>Your app mixes page types (static marketing pages, server-rendered listings, and an interactive dashboard) and you want one codebase with per-route rendering.</li>
               <li>You're already invested in Vue and want structure, conventions, and a server layer without assembling the toolchain yourself.</li>
               <li>You need to deploy to the edge or serverless, where Nitro's portable output is a real advantage.</li>
             </ul>
@@ -54,9 +54,9 @@
           <div class="decision-card decision-no">
             <h3>You may not need Nuxt when</h3>
             <ul>
-              <li>You're building a purely internal, behind-login tool where SEO is irrelevant — plain Vue with Vite may be simpler.</li>
+              <li>You're building a purely internal, behind-login tool where SEO is irrelevant, plain Vue with Vite may be simpler.</li>
               <li>Your product is a single-page app with no crawlable content and no server-rendering needs.</li>
-              <li>Your team is committed to React — in that case Next.js is the closer equivalent, and we build in React too.</li>
+              <li>Your team is committed to React, in that case Next.js is the closer equivalent, and we build in React too.</li>
             </ul>
           </div>
         </div>
@@ -73,8 +73,8 @@
     <section class="section-redesign" style="background: var(--surface);">
       <div class="container-redesign">
         <div style="max-width: 720px;">
-          <h2 class="text-display-sm">We Run Nuxt in Production — Including This Website</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">acornglobus.com is a Nuxt 4 application: server-side rendered for SEO, statically optimized where it makes sense, and tuned for fast loads. Formester, our no-code AI form builder, is built on Nuxt too. Running our own products on the framework means we've hit — and solved — the problems that only show up in production: hydration mismatches, caching strategy, SSR data fetching, bundle size discipline, and Core Web Vitals under real traffic.</p>
+          <h2 class="text-display-sm">We Run Nuxt in Production, Including This Website</h2>
+          <p class="text-body-lg" style="margin-top: 20px;">acornglobus.com is a Nuxt 4 application: server-side rendered for SEO, statically optimized where it makes sense, and tuned for fast loads. Formester, our no-code AI form builder, is built on Nuxt too. Running our own products on the framework means we've hit (and solved) the problems that only show up in production: hydration mismatches, caching strategy, SSR data fetching, bundle size discipline, and Core Web Vitals under real traffic.</p>
           <p class="text-body-lg" style="margin-top: 16px;">That depth shows up in client work. Our Nuxt developers don't just scaffold a project and hope. They know when to render on the server versus statically generate, how to structure composables and the <code>server/</code> directory so the app stays maintainable, and how to keep the JavaScript payload small as the product grows. That knowledge comes from building and maintaining live Nuxt applications every day.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Most marketplaces match you with whoever's available. We're not a marketplace. We're a 20+ person product engineering team, and Nuxt is core to how we build. The developers you'll work with are the same people who ship Formester and this site.</p>
           <div style="margin-top: 32px;">
@@ -154,7 +154,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
             <h3>SEO-First Marketing Sites</h3>
-            <p>Server-rendered marketing sites and landing pages that rank — crawlable HTML, structured data, and Core Web Vitals scores that hold up. This site is one of them.</p>
+            <p>Server-rendered marketing sites and landing pages that rank: crawlable HTML, structured data, and Core Web Vitals scores that hold up. This site is one of them.</p>
           </div>
           <div class="feature-card">
             <h3>E-Commerce Storefronts</h3>
@@ -166,11 +166,11 @@
           </div>
           <div class="feature-card">
             <h3>Content &amp; Docs Platforms</h3>
-            <p>Statically generated docs, blogs, and knowledge bases built with Nuxt Content — fast, versionable, and easy for non-developers to update.</p>
+            <p>Statically generated docs, blogs, and knowledge bases built with Nuxt Content: fast, versionable, and easy for non-developers to update.</p>
           </div>
           <div class="feature-card">
             <h3>Full-Stack Apps on Nitro</h3>
-            <p>Front end and API in one Nuxt project using server routes, deployed to Node, serverless, or the edge — fewer moving parts, one codebase to maintain.</p>
+            <p>Front end and API in one Nuxt project using server routes, deployed to Node, serverless, or the edge, fewer moving parts, one codebase to maintain.</p>
           </div>
         </div>
       </div>
@@ -187,7 +187,7 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery call</h3>
-              <p>We learn your product, your stack, and what you need from a Nuxt developer. No generic proposals — we match on your specific rendering, SEO, and performance requirements.</p>
+              <p>We learn your product, your stack, and what you need from a Nuxt developer. No generic proposals. We match on your specific rendering, SEO, and performance requirements.</p>
             </div>
           </div>
           <div class="process-step">
@@ -201,7 +201,7 @@
             <div class="step-number">3</div>
             <div>
               <h3>2-week embedded trial</h3>
-              <p>Your developer joins your team — same tools, same standups, same codebase. Evaluate fit and productivity with zero commitment.</p>
+              <p>Your developer joins your team: same tools, same standups, same codebase. Evaluate fit and productivity with zero commitment.</p>
             </div>
           </div>
           <div class="process-step">
@@ -228,7 +228,7 @@
           </div>
           <div class="hiring-model-card">
             <h3>Part-Time Engagement</h3>
-            <p>Need Nuxt expertise but not full-time? Our developers can work part-time on your project — ideal for early-stage products or supplementing an existing team.</p>
+            <p>Need Nuxt expertise but not full-time? Our developers can work part-time on your project, ideal for early-stage products or supplementing an existing team.</p>
           </div>
           <div class="hiring-model-card">
             <h3>Project-Based</h3>
@@ -251,7 +251,7 @@
           <div class="project-card">
             <div class="project-meta">Our own SaaS product</div>
             <h3>Formester</h3>
-            <p>No-code, AI-powered form builder built on Vue and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
+            <p>No-code, AI-powered form builder built on Vue and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product. We build it, maintain it, and improve it every day.</p>
             <div style="margin-top: 16px;">
               <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
@@ -295,7 +295,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Work With a Team That Ships Nuxt Daily?</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Nuxt developers who've built real products in production — including our own site and SaaS.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Nuxt developers who've built real products in production, including our own site and SaaS.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -337,7 +337,7 @@ const faqs = [
   },
   {
     question: 'Do you actually use Nuxt yourselves?',
-    answer: "Yes. acornglobus.com — the site you're reading — is built on Nuxt 4. Our own SaaS product, Formester, is built on Nuxt too. Our engineers work in the framework in production every day, so the experience you're hiring is operational, not theoretical."
+    answer: "Yes. acornglobus.com, the site you're reading, is built on Nuxt 4. Our own SaaS product, Formester, is built on Nuxt too. Our engineers work in the framework in production every day, so the experience you're hiring is operational, not theoretical."
   },
   {
     question: 'Which versions of Nuxt do you work with?',
@@ -345,7 +345,7 @@ const faqs = [
   },
   {
     question: 'Can Nuxt developers handle both SSR and static generation?',
-    answer: "Yes. Nuxt supports server-side rendering, static site generation, and hybrid rendering where different routes use different modes in the same project. Our developers choose the right mode per route — statically generating content pages while server-rendering dynamic ones — and configure Nitro to deploy to Node, serverless, or edge targets."
+    answer: "Yes. Nuxt supports server-side rendering, static site generation, and hybrid rendering where different routes use different modes in the same project. Our developers choose the right mode per route, statically generating content pages while server-rendering dynamic ones, and configure Nitro to deploy to Node, serverless, or edge targets."
   },
   {
     question: 'How much does it cost to hire a Nuxt developer?',
@@ -370,10 +370,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Nuxt Developers in India | Dedicated Nuxt & Vue Engineers | AcornGlobus',
-  description: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
-  ogTitle: 'Hire Nuxt Developers in India | Dedicated Nuxt & Vue Engineers | AcornGlobus',
-  ogDescription: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
+  title: 'Hire Nuxt Developers | Dedicated Nuxt & Vue Engineers',
+  description: 'Hire Nuxt developers in India who ship Nuxt to production daily. This site and our SaaS Formester run on Nuxt. SSR, SSG, Nitro and SEO expertise.',
+  ogTitle: 'Hire Nuxt Developers | Dedicated Nuxt & Vue Engineers',
+  ogDescription: 'Hire Nuxt developers in India who ship Nuxt to production daily. This site and our SaaS Formester run on Nuxt. SSR, SSG, Nitro and SEO expertise.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-nuxt-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

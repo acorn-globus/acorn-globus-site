@@ -324,9 +324,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'AI Development Services | AI Software Development Company | AcornGlobus',
-  description: 'AI development company and generative AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features, and AI wired into your product. We run AI in our own SaaS and operate our own AI agents. Serving the US, UK, Canada & Australia.',
-  ogTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
+  title: 'AI Development Services | AI Software Company',
+  description: 'AI development company shipping agents, generative AI and LLM/RAG features into real products. We run AI in our own SaaS. US, UK, Canada, Australia.',
+  ogTitle: 'AI Development Services | AI Software Company',
   ogDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG features. We run AI in our own SaaS and operate our own AI agents.',
   ogImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
   ogImageWidth: 1200,
@@ -334,7 +334,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/ai-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'AI Development Services | AI Software Development Company | AcornGlobus',
+  twitterTitle: 'AI Development Services | AI Software Company',
   twitterDescription: 'AI development services from a team that actually ships AI: agents, generative AI, LLM & RAG. We run AI in our own SaaS.',
   twitterImage: 'https://acornglobus.com/images/og/og-ai-development.webp',
 })

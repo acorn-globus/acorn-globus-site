@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Django Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Django Developers in India Who Ship Production Backends</h1>
-          <p class="text-body-lg">Django is the Python web framework we reach for when a project needs a secure, database-backed backend built fast and built to last. When you hire our Django developers, you get Python engineers from a 20+ person product team — people who know the ORM, the admin, DRF, migrations, and how to keep a Django app fast under real traffic. No bench, no rotating contractors.</p>
+          <p class="text-body-lg">Django is the Python web framework we reach for when a project needs a secure, database-backed backend built fast and built to last. When you hire our Django developers, you get Python engineers from a 20+ person product team: people who know the ORM, the admin, DRF, migrations, and how to keep a Django app fast under real traffic. No bench, no rotating contractors.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -27,8 +27,8 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What Is Django?</h2>
           <p class="text-body-lg" style="margin-top: 20px;">Django is a high-level Python web framework that ships with the parts most applications need on day one: an object-relational mapper (ORM), an authentication system, a URL router, a templating engine, and a production-grade admin interface generated straight from your data models. Its "batteries included" philosophy means less boilerplate and fewer third-party decisions before you can build a real feature.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Because Django is a Python framework, it sits naturally alongside the rest of the Python ecosystem — data processing with Pandas, task queues with Celery, and machine-learning models served from the same codebase. Add Django REST Framework (DRF) and the same backend powers a clean JSON API for a React, Vue, or mobile front end. It's the framework you pick when you want to move fast without giving up security, structure, or maintainability.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Django is a natural sibling to plain Python backend work. If you're weighing frameworks, our <NuxtLink to="/hire-python-developer/" style="color: var(--brand-blue); font-weight: 500;">Python developers</NuxtLink> work across Django, Flask, and FastAPI — and we'll tell you honestly which fits your product.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Because Django is a Python framework, it sits naturally alongside the rest of the Python ecosystem: data processing with Pandas, task queues with Celery, and machine-learning models served from the same codebase. Add Django REST Framework (DRF) and the same backend powers a clean JSON API for a React, Vue, or mobile front end. It's the framework you pick when you want to move fast without giving up security, structure, or maintainability.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Django is a natural sibling to plain Python backend work. If you're weighing frameworks, our <NuxtLink to="/hire-python-developer/" style="color: var(--brand-blue); font-weight: 500;">Python developers</NuxtLink> work across Django, Flask, and FastAPI. And we'll tell you honestly which fits your product.</p>
         </div>
       </div>
     </section>
@@ -45,18 +45,18 @@
             <h3>Choose Django when</h3>
             <ul>
               <li>You're building a database-backed application and want an ORM, migrations, and a real admin interface out of the box.</li>
-              <li>You need a secure backend fast — Django handles CSRF, SQL injection, XSS, and auth defaults so you don't hand-roll them.</li>
-              <li>You want a JSON API for a React, Vue, or mobile front end — Django REST Framework is mature and batteries-included.</li>
+              <li>You need a secure backend fast: Django handles CSRF, SQL injection, XSS, and auth defaults so you don't hand-roll them.</li>
+              <li>You want a JSON API for a React, Vue, or mobile front end, Django REST Framework is mature and batteries-included.</li>
               <li>Your product lives in the Python ecosystem: data pipelines, analytics, or ML models you want served from one codebase.</li>
-              <li>Admin users need to manage content or records — Django's auto-generated admin saves weeks of internal-tooling work.</li>
+              <li>Admin users need to manage content or records, Django's auto-generated admin saves weeks of internal-tooling work.</li>
             </ul>
           </div>
           <div class="decision-card decision-no">
             <h3>You may not need Django when</h3>
             <ul>
-              <li>You're building a tiny microservice or a single high-throughput async endpoint — FastAPI or Flask may be leaner.</li>
+              <li>You're building a tiny microservice or a single high-throughput async endpoint, FastAPI or Flask may be leaner.</li>
               <li>Your product is a real-time system built around websockets and event streams as the primary workload.</li>
-              <li>You have no database and no server-side logic — a static site or serverless function may be all you need.</li>
+              <li>You have no database and no server-side logic, a static site or serverless function may be all you need.</li>
             </ul>
           </div>
         </div>
@@ -74,12 +74,12 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What Our Django Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our Django developers know the language and the ecosystem that makes production applications work — not just the tutorial happy path.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our Django developers know the language and the ecosystem that makes production applications work, not just the tutorial happy path.</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
             <h3>REST APIs with DRF</h3>
-            <p>Clean, versioned JSON APIs built with Django REST Framework — serializers, viewsets, authentication, and permissions done right. The kind of backend your frontend and mobile teams enjoy working with.</p>
+            <p>Clean, versioned JSON APIs built with Django REST Framework: serializers, viewsets, authentication, and permissions done right. The kind of backend your frontend and mobile teams enjoy working with.</p>
           </div>
           <div class="feature-card">
             <h3>Content &amp; Admin-Driven Apps</h3>
@@ -91,7 +91,7 @@
           </div>
           <div class="feature-card">
             <h3>Data &amp; ML Integration</h3>
-            <p>Django backends that serve machine-learning models and data pipelines from the same Python codebase — deployed with monitoring and versioning, not stuck in a notebook.</p>
+            <p>Django backends that serve machine-learning models and data pipelines from the same Python codebase, deployed with monitoring and versioning, not stuck in a notebook.</p>
           </div>
           <div class="feature-card">
             <h3>API Backends for SPAs &amp; Mobile</h3>
@@ -178,21 +178,21 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery call</h3>
-              <p>We learn your product, your stack, and the kind of Django developer you need. No generic proposals — a real conversation about your data model, API needs, and goals.</p>
+              <p>We learn your product, your stack, and the kind of Django developer you need. No generic proposals: a real conversation about your data model, API needs, and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer matching</h3>
-              <p>We propose specific engineers with relevant Django and Python experience — not resumes from a database. You interview them directly.</p>
+              <p>We propose specific engineers with relevant Django and Python experience, not resumes from a database. You interview them directly.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div>
               <h3>2-week embedded trial</h3>
-              <p>Your developer joins your team — same tools, same standups, same codebase. Evaluate real output with zero long-term commitment.</p>
+              <p>Your developer joins your team: same tools, same standups, same codebase. Evaluate real output with zero long-term commitment.</p>
             </div>
           </div>
           <div class="process-step">
@@ -219,7 +219,7 @@
           </div>
           <div class="hiring-model-card">
             <h3>Part-Time Engagement</h3>
-            <p>Need Django expertise but not full-time? Our developers can work part-time on your project — ideal for early-stage products or supplementing an existing team.</p>
+            <p>Need Django expertise but not full-time? Our developers can work part-time on your project, ideal for early-stage products or supplementing an existing team.</p>
           </div>
           <div class="hiring-model-card">
             <h3>Project-Based</h3>
@@ -294,15 +294,15 @@ const faqs = [
   },
   {
     question: 'What is the difference between Python and Django?',
-    answer: "Python is the programming language. Django is a web framework written in Python that gives you a structured way to build database-backed web applications and APIs — an ORM, an admin, authentication, routing, and security defaults out of the box. You hire Python developers for the language and its broad ecosystem; you hire Django developers when the project is specifically a Django web application or API."
+    answer: "Python is the programming language. Django is a web framework written in Python that gives you a structured way to build database-backed web applications and APIs: an ORM, an admin, authentication, routing, and security defaults out of the box. You hire Python developers for the language and its broad ecosystem; you hire Django developers when the project is specifically a Django web application or API."
   },
   {
     question: 'When should I choose Django over Flask or FastAPI?',
-    answer: "Choose Django when you want a batteries-included framework for a database-backed application — you get the ORM, migrations, admin, and auth without wiring them together. Flask is lighter and good for small services where you want to choose every component yourself. FastAPI shines for high-performance async APIs. Our Python developers work across all three and will recommend honestly based on your product."
+    answer: "Choose Django when you want a batteries-included framework for a database-backed application. You get the ORM, migrations, admin, and auth without wiring them together. Flask is lighter and good for small services where you want to choose every component yourself. FastAPI shines for high-performance async APIs. Our Python developers work across all three and will recommend honestly based on your product."
   },
   {
     question: 'Do your Django developers use Django REST Framework?',
-    answer: "Yes. Django REST Framework (DRF) is our standard for building JSON APIs on Django — serializers, viewsets, authentication, and permissions. It's how we power React, Vue, and mobile front ends from a Django backend. We also work with GraphQL where it fits the product better."
+    answer: "Yes. Django REST Framework (DRF) is our standard for building JSON APIs on Django: serializers, viewsets, authentication, and permissions. It's how we power React, Vue, and mobile front ends from a Django backend. We also work with GraphQL where it fits the product better."
   },
   {
     question: 'How much does it cost to hire a Django developer from India?',
@@ -318,15 +318,15 @@ const faqs = [
   },
   {
     question: "What happens if a Django developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away, with no cost for the trial period. If issues come up later in the engagement, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away, with no cost for the trial period. If issues come up later in the engagement, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
 useSeoMeta({
-  title: 'Hire Django Developers in India | Dedicated Django & Python Engineers | AcornGlobus',
-  description: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
-  ogTitle: 'Hire Django Developers in India | Dedicated Django & Python Engineers | AcornGlobus',
-  ogDescription: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
+  title: 'Hire Django Developers | Django & Python Engineers',
+  description: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, Postgres. 20+ person Python team, 2-week trial.',
+  ogTitle: 'Hire Django Developers | Django & Python Engineers',
+  ogDescription: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, Postgres. 20+ person Python team, 2-week trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-django-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

@@ -39,11 +39,11 @@
           </div>
           <div class="feature-card">
             <h3>Partnerships That Actually Grow</h3>
-            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep -- full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
+            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep: full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
+            <p>Formester is our SaaS product, live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Python project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>
@@ -58,7 +58,7 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our Python Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our Python developers don't just know the language -- they know the ecosystem that makes production applications work.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our Python developers don't just know the language. They know the ecosystem that makes production applications work.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
@@ -67,7 +67,7 @@
           </div>
           <div class="build-card">
             <h3>Data Pipelines and ETL</h3>
-            <p>Automated data processing, transformation, and loading with Pandas, NumPy, and Apache Airflow. From raw data to actionable insights -- pipelines that run reliably, not just in a notebook.</p>
+            <p>Automated data processing, transformation, and loading with Pandas, NumPy, and Apache Airflow. From raw data to actionable insights, pipelines that run reliably, not just in a notebook.</p>
           </div>
           <div class="build-card">
             <h3>Django Web Applications</h3>
@@ -159,14 +159,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your product, your team's workflow, and the kind of Python developer you need. No generic pitches -- just a real conversation about your architecture and goals.</p>
+              <p>We learn about your product, your team's workflow, and the kind of Python developer you need. No generic pitches, just a real conversation about your architecture and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your stack, domain, and team culture, we propose specific engineers -- not resumes from a database. You interview them directly. No account managers in between.</p>
+              <p>Based on your stack, domain, and team culture, we propose specific engineers, not resumes from a database. You interview them directly. No account managers in between.</p>
             </div>
           </div>
           <div class="process-step">
@@ -242,7 +242,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our Python engineers into your existing team — same standups, same repo, same workflow.</p>
+            <p>Embed our Python engineers into your existing team: same standups, same repo, same workflow.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -294,7 +294,7 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire a Python developer from India?',
-    answer: "Rates depend on seniority and engagement model. Our dedicated Python developers work on monthly engagement rates, not hourly bidding. We're transparent about pricing from the first call -- no hidden fees, no surprise markups. We also offer a two-week embedded trial so you can evaluate the fit before committing. Contact us for a specific quote based on your needs."
+    answer: "Rates depend on seniority and engagement model. Our dedicated Python developers work on monthly engagement rates, not hourly bidding. We're transparent about pricing from the first call. No hidden fees, no surprise markups. We also offer a two-week embedded trial so you can evaluate the fit before committing. Contact us for a specific quote based on your needs."
   },
   {
     question: 'How quickly can a Python developer start on my project?',
@@ -302,27 +302,27 @@ const faqs = [
   },
   {
     question: "What's the difference between hiring a freelance Python developer and your dedicated team model?",
-    answer: "A freelancer gives you one person with no backup, no team lead, and no continuity guarantee. Our dedicated developers work exclusively on your product -- same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a data pipeline, they have senior engineers to consult with. Freelancers are on their own."
+    answer: "A freelancer gives you one person with no backup, no team lead, and no continuity guarantee. Our dedicated developers work exclusively on your product: same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a data pipeline, they have senior engineers to consult with. Freelancers are on their own."
   },
   {
     question: 'Do your Python developers have experience with Django, Flask, and FastAPI?',
-    answer: "Yes. Our Python engineers work across the major frameworks -- Django for full-featured web applications, Flask for lightweight APIs, and FastAPI for high-performance async services. We also have experience with data processing libraries (Pandas, NumPy), task queues (Celery), and cloud-native Python (AWS Lambda, serverless)."
+    answer: "Yes. Our Python engineers work across the major frameworks: Django for full-featured web applications, Flask for lightweight APIs, and FastAPI for high-performance async services. We also have experience with data processing libraries (Pandas, NumPy), task queues (Celery), and cloud-native Python (AWS Lambda, serverless)."
   },
   {
     question: 'Can I scale the team up or down?',
-    answer: "Yes. After the initial three-month commitment, you can scale with two-week notice. PerformLine started with one of our engineers and grew to eight-plus over two years. You can add Python developers, backend engineers, QA, or DevOps as your product grows -- and scale back when you need to. Monthly rolling engagement after the initial period."
+    answer: "Yes. After the initial three-month commitment, you can scale with two-week notice. PerformLine started with one of our engineers and grew to eight-plus over two years. You can add Python developers, backend engineers, QA, or DevOps as your product grows, and scale back when you need to. Monthly rolling engagement after the initial period."
   },
   {
     question: "What happens if a Python developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right -- for any reason -- you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right (for any reason) you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
 useSeoMeta({
   title: 'Hire Python Developers in India | AcornGlobus',
-  description: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
+  description: 'Hire senior Python developers from a 20+ person team, not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
   ogTitle: 'Hire Python Developers in India | AcornGlobus',
-  ogDescription: 'Hire senior Python developers from a 20+ person team -- not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
+  ogDescription: 'Hire senior Python developers from a 20+ person team, not a marketplace. Named engineers, 2-week trial, no bench. Partnerships that last. Talk to us.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-python-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

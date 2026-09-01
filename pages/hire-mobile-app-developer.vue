@@ -93,7 +93,7 @@
           <div class="decision-card decision-yes">
             <h3>Native is right when</h3>
             <ul>
-              <li>Your app leans on cutting-edge, platform-specific APIs or the newest OS features on launch day.</li>
+              <li>Your app leans on platform-specific APIs or the newest OS features on launch day.</li>
               <li>You need heavy on-device computation, AR/VR, or very high-performance graphics.</li>
               <li>You have a large existing native codebase you are extending rather than starting fresh.</li>
               <li>You want the deepest possible integration with iOS or Android hardware and frameworks.</li>
@@ -315,6 +315,8 @@ definePageMeta({
 })
 
 const faqs = [
+  { question: 'How do I hire mobile app developers?', answer: 'Start by deciding whether you need cross-platform or native, because that determines who you are hiring. Cross-platform with Flutter or React Native suits most products and one team maintains both apps. Native suits apps that need deep hardware access or day-one support for new OS features. Then interview the individual engineers and use a trial period rather than judging from a portfolio.' },
+  { question: 'How do I hire app developers for iOS and Android?', answer: 'You can hire one cross-platform team that ships to both stores from a single codebase, or separate native iOS and Android developers. Cross-platform is cheaper to build and maintain and keeps features in sync. Native wins when the app leans on platform-specific power. We staff both, so we recommend by what fits your product rather than what we would rather sell.' },
   {
     question: 'Do you do MVP mobile app development?',
     answer: 'Yes. MVP mobile app development is one of the most common reasons founders come to us. We can put one core workflow of your app into production in about 2 weeks so you can get it in front of real users, then decide the next set of features from what they actually do with it. A full mobile MVP typically runs 6 to 12 weeks depending on how many workflows it needs and whether it is cross-platform or native.'
@@ -350,9 +352,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
-  description: 'Hire dedicated mobile app developers for iOS and Android. We build cross-platform with Flutter and React Native and native with Swift and Kotlin. 20+ engineer team, 2-week embedded trial. We recommend the right fit for your product.',
-  ogTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  title: 'Hire Mobile App Developers | iOS, Android, Native',
+  description: 'Hire mobile app developers for iOS and Android. Cross-platform with Flutter and React Native, native with Swift and Kotlin. 20+ team, 2-week trial.',
+  ogTitle: 'Hire Mobile App Developers | iOS, Android, Native',
   ogDescription: 'Hire dedicated mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 20+ engineer team, 2-week embedded trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
   ogImageWidth: 1200,
@@ -360,7 +362,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/hire-mobile-app-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  twitterTitle: 'Hire Mobile App Developers | iOS, Android, Native',
   twitterDescription: 'Hire mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 2-week embedded trial.',
   twitterImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
 })

@@ -43,11 +43,11 @@
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product — live, with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every .NET project we touch.</p>
+            <p>Formester is our SaaS product, live, with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every .NET project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>
-            <p>Our engineers ramp on your codebase in one to two weeks — solution structure, EF Core models, deployment pipelines, the whole stack. We track time-to-first-PR because we know you're hiring for output, not warm bodies.</p>
+            <p>Our engineers ramp on your codebase in one to two weeks: solution structure, EF Core models, deployment pipelines, the whole stack. We track time-to-first-PR because we know you're hiring for output, not warm bodies.</p>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our .NET Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our .NET developers don't just write C# — they design systems that hold up under production load and are still readable two years later.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our .NET developers don't just write C#. They design systems that hold up under production load and are still readable two years later.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
@@ -71,11 +71,11 @@
           </div>
           <div class="build-card">
             <h3>Azure-Native Cloud Applications</h3>
-            <p>App Service, Azure Functions, Service Bus, Cosmos DB, Application Insights — built around Azure's strengths instead of fighting them. Infrastructure-as-code with Bicep or Terraform so deployments are repeatable.</p>
+            <p>App Service, Azure Functions, Service Bus, Cosmos DB, Application Insights, built around Azure's strengths instead of fighting them. Infrastructure-as-code with Bicep or Terraform so deployments are repeatable.</p>
           </div>
           <div class="build-card">
             <h3>Legacy .NET Framework Modernization</h3>
-            <p>Migrating from .NET Framework 4.x to .NET 6/8 without a risky big-bang rewrite. We pattern-match common pain points — WebForms, WCF, classic ASP.NET — and migrate incrementally with the strangler fig pattern.</p>
+            <p>Migrating from .NET Framework 4.x to .NET 6/8 without a risky big-bang rewrite. We pattern-match common pain points: WebForms, WCF, classic ASP.NET. And migrate incrementally with the strangler fig pattern.</p>
           </div>
           <div class="build-card">
             <h3>Real-Time and Event-Driven Systems</h3>
@@ -167,14 +167,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your system, your stack, and the kind of .NET developer you need — whether it's greenfield ASP.NET Core, a legacy .NET Framework migration, or augmenting an existing team. No generic pitches.</p>
+              <p>We learn about your system, your stack, and the kind of .NET developer you need, whether it's greenfield ASP.NET Core, a legacy .NET Framework migration, or augmenting an existing team. No generic pitches.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your project's needs, domain, and team culture, we propose specific engineers — not resumes from a database. You interview them directly. No account managers in between.</p>
+              <p>Based on your project's needs, domain, and team culture, we propose specific engineers, not resumes from a database. You interview them directly. No account managers in between.</p>
             </div>
           </div>
           <div class="process-step">
@@ -188,7 +188,7 @@
             <div class="step-number">4</div>
             <div>
               <h3>Ongoing Partnership</h3>
-              <p>If the trial works, we keep building together. Monthly rolling engagement after the initial commitment. Scale up, scale down, or add complementary skills — DevOps, QA, frontend — as your product grows.</p>
+              <p>If the trial works, we keep building together. Monthly rolling engagement after the initial commitment. Scale up, scale down, or add complementary skills (DevOps, QA, frontend) as your product grows.</p>
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@
           <div class="hiring-card">
             <h3>Project-Based</h3>
             <div class="best-for">Best for: Defined scope with clear deliverables</div>
-            <p>A .NET developer (or small team) for a specific project — a legacy migration, an API rebuild, a cloud lift-and-shift. We scope it together, agree on deliverables, and ship. Clear start, clear end, clean handoff.</p>
+            <p>A .NET developer (or small team) for a specific project: a legacy migration, an API rebuild, a cloud lift-and-shift. We scope it together, agree on deliverables, and ship. Clear start, clear end, clean handoff.</p>
           </div>
         </div>
         <p class="text-body" style="margin-top: 32px; text-align: center; color: var(--text-secondary);">All models start with a two-week trial. Monthly rolling after the initial three-month commitment. No long-term lock-in.</p>
@@ -250,7 +250,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our .NET engineers into your existing team — same standups, same repo, same delivery pipeline.</p>
+            <p>Embed our .NET engineers into your existing team: same standups, same repo, same delivery pipeline.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -301,7 +301,7 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire a .NET developer from India?',
-    answer: "It depends on the engagement model and seniority level. Our dedicated .NET developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit. The two-week trial lets you evaluate fit before any long-term commitment."
+    answer: "It depends on the engagement model and seniority level. Our dedicated .NET developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices. You'll always know what you're paying before you commit. The two-week trial lets you evaluate fit before any long-term commitment."
   },
   {
     question: 'Which .NET versions and frameworks do your developers work with?',
@@ -309,35 +309,35 @@ const faqs = [
   },
   {
     question: 'Can your developers help us migrate from .NET Framework to .NET 6 or .NET 8?',
-    answer: "Yes — this is one of the most common engagements we see. The key is migrating incrementally rather than rewriting. We start by adding test coverage, then move shared libraries to .NET Standard, then migrate services one at a time using the strangler fig pattern. WebForms, WCF, and classic MVC apps each have known migration paths. We won't push for a full rewrite when a careful migration delivers better ROI."
+    answer: "Yes. This is one of the most common engagements we see. The key is migrating incrementally rather than rewriting. We start by adding test coverage, then move shared libraries to .NET Standard, then migrate services one at a time using the strangler fig pattern. WebForms, WCF, and classic MVC apps each have known migration paths. We won't push for a full rewrite when a careful migration delivers better ROI."
   },
   {
     question: 'Do your .NET developers work with Azure?',
-    answer: "Yes — Azure is the most common deployment target for our .NET work. We're comfortable with App Service, Azure Functions, Service Bus, Cosmos DB, Azure SQL, Application Insights, and Azure DevOps pipelines. We also use Bicep or Terraform for infrastructure-as-code so your environments are repeatable. For teams on AWS, we work with Lambda, ECS, and RDS too."
+    answer: "Yes. Azure is the most common deployment target for our .NET work. We're comfortable with App Service, Azure Functions, Service Bus, Cosmos DB, Azure SQL, Application Insights, and Azure DevOps pipelines. We also use Bicep or Terraform for infrastructure-as-code so your environments are repeatable. For teams on AWS, we work with Lambda, ECS, and RDS too."
   },
   {
     question: 'Should I use .NET or Node.js for my backend?',
-    answer: "It depends on what you're building. .NET is stronger for enterprise systems, complex domain logic, and teams that value strong typing and tooling end-to-end. Node.js is stronger for real-time applications, JavaScript-heavy stacks, and rapid prototyping. We work with both and have no incentive to push one over the other — we'll help you evaluate based on your specific use case, team skills, and long-term maintainability."
+    answer: "It depends on what you're building. .NET is stronger for enterprise systems, complex domain logic, and teams that value strong typing and tooling end-to-end. Node.js is stronger for real-time applications, JavaScript-heavy stacks, and rapid prototyping. We work with both and have no incentive to push one over the other. We'll help you evaluate based on your specific use case, team skills, and long-term maintainability."
   },
   {
     question: 'How quickly can a .NET developer start on my project?',
-    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific .NET engineer whose experience aligns with your stack — whether that's ASP.NET Core, Blazor, legacy .NET Framework, or Azure-heavy work. They'll ramp on your codebase within the first one to two weeks."
+    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific .NET engineer whose experience aligns with your stack, whether that's ASP.NET Core, Blazor, legacy .NET Framework, or Azure-heavy work. They'll ramp on your codebase within the first one to two weeks."
   },
   {
     question: 'Can your .NET developers handle DevOps and CI/CD too?',
-    answer: "Our senior .NET engineers are comfortable with Docker, Azure DevOps pipelines, GitHub Actions, and infrastructure-as-code (Bicep, Terraform). For complex Kubernetes or multi-cloud setups, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on — it makes them better engineers and saves you from a separate DevOps handoff."
+    answer: "Our senior .NET engineers are comfortable with Docker, Azure DevOps pipelines, GitHub Actions, and infrastructure-as-code (Bicep, Terraform). For complex Kubernetes or multi-cloud setups, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on. It makes them better engineers and saves you from a separate DevOps handoff."
   },
   {
     question: "What happens if a .NET developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. You see how they work — code quality, communication, architecture decisions — before committing. If the fit isn't right at any point in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. You see how they work: code quality, communication, architecture decisions, before committing. If the fit isn't right at any point in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
 useSeoMeta({
-  title: 'Hire .NET Developers in India | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
-  description: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
-  ogTitle: 'Hire .NET Developers in India | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
-  ogDescription: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
+  title: 'Hire .NET Developers | ASP.NET Core, C# & Azure',
+  description: 'Hire dedicated .NET developers in India. ASP.NET Core, C#, Azure, microservices, legacy migration. 20+ person team, 2-week risk-free trial.',
+  ogTitle: 'Hire .NET Developers | ASP.NET Core, C# & Azure',
+  ogDescription: 'Hire dedicated .NET developers in India. ASP.NET Core, C#, Azure, microservices, legacy migration. 20+ person team, 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-dotnet-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

@@ -10,7 +10,7 @@
           </NuxtLink>
           <div class="hero-eyebrow"><span>Resource Augmentation</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Your team, plus engineers who actually care about your product.</h1>
-          <p class="text-body-lg">We don't send resumes and disappear. We embed dedicated engineers into your team — same tools, same standups, same codebase. They'll know your product because they'll care about it.</p>
+          <p class="text-body-lg">We don't send resumes and disappear. We embed dedicated engineers into your team: same tools, same standups, same codebase. They'll know your product because they'll care about it.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact/" class="btn-text" style="font-size: 17px;">Let's talk about your team needs <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
           </div>
@@ -30,7 +30,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">You've tried scaling before. It didn't feel right.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">You posted the req six months ago. The pipeline is thin. The contractors you tried lasted a sprint before context-switching to another client. The agency sent someone who needed more hand-holding than your junior devs.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">You don't need more bodies. You need engineers who show up, ramp fast, and build like they belong — because they do.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">You don't need more bodies. You need engineers who show up, ramp fast, and build like they belong. Because they do.</p>
         </div>
       </div>
     </section>
@@ -51,7 +51,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Engineers who join your team, not just your Slack.</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Our engineers work inside your workflows. Your Jira, your Git, your standups. They're not external — they're teammates who happen to sit in a different office.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Our engineers work inside your workflows. Your Jira, your Git, your standups. They're not external. They're teammates who happen to sit in a different office.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Whether you call it resource augmentation, team augmentation, or staff augmentation, the model is the same: dedicated engineers embedded in your team, not a project handed off to a vendor. Here's what makes this work:</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
@@ -81,7 +81,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">PerformLine: 1 engineer to 8+ in 2 years.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">PerformLine started with a single engineer from our team. They needed someone who could integrate with their existing team and contribute from week one.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">That one engineer earned trust. Then they needed a second. Then a third. Over two years, the engagement grew to 8+ engineers — full-stack developers, DevOps, data engineers, QA, and frontend specialists.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">That one engineer earned trust. Then they needed a second. Then a third. Over two years, the engagement grew to 8+ engineers: full-stack developers, DevOps, data engineers, QA, and frontend specialists.</p>
           <p class="text-body-lg" style="margin-top: 16px;">They didn't grow because we pushed for it. They grew because the partnership worked.</p>
           <div class="pull-quote">
             <p>"The people you meet are the people who build."</p>
@@ -166,7 +166,7 @@
             </div>
             <div class="details-row">
               <span class="details-label">Model</span>
-              <span class="details-value">Dedicated — full-time on your project, not shared</span>
+              <span class="details-value">Dedicated, full-time on your project, not shared</span>
             </div>
             <div class="details-row">
               <span class="details-label">Pricing</span>
@@ -223,7 +223,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your team is great. Let's make it bigger without making it harder to manage.</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what roles you need and how your team works. We'll propose specific engineers and let you meet them before anything starts. If the fit isn't right in the first two weeks, you walk away — no cost, no commitment.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what roles you need and how your team works. We'll propose specific engineers and let you meet them before anything starts. If the fit isn't right in the first two weeks, you walk away. No cost, no commitment.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your team</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -236,25 +236,28 @@
 
 <script setup>
 const faqs = [
+  { question: 'How do I hire developers for my team?', answer: 'Decide first whether you need capacity or a delivered outcome. If you have a technical lead who can direct the work, hiring augmented engineers is faster and cheaper than recruiting: you skip sourcing, screening and notice periods. Interview the specific engineers rather than the vendor, and insist on a trial period so you judge from real work. We run a two-week embedded trial for exactly that reason.' },
+  { question: 'How do I hire software developers without getting it wrong?', answer: 'Judge people on work, not interviews. A take-home test or a paid trial period tells you far more than a whiteboard session about whether someone writes maintainable code and communicates clearly. Check who owns the code before you start, ask what happens if the engineer is not a fit, and be wary of anyone who will not let you interview the individual engineers.' },
+  { question: 'How do I hire remote developers?', answer: 'The two things that decide it are timezone overlap and how the person communicates in writing. Four to six hours of overlap is enough for real-time collaboration on standups and reviews, with async work covering the rest. Our engineers work with teams across the US, UK, Canada and Australia on that basis. Ask for a trial before committing, because remote fit shows up in a week of actual work.' },
   {
     question: "What's the difference between resource augmentation and hiring freelancers?",
-    answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated — full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
+    answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated: full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
   },
   {
     question: 'How quickly can an engineer start and become productive?',
-    answer: 'Most engagements start within one to two weeks. We match specific engineers to your stack, you meet them before anything begins, and a two-week trial follows. Our engineers typically ship their first PR within 1-2 weeks — we track time-to-first-PR because ramp-up matters.'
+    answer: 'Most engagements start within one to two weeks. We match specific engineers to your stack, you meet them before anything begins, and a two-week trial follows. Our engineers typically ship their first PR within 1-2 weeks. We track time-to-first-PR because ramp-up matters.'
   },
   {
     question: "What if an engineer isn't the right fit?",
-    answer: "Every engagement starts with a two-week trial at no long-term commitment — if the fit isn't right, you walk away. Beyond the trial, we offer an engineer replacement guarantee: if someone isn't working out later, we'll work with you to address it or propose a replacement."
+    answer: "Every engagement starts with a two-week trial at no long-term commitment, if the fit isn't right, you walk away. Beyond the trial, we offer an engineer replacement guarantee: if someone isn't working out later, we'll work with you to address it or propose a replacement."
   },
   {
     question: 'How is resource augmentation priced, and is there a minimum?',
-    answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling — scale up or down with two weeks' notice, with no long-term lock-in."
+    answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling, scale up or down with two weeks' notice, with no long-term lock-in."
   },
   {
     question: 'Is resource augmentation the same as team augmentation and staff augmentation?',
-    answer: 'Yes — resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
+    answer: 'Yes. Resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
   },
   {
     question: 'Will the engineers work in our timezone?',
@@ -267,18 +270,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  description: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
-  ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  ogDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  title: 'Resource Augmentation | Team & Staff Augmentation',
+  description: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
+  ogTitle: 'Resource Augmentation | Team & Staff Augmentation',
+  ogDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
   ogImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/resource-augmentation/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  twitterDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  twitterTitle: 'Resource Augmentation | Team & Staff Augmentation',
+  twitterDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
   twitterImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
 })
 
@@ -293,7 +296,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Resource Augmentation',
-  description: 'Resource augmentation (also called team augmentation or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  description: 'Resource augmentation (also called team augmentation or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
   url: '/services/resource-augmentation',
 })
 

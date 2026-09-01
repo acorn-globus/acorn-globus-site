@@ -9,7 +9,7 @@
               <span>Product Engineering Team</span>
             </div>
             <h1 class="text-display-lg">We build it like<br>it's ours.</h1>
-            <p class="hero-body">We're a product engineering team that built our own SaaS (Formester) -- and we bring that same ownership to every product we touch. A team that cares about your outcome as much as you do.</p>
+            <p class="hero-body">We're a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch. A team that cares about your outcome as much as you do.</p>
             <div class="hero-stats">
               <div>
                 <div class="hero-stat-value">20+</div>
@@ -77,7 +77,7 @@
           <div>
             <span class="text-label">Built from experience</span>
             <h2 class="text-display-sm" style="margin-top: 16px;">We built our own SaaS. We build yours the same way.</h2>
-            <p class="text-body-lg" style="margin-top: 20px;">Formester is our AI-powered form builder — live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night. We bring that same care to your product. Not because a contract says to. Because that's how we're wired.</p>
+            <p class="text-body-lg" style="margin-top: 20px;">Formester is our AI-powered form builder: live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night. We bring that same care to your product. Not because a contract says to. Because that's how we're wired.</p>
             <div class="formester-stats">
               <div class="formester-stat">
                 <div class="formester-stat-value">1,000+</div>
@@ -98,7 +98,7 @@
             </a>
           </div>
           <div class="hero-illustration">
-            <img src="/images/formester.webp" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy" width="1536" height="1024">
+            <img src="/images/formester.webp" alt="Formester Platform, AI Form Builder Interface" class="hero-img" loading="lazy" width="1536" height="1024">
             <div class="floating-badge" style="bottom: 40px; right: -10px;">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -126,7 +126,7 @@
               <span class="partnership-label">Resource Augmentation</span>
               <h3 class="text-headline">PerformLine</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">From 1 engineer to 8+. Two years and counting.</p>
-              <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep — full-stack, DevOps, data, QA — embedded in their team like we've always been there. Same tools, same standups, same standards. That's not a contract scaling up. That's trust being earned, sprint by sprint.</p>
+              <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep (full-stack, DevOps, data, QA) embedded in their team like we've always been there. Same tools, same standups, same standards. That's not a contract scaling up. That's trust being earned, sprint by sprint.</p>
               <div class="partnership-stats">
                 <div>
                   <div class="partnership-stat-value">1 to 8+</div>
@@ -170,7 +170,7 @@
               <span class="partnership-label">MVP Development</span>
               <h3 class="text-headline">Eitoss</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</p>
-              <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team — not because they're locked in, but because the partnership works.</p>
+              <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team, not because they're locked in, but because the partnership works.</p>
               <div class="partnership-stats">
                 <div>
                   <div class="partnership-stat-value">8 Weeks</div>
@@ -261,12 +261,12 @@
         <div class="section-header" style="max-width: 720px;">
           <span class="text-label">The honest version of what AI changed for us</span>
           <h2 class="text-display-sm" style="margin-top: 16px;">What used to take four months now takes about one.</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">We didn't get cheaper — we got faster, and the quality went up. That's because we know how to code <em>and</em> how to drive AI, which is the rare pairing that separates a working AI feature from a fragile one. If you want AI shipped fast, correctly, and reliably, that's what we do. If you just want the lowest price, we're probably not your team.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">We didn't get cheaper. We got faster, and the quality went up. That's because we know how to code <em>and</em> how to drive AI, which is the rare pairing that separates a working AI feature from a fragile one. If you want AI shipped fast, correctly, and reliably, that's what we do. If you just want the lowest price, we're probably not your team.</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/ai-development/" class="feature-card" style="text-decoration: none;">
             <h3>AI Development</h3>
-            <p>Real AI inside your product — agents, generative AI, LLM & RAG. We run AI in our own SaaS and operate our own AI agents.</p>
+            <p>Real AI inside your product: agents, generative AI, LLM & RAG. We run AI in our own SaaS and operate our own AI agents.</p>
           </NuxtLink>
           <NuxtLink to="/services/ai-agent-development/" class="feature-card" style="text-decoration: none;">
             <h3>AI Agent Development</h3>
@@ -274,7 +274,7 @@
           </NuxtLink>
           <NuxtLink to="/services/ai-app-rescue/" class="feature-card" style="text-decoration: none;">
             <h3>AI App Rescue</h3>
-            <p>Built it with AI and it's breaking? We take AI-built apps to production — keep what works, fix what's fragile, ship it.</p>
+            <p>Built it with AI and it's breaking? We take AI-built apps to production: keep what works, fix what's fragile, ship it.</p>
           </NuxtLink>
         </div>
       </div>
@@ -325,11 +325,25 @@
       <div class="container-redesign">
         <div class="section-header centered">
           <h2 class="text-display-sm">Let's build something together.</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product — we'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product. We'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
         </div>
         <div class="cta-actions">
           <NuxtLink to="/contact/" class="btn btn-primary cta-btn-lg">Start a conversation</NuxtLink>
           <p class="cta-alt">Or email us at <a href="mailto:business@acornglobus.com">business@acornglobus.com</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
@@ -342,13 +356,13 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  description: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  title: 'AcornGlobus | Product Engineering Team You Can Keep',
+  description: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   keywords: 'product engineering, software development, resource augmentation, MVP development, web development, mobile app development, SaaS development, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  ogTitle: 'AcornGlobus | Product Engineering Team You Can Keep',
+  ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   ogImage: 'https://acornglobus.com/images/og/og-home.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -358,8 +372,8 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@acornglobus',
   twitterCreator: '@acornglobus',
-  twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  twitterTitle: 'AcornGlobus | Product Engineering Team You Can Keep',
+  twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   twitterImage: 'https://acornglobus.com/images/og/og-home.webp',
 })
 
@@ -367,13 +381,13 @@ const services = [
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     title: 'Resource Augmentation',
-    description: 'Your team, plus ours. Our engineers embed with your team — same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
+    description: 'Your team, plus ours. Our engineers embed with your team: same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
     link: '/services/resource-augmentation/'
   },
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
     title: 'MVP Development',
-    description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready — not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
+    description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready, not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
     link: '/services/mvp-development/'
   },
   {
@@ -385,7 +399,7 @@ const services = [
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
     title: 'Maintenance & Support',
-    description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve — with the same engineers who built it. Because they know your product and they care about it.',
+    description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve, with the same engineers who built it. Because they know your product and they care about it.',
     link: '/services/maintenance-support/'
   }
 ]
@@ -399,7 +413,7 @@ const whyUs = [
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>',
     title: 'We Guide, Not Just Execute',
-    description: 'We\'ll tell you honestly what you need — and what can wait. Not to bill less, but because your success matters more than our invoice.'
+    description: 'We\'ll tell you honestly what you need, and what can wait. Not to bill less, but because your success matters more than our invoice.'
   },
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
@@ -409,7 +423,7 @@ const whyUs = [
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
     title: 'Stack-Agnostic',
-    description: 'React, Node, Python, Flutter, AWS, Azure — we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.'
+    description: 'React, Node, Python, Flutter, AWS, Azure. We pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.'
   }
 ]
 
@@ -419,6 +433,16 @@ useHead({
     { rel: 'preload', as: 'image', href: '/images/hero.webp', type: 'image/webp' },
   ],
 })
+
+const faqs = [
+  { question: 'What does AcornGlobus do?', answer: 'We are a product engineering team. We build products end to end, embed engineers into existing teams, and take over products that need maintaining. We also build AI features and AI agents, and we run our own SaaS product, Formester, so we know what it is like to own a product rather than just ship code for one.' },
+  { question: 'Where is AcornGlobus based, and which time zones do you work in?', answer: 'Our engineering team is in India and our clients are mostly in the US, UK, Canada and Australia. We keep four to six hours of daily overlap with your working hours so there is real-time collaboration, with async work covering the rest.' },
+  { question: 'How do I start working with you?', answer: 'Book a call and tell us what you are building. We will give you an honest read on scope, timeline and cost, including whether you actually need us. If it is a fit, most engagements begin with a two-week embedded trial before any long-term commitment.' },
+  { question: 'Do I own the code you write?', answer: 'Yes, from day one. Code, infrastructure and accounts are yours from the first commit, not handed over at the end of the engagement.' },
+  { question: 'How big is the team?', answer: 'Over 20 full-time engineers across front end, back end, mobile, DevOps and QA. We do not use a bench of rotating contractors, and our client retention is over 80%.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([])
 
@@ -1053,4 +1077,16 @@ const testimonials = [
     display: none;
   }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

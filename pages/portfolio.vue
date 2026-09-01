@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div class="hero-eyebrow"><span>Our Portfolio</span></div>
         <h1 class="text-display-lg" style="max-width: 800px;">Products We've Built And Stories Behind Them</h1>
-        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of — and the partnerships that made it happen.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of. And the partnerships that made it happen.</p>
         <NuxtLink to="/contact/" class="btn btn-primary" style="margin-top: 40px;">Let's build together</NuxtLink>
       </div>
     </section>
@@ -36,7 +36,7 @@
           <div class="featured-content">
             <h2>Formester</h2>
             <p class="text-title-lg">AI-Powered No-Code Form Builder</p>
-            <p class="text-body" style="margin-top: 16px;">We built Formester ourselves — it's proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.7 on G2. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.</p>
+            <p class="text-body" style="margin-top: 16px;">We built Formester ourselves. It's proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.7 on G2. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.</p>
             <div class="featured-stats">
               <div><div class="featured-stat-value">1000+</div><div class="featured-stat-label">Active Users</div></div>
               <div><div class="featured-stat-value">50K+</div><div class="featured-stat-label">Forms Created</div></div>
@@ -133,10 +133,24 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center; max-width: 640px;">
         <h2 class="text-display-sm">Want to build something like this?</h2>
-        <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks — just a conversation about your product.</p>
+        <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks, just a conversation about your product.</p>
         <div class="cta-actions" style="justify-content: center;">
           <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
           <NuxtLink to="/services/" class="btn btn-secondary">View Services</NuxtLink>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
@@ -149,21 +163,29 @@ import { ref, computed } from 'vue'
 definePageMeta({ layout: 'default' })
 
 useSeoMeta({
-  title: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
-  description: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
-  ogTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
-  ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
+  title: 'Portfolio | Products We\'ve Built and the Stories Behind',
+  description: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
+  ogTitle: 'Portfolio | Products We\'ve Built and the Stories Behind',
+  ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
   ogImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/portfolio/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
-  twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of — and the partnerships that made it happen.',
+  twitterTitle: 'Portfolio | Products We\'ve Built and the Stories Behind',
+  twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
   twitterImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio/' }] })
+
+const faqs = [
+  { question: 'What kinds of products has AcornGlobus built?', answer: 'Our own SaaS product, funded startup MVPs, a Shopify app serving hundreds of merchants, and an education platform reaching learners in 176 countries. The common thread is products with real users, not prototypes.' },
+  { question: 'Do you work with startups or established companies?', answer: 'Both. Eitoss came to us as an idea and raised funding on the MVP we built. PerformLine was an established company that started with one embedded engineer and grew the team to more than eight.' },
+  { question: 'Can I talk to your past clients?', answer: 'Yes. Ask on a call and we will connect you with clients whose engagement resembles yours, so you can hear how it actually went rather than reading a summary we wrote.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -202,7 +224,7 @@ const projects = [
   {
     name: 'Invoice Falcon',
     subtitle: 'Shopify Invoicing Made Simple',
-    description: 'A full-featured invoicing app for Shopify merchants — automated generation, multi-currency support, and tax compliance across 30+ countries.',
+    description: 'A full-featured invoicing app for Shopify merchants: automated generation, multi-currency support, and tax compliance across 30+ countries.',
     category: 'E-Commerce',
     filterKey: 'ecommerce',
     tags: ['Ruby on Rails', 'React', 'Shopify API'],
@@ -286,4 +308,16 @@ const filteredProjects = computed(() => {
   .cta-actions { flex-direction: column; align-items: flex-start; }
   .project-stats { flex-wrap: wrap; gap: 16px; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

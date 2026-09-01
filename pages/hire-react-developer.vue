@@ -6,7 +6,7 @@
         <div style="max-width: 760px;">
           <div class="hero-eyebrow"><span>Hire React Developers &middot; React.js Development Company</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire React Developers in India Who Stay</h1>
-          <p class="text-body-lg">Hire dedicated React.js developers who join your team, learn your codebase, and stay for the long run. We're a 20+ person product engineering team serving startups and scale-ups across the US, UK, Canada, and Australia. The React developers you meet are the ones who'll build your product — no bench, no rotating contractors, no resume-shuffling. Just engineers who care about your code as much as you do.</p>
+          <p class="text-body-lg">Hire dedicated React.js developers who join your team, learn your codebase, and stay for the long run. We're a 20+ person product engineering team serving startups and scale-ups across the US, UK, Canada, and Australia. The React developers you meet are the ones who'll build your product. No bench, no rotating contractors, no resume-shuffling. Just engineers who care about your code as much as you do.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -26,9 +26,9 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Why Hire React Developers?</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">React is the most widely used front-end library in the world, and for most teams building a modern web product it's the safe, high-leverage default. You hire React developers when you need a fast, interactive user interface — dashboards, SaaS products, e-commerce storefronts, internal tools — built on a component model that stays maintainable as the product grows and the team changes hands.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">React is the most widely used front-end library in the world, and for most teams building a modern web product it's the safe, high-leverage default. You hire React developers when you need a fast, interactive user interface (dashboards, SaaS products, e-commerce storefronts, internal tools) built on a component model that stays maintainable as the product grows and the team changes hands.</p>
           <p class="text-body-lg" style="margin-top: 16px;">The practical advantage is the ecosystem. React has the deepest talent pool, the most mature tooling (Next.js, Vite, React Query, Redux Toolkit), and battle-tested answers to problems like routing, state management, server-side rendering, and testing. That means faster hiring, easier onboarding, and fewer dead ends when your product hits scale. It's why so many US, UK, Canadian, and Australian teams standardize their front end on React and hire dedicated React.js developers to build it.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Our React developers don't just know the library — they know the ecosystem that makes production applications work: TypeScript, Next.js rendering modes, data-fetching and caching, accessibility, performance, and testing. That's the difference between a developer who can build a demo and one who can own a codebase.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our React developers know the library and the ecosystem that makes production applications work: TypeScript, Next.js rendering modes, data-fetching and caching, accessibility, performance, and testing. That's the difference between a developer who can build a demo and one who can own a codebase.</p>
         </div>
       </div>
     </section>
@@ -44,9 +44,9 @@
           <div class="decision-card decision-yes">
             <h3>Choose React when</h3>
             <ul>
-              <li>You're building an interactive web application — a SaaS dashboard, admin panel, portal, or data-heavy UI — where the interface changes constantly in response to the user.</li>
+              <li>You're building an interactive web application (a SaaS dashboard, admin panel, portal, or data-heavy UI) where the interface changes constantly in response to the user.</li>
               <li>You want the deepest talent pool and the most mature tooling, so hiring, onboarding, and scaling the team stay easy over years.</li>
-              <li>You need server-side rendering or SEO on a React stack — that's what Next.js is for, and our developers build in it daily.</li>
+              <li>You need server-side rendering or SEO on a React stack. That's what Next.js is for, and our developers build in it daily.</li>
               <li>You want one component model your team can share across web today and mobile later via React Native.</li>
               <li>You're modernizing a legacy front end and want a widely supported, well-documented library your future hires will already know.</li>
             </ul>
@@ -54,14 +54,14 @@
           <div class="decision-card decision-no">
             <h3>You may not need React when</h3>
             <ul>
-              <li>You're building a mostly static, content-first marketing site or blog — a meta-framework like Next.js, Nuxt, or plain HTML may be simpler and faster to load.</li>
-              <li>Your team is already committed to Vue or another framework and there's no strong reason to switch — we build in <NuxtLink to="/hire-vuejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Vue</NuxtLink> and <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink> too.</li>
-              <li>You need a native mobile app first — in that case start with <NuxtLink to="/hire-react-native-developer/" style="color: var(--brand-blue); font-weight: 500;">React Native</NuxtLink>, which shares React's model but targets iOS and Android.</li>
+              <li>You're building a mostly static, content-first marketing site or blog, a meta-framework like Next.js, Nuxt, or plain HTML may be simpler and faster to load.</li>
+              <li>Your team is already committed to Vue or another framework and there's no strong reason to switch. We build in <NuxtLink to="/hire-vuejs-developer/" style="color: var(--brand-blue); font-weight: 500;">Vue</NuxtLink> and <NuxtLink to="/hire-nuxt-developer/" style="color: var(--brand-blue); font-weight: 500;">Nuxt</NuxtLink> too.</li>
+              <li>You need a native mobile app first, in that case start with <NuxtLink to="/hire-react-native-developer/" style="color: var(--brand-blue); font-weight: 500;">React Native</NuxtLink>, which shares React's model but targets iOS and Android.</li>
             </ul>
           </div>
         </div>
         <div style="max-width: 720px; margin-top: 32px;">
-          <p class="text-body-lg">Not sure which side you fall on? That's a good first conversation to have. We're stack-agnostic and will tell you honestly whether React is the right fit for your product — or point you at Next.js, React Native, or Vue if it isn't.</p>
+          <p class="text-body-lg">Not sure which side you fall on? That's a good first conversation to have. We're stack-agnostic and will tell you honestly whether React is the right fit for your product, or point you at Next.js, React Native, or Vue if it isn't.</p>
         </div>
       </div>
     </section>
@@ -80,7 +80,7 @@
           </div>
           <div class="feature-card">
             <h3>Vetted Before You Meet Them</h3>
-            <p>Every React developer we propose is a full-time member of our team, screened on real React work — component architecture, state management, TypeScript, and testing — not a keyword-matched contractor. You still interview them directly before deciding.</p>
+            <p>Every React developer we propose is a full-time member of our team, screened on real React work (component architecture, state management, TypeScript, and testing) not a keyword-matched contractor. You still interview them directly before deciding.</p>
           </div>
           <div class="feature-card">
             <h3>Two-Week Embedded Trial</h3>
@@ -88,11 +88,11 @@
           </div>
           <div class="feature-card">
             <h3>Partnerships That Actually Grow</h3>
-            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep — full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
+            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep: full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product — live in production with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.</p>
+            <p>Formester is our SaaS product, live in production with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every React project we touch.</p>
           </div>
           <div class="feature-card">
             <h3>Productive From Week One</h3>
@@ -107,16 +107,16 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our React Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our React developers don't just know the library — they know the ecosystem that makes production applications work.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our React developers know the library and the ecosystem that makes production applications work.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
             <h3>Single-Page Applications</h3>
-            <p>Fast, fluid interfaces that feel native. Complex state management, client-side routing, and optimistic UI updates — built for real users at scale.</p>
+            <p>Fast, fluid interfaces that feel native. Complex state management, client-side routing, and optimistic UI updates, built for real users at scale.</p>
           </div>
           <div class="build-card">
             <h3>Server-Side Rendering (Next.js)</h3>
-            <p>SEO-friendly, fast-loading applications with Next.js. Static generation, incremental regeneration, and API routes — the full production stack.</p>
+            <p>SEO-friendly, fast-loading applications with Next.js. Static generation, incremental regeneration, and API routes, the full production stack.</p>
           </div>
           <div class="build-card">
             <h3>Real-Time Dashboards</h3>
@@ -124,7 +124,7 @@
           </div>
           <div class="build-card">
             <h3>E-Commerce Frontends</h3>
-            <p>Product catalogs, checkout flows, payment integrations, and inventory management — fast storefronts that convert.</p>
+            <p>Product catalogs, checkout flows, payment integrations, and inventory management, fast storefronts that convert.</p>
           </div>
           <div class="build-card">
             <h3>Progressive Web Apps</h3>
@@ -210,14 +210,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your product, your team's workflow, and the kind of React developer you need. No generic pitches — just a real conversation about your codebase and goals.</p>
+              <p>We learn about your product, your team's workflow, and the kind of React developer you need. No generic pitches, just a real conversation about your codebase and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your stack, domain, and team culture, we propose specific engineers — pre-vetted on real React work, not resumes from a database. You interview them directly. No account managers in between.</p>
+              <p>Based on your stack, domain, and team culture, we propose specific engineers, pre-vetted on real React work, not resumes from a database. You interview them directly. No account managers in between.</p>
             </div>
           </div>
           <div class="process-step">
@@ -276,7 +276,7 @@
         </div>
         <div class="case-study-card" style="margin-top: 48px;">
           <h3>PerformLine</h3>
-          <p class="text-body" style="margin-top: 8px;">PerformLine needed React developers who could embed with their existing engineering team and ship production features from week one. We started with a single frontend engineer. Within six months, we'd grown to a cross-functional squad — React, Node.js, DevOps, QA — all working inside PerformLine's workflows, their Git repos, their deployment pipelines. Two years later, we're still building together.</p>
+          <p class="text-body" style="margin-top: 8px;">PerformLine needed React developers who could embed with their existing engineering team and ship production features from week one. We started with a single frontend engineer. Within six months, we'd grown to a cross-functional squad, React, Node.js, DevOps, QA: all working inside PerformLine's workflows, their Git repos, their deployment pipelines. Two years later, we're still building together.</p>
           <div class="project-stats">
             <div class="project-stat">
               <div class="value">1</div>
@@ -327,7 +327,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our React engineers into your existing team — your standups, your repo, your workflow. The service behind every hire.</p>
+            <p>Embed our React engineers into your existing team. Your standups, your repo, your workflow. The service behind every hire.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -377,7 +377,7 @@ definePageMeta({
 const faqs = [
   {
     question: 'How much does it cost to hire a React developer from India?',
-    answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
+    answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call. No hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
     question: 'Can I hire React.js developers specifically, or just React developers?',
@@ -389,38 +389,38 @@ const faqs = [
   },
   {
     question: 'How do you vet your React developers?',
-    answer: "Every React developer we propose is a full-time member of our 20+ person engineering team — not a contractor pulled from a marketplace. They're screened on real React work: component architecture, state management, hooks, TypeScript, testing, and code review discipline. You then interview the specific engineers we propose and confirm the fit yourself during a two-week embedded trial before any long-term commitment."
+    answer: "Every React developer we propose is a full-time member of our 20+ person engineering team, not a contractor pulled from a marketplace. They're screened on real React work: component architecture, state management, hooks, TypeScript, testing, and code review discipline. You then interview the specific engineers we propose and confirm the fit yourself during a two-week embedded trial before any long-term commitment."
   },
   {
     question: "What's the difference between hiring freelance React developers and a dedicated team?",
-    answer: "Freelancers work across multiple clients and projects. Our dedicated React developers work exclusively on your product — same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a backend integration, they have senior engineers to consult with. Freelancers are on their own."
+    answer: "Freelancers work across multiple clients and projects. Our dedicated React developers work exclusively on your product: same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a backend integration, they have senior engineers to consult with. Freelancers are on their own."
   },
   {
     question: 'Do your React developers work in my timezone?',
-    answer: "We have significant overlap with US, UK, and European timezones, and we work with clients in Canada and Australia too. Our developers adjust their schedules to match your team's working hours — typically 4 to 6 hours of direct overlap for real-time collaboration, with async work covering the rest. We've done this for years with clients across multiple timezones."
+    answer: "We have significant overlap with US, UK, and European timezones, and we work with clients in Canada and Australia too. Our developers adjust their schedules to match your team's working hours, typically 4 to 6 hours of direct overlap for real-time collaboration, with async work covering the rest. We've done this for years with clients across multiple timezones."
   },
   {
     question: 'What is the difference between React and React Native? Do you do both?',
-    answer: "React (React.js) is a library for building web user interfaces that run in the browser. React Native uses the same component model and skills but compiles to native iOS and Android apps instead of web pages. They share concepts, so a strong React developer transfers well — but production React Native also involves native build tooling, device APIs, and app-store deployment. We do both: several of our engineers have shipped React Native apps to both app stores. If your product spans web and mobile, see our dedicated React Native page or ask us to put together a team that covers both."
+    answer: "React (React.js) is a library for building web user interfaces that run in the browser. React Native uses the same component model and skills but compiles to native iOS and Android apps instead of web pages. They share concepts, so a strong React developer transfers well. But production React Native also involves native build tooling, device APIs, and app-store deployment. We do both: several of our engineers have shipped React Native apps to both app stores. If your product spans web and mobile, see our dedicated React Native page or ask us to put together a team that covers both."
   },
   {
     question: 'Do you work with Next.js for server-side rendering and SEO?',
-    answer: "Yes. Several of our React developers have deep experience with Next.js — server-side rendering, static generation, incremental regeneration, API routes, and the App Router. If your React application needs SEO, fast first-page loads, or a full-stack setup, Next.js is usually the answer, and we build in it regularly."
+    answer: "Yes. Several of our React developers have deep experience with Next.js: server-side rendering, static generation, incremental regeneration, API routes, and the App Router. If your React application needs SEO, fast first-page loads, or a full-stack setup, Next.js is usually the answer, and we build in it regularly."
   },
   {
     question: 'Can I scale the team up or down?',
-    answer: "Yes. That's one of the core advantages of working with us. PerformLine started with one engineer and scaled to eight-plus over two years. You can add React developers, backend engineers, QA, or DevOps as your product grows — and scale back when you need to. Monthly rolling engagement after the initial three-month period."
+    answer: "Yes. That's one of the core advantages of working with us. PerformLine started with one engineer and scaled to eight-plus over two years. You can add React developers, backend engineers, QA, or DevOps as your product grows, and scale back when you need to. Monthly rolling engagement after the initial three-month period."
   },
   {
     question: "What happens if a developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
 useSeoMeta({
-  title: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
-  description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors. Serving US, UK, Canada & Australia.',
-  ogTitle: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
+  title: 'Hire React Developers | React.js Development Company',
+  description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. 20+ engineer team, 2-week trial. US, UK, Canada, Australia.',
+  ogTitle: 'Hire React Developers | React.js Development Company',
   ogDescription: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
   ogImageWidth: 1200,

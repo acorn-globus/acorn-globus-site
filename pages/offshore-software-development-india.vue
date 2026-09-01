@@ -6,7 +6,7 @@
         <div style="max-width: 760px;">
           <div class="hero-eyebrow"><span>Offshore Software Development in India</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">An Offshore Software Development Company in India That Works Like Your Own Team</h1>
-          <p class="text-body-lg">If you're a founder or engineering leader in the US, UK, Canada, or Australia looking to offshore software development to India, the real question isn't cost — it's whether the team communicates well, overlaps with your hours, and ships code you'd be proud to own. We're a 20+ person product engineering team in India that embeds with yours: named engineers, real timezone overlap, and a two-week trial before you commit.</p>
+          <p class="text-body-lg">If you're a founder or engineering leader in the US, UK, Canada, or Australia looking to offshore software development to India, the real question isn't cost. It's whether the team communicates well, overlaps with your hours, and ships code you'd be proud to own. We're a 20+ person product engineering team in India that embeds with yours: named engineers, real timezone overlap, and a two-week trial before you commit.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -26,20 +26,20 @@
       <div class="container-redesign">
         <div style="max-width: 760px;">
           <h2 class="text-display-sm">Why Offshore Software Development to India?</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Companies in the US, UK, Canada, and Australia offshore software development to India because it combines a deep pool of experienced English-speaking engineers with a cost structure that lets a startup budget go further — without the compromises that give offshoring a bad name. The difference between a good and bad experience is almost never the code; it's communication, timezone overlap, and whether you're working with a real team or a rotating pool of contractors.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Companies in the US, UK, Canada, and Australia offshore software development to India because it combines a deep pool of experienced English-speaking engineers with a cost structure that lets a startup budget go further, without the compromises that give offshoring a bad name. The difference between a good and bad experience is almost never the code; it's communication, timezone overlap, and whether you're working with a real team or a rotating pool of contractors.</p>
         </div>
         <div class="value-grid" style="margin-top: 48px;">
           <div class="value-card">
             <h3>Meaningful cost advantage</h3>
-            <p>Senior engineering talent in India costs a fraction of equivalent in-house hires in the US, UK, or Australia — so your budget buys more capacity or a longer runway, without dropping to junior quality.</p>
+            <p>Senior engineering talent in India costs a fraction of equivalent in-house hires in the US, UK, or Australia. So your budget buys more capacity or a longer runway, without dropping to junior quality.</p>
           </div>
           <div class="value-card">
             <h3>Workable timezone overlap</h3>
-            <p>India's workday overlaps with UK and European mornings and afternoons, and with the US morning. We flex hours to guarantee live overlap for standups and reviews — not just async handoffs across a 12-hour gap.</p>
+            <p>India's workday overlaps with UK and European mornings and afternoons, and with the US morning. We flex hours to guarantee live overlap for standups and reviews, not just async handoffs across a 12-hour gap.</p>
           </div>
           <div class="value-card">
             <h3>English-first communication</h3>
-            <p>English is the working language of Indian software teams. You talk directly to the engineers building your product — no account manager translating in between, no lost-in-handoff requirements.</p>
+            <p>English is the working language of Indian software teams. You talk directly to the engineers building your product. No account manager translating in between, no lost-in-handoff requirements.</p>
           </div>
           <div class="value-card">
             <h3>Deep, experienced talent pool</h3>
@@ -51,7 +51,7 @@
           </div>
           <div class="value-card">
             <h3>Real teams, not rotating contractors</h3>
-            <p>Your engineers learn your codebase and stay on it. We don't rotate people off when something shinier comes along — 80%+ client retention is the result of partnerships that actually last.</p>
+            <p>Your engineers learn your codebase and stay on it. We don't rotate people off when something shinier comes along, 80%+ client retention is the result of partnerships that actually last.</p>
           </div>
         </div>
       </div>
@@ -62,28 +62,28 @@
       <div class="container-redesign">
         <div style="max-width: 760px;">
           <h2 class="text-display-sm">How Offshoring to Us Works</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">A straightforward path from first call to a productive engineer embedded in your team — with an off-ramp at every step.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">A straightforward path from first call to a productive engineer embedded in your team, with an off-ramp at every step.</p>
         </div>
         <div class="process-steps" style="margin-top: 48px;">
           <div class="process-step">
             <div class="step-number">1</div>
             <div>
               <h3>Discovery call</h3>
-              <p>We learn your product, your stack, your timezone, and what you need. No generic proposals — a real conversation about how an offshore team would fit your workflow.</p>
+              <p>We learn your product, your stack, your timezone, and what you need. No generic proposals, a real conversation about how an offshore team would fit your workflow.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer matching</h3>
-              <p>We propose specific, vetted engineers with relevant experience — not resumes from a database. You interview them directly and decide who joins.</p>
+              <p>We propose specific, vetted engineers with relevant experience, not resumes from a database. You interview them directly and decide who joins.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div>
               <h3>2-week embedded trial</h3>
-              <p>Your engineers join your team on your tools, your standups, your codebase — with agreed timezone overlap. You see real output before any long-term commitment.</p>
+              <p>Your engineers join your team on your tools, your standups, your codebase, with agreed timezone overlap. You see real output before any long-term commitment.</p>
             </div>
           </div>
           <div class="process-step">
@@ -107,11 +107,11 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource / Staff Augmentation</h3>
-            <p>Embed our engineers into your existing team — same standups, same repo, same workflow. The fastest way to add offshore capacity without changing how you work.</p>
+            <p>Embed our engineers into your existing team: same standups, same repo, same workflow. The fastest way to add offshore capacity without changing how you work.</p>
           </NuxtLink>
           <NuxtLink to="/services/full-project-delivery/" class="feature-card" style="text-decoration: none;">
             <h3>Full Project Delivery</h3>
-            <p>Hand us a defined scope and we deliver it end to end — design, build, test, and handoff — with clear milestones and clean, documented code.</p>
+            <p>Hand us a defined scope and we deliver it end to end (design, build, test, and handoff) with clear milestones and clean, documented code.</p>
           </NuxtLink>
           <NuxtLink to="/services/mvp-development/" class="feature-card" style="text-decoration: none;">
             <h3>MVP Development</h3>
@@ -119,7 +119,7 @@
           </NuxtLink>
           <NuxtLink to="/services/maintenance-support/" class="feature-card" style="text-decoration: none;">
             <h3>Maintenance &amp; Support</h3>
-            <p>Keep an existing product healthy — bug fixes, upgrades, and steady improvements — with an offshore team that learns your codebase and stays on it.</p>
+            <p>Keep an existing product healthy (bug fixes, upgrades, and steady improvements) with an offshore team that learns your codebase and stays on it.</p>
           </NuxtLink>
         </div>
       </div>
@@ -158,11 +158,11 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/case-studies/performline/" class="feature-card" style="text-decoration: none;">
             <h3>PerformLine</h3>
-            <p>Started with one of our engineers and grew to eight-plus over two years — full-stack, DevOps, QA, and data. That's what an offshore partnership looks like when it works.</p>
+            <p>Started with one of our engineers and grew to eight-plus over two years: full-stack, DevOps, QA, and data. That's what an offshore partnership looks like when it works.</p>
           </NuxtLink>
           <NuxtLink to="/case-studies/formester/" class="feature-card" style="text-decoration: none;">
             <h3>Formester</h3>
-            <p>Our own SaaS product — a no-code, AI-powered form builder, live in production. Building our own product is how we learned what real ownership feels like.</p>
+            <p>Our own SaaS product: a no-code, AI-powered form builder, live in production. Building our own product is how we learned what real ownership feels like.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -170,7 +170,7 @@
           </NuxtLink>
           <NuxtLink to="/blog/staff-augmentation-vs-outsourcing/" class="feature-card" style="text-decoration: none;">
             <h3>Staff Augmentation vs Outsourcing</h3>
-            <p>The difference between embedding engineers in your team and handing a project off entirely — and which offshore model fits your situation.</p>
+            <p>The difference between embedding engineers in your team and handing a project off entirely. And which offshore model fits your situation.</p>
           </NuxtLink>
         </div>
       </div>
@@ -195,7 +195,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Offshore Software Development to India?</h2>
-        <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">Tell us about your product, your timezone, and what you need. We'll show you how an offshore team from India can embed with yours — starting with a two-week trial, with no long-term lock-in.</p>
+        <p class="text-body-lg" style="max-width: 680px; margin: 16px auto 0;">Tell us about your product, your timezone, and what you need. We'll show you how an offshore team from India can embed with yours, starting with a two-week trial, with no long-term lock-in.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -218,7 +218,7 @@ const faqs = [
   },
   {
     question: 'Why offshore software development to India specifically?',
-    answer: "India combines one of the world's largest pools of experienced, English-speaking software engineers with a cost structure that lets teams in the US, UK, Canada, and Australia stretch their budget further. The workday overlaps with UK/European hours and the US morning, so real-time collaboration is practical. The key is working with a vetted team that communicates well and stays on your codebase — not a rotating pool of anonymous contractors."
+    answer: "India combines one of the world's largest pools of experienced, English-speaking software engineers with a cost structure that lets teams in the US, UK, Canada, and Australia stretch their budget further. The workday overlaps with UK/European hours and the US morning, so real-time collaboration is practical. The key is working with a vetted team that communicates well and stays on your codebase, not a rotating pool of anonymous contractors."
   },
   {
     question: 'How do you handle the timezone difference?',
@@ -226,7 +226,7 @@ const faqs = [
   },
   {
     question: 'Is communication a problem with an offshore team in India?',
-    answer: "English is the working language of Indian software teams, and you talk directly to the engineers building your product — no account manager translating in between. That direct line, plus daily timezone overlap and your own tools and standups, is what prevents the miscommunication that gives offshoring a bad reputation."
+    answer: "English is the working language of Indian software teams, and you talk directly to the engineers building your product. No account manager translating in between. That direct line, plus daily timezone overlap and your own tools and standups, is what prevents the miscommunication that gives offshoring a bad reputation."
   },
   {
     question: 'How do you vet offshore developers before I commit?',
@@ -234,23 +234,23 @@ const faqs = [
   },
   {
     question: 'What is the difference between offshore staff augmentation and full outsourcing?',
-    answer: "Staff augmentation embeds our engineers into your existing team — your tools, your standups, your direction. Full outsourcing (full project delivery) hands us a defined scope to deliver end to end. Augmentation keeps you in control day to day; full delivery frees you from managing the build. We offer both, and can help you choose on a call."
+    answer: "Staff augmentation embeds our engineers into your existing team. Your tools, your standups, your direction. Full outsourcing (full project delivery) hands us a defined scope to deliver end to end. Augmentation keeps you in control day to day; full delivery frees you from managing the build. We offer both, and can help you choose on a call."
   },
   {
     question: 'How much can I save by offshoring development to India?',
-    answer: "Senior engineering talent in India typically costs a fraction of an equivalent in-house hire in the US, UK, or Australia, so the same budget buys more capacity or a longer runway. We're transparent about pricing from the first call — dedicated engineers work on monthly engagement rates, not hourly bidding. Contact us for a specific quote based on the roles you need."
+    answer: "Senior engineering talent in India typically costs a fraction of an equivalent in-house hire in the US, UK, or Australia, so the same budget buys more capacity or a longer runway. We're transparent about pricing from the first call, dedicated engineers work on monthly engagement rates, not hourly bidding. Contact us for a specific quote based on the roles you need."
   },
   {
     question: 'Can I scale the offshore team up or down?',
-    answer: "Yes. After the initial commitment, you can scale with short notice — add engineers, QA, or DevOps as your product grows, or scale back when you need to. PerformLine started with one of our engineers and grew to eight-plus over two years. Monthly rolling engagement, no long-term lock-in."
+    answer: "Yes. After the initial commitment, you can scale with short notice: add engineers, QA, or DevOps as your product grows, or scale back when you need to. PerformLine started with one of our engineers and grew to eight-plus over two years. Monthly rolling engagement, no long-term lock-in."
   }
 ]
 
 useSeoMeta({
   title: 'Offshore Software Development Company in India | AcornGlobus',
-  description: 'An offshore software development company in India for US, UK, Canada & Australia teams. Vetted engineers, real timezone overlap, direct communication, 2-week trial. Book a call.',
+  description: 'An offshore software development company in India for US, UK, Canada and Australia teams. Vetted engineers, real timezone overlap, 2-week trial.',
   ogTitle: 'Offshore Software Development Company in India | AcornGlobus',
-  ogDescription: 'An offshore software development company in India for US, UK, Canada & Australia teams. Vetted engineers, real timezone overlap, direct communication, 2-week trial. Book a call.',
+  ogDescription: 'An offshore software development company in India for US, UK, Canada and Australia teams. Vetted engineers, real timezone overlap, 2-week trial.',
   ogImage: 'https://acornglobus.com/images/og/og-offshore-software-development-india.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

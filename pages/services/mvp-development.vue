@@ -43,7 +43,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm" style="margin-bottom: 20px;">Your runway is ticking. You need builders, not promises.</h2>
           <p class="text-body-lg" style="margin-bottom: 16px;">You've got the vision. Maybe the funding too. What you don't have is six months to hire a team, three months to onboard them, and patience for a prototype that falls apart under real users.</p>
-          <p class="text-body-lg">You need a team that can start now, ship something real in weeks, and stick around after launch — not disappear when the invoice clears.</p>
+          <p class="text-body-lg">You need a team that can start now, ship something real in weeks, and stick around after launch, not disappear when the invoice clears.</p>
         </div>
       </div>
     </section>
@@ -122,7 +122,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm" style="margin-bottom: 20px;">We build it like it's ours. Because we've built our own.</h2>
-          <p class="text-body-lg" style="margin-bottom: 16px;">We created Formester — our own SaaS product, live and growing with real users and a 4.7 rating on G2. That taught us what it actually feels like to ship something you care about. The anxiety of launch day. The trade-offs between speed and quality. The difference between a demo and a product.</p>
+          <p class="text-body-lg" style="margin-bottom: 16px;">We created Formester. Our own SaaS product, live and growing with real users and a 4.7 rating on G2. That taught us what it actually feels like to ship something you care about. The anxiety of launch day. The trade-offs between speed and quality. The difference between a demo and a product.</p>
           <p class="text-body-lg">We bring that same ownership to your MVP:</p>
         </div>
         <div class="feature-cards-grid">
@@ -132,7 +132,7 @@
           </div>
           <div class="feature-card">
             <h3>Honest guidance on scope.</h3>
-            <p>We'll tell you what to build first and what can wait. Not to bill less — because we want you to succeed faster.</p>
+            <p>We'll tell you what to build first and what can wait. Not to bill less. Because we want you to succeed faster.</p>
           </div>
           <div class="feature-card">
             <h3>You own everything.</h3>
@@ -153,7 +153,7 @@
           <span class="text-label" style="display: block; margin-bottom: 16px;">Case Study</span>
           <h2 class="text-display-sm" style="margin-bottom: 20px;">Eitoss: MVP in 3 months. Raised funding. Still building together.</h2>
           <p class="text-body-lg" style="margin-bottom: 16px;">Eitoss came to us with a product vision and a timeline. We scoped the MVP together, had a demoable product in 8 weeks, and launched into production in 3 months.</p>
-          <p class="text-body-lg" style="margin-bottom: 16px;">They used that product to raise funding. And then they kept building with us — not because they had to, but because the partnership worked. Two years later, we're still growing the product together.</p>
+          <p class="text-body-lg" style="margin-bottom: 16px;">They used that product to raise funding. And then they kept building with us, not because they had to, but because the partnership worked. Two years later, we're still growing the product together.</p>
           <p class="text-body-lg" style="font-weight: 600; color: var(--on-surface);">That's not a vendor relationship. That's what partnership looks like.</p>
         </div>
       </div>
@@ -213,7 +213,7 @@
         </div>
         <p class="text-body-lg" style="max-width: 720px; margin-bottom: 28px;">Our MVP development services cover the whole build, from scoping the minimum viable product through to a production launch you own outright. As an MVP software development company we handle the engineering, the architecture and the deployment, so you are not stitching together freelancers.</p>
         <ul class="deliverables-list">
-          <li>Product scoping and feature prioritization — what to build first, what to skip</li>
+          <li>Product scoping and feature prioritization, what to build first, what to skip</li>
           <li>Technical architecture and stack selection</li>
           <li>UI/UX wireframes (we recommend a dedicated designer for pixel-perfect design)</li>
           <li>Full-stack development</li>
@@ -221,7 +221,7 @@
           <li>Cloud deployment (AWS, GCP, or Azure)</li>
           <li>CI/CD pipeline setup</li>
           <li>2 weeks of post-launch support</li>
-          <li>Complete documentation and code handoff — it's your product</li>
+          <li>Complete documentation and code handoff. It's your product</li>
         </ul>
       </div>
     </section>
@@ -291,7 +291,7 @@
           <div class="case-study-card">
             <h3>Formester</h3>
             <p class="text-body" style="font-weight: 600; color: var(--text-secondary); margin-bottom: 12px;">Our own SaaS. 1,000+ users. 4.8 rating.</p>
-            <p class="text-body">We built our own product from scratch — it taught us what real ownership feels like. We bring that same care to every MVP we build.</p>
+            <p class="text-body">We built our own product from scratch. It taught us what real ownership feels like. We bring that same care to every MVP we build.</p>
           </div>
         </div>
         <p class="text-body" style="margin-top: 32px; max-width: 720px; color: var(--text-secondary);">
@@ -349,7 +349,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your idea deserves a real product, not a throwaway prototype.</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what you're building. We'll have an honest conversation about scope, timeline, and what your MVP actually needs — no sales pitch, no inflated estimates. If we're the right fit, we'll scope it together.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us what you're building. We'll have an honest conversation about scope, timeline, and what your MVP actually needs. No sales pitch, no inflated estimates. If we're the right fit, we'll scope it together.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -384,15 +384,15 @@ const faqs = [
   },
   {
     question: 'What does an MVP from AcornGlobus include?',
-    answer: "Product scoping and feature prioritization, technical architecture and stack selection, UI/UX wireframes, full-stack development, testing and QA, cloud deployment (AWS, GCP, or Azure), CI/CD pipeline setup, 2 weeks of post-launch support, and complete documentation with a full code handoff. You own everything — code and IP — from day one."
+    answer: "Product scoping and feature prioritization, technical architecture and stack selection, UI/UX wireframes, full-stack development, testing and QA, cloud deployment (AWS, GCP, or Azure), CI/CD pipeline setup, 2 weeks of post-launch support, and complete documentation with a full code handoff. You own everything, code and IP, from day one."
   },
   {
     question: 'Will my MVP be production-ready, or just a prototype?',
-    answer: "Production-ready. We build with clean code, proper architecture, and a CI/CD pipeline from day one, so your MVP can handle real users and scale as you grow — not something you'll have to rewrite in six months. We hold it to the same standard we use for our own SaaS product, Formester."
+    answer: "Production-ready. We build with clean code, proper architecture, and a CI/CD pipeline from day one, so your MVP can handle real users and scale as you grow, not something you'll have to rewrite in six months. We hold it to the same standard we use for our own SaaS product, Formester."
   },
   {
     question: 'How much does MVP development cost?',
-    answer: 'We work on a fixed-price or capped time-and-materials basis, so you know your budget before we start. Cost depends on scope and team size (typically 2-4 engineers plus a project lead). During discovery we help you decide what to build first and what can wait — not to bill less, but so you launch faster with a leaner first version.'
+    answer: 'We work on a fixed-price or capped time-and-materials basis, so you know your budget before we start. Cost depends on scope and team size (typically 2-4 engineers plus a project lead). During discovery we help you decide what to build first and what can wait, not to bill less, but so you launch faster with a leaner first version.'
   },
   {
     question: "I'm a non-technical founder. Can you still work with me?",
@@ -400,7 +400,7 @@ const faqs = [
   },
   {
     question: 'What happens after the MVP launches?',
-    answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building — adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
+    answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building: adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
   },
   {
     question: 'Which agencies can prototype and ship an MVP in 12 weeks?',
@@ -413,18 +413,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
-  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  ogDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  title: 'MVP Development Company | First Workflow in 2 Weeks',
+  description: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
+  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks',
+  ogDescription: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  twitterDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks',
+  twitterDescription: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
 
@@ -439,7 +439,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'MVP Development',
-  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  description: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   url: '/services/mvp-development',
 })
 

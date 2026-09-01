@@ -9,7 +9,7 @@
           </div>
           <h1 class="text-display-lg">We built something of our own first. <span style="color: var(--brand-blue);">That changed everything.</span></h1>
           <div class="hero-paragraphs">
-            <p class="text-body-lg">Before we built for anyone else, we built Formester — our own SaaS product. Live, growing, used by thousands of people to create forms with AI.</p>
+            <p class="text-body-lg">Before we built for anyone else, we built Formester. Our own SaaS product. Live, growing, used by thousands of people to create forms with AI.</p>
             <p class="text-body-lg">That experience taught us something most agencies never learn: what it feels like when the product is yours. The weight of every decision. The 2 AM alerts. The feedback from real users who depend on what you built.</p>
             <p class="text-body-lg">We bring that same care to every product we touch. Not because a contract requires it. Because we don't know how to build any other way.</p>
           </div>
@@ -64,11 +64,11 @@
             <span class="text-label">How we got here</span>
             <h2 class="text-display-sm" style="margin-top: 16px;">From a side project to a team of 20+</h2>
             <div class="origin-text" style="margin-top: 24px;">
-              <p class="text-body">AcornGlobus started the way most real things do — small, scrappy, and driven by curiosity.</p>
-              <p class="text-body">In 2018, Ankit started building Formester from scratch — an AI-powered form builder. Something he wanted to exist in the world. That project became the foundation for everything that followed.</p>
-              <p class="text-body">By 2019, Tarun landed a project from Eitoss, a Japanese client, and called Ankit. They shipped it together, and AcornGlobus took seed. Not from a business plan, but from two friends who'd always wanted to build something of their own. The care we put into Formester, the ownership mindset, the obsession with getting it right — that's what we wanted to bring to every product we touched.</p>
+              <p class="text-body">AcornGlobus started the way most real things do: small, scrappy, and driven by curiosity.</p>
+              <p class="text-body">In 2018, Ankit started building Formester from scratch, an AI-powered form builder. Something he wanted to exist in the world. That project became the foundation for everything that followed.</p>
+              <p class="text-body">By 2019, Tarun landed a project from Eitoss, a Japanese client, and called Ankit. They shipped it together, and AcornGlobus took seed. Not from a business plan, but from two friends who'd always wanted to build something of their own. The care we put into Formester, the ownership mindset, the obsession with getting it right. That's what we wanted to bring to every product we touched.</p>
               <p class="text-body">So we started doing exactly that. One client at a time. One relationship at a time.</p>
-              <p class="text-body">Seven years later, we're a 20+ person team. We've shipped 25+ products across SaaS, fintech, healthtech, e-commerce, and more. Formester is still live, still growing — 1,000+ users, 50,000+ forms created, 4.8-star rating. It keeps us honest. It reminds us every day what ownership feels like.</p>
+              <p class="text-body">Seven years later, we're a 20+ person team. We've shipped 25+ products across SaaS, fintech, healthtech, e-commerce, and more. Formester is still live, still growing: 1,000+ users, 50,000+ forms created, 4.8-star rating. It keeps us honest. It reminds us every day what ownership feels like.</p>
             </div>
           </div>
           <div class="origin-illustration">
@@ -85,7 +85,7 @@
           <span class="text-label">The people behind the code</span>
           <h2 class="text-display-sm" style="margin-top: 16px;">You'll know us by name.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">We're a team of 20+ engineers. No bench. No rotating juniors. No account managers standing between you and the people doing the work.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">The engineer you meet in the first call is the engineer who writes your code. When you message us on Slack, a real person who knows your codebase answers. We're small enough that every relationship matters — and experienced enough to build what you need.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">The engineer you meet in the first call is the engineer who writes your code. When you message us on Slack, a real person who knows your codebase answers. We're small enough that every relationship matters. And experienced enough to build what you need.</p>
         </div>
 
         <h3 class="text-headline founders-label">Meet Our Founders</h3>
@@ -95,13 +95,13 @@
             <img src="/images/team/ankit.jpeg" alt="Ankit Singhania" class="founder-avatar-img" loading="lazy">
             <h4>Ankit Singhania</h4>
             <span class="founder-title">Co-Founder</span>
-            <p class="founder-bio">While Tarun was still in startups, Ankit went out on his own — freelancing and building Formester from scratch as a one-man army. When Tarun called about Eitoss, their visions clicked. Both had always wanted to build a company of their own. Ankit is as technical as he is relationship-driven. He codes, he builds, and he's also the reason partnerships last years. If you're working with us, you'll probably hear from Ankit first.</p>
+            <p class="founder-bio">While Tarun was still in startups, Ankit went out on his own, freelancing and building Formester from scratch as a one-man army. When Tarun called about Eitoss, their visions clicked. Both had always wanted to build a company of their own. Ankit is as technical as he is relationship-driven. He codes, he builds, and he's also the reason partnerships last years. If you're working with us, you'll probably hear from Ankit first.</p>
           </div>
           <div class="founder-card">
             <img src="/images/team/tarun.jpeg" alt="Tarun Bhukya" class="founder-avatar-img" loading="lazy">
             <h4>Tarun Bhukya</h4>
             <span class="founder-title">Co-Founder</span>
-            <p class="founder-bio">Tarun and Ankit met at a startup, worked together for a year, and became close friends. When Tarun landed a project from a Japanese client — Eitoss — he joined hands with Ankit. They shipped it together, and that's where AcornGlobus started. Not from a business plan, but from two friends building something side by side. Tarun's the kind of engineer who thinks the best code is the code the next person can understand.</p>
+            <p class="founder-bio">Tarun and Ankit met at a startup, worked together for a year, and became close friends. When Tarun landed a project from a Japanese client (Eitoss) he joined hands with Ankit. They shipped it together, and that's where AcornGlobus started. Not from a business plan, but from two friends building something side by side. Tarun's the kind of engineer who thinks the best code is the code the next person can understand.</p>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
               <h3 class="text-headline">PerformLine</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">1 engineer. Then 8+. Two years and counting.</p>
               <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer to plug into their existing team. We sent one. That was two years ago.</p>
-              <p class="text-body" style="margin-top: 12px;">Today, we're 8+ engineers deep — full-stack, DevOps, data engineering, QA, frontend. Same tools. Same standups. Same Slack channels. Our team is so embedded that new PerformLine hires sometimes don't realize we're a separate company.</p>
+              <p class="text-body" style="margin-top: 12px;">Today, we're 8+ engineers deep: full-stack, DevOps, data engineering, QA, frontend. Same tools. Same standups. Same Slack channels. Our team is so embedded that new PerformLine hires sometimes don't realize we're a separate company.</p>
               <p class="text-body" style="margin-top: 12px;">That didn't happen because of a contract expansion clause. It happened because sprint after sprint, we earned their trust.</p>
               <div class="partnership-stats">
                 <div>
@@ -151,7 +151,7 @@
               <h3 class="text-headline">Eitoss</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</p>
               <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a product vision and a tight timeline. We scoped it honestly, built it in sprints, and shipped a demoable MVP in 8 weeks. The product was live in production in 3 months.</p>
-              <p class="text-body" style="margin-top: 12px;">They took that MVP and raised funding. That was over two years ago. We're still their engineering team — not because they're locked in (they own 100% of the code), but because the partnership works.</p>
+              <p class="text-body" style="margin-top: 12px;">They took that MVP and raised funding. That was over two years ago. We're still their engineering team, not because they're locked in (they own 100% of the code), but because the partnership works.</p>
               <div class="partnership-stats">
                 <div>
                   <div class="partnership-stat-value">8 Wks</div>
@@ -189,7 +189,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
             <h3>Every product is someone's whole world</h3>
-            <p>Whether it's a startup founder's first MVP or an enterprise team's critical platform — someone is counting on this. We build with that weight in mind.</p>
+            <p>Whether it's a startup founder's first MVP or an enterprise team's critical platform, someone is counting on this. We build with that weight in mind.</p>
           </div>
           <div class="value-card">
             <div class="value-icon">
@@ -210,7 +210,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
             </div>
             <h3>The right tool, not the familiar one</h3>
-            <p>React, Node, Python, Flutter, Go, AWS, Azure, GCP — we're stack-agnostic because we're outcome-focused. We pick the technology that solves your problem best, not the one we used last time.</p>
+            <p>React, Node, Python, Flutter, Go, AWS, Azure, GCP. We're stack-agnostic because we're outcome-focused. We pick the technology that solves your problem best, not the one we used last time.</p>
           </div>
         </div>
       </div>
@@ -220,11 +220,25 @@
     <section class="section-redesign cta-section">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Let's talk about what you're building.</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Whether you're a founder with an idea, a CTO who needs more hands, or a team looking for a long-term engineering partner — we'd love to hear what you're working on.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Whether you're a founder with an idea, a CTO who needs more hands, or a team looking for a long-term engineering partner. We'd love to hear what you're working on.</p>
         <p class="text-body-lg" style="max-width: 640px; margin: 12px auto 0;">No pitch decks. No pressure. Just a conversation about your product and whether we're the right fit.</p>
         <div class="cta-actions">
           <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a conversation</NuxtLink>
           <p class="cta-alt">Or reach out directly at <a href="mailto:business@acornglobus.com">business@acornglobus.com</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
@@ -237,24 +251,33 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  description: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
-  ogTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  ogDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  title: 'About AcornGlobus | We Build It Like It\'s Ours',
+  description: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
+  ogTitle: 'About AcornGlobus | We Build It Like It\'s Ours',
+  ogDescription: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
   ogImage: 'https://acornglobus.com/images/og/og-about.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/about/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  twitterDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  twitterTitle: 'About AcornGlobus | We Build It Like It\'s Ours',
+  twitterDescription: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
   twitterImage: 'https://acornglobus.com/images/og/og-about.webp',
 })
 
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/about/' }],
 })
+
+const faqs = [
+  { question: 'Who is AcornGlobus?', answer: 'A product engineering team of more than 20 full-time engineers, working with clients in the US, UK, Canada and Australia. We have been building software for over seven years, and we build and run our own SaaS product alongside client work.' },
+  { question: 'Why did you build your own product?', answer: 'Because there is a gap between executing someone else\'s spec and owning the outcome. Building Formester meant living with our own decisions: the uptime, the support tickets, the users who churn. That changed how we work with every client.' },
+  { question: 'Do you use contractors or full-time engineers?', answer: 'Full-time engineers. Every developer we propose is a member of our team, not a contractor pulled from a marketplace, and you interview them yourself before committing.' },
+  { question: 'What happens if the engineer is not the right fit?', answer: 'That is what the two-week embedded trial is for. Your developer joins your team, your standups and your code reviews before any long-term commitment, and you decide from real work rather than an interview.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'About', path: '/about/' },
@@ -571,4 +594,16 @@ useBreadcrumbSchema([
     gap: 16px;
   }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

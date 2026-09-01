@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <img src="/images/case-study-eitoss.webp" alt="Eitoss -- Kaizen communication platform connecting management and frontline workers" style="width: 100%; border-radius: 16px; margin-top: 32px;">
+        <img src="/images/case-study-eitoss.webp" alt="Eitoss, Kaizen communication platform connecting management and frontline workers" style="width: 100%; border-radius: 16px; margin-top: 32px;">
       </div>
     </section>
 
@@ -79,8 +79,8 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">How It Started</h2>
           <p class="text-body" style="margin-top: 20px;">Eitoss had a clear problem to solve: frontline workers and management weren't communicating well. Important feedback got lost. Good ideas never reached the people who could act on them. The gap between the factory floor and the leadership team was costing real money and real morale.</p>
-          <p class="text-body" style="margin-top: 16px;">They came to us with a vision rooted in Kaizen -- the Japanese philosophy of continuous improvement. The idea was simple: give every worker a voice, and give management the tools to actually listen.</p>
-          <p class="text-body" style="margin-top: 16px;">This was personal for us too. Eitoss was one of AcornGlobus's first projects -- the engagement that helped spark the company. We didn't treat it like a client brief. We treated it like building something of our own.</p>
+          <p class="text-body" style="margin-top: 16px;">They came to us with a vision rooted in Kaizen, the Japanese philosophy of continuous improvement. The idea was simple: give every worker a voice, and give management the tools to actually listen.</p>
+          <p class="text-body" style="margin-top: 16px;">This was personal for us too. Eitoss was one of AcornGlobus's first projects, the engagement that helped spark the company. We didn't treat it like a client brief. We treated it like building something of our own.</p>
         </div>
       </div>
     </section>
@@ -90,7 +90,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What We Built Together</h2>
-          <p class="text-body" style="margin-top: 20px;">We didn't just write code to a spec. We worked with the Eitoss team to shape the product -- questioning assumptions, trimming scope to what mattered most, and making sure every feature earned its place in the MVP.</p>
+          <p class="text-body" style="margin-top: 20px;">We didn't just write code to a spec. We worked with the Eitoss team to shape the product: questioning assumptions, trimming scope to what mattered most, and making sure every feature earned its place in the MVP.</p>
         </div>
         <div class="feature-cards-3">
           <div class="feature-card-full">
@@ -115,7 +115,7 @@
           </div>
           <div class="feature-card-full">
             <h3>Analytics That Actually Help</h3>
-            <p>A dashboard that shows managers what's working and what isn't -- response times, engagement rates, improvement trends. Not vanity metrics. Actionable insights that help teams get better.</p>
+            <p>A dashboard that shows managers what's working and what isn't: response times, engagement rates, improvement trends. Not vanity metrics. Actionable insights that help teams get better.</p>
             <ul class="feature-sub-list">
               <li>Response time tracking</li>
               <li>Engagement and adoption metrics</li>
@@ -139,7 +139,7 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery <span style="font-weight: 400; color: var(--text-secondary); font-size: 16px;">(Week 1-2)</span></h3>
-              <p>We spent two weeks understanding the problem deeply -- talking to stakeholders, mapping out user flows, and scoping the MVP to what would actually prove the concept. We cut three features that sounded important but weren't essential for validation.</p>
+              <p>We spent two weeks understanding the problem deeply: talking to stakeholders, mapping out user flows, and scoping the MVP to what would actually prove the concept. We cut three features that sounded important but weren't essential for validation.</p>
             </div>
           </div>
           <div class="process-step">
@@ -172,7 +172,7 @@
       <div class="container-redesign">
         <div class="section-header centered">
           <h2 class="text-display-sm">Technology Stack</h2>
-          <p class="text-body-lg" style="margin-top: 12px;">We chose each technology for a reason -- scalability, developer velocity, and long-term maintainability.</p>
+          <p class="text-body-lg" style="margin-top: 12px;">We chose each technology for a reason: scalability, developer velocity, and long-term maintainability.</p>
         </div>
         <div class="tech-tags" style="justify-content: center;">
           <span class="tech-tag">React.js</span>
@@ -200,7 +200,7 @@
         <div class="impact-cards">
           <div class="impact-card">
             <h3>Raised 60 Million Yen</h3>
-            <p>Eitoss used the working product to raise funding. Investors could see real users, real data, and a real product -- not a slide deck.</p>
+            <p>Eitoss used the working product to raise funding. Investors could see real users, real data, and a real product, not a slide deck.</p>
           </div>
           <div class="impact-card">
             <h3>Early Adopters Validated the Concept</h3>
@@ -208,11 +208,11 @@
           </div>
           <div class="impact-card">
             <h3>We Kept Building Together</h3>
-            <p>After funding, Eitoss didn't go hire a new team. They stayed with us. Two years later, we're still growing the product together -- not because of a contract, but because the partnership works.</p>
+            <p>After funding, Eitoss didn't go hire a new team. They stayed with us. Two years later, we're still growing the product together, not because of a contract, but because the partnership works.</p>
           </div>
           <div class="impact-card">
             <h3>The Product Keeps Growing</h3>
-            <p>New features, new integrations, expanding to new industries. The code we wrote in those first 12 weeks was built to last -- and it has.</p>
+            <p>New features, new integrations, expanding to new industries. The code we wrote in those first 12 weeks was built to last, and it has.</p>
           </div>
         </div>
       </div>
@@ -229,6 +229,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -238,16 +252,16 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
-  description: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
-  ogTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
-  ogDescription: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
+  title: 'Eitoss Case Study: Idea to Funded Product in 12 Weeks',
+  description: 'How we built Eitoss from idea to funded product in 12 weeks: a workplace communication platform that raised 60M yen. Two years on, still building together.',
+  ogTitle: 'Eitoss Case Study: Idea to Funded Product in 12 Weeks',
+  ogDescription: 'How we built Eitoss from idea to funded product in 12 weeks: a workplace communication platform that raised 60M yen. Two years on, still building together.',
   ogImage: 'https://acornglobus.com/images/case-study-eitoss.webp',
   ogUrl: 'https://acornglobus.com/case-studies/eitoss/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks | AcornGlobus',
-  twitterDescription: 'How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we\'re still building together.',
+  twitterTitle: 'Eitoss Case Study: Idea to Funded Product in 12 Weeks',
+  twitterDescription: 'How we built Eitoss from idea to funded product in 12 weeks: a workplace communication platform that raised 60M yen. Two years on, still building together.',
   twitterImage: 'https://acornglobus.com/images/case-study-eitoss.webp',
 })
 
@@ -257,12 +271,20 @@ useHead({
 
 useArticleSchema({
   title: 'Eitoss Case Study | From Idea to Funded Product in 12 Weeks',
-  description: "How we built Eitoss from idea to funded product in 12 weeks -- a Kaizen-based workplace communication platform that raised 60M yen. Two years later, we're still building together.",
+  description: "How we built Eitoss from idea to funded product in 12 weeks: a workplace communication platform that raised 60M yen. Two years on, still building together.",
   url: '/case-studies/eitoss',
   datePublished: '2025-01-01',
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-eitoss.webp',
 })
+
+const faqs = [
+  { question: 'How long did the Eitoss MVP take to build?', answer: 'Eight weeks to a demoable product and three months to production. Eitoss raised 60M yen on that MVP, and we have been building together for more than two years since.' },
+  { question: 'What happened after the Eitoss MVP launched?', answer: 'They raised funding and we stayed on as their engineering team. More than two years later we are still building the product with them, which is the outcome we are actually aiming for on an MVP engagement.' },
+  { question: 'Can you build my MVP on a similar timeline?', answer: 'It depends on how many workflows your product needs. One core workflow can be in production in about two weeks, and a full MVP typically runs six to twelve weeks. We agree the scope with you before development starts so the timeline means something.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -432,4 +454,16 @@ useBreadcrumbSchema([
   .tech-tags { gap: 8px; }
   .tech-tag { padding: 8px 16px; font-size: 14px; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>
