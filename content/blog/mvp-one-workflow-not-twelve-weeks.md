@@ -8,8 +8,7 @@ authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 coverImg: /images/blog/mvp-one-workflow.webp
 coverImgAlt: "One core workflow shipped in two weeks, ahead of a full MVP build"
 toc: true
-published: false
-robots: "noindex, follow"
+published: true
 createdAt: "2026-09-01"
 updatedAt: "2026-09-01"
 keywords:
