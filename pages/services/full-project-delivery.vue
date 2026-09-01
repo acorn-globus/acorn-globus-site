@@ -10,7 +10,7 @@
           </NuxtLink>
           <div class="hero-eyebrow"><span>Full Project Delivery</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Your product, built end-to-end by a team that treats it like their own.</h1>
-          <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success — not just your deadline.</p>
+          <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success, not just your deadline.</p>
           <div style="margin-top: 36px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -30,7 +30,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm" style="margin-bottom: 24px;">You need a product built right. Not just built.</h2>
-          <p class="text-body-lg" style="margin-bottom: 20px;">Maybe you don't have the engineering team to take this on. Maybe your team is stretched thin and this project needs dedicated focus. Either way, you need more than code — you need a team that understands your product, makes smart technical decisions, and delivers something that works in production, not just in a demo.</p>
+          <p class="text-body-lg" style="margin-bottom: 20px;">Maybe you don't have the engineering team to take this on. Maybe your team is stretched thin and this project needs dedicated focus. Either way, you need more than code. You need a team that understands your product, makes smart technical decisions, and delivers something that works in production, not just in a demo.</p>
           <p class="text-body-lg">You've heard the horror stories. Missed deadlines. Surprise invoices. A codebase you can't maintain. You need a partner who builds for your independence, not your dependence.</p>
         </div>
       </div>
@@ -55,7 +55,7 @@
           </div>
           <div class="feature-card">
             <h3>Built to hand over.</h3>
-            <p>Your code, your product, clean documentation. We build for your independence — zero lock-in. If you want to bring it in-house someday, we'll help you do that.</p>
+            <p>Your code, your product, clean documentation. We build for your independence, zero lock-in. If you want to bring it in-house someday, we'll help you do that.</p>
           </div>
           <div class="feature-card">
             <h3>Honest pricing.</h3>
@@ -77,15 +77,15 @@
         </div>
         <div class="case-study-card">
           <h3>Eitoss</h3>
-          <p class="text-body">Eitoss came to us needing an MVP built from scratch. We had a demoable product in 8 weeks and shipped it into production in 3 months. They raised funding. Two years later, we're still building together — the project became a partnership.</p>
+          <p class="text-body">Eitoss came to us needing an MVP built from scratch. We had a demoable product in 8 weeks and shipped it into production in 3 months. They raised funding. Two years later, we're still building together, the project became a partnership.</p>
         </div>
         <div class="case-study-card">
           <h3>PerformLine</h3>
-          <p class="text-body">PerformLine started with resource augmentation and grew to 8+ engineers over 2 years — full-stack, DevOps, data, QA, and frontend. What started as extra hands became a core part of their engineering operation.</p>
+          <p class="text-body">PerformLine started with resource augmentation and grew to 8+ engineers over 2 years: full-stack, DevOps, data, QA, and frontend. What started as extra hands became a core part of their engineering operation.</p>
         </div>
         <div class="case-study-card">
           <h3>Formester</h3>
-          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
+          <p class="text-body">Formester is our own SaaS product: live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
           <li>System architecture and technical design</li>
           <li>Full-stack development</li>
           <li>UI/UX implementation (from your designs, or we provide wireframes)</li>
-          <li>QA and testing — unit, integration, end-to-end</li>
+          <li>QA and testing: unit, integration, end-to-end</li>
           <li>DevOps and infrastructure setup</li>
           <li>Deployment and go-live support</li>
           <li>Technical and user-facing documentation</li>
@@ -185,7 +185,7 @@
           </div>
           <div class="details-row">
             <div class="details-label">Code ownership</div>
-            <div class="details-value">100% yours — code and IP</div>
+            <div class="details-value">100% yours, code and IP</div>
           </div>
           <div class="details-row">
             <div class="details-label">Communication</div>
@@ -214,7 +214,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">You have the vision. Let's build it together.</h2>
-        <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project — what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
+        <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project: what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>

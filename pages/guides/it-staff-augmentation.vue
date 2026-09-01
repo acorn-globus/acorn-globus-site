@@ -62,7 +62,7 @@
             <!-- SECTION 1: What Is IT Staff Augmentation? -->
             <h2 id="what-is">1. What Is IT Staff Augmentation?</h2>
 
-            <p>IT staff augmentation is a flexible outsourcing strategy where you hire external engineers to work alongside your existing team, under your management and within your workflows. The engineers are employed by the augmentation partner, but they operate as members of your team. You'll also hear the same model called resource augmentation or team augmentation — the terms are interchangeable, and this guide uses them to mean exactly the same thing.</p>
+            <p>IT staff augmentation is a flexible outsourcing strategy where you hire external engineers to work alongside your existing team, under your management and within your workflows. The engineers are employed by the augmentation partner, but they operate as members of your team. You'll also hear the same model called resource augmentation or team augmentation, the terms are interchangeable, and this guide uses them to mean exactly the same thing.</p>
 
             <p>Think of it this way: you're not outsourcing a project. You're expanding your team with people who show up to your standups, push code to your repos, and care about your product the way your internal engineers do.</p>
 
@@ -408,7 +408,7 @@
             <div class="guide-inline-cta">
               <div class="guide-inline-cta-text">
                 <h3>Need engineers who ship from week one?</h3>
-                <p>Tell us what your team needs and we'll match vetted senior engineers who embed with you — whether you call it resource, team, or staff augmentation. See how it works on our <NuxtLink to="/services/resource-augmentation/">resource augmentation service</NuxtLink> page, or book a free 30-minute call to talk it through.</p>
+                <p>Tell us what your team needs and we'll match vetted senior engineers who embed with you: whether you call it resource, team, or staff augmentation. See how it works on our <NuxtLink to="/services/resource-augmentation/">resource augmentation service</NuxtLink> page, or book a free 30-minute call to talk it through.</p>
               </div>
               <div class="guide-inline-cta-actions">
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
@@ -570,7 +570,7 @@
               <details>
                 <summary>Is IT staff augmentation the same as resource augmentation and team augmentation?</summary>
                 <div class="faq-answer">
-                  <p>Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs — direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.</p>
+                  <p>Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs: direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.</p>
                 </div>
               </details>
               <details>

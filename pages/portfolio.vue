@@ -5,7 +5,7 @@
       <div class="container-redesign">
         <div class="hero-eyebrow"><span>Our Portfolio</span></div>
         <h1 class="text-display-lg" style="max-width: 800px;">Products We've Built And Stories Behind Them</h1>
-        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of — and the partnerships that made it happen.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin-top: 24px;">From our own SaaS product to funded startups and global nonprofits, here's the work we're proud of. And the partnerships that made it happen.</p>
         <NuxtLink to="/contact/" class="btn btn-primary" style="margin-top: 40px;">Let's build together</NuxtLink>
       </div>
     </section>
@@ -36,7 +36,7 @@
           <div class="featured-content">
             <h2>Formester</h2>
             <p class="text-title-lg">AI-Powered No-Code Form Builder</p>
-            <p class="text-body" style="margin-top: 16px;">We built Formester ourselves — it's proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.7 on G2. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.</p>
+            <p class="text-body" style="margin-top: 16px;">We built Formester ourselves. It's proof that we know what it takes to ship and grow a real product. 1000+ users, 50K+ forms created, 4.7 on G2. It empowers businesses to create intelligent forms with conditional logic, AI-powered generation, and seamless integrations.</p>
             <div class="featured-stats">
               <div><div class="featured-stat-value">1000+</div><div class="featured-stat-label">Active Users</div></div>
               <div><div class="featured-stat-value">50K+</div><div class="featured-stat-label">Forms Created</div></div>
@@ -133,7 +133,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center; max-width: 640px;">
         <h2 class="text-display-sm">Want to build something like this?</h2>
-        <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks — just a conversation about your product.</p>
+        <p class="text-body-lg" style="margin-top: 16px;">We'd love to hear what you're working on. No pitch decks, just a conversation about your product.</p>
         <div class="cta-actions" style="justify-content: center;">
           <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
           <NuxtLink to="/services/" class="btn btn-secondary">View Services</NuxtLink>

@@ -77,7 +77,7 @@
           <div>
             <span class="text-label">Built from experience</span>
             <h2 class="text-display-sm" style="margin-top: 16px;">We built our own SaaS. We build yours the same way.</h2>
-            <p class="text-body-lg" style="margin-top: 20px;">Formester is our AI-powered form builder — live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night. We bring that same care to your product. Not because a contract says to. Because that's how we're wired.</p>
+            <p class="text-body-lg" style="margin-top: 20px;">Formester is our AI-powered form builder: live, growing, used by thousands. Building our own product taught us what real ownership feels like: the late-night bug fixes, the user feedback loops, the decisions that keep you up at night. We bring that same care to your product. Not because a contract says to. Because that's how we're wired.</p>
             <div class="formester-stats">
               <div class="formester-stat">
                 <div class="formester-stat-value">1,000+</div>
@@ -98,7 +98,7 @@
             </a>
           </div>
           <div class="hero-illustration">
-            <img src="/images/formester.webp" alt="Formester Platform — AI Form Builder Interface" class="hero-img" loading="lazy" width="1536" height="1024">
+            <img src="/images/formester.webp" alt="Formester Platform, AI Form Builder Interface" class="hero-img" loading="lazy" width="1536" height="1024">
             <div class="floating-badge" style="bottom: 40px; right: -10px;">
               <div class="badge-dot" style="background: var(--success);"></div>
               <div>
@@ -126,7 +126,7 @@
               <span class="partnership-label">Resource Augmentation</span>
               <h3 class="text-headline">PerformLine</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">From 1 engineer to 8+. Two years and counting.</p>
-              <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep — full-stack, DevOps, data, QA — embedded in their team like we've always been there. Same tools, same standups, same standards. That's not a contract scaling up. That's trust being earned, sprint by sprint.</p>
+              <p class="text-body" style="margin-top: 16px;">PerformLine needed a frontend engineer. We sent one. That was two years ago. Today, we're 8+ engineers deep (full-stack, DevOps, data, QA) embedded in their team like we've always been there. Same tools, same standups, same standards. That's not a contract scaling up. That's trust being earned, sprint by sprint.</p>
               <div class="partnership-stats">
                 <div>
                   <div class="partnership-stat-value">1 to 8+</div>
@@ -170,7 +170,7 @@
               <span class="partnership-label">MVP Development</span>
               <h3 class="text-headline">Eitoss</h3>
               <p class="text-body" style="margin-top: 8px; color: var(--on-surface); font-weight: 500;">Demoable MVP in 8 weeks. Live in 3 months. Raised funding. Still building together.</p>
-              <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team — not because they're locked in, but because the partnership works.</p>
+              <p class="text-body" style="margin-top: 16px;">Eitoss came to us with a vision and a timeline. We shipped a demoable MVP in 8 weeks and had the product live in production in 3 months. They raised funding. Two years later, we're still their engineering team, not because they're locked in, but because the partnership works.</p>
               <div class="partnership-stats">
                 <div>
                   <div class="partnership-stat-value">8 Weeks</div>
@@ -261,12 +261,12 @@
         <div class="section-header" style="max-width: 720px;">
           <span class="text-label">The honest version of what AI changed for us</span>
           <h2 class="text-display-sm" style="margin-top: 16px;">What used to take four months now takes about one.</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">We didn't get cheaper — we got faster, and the quality went up. That's because we know how to code <em>and</em> how to drive AI, which is the rare pairing that separates a working AI feature from a fragile one. If you want AI shipped fast, correctly, and reliably, that's what we do. If you just want the lowest price, we're probably not your team.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">We didn't get cheaper. We got faster, and the quality went up. That's because we know how to code <em>and</em> how to drive AI, which is the rare pairing that separates a working AI feature from a fragile one. If you want AI shipped fast, correctly, and reliably, that's what we do. If you just want the lowest price, we're probably not your team.</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/ai-development/" class="feature-card" style="text-decoration: none;">
             <h3>AI Development</h3>
-            <p>Real AI inside your product — agents, generative AI, LLM & RAG. We run AI in our own SaaS and operate our own AI agents.</p>
+            <p>Real AI inside your product: agents, generative AI, LLM & RAG. We run AI in our own SaaS and operate our own AI agents.</p>
           </NuxtLink>
           <NuxtLink to="/services/ai-agent-development/" class="feature-card" style="text-decoration: none;">
             <h3>AI Agent Development</h3>
@@ -274,7 +274,7 @@
           </NuxtLink>
           <NuxtLink to="/services/ai-app-rescue/" class="feature-card" style="text-decoration: none;">
             <h3>AI App Rescue</h3>
-            <p>Built it with AI and it's breaking? We take AI-built apps to production — keep what works, fix what's fragile, ship it.</p>
+            <p>Built it with AI and it's breaking? We take AI-built apps to production: keep what works, fix what's fragile, ship it.</p>
           </NuxtLink>
         </div>
       </div>
@@ -325,7 +325,7 @@
       <div class="container-redesign">
         <div class="section-header centered">
           <h2 class="text-display-sm">Let's build something together.</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product — we'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Whether you need one engineer or a full product team, whether you're launching an MVP or scaling an existing product. We'd love to hear what you're working on. No pitch decks. No sales pressure. Just a conversation about your product and how we might help.</p>
         </div>
         <div class="cta-actions">
           <NuxtLink to="/contact/" class="btn btn-primary cta-btn-lg">Start a conversation</NuxtLink>

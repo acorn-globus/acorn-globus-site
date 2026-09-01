@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Node.js Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Node.js Developers in India Who Think in Systems, Not Just Code</h1>
-          <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products — not tutorial projects.</p>
+          <p class="hero-body">Your backend needs more than someone who knows Express.js. It needs engineers who understand API design, database architecture, caching strategies, and how systems behave under load. We're a 20+ person product engineering team. Our Node.js developers build backends that serve real products, not tutorial projects.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -56,14 +56,14 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
             <h3>Honest Technology Advice</h3>
-            <p>We'll tell you when Node.js is the right choice — and when it isn't. We'd rather recommend the right tool than sell you hours on the wrong one.</p>
+            <p>We'll tell you when Node.js is the right choice. And when it isn't. We'd rather recommend the right tool than sell you hours on the wrong one.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
             </div>
             <h3>Productive From Week One</h3>
-            <p>We've onboarded into dozens of existing codebases. Our engineers ramp up fast — reading your code, understanding your patterns, and shipping meaningful work within the first week.</p>
+            <p>We've onboarded into dozens of existing codebases. Our engineers ramp up fast: reading your code, understanding your patterns, and shipping meaningful work within the first week.</p>
           </div>
         </div>
       </div>
@@ -145,10 +145,10 @@
               Strong fit when
             </h3>
             <ul>
-              <li>Your stack is already JavaScript-heavy — shared language across frontend and backend reduces context switching and lets you move faster.</li>
-              <li>You're building real-time features — chat, notifications, live dashboards, collaborative editing. Node's event-driven model handles persistent connections well.</li>
-              <li>You're building an API-first product — REST or GraphQL APIs that serve multiple clients (web, mobile, third-party). Node excels at I/O-bound request handling.</li>
-              <li>Your workload is I/O-intensive — lots of database queries, external API calls, file processing. Node's non-blocking I/O handles concurrent operations efficiently.</li>
+              <li>Your stack is already JavaScript-heavy, shared language across frontend and backend reduces context switching and lets you move faster.</li>
+              <li>You're building real-time features: chat, notifications, live dashboards, collaborative editing. Node's event-driven model handles persistent connections well.</li>
+              <li>You're building an API-first product: REST or GraphQL APIs that serve multiple clients (web, mobile, third-party). Node excels at I/O-bound request handling.</li>
+              <li>Your workload is I/O-intensive: lots of database queries, external API calls, file processing. Node's non-blocking I/O handles concurrent operations efficiently.</li>
             </ul>
           </div>
           <div class="when-col consider">
@@ -157,13 +157,13 @@
               Consider alternatives when
             </h3>
             <ul>
-              <li>Your workload is CPU-intensive — heavy computation, image/video processing, or machine learning inference. Python or Go may serve you better here.</li>
-              <li>You need extreme concurrency with heavy processing — Go's goroutines or Rust's memory model can outperform Node in these scenarios.</li>
-              <li>You want strong static typing throughout — while TypeScript helps, languages like Java, C#, or Go offer more mature type systems for large enterprise codebases.</li>
+              <li>Your workload is CPU-intensive: heavy computation, image/video processing, or machine learning inference. Python or Go may serve you better here.</li>
+              <li>You need extreme concurrency with heavy processing, Go's goroutines or Rust's memory model can outperform Node in these scenarios.</li>
+              <li>You want strong static typing throughout: while TypeScript helps, languages like Java, C#, or Go offer more mature type systems for large enterprise codebases.</li>
             </ul>
           </div>
         </div>
-        <p class="when-closing">We're not here to sell you Node.js for everything. If your project would be better served by Python, Go, or something else entirely, we'll tell you that. Honest advice builds partnerships — overselling builds regret.</p>
+        <p class="when-closing">We're not here to sell you Node.js for everything. If your project would be better served by Python, Go, or something else entirely, we'll tell you that. Honest advice builds partnerships, overselling builds regret.</p>
       </div>
     </section>
 
@@ -179,28 +179,28 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your product, your stack, your team, and what you're trying to accomplish. No sales pitch — just a conversation about what you need and whether we're a good fit.</p>
+              <p>We learn about your product, your stack, your team, and what you're trying to accomplish. No sales pitch, just a conversation about what you need and whether we're a good fit.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>We match you with a Node.js engineer based on your tech stack, domain, and working style. You interview them directly — same person who'll be writing your code.</p>
+              <p>We match you with a Node.js engineer based on your tech stack, domain, and working style. You interview them directly, same person who'll be writing your code.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div>
               <h3>2-Week Trial</h3>
-              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving — all before any long-term commitment.</p>
+              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving, all before any long-term commitment.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">4</div>
             <div>
               <h3>Ongoing Partnership</h3>
-              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus — we adapt as your product evolves.</p>
+              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus. We adapt as your product evolves.</p>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@
         <div class="models-grid">
           <div class="model-card">
             <h3>Dedicated Developer</h3>
-            <p class="model-desc">A full-time Node.js engineer embedded in your team. Same hours, same tools, same standups. They become part of your team — you'll forget they're external.</p>
+            <p class="model-desc">A full-time Node.js engineer embedded in your team. Same hours, same tools, same standups. They become part of your team. You'll forget they're external.</p>
             <ul>
               <li>Full-time (40 hrs/week)</li>
               <li>Works in your tools and workflows</li>
@@ -259,7 +259,7 @@
         <div class="projects-grid">
           <div class="project-card">
             <h3>PerformLine</h3>
-            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many — the partnership just kept proving its value, sprint after sprint.</p>
+            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many, the partnership just kept proving its value, sprint after sprint.</p>
             <div class="project-meta-tags">
               <span class="project-meta-tag">1 to 8+ Engineers</span>
               <span class="project-meta-tag">2+ Years</span>
@@ -307,7 +307,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our Node.js engineers into your existing team — same standups, same repo, same deployment pipeline.</p>
+            <p>Embed our Node.js engineers into your existing team: same standups, same repo, same deployment pipeline.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -315,7 +315,7 @@
           </NuxtLink>
           <NuxtLink to="/case-studies/rumie/" class="feature-card" style="text-decoration: none;">
             <h3>Rumie Case Study</h3>
-            <p>A Node.js and React Native platform reaching users across dozens of countries — built for scale and speed.</p>
+            <p>A Node.js and React Native platform reaching users across dozens of countries, built for scale and speed.</p>
           </NuxtLink>
           <NuxtLink to="/blog/how-to-choose-a-tech-stack/" class="feature-card" style="text-decoration: none;">
             <h3>How to Choose a Tech Stack</h3>

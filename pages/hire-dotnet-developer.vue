@@ -43,11 +43,11 @@
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product — live, with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every .NET project we touch.</p>
+            <p>Formester is our SaaS product, live, with real users and a 4.7 rating on G2. Building our own product taught us what ownership feels like. We bring that same mindset to every .NET project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>
-            <p>Our engineers ramp on your codebase in one to two weeks — solution structure, EF Core models, deployment pipelines, the whole stack. We track time-to-first-PR because we know you're hiring for output, not warm bodies.</p>
+            <p>Our engineers ramp on your codebase in one to two weeks: solution structure, EF Core models, deployment pipelines, the whole stack. We track time-to-first-PR because we know you're hiring for output, not warm bodies.</p>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our .NET Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our .NET developers don't just write C# — they design systems that hold up under production load and are still readable two years later.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our .NET developers don't just write C#. They design systems that hold up under production load and are still readable two years later.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
@@ -71,11 +71,11 @@
           </div>
           <div class="build-card">
             <h3>Azure-Native Cloud Applications</h3>
-            <p>App Service, Azure Functions, Service Bus, Cosmos DB, Application Insights — built around Azure's strengths instead of fighting them. Infrastructure-as-code with Bicep or Terraform so deployments are repeatable.</p>
+            <p>App Service, Azure Functions, Service Bus, Cosmos DB, Application Insights, built around Azure's strengths instead of fighting them. Infrastructure-as-code with Bicep or Terraform so deployments are repeatable.</p>
           </div>
           <div class="build-card">
             <h3>Legacy .NET Framework Modernization</h3>
-            <p>Migrating from .NET Framework 4.x to .NET 6/8 without a risky big-bang rewrite. We pattern-match common pain points — WebForms, WCF, classic ASP.NET — and migrate incrementally with the strangler fig pattern.</p>
+            <p>Migrating from .NET Framework 4.x to .NET 6/8 without a risky big-bang rewrite. We pattern-match common pain points: WebForms, WCF, classic ASP.NET. And migrate incrementally with the strangler fig pattern.</p>
           </div>
           <div class="build-card">
             <h3>Real-Time and Event-Driven Systems</h3>
@@ -167,14 +167,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your system, your stack, and the kind of .NET developer you need — whether it's greenfield ASP.NET Core, a legacy .NET Framework migration, or augmenting an existing team. No generic pitches.</p>
+              <p>We learn about your system, your stack, and the kind of .NET developer you need, whether it's greenfield ASP.NET Core, a legacy .NET Framework migration, or augmenting an existing team. No generic pitches.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your project's needs, domain, and team culture, we propose specific engineers — not resumes from a database. You interview them directly. No account managers in between.</p>
+              <p>Based on your project's needs, domain, and team culture, we propose specific engineers, not resumes from a database. You interview them directly. No account managers in between.</p>
             </div>
           </div>
           <div class="process-step">
@@ -188,7 +188,7 @@
             <div class="step-number">4</div>
             <div>
               <h3>Ongoing Partnership</h3>
-              <p>If the trial works, we keep building together. Monthly rolling engagement after the initial commitment. Scale up, scale down, or add complementary skills — DevOps, QA, frontend — as your product grows.</p>
+              <p>If the trial works, we keep building together. Monthly rolling engagement after the initial commitment. Scale up, scale down, or add complementary skills (DevOps, QA, frontend) as your product grows.</p>
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@
           <div class="hiring-card">
             <h3>Project-Based</h3>
             <div class="best-for">Best for: Defined scope with clear deliverables</div>
-            <p>A .NET developer (or small team) for a specific project — a legacy migration, an API rebuild, a cloud lift-and-shift. We scope it together, agree on deliverables, and ship. Clear start, clear end, clean handoff.</p>
+            <p>A .NET developer (or small team) for a specific project: a legacy migration, an API rebuild, a cloud lift-and-shift. We scope it together, agree on deliverables, and ship. Clear start, clear end, clean handoff.</p>
           </div>
         </div>
         <p class="text-body" style="margin-top: 32px; text-align: center; color: var(--text-secondary);">All models start with a two-week trial. Monthly rolling after the initial three-month commitment. No long-term lock-in.</p>
@@ -250,7 +250,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our .NET engineers into your existing team — same standups, same repo, same delivery pipeline.</p>
+            <p>Embed our .NET engineers into your existing team: same standups, same repo, same delivery pipeline.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>

@@ -27,7 +27,7 @@
         <div class="container-redesign">
           <div class="audience-header">
             <h2 class="text-label audience-heading">For Startups</h2>
-            <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You've got the vision and the funding. You need a team that ships real products — not prototypes you'll rewrite in six months.</p>
+            <p class="text-body-lg" style="margin-top: 12px; max-width: 640px;">You've got the vision and the funding. You need a team that ships real products, not prototypes you'll rewrite in six months.</p>
           </div>
           <div class="service-offerings-grid">
             <!-- MVP Development -->
@@ -36,7 +36,7 @@
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
               </div>
               <h3 class="text-title-lg">Ship a real product in 8-12 weeks</h3>
-              <p class="text-body" style="margin-top: 12px;">We take your product idea and build it with you — from concept to a working, deployable MVP. Production-quality from day one, with clean code and proper architecture. We've been through this ourselves with Formester.</p>
+              <p class="text-body" style="margin-top: 12px;">We take your product idea and build it with you, from concept to a working, deployable MVP. Production-quality from day one, with clean code and proper architecture. We've been through this ourselves with Formester.</p>
               <ul class="check-list">
                 <li>Production-ready code, not a throwaway prototype</li>
                 <li>100% code ownership from day one</li>
@@ -59,15 +59,15 @@
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               </div>
               <h3 class="text-title-lg">Your product, built end-to-end by a team that cares</h3>
-              <p class="text-body" style="margin-top: 12px;">From architecture to launch — one team, one relationship, no surprises. We walk with you through every decision and build it like it's our own.</p>
+              <p class="text-body" style="margin-top: 12px;">From architecture to launch: one team, one relationship, no surprises. We walk with you through every decision and build it like it's our own.</p>
               <ul class="check-list">
-                <li>Milestone transparency — you see progress, not just reports</li>
-                <li>Built to hand over — zero lock-in</li>
+                <li>Milestone transparency: you see progress, not just reports</li>
+                <li>Built to hand over, zero lock-in</li>
                 <li>4-week post-launch warranty</li>
               </ul>
               <div class="proof-point">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <span>We built Formester end-to-end — our own SaaS product, live and growing with real users.</span>
+                <span>We built Formester end-to-end. Our own SaaS product, live and growing with real users.</span>
               </div>
               <div class="card-ctas">
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what you're building</a>
@@ -112,16 +112,16 @@
               <div class="service-icon-lg">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               </div>
-              <h3 class="text-title-lg">From idea to working product — with a team that explains every step</h3>
+              <h3 class="text-title-lg">From idea to working product, with a team that explains every step</h3>
               <p class="text-body" style="margin-top: 12px;">We'll help you define what to build first, guide you through the trade-offs, and ship something real. Milestone-based pricing so you know exactly what you're getting.</p>
               <ul class="check-list">
-                <li>We scope the product with you — honest about what to build first and what can wait</li>
+                <li>We scope the product with you, honest about what to build first and what can wait</li>
                 <li>Weekly demos so you see progress, not just hear about it</li>
-                <li>Clean handoff — your code, ready for your future in-house team</li>
+                <li>Clean handoff. Your code, ready for your future in-house team</li>
               </ul>
               <div class="proof-point">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <span>We built Formester ourselves. We know what it's like to care deeply about a product — and we bring that same care to yours.</span>
+                <span>We built Formester ourselves. We know what it's like to care deeply about a product. And we bring that same care to yours.</span>
               </div>
               <div class="card-ctas">
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Let's figure this out together</a>
@@ -135,13 +135,13 @@
               <h3 class="text-title-lg">A product engineering team that feels like co-founders</h3>
               <p class="text-body" style="margin-top: 12px;">You define the what. We walk with you through the how. Every milestone is visible, every decision is explained in terms that make sense.</p>
               <ul class="check-list">
-                <li>One team, one relationship — people you know by name</li>
+                <li>One team, one relationship, people you know by name</li>
                 <li>Milestone-based pricing for budget predictability</li>
                 <li>Full documentation and knowledge transfer</li>
               </ul>
               <div class="proof-point">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <span>We guide, not just execute. We'll tell you honestly what you need — and what can wait.</span>
+                <span>We guide, not just execute. We'll tell you honestly what you need. And what can wait.</span>
               </div>
               <div class="card-ctas">
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Start a conversation</a>
@@ -164,7 +164,7 @@
               <div class="service-icon-lg">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
               </div>
-              <h3 class="text-title-lg">Engineers who embed with your team — not outsiders filling seats</h3>
+              <h3 class="text-title-lg">Engineers who embed with your team, not outsiders filling seats</h3>
               <p class="text-body" style="margin-top: 12px;">Same tools, same standups, same codebase. Our engineers become part of your team because that's how we think about it. You'll know them by name.</p>
               <ul class="check-list">
                 <li>2-week trial before any commitment</li>
@@ -173,7 +173,7 @@
               </ul>
               <div class="proof-point">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <span>PerformLine started with 1 engineer. Two years later, we're 8+ deep — full-stack, DevOps, QA, frontend.</span>
+                <span>PerformLine started with 1 engineer. Two years later, we're 8+ deep: full-stack, DevOps, QA, frontend.</span>
               </div>
               <div class="card-ctas">
                 <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 15px;">Tell us what your team needs</a>
@@ -185,11 +185,11 @@
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <h3 class="text-title-lg">We stay with your product after launch</h3>
-              <p class="text-body" style="margin-top: 12px;">Bug fixes, security updates, performance monitoring, and incremental improvements. When possible, the same team that built it maintains it — because they know your product deeply.</p>
+              <p class="text-body" style="margin-top: 12px;">Bug fixes, security updates, performance monitoring, and incremental improvements. When possible, the same team that built it maintains it. Because they know your product deeply.</p>
               <ul class="check-list">
-                <li>Proactive monitoring — we fix before you notice</li>
-                <li>Transparent hours — you see exactly what we spend time on</li>
-                <li>No lock-in — full documentation means you can leave anytime</li>
+                <li>Proactive monitoring: we fix before you notice</li>
+                <li>Transparent hours: you see exactly what we spend time on</li>
+                <li>No lock-in, full documentation means you can leave anytime</li>
               </ul>
               <div class="proof-point">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -218,7 +218,7 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
               </div>
               <h3 class="text-title-lg">The Complete Guide to IT Staff Augmentation</h3>
-              <p class="text-body" style="margin-top: 8px;">Everything you need to know about scaling your engineering team — models, costs, when to use it, and how to make it work.</p>
+              <p class="text-body" style="margin-top: 8px;">Everything you need to know about scaling your engineering team: models, costs, when to use it, and how to make it work.</p>
               <NuxtLink to="/guides/it-staff-augmentation/" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
             <div class="guide-card">
@@ -226,7 +226,7 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
               </div>
               <h3 class="text-title-lg">The Complete Guide to MVP Development</h3>
-              <p class="text-body" style="margin-top: 8px;">From idea to working product — costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
+              <p class="text-body" style="margin-top: 8px;">From idea to working product: costs, timelines, frameworks, and the process we use to ship MVPs that raise funding.</p>
               <NuxtLink to="/guides/mvp-development/" class="btn-text" style="margin-top: 16px;">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
           </div>
@@ -318,7 +318,7 @@
           <div class="benefits-row">
             <div class="benefit-card">
               <h3>Production-Proven</h3>
-              <p>Every technology in our stack has been used to ship real products — including Formester, our own SaaS.</p>
+              <p>Every technology in our stack has been used to ship real products, including Formester, our own SaaS.</p>
             </div>
             <div class="benefit-card">
               <h3>Built to Hand Over</h3>
@@ -326,7 +326,7 @@
             </div>
             <div class="benefit-card">
               <h3>Security by Default</h3>
-              <p>Security practices baked into every project from the start — not bolted on at the end.</p>
+              <p>Security practices baked into every project from the start, not bolted on at the end.</p>
             </div>
           </div>
         </div>
@@ -359,14 +359,14 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
             </div>
             <h3>We Guide, Not Just Execute</h3>
-            <p>We'll tell you honestly what you need — and what can wait.</p>
+            <p>We'll tell you honestly what you need. And what can wait.</p>
           </div>
           <div class="diff-card">
             <div class="diff-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <h3>We Stay</h3>
-            <p>PerformLine: 1 engineer to 8+ in 2 years. We don't just deliver — we grow with you.</p>
+            <p>PerformLine: 1 engineer to 8+ in 2 years. We don't just deliver. We grow with you.</p>
           </div>
         </div>
       </div>
@@ -376,7 +376,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Have a Product in Mind?</h2>
-        <p class="text-body-lg" style="max-width: 520px; margin: 16px auto 0;">Tell us about it. We'll share how we'd approach it — honestly.</p>
+        <p class="text-body-lg" style="max-width: 520px; margin: 16px auto 0;">Tell us about it. We'll share how we'd approach it, honestly.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's Talk</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>

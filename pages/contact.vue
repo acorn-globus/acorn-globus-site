@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Get In Touch</span></div>
           <h1 class="text-display-lg" style="margin-top: 24px;">Let's talk about what you're building.</h1>
-          <p class="text-body-lg" style="margin-top: 24px; max-width: 600px;">Whether you're launching something new or growing something that's working — we'd love to hear what you're building.</p>
+          <p class="text-body-lg" style="margin-top: 24px; max-width: 600px;">Whether you're launching something new or growing something that's working. We'd love to hear what you're building.</p>
         </div>
       </div>
     </section>
@@ -44,7 +44,7 @@
             </div>
             <h2 class="contact-method-title">Response Time</h2>
             <p>Within 8 hours</p>
-            <small>During business hours — we won't keep you waiting</small>
+            <small>During business hours. We won't keep you waiting</small>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
             <div class="stat-label">Products Shipped</div>
           </div>
         </div>
-        <p class="trust-strip-text">We built our own SaaS product (Formester) and bring that same ownership to everything we build. No pitch decks ahead — just an honest conversation about your product.</p>
+        <p class="trust-strip-text">We built our own SaaS product (Formester) and bring that same ownership to everything we build. No pitch decks ahead, just an honest conversation about your product.</p>
       </div>
     </section>
 

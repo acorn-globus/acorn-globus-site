@@ -10,7 +10,7 @@
           </NuxtLink>
           <div class="hero-eyebrow"><span>Maintenance &amp; Support</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">We built it. We keep it running. And we make it better.</h1>
-          <p class="text-body-lg">Launching is just the beginning. We stay with your product — monitoring, fixing, updating, and improving it with the same team that built it in the first place.</p>
+          <p class="text-body-lg">Launching is just the beginning. We stay with your product: monitoring, fixing, updating, and improving it with the same team that built it in the first place.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/contact/" class="btn-text" style="font-size: 17px;">Let's talk about your product <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
           </div>
@@ -40,7 +40,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Same team. Same care. Continuing the journey.</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Most of our maintenance relationships started as MVP or full project delivery. The engineers who maintain your product are the same ones who built it. They know every line of code because they wrote it — and they care about it because they've been invested in it from the start.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Most of our maintenance relationships started as MVP or full project delivery. The engineers who maintain your product are the same ones who built it. They know every line of code because they wrote it. And they care about it because they've been invested in it from the start.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Here's what makes our maintenance different:</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
@@ -50,7 +50,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-title-lg">Proactive, not just reactive.</h3>
-            <p class="text-body" style="margin-top: 12px;">We monitor and fix before you notice. We treat your product like our own — because that's how we've always worked.</p>
+            <p class="text-body" style="margin-top: 12px;">We monitor and fix before you notice. We treat your product like our own. Because that's how we've always worked.</p>
           </div>
           <div class="feature-card">
             <h3 class="text-title-lg">Improvement mindset.</h3>
@@ -62,7 +62,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-title-lg">No lock-in.</h3>
-            <p class="text-body" style="margin-top: 12px;">Full documentation means you can leave anytime. But most clients don't — because the partnership works.</p>
+            <p class="text-body" style="margin-top: 12px;">Full documentation means you can leave anytime. But most clients don't. Because the partnership works.</p>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">The natural next step.</h2>
           <p class="text-body-lg" style="margin-top: 20px;">This service exists because our clients asked for it. After we built their products, they didn't want to hand maintenance to a team that had never seen the code.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">PerformLine's engagement grew from 1 engineer to 8+ over 2 years. Eitoss is still with us more than 2 years after we shipped their MVP. These aren't maintenance contracts — they're ongoing partnerships where we keep building, keep improving, and keep caring about the product.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">PerformLine's engagement grew from 1 engineer to 8+ over 2 years. Eitoss is still with us more than 2 years after we shipped their MVP. These aren't maintenance contracts. They're ongoing partnerships where we keep building, keep improving, and keep caring about the product.</p>
           <p class="text-body-lg" style="margin-top: 16px;">When you've invested in building something right, you want the people who built it to keep it running right.</p>
         </div>
       </div>
@@ -193,7 +193,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-title-lg">Engineer experience</h3>
-            <p class="text-body" style="margin-top: 12px;">Senior engineers cost more per hour — but they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity.</p>
+            <p class="text-body" style="margin-top: 12px;">Senior engineers cost more per hour. But they resolve things faster and catch problems earlier. We'll recommend the right fit for your product's complexity.</p>
           </div>
           <div class="feature-card">
             <h3 class="text-title-lg">Hours commitment</h3>
@@ -205,7 +205,7 @@
           </div>
         </div>
         <div style="max-width: 720px; margin-top: 48px;">
-          <p class="text-body-lg">Every maintenance plan starts with a conversation about your product — what it does, how it's used, and what kind of care it needs. We'll give you a specific number once we understand the scope. No surprises.</p>
+          <p class="text-body-lg">Every maintenance plan starts with a conversation about your product: what it does, how it's used, and what kind of care it needs. We'll give you a specific number once we understand the scope. No surprises.</p>
         </div>
       </div>
     </section>
@@ -222,7 +222,7 @@
             </div>
             <div class="details-row">
               <span class="details-label">Minimum commitment</span>
-              <span class="details-value">3 months — enough time to learn your product and prove the value</span>
+              <span class="details-value">3 months, enough time to learn your product and prove the value</span>
             </div>
             <div class="details-row">
               <span class="details-label">Team</span>
@@ -294,7 +294,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Your product deserves the same care after launch as it got during build.</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your product — what it does, who built it, and what kind of support you need. We'll put together a maintenance plan that keeps it healthy and improving, not just alive.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your product: what it does, who built it, and what kind of support you need. We'll put together a maintenance plan that keeps it healthy and improving, not just alive.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your product</a>
           <NuxtLink to="/contact/" class="btn-text">Already our client? Let's discuss ongoing support. <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>

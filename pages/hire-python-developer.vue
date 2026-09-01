@@ -242,7 +242,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our Python engineers into your existing team — same standups, same repo, same workflow.</p>
+            <p>Embed our Python engineers into your existing team: same standups, same repo, same workflow.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>

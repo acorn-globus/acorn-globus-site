@@ -13,7 +13,7 @@
         <div class="hero-grid">
           <div>
             <h1 class="text-display-lg">We Built Our Own SaaS. Here's What It Taught Us About Building Yours.</h1>
-            <p class="text-body-lg" style="margin-top: 24px; max-width: 560px;">Formester is our SaaS product — a no-code, AI-powered form builder used by real businesses every day. Building it changed how we work with every client.</p>
+            <p class="text-body-lg" style="margin-top: 24px; max-width: 560px;">Formester is our SaaS product, a no-code, AI-powered form builder used by real businesses every day. Building it changed how we work with every client.</p>
             <div style="display: flex; gap: 16px; margin-top: 40px;">
               <a href="https://formester.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Formester</a>
               <NuxtLink to="/contact/" class="btn btn-secondary">Let's Talk</NuxtLink>
@@ -82,8 +82,8 @@
           <h2 class="text-display-sm" style="margin-top: 16px;">It Started With a Question</h2>
         </div>
         <div style="margin-top: 32px;">
-          <p class="text-body" style="margin-bottom: 20px; line-height: 1.75;">We'd been building products for clients for years. Good products. Products we were proud of. But there was always a gap between executing someone else's spec and truly owning the outcome. We wanted to know what it feels like on the other side — to be the ones who lose sleep when something breaks at 2am, who feel the weight of a user churning, who celebrate when the metrics move in the right direction.</p>
-          <p class="text-body" style="margin-bottom: 20px; line-height: 1.75;">So we built Formester. Not as a side project. Not as a demo. As a real product, with real users, real revenue, and real consequences. We wanted to experience every part of the product lifecycle ourselves — from the first commit to the first paying customer, from the support ticket that reveals a blind spot to the feature request that changes your roadmap.</p>
+          <p class="text-body" style="margin-bottom: 20px; line-height: 1.75;">We'd been building products for clients for years. Good products. Products we were proud of. But there was always a gap between executing someone else's spec and truly owning the outcome. We wanted to know what it feels like on the other side: to be the ones who lose sleep when something breaks at 2am, who feel the weight of a user churning, who celebrate when the metrics move in the right direction.</p>
+          <p class="text-body" style="margin-bottom: 20px; line-height: 1.75;">So we built Formester. Not as a side project. Not as a demo. As a real product, with real users, real revenue, and real consequences. We wanted to experience every part of the product lifecycle ourselves, from the first commit to the first paying customer, from the support ticket that reveals a blind spot to the feature request that changes your roadmap.</p>
           <p class="text-body" style="line-height: 1.75;">It changed everything about how we work with clients. When you've been the founder staring at your own dashboard wondering why users drop off at step three, you approach someone else's product differently. You stop building to spec and start building to outcome.</p>
         </div>
       </div>
@@ -95,20 +95,20 @@
         <div class="section-header centered">
           <span class="text-label">The Product</span>
           <h2 class="text-display-sm" style="margin-top: 16px;">What We Built</h2>
-          <p class="text-body-lg" style="margin-top: 16px; max-width: 640px; margin-left: auto; margin-right: auto;">Formester is a form builder — but that understates it. The surface is simple. What's underneath is not.</p>
+          <p class="text-body-lg" style="margin-top: 16px; max-width: 640px; margin-left: auto; margin-right: auto;">Formester is a form builder. But that understates it. The surface is simple. What's underneath is not.</p>
         </div>
         <div class="features-grid">
           <div class="feature-card">
             <h3>AI-Powered Form Creation</h3>
-            <p>Describe what you need in plain English and Formester generates a complete, styled form — fields, validation, logic, and all. Built on OpenAI's API, tuned with thousands of real form patterns.</p>
+            <p>Describe what you need in plain English and Formester generates a complete, styled form: fields, validation, logic, and all. Built on OpenAI's API, tuned with thousands of real form patterns.</p>
           </div>
           <div class="feature-card">
             <h3>Conditional Logic for Everyone</h3>
-            <p>Show, hide, and route based on user responses. Complex branching logic that non-technical users can set up in minutes — no code, no compromise.</p>
+            <p>Show, hide, and route based on user responses. Complex branching logic that non-technical users can set up in minutes. No code, no compromise.</p>
           </div>
           <div class="feature-card">
             <h3>Payment Processing Baked In</h3>
-            <p>Accept payments directly through forms with Stripe and PayPal integrations. Order forms, donation pages, registration with fees — all without a separate checkout flow.</p>
+            <p>Accept payments directly through forms with Stripe and PayPal integrations. Order forms, donation pages, registration with fees, all without a separate checkout flow.</p>
           </div>
           <div class="feature-card">
             <h3>Real-Time Collaboration</h3>
@@ -116,7 +116,7 @@
           </div>
           <div class="feature-card">
             <h3>Analytics That Answer "So What?"</h3>
-            <p>Completion rates, drop-off points, field-level analytics. Not just data — insights that tell you what to fix and what's working.</p>
+            <p>Completion rates, drop-off points, field-level analytics. Not just data, insights that tell you what to fix and what's working.</p>
           </div>
           <div class="feature-card">
             <h3>No-Code Builder</h3>
@@ -141,7 +141,7 @@
           <div class="lesson-card">
             <div class="lesson-number">Lesson 01</div>
             <h3>The spec is never the product</h3>
-            <p>When we wrote the spec for Formester's conditional logic, it was clean: "If field A equals X, show field B." Simple. Then real users got involved. They needed nested conditions, conditions based on partial matches, conditions that triggered across pages. The spec covered maybe 30% of what the product actually needed. We learned that the real product lives in the gaps between spec lines — in the edge cases, the "what ifs," the things users do that you never imagined. Now when we build for clients, we don't just implement the spec. We stress-test it against reality before writing a line of code.</p>
+            <p>When we wrote the spec for Formester's conditional logic, it was clean: "If field A equals X, show field B." Simple. Then real users got involved. They needed nested conditions, conditions based on partial matches, conditions that triggered across pages. The spec covered maybe 30% of what the product actually needed. We learned that the real product lives in the gaps between spec lines: in the edge cases, the "what ifs," the things users do that you never imagined. Now when we build for clients, we don't just implement the spec. We stress-test it against reality before writing a line of code.</p>
             <div class="lesson-client">
               <div class="lesson-client-label">How this shows up in client work</div>
               <p>We challenge specs early. We ask "what happens when a user does X?" before we build, not after. We prototype the risky parts first. We've saved clients months of rework by catching spec gaps in week one.</p>
@@ -150,7 +150,7 @@
           <div class="lesson-card">
             <div class="lesson-number">Lesson 02</div>
             <h3>Technical debt is personal when it's your product</h3>
-            <p>Every engineering team talks about technical debt. But when it's your product — when that shortcut you took six months ago is now causing a bug that's making users leave — it hits differently. With Formester, we've lived with every shortcut we ever took. We've felt the cost of "we'll fix it later" in real churn numbers. That changed our relationship with code quality forever. Not in a "let's over-engineer everything" way, but in a "let's be honest about what we're trading off" way.</p>
+            <p>Every engineering team talks about technical debt. But when it's your product (when that shortcut you took six months ago is now causing a bug that's making users leave) it hits differently. With Formester, we've lived with every shortcut we ever took. We've felt the cost of "we'll fix it later" in real churn numbers. That changed our relationship with code quality forever. Not in a "let's over-engineer everything" way, but in a "let's be honest about what we're trading off" way.</p>
             <div class="lesson-client">
               <div class="lesson-client-label">How this shows up in client work</div>
               <p>We flag technical debt explicitly and help clients make informed tradeoffs. "This shortcut saves two weeks now but will cost a month later. Here's when it'll hurt." Clients deserve to make that call with full information.</p>
@@ -159,25 +159,25 @@
           <div class="lesson-card">
             <div class="lesson-number">Lesson 03</div>
             <h3>Shipping is the beginning, not the end</h3>
-            <p>The day we launched Formester, we thought we were done with the hard part. We were wrong. Launch day is when the real work starts. Support tickets reveal what your testing missed. Analytics show where users actually struggle (hint: it's never where you expected). Feature requests reshape your roadmap. The product you launched is version 0.1 of what it needs to become. We've been shipping updates to Formester every week for years. That rhythm — build, ship, learn, repeat — is now core to how we work.</p>
+            <p>The day we launched Formester, we thought we were done with the hard part. We were wrong. Launch day is when the real work starts. Support tickets reveal what your testing missed. Analytics show where users actually struggle (hint: it's never where you expected). Feature requests reshape your roadmap. The product you launched is version 0.1 of what it needs to become. We've been shipping updates to Formester every week for years. That rhythm (build, ship, learn, repeat) is now core to how we work.</p>
             <div class="lesson-client">
               <div class="lesson-client-label">How this shows up in client work</div>
-              <p>We plan for post-launch from day one. We build analytics in early. We set up feedback loops. We don't disappear after delivery — 80%+ of our clients stay with us long after launch because the real partnership starts when users show up.</p>
+              <p>We plan for post-launch from day one. We build analytics in early. We set up feedback loops. We don't disappear after delivery, 80%+ of our clients stay with us long after launch because the real partnership starts when users show up.</p>
             </div>
           </div>
           <div class="lesson-card">
             <div class="lesson-number">Lesson 04</div>
             <h3>Users don't care about your architecture</h3>
-            <p>We rebuilt Formester's rendering engine twice. The first time, it was architecturally elegant — clean abstractions, beautiful separation of concerns. Users hated it. Forms loaded 200ms slower. Nobody cared that the code was pretty. The second rebuild was uglier but faster. Users loved it. That experience killed any remaining attachment we had to architecture for architecture's sake. Good architecture serves the user. If it doesn't make the product faster, more reliable, or easier to change, it's vanity.</p>
+            <p>We rebuilt Formester's rendering engine twice. The first time, it was architecturally elegant, clean abstractions, beautiful separation of concerns. Users hated it. Forms loaded 200ms slower. Nobody cared that the code was pretty. The second rebuild was uglier but faster. Users loved it. That experience killed any remaining attachment we had to architecture for architecture's sake. Good architecture serves the user. If it doesn't make the product faster, more reliable, or easier to change, it's vanity.</p>
             <div class="lesson-client">
               <div class="lesson-client-label">How this shows up in client work</div>
-              <p>We make architecture decisions based on user impact, not engineering elegance. When we recommend a tech stack or approach, the first question is "how does this affect the person using the product?" — not "how clean is the code?"</p>
+              <p>We make architecture decisions based on user impact, not engineering elegance. When we recommend a tech stack or approach, the first question is "how does this affect the person using the product?", not "how clean is the code?"</p>
             </div>
           </div>
           <div class="lesson-card">
             <div class="lesson-number">Lesson 05</div>
             <h3>Ownership means staying</h3>
-            <p>Anyone can build a feature and move on. Ownership means being there when it breaks at 3am. It means watching your error logs on weekends. It means caring about that one user who filed a bug report at midnight because their payment form stopped working during a fundraiser. We've been maintaining Formester for years. We know what it means to truly own a product — not just the code, but the outcome. The uptime. The user experience. The business result.</p>
+            <p>Anyone can build a feature and move on. Ownership means being there when it breaks at 3am. It means watching your error logs on weekends. It means caring about that one user who filed a bug report at midnight because their payment form stopped working during a fundraiser. We've been maintaining Formester for years. We know what it means to truly own a product, not just the code, but the outcome. The uptime. The user experience. The business result.</p>
             <div class="lesson-client">
               <div class="lesson-client-label">How this shows up in client work</div>
               <p>We don't build and disappear. PerformLine started with 1 engineer and grew to 8+ over 2 years. Eitoss went from MVP to funding to 2+ years of continued partnership. We stay because we care about what happens after we ship.</p>
@@ -244,7 +244,7 @@
         <div class="audience-grid">
           <div class="audience-card">
             <h3>For funded startups</h3>
-            <p>You need a team that understands product thinking, not just feature tickets. We've built and scaled our own SaaS — we know what it takes to go from zero to real users and revenue. We bring that product instinct to your build.</p>
+            <p>You need a team that understands product thinking, not just feature tickets. We've built and scaled our own SaaS. We know what it takes to go from zero to real users and revenue. We bring that product instinct to your build.</p>
           </div>
           <div class="audience-card">
             <h3>For non-technical founders</h3>
@@ -252,7 +252,7 @@
           </div>
           <div class="audience-card">
             <h3>For growing companies</h3>
-            <p>You need engineers who think beyond the sprint. We maintain Formester every day — we know what it means to build for the long run, not just the launch. That perspective shapes every line of code we write for you.</p>
+            <p>You need engineers who think beyond the sprint. We maintain Formester every day. We know what it means to build for the long run, not just the launch. That perspective shapes every line of code we write for you.</p>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Rails Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Ruby on Rails Developers in India Who Respect the Framework</h1>
-          <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy — not just its syntax.</p>
+          <p class="hero-body">Rails is about convention, speed, and getting things done. So are we. Whether you're building something new or maintaining a codebase that's been running for years, our Rails developers understand the framework's philosophy, not just its syntax.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -41,21 +41,21 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3>Deep Rails Knowledge</h3>
-            <p>ActiveRecord, ActionCable, Hotwire, Turbo, Stimulus — our developers don't just know these tools exist. They know when to use each one, and when not to.</p>
+            <p>ActiveRecord, ActionCable, Hotwire, Turbo, Stimulus. Our developers don't just know these tools exist. They know when to use each one, and when not to.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
             </div>
             <h3>Legacy Rails Expertise</h3>
-            <p>Still running Rails 5 or 6? We've handled the upgrade path before — incrementally, safely, and without breaking production. We'll get you to Rails 7+ without the drama.</p>
+            <p>Still running Rails 5 or 6? We've handled the upgrade path before: incrementally, safely, and without breaking production. We'll get you to Rails 7+ without the drama.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
             <h3>Full-Stack Rails Thinking</h3>
-            <p>Our Rails engineers think beyond the model layer. They understand views, Hotwire interactions, database optimization, background jobs, and deployment — the full picture.</p>
+            <p>Our Rails engineers think beyond the model layer. They understand views, Hotwire interactions, database optimization, background jobs, and deployment, the full picture.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">
@@ -154,7 +154,7 @@
           <span class="label-redesign">Guidance</span>
           <h2 class="text-display-sm">Is Ruby on Rails Still Worth It in 2026?</h2>
         </div>
-        <p class="when-intro">We get asked this a lot. The honest answer: Rails is more focused and capable than it's ever been. Hotwire changed the game for building interactive applications without JavaScript complexity. But it's not the right choice for everything — and we'll tell you that upfront.</p>
+        <p class="when-intro">We get asked this a lot. The honest answer: Rails is more focused and capable than it's ever been. Hotwire changed the game for building interactive applications without JavaScript complexity. But it's not the right choice for everything. And we'll tell you that upfront.</p>
         <div class="when-grid">
           <div class="when-col strong">
             <h3>
@@ -162,10 +162,10 @@
               Rails shines when
             </h3>
             <ul>
-              <li>You need to move fast — Rails convention-over-configuration means less decision fatigue and more shipping. Ideal for MVPs, startups, and products finding their market.</li>
-              <li>You're building a content-heavy or CRUD-heavy application — admin panels, marketplaces, SaaS platforms, internal tools. This is where Rails has always been strongest.</li>
-              <li>You want a full-stack framework — with Hotwire, Turbo, and Stimulus, you can build rich interactive experiences without maintaining a separate frontend application.</li>
-              <li>You have an existing Rails codebase — modernizing a running Rails app is almost always better than rewriting it. Rails upgrades are well-documented and incremental.</li>
+              <li>You need to move fast, Rails convention-over-configuration means less decision fatigue and more shipping. Ideal for MVPs, startups, and products finding their market.</li>
+              <li>You're building a content-heavy or CRUD-heavy application: admin panels, marketplaces, SaaS platforms, internal tools. This is where Rails has always been strongest.</li>
+              <li>You want a full-stack framework: with Hotwire, Turbo, and Stimulus, you can build rich interactive experiences without maintaining a separate frontend application.</li>
+              <li>You have an existing Rails codebase, modernizing a running Rails app is almost always better than rewriting it. Rails upgrades are well-documented and incremental.</li>
             </ul>
           </div>
           <div class="when-col consider">
@@ -174,13 +174,13 @@
               Consider alternatives when
             </h3>
             <ul>
-              <li>You're building a heavily interactive SPA — if your frontend needs complex client-side state management and real-time reactivity beyond what Hotwire provides, React or Vue may be a better fit.</li>
-              <li>You need extreme concurrency or low-latency — Go, Rust, or Elixir can outperform Ruby in high-throughput, CPU-bound scenarios.</li>
-              <li>Your team is entirely JavaScript/TypeScript — if everyone already thinks in TypeScript, Node.js or Next.js might reduce context switching.</li>
+              <li>You're building a heavily interactive SPA, if your frontend needs complex client-side state management and real-time reactivity beyond what Hotwire provides, React or Vue may be a better fit.</li>
+              <li>You need extreme concurrency or low-latency: Go, Rust, or Elixir can outperform Ruby in high-throughput, CPU-bound scenarios.</li>
+              <li>Your team is entirely JavaScript/TypeScript, if everyone already thinks in TypeScript, Node.js or Next.js might reduce context switching.</li>
             </ul>
           </div>
         </div>
-        <p class="when-closing">Rails isn't going anywhere — Shopify, GitHub, Basecamp, and thousands of production applications prove that daily. We'll help you decide honestly whether Rails is the right fit for your project, and if it is, we'll build it the Rails way.</p>
+        <p class="when-closing">Rails isn't going anywhere: Shopify, GitHub, Basecamp, and thousands of production applications prove that daily. We'll help you decide honestly whether Rails is the right fit for your project, and if it is, we'll build it the Rails way.</p>
       </div>
     </section>
 
@@ -196,28 +196,28 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your product, your Rails version, your team, and what you're trying to accomplish. No sales pitch — just a conversation about what you need and whether we're a good fit.</p>
+              <p>We learn about your product, your Rails version, your team, and what you're trying to accomplish. No sales pitch, just a conversation about what you need and whether we're a good fit.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>We match you with a Rails developer based on your codebase, domain, and working style. You interview them directly — same person who'll be writing your code.</p>
+              <p>We match you with a Rails developer based on your codebase, domain, and working style. You interview them directly, same person who'll be writing your code.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div>
               <h3>2-Week Trial</h3>
-              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving — all before any long-term commitment.</p>
+              <p>Your engineer starts working on real tasks. You see their code, their communication, their problem-solving, all before any long-term commitment.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">4</div>
             <div>
               <h3>Ongoing Partnership</h3>
-              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus — we adapt as your product evolves.</p>
+              <p>Once you're happy, we settle into a rhythm. Regular standups, code reviews, and sprint cycles. Scale up, scale down, or shift focus. We adapt as your product evolves.</p>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@
         <div class="models-grid">
           <div class="model-card">
             <h3>Dedicated Developer</h3>
-            <p class="model-desc">A full-time Rails engineer embedded in your team. Same hours, same tools, same standups. They become part of your team — you'll forget they're external.</p>
+            <p class="model-desc">A full-time Rails engineer embedded in your team. Same hours, same tools, same standups. They become part of your team. You'll forget they're external.</p>
             <ul>
               <li>Full-time (40 hrs/week)</li>
               <li>Works in your tools and workflows</li>
@@ -264,7 +264,7 @@
           </div>
           <div class="model-card">
             <h3>Legacy Modernization</h3>
-            <p class="model-desc">Running an older Rails version? We'll upgrade your application incrementally — Rails 5 or 6 to 7+, Ruby version bumps, gem updates — without breaking what works.</p>
+            <p class="model-desc">Running an older Rails version? We'll upgrade your application incrementally (Rails 5 or 6 to 7+, Ruby version bumps, gem updates) without breaking what works.</p>
             <ul>
               <li>Incremental, safe upgrades</li>
               <li>Comprehensive test coverage first</li>
@@ -283,11 +283,11 @@
           <span class="label-redesign">Partnerships</span>
           <h2 class="text-display-sm">Teams We've Built With</h2>
         </div>
-        <p class="projects-intro">We don't have a portfolio of logos. We have a track record of partnerships — teams that started small, grew together, and kept working with us because the relationship works.</p>
+        <p class="projects-intro">We don't have a portfolio of logos. We have a track record of partnerships: teams that started small, grew together, and kept working with us because the relationship works.</p>
         <div class="projects-grid">
           <div class="project-card">
             <h3>PerformLine</h3>
-            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many — the partnership just kept proving its value, sprint after sprint.</p>
+            <p>Started with 1 embedded engineer. Two years later, we're 8+ engineers deep across 5 disciplines. PerformLine didn't plan to hire that many, the partnership just kept proving its value, sprint after sprint.</p>
             <div class="project-meta-tags">
               <span class="project-meta-tag">1 to 8+ Engineers</span>
               <span class="project-meta-tag">2+ Years</span>
@@ -335,7 +335,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/full-project-delivery/" class="feature-card" style="text-decoration: none;">
             <h3>Full Project Delivery</h3>
-            <p>Hand us the whole product. We design, build, and ship your Rails application — then keep improving it.</p>
+            <p>Hand us the whole product. We design, build, and ship your Rails application, then keep improving it.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>

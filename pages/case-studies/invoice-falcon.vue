@@ -101,7 +101,7 @@
     <!-- IMAGE -->
     <section style="padding: 80px 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-invoice-falcon.webp" alt="Invoice Falcon — Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-invoice-falcon.webp" alt="Invoice Falcon, Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 

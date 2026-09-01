@@ -280,7 +280,7 @@
     <!-- IMAGE -->
     <section style="padding-top: 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-rumie.webp" alt="Rumie — Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-rumie.webp" alt="Rumie, Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 

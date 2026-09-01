@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Vue.js Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Vue.js Developers in India Who Build With Vue Every Day</h1>
-          <p class="text-body-lg">We didn't just add Vue.js to a skills list. We built Formester — our own SaaS product — on it. Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped real Vue applications to real users.</p>
+          <p class="text-body-lg">We didn't just add Vue.js to a skills list. We built Formester (our own SaaS product) on it. Our website runs on Nuxt. When you hire our Vue developers, you're getting people who've shipped real Vue applications to real users.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -26,8 +26,8 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">We Built Our Own SaaS Product on Vue.js</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Formester is our no-code, AI-powered form builder — built entirely on Vue.js and Nuxt. It's live, it has real users, and it carries a 4.7 rating on G2. Building our own product taught us things you can't learn on client projects alone: performance tuning under real traffic, accessibility that actually works, component architecture that scales without becoming a maintenance burden.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">That depth shows up in our client work. Our Vue developers don't just know the API surface — they understand the internals. They know why the Composition API exists, when Pinia is the right choice over provide/inject, how to structure a Nuxt application so it stays fast as it grows. That knowledge comes from building and maintaining a production Vue application every day.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Formester is our no-code, AI-powered form builder, built entirely on Vue.js and Nuxt. It's live, it has real users, and it carries a 4.7 rating on G2. Building our own product taught us things you can't learn on client projects alone: performance tuning under real traffic, accessibility that actually works, component architecture that scales without becoming a maintenance burden.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">That depth shows up in our client work. Our Vue developers don't just know the API surface. They understand the internals. They know why the Composition API exists, when Pinia is the right choice over provide/inject, how to structure a Nuxt application so it stays fast as it grows. That knowledge comes from building and maintaining a production Vue application every day.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Most marketplaces match you with whoever's available. We're not a marketplace. We're a 20+ person product engineering team, and Vue.js is a core part of our daily work. The developers you'll work with are the same people who build and ship Formester.</p>
           <div style="margin-top: 32px;">
             <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">See Formester <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
@@ -106,7 +106,7 @@
           </div>
           <div class="feature-card">
             <h3>Form Builders &amp; No-Code Tools</h3>
-            <p>Drag-and-drop interfaces, dynamic form rendering, conditional logic engines. We built Formester this way — we know the patterns inside out.</p>
+            <p>Drag-and-drop interfaces, dynamic form rendering, conditional logic engines. We built Formester this way. We know the patterns inside out.</p>
           </div>
           <div class="feature-card">
             <h3>E-Commerce Storefronts</h3>
@@ -135,7 +135,7 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery call</h3>
-              <p>We learn your product, your stack, and what you need from a Vue developer. No generic proposals — we match based on your specific requirements.</p>
+              <p>We learn your product, your stack, and what you need from a Vue developer. No generic proposals. We match based on your specific requirements.</p>
             </div>
           </div>
           <div class="process-step">
@@ -149,7 +149,7 @@
             <div class="step-number">3</div>
             <div>
               <h3>2-week embedded trial</h3>
-              <p>Your developer joins your team — same tools, same standups, same codebase. Evaluate fit and productivity with zero commitment.</p>
+              <p>Your developer joins your team: same tools, same standups, same codebase. Evaluate fit and productivity with zero commitment.</p>
             </div>
           </div>
           <div class="process-step">
@@ -176,7 +176,7 @@
           </div>
           <div class="hiring-model-card">
             <h3>Part-Time Engagement</h3>
-            <p>Need Vue expertise but not full-time? Our developers can work part-time on your project — ideal for early-stage products or supplementing an existing team.</p>
+            <p>Need Vue expertise but not full-time? Our developers can work part-time on your project, ideal for early-stage products or supplementing an existing team.</p>
           </div>
           <div class="hiring-model-card">
             <h3>Project-Based</h3>
@@ -196,7 +196,7 @@
           <div class="project-card">
             <div class="project-meta">Our own SaaS product</div>
             <h3>Formester</h3>
-            <p>No-code, AI-powered form builder built entirely on Vue.js and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product — we build it, maintain it, and improve it every day.</p>
+            <p>No-code, AI-powered form builder built entirely on Vue.js and Nuxt. Live in production with real users and a 4.7 rating on G2. This is our product. We build it, maintain it, and improve it every day.</p>
             <div style="margin-top: 16px;">
               <NuxtLink to="/case-studies/formester/" class="btn-text-redesign">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></NuxtLink>
             </div>
@@ -246,7 +246,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/full-project-delivery/" class="feature-card" style="text-decoration: none;">
             <h3>Full Project Delivery</h3>
-            <p>Hand us the whole product. We design, build, and ship it — Vue.js front end included — then keep improving it.</p>
+            <p>Hand us the whole product. We design, build, and ship it, Vue.js front end included, then keep improving it.</p>
           </NuxtLink>
           <NuxtLink to="/guides/mvp-development/" class="feature-card" style="text-decoration: none;">
             <h3>MVP Development Guide</h3>
@@ -275,7 +275,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">Ready to Work With a Team That Lives Vue.js?</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Vue developers who've built real products — including our own.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">Tell us about your project, your stack, and what you need. We'll match you with Vue developers who've built real products, including our own.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Book a Call</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
