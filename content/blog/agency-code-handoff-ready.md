@@ -1,11 +1,11 @@
 ---
 title: "How to Evaluate if Your Agency's Code Is Handoff-Ready"
-description: "A practical checklist to evaluate whether the code your agency is writing can survive without them -- before it's too late to fix."
+description: "A practical checklist to evaluate whether the code your agency is writing can survive without them, before it's too late to fix."
 topic: Code Quality and Handoff
 author: Tarun Bhukya
 authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 coverImg: /images/blog/code-handoff.webp
-coverImgAlt: "Code handoff checklist — how to evaluate if your agency's code is ready to hand over"
+coverImgAlt: "Code handoff checklist, how to evaluate if your agency's code is ready to hand over"
 published: true
 createdAt: "2026-04-13"
 keywords:
@@ -21,11 +21,11 @@ There's a question every founder or CTO working with an agency should ask early 
 
 Not because you're planning to. But because a codebase that can't survive without its original authors is a codebase that holds you hostage.
 
-We've seen this play out too many times. A startup works with an agency for a year. The product is live, users are growing, and then the relationship ends -- amicably or otherwise. The new team clones the repo, opens the code, and realizes they're staring at months of archaeology before they can ship a single feature.
+We've seen this play out too many times. A startup works with an agency for a year. The product is live, users are growing, and then the relationship ends, amicably or otherwise. The new team clones the repo, opens the code, and realizes they're staring at months of archaeology before they can ship a single feature.
 
 That's not a handoff. That's a trap.
 
-Here's a practical checklist for evaluating whether the code your agency is writing is genuinely handoff-ready -- written from the buyer's perspective, not the agency's.
+Here's a practical checklist for evaluating whether the code your agency is writing is genuinely handoff-ready, written from the buyer's perspective, not the agency's.
 
 ## Why Handoff-Readiness Matters (Even If You're Not Planning to Leave)
 
@@ -35,11 +35,11 @@ Handoff-readiness still matters for three reasons:
 
 **1. It's a proxy for code quality.** Code that's easy to hand off is code that's well-structured, documented, and tested. These aren't separate concerns. A team that builds handoff-ready code is building better software, period.
 
-**2. It protects your options.** Companies change. Agencies change. Funding situations change. If your code can only be maintained by the people who wrote it, you don't own a product -- you own a dependency.
+**2. It protects your options.** Companies change. Agencies change. Funding situations change. If your code can only be maintained by the people who wrote it, you don't own a product. You own a dependency.
 
 **3. It makes onboarding faster.** Even if you never leave your agency, you'll need to onboard new engineers at some point. Handoff-ready code means new team members become productive in days, not weeks.
 
-The test is simple: could a competent developer who has never seen your codebase clone the repo and be productive within a week? If the answer is no, you have a problem -- whether or not you're planning to switch teams.
+The test is simple: could a competent developer who has never seen your codebase clone the repo and be productive within a week? If the answer is no, you have a problem, whether or not you're planning to switch teams.
 
 ## The Handoff-Ready Code Checklist
 
@@ -51,7 +51,7 @@ This sounds basic. It's not. You'd be surprised how many codebases fail this tes
 
 **What to look for:**
 
-- A README with clear, step-by-step setup instructions -- not "install dependencies and run" but actual commands a new developer can follow
+- A README with clear, step-by-step setup instructions, not "install dependencies and run" but actual commands a new developer can follow
 - All environment variables documented with explanations of what each one does
 - A containerized development environment (Docker or equivalent) so setup doesn't depend on someone's specific laptop configuration
 - A seed script or sample data so the app has something to display when you first run it
@@ -71,7 +71,7 @@ Good documentation doesn't mean comments on every line. It means the right infor
 - **Database schema:** Not just the schema itself, but explanations of key relationships and design decisions. Why is this table structured this way? What does this status field mean?
 - **Deployment documentation:** How does code go from a developer's machine to production? What are the steps? What could go wrong?
 
-**What bad documentation looks like:** A README that says "See Confluence" -- and the Confluence page was last updated eight months ago. Or inline comments that say `// TODO: fix this later` from a year ago.
+**What bad documentation looks like:** A README that says "See Confluence", and the Confluence page was last updated eight months ago. Or inline comments that say `// TODO: fix this later` from a year ago.
 
 **What good documentation looks like:** An architecture document that a new developer reads on their first day and says "Oh, now I understand how this works." It doesn't need to be long. It needs to be accurate.
 
@@ -82,9 +82,9 @@ Good documentation doesn't mean comments on every line. It means the right infor
 **What to look for:**
 
 - **Test coverage that matches your product's maturity.** An MVP should have tests covering core business logic and critical user flows. A mature product should have broader coverage. There's no magic number, but below 40% for a production application is a red flag worth investigating.
-- **Tests that test behavior, not implementation.** Good tests verify that user-facing functionality works correctly. Bad tests verify that a specific function was called with specific arguments -- they break every time the code is refactored and catch nothing when real bugs appear.
+- **Tests that test behavior, not implementation.** Good tests verify that user-facing functionality works correctly. Bad tests verify that a specific function was called with specific arguments. They break every time the code is refactored and catch nothing when real bugs appear.
 - **A CI/CD pipeline that runs tests on every commit.** Tests that exist but aren't run automatically are decorative. Every code change should trigger the test suite.
-- **Tests that actually pass.** This sounds obvious, but check. A test suite with 30 failing tests that everyone ignores is worse than no tests at all -- it teaches the team to ignore test failures.
+- **Tests that actually pass.** This sounds obvious, but check. A test suite with 30 failing tests that everyone ignores is worse than no tests at all. It teaches the team to ignore test failures.
 
 **The benchmark question:** When was the last time a test caught a real bug before it reached production? If your agency can't answer that, the tests might be there for show.
 
@@ -98,7 +98,7 @@ You don't need to read every line of code to evaluate maintainability. Look for 
 - **Reasonable file sizes.** Files with 1,000+ lines of code are a sign of accumulated complexity that will slow down every future change. Well-structured code is organized into focused, manageable modules.
 - **Low code duplication.** Code duplication under 5% is healthy. Higher than that, and you're paying for the same bug to be fixed in multiple places. Tools like SonarQube can measure this.
 - **Logical folder structure.** A new developer should be able to look at the project's folder structure and understand where things live. If finding the right file requires tribal knowledge, the structure needs work.
-- **No hardcoded secrets.** API keys, database passwords, and credentials should live in environment variables or a secrets manager -- never in the source code. This is a security issue and a handoff issue.
+- **No hardcoded secrets.** API keys, database passwords, and credentials should live in environment variables or a secrets manager, never in the source code. This is a security issue and a handoff issue.
 
 ### 5. Do You Own Everything?
 
@@ -106,15 +106,15 @@ This is the one that catches most founders off guard.
 
 **What to look for:**
 
-- **Full source code access.** You should have access to the complete source code repository at all times -- not just compiled builds or deployed applications. If your agency hosts the repo in their GitHub organization, make sure you have admin access or, better yet, move it to yours.
-- **Third-party accounts in your name.** Cloud hosting (AWS, Azure, GCP), monitoring tools, email services, payment processors, analytics -- all accounts should be registered under your company's email and billing. If your agency set these up under their accounts, you're one contract dispute away from losing access to your own infrastructure.
+- **Full source code access.** You should have access to the complete source code repository at all times, not just compiled builds or deployed applications. If your agency hosts the repo in their GitHub organization, make sure you have admin access or, better yet, move it to yours.
+- **Third-party accounts in your name.** Cloud hosting (AWS, Azure, GCP), monitoring tools, email services, payment processors, analytics, all accounts should be registered under your company's email and billing. If your agency set these up under their accounts, you're one contract dispute away from losing access to your own infrastructure.
 - **Domain, SSL, and DNS under your control.** Your domain registrar account, SSL certificates, and DNS records should be in your name and accessible to you.
 - **No proprietary dependencies.** If your agency used their own internal framework, libraries, or tools in your codebase, find out what happens when you leave. Can you still build and deploy without access to their systems?
-- **IP assignment in the contract.** Check your agreement. Code written for you should be owned by you. This should be explicit, not assumed. This checklist diagnoses code a team has already written; for the contract and structural side -- how to set up IP, open standards, and roadmap ownership before the first commit -- see its sibling, [avoiding vendor lock-in](/blog/avoiding-vendor-lock-in/).
+- **IP assignment in the contract.** Check your agreement. Code written for you should be owned by you. This should be explicit, not assumed. This checklist diagnoses code a team has already written; for the contract and structural side (how to set up IP, open standards, and roadmap ownership before the first commit) see its sibling, [avoiding vendor lock-in](/blog/avoiding-vendor-lock-in/).
 
 ### 6. Is There a Knowledge Transfer Plan?
 
-Code is only part of the handoff. Knowledge is the other part -- and it's harder to transfer.
+Code is only part of the handoff. Knowledge is the other part. And it's harder to transfer.
 
 **What to look for:**
 
@@ -158,7 +158,7 @@ Our philosophy is simple: your code, your product, your freedom. We mean that li
 
 We build this way because we've been on the other side. When we built [Formester](/blog/why-we-built-formester/), our own SaaS product, we experienced firsthand what it means to live with a codebase for years. Every shortcut you take during development becomes a tax you pay during maintenance. We don't take those shortcuts on our products, and we don't take them on yours.
 
-The goal isn't to keep clients dependent on us. It's the opposite. We want you to stay because the partnership works -- not because you can't leave. Our 80%+ client retention rate tells us that building for your independence actually makes for stronger, longer relationships.
+The goal isn't to keep clients dependent on us. It's the opposite. We want you to stay because the partnership works, not because you can't leave. Our 80%+ client retention rate tells us that building for your independence actually makes for stronger, longer relationships.
 
 ## Questions to Ask Your Agency Today
 
@@ -176,7 +176,7 @@ If the accounts are under their company, ask for a migration plan. This should h
 **4. "How would a new developer get this running locally?"**
 If the answer involves "they'd probably need to talk to [specific person]," the setup isn't documented well enough.
 
-**5. "What's your documentation practice -- do you write docs as you go or at the end?"**
+**5. "What's your documentation practice, do you write docs as you go or at the end?"**
 "As we go" is the only good answer. "At the end" means "probably never in full."
 
 **6. "What known technical debt exists, and where is it documented?"**
@@ -188,4 +188,4 @@ The code your agency writes is one of your most valuable assets. It represents m
 
 Handoff-readiness isn't about planning to leave. It's about owning what you've paid for. A product built to hand over is a product [built to last](/blog/mvp-development-cost/).
 
-If you're not sure where your codebase stands, we do honest code audits. We'll tell you what's working, what needs attention, and whether your code is ready for a handoff -- no matter who built it.
+If you're not sure where your codebase stands, we do honest code audits. We'll tell you what's working, what needs attention, and whether your code is ready for a handoff. No matter who built it.
