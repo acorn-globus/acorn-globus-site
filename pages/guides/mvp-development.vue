@@ -578,7 +578,19 @@
                 <summary>How long does it take to build an MVP?</summary>
                 <div class="faq-answer">
                   <p>Most MVPs take 6 to 20 weeks, depending on complexity. A simple SaaS product with a focused feature set can be built in 6-8 weeks. A marketplace with two user types and payment processing typically takes 10-14 weeks. Complex products involving AI/ML, real-time collaboration, or regulatory compliance can take 14-20 weeks. The biggest variable isn't technical complexity. It's scope discipline. The more features you cut from v1, the faster you ship.</p>
+                  <details>
+                <summary>What does MVP mean in software development?</summary>
+                <div class="faq-answer">
+                  <p>MVP stands for minimum viable product. In software development it means the smallest working version of your product that delivers real value to real users, built with production-quality code rather than as a throwaway prototype. The point of an MVP is not to build less for the sake of it. It is to get something in front of users early enough that what they do with it can shape everything you build next. A useful test: if you cannot learn something from launching it, it is not an MVP.</p>
                 </div>
+              </details>
+              <details>
+                <summary>What is the fastest an MVP can be built?</summary>
+                <div class="faq-answer">
+                  <p>One core workflow of your product can be live in production in about 2 weeks, assuming the scope is agreed before development starts. A full MVP with every workflow is realistically 6 weeks at the very fastest, and 6 to 20 weeks is the honest range. Be careful with anyone quoting a complete product in days: the usual catch is that what gets delivered is a prototype rather than something deployed that real users can use.</p>
+                </div>
+              </details>
+            </div>
               </details>
               <details>
                 <summary>How much does an MVP cost?</summary>

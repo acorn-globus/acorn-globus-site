@@ -332,6 +332,44 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What does the discovery and scoping process look like?</summary>
+            <div class="faq-answer"><p>We typically spend 1-2 weeks in discovery, depending on complexity. We focus on understanding your product vision, users, existing codebase (if any), timeline, budget, and success criteria. By the end, you get a clear scope document, a realistic timeline, and an honest recommendation on what to build first.</p></div>
+          </details>
+          <details>
+            <summary>How quickly can you assemble a team after scoping?</summary>
+            <div class="faq-answer"><p>We typically need 3-5 business days to assemble your team after scoping is complete. For resource augmentation, our engineers are usually submitting their first pull request within the first week.</p></div>
+          </details>
+          <details>
+            <summary>How do you run build sprints?</summary>
+            <div class="faq-answer"><p>We work in 2-week sprints. Every sprint has a clear goal, defined deliverables, and a demo at the end. Sprint planning happens on Monday (you are invited), daily async standups on Slack, mid-sprint check-ins as needed, and a demo of working features on staging every Friday.</p></div>
+          </details>
+          <details>
+            <summary>What communication tools and cadence do you use?</summary>
+            <div class="faq-answer"><p>We join your Slack (or you join ours) for daily async updates. We use your project management tools: Jira, Linear, Notion, whatever your team runs on. Sprint planning and demos happen every 2 weeks, weekly syncs with the project lead, and monthly partnership reviews.</p></div>
+          </details>
+          <details>
+            <summary>What engagement models do you offer?</summary>
+            <div class="faq-answer"><p>We offer four engagement models: Resource Augmentation (our engineers embed in your team), MVP Development (idea to working product in 8-12 weeks), Full Project Delivery (end-to-end with milestone-based delivery), and Maintenance & Support (ongoing bug fixes, features, and monitoring).</p></div>
+          </details>
+          <details>
+            <summary>What happens after launch?</summary>
+            <div class="faq-answer"><p>We stay. For the first 2 weeks after launch, we are on standby with prioritized bug fixes and performance monitoring. After that, we offer ongoing maintenance including dependency updates, security patches, and incremental improvements. 80%+ of our clients continue working with us beyond the initial engagement.</p></div>
+          </details>
+          <details>
+            <summary>Do we own the code?</summary>
+            <div class="faq-answer"><p>Yes. Full repository access from day one. Your code, your IP, always. We also provide architecture documentation, API docs, setup guides, infrastructure access, CI/CD pipelines, and knowledge transfer. Zero lock-in.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -470,4 +508,13 @@ useFaqSchema([
   .rhythm-grid { grid-template-columns: 1fr; }
   .launch-grid { grid-template-columns: 1fr; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary { font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

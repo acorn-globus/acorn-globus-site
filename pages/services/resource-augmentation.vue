@@ -236,6 +236,9 @@
 
 <script setup>
 const faqs = [
+  { question: 'How do I hire developers for my team?', answer: 'Decide first whether you need capacity or a delivered outcome. If you have a technical lead who can direct the work, hiring augmented engineers is faster and cheaper than recruiting: you skip sourcing, screening and notice periods. Interview the specific engineers rather than the vendor, and insist on a trial period so you judge from real work. We run a two-week embedded trial for exactly that reason.' },
+  { question: 'How do I hire software developers without getting it wrong?', answer: 'Judge people on work, not interviews. A take-home test or a paid trial period tells you far more than a whiteboard session about whether someone writes maintainable code and communicates clearly. Check who owns the code before you start, ask what happens if the engineer is not a fit, and be wary of anyone who will not let you interview the individual engineers.' },
+  { question: 'How do I hire remote developers?', answer: 'The two things that decide it are timezone overlap and how the person communicates in writing. Four to six hours of overlap is enough for real-time collaboration on standups and reviews, with async work covering the rest. Our engineers work with teams across the US, UK, Canada and Australia on that basis. Ask for a trial before committing, because remote fit shows up in a week of actual work.' },
   {
     question: "What's the difference between resource augmentation and hiring freelancers?",
     answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated: full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
