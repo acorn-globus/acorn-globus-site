@@ -280,15 +280,15 @@ definePageMeta({
 
 useSeoMeta({
   title: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   ogTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   ogImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
   ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  twitterDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  twitterDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   twitterImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
 
@@ -298,7 +298,7 @@ useHead({
 
 useArticleSchema({
   title: 'Invoice Falcon Case Study | Shopify Invoicing Revolution',
-  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   url: '/case-studies/invoice-falcon',
   datePublished: '2025-01-01',
   dateModified: '2025-01-01',

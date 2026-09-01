@@ -395,15 +395,15 @@ definePageMeta({
 
 useSeoMeta({
   title: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
-  description: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  description: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
   ogTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
-  ogDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  ogDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/services/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
-  twitterDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here\'s how we can help.',
+  twitterDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })
 
@@ -416,9 +416,9 @@ useBreadcrumbSchema([
 ])
 
 const tabs = [
-  { id: 'services', label: 'Services', heading: 'How We Work With You', desc: "Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul — here's how we can help." },
-  { id: 'process', label: 'Our Process', heading: 'How We Work Together', desc: "We don't just work for you — we work with you. Same tools, same standups, shared responsibility for the outcome." },
-  { id: 'technologies', label: 'Technologies', heading: 'Our Technology Stack', desc: "We're stack-agnostic — we pick the right technology for your problem, not the other way around. Here's what we work with daily." },
+  { id: 'services', label: 'Services', heading: 'How We Work With You', desc: "Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here's how we can help." },
+  { id: 'process', label: 'Our Process', heading: 'How We Work Together', desc: "We don't just work for you. We work with you. Same tools, same standups, shared responsibility for the outcome." },
+  { id: 'technologies', label: 'Technologies', heading: 'Our Technology Stack', desc: "We're stack-agnostic. We pick the right technology for your problem, not the other way around. Here's what we work with daily." },
 ]
 
 const activeTab = ref('services')

@@ -301,7 +301,7 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire a .NET developer from India?',
-    answer: "It depends on the engagement model and seniority level. Our dedicated .NET developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit. The two-week trial lets you evaluate fit before any long-term commitment."
+    answer: "It depends on the engagement model and seniority level. Our dedicated .NET developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices. You'll always know what you're paying before you commit. The two-week trial lets you evaluate fit before any long-term commitment."
   },
   {
     question: 'Which .NET versions and frameworks do your developers work with?',
@@ -309,27 +309,27 @@ const faqs = [
   },
   {
     question: 'Can your developers help us migrate from .NET Framework to .NET 6 or .NET 8?',
-    answer: "Yes — this is one of the most common engagements we see. The key is migrating incrementally rather than rewriting. We start by adding test coverage, then move shared libraries to .NET Standard, then migrate services one at a time using the strangler fig pattern. WebForms, WCF, and classic MVC apps each have known migration paths. We won't push for a full rewrite when a careful migration delivers better ROI."
+    answer: "Yes. This is one of the most common engagements we see. The key is migrating incrementally rather than rewriting. We start by adding test coverage, then move shared libraries to .NET Standard, then migrate services one at a time using the strangler fig pattern. WebForms, WCF, and classic MVC apps each have known migration paths. We won't push for a full rewrite when a careful migration delivers better ROI."
   },
   {
     question: 'Do your .NET developers work with Azure?',
-    answer: "Yes — Azure is the most common deployment target for our .NET work. We're comfortable with App Service, Azure Functions, Service Bus, Cosmos DB, Azure SQL, Application Insights, and Azure DevOps pipelines. We also use Bicep or Terraform for infrastructure-as-code so your environments are repeatable. For teams on AWS, we work with Lambda, ECS, and RDS too."
+    answer: "Yes. Azure is the most common deployment target for our .NET work. We're comfortable with App Service, Azure Functions, Service Bus, Cosmos DB, Azure SQL, Application Insights, and Azure DevOps pipelines. We also use Bicep or Terraform for infrastructure-as-code so your environments are repeatable. For teams on AWS, we work with Lambda, ECS, and RDS too."
   },
   {
     question: 'Should I use .NET or Node.js for my backend?',
-    answer: "It depends on what you're building. .NET is stronger for enterprise systems, complex domain logic, and teams that value strong typing and tooling end-to-end. Node.js is stronger for real-time applications, JavaScript-heavy stacks, and rapid prototyping. We work with both and have no incentive to push one over the other — we'll help you evaluate based on your specific use case, team skills, and long-term maintainability."
+    answer: "It depends on what you're building. .NET is stronger for enterprise systems, complex domain logic, and teams that value strong typing and tooling end-to-end. Node.js is stronger for real-time applications, JavaScript-heavy stacks, and rapid prototyping. We work with both and have no incentive to push one over the other. We'll help you evaluate based on your specific use case, team skills, and long-term maintainability."
   },
   {
     question: 'How quickly can a .NET developer start on my project?',
-    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific .NET engineer whose experience aligns with your stack — whether that's ASP.NET Core, Blazor, legacy .NET Framework, or Azure-heavy work. They'll ramp on your codebase within the first one to two weeks."
+    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific .NET engineer whose experience aligns with your stack, whether that's ASP.NET Core, Blazor, legacy .NET Framework, or Azure-heavy work. They'll ramp on your codebase within the first one to two weeks."
   },
   {
     question: 'Can your .NET developers handle DevOps and CI/CD too?',
-    answer: "Our senior .NET engineers are comfortable with Docker, Azure DevOps pipelines, GitHub Actions, and infrastructure-as-code (Bicep, Terraform). For complex Kubernetes or multi-cloud setups, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on — it makes them better engineers and saves you from a separate DevOps handoff."
+    answer: "Our senior .NET engineers are comfortable with Docker, Azure DevOps pipelines, GitHub Actions, and infrastructure-as-code (Bicep, Terraform). For complex Kubernetes or multi-cloud setups, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on. It makes them better engineers and saves you from a separate DevOps handoff."
   },
   {
     question: "What happens if a .NET developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. You see how they work — code quality, communication, architecture decisions — before committing. If the fit isn't right at any point in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. You see how they work: code quality, communication, architecture decisions, before committing. If the fit isn't right at any point in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 

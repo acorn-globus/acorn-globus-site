@@ -354,7 +354,7 @@ definePageMeta({
 const faqs = [
   {
     question: 'How much does it cost to hire a Node.js developer?',
-    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
+    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices. You'll always know what you're paying before you commit."
   },
   {
     question: 'Can I hire Node.js developers for full-stack work, not just the backend?',
@@ -362,19 +362,19 @@ const faqs = [
   },
   {
     question: 'How quickly can a developer start?',
-    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. We don't keep a bench — our engineers are experienced and ready to ramp up fast."
+    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. We don't keep a bench. Our engineers are experienced and ready to ramp up fast."
   },
   {
     question: 'Which databases do your Node.js developers work with?',
-    answer: "Our engineers work with PostgreSQL, MongoDB, Redis, and MySQL regularly. They're comfortable with ORMs like Prisma, TypeORM, and Sequelize, as well as writing raw queries when performance demands it. Database choice depends on your use case — we'll help you pick the right one."
+    answer: "Our engineers work with PostgreSQL, MongoDB, Redis, and MySQL regularly. They're comfortable with ORMs like Prisma, TypeORM, and Sequelize, as well as writing raw queries when performance demands it. Database choice depends on your use case. We'll help you pick the right one."
   },
   {
     question: 'Should I use Node.js or Python for my backend?',
-    answer: "It depends on what you're building. Node.js excels at real-time applications, API-heavy products, and JavaScript-heavy stacks. Python is stronger for data processing, machine learning, and scientific computing. If you're unsure, we'll help you evaluate both honestly — we work with both and have no incentive to push one over the other."
+    answer: "It depends on what you're building. Node.js excels at real-time applications, API-heavy products, and JavaScript-heavy stacks. Python is stronger for data processing, machine learning, and scientific computing. If you're unsure, we'll help you evaluate both honestly. We work with both and have no incentive to push one over the other."
   },
   {
     question: 'Can you build just the API without the frontend?',
-    answer: "Absolutely. Many of our engagements are API-only — we build the backend and your team (or another team) handles the frontend. We design APIs with clear documentation, consistent patterns, and proper versioning so your frontend developers have a smooth experience."
+    answer: "Absolutely. Many of our engagements are API-only. We build the backend and your team (or another team) handles the frontend. We design APIs with clear documentation, consistent patterns, and proper versioning so your frontend developers have a smooth experience."
   },
   {
     question: 'Do your developers work with NestJS?',
@@ -382,11 +382,11 @@ const faqs = [
   },
   {
     question: 'How do you ensure code quality?',
-    answer: "Code reviews, automated testing, CI/CD pipelines, and consistent coding standards. Every pull request gets reviewed. We write unit tests and integration tests as part of the development process — not as an afterthought. We also set up linting, formatting, and commit hooks to keep the codebase clean."
+    answer: "Code reviews, automated testing, CI/CD pipelines, and consistent coding standards. Every pull request gets reviewed. We write unit tests and integration tests as part of the development process, not as an afterthought. We also set up linting, formatting, and commit hooks to keep the codebase clean."
   },
   {
     question: 'Can your Node.js developers handle DevOps too?',
-    answer: "Our senior engineers are comfortable with Docker, CI/CD pipelines, AWS/GCP/Azure deployments, and infrastructure-as-code. For complex infrastructure needs, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on — it makes them better engineers."
+    answer: "Our senior engineers are comfortable with Docker, CI/CD pipelines, AWS/GCP/Azure deployments, and infrastructure-as-code. For complex infrastructure needs, we have dedicated DevOps engineers on the team. We believe backend developers should understand the systems their code runs on. It makes them better engineers."
   }
 ]
 

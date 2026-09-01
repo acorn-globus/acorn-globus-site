@@ -385,27 +385,27 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire a Ruby on Rails developer?',
-    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices — you'll always know what you're paying before you commit."
+    answer: "It depends on the engagement model and seniority level. Our dedicated developers are billed monthly, and we'll give you a clear quote after our discovery call. We don't do hourly billing with surprise invoices. You'll always know what you're paying before you commit."
   },
   {
     question: 'Is Ruby on Rails still a good choice in 2026?',
-    answer: "Yes — for the right projects. Rails powers Shopify, GitHub, Basecamp, and thousands of production applications. With Hotwire and Turbo, Rails has become even more capable for building interactive web applications without the complexity of a separate JavaScript framework. It's mature, stable, well-documented, and has a strong community. We'll tell you honestly if it's the right fit for your specific project."
+    answer: "Yes, for the right projects. Rails powers Shopify, GitHub, Basecamp, and thousands of production applications. With Hotwire and Turbo, Rails has become even more capable for building interactive web applications without the complexity of a separate JavaScript framework. It's mature, stable, well-documented, and has a strong community. We'll tell you honestly if it's the right fit for your specific project."
   },
   {
     question: 'Can you upgrade our legacy Rails application?',
-    answer: "Absolutely. We've handled Rails 5 and 6 upgrades to Rails 7+ before. The key is doing it incrementally — adding test coverage first, then upgrading Ruby, then Rails, then individual gems. We won't push for a rewrite when a careful upgrade will get you there safely. We also audit your dependency tree for abandoned or vulnerable gems."
+    answer: "Absolutely. We've handled Rails 5 and 6 upgrades to Rails 7+ before. The key is doing it incrementally: adding test coverage first, then upgrading Ruby, then Rails, then individual gems. We won't push for a rewrite when a careful upgrade will get you there safely. We also audit your dependency tree for abandoned or vulnerable gems."
   },
   {
     question: 'Do your developers work with Hotwire and Turbo?',
-    answer: "Yes. Hotwire, Turbo Frames, Turbo Streams, and Stimulus are core parts of modern Rails development. Our engineers understand when to use Turbo for real-time updates versus when a full-page reload is actually simpler and better. We follow the Rails way — using Hotwire where it genuinely improves the user experience, not just because it's new."
+    answer: "Yes. Hotwire, Turbo Frames, Turbo Streams, and Stimulus are core parts of modern Rails development. Our engineers understand when to use Turbo for real-time updates versus when a full-page reload is actually simpler and better. We follow the Rails way, using Hotwire where it genuinely improves the user experience, not just because it's new."
   },
   {
     question: 'How quickly can a Rails developer start?',
-    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. For legacy codebases, we factor in onboarding time — understanding your app's domain and architecture before making changes."
+    answer: "Typically within 1-2 weeks. We match you with an engineer, you interview them, and if it's a fit, they can start almost immediately. For legacy codebases, we factor in onboarding time, understanding your app's domain and architecture before making changes."
   },
   {
     question: 'Can your Rails developers handle frontend work too?',
-    answer: "Rails developers are inherently full-stack — views, partials, Stimulus controllers, and Turbo interactions are part of the framework. For projects that also need React or Vue on the frontend, we have dedicated frontend engineers who can work alongside your Rails developer. We'll help you decide what makes sense for your architecture."
+    answer: "Rails developers are inherently full-stack: views, partials, Stimulus controllers, and Turbo interactions are part of the framework. For projects that also need React or Vue on the frontend, we have dedicated frontend engineers who can work alongside your Rails developer. We'll help you decide what makes sense for your architecture."
   },
   {
     question: 'Should I use Rails or Node.js for my project?',
@@ -413,7 +413,7 @@ const faqs = [
   },
   {
     question: 'Can you help migrate from Rails to another framework?',
-    answer: "We can, but we'd want to have an honest conversation first about whether migration is actually the right move. Often, modernizing your existing Rails app — upgrading to Rails 7+, adopting Hotwire, improving test coverage — delivers better ROI than a full rewrite. If migration truly makes sense for your business, we'll plan it carefully with a strangler fig approach rather than a risky big-bang rewrite."
+    answer: "We can, but we'd want to have an honest conversation first about whether migration is actually the right move. Often, modernizing your existing Rails app (upgrading to Rails 7+, adopting Hotwire, improving test coverage) delivers better ROI than a full rewrite. If migration truly makes sense for your business, we'll plan it carefully with a strangler fig approach rather than a risky big-bang rewrite."
   }
 ]
 

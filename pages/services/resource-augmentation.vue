@@ -238,23 +238,23 @@
 const faqs = [
   {
     question: "What's the difference between resource augmentation and hiring freelancers?",
-    answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated — full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
+    answer: 'Freelancers juggle multiple clients and often context-switch away mid-sprint. Our augmentation engineers are dedicated: full-time on your product, inside your Jira, Git, and standups. You know them by name, they build lasting context in your codebase, and they are backed by our full team of 20+ engineers if they need to consult on DevOps, backend, or QA.'
   },
   {
     question: 'How quickly can an engineer start and become productive?',
-    answer: 'Most engagements start within one to two weeks. We match specific engineers to your stack, you meet them before anything begins, and a two-week trial follows. Our engineers typically ship their first PR within 1-2 weeks — we track time-to-first-PR because ramp-up matters.'
+    answer: 'Most engagements start within one to two weeks. We match specific engineers to your stack, you meet them before anything begins, and a two-week trial follows. Our engineers typically ship their first PR within 1-2 weeks. We track time-to-first-PR because ramp-up matters.'
   },
   {
     question: "What if an engineer isn't the right fit?",
-    answer: "Every engagement starts with a two-week trial at no long-term commitment — if the fit isn't right, you walk away. Beyond the trial, we offer an engineer replacement guarantee: if someone isn't working out later, we'll work with you to address it or propose a replacement."
+    answer: "Every engagement starts with a two-week trial at no long-term commitment, if the fit isn't right, you walk away. Beyond the trial, we offer an engineer replacement guarantee: if someone isn't working out later, we'll work with you to address it or propose a replacement."
   },
   {
     question: 'How is resource augmentation priced, and is there a minimum?',
-    answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling — scale up or down with two weeks' notice, with no long-term lock-in."
+    answer: "Pricing is a monthly per-engineer rate, with volume discounts for engagements of 3 or more engineers. The minimum is a single engineer; most clients run 2-5. After an initial 3-month commitment it's monthly rolling, scale up or down with two weeks' notice, with no long-term lock-in."
   },
   {
     question: 'Is resource augmentation the same as team augmentation and staff augmentation?',
-    answer: 'Yes — resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
+    answer: 'Yes. Resource augmentation, team augmentation, and staff augmentation are interchangeable terms for the same model: we embed dedicated engineers directly into your team, working under your management inside your tools and processes. Whatever you call it, you get named engineers who ramp fast and stay, not a hands-off project handoff. For the deeper mechanics, costs, and comparisons, see our IT staff augmentation guide.'
   },
   {
     question: 'Will the engineers work in our timezone?',
@@ -268,9 +268,9 @@ const faqs = [
 
 useSeoMeta({
   title: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  description: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  description: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
   ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  ogDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  ogDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
   ogImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -278,7 +278,7 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  twitterDescription: 'Resource augmentation (also called team or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  twitterDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
   twitterImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
 })
 
@@ -293,7 +293,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Resource Augmentation',
-  description: 'Resource augmentation (also called team augmentation or staff augmentation): embed dedicated engineers into your team — same tools, same standups, same codebase. No rotating contractors, just named engineers who care about your product.',
+  description: 'Resource augmentation (also called team augmentation or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
   url: '/services/resource-augmentation',
 })
 

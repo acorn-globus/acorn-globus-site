@@ -294,15 +294,15 @@ const faqs = [
   },
   {
     question: 'What is the difference between Python and Django?',
-    answer: "Python is the programming language. Django is a web framework written in Python that gives you a structured way to build database-backed web applications and APIs — an ORM, an admin, authentication, routing, and security defaults out of the box. You hire Python developers for the language and its broad ecosystem; you hire Django developers when the project is specifically a Django web application or API."
+    answer: "Python is the programming language. Django is a web framework written in Python that gives you a structured way to build database-backed web applications and APIs: an ORM, an admin, authentication, routing, and security defaults out of the box. You hire Python developers for the language and its broad ecosystem; you hire Django developers when the project is specifically a Django web application or API."
   },
   {
     question: 'When should I choose Django over Flask or FastAPI?',
-    answer: "Choose Django when you want a batteries-included framework for a database-backed application — you get the ORM, migrations, admin, and auth without wiring them together. Flask is lighter and good for small services where you want to choose every component yourself. FastAPI shines for high-performance async APIs. Our Python developers work across all three and will recommend honestly based on your product."
+    answer: "Choose Django when you want a batteries-included framework for a database-backed application. You get the ORM, migrations, admin, and auth without wiring them together. Flask is lighter and good for small services where you want to choose every component yourself. FastAPI shines for high-performance async APIs. Our Python developers work across all three and will recommend honestly based on your product."
   },
   {
     question: 'Do your Django developers use Django REST Framework?',
-    answer: "Yes. Django REST Framework (DRF) is our standard for building JSON APIs on Django — serializers, viewsets, authentication, and permissions. It's how we power React, Vue, and mobile front ends from a Django backend. We also work with GraphQL where it fits the product better."
+    answer: "Yes. Django REST Framework (DRF) is our standard for building JSON APIs on Django: serializers, viewsets, authentication, and permissions. It's how we power React, Vue, and mobile front ends from a Django backend. We also work with GraphQL where it fits the product better."
   },
   {
     question: 'How much does it cost to hire a Django developer from India?',
@@ -318,7 +318,7 @@ const faqs = [
   },
   {
     question: "What happens if a Django developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away, with no cost for the trial period. If issues come up later in the engagement, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away, with no cost for the trial period. If issues come up later in the engagement, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 

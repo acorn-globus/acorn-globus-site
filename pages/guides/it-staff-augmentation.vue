@@ -663,7 +663,7 @@ useFaqSchema([
   },
   {
     question: 'Is IT staff augmentation the same as resource augmentation and team augmentation?',
-    answer: "Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs — direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.",
+    answer: "Yes. Resource augmentation, team augmentation, and IT staff augmentation all describe the same model: embedding external engineers directly into your team, under your management, using your tools and processes. Vendors and buyers use the terms interchangeably. What matters isn't the label but how the engagement runs: direct control, careful matching, a trial period, and long-term embedding rather than a hands-off project handoff.",
   },
   {
     question: "What's the difference between staff augmentation and outsourcing?",

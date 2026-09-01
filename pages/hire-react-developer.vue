@@ -377,7 +377,7 @@ definePageMeta({
 const faqs = [
   {
     question: 'How much does it cost to hire a React developer from India?',
-    answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
+    answer: "Rates depend on seniority and engagement model. Our dedicated React developers typically range from $25 to $50 per hour, depending on experience level and the complexity of your project. Because we're based in India and our clients are mostly in the US, UK, Canada, and Australia, you get senior React talent at a fraction of local hiring costs. We're transparent about pricing from the first call. No hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
     question: 'Can I hire React.js developers specifically, or just React developers?',
@@ -389,31 +389,31 @@ const faqs = [
   },
   {
     question: 'How do you vet your React developers?',
-    answer: "Every React developer we propose is a full-time member of our 20+ person engineering team — not a contractor pulled from a marketplace. They're screened on real React work: component architecture, state management, hooks, TypeScript, testing, and code review discipline. You then interview the specific engineers we propose and confirm the fit yourself during a two-week embedded trial before any long-term commitment."
+    answer: "Every React developer we propose is a full-time member of our 20+ person engineering team, not a contractor pulled from a marketplace. They're screened on real React work: component architecture, state management, hooks, TypeScript, testing, and code review discipline. You then interview the specific engineers we propose and confirm the fit yourself during a two-week embedded trial before any long-term commitment."
   },
   {
     question: "What's the difference between hiring freelance React developers and a dedicated team?",
-    answer: "Freelancers work across multiple clients and projects. Our dedicated React developers work exclusively on your product — same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a backend integration, they have senior engineers to consult with. Freelancers are on their own."
+    answer: "Freelancers work across multiple clients and projects. Our dedicated React developers work exclusively on your product: same standups, same Slack, same codebase. They build context over months, not days. You also get the backing of our full team: if your developer needs help with a DevOps issue or a backend integration, they have senior engineers to consult with. Freelancers are on their own."
   },
   {
     question: 'Do your React developers work in my timezone?',
-    answer: "We have significant overlap with US, UK, and European timezones, and we work with clients in Canada and Australia too. Our developers adjust their schedules to match your team's working hours — typically 4 to 6 hours of direct overlap for real-time collaboration, with async work covering the rest. We've done this for years with clients across multiple timezones."
+    answer: "We have significant overlap with US, UK, and European timezones, and we work with clients in Canada and Australia too. Our developers adjust their schedules to match your team's working hours, typically 4 to 6 hours of direct overlap for real-time collaboration, with async work covering the rest. We've done this for years with clients across multiple timezones."
   },
   {
     question: 'What is the difference between React and React Native? Do you do both?',
-    answer: "React (React.js) is a library for building web user interfaces that run in the browser. React Native uses the same component model and skills but compiles to native iOS and Android apps instead of web pages. They share concepts, so a strong React developer transfers well — but production React Native also involves native build tooling, device APIs, and app-store deployment. We do both: several of our engineers have shipped React Native apps to both app stores. If your product spans web and mobile, see our dedicated React Native page or ask us to put together a team that covers both."
+    answer: "React (React.js) is a library for building web user interfaces that run in the browser. React Native uses the same component model and skills but compiles to native iOS and Android apps instead of web pages. They share concepts, so a strong React developer transfers well. But production React Native also involves native build tooling, device APIs, and app-store deployment. We do both: several of our engineers have shipped React Native apps to both app stores. If your product spans web and mobile, see our dedicated React Native page or ask us to put together a team that covers both."
   },
   {
     question: 'Do you work with Next.js for server-side rendering and SEO?',
-    answer: "Yes. Several of our React developers have deep experience with Next.js — server-side rendering, static generation, incremental regeneration, API routes, and the App Router. If your React application needs SEO, fast first-page loads, or a full-stack setup, Next.js is usually the answer, and we build in it regularly."
+    answer: "Yes. Several of our React developers have deep experience with Next.js: server-side rendering, static generation, incremental regeneration, API routes, and the App Router. If your React application needs SEO, fast first-page loads, or a full-stack setup, Next.js is usually the answer, and we build in it regularly."
   },
   {
     question: 'Can I scale the team up or down?',
-    answer: "Yes. That's one of the core advantages of working with us. PerformLine started with one engineer and scaled to eight-plus over two years. You can add React developers, backend engineers, QA, or DevOps as your product grows — and scale back when you need to. Monthly rolling engagement after the initial three-month period."
+    answer: "Yes. That's one of the core advantages of working with us. PerformLine started with one engineer and scaled to eight-plus over two years. You can add React developers, backend engineers, QA, or DevOps as your product grows, and scale back when you need to. Monthly rolling engagement after the initial three-month period."
   },
   {
     question: "What happens if a developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away. No cost for the trial period. If issues come up later in the engagement, we'll work with you to either address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 

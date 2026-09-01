@@ -305,8 +305,8 @@ const faqs = [
     answer: "We work primarily with Vue 3 and the Composition API. If you have a Vue 2 codebase, we can help maintain it and plan a migration path to Vue 3 when you're ready."
   },
   {
-    question: 'Vue.js vs React — why would I choose Vue?',
-    answer: "We're stack-agnostic — we work with both React and Vue (and Angular, too). Vue tends to shine with its gentler learning curve, excellent documentation, and opinionated tooling through Nuxt. It's a great choice for teams that want a productive, well-structured framework without the configuration overhead. That said, the best framework is the one that fits your team and product. We're happy to advise on that."
+    question: 'Vue.js vs React: why would I choose Vue?',
+    answer: "We're stack-agnostic. We work with both React and Vue (and Angular, too). Vue tends to shine with its gentler learning curve, excellent documentation, and opinionated tooling through Nuxt. It's a great choice for teams that want a productive, well-structured framework without the configuration overhead. That said, the best framework is the one that fits your team and product. We're happy to advise on that."
   },
   {
     question: 'How quickly can a developer start?',
@@ -318,7 +318,7 @@ const faqs = [
   },
   {
     question: 'Do your Vue developers use TypeScript?',
-    answer: "Yes. TypeScript is a standard part of our Vue workflow. Vue 3 was built with TypeScript in mind, and we use it across our projects — including Formester. Our developers are comfortable with strict typing, generics, and type-safe component props."
+    answer: "Yes. TypeScript is a standard part of our Vue workflow. Vue 3 was built with TypeScript in mind, and we use it across our projects, including Formester. Our developers are comfortable with strict typing, generics, and type-safe component props."
   },
   {
     question: 'Can I hire dedicated Vue.js developers for my team?',
@@ -332,9 +332,9 @@ const faqs = [
 
 useSeoMeta({
   title: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   ogTitle: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-vuejs-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -342,7 +342,7 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  twitterDescription: 'Hire Vue.js developers who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt.',
+  twitterDescription: 'Hire Vue.js developers who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt.',
   twitterImage: 'https://acornglobus.com/images/og/og-hire-vuejs-developer.webp',
 })
 
@@ -354,7 +354,7 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Vue.js Developers',
-  description: 'Hire Vue.js developers who build with Vue every day. We built Formester — our own SaaS — on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  description: 'Hire Vue.js developers who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
   url: '/hire-vuejs-developer',
 })
 

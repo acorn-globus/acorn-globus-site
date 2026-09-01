@@ -331,11 +331,11 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire an Angular developer?',
-    answer: "Rates depend on seniority and engagement model. Our dedicated Angular developers typically range from $25 to $50 per hour, depending on experience level and project complexity. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
+    answer: "Rates depend on seniority and engagement model. Our dedicated Angular developers typically range from $25 to $50 per hour, depending on experience level and project complexity. We're transparent about pricing from the first call. No hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
     question: 'Do your developers work with the latest Angular version?',
-    answer: "Yes. Our Angular developers work with Angular 17+ and stay current with the framework's evolution — standalone components, Signals, the new built-in control flow (@if, @for, @switch), SSR with hydration, and deferred loading. We also maintain expertise across older versions for migration projects."
+    answer: "Yes. Our Angular developers work with Angular 17+ and stay current with the framework's evolution: standalone components, Signals, the new built-in control flow (@if, @for, @switch), SSR with hydration, and deferred loading. We also maintain expertise across older versions for migration projects."
   },
   {
     question: 'Can you migrate our AngularJS application to modern Angular?',
@@ -343,7 +343,7 @@ const faqs = [
   },
   {
     question: 'How does Angular compare to React for our project?',
-    answer: "Angular excels in large, structured applications — enterprise dashboards, complex form workflows, and projects with large teams. Its opinionated architecture enforces consistency across the codebase. React offers more flexibility and a larger ecosystem. We're stack-agnostic and will honestly recommend whichever framework fits your project, team, and goals best."
+    answer: "Angular excels in large, structured applications: enterprise dashboards, complex form workflows, and projects with large teams. Its opinionated architecture enforces consistency across the codebase. React offers more flexibility and a larger ecosystem. We're stack-agnostic and will honestly recommend whichever framework fits your project, team, and goals best."
   },
   {
     question: 'How quickly can an Angular developer start on my project?',
@@ -351,15 +351,15 @@ const faqs = [
   },
   {
     question: 'Do your Angular developers use TypeScript?',
-    answer: "Absolutely — TypeScript is core to Angular development. Our developers write strictly-typed TypeScript with proper interfaces, generics, and type guards. Strong typing catches bugs at compile time, improves IDE support, and makes large codebases significantly easier to maintain and refactor."
+    answer: "Absolutely. TypeScript is core to Angular development. Our developers write strictly-typed TypeScript with proper interfaces, generics, and type guards. Strong typing catches bugs at compile time, improves IDE support, and makes large codebases significantly easier to maintain and refactor."
   },
   {
     question: 'Can you provide a full Angular development team?',
-    answer: "Yes. We can assemble a complete team — Angular frontend developers, Node.js or Java backend engineers, QA, and DevOps — all working as a single unit on your product. PerformLine grew from one engineer to a cross-functional squad of eight-plus. We scale teams organically based on your product's needs."
+    answer: "Yes. We can assemble a complete team (Angular frontend developers, Node.js or Java backend engineers, QA, and DevOps) all working as a single unit on your product. PerformLine grew from one engineer to a cross-functional squad of eight-plus. We scale teams organically based on your product's needs."
   },
   {
     question: 'How do your Angular developers integrate with our existing team?',
-    answer: "They join your tools — Slack, Jira, GitHub, whatever you use. They attend your standups, follow your coding standards, and submit PRs through your review process. We've embedded engineers in teams across US, UK, and European timezones with four to six hours of daily overlap. After a few weeks, most clients tell us they forget our developers are external."
+    answer: "They join your tools: Slack, Jira, GitHub, whatever you use. They attend your standups, follow your coding standards, and submit PRs through your review process. We've embedded engineers in teams across US, UK, and European timezones with four to six hours of daily overlap. After a few weeks, most clients tell us they forget our developers are external."
   }
 ]
 

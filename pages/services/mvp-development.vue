@@ -384,15 +384,15 @@ const faqs = [
   },
   {
     question: 'What does an MVP from AcornGlobus include?',
-    answer: "Product scoping and feature prioritization, technical architecture and stack selection, UI/UX wireframes, full-stack development, testing and QA, cloud deployment (AWS, GCP, or Azure), CI/CD pipeline setup, 2 weeks of post-launch support, and complete documentation with a full code handoff. You own everything — code and IP — from day one."
+    answer: "Product scoping and feature prioritization, technical architecture and stack selection, UI/UX wireframes, full-stack development, testing and QA, cloud deployment (AWS, GCP, or Azure), CI/CD pipeline setup, 2 weeks of post-launch support, and complete documentation with a full code handoff. You own everything, code and IP, from day one."
   },
   {
     question: 'Will my MVP be production-ready, or just a prototype?',
-    answer: "Production-ready. We build with clean code, proper architecture, and a CI/CD pipeline from day one, so your MVP can handle real users and scale as you grow — not something you'll have to rewrite in six months. We hold it to the same standard we use for our own SaaS product, Formester."
+    answer: "Production-ready. We build with clean code, proper architecture, and a CI/CD pipeline from day one, so your MVP can handle real users and scale as you grow, not something you'll have to rewrite in six months. We hold it to the same standard we use for our own SaaS product, Formester."
   },
   {
     question: 'How much does MVP development cost?',
-    answer: 'We work on a fixed-price or capped time-and-materials basis, so you know your budget before we start. Cost depends on scope and team size (typically 2-4 engineers plus a project lead). During discovery we help you decide what to build first and what can wait — not to bill less, but so you launch faster with a leaner first version.'
+    answer: 'We work on a fixed-price or capped time-and-materials basis, so you know your budget before we start. Cost depends on scope and team size (typically 2-4 engineers plus a project lead). During discovery we help you decide what to build first and what can wait, not to bill less, but so you launch faster with a leaner first version.'
   },
   {
     question: "I'm a non-technical founder. Can you still work with me?",
@@ -400,7 +400,7 @@ const faqs = [
   },
   {
     question: 'What happens after the MVP launches?',
-    answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building — adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
+    answer: 'You get 2 weeks of post-launch support for bug fixes and critical issues included. After that, many founders continue with us to keep building: adding features, scaling, and maintaining the product. Eitoss raised funding on their MVP and we are still their engineering team more than two years later.'
   },
   {
     question: 'Which agencies can prototype and ship an MVP in 12 weeks?',

@@ -312,7 +312,7 @@ const faqs = [
   },
   {
     question: 'How much does maintenance cost?',
-    answer: "Retainers typically range from $1,500 to $5,000+ per month. The price depends on four things: your project's complexity, the experience level of the engineers, the monthly hours committed, and whether you want dedicated or shared engineers. We give you a specific number once we understand your product's scope — no placeholder figures."
+    answer: "Retainers typically range from $1,500 to $5,000+ per month. The price depends on four things: your project's complexity, the experience level of the engineers, the monthly hours committed, and whether you want dedicated or shared engineers. We give you a specific number once we understand your product's scope. No placeholder figures."
   },
   {
     question: "Do you maintain products your team didn't build?",
@@ -324,11 +324,11 @@ const faqs = [
   },
   {
     question: 'Is there a minimum commitment, and can I leave?',
-    answer: 'The minimum is 3 months — enough time for us to learn your product and prove the value. After that there is no lock-in: we keep full documentation so you can leave whenever you want. Most clients stay because the partnership works, not because a contract forces them to.'
+    answer: 'The minimum is 3 months, enough time for us to learn your product and prove the value. After that there is no lock-in: we keep full documentation so you can leave whenever you want. Most clients stay because the partnership works, not because a contract forces them to.'
   },
   {
     question: 'Is maintenance just keeping the lights on, or do you improve the product too?',
-    answer: 'Both. We are proactive — monitoring and fixing issues before you notice them — and we run optional quarterly improvement sprints for new features, refactoring, and performance work. When possible, the same engineers who built your product maintain it, so no context is lost and nothing has to be re-learned.'
+    answer: 'Both. We are proactive, monitoring and fixing issues before you notice them, and we run optional quarterly improvement sprints for new features, refactoring, and performance work. When possible, the same engineers who built your product maintain it, so no context is lost and nothing has to be re-learned.'
   },
   {
     question: 'What do your software maintenance and support services cover?',
@@ -342,9 +342,9 @@ const faqs = [
 
 useSeoMeta({
   title: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
-  description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  description: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   ogTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
-  ogDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  ogDescription: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   ogImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -352,7 +352,7 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
-  twitterDescription: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  twitterDescription: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   twitterImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
 })
 
@@ -367,7 +367,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Maintenance & Support',
-  description: 'We built it. We keep it running. Same team, same care — monitoring, fixing, updating, and improving your product with the engineers who know it best.',
+  description: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   url: '/services/maintenance-support',
 })
 

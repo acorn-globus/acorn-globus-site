@@ -343,12 +343,12 @@ definePageMeta({
 
 useSeoMeta({
   title: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  description: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  description: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   keywords: 'product engineering, software development, resource augmentation, MVP development, web development, mobile app development, SaaS development, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
   ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   ogImage: 'https://acornglobus.com/images/og/og-home.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -359,7 +359,7 @@ useSeoMeta({
   twitterSite: '@acornglobus',
   twitterCreator: '@acornglobus',
   twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
-  twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester) — and we bring that same ownership to every product we touch.',
+  twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   twitterImage: 'https://acornglobus.com/images/og/og-home.webp',
 })
 
@@ -367,13 +367,13 @@ const services = [
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     title: 'Resource Augmentation',
-    description: 'Your team, plus ours. Our engineers embed with your team — same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
+    description: 'Your team, plus ours. Our engineers embed with your team: same tools, same standups, same codebase. You\'ll forget we\'re external. Scale from 1 engineer to 8+ as your product grows.',
     link: '/services/resource-augmentation/'
   },
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
     title: 'MVP Development',
-    description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready — not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
+    description: 'From idea to launch in 8-12 weeks. We scope it honestly, build it in sprints, and ship an MVP that\'s production-ready, not a prototype you\'ll rewrite in 6 months. You own the code from day one.',
     link: '/services/mvp-development/'
   },
   {
@@ -385,7 +385,7 @@ const services = [
   {
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
     title: 'Maintenance & Support',
-    description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve — with the same engineers who built it. Because they know your product and they care about it.',
+    description: 'We stay after launch. Launching is just the beginning. We monitor, fix, and improve, with the same engineers who built it. Because they know your product and they care about it.',
     link: '/services/maintenance-support/'
   }
 ]
@@ -399,7 +399,7 @@ const whyUs = [
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>',
     title: 'We Guide, Not Just Execute',
-    description: 'We\'ll tell you honestly what you need — and what can wait. Not to bill less, but because your success matters more than our invoice.'
+    description: 'We\'ll tell you honestly what you need, and what can wait. Not to bill less, but because your success matters more than our invoice.'
   },
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
@@ -409,7 +409,7 @@ const whyUs = [
   {
     icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0058bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
     title: 'Stack-Agnostic',
-    description: 'React, Node, Python, Flutter, AWS, Azure — we pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.'
+    description: 'React, Node, Python, Flutter, AWS, Azure. We pick the right tool for the problem, not the one we\'re most comfortable with. What matters is the outcome.'
   }
 ]
 

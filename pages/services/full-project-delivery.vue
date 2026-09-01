@@ -233,27 +233,27 @@ const faqs = [
   },
   {
     question: 'What is full project delivery, and when should I choose it over resource augmentation?',
-    answer: "Full project delivery means we build your product end-to-end — architecture, development, QA, deployment, and handoff — with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
+    answer: "Full project delivery means we build your product end-to-end, architecture, development, QA, deployment, and handoff, with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
   },
   {
     question: 'How much does full project delivery cost, and how is it priced?',
-    answer: 'We price on a milestone-based fixed price or a capped time-and-materials basis, so your budget stays predictable. Cost depends on scope, team size (typically 3-8 engineers plus a project manager and QA), and timeline (usually 3 to 12+ months). We agree on milestones and deliverables up front — no surprise invoices, and no scope changes without a conversation first.'
+    answer: 'We price on a milestone-based fixed price or a capped time-and-materials basis, so your budget stays predictable. Cost depends on scope, team size (typically 3-8 engineers plus a project manager and QA), and timeline (usually 3 to 12+ months). We agree on milestones and deliverables up front. No surprise invoices, and no scope changes without a conversation first.'
   },
   {
     question: 'Who owns the code and intellectual property?',
-    answer: "You do — 100%. The code and IP are yours from day one. We build for your independence with clean documentation and zero lock-in, so you can bring the product in-house whenever you choose. If you decide to do that, we'll help with the transition."
+    answer: "You do, 100%. The code and IP are yours from day one. We build for your independence with clean documentation and zero lock-in, so you can bring the product in-house whenever you choose. If you decide to do that, we'll help with the transition."
   },
   {
     question: 'How do you keep the project on track and communicate progress?',
-    answer: 'You get one project manager, one dedicated Slack channel, and engineers you know by name. We send weekly status reports, run bi-weekly demos, and show you working software at every milestone — not just at the end. The same people who architect your system build, test, and launch it, so nothing gets lost in handoffs.'
+    answer: 'You get one project manager, one dedicated Slack channel, and engineers you know by name. We send weekly status reports, run bi-weekly demos, and show you working software at every milestone, not just at the end. The same people who architect your system build, test, and launch it, so nothing gets lost in handoffs.'
   },
   {
     question: 'What happens after launch?',
-    answer: 'Every project includes a 4-week post-launch warranty covering bug fixes and stability issues, plus documentation, training, and knowledge transfer so your team can fully own the product. Many clients continue on a maintenance retainer or grow the engagement into a long-term partnership — Eitoss and PerformLine both started as projects and are still building with us years later.'
+    answer: 'Every project includes a 4-week post-launch warranty covering bug fixes and stability issues, plus documentation, training, and knowledge transfer so your team can fully own the product. Many clients continue on a maintenance retainer or grow the engagement into a long-term partnership, Eitoss and PerformLine both started as projects and are still building with us years later.'
   },
   {
     question: 'Can you work from our designs, or do you handle design too?',
-    answer: 'Both. We implement UI from your existing designs, or we provide wireframes as part of the engagement. Our scope covers product and project management, system architecture, full-stack development, QA, DevOps, deployment, and documentation — the full path from idea to production.'
+    answer: 'Both. We implement UI from your existing designs, or we provide wireframes as part of the engagement. Our scope covers product and project management, system architecture, full-stack development, QA, DevOps, deployment, and documentation, the full path from idea to production.'
   }
 ]
 
@@ -261,7 +261,7 @@ useSeoMeta({
   title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
   description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
   ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   ogImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -269,7 +269,7 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   twitterImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
 })
 

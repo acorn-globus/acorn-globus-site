@@ -238,9 +238,9 @@ definePageMeta({
 
 useSeoMeta({
   title: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  description: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  description: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
   ogTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  ogDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  ogDescription: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
   ogImage: 'https://acornglobus.com/images/og/og-about.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -248,7 +248,7 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'About AcornGlobus - The Team That Builds It Like It\'s Ours',
-  twitterDescription: 'Before we built for anyone else, we built Formester — our own SaaS product. That experience taught us what real ownership feels like.',
+  twitterDescription: 'Before we built for anyone else, we built Formester, our own SaaS product. That experience taught us what real ownership feels like.',
   twitterImage: 'https://acornglobus.com/images/og/og-about.webp',
 })
 

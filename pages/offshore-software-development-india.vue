@@ -218,7 +218,7 @@ const faqs = [
   },
   {
     question: 'Why offshore software development to India specifically?',
-    answer: "India combines one of the world's largest pools of experienced, English-speaking software engineers with a cost structure that lets teams in the US, UK, Canada, and Australia stretch their budget further. The workday overlaps with UK/European hours and the US morning, so real-time collaboration is practical. The key is working with a vetted team that communicates well and stays on your codebase — not a rotating pool of anonymous contractors."
+    answer: "India combines one of the world's largest pools of experienced, English-speaking software engineers with a cost structure that lets teams in the US, UK, Canada, and Australia stretch their budget further. The workday overlaps with UK/European hours and the US morning, so real-time collaboration is practical. The key is working with a vetted team that communicates well and stays on your codebase, not a rotating pool of anonymous contractors."
   },
   {
     question: 'How do you handle the timezone difference?',
@@ -226,7 +226,7 @@ const faqs = [
   },
   {
     question: 'Is communication a problem with an offshore team in India?',
-    answer: "English is the working language of Indian software teams, and you talk directly to the engineers building your product — no account manager translating in between. That direct line, plus daily timezone overlap and your own tools and standups, is what prevents the miscommunication that gives offshoring a bad reputation."
+    answer: "English is the working language of Indian software teams, and you talk directly to the engineers building your product. No account manager translating in between. That direct line, plus daily timezone overlap and your own tools and standups, is what prevents the miscommunication that gives offshoring a bad reputation."
   },
   {
     question: 'How do you vet offshore developers before I commit?',
@@ -234,15 +234,15 @@ const faqs = [
   },
   {
     question: 'What is the difference between offshore staff augmentation and full outsourcing?',
-    answer: "Staff augmentation embeds our engineers into your existing team — your tools, your standups, your direction. Full outsourcing (full project delivery) hands us a defined scope to deliver end to end. Augmentation keeps you in control day to day; full delivery frees you from managing the build. We offer both, and can help you choose on a call."
+    answer: "Staff augmentation embeds our engineers into your existing team. Your tools, your standups, your direction. Full outsourcing (full project delivery) hands us a defined scope to deliver end to end. Augmentation keeps you in control day to day; full delivery frees you from managing the build. We offer both, and can help you choose on a call."
   },
   {
     question: 'How much can I save by offshoring development to India?',
-    answer: "Senior engineering talent in India typically costs a fraction of an equivalent in-house hire in the US, UK, or Australia, so the same budget buys more capacity or a longer runway. We're transparent about pricing from the first call — dedicated engineers work on monthly engagement rates, not hourly bidding. Contact us for a specific quote based on the roles you need."
+    answer: "Senior engineering talent in India typically costs a fraction of an equivalent in-house hire in the US, UK, or Australia, so the same budget buys more capacity or a longer runway. We're transparent about pricing from the first call, dedicated engineers work on monthly engagement rates, not hourly bidding. Contact us for a specific quote based on the roles you need."
   },
   {
     question: 'Can I scale the offshore team up or down?',
-    answer: "Yes. After the initial commitment, you can scale with short notice — add engineers, QA, or DevOps as your product grows, or scale back when you need to. PerformLine started with one of our engineers and grew to eight-plus over two years. Monthly rolling engagement, no long-term lock-in."
+    answer: "Yes. After the initial commitment, you can scale with short notice: add engineers, QA, or DevOps as your product grows, or scale back when you need to. PerformLine started with one of our engineers and grew to eight-plus over two years. Monthly rolling engagement, no long-term lock-in."
   }
 ]
 

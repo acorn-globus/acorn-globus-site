@@ -337,7 +337,7 @@ const faqs = [
   },
   {
     question: 'Do you actually use Nuxt yourselves?',
-    answer: "Yes. acornglobus.com — the site you're reading — is built on Nuxt 4. Our own SaaS product, Formester, is built on Nuxt too. Our engineers work in the framework in production every day, so the experience you're hiring is operational, not theoretical."
+    answer: "Yes. acornglobus.com, the site you're reading, is built on Nuxt 4. Our own SaaS product, Formester, is built on Nuxt too. Our engineers work in the framework in production every day, so the experience you're hiring is operational, not theoretical."
   },
   {
     question: 'Which versions of Nuxt do you work with?',
@@ -345,7 +345,7 @@ const faqs = [
   },
   {
     question: 'Can Nuxt developers handle both SSR and static generation?',
-    answer: "Yes. Nuxt supports server-side rendering, static site generation, and hybrid rendering where different routes use different modes in the same project. Our developers choose the right mode per route — statically generating content pages while server-rendering dynamic ones — and configure Nitro to deploy to Node, serverless, or edge targets."
+    answer: "Yes. Nuxt supports server-side rendering, static site generation, and hybrid rendering where different routes use different modes in the same project. Our developers choose the right mode per route, statically generating content pages while server-rendering dynamic ones, and configure Nitro to deploy to Node, serverless, or edge targets."
   },
   {
     question: 'How much does it cost to hire a Nuxt developer?',

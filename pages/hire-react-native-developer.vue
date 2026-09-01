@@ -288,15 +288,15 @@ const faqs = [
   },
   {
     question: 'Is React Native or Flutter better for my app?',
-    answer: "Both are excellent for cross-platform iOS and Android apps from one codebase. Choose React Native if your team already knows React or JavaScript, or you want to share code and developers across web and mobile — it has the larger hiring pool and ecosystem. Choose Flutter if you want pixel-identical, highly custom UI from one rendering engine and are happy to work in Dart. We build in both and will recommend honestly based on your team and product."
+    answer: "Both are excellent for cross-platform iOS and Android apps from one codebase. Choose React Native if your team already knows React or JavaScript, or you want to share code and developers across web and mobile. It has the larger hiring pool and ecosystem. Choose Flutter if you want pixel-identical, highly custom UI from one rendering engine and are happy to work in Dart. We build in both and will recommend honestly based on your team and product."
   },
   {
     question: 'Do React Native apps feel truly native?',
-    answer: "Yes. React Native renders to real native UI components rather than a web view, so scrolling, navigation, and interactions feel native. When a feature needs platform-specific power — advanced camera control, Bluetooth, background tasks — we drop into native modules written in Swift or Kotlin and bridge them to the JavaScript layer."
+    answer: "Yes. React Native renders to real native UI components rather than a web view, so scrolling, navigation, and interactions feel native. When a feature needs platform-specific power (advanced camera control, Bluetooth, background tasks) we drop into native modules written in Swift or Kotlin and bridge them to the JavaScript layer."
   },
   {
     question: 'Can one React Native codebase really ship to both iOS and Android?',
-    answer: "Yes — that's the core benefit. The large majority of your code is shared across both platforms, with small platform-specific branches only where iOS and Android genuinely differ. One team maintains both apps, which cuts cost and keeps features in sync across the stores."
+    answer: "Yes. That's the core benefit. The large majority of your code is shared across both platforms, with small platform-specific branches only where iOS and Android genuinely differ. One team maintains both apps, which cuts cost and keeps features in sync across the stores."
   },
   {
     question: 'Do your React Native developers also know React for web?',
@@ -308,11 +308,11 @@ const faqs = [
   },
   {
     question: 'Can you handle app-store submission and releases?',
-    answer: "Yes. We manage the full release flow — builds via EAS or Fastlane, App Store and Google Play Console submission, and over-the-air updates through Expo where they fit. We can own releases end to end or work within your existing pipeline."
+    answer: "Yes. We manage the full release flow: builds via EAS or Fastlane, App Store and Google Play Console submission, and over-the-air updates through Expo where they fit. We can own releases end to end or work within your existing pipeline."
   },
   {
     question: "What happens if a React Native developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away, with no cost for the trial period. If issues come up later, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away, with no cost for the trial period. If issues come up later, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
