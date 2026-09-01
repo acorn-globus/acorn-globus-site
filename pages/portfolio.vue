@@ -149,9 +149,9 @@ import { ref, computed } from 'vue'
 definePageMeta({ layout: 'default' })
 
 useSeoMeta({
-  title: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  title: 'Portfolio | Products We\'ve Built and the Stories Behind',
   description: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
-  ogTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  ogTitle: 'Portfolio | Products We\'ve Built and the Stories Behind',
   ogDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
   ogImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
   ogImageWidth: 1200,
@@ -159,7 +159,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/portfolio/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Portfolio | Products We\'ve Built & Stories Behind Them | AcornGlobus',
+  twitterTitle: 'Portfolio | Products We\'ve Built and the Stories Behind',
   twitterDescription: 'From our own SaaS product to funded startups and global nonprofits, here\'s the work we\'re proud of, and the partnerships that made it happen.',
   twitterImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
 })

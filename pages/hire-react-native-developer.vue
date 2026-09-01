@@ -317,10 +317,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire React Native Developers in India | Cross-Platform Mobile Engineers | AcornGlobus',
-  description: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
-  ogTitle: 'Hire React Native Developers in India | Cross-Platform Mobile Engineers | AcornGlobus',
-  ogDescription: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
+  title: 'Hire React Native Developers | Cross-Platform Mobile',
+  description: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, app-store releases. 2-week trial, no bench.',
+  ogTitle: 'Hire React Native Developers | Cross-Platform Mobile',
+  ogDescription: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, app-store releases. 2-week trial, no bench.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-react-native-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

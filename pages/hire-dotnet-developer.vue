@@ -334,10 +334,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire .NET Developers in India | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
-  description: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
-  ogTitle: 'Hire .NET Developers in India | ASP.NET Core, C#, Azure Engineers | AcornGlobus',
-  ogDescription: 'Hire dedicated .NET developers in India from a 20+ person product engineering team. ASP.NET Core, C#, Azure, microservices, legacy migration. 2-week risk-free trial.',
+  title: 'Hire .NET Developers | ASP.NET Core, C# & Azure',
+  description: 'Hire dedicated .NET developers in India. ASP.NET Core, C#, Azure, microservices, legacy migration. 20+ person team, 2-week risk-free trial.',
+  ogTitle: 'Hire .NET Developers | ASP.NET Core, C# & Azure',
+  ogDescription: 'Hire dedicated .NET developers in India. ASP.NET Core, C#, Azure, microservices, legacy migration. 20+ person team, 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-dotnet-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

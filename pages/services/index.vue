@@ -394,15 +394,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  title: 'Services | Product Engineering, MVP & Team Augmentation',
   description: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
-  ogTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  ogTitle: 'Services | Product Engineering, MVP & Team Augmentation',
   ogDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
   ogImage: 'https://acornglobus.com/acorn-globus.png',
   ogUrl: 'https://acornglobus.com/services/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Services | Product Engineering, MVP Development & Team Augmentation | AcornGlobus',
+  twitterTitle: 'Services | Product Engineering, MVP & Team Augmentation',
   twitterDescription: 'Whether you need a team to build your MVP, engineers who embed with yours, or a partner for the long haul, here\'s how we can help.',
   twitterImage: 'https://acornglobus.com/acorn-globus.png',
 })

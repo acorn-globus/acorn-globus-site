@@ -39,11 +39,11 @@
           </div>
           <div class="feature-card">
             <h3>Partnerships That Actually Grow</h3>
-            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep -- full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
+            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep: full-stack, DevOps, QA, data. That's not a staffing transaction. That's what happens when engineers care about the product they're building.</p>
           </div>
           <div class="feature-card">
             <h3>We Built Our Own Product</h3>
-            <p>Formester is our SaaS product -- live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Flutter project we touch.</p>
+            <p>Formester is our SaaS product, live, with real users and a 4.7 rating on G2 (12 reviews). Building our own product taught us what ownership feels like. We bring that same mindset to every Flutter project we touch.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Productive From Week One</h3>
@@ -58,20 +58,20 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our Flutter Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our Flutter developers don't just write Dart code -- they think about your product across platforms and build apps that last.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our Flutter developers don't just write Dart code. They think about your product across platforms and build apps that last.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
             <h3>Cross-Platform Mobile Apps (iOS + Android)</h3>
-            <p>A single Dart codebase that runs natively on both platforms. Not a compromise -- real performance with platform-specific polish where it matters. One team, one codebase, two app stores.</p>
+            <p>A single Dart codebase that runs natively on both platforms. Not a compromise, real performance with platform-specific polish where it matters. One team, one codebase, two app stores.</p>
           </div>
           <div class="build-card">
             <h3>MVP Mobile Apps</h3>
-            <p>From idea to App Store in weeks, not months. Flutter's hot reload and widget system mean faster iteration without cutting corners. We shipped Eitoss's MVP in 3 months -- they raised funding and we're still building together 2 years later.</p>
+            <p>From idea to App Store in weeks, not months. Flutter's hot reload and widget system mean faster iteration without cutting corners. We shipped Eitoss's MVP in 3 months. They raised funding and we're still building together 2 years later.</p>
           </div>
           <div class="build-card">
             <h3>Flutter Web Applications</h3>
-            <p>Responsive web apps built with Flutter for web. Shared logic between mobile and web -- one team, one codebase, multiple platforms. Ideal when your product needs to live on both screens.</p>
+            <p>Responsive web apps built with Flutter for web. Shared logic between mobile and web: one team, one codebase, multiple platforms. Ideal when your product needs to live on both screens.</p>
           </div>
           <div class="build-card">
             <h3>Enterprise Mobile Applications</h3>
@@ -160,14 +160,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your app vision, your target platforms, and the kind of Flutter developer you need. No generic pitches -- just a real conversation about your product and goals.</p>
+              <p>We learn about your app vision, your target platforms, and the kind of Flutter developer you need. No generic pitches, just a real conversation about your product and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your app's needs, domain, and team culture, we propose specific engineers -- not resumes from a database. You interview them directly. No account managers in between.</p>
+              <p>Based on your app's needs, domain, and team culture, we propose specific engineers, not resumes from a database. You interview them directly. No account managers in between.</p>
             </div>
           </div>
           <div class="process-step">
@@ -298,15 +298,15 @@ const faqs = [
   },
   {
     question: 'Can Flutter really handle both iOS and Android from one codebase?',
-    answer: "Yes. Flutter compiles to native ARM code on both platforms, so you get native performance without maintaining two separate codebases. Our developers know where platform-specific customization matters -- like navigation patterns, permissions handling, and OS-specific design guidelines -- and handle those differences within the single codebase."
+    answer: "Yes. Flutter compiles to native ARM code on both platforms, so you get native performance without maintaining two separate codebases. Our developers know where platform-specific customization matters: like navigation patterns, permissions handling, and OS-specific design guidelines, and handle those differences within the single codebase."
   },
   {
     question: 'How does Flutter compare to React Native for my project?',
-    answer: "Both are strong cross-platform frameworks. Flutter uses its own rendering engine (Skia) which gives you more control over pixel-perfect UI and consistent behavior across platforms. React Native bridges to native components, which can be an advantage if you need deep native module integration. We work with both -- we'll recommend whichever framework fits your project best, not whichever one we prefer."
+    answer: "Both are strong cross-platform frameworks. Flutter uses its own rendering engine (Skia) which gives you more control over pixel-perfect UI and consistent behavior across platforms. React Native bridges to native components, which can be an advantage if you need deep native module integration. We work with both. We'll recommend whichever framework fits your project best, not whichever one we prefer."
   },
   {
     question: 'How quickly can a Flutter developer start on my project?',
-    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific Flutter engineer whose experience aligns with your app's needs. They'll ramp on your codebase within the first one to two weeks -- joining your standups, reviewing your architecture, and shipping code."
+    answer: "Most engagements kick off within one to two weeks of the initial call. We match you with a specific Flutter engineer whose experience aligns with your app's needs. They'll ramp on your codebase within the first one to two weeks: joining your standups, reviewing your architecture, and shipping code."
   },
   {
     question: 'Can I scale the Flutter team up or down?',
@@ -314,7 +314,7 @@ const faqs = [
   },
   {
     question: "What happens if a Flutter developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. You see how they work -- their code quality, communication, and how they integrate with your team -- before committing. If the fit isn't right at any point, we'll work with you to propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. You see how they work (their code quality, communication, and how they integrate with your team) before committing. If the fit isn't right at any point, we'll work with you to propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 

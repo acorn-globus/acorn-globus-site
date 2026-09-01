@@ -339,9 +339,9 @@
 definePageMeta({ layout: 'default' })
 
 useSeoMeta({
-  title: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
+  title: 'How We Work | Process, Communication & Engagement',
   description: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like. No surprises, no fine print.',
-  ogTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
+  ogTitle: 'How We Work | Process, Communication & Engagement',
   ogDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like. No surprises, no fine print.',
   ogImage: 'https://acornglobus.com/images/og/og-how-we-work.webp',
   ogImageWidth: 1200,
@@ -349,7 +349,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/how-we-work/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'How We Work | Our Process, Communication & Engagement Models | AcornGlobus',
+  twitterTitle: 'How We Work | Process, Communication & Engagement',
   twitterDescription: 'Every partnership starts with a conversation and grows from there. Here\'s exactly what working with us looks like. No surprises, no fine print.',
   twitterImage: 'https://acornglobus.com/images/og/og-how-we-work.webp',
 })
@@ -374,7 +374,7 @@ useFaqSchema([
   },
   {
     question: 'What communication tools and cadence do you use?',
-    answer: 'We join your Slack (or you join ours) for daily async updates. We use your project management tools -- Jira, Linear, Notion, whatever your team runs on. Sprint planning and demos happen every 2 weeks, weekly syncs with the project lead, and monthly partnership reviews.'
+    answer: 'We join your Slack (or you join ours) for daily async updates. We use your project management tools: Jira, Linear, Notion, whatever your team runs on. Sprint planning and demos happen every 2 weeks, weekly syncs with the project lead, and monthly partnership reviews.'
   },
   {
     question: 'What engagement models do you offer?',

@@ -370,10 +370,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Nuxt Developers in India | Dedicated Nuxt & Vue Engineers | AcornGlobus',
-  description: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
-  ogTitle: 'Hire Nuxt Developers in India | Dedicated Nuxt & Vue Engineers | AcornGlobus',
-  ogDescription: 'Hire Nuxt developers in India who ship Nuxt to production every day. This site and our SaaS Formester both run on Nuxt. Get engineers who know SSR, SSG, Nitro, and SEO inside out.',
+  title: 'Hire Nuxt Developers | Dedicated Nuxt & Vue Engineers',
+  description: 'Hire Nuxt developers in India who ship Nuxt to production daily. This site and our SaaS Formester run on Nuxt. SSR, SSG, Nitro and SEO expertise.',
+  ogTitle: 'Hire Nuxt Developers | Dedicated Nuxt & Vue Engineers',
+  ogDescription: 'Hire Nuxt developers in India who ship Nuxt to production daily. This site and our SaaS Formester run on Nuxt. SSR, SSG, Nitro and SEO expertise.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-nuxt-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

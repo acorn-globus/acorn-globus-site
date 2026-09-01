@@ -291,15 +291,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
+  title: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
   description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
-  ogTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
+  ogTitle: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
   ogDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
   ogImage: 'https://acornglobus.com/images/performline.webp',
   ogUrl: 'https://acornglobus.com/case-studies/performline/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
+  twitterTitle: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
   twitterDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
   twitterImage: 'https://acornglobus.com/images/performline.webp',
 })

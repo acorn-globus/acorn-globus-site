@@ -18,7 +18,7 @@
           </div>
           <h3 class="text-2xl font-bold mb-4">Web Applications</h3>
           <p class="text-gray-300">
-            Responsive and dynamic web apps built with cutting-edge technologies.
+            Responsive, dynamic web apps built with the tools that fit the job.
           </p>
         </div>
 

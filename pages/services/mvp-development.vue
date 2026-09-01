@@ -413,18 +413,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
-  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  ogDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  title: 'MVP Development Company | First Workflow in 2 Weeks',
+  description: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
+  ogTitle: 'MVP Development Company | First Workflow in 2 Weeks',
+  ogDescription: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/mvp-development/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks | AcornGlobus',
-  twitterDescription: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  twitterTitle: 'MVP Development Company | First Workflow in 2 Weeks',
+  twitterDescription: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
 
@@ -439,7 +439,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'MVP Development',
-  description: 'MVP development services for startups: we put one core workflow into production in 2 weeks, then help you test it with real users. Full minimum viable product development in 6-12 weeks. You own the code from day one.',
+  description: 'MVP development services: one core workflow in production in 2 weeks, then test with real users. Full minimum viable product build in 6-12 weeks.',
   url: '/services/mvp-development',
 })
 

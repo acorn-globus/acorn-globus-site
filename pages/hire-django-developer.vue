@@ -323,10 +323,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Django Developers in India | Dedicated Django & Python Engineers | AcornGlobus',
-  description: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
-  ogTitle: 'Hire Django Developers in India | Dedicated Django & Python Engineers | AcornGlobus',
-  ogDescription: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, and Postgres from a 20+ person Python team. 2-week trial, no bench.',
+  title: 'Hire Django Developers | Django & Python Engineers',
+  description: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, Postgres. 20+ person Python team, 2-week trial.',
+  ogTitle: 'Hire Django Developers | Django & Python Engineers',
+  ogDescription: 'Hire Django developers in India who ship production backends. Django REST Framework, ORM, Celery, Postgres. 20+ person Python team, 2-week trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-django-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

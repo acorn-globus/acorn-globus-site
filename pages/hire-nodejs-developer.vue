@@ -391,9 +391,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
+  title: 'Hire Node.js Developers | Backend & API Engineers',
   description: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
-  ogTitle: 'Hire Node.js Developers in India | Backend Engineers Who Think in Systems | AcornGlobus',
+  ogTitle: 'Hire Node.js Developers | Backend & API Engineers',
   ogDescription: 'Hire dedicated Node.js developers in India from a 20+ person product engineering team. API design, microservices, real-time systems. 2-week risk-free trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-nodejs-developer.webp',
   ogImageWidth: 1200,

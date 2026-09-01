@@ -28,7 +28,7 @@
           <h2 class="text-display-sm">Why Hire React Developers?</h2>
           <p class="text-body-lg" style="margin-top: 20px;">React is the most widely used front-end library in the world, and for most teams building a modern web product it's the safe, high-leverage default. You hire React developers when you need a fast, interactive user interface — dashboards, SaaS products, e-commerce storefronts, internal tools — built on a component model that stays maintainable as the product grows and the team changes hands.</p>
           <p class="text-body-lg" style="margin-top: 16px;">The practical advantage is the ecosystem. React has the deepest talent pool, the most mature tooling (Next.js, Vite, React Query, Redux Toolkit), and battle-tested answers to problems like routing, state management, server-side rendering, and testing. That means faster hiring, easier onboarding, and fewer dead ends when your product hits scale. It's why so many US, UK, Canadian, and Australian teams standardize their front end on React and hire dedicated React.js developers to build it.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">Our React developers don't just know the library — they know the ecosystem that makes production applications work: TypeScript, Next.js rendering modes, data-fetching and caching, accessibility, performance, and testing. That's the difference between a developer who can build a demo and one who can own a codebase.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our React developers know the library and the ecosystem that makes production applications work: TypeScript, Next.js rendering modes, data-fetching and caching, accessibility, performance, and testing. That's the difference between a developer who can build a demo and one who can own a codebase.</p>
         </div>
       </div>
     </section>
@@ -107,7 +107,7 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">What Our React Developers Build</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Our React developers don't just know the library — they know the ecosystem that makes production applications work.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Our React developers know the library and the ecosystem that makes production applications work.</p>
         </div>
         <div class="build-cards-grid">
           <div class="build-card">
@@ -418,9 +418,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
-  description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors. Serving US, UK, Canada & Australia.',
-  ogTitle: 'Hire React Developers | React.js Development Company in India | AcornGlobus',
+  title: 'Hire React Developers | React.js Development Company',
+  description: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. 20+ engineer team, 2-week trial. US, UK, Canada, Australia.',
+  ogTitle: 'Hire React Developers | React.js Development Company',
   ogDescription: 'Hire dedicated React developers and React.js engineers in India who join your team and stay. A React JS development company with a 20+ engineer team, 2-week embedded trial, and no rotating contractors.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-react-developer.webp',
   ogImageWidth: 1200,

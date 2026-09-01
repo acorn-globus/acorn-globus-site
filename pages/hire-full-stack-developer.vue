@@ -407,9 +407,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Full-Stack Developers | Front-End + Back-End Engineers | AcornGlobus',
-  description: 'Hire dedicated full-stack developers who own the front end and back end from a 20+ engineer team. React, Node, Python, .NET and more. 2-week embedded trial, no rotating contractors. Serving US, UK, Canada & Australia.',
-  ogTitle: 'Hire Full-Stack Developers | Front-End + Back-End Engineers | AcornGlobus',
+  title: 'Hire Full-Stack Developers | Front-End + Back-End',
+  description: 'Hire full-stack developers who own the front end and back end. React, Node, Python, .NET. 20+ engineer team, 2-week trial. US, UK, Canada, Australia.',
+  ogTitle: 'Hire Full-Stack Developers | Front-End + Back-End',
   ogDescription: 'Hire dedicated full-stack developers who own the front end and back end from a 20+ engineer team. React, Node, Python, .NET and more. 2-week embedded trial, no rotating contractors.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-full-stack-developer.webp',
   ogImageWidth: 1200,
@@ -417,7 +417,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/hire-full-stack-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Full-Stack Developers | Front-End + Back-End Engineers | AcornGlobus',
+  twitterTitle: 'Hire Full-Stack Developers | Front-End + Back-End',
   twitterDescription: 'Hire dedicated full-stack developers who own the front end and back end from a 20+ engineer team. 2-week embedded trial, no rotating contractors.',
   twitterImage: 'https://acornglobus.com/images/og/og-hire-full-stack-developer.webp',
 })

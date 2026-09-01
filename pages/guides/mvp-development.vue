@@ -643,18 +643,18 @@
 
 <script setup>
 useSeoMeta({
-  title: 'MVP Development Cost, Timeline & Process (2026 Guide) | AcornGlobus',
-  ogTitle: 'MVP Development Cost, Timeline & Process (2026 Guide) | AcornGlobus',
-  description: 'How much does an MVP cost and how long does it take to build? A 2026 guide to real MVP costs ($15K–$100K+), 6–20 week timelines, how to get your first core workflow live in 2 weeks, and how to choose the right MVP development company.',
-  ogDescription: 'How much does an MVP cost and how long does it take to build? A 2026 guide to real MVP costs ($15K–$100K+), 6–20 week timelines, how to get your first core workflow live in 2 weeks, and how to choose the right MVP development company.',
+  title: 'MVP Development Cost, Timeline & Process (2026 Guide)',
+  ogTitle: 'MVP Development Cost, Timeline & Process (2026 Guide)',
+  description: 'How much does an MVP cost and how long does it take? Real 2026 costs ($15K–$100K+), 6–20 week timelines, and your first workflow live in 2 weeks.',
+  ogDescription: 'How much does an MVP cost and how long does it take? Real 2026 costs ($15K–$100K+), 6–20 week timelines, and your first workflow live in 2 weeks.',
   ogImage: 'https://acornglobus.com/images/og/og-guide-mvp-development.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/guides/mvp-development/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development Cost, Timeline & Process (2026 Guide) | AcornGlobus',
-  twitterDescription: 'How much does an MVP cost and how long does it take to build? A 2026 guide to real MVP costs ($15K–$100K+), 6–20 week timelines, how to get your first core workflow live in 2 weeks, and how to choose the right MVP development company.',
+  twitterTitle: 'MVP Development Cost, Timeline & Process (2026 Guide)',
+  twitterDescription: 'How much does an MVP cost and how long does it take? Real 2026 costs ($15K–$100K+), 6–20 week timelines, and your first workflow live in 2 weeks.',
   twitterImage: 'https://acornglobus.com/images/og/og-guide-mvp-development.webp',
 })
 
@@ -664,7 +664,7 @@ useHead({
 
 useArticleSchema({
   title: 'MVP Development: From Idea to Product (The Complete Guide, 2026)',
-  description: 'How much does an MVP cost and how long does it take to build? A 2026 guide to real MVP costs ($15K–$100K+), 6–20 week timelines, how to get your first core workflow live in 2 weeks, and how to choose the right MVP development company.',
+  description: 'How much does an MVP cost and how long does it take? Real 2026 costs ($15K–$100K+), 6–20 week timelines, and your first workflow live in 2 weeks.',
   url: '/guides/mvp-development',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

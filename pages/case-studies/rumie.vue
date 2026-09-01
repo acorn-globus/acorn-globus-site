@@ -125,7 +125,7 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             </div>
             <h3>Offline Learning</h3>
-            <p>Revolutionary offline functionality allowing learners to access content without internet connectivity.</p>
+            <p>Offline functionality that lets learners reach content without an internet connection.</p>
             <ul class="sub-features">
               <li>Content caching</li>
               <li>Offline progress tracking</li>
@@ -314,15 +314,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  title: 'Rumie Case Study: Learning Platform for 176 Countries',
   description: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
-  ogTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  ogTitle: 'Rumie Case Study: Learning Platform for 176 Countries',
   ogDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   ogImage: 'https://acornglobus.com/images/case-study-rumie.webp',
   ogUrl: 'https://acornglobus.com/case-studies/rumie/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  twitterTitle: 'Rumie Case Study: Learning Platform for 176 Countries',
   twitterDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   twitterImage: 'https://acornglobus.com/images/case-study-rumie.webp',
 })

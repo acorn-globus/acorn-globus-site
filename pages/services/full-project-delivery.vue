@@ -258,9 +258,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
-  ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
+  title: 'Full Project Delivery | End-to-End Product Engineering',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. One team, one relationship.',
+  ogTitle: 'Full Project Delivery | End-to-End Product Engineering',
   ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   ogImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
   ogImageWidth: 1200,
@@ -268,7 +268,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/full-project-delivery/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
+  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering',
   twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   twitterImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
 })
@@ -284,7 +284,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Full Project Delivery',
-  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. One team, one relationship.',
   url: '/services/full-project-delivery',
 })
 

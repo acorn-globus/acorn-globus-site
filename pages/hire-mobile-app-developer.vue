@@ -93,7 +93,7 @@
           <div class="decision-card decision-yes">
             <h3>Native is right when</h3>
             <ul>
-              <li>Your app leans on cutting-edge, platform-specific APIs or the newest OS features on launch day.</li>
+              <li>Your app leans on platform-specific APIs or the newest OS features on launch day.</li>
               <li>You need heavy on-device computation, AR/VR, or very high-performance graphics.</li>
               <li>You have a large existing native codebase you are extending rather than starting fresh.</li>
               <li>You want the deepest possible integration with iOS or Android hardware and frameworks.</li>
@@ -350,9 +350,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
-  description: 'Hire dedicated mobile app developers for iOS and Android. We build cross-platform with Flutter and React Native and native with Swift and Kotlin. 20+ engineer team, 2-week embedded trial. We recommend the right fit for your product.',
-  ogTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  title: 'Hire Mobile App Developers | iOS, Android, Native',
+  description: 'Hire mobile app developers for iOS and Android. Cross-platform with Flutter and React Native, native with Swift and Kotlin. 20+ team, 2-week trial.',
+  ogTitle: 'Hire Mobile App Developers | iOS, Android, Native',
   ogDescription: 'Hire dedicated mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 20+ engineer team, 2-week embedded trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
   ogImageWidth: 1200,
@@ -360,7 +360,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/hire-mobile-app-developer/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire Mobile App Developers | iOS, Android, Flutter & React Native | AcornGlobus',
+  twitterTitle: 'Hire Mobile App Developers | iOS, Android, Native',
   twitterDescription: 'Hire mobile app developers for iOS and Android. Cross-platform (Flutter, React Native) and native (Swift, Kotlin), 2-week embedded trial.',
   twitterImage: 'https://acornglobus.com/images/og/og-hire-mobile-app-developer.webp',
 })

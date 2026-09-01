@@ -341,9 +341,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  title: 'Maintenance & Support | Keep Your Product Healthy',
   description: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
-  ogTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  ogTitle: 'Maintenance & Support | Keep Your Product Healthy',
   ogDescription: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   ogImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
   ogImageWidth: 1200,
@@ -351,7 +351,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/services/maintenance-support/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Maintenance & Support | Keep Your Product Healthy | AcornGlobus',
+  twitterTitle: 'Maintenance & Support | Keep Your Product Healthy',
   twitterDescription: 'We built it. We keep it running. Same team, same care: monitoring, fixing, updating, and improving your product with the engineers who know it best.',
   twitterImage: 'https://acornglobus.com/images/og/og-maintenance-support.webp',
 })

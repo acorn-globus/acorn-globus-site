@@ -418,10 +418,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
-  description: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
-  ogTitle: 'Hire Ruby on Rails Developers in India | Engineers Who Respect the Framework | AcornGlobus',
-  ogDescription: 'Hire dedicated Ruby on Rails developers in India from a 20+ person product engineering team. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 2-week risk-free trial.',
+  title: 'Hire Ruby on Rails Developers | Rails 7+ and Hotwire',
+  description: 'Hire dedicated Ruby on Rails developers in India. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 20+ person team, 2-week trial.',
+  ogTitle: 'Hire Ruby on Rails Developers | Rails 7+ and Hotwire',
+  ogDescription: 'Hire dedicated Ruby on Rails developers in India. Rails 7+, Hotwire, Turbo, legacy upgrades, full-stack thinking. 20+ person team, 2-week trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-rails-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

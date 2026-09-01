@@ -267,18 +267,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  description: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
-  ogTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  ogDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
+  title: 'Resource Augmentation | Team & Staff Augmentation',
+  description: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
+  ogTitle: 'Resource Augmentation | Team & Staff Augmentation',
+  ogDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
   ogImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/resource-augmentation/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Resource Augmentation Services | Team & Staff Augmentation | AcornGlobus',
-  twitterDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team, working with the same tools, standups, and codebase. No rotating contractors, just named engineers who care about your product.',
+  twitterTitle: 'Resource Augmentation | Team & Staff Augmentation',
+  twitterDescription: 'Resource augmentation (also called team or staff augmentation) embeds dedicated engineers into your team. No rotating contractors, just named engineers.',
   twitterImage: 'https://acornglobus.com/images/og/og-resource-augmentation.webp',
 })
 

@@ -364,9 +364,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  title: 'Hire Angular Developers | Dedicated Angular Engineers',
   description: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
-  ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  ogTitle: 'Hire Angular Developers | Dedicated Angular Engineers',
   ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
   ogImageWidth: 1200,

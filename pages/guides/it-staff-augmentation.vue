@@ -629,18 +629,18 @@
 
 <script setup>
 useSeoMeta({
-  title: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
-  ogTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
-  description: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
-  ogDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
+  title: 'The Complete Guide to IT Staff Augmentation (2026)',
+  ogTitle: 'The Complete Guide to IT Staff Augmentation (2026)',
+  description: 'What is IT staff augmentation (also called resource or team augmentation), how does it work, and is it right for your team? Real costs, models and stories.',
+  ogDescription: 'What is IT staff augmentation (also called resource or team augmentation), how does it work, and is it right for your team? Real costs, models and stories.',
   ogImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/guides/it-staff-augmentation/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026) | AcornGlobus',
-  twitterDescription: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
+  twitterTitle: 'The Complete Guide to IT Staff Augmentation (2026)',
+  twitterDescription: 'What is IT staff augmentation (also called resource or team augmentation), how does it work, and is it right for your team? Real costs, models and stories.',
   twitterImage: 'https://acornglobus.com/images/og/og-guide-it-staff-augmentation.webp',
 })
 
@@ -650,7 +650,7 @@ useHead({
 
 useArticleSchema({
   title: 'The Complete Guide to IT Staff Augmentation (2026)',
-  description: 'What is IT staff augmentation (also called resource augmentation or team augmentation), how does it work, and is it right for your team? A practical guide with real costs, models, and partnership stories.',
+  description: 'What is IT staff augmentation (also called resource or team augmentation), how does it work, and is it right for your team? Real costs, models and stories.',
   url: '/guides/it-staff-augmentation',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

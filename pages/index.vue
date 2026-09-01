@@ -9,7 +9,7 @@
               <span>Product Engineering Team</span>
             </div>
             <h1 class="text-display-lg">We build it like<br>it's ours.</h1>
-            <p class="hero-body">We're a product engineering team that built our own SaaS (Formester) -- and we bring that same ownership to every product we touch. A team that cares about your outcome as much as you do.</p>
+            <p class="hero-body">We're a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch. A team that cares about your outcome as much as you do.</p>
             <div class="hero-stats">
               <div>
                 <div class="hero-stat-value">20+</div>
@@ -342,12 +342,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
+  title: 'AcornGlobus | Product Engineering Team You Can Keep',
   description: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   keywords: 'product engineering, software development, resource augmentation, MVP development, web development, mobile app development, SaaS development, AcornGlobus',
   author: 'AcornGlobus',
   robots: 'index, follow',
-  ogTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
+  ogTitle: 'AcornGlobus | Product Engineering Team You Can Keep',
   ogDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   ogImage: 'https://acornglobus.com/images/og/og-home.webp',
   ogImageWidth: 1200,
@@ -358,7 +358,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@acornglobus',
   twitterCreator: '@acornglobus',
-  twitterTitle: 'AcornGlobus - Product Engineering Team That Builds It Like It\'s Ours',
+  twitterTitle: 'AcornGlobus | Product Engineering Team You Can Keep',
   twitterDescription: 'We\'re a product engineering team that built our own SaaS (Formester), and we bring that same ownership to every product we touch.',
   twitterImage: 'https://acornglobus.com/images/og/og-home.webp',
 })

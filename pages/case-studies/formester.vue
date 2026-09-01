@@ -571,7 +571,7 @@ useBreadcrumbSchema([
   margin-top: 32px;
 }
 
-/* Responsive -- Tablet */
+/* Responsive, Tablet */
 @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .meta-bar { grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -581,7 +581,7 @@ useBreadcrumbSchema([
   .audience-grid { grid-template-columns: 1fr; }
 }
 
-/* Responsive -- Mobile */
+/* Responsive, Mobile */
 @media (max-width: 640px) {
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .meta-bar { grid-template-columns: 1fr; gap: 20px; }

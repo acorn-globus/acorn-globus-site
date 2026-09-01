@@ -331,10 +331,10 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
-  ogTitle: 'Hire Vue.js Developers in India | Dedicated Vue & Nuxt Engineers | AcornGlobus',
-  ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  title: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers',
+  description: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Engineers who\'ve shipped real Vue applications.',
+  ogTitle: 'Hire Vue.js Developers | Dedicated Vue & Nuxt Engineers',
+  ogDescription: 'Hire Vue.js developers in India who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Engineers who\'ve shipped real Vue applications.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-vuejs-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -354,7 +354,7 @@ useHead({
 
 useServiceSchema({
   name: 'Hire Vue.js Developers',
-  description: 'Hire Vue.js developers who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Our website runs on Nuxt. Get engineers who\'ve shipped real Vue applications.',
+  description: 'Hire Vue.js developers who build with Vue every day. We built Formester, our own SaaS, on Vue.js. Engineers who\'ve shipped real Vue applications.',
   url: '/hire-vuejs-developer',
 })
 
