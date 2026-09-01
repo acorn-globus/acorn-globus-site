@@ -282,6 +282,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -316,6 +330,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/performline.webp',
 })
+
+const faqs = [
+  { question: 'How did the PerformLine engagement grow?', answer: 'It started with a single embedded engineer and grew to more than eight across five disciplines over two years. The team expanded as PerformLine needed it, not on a schedule agreed upfront.' },
+  { question: 'How long has AcornGlobus worked with PerformLine?', answer: 'More than two years, and the partnership is ongoing. Long engagements are the norm for us rather than the exception, which is where our 80%+ client retention comes from.' },
+  { question: 'Can I start with one engineer and scale later?', answer: 'Yes, and we would usually recommend it. Starting with one engineer on a two-week embedded trial lets you judge the fit from real work before committing to a larger team.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -386,4 +408,16 @@ useBreadcrumbSchema([
   .testimonial-card blockquote { font-size: 18px; }
   .cta-buttons { flex-direction: column; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

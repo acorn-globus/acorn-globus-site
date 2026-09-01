@@ -140,6 +140,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -164,6 +178,14 @@ useSeoMeta({
   twitterImage: 'https://acornglobus.com/images/og/og-portfolio.webp',
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://acornglobus.com/portfolio/' }] })
+
+const faqs = [
+  { question: 'What kinds of products has AcornGlobus built?', answer: 'Our own SaaS product, funded startup MVPs, a Shopify app serving hundreds of merchants, and an education platform reaching learners in 176 countries. The common thread is products with real users, not prototypes.' },
+  { question: 'Do you work with startups or established companies?', answer: 'Both. Eitoss came to us as an idea and raised funding on the MVP we built. PerformLine was an established company that started with one embedded engineer and grew the team to more than eight.' },
+  { question: 'Can I talk to your past clients?', answer: 'Yes. Ask on a call and we will connect you with clients whose engagement resembles yours, so you can hear how it actually went rather than reading a summary we wrote.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -286,4 +308,16 @@ const filteredProjects = computed(() => {
   .cta-actions { flex-direction: column; align-items: flex-start; }
   .project-stats { flex-wrap: wrap; gap: 16px; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

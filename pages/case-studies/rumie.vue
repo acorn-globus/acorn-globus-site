@@ -305,6 +305,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -339,6 +353,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-rumie.webp',
 })
+
+const faqs = [
+  { question: 'What did AcornGlobus build for Rumie?', answer: 'We modernised their education platform for offline-capable, mobile-first learning, so people can reach content without a reliable internet connection. The platform now reaches learners in 176 countries.' },
+  { question: 'What results did the Rumie platform see?', answer: 'Mobile engagement rose 45% and platform speed improved 60%. The partnership has been running for more than four years.' },
+  { question: 'Do you work with nonprofits?', answer: 'Yes. Rumie is a nonprofit and the engagement has run for over four years. The engineering standard is the same as for any client, and you own the code either way.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -465,4 +487,16 @@ useBreadcrumbSchema([
   .impact-grid { grid-template-columns: 1fr; }
   .journey-steps { grid-template-columns: 1fr; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

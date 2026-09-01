@@ -268,6 +268,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -302,6 +316,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/formester.webp',
 })
+
+const faqs = [
+  { question: 'What is Formester?', answer: 'Formester is our own SaaS product, a no-code form builder with AI built in. You describe the form you want in plain language, including the logic and layout, and it gets built for you. It is used by real businesses every day.' },
+  { question: 'Why did AcornGlobus build its own product?', answer: 'To close the gap between executing a client\'s spec and owning an outcome. Running Formester means living with our own uptime, our own support tickets and our own users, and that experience shapes how we build for clients.' },
+  { question: 'How is Formester rated?', answer: 'Formester holds a 4.7 out of 5 rating on G2 from 13 reviews.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -593,4 +615,16 @@ useBreadcrumbSchema([
   .lesson-card h3 { font-size: 20px; }
   .cta-actions { flex-direction: column; align-items: flex-start; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

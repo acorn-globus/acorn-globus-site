@@ -333,6 +333,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -419,6 +433,16 @@ useHead({
     { rel: 'preload', as: 'image', href: '/images/hero.webp', type: 'image/webp' },
   ],
 })
+
+const faqs = [
+  { question: 'What does AcornGlobus do?', answer: 'We are a product engineering team. We build products end to end, embed engineers into existing teams, and take over products that need maintaining. We also build AI features and AI agents, and we run our own SaaS product, Formester, so we know what it is like to own a product rather than just ship code for one.' },
+  { question: 'Where is AcornGlobus based, and which time zones do you work in?', answer: 'Our engineering team is in India and our clients are mostly in the US, UK, Canada and Australia. We keep four to six hours of daily overlap with your working hours so there is real-time collaboration, with async work covering the rest.' },
+  { question: 'How do I start working with you?', answer: 'Book a call and tell us what you are building. We will give you an honest read on scope, timeline and cost, including whether you actually need us. If it is a fit, most engagements begin with a two-week embedded trial before any long-term commitment.' },
+  { question: 'Do I own the code you write?', answer: 'Yes, from day one. Code, infrastructure and accounts are yours from the first commit, not handed over at the end of the engagement.' },
+  { question: 'How big is the team?', answer: 'Over 20 full-time engineers across front end, back end, mobile, DevOps and QA. We do not use a bench of rotating contractors, and our client retention is over 80%.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([])
 
@@ -1053,4 +1077,16 @@ const testimonials = [
     display: none;
   }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

@@ -383,6 +383,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -410,6 +424,15 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/services/' }],
 })
+
+const faqs = [
+  { question: 'Which engagement model is right for me?', answer: 'If you have a technical lead and need more capacity, resource augmentation fits: our engineers join your team and your process. If you need something built and delivered without managing it yourself, full project delivery fits. If you want a team that works only on your product but you set the roadmap, that is a dedicated development team.' },
+  { question: 'What is the difference between resource augmentation and a dedicated development team?', answer: 'With resource augmentation you manage the engineers directly, day to day, as part of your team. With a dedicated development team we handle recruiting, retention and coordination while you set the roadmap. The first gives you more control, the second gives you less management overhead.' },
+  { question: 'Can I start small and scale up later?', answer: 'Yes, and most of our partnerships work that way. PerformLine started with one embedded engineer and grew to more than eight across five disciplines over two years.' },
+  { question: 'Do you work on existing products, or only new builds?', answer: 'Both. A large part of our work is joining an existing codebase: adding features, upgrading frameworks, improving test coverage, or taking over maintenance from another team.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Services', path: '/services/' },
@@ -639,4 +662,16 @@ const technologies = [
     flex-wrap: wrap;
   }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

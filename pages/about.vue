@@ -228,6 +228,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -255,6 +269,15 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: 'https://acornglobus.com/about/' }],
 })
+
+const faqs = [
+  { question: 'Who is AcornGlobus?', answer: 'A product engineering team of more than 20 full-time engineers, working with clients in the US, UK, Canada and Australia. We have been building software for over seven years, and we build and run our own SaaS product alongside client work.' },
+  { question: 'Why did you build your own product?', answer: 'Because there is a gap between executing someone else\'s spec and owning the outcome. Building Formester meant living with our own decisions: the uptime, the support tickets, the users who churn. That changed how we work with every client.' },
+  { question: 'Do you use contractors or full-time engineers?', answer: 'Full-time engineers. Every developer we propose is a member of our team, not a contractor pulled from a marketplace, and you interview them yourself before committing.' },
+  { question: 'What happens if the engineer is not the right fit?', answer: 'That is what the two-week embedded trial is for. Your developer joins your team, your standups and your code reviews before any long-term commitment, and you decide from real work rather than an interview.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'About', path: '/about/' },
@@ -571,4 +594,16 @@ useBreadcrumbSchema([
     gap: 16px;
   }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

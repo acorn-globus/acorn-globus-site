@@ -229,6 +229,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -263,6 +277,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-eitoss.webp',
 })
+
+const faqs = [
+  { question: 'How long did the Eitoss MVP take to build?', answer: 'Eight weeks to a demoable product and three months to production. Eitoss raised 60M yen on that MVP, and we have been building together for more than two years since.' },
+  { question: 'What happened after the Eitoss MVP launched?', answer: 'They raised funding and we stayed on as their engineering team. More than two years later we are still building the product with them, which is the outcome we are actually aiming for on an MVP engagement.' },
+  { question: 'Can you build my MVP on a similar timeline?', answer: 'It depends on how many workflows your product needs. One core workflow can be in production in about two weeks, and a full MVP typically runs six to twelve weeks. We agree the scope with you before development starts so the timeline means something.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -432,4 +454,16 @@ useBreadcrumbSchema([
   .tech-tags { gap: 8px; }
   .tech-tag { padding: 8px 16px; font-size: 14px; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

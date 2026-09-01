@@ -270,6 +270,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -304,6 +318,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
+
+const faqs = [
+  { question: 'What did AcornGlobus do for Invoice Falcon?', answer: 'We rebuilt and hardened their invoicing solution for Shopify merchants, focusing on reliability and performance rather than adding features. It now serves more than 500 merchants.' },
+  { question: 'What results did Invoice Falcon see?', answer: '99.9% platform uptime, a 40% performance improvement, and 50% fewer support tickets. The drop in support load matters most, because it means the product stopped costing them time.' },
+  { question: 'Do you build Shopify apps?', answer: 'Yes. Invoice Falcon is a Shopify app we took from unreliable to production-grade. We work with the Shopify ecosystem alongside our broader web and backend work.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -402,4 +424,16 @@ useBreadcrumbSchema([
   .meta-grid { grid-template-columns: 1fr; }
   .cta-buttons { flex-direction: column; align-items: center; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>
