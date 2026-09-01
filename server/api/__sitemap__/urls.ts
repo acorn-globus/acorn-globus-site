@@ -7,13 +7,16 @@ import { serverQueryContent } from '#content/server'
 const withSlash = (path: string): string =>
   path === '/' || path.endsWith('/') ? path : `${path}/`
 
+// Real per-page last-commit dates, generated from git history before build by
+// scripts/generate-lastmod.mjs. See that file for why: a build-time `new Date()`
+// told Google every page changed on every deploy, and Google ignores <lastmod>
+// from sites that are inaccurate about it. Falls back to build time when a route
+// has no entry, which is the old behaviour and can never break a deploy.
+import lastmodMap from '~~/server/utils/lastmod.json'
+
 export default defineSitemapEventHandler(async (event) => {
-  // Static pages — lastmod resolves at build time (`nuxi generate`), so each
-  // deploy advertises a fresh lastmod across every static URL. This is the
-  // honest signal: "the rendered bytes changed at deploy time." Without it
-  // the sitemap stayed frozen at a hardcoded date and Google lost the signal
-  // that pages had refreshed.
-  const lastmod = new Date().toISOString()
+  // Fallback only. Each static URL prefers its real git commit date (below).
+  const buildTime = new Date().toISOString()
 
   const staticPaths = [
     // Homepage
@@ -77,7 +80,11 @@ export default defineSitemapEventHandler(async (event) => {
     { loc: '/privacy-policy', changefreq: 'yearly', priority: 0.3 },
   ]
 
-  const staticUrls = staticPaths.map((p) => ({ ...p, loc: withSlash(p.loc), lastmod }))
+  const staticUrls = staticPaths.map((p) => ({
+    ...p,
+    loc: withSlash(p.loc),
+    lastmod: (lastmodMap as Record<string, string>)[p.loc] || buildTime,
+  }))
 
   // Dynamic blog post URLs from Nuxt Content. Prefer `updatedAt` over
   // `createdAt` so content refreshes surface in the sitemap — otherwise

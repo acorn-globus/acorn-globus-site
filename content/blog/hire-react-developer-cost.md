@@ -11,7 +11,7 @@ published: true
 toc: true
 readingTime: "11 min read"
 createdAt: "2026-07-14"
-updatedAt: "2026-07-14"
+updatedAt: "2026-09-01"
 keywords:
   - react developer hourly rate
   - cost to hire a react developer

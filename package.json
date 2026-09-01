@@ -7,11 +7,12 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "nuxt build",
+    "build": "node scripts/generate-lastmod.mjs && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "node scripts/generate-lastmod.mjs && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lastmod": "node scripts/generate-lastmod.mjs"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",

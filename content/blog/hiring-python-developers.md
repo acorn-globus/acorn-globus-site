@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "15 min read"
 createdAt: "2026-05-22"
-updatedAt: "2026-05-22"
+updatedAt: "2026-09-01"
 keywords:
   - how to screen python developers
   - what to look for when hiring python developers

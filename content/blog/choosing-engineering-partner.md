@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "12 min read"
 createdAt: "2026-06-01"
-updatedAt: "2026-06-01"
+updatedAt: "2026-09-01"
 keywords:
   - how to choose a software development partner
   - how to choose a long term software development partner

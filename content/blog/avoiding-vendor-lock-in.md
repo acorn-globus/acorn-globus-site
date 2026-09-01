@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "13 min read"
 createdAt: "2026-06-10"
-updatedAt: "2026-06-10"
+updatedAt: "2026-09-01"
 keywords:
   - how to avoid vendor lock-in software development
   - who owns the code agency develops

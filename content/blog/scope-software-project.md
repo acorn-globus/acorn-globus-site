@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "14 min read"
 createdAt: "2026-04-24"
-updatedAt: "2026-04-24"
+updatedAt: "2026-09-01"
 keywords:
   - how to scope a software project
   - software project scope

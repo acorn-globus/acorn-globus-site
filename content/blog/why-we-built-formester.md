@@ -8,6 +8,7 @@ coverImg: /images/blog/why-we-built-formester.webp
 coverImgAlt: "Why We Built Formester, lessons from building our own SaaS product"
 published: true
 createdAt: "2026-04-01"
+updatedAt: "2026-09-01"
 keywords:
   - building a SaaS product
   - product ownership mindset

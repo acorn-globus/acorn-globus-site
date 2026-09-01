@@ -11,7 +11,7 @@ published: true
 toc: true
 readingTime: "12 min read"
 createdAt: "2026-05-13"
-updatedAt: "2026-05-13"
+updatedAt: "2026-09-01"
 keywords:
   - software development engagement models
   - dedicated team vs staff augmentation

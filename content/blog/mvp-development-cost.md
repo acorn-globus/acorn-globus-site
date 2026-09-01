@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "18 min read"
 createdAt: "2026-04-03"
-updatedAt: "2026-04-20"
+updatedAt: "2026-09-01"
 keywords:
   - how much does MVP development cost
   - MVP development cost 2026

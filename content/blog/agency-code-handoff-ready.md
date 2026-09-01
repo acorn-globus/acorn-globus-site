@@ -8,6 +8,7 @@ coverImg: /images/blog/code-handoff.webp
 coverImgAlt: "Code handoff checklist, how to evaluate if your agency's code is ready to hand over"
 published: true
 createdAt: "2026-04-13"
+updatedAt: "2026-09-01"
 keywords:
   - software project handoff checklist
   - code handoff best practices

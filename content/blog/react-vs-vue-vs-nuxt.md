@@ -11,7 +11,7 @@ published: true
 toc: true
 readingTime: "9 min read"
 createdAt: "2026-06-27"
-updatedAt: "2026-06-27"
+updatedAt: "2026-09-01"
 keywords:
   - react vs vue
   - vue vs nuxt

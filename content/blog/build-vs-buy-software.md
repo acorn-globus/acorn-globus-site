@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "11 min read"
 createdAt: "2026-06-13"
-updatedAt: "2026-06-13"
+updatedAt: "2026-09-01"
 keywords:
   - build vs buy software decision framework
   - build vs buy software

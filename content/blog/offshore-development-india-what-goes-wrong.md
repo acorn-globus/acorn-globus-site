@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "10 min read"
 createdAt: "2026-07-11"
-updatedAt: "2026-07-11"
+updatedAt: "2026-09-01"
 keywords:
   - offshore software development india
   - offshore development company india

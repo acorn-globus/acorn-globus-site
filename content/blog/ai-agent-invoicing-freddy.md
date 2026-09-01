@@ -8,6 +8,7 @@ coverImg: /images/blog/ai-agent-invoicing-freddy.webp
 coverImgAlt: "Editorial vector illustration of Freddy, a small friendly invoicing agent, turning a spoken voice note into a sent invoice, an hour of work in five minutes."
 published: true
 createdAt: "2026-06-22"
+updatedAt: "2026-09-01"
 toc: true
 readingTime: "6 min read"
 keywords:

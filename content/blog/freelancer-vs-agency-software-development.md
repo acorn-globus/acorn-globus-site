@@ -8,7 +8,7 @@ coverImg: /images/blog/freelancer-vs-agency.webp
 coverImgAlt: "Freelancer vs Agency for software development, an honest comparison of trade-offs"
 published: true
 createdAt: "2026-04-15"
-updatedAt: "2026-04-20"
+updatedAt: "2026-09-01"
 keywords:
   - freelancer vs agency software development
   - freelancer vs development agency

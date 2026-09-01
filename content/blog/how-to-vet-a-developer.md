@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "9 min read"
 createdAt: "2026-07-07"
-updatedAt: "2026-07-07"
+updatedAt: "2026-09-01"
 keywords:
   - how to vet a developer
   - vet remote developers

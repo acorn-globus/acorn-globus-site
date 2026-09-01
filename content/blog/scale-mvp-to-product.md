@@ -11,7 +11,7 @@ published: true
 toc: true
 readingTime: "11 min read"
 createdAt: "2026-06-15"
-updatedAt: "2026-06-15"
+updatedAt: "2026-09-01"
 keywords:
   - how to scale an MVP to a full product
   - when to scale an MVP

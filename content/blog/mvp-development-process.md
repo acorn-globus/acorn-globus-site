@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "16 min read"
 createdAt: "2026-04-09"
-updatedAt: "2026-04-20"
+updatedAt: "2026-09-01"
 keywords:
   - mvp development process
   - mvp development timeline

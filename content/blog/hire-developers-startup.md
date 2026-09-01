@@ -8,6 +8,7 @@ coverImg: /images/blog/hire-developers-startup.webp
 coverImgAlt: "How to hire developers for your startup without getting burned"
 published: true
 createdAt: "2026-04-07"
+updatedAt: "2026-09-01"
 keywords:
   - how to hire developers for startup
   - hire developers for startup

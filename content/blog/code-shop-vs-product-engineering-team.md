@@ -8,6 +8,7 @@ coverImg: /images/blog/code-shop-vs-product-engineering.webp
 coverImgAlt: "Code Shop vs Product Engineering Team, understanding the difference and why it matters"
 published: true
 createdAt: "2026-04-11"
+updatedAt: "2026-09-01"
 keywords:
   - code shop vs product engineering team
   - product engineering company

@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "12 min read"
 createdAt: "2026-05-04"
-updatedAt: "2026-05-04"
+updatedAt: "2026-09-01"
 keywords:
   - when not to build an MVP
   - signs you're not ready to build an MVP

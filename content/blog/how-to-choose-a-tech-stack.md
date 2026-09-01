@@ -10,7 +10,7 @@ published: true
 toc: true
 readingTime: "11 min read"
 createdAt: "2026-06-16"
-updatedAt: "2026-06-16"
+updatedAt: "2026-09-01"
 keywords:
   - how to choose a tech stack for a startup
   - best tech stack for a startup
