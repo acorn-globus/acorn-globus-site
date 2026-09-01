@@ -134,6 +134,25 @@ If you want, tell us the one workflow that matters most in your product and we'l
 
 [Book a call](https://calendar.app.google/gbT42VeCDd7ioXh79), or read more about how we run [MVP development](/services/mvp-development/) and [MVP development for startups](/mvp-development-for-startups/).
 
+
+## Common questions
+
+**Can you really build an MVP in 2 weeks?**
+
+You can get one core workflow into production in two weeks, deployed, with real authentication and real data, so actual users can use it. A complete MVP with every workflow takes longer, usually 6 to 12 weeks. Anyone promising your whole product in two weeks is describing a prototype, not something your users can rely on.
+
+**How long does it take to build an MVP?**
+
+Six to twelve weeks is the honest range for a full MVP, and complex products with compliance or heavy integrations run longer. The more useful question is how soon you can put something in front of real users, and that can be about two weeks if you pick one workflow instead of trying to finish everything.
+
+**Can an agency deliver an MVP in 4, 6 or 8 weeks?**
+
+It depends entirely on how many workflows the MVP contains, which is why a timeline quoted before anyone has seen your scope means very little. Ask what specifically is being cut to hit the date. If nobody can answer that, the date is a guess.
+
+**What is rapid MVP development?**
+
+Shipping the smallest useful piece of your product quickly so real users can tell you whether the idea works, instead of building every feature before launch. Done properly it is one core workflow in production, then a decision about what to build next based on what people actually did with it.
+
 ---
 
 *Related reading: [How Much Does MVP Development Cost in 2026?](/blog/mvp-development-cost/) | [When Not to Build an MVP](/blog/when-not-to-build-an-mvp/) | [The MVP Development Process](/blog/mvp-development-process/) | [How to Scope a Software Project](/blog/scope-software-project/)*
