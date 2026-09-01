@@ -212,18 +212,18 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'MVP Development for Startups | First Workflow in 2 Weeks | AcornGlobus',
-  description: 'MVP development services for startups. We put one core workflow into production in 2 weeks, then help you test it with real users. $25-80/hr, scope agreed upfront, you own the code from day one.',
-  ogTitle: 'MVP Development for Startups | First Workflow in 2 Weeks | AcornGlobus',
-  ogDescription: 'MVP development services for startups. We put one core workflow into production in 2 weeks, then help you test it with real users. $25-80/hr, scope agreed upfront, you own the code from day one.',
+  title: 'MVP Development for Startups | First Workflow in 2 Weeks',
+  description: 'MVP development for startups. One core workflow in production in 2 weeks, then test it with real users. $25-80/hr, you own the code from day one.',
+  ogTitle: 'MVP Development for Startups | First Workflow in 2 Weeks',
+  ogDescription: 'MVP development for startups. One core workflow in production in 2 weeks, then test it with real users. $25-80/hr, you own the code from day one.',
   ogImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/mvp-development-for-startups/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'MVP Development for Startups | First Workflow in 2 Weeks | AcornGlobus',
-  twitterDescription: 'MVP development services for startups. We put one core workflow into production in 2 weeks, then help you test it with real users. $25-80/hr, scope agreed upfront, you own the code from day one.',
+  twitterTitle: 'MVP Development for Startups | First Workflow in 2 Weeks',
+  twitterDescription: 'MVP development for startups. One core workflow in production in 2 weeks, then test it with real users. $25-80/hr, you own the code from day one.',
   twitterImage: 'https://acornglobus.com/images/og/og-mvp-development.webp',
 })
 

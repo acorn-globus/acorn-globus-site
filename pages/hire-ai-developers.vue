@@ -393,9 +393,9 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Hire AI Developers | Hire AI Engineers & LLM Developers | AcornGlobus',
-  description: 'Hire dedicated AI developers and AI engineers who have shipped AI in production: agents, generative AI, and LLM/RAG systems, on our own SaaS and for a client. 20+ engineer team, 2-week trial, no rotating contractors. Serving US, UK, Canada & Australia.',
-  ogTitle: 'Hire AI Developers | Hire AI Engineers & LLM Developers | AcornGlobus',
+  title: 'Hire AI Developers | AI Engineers & LLM Developers',
+  description: 'Hire AI developers and AI engineers who have shipped AI in production: agents, generative AI, LLM and RAG. 20+ engineer team, 2-week trial. US, UK, CA, AU.',
+  ogTitle: 'Hire AI Developers | AI Engineers & LLM Developers',
   ogDescription: 'Hire dedicated AI developers and AI engineers who have shipped AI in production: agents, generative AI, and LLM/RAG systems. 20+ engineer team, 2-week trial.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-ai-developers.webp',
   ogImageWidth: 1200,
@@ -403,7 +403,7 @@ useSeoMeta({
   ogUrl: 'https://acornglobus.com/hire-ai-developers/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Hire AI Developers | Hire AI Engineers & LLM Developers | AcornGlobus',
+  twitterTitle: 'Hire AI Developers | AI Engineers & LLM Developers',
   twitterDescription: 'Hire dedicated AI developers who have shipped AI in production: agents, generative AI, LLM/RAG. 20+ engineers, 2-week trial.',
   twitterImage: 'https://acornglobus.com/images/og/og-hire-ai-developers.webp',
 })

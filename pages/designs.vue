@@ -95,7 +95,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center; max-width: 640px;">
         <h2 class="text-display-sm">Like what you see? Let's talk.</h2>
-        <p class="text-body-lg" style="margin-top: 16px;">Whether you need a full product design or a refresh of what you have -- we'd love to hear what you're working on.</p>
+        <p class="text-body-lg" style="margin-top: 16px;">Whether you need a full product design or a refresh of what you have. We'd love to hear what you're working on.</p>
         <div class="cta-actions" style="justify-content: center;">
           <NuxtLink to="/contact/" class="btn btn-primary">Start a conversation</NuxtLink>
           <NuxtLink to="/portfolio/" class="btn btn-secondary">View Case Studies</NuxtLink>

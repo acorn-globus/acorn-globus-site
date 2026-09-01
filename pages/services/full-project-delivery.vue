@@ -10,7 +10,7 @@
           </NuxtLink>
           <div class="hero-eyebrow"><span>Full Project Delivery</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Your product, built end-to-end by a team that treats it like their own.</h1>
-          <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success — not just your deadline.</p>
+          <p class="text-body-lg">You define the what. We walk with you through the how. From architecture to launch, you get a product engineering team that's genuinely invested in your success, not just your deadline.</p>
           <div style="margin-top: 36px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -30,7 +30,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm" style="margin-bottom: 24px;">You need a product built right. Not just built.</h2>
-          <p class="text-body-lg" style="margin-bottom: 20px;">Maybe you don't have the engineering team to take this on. Maybe your team is stretched thin and this project needs dedicated focus. Either way, you need more than code — you need a team that understands your product, makes smart technical decisions, and delivers something that works in production, not just in a demo.</p>
+          <p class="text-body-lg" style="margin-bottom: 20px;">Maybe you don't have the engineering team to take this on. Maybe your team is stretched thin and this project needs dedicated focus. Either way, you need more than code. You need a team that understands your product, makes smart technical decisions, and delivers something that works in production, not just in a demo.</p>
           <p class="text-body-lg">You've heard the horror stories. Missed deadlines. Surprise invoices. A codebase you can't maintain. You need a partner who builds for your independence, not your dependence.</p>
         </div>
       </div>
@@ -55,7 +55,7 @@
           </div>
           <div class="feature-card">
             <h3>Built to hand over.</h3>
-            <p>Your code, your product, clean documentation. We build for your independence — zero lock-in. If you want to bring it in-house someday, we'll help you do that.</p>
+            <p>Your code, your product, clean documentation. We build for your independence, zero lock-in. If you want to bring it in-house someday, we'll help you do that.</p>
           </div>
           <div class="feature-card">
             <h3>Honest pricing.</h3>
@@ -77,15 +77,15 @@
         </div>
         <div class="case-study-card">
           <h3>Eitoss</h3>
-          <p class="text-body">Eitoss came to us needing an MVP built from scratch. We had a demoable product in 8 weeks and shipped it into production in 3 months. They raised funding. Two years later, we're still building together — the project became a partnership.</p>
+          <p class="text-body">Eitoss came to us needing an MVP built from scratch. We had a demoable product in 8 weeks and shipped it into production in 3 months. They raised funding. Two years later, we're still building together, the project became a partnership.</p>
         </div>
         <div class="case-study-card">
           <h3>PerformLine</h3>
-          <p class="text-body">PerformLine started with resource augmentation and grew to 8+ engineers over 2 years — full-stack, DevOps, data, QA, and frontend. What started as extra hands became a core part of their engineering operation.</p>
+          <p class="text-body">PerformLine started with resource augmentation and grew to 8+ engineers over 2 years: full-stack, DevOps, data, QA, and frontend. What started as extra hands became a core part of their engineering operation.</p>
         </div>
         <div class="case-study-card">
           <h3>Formester</h3>
-          <p class="text-body">Formester is our own SaaS product — live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
+          <p class="text-body">Formester is our own SaaS product: live, growing, with real users and a 4.7 rating. We built it ourselves, which means we understand what it takes to ship a product that has to work in the real world. We bring that same standard to every project we deliver.</p>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
           <li>System architecture and technical design</li>
           <li>Full-stack development</li>
           <li>UI/UX implementation (from your designs, or we provide wireframes)</li>
-          <li>QA and testing — unit, integration, end-to-end</li>
+          <li>QA and testing: unit, integration, end-to-end</li>
           <li>DevOps and infrastructure setup</li>
           <li>Deployment and go-live support</li>
           <li>Technical and user-facing documentation</li>
@@ -185,7 +185,7 @@
           </div>
           <div class="details-row">
             <div class="details-label">Code ownership</div>
-            <div class="details-value">100% yours — code and IP</div>
+            <div class="details-value">100% yours, code and IP</div>
           </div>
           <div class="details-row">
             <div class="details-label">Communication</div>
@@ -214,7 +214,7 @@
     <section class="cta-banner">
       <div class="container-redesign" style="text-align: center;">
         <h2 class="text-display-sm">You have the vision. Let's build it together.</h2>
-        <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project — what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
+        <p class="text-body-lg" style="max-width: 600px; margin: 16px auto 0;">Tell us about your project: what you're building, who it's for, and where you are today. We'll have an honest conversation about scope, timeline, and approach. No generic proposals. Just a real plan for your product.</p>
         <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
           <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Let's talk about your project</a>
           <p class="text-body" style="color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -233,43 +233,43 @@ const faqs = [
   },
   {
     question: 'What is full project delivery, and when should I choose it over resource augmentation?',
-    answer: "Full project delivery means we build your product end-to-end — architecture, development, QA, deployment, and handoff — with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
+    answer: "Full project delivery means we build your product end-to-end, architecture, development, QA, deployment, and handoff, with our own project manager, engineers, and QA. Choose it when you don't have an in-house engineering team to lead the work, or your team is too stretched to take on a full build. If you already have a team and just need extra hands working inside your workflows, resource augmentation is the better fit."
   },
   {
     question: 'How much does full project delivery cost, and how is it priced?',
-    answer: 'We price on a milestone-based fixed price or a capped time-and-materials basis, so your budget stays predictable. Cost depends on scope, team size (typically 3-8 engineers plus a project manager and QA), and timeline (usually 3 to 12+ months). We agree on milestones and deliverables up front — no surprise invoices, and no scope changes without a conversation first.'
+    answer: 'We price on a milestone-based fixed price or a capped time-and-materials basis, so your budget stays predictable. Cost depends on scope, team size (typically 3-8 engineers plus a project manager and QA), and timeline (usually 3 to 12+ months). We agree on milestones and deliverables up front. No surprise invoices, and no scope changes without a conversation first.'
   },
   {
     question: 'Who owns the code and intellectual property?',
-    answer: "You do — 100%. The code and IP are yours from day one. We build for your independence with clean documentation and zero lock-in, so you can bring the product in-house whenever you choose. If you decide to do that, we'll help with the transition."
+    answer: "You do, 100%. The code and IP are yours from day one. We build for your independence with clean documentation and zero lock-in, so you can bring the product in-house whenever you choose. If you decide to do that, we'll help with the transition."
   },
   {
     question: 'How do you keep the project on track and communicate progress?',
-    answer: 'You get one project manager, one dedicated Slack channel, and engineers you know by name. We send weekly status reports, run bi-weekly demos, and show you working software at every milestone — not just at the end. The same people who architect your system build, test, and launch it, so nothing gets lost in handoffs.'
+    answer: 'You get one project manager, one dedicated Slack channel, and engineers you know by name. We send weekly status reports, run bi-weekly demos, and show you working software at every milestone, not just at the end. The same people who architect your system build, test, and launch it, so nothing gets lost in handoffs.'
   },
   {
     question: 'What happens after launch?',
-    answer: 'Every project includes a 4-week post-launch warranty covering bug fixes and stability issues, plus documentation, training, and knowledge transfer so your team can fully own the product. Many clients continue on a maintenance retainer or grow the engagement into a long-term partnership — Eitoss and PerformLine both started as projects and are still building with us years later.'
+    answer: 'Every project includes a 4-week post-launch warranty covering bug fixes and stability issues, plus documentation, training, and knowledge transfer so your team can fully own the product. Many clients continue on a maintenance retainer or grow the engagement into a long-term partnership, Eitoss and PerformLine both started as projects and are still building with us years later.'
   },
   {
     question: 'Can you work from our designs, or do you handle design too?',
-    answer: 'Both. We implement UI from your existing designs, or we provide wireframes as part of the engagement. Our scope covers product and project management, system architecture, full-stack development, QA, DevOps, deployment, and documentation — the full path from idea to production.'
+    answer: 'Both. We implement UI from your existing designs, or we provide wireframes as part of the engagement. Our scope covers product and project management, system architecture, full-stack development, QA, DevOps, deployment, and documentation, the full path from idea to production.'
   }
 ]
 
 useSeoMeta({
-  title: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
-  ogTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  title: 'Full Project Delivery | End-to-End Product Engineering',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. One team, one relationship.',
+  ogTitle: 'Full Project Delivery | End-to-End Product Engineering',
+  ogDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   ogImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogUrl: 'https://acornglobus.com/services/full-project-delivery/',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering | AcornGlobus',
-  twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch — one team, one relationship, no surprises.',
+  twitterTitle: 'Full Project Delivery | End-to-End Product Engineering',
+  twitterDescription: 'Your product, built end-to-end by a team that treats it like their own. From architecture to launch: one team, one relationship, no surprises.',
   twitterImage: 'https://acornglobus.com/images/og/og-full-project-delivery.webp',
 })
 
@@ -284,7 +284,7 @@ useBreadcrumbSchema([
 
 useServiceSchema({
   name: 'Full Project Delivery',
-  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. From architecture to launch, one team, one relationship, no surprises.',
+  description: 'Software development outsourcing done right: your product built end-to-end by a team that treats it like their own. One team, one relationship.',
   url: '/services/full-project-delivery',
 })
 

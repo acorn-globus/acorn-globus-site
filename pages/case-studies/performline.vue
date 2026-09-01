@@ -11,7 +11,7 @@
           <div class="hero-eyebrow"><span>Resource Augmentation</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">PerformLine</h1>
           <p class="text-headline" style="color: var(--on-surface-variant); font-weight: 600; margin-bottom: 16px;">From 1 Engineer to 8+ in 2 Years</p>
-          <p class="text-body-lg">One engineer. One chance to prove we belonged. Two years later, we're eight engineers deep — and still growing.</p>
+          <p class="text-body-lg">One engineer. One chance to prove we belonged. Two years later, we're eight engineers deep. And still growing.</p>
           <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
             <a href="https://performline.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit PerformLine</a>
             <span class="cs-badge">2+ Years &amp; Counting</span>
@@ -51,12 +51,12 @@
           <h2 class="text-display-sm">The Quick Version</h2>
         </div>
         <div class="details-table" style="max-width: 720px; margin-top: 32px;">
-          <div class="details-row"><div class="details-label">Client</div><div class="details-value">PerformLine — AI-powered compliance monitoring</div></div>
+          <div class="details-row"><div class="details-label">Client</div><div class="details-value">PerformLine, AI-powered compliance monitoring</div></div>
           <div class="details-row"><div class="details-label">Engagement</div><div class="details-value">Resource Augmentation</div></div>
           <div class="details-row"><div class="details-label">Starting Point</div><div class="details-value">1 engineer</div></div>
           <div class="details-row"><div class="details-label">Today</div><div class="details-value">8+ engineers (full-stack, frontend, DevOps, data engineering, QA)</div></div>
           <div class="details-row"><div class="details-label">Duration</div><div class="details-value">2+ years and counting</div></div>
-          <div class="details-row"><div class="details-label">Outcome</div><div class="details-value">A partnership that grew because the work — and the trust — earned it</div></div>
+          <div class="details-row"><div class="details-label">Outcome</div><div class="details-value">A partnership that grew because the work (and the trust) earned it</div></div>
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Who PerformLine Is</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">PerformLine builds compliance monitoring software trusted by major U.S. banks. Their platform helps financial institutions and other regulated organizations automatically review, monitor, and remediate marketing content across every consumer channel — web, social, email, calls, and chat.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">PerformLine builds compliance monitoring software trusted by major U.S. banks. Their platform helps financial institutions and other regulated organizations automatically review, monitor, and remediate marketing content across every consumer channel: web, social, email, calls, and chat.</p>
           <p class="text-body-lg" style="margin-top: 16px;">Based in Morristown, New Jersey, with a team of around 80 people, PerformLine operates in a space where precision matters. When your customers are heavily regulated financial institutions, there's no room for "good enough."</p>
         </div>
       </div>
@@ -78,7 +78,7 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">How It Started</h2>
           <p class="text-body-lg" style="margin-top: 20px;">It started small. One engineer. A defined scope. A team on the other side that needed capacity but wasn't ready to hand over the keys.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">PerformLine had a growing product and a lean engineering team. They needed developers who could ship — not just write code, but understand the codebase, adopt their workflows, and contribute from day one.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">PerformLine had a growing product and a lean engineering team. They needed developers who could ship: not just write code, but understand the codebase, adopt their workflows, and contribute from day one.</p>
           <ul class="check-list" style="margin-top: 24px;">
             <li>Growing product with a lean engineering team</li>
             <li>Needed developers who could ship from day one</li>
@@ -94,8 +94,8 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">How It Grew</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Within weeks, our engineer was shipping production code. Not because we threw someone exceptionally senior at the problem — but because that's how we work. Our engineers ramp fast because they care about the product, not just the ticket.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">PerformLine needed more capacity. Not because we pitched them on it — because the work was good, the communication was clean, and the trust was real. So they asked for another engineer. Then another.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Within weeks, our engineer was shipping production code. Not because we threw someone exceptionally senior at the problem. But because that's how we work. Our engineers ramp fast because they care about the product, not just the ticket.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">PerformLine needed more capacity. Not because we pitched them on it. Because the work was good, the communication was clean, and the trust was real. So they asked for another engineer. Then another.</p>
         </div>
         <img src="/images/performline.webp" alt="Engineering team scaling from 1 to 8+" style="width:100%;border-radius:16px;margin-top:48px;" loading="lazy">
       </div>
@@ -133,7 +133,7 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3>Full-Stack Development</h3>
-            <p>End-to-end feature development across the entire application — from database to UI. Building new capabilities and extending existing ones.</p>
+            <p>End-to-end feature development across the entire application, from database to UI. Building new capabilities and extending existing ones.</p>
           </div>
           <div class="discipline-card">
             <div class="discipline-icon">
@@ -172,12 +172,12 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What Made This Work</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Some things about this engagement are worth naming — because they're the reasons it lasted.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Some things about this engagement are worth naming. Because they're the reasons it lasted.</p>
         </div>
         <div class="insight-cards">
           <div class="insight-card">
             <h3>We Didn't Just Fill Seats</h3>
-            <p>Every engineer we placed was chosen for PerformLine specifically — for the tech stack, the domain, and the team culture. We matched people, not resumes.</p>
+            <p>Every engineer we placed was chosen for PerformLine specifically: for the tech stack, the domain, and the team culture. We matched people, not resumes.</p>
           </div>
           <div class="insight-card">
             <h3>We Grew With Their Needs</h3>
@@ -185,7 +185,7 @@
           </div>
           <div class="insight-card">
             <h3>We Stayed</h3>
-            <p>Two years in, we're still here. Not because of a contract — because the partnership works. Our engineers are part of their team, and that's how both sides want it.</p>
+            <p>Two years in, we're still here. Not because of a contract. Because the partnership works. Our engineers are part of their team, and that's how both sides want it.</p>
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">The Growth Story</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">Every addition followed the same pattern — earned through trust, not pitched through sales.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">Every addition followed the same pattern, earned through trust, not pitched through sales.</p>
         </div>
         <div class="timeline" style="max-width: 720px;">
           <div class="timeline-step">
@@ -226,17 +226,17 @@
           <div class="timeline-step">
             <div class="timeline-dot">2</div>
             <h3>Trust Earned</h3>
-            <p>Within the first few months, our engineer was a full contributor — not a contractor being managed, but a teammate shipping features. PerformLine saw the difference between hiring a vendor and gaining a partner.</p>
+            <p>Within the first few months, our engineer was a full contributor, not a contractor being managed, but a teammate shipping features. PerformLine saw the difference between hiring a vendor and gaining a partner.</p>
           </div>
           <div class="timeline-step">
             <div class="timeline-dot">3</div>
             <h3>Team Expansion</h3>
-            <p>By year one, the team had grown. PerformLine didn't ask us to pitch more resources — they asked us to bring more engineers because the ones they had were working. New disciplines: frontend, DevOps, data engineering.</p>
+            <p>By year one, the team had grown. PerformLine didn't ask us to pitch more resources. They asked us to bring more engineers because the ones they had were working. New disciplines: frontend, DevOps, data engineering.</p>
           </div>
           <div class="timeline-step">
             <div class="timeline-dot">4</div>
             <h3>8+ Engineers Strong</h3>
-            <p>Two years in. Eight engineers across five disciplines, all embedded in PerformLine's workflows. Not an outsourced team — a genuine extension of their engineering organization.</p>
+            <p>Two years in. Eight engineers across five disciplines, all embedded in PerformLine's workflows. Not an outsourced team, a genuine extension of their engineering organization.</p>
           </div>
         </div>
       </div>
@@ -248,8 +248,8 @@
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">Why This Story Matters</h2>
           <p class="text-body-lg" style="margin-top: 20px;">This isn't a story about closing a big deal. It's a story about one engineer doing good work, and everything else following from that.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">In our industry, most augmentation relationships are transactional. A company needs a developer, an agency sends one, and when the project wraps up, everyone moves on. That's fine for some work — but it's not how we operate.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">We believe the best engineering partnerships grow the same way friendships do — through consistent, reliable work over time. PerformLine didn't grow to 8+ engineers because of a sales pitch. It grew because every engineer we placed earned their seat.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">In our industry, most augmentation relationships are transactional. A company needs a developer, an agency sends one, and when the project wraps up, everyone moves on. That's fine for some work. But it's not how we operate.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">We believe the best engineering partnerships grow the same way friendships do, through consistent, reliable work over time. PerformLine didn't grow to 8+ engineers because of a sales pitch. It grew because every engineer we placed earned their seat.</p>
         </div>
       </div>
     </section>
@@ -261,10 +261,10 @@
           <h2 class="text-display-sm">The Engagement at a Glance</h2>
         </div>
         <div class="details-table" style="max-width: 720px; margin-top: 32px;">
-          <div class="details-row"><div class="details-label">Service Model</div><div class="details-value">Resource Augmentation — dedicated engineers embedded in the client's team</div></div>
+          <div class="details-row"><div class="details-label">Service Model</div><div class="details-value">Resource Augmentation, dedicated engineers embedded in the client's team</div></div>
           <div class="details-row"><div class="details-label">Team Growth</div><div class="details-value">1 engineer to 8+ engineers over 2 years</div></div>
           <div class="details-row"><div class="details-label">Roles Covered</div><div class="details-value">Full-stack, frontend, DevOps, data engineering, QA</div></div>
-          <div class="details-row"><div class="details-label">Integration Model</div><div class="details-value">Fully embedded — same tools, standups, Slack, and workflows</div></div>
+          <div class="details-row"><div class="details-label">Integration Model</div><div class="details-value">Fully embedded: same tools, standups, Slack, and workflows</div></div>
           <div class="details-row"><div class="details-label">Duration</div><div class="details-value">2+ years and counting</div></div>
           <div class="details-row"><div class="details-label">Key Outcome</div><div class="details-value">A partnership that grew organically because the work and trust earned it</div></div>
         </div>
@@ -275,10 +275,24 @@
     <section class="cta-banner cta-section">
       <div class="container-redesign">
         <h2 class="text-display-sm">Let's Build Together</h2>
-        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">If you're looking for engineers who become part of your team — not names on an invoice — we'd love to hear what you're building.</p>
+        <p class="text-body-lg" style="max-width: 640px; margin: 16px auto 0;">If you're looking for engineers who become part of your team (not names on an invoice) we'd love to hear what you're building.</p>
         <div class="cta-buttons">
           <NuxtLink to="/contact/" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Start a Conversation</NuxtLink>
           <NuxtLink to="/portfolio/" class="btn btn-secondary" style="font-size: 16px; padding: 16px 32px;">View More Projects</NuxtLink>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
         </div>
       </div>
     </section>
@@ -291,16 +305,16 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
-  description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
-  ogTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
-  ogDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
+  title: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
+  description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
+  ogTitle: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
+  ogDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
   ogImage: 'https://acornglobus.com/images/performline.webp',
   ogUrl: 'https://acornglobus.com/case-studies/performline/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years | AcornGlobus',
-  twitterDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
+  twitterTitle: 'PerformLine Case Study: 1 Engineer to 8+ in 2 Years',
+  twitterDescription: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
   twitterImage: 'https://acornglobus.com/images/performline.webp',
 })
 
@@ -310,12 +324,20 @@ useHead({
 
 useArticleSchema({
   title: 'PerformLine Case Study | From 1 Engineer to 8+ in 2 Years',
-  description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine — a partnership built on trust, not pitches.',
+  description: 'How AcornGlobus grew from 1 embedded engineer to 8+ across 5 disciplines over 2 years with PerformLine, a partnership built on trust, not pitches.',
   url: '/case-studies/performline',
   datePublished: '2025-01-01',
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/performline.webp',
 })
+
+const faqs = [
+  { question: 'How did the PerformLine engagement grow?', answer: 'It started with a single embedded engineer and grew to more than eight across five disciplines over two years. The team expanded as PerformLine needed it, not on a schedule agreed upfront.' },
+  { question: 'How long has AcornGlobus worked with PerformLine?', answer: 'More than two years, and the partnership is ongoing. Long engagements are the norm for us rather than the exception, which is where our 80%+ client retention comes from.' },
+  { question: 'Can I start with one engineer and scale later?', answer: 'Yes, and we would usually recommend it. Starting with one engineer on a two-week embedded trial lets you judge the fit from real work before committing to a larger team.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -386,4 +408,16 @@ useBreadcrumbSchema([
   .testimonial-card blockquote { font-size: 18px; }
   .cta-buttons { flex-direction: column; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

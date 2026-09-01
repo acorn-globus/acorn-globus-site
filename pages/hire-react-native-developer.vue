@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire React Native Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire React Native Developers in India for One Codebase, Two App Stores</h1>
-          <p class="text-body-lg">React Native lets you ship iOS and Android from a single JavaScript codebase — the same React skills, native performance where it counts. When you hire our React Native developers, you get mobile engineers from a 20+ person product team who know navigation, native modules, app-store release flows, and how to keep a cross-platform app fast. No bench, no rotating contractors.</p>
+          <p class="text-body-lg">React Native lets you ship iOS and Android from a single JavaScript codebase, the same React skills, native performance where it counts. When you hire our React Native developers, you get mobile engineers from a 20+ person product team who know navigation, native modules, app-store release flows, and how to keep a cross-platform app fast. No bench, no rotating contractors.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -26,9 +26,9 @@
       <div class="container-redesign">
         <div style="max-width: 720px;">
           <h2 class="text-display-sm">What Is React Native?</h2>
-          <p class="text-body-lg" style="margin-top: 20px;">React Native is a framework for building mobile apps with React and JavaScript that render to real native UI components — not a web view. You write one codebase and ship it to both iOS and Android, dropping down to native modules (Swift, Kotlin, Objective-C, Java) when a feature needs platform-specific power. It's maintained by Meta and used in production by some of the largest apps in the world.</p>
+          <p class="text-body-lg" style="margin-top: 20px;">React Native is a framework for building mobile apps with React and JavaScript that render to real native UI components, not a web view. You write one codebase and ship it to both iOS and Android, dropping down to native modules (Swift, Kotlin, Objective-C, Java) when a feature needs platform-specific power. It's maintained by Meta and used in production by some of the largest apps in the world.</p>
           <p class="text-body-lg" style="margin-top: 16px;">The appeal is leverage: your existing React knowledge transfers directly, one team maintains both platforms, and shared business logic lives in one place. With tooling like Expo, over-the-air updates, and a mature ecosystem of navigation and state libraries, teams ship mobile products faster without giving up a genuinely native feel.</p>
-          <p class="text-body-lg" style="margin-top: 16px;">React Native is a natural sibling to our web and mobile work. It shares its foundation with <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>, and it competes head-to-head with <NuxtLink to="/hire-flutter-developer/" style="color: var(--brand-blue); font-weight: 500;">Flutter</NuxtLink> for cross-platform mobile — more on that choice below.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">React Native is a natural sibling to our web and mobile work. It shares its foundation with <NuxtLink to="/hire-react-developer/" style="color: var(--brand-blue); font-weight: 500;">React</NuxtLink>, and it competes head-to-head with <NuxtLink to="/hire-flutter-developer/" style="color: var(--brand-blue); font-weight: 500;">Flutter</NuxtLink> for cross-platform mobile, more on that choice below.</p>
         </div>
       </div>
     </section>
@@ -44,7 +44,7 @@
           <div class="decision-card decision-yes">
             <h3>Choose React Native when</h3>
             <ul>
-              <li>Your team already works in React or JavaScript — the learning curve is close to zero and skills transfer directly.</li>
+              <li>Your team already works in React or JavaScript, the learning curve is close to zero and skills transfer directly.</li>
               <li>You want to share logic, types, and developers across a React web app and your mobile app.</li>
               <li>You value a huge JavaScript/npm ecosystem and want to hire from the largest pool of front-end engineers.</li>
               <li>You want real native UI components and the option to drop into Swift or Kotlin for platform-specific needs.</li>
@@ -80,15 +80,15 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
             <h3>Cross-Platform Consumer Apps</h3>
-            <p>One React Native codebase shipping to both the App Store and Google Play — shared logic, native feel, and a release flow we manage end to end.</p>
+            <p>One React Native codebase shipping to both the App Store and Google Play: shared logic, native feel, and a release flow we manage end to end.</p>
           </div>
           <div class="feature-card">
             <h3>Apps Backed by Your API</h3>
-            <p>React Native front ends wired to a REST or GraphQL backend — including Django, Node, or Rails APIs our own team can build alongside the app.</p>
+            <p>React Native front ends wired to a REST or GraphQL backend: including Django, Node, or Rails APIs our own team can build alongside the app.</p>
           </div>
           <div class="feature-card">
             <h3>Native Module Integration</h3>
-            <p>Camera, Bluetooth, push notifications, payments, maps, and device features — bridged to native Swift/Kotlin modules when the JS layer isn't enough.</p>
+            <p>Camera, Bluetooth, push notifications, payments, maps, and device features, bridged to native Swift/Kotlin modules when the JS layer isn't enough.</p>
           </div>
           <div class="feature-card">
             <h3>Expo &amp; OTA-Update Workflows</h3>
@@ -177,21 +177,21 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery call</h3>
-              <p>We learn your product, your platforms, and the kind of React Native developer you need. No generic proposals — a real conversation about your app and goals.</p>
+              <p>We learn your product, your platforms, and the kind of React Native developer you need. No generic proposals, a real conversation about your app and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer matching</h3>
-              <p>We propose specific engineers with relevant React Native and mobile experience — not resumes from a database. You interview them directly.</p>
+              <p>We propose specific engineers with relevant React Native and mobile experience, not resumes from a database. You interview them directly.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div>
               <h3>2-week embedded trial</h3>
-              <p>Your developer joins your team — same tools, same standups, same codebase. Evaluate real output with zero long-term commitment.</p>
+              <p>Your developer joins your team: same tools, same standups, same codebase. Evaluate real output with zero long-term commitment.</p>
             </div>
           </div>
           <div class="process-step">
@@ -218,7 +218,7 @@
           </div>
           <div class="hiring-model-card">
             <h3>Part-Time Engagement</h3>
-            <p>Need React Native expertise but not full-time? Our developers can work part-time on your project — ideal for early-stage products or supplementing an existing team.</p>
+            <p>Need React Native expertise but not full-time? Our developers can work part-time on your project, ideal for early-stage products or supplementing an existing team.</p>
           </div>
           <div class="hiring-model-card">
             <h3>Project-Based</h3>
@@ -288,15 +288,15 @@ const faqs = [
   },
   {
     question: 'Is React Native or Flutter better for my app?',
-    answer: "Both are excellent for cross-platform iOS and Android apps from one codebase. Choose React Native if your team already knows React or JavaScript, or you want to share code and developers across web and mobile — it has the larger hiring pool and ecosystem. Choose Flutter if you want pixel-identical, highly custom UI from one rendering engine and are happy to work in Dart. We build in both and will recommend honestly based on your team and product."
+    answer: "Both are excellent for cross-platform iOS and Android apps from one codebase. Choose React Native if your team already knows React or JavaScript, or you want to share code and developers across web and mobile. It has the larger hiring pool and ecosystem. Choose Flutter if you want pixel-identical, highly custom UI from one rendering engine and are happy to work in Dart. We build in both and will recommend honestly based on your team and product."
   },
   {
     question: 'Do React Native apps feel truly native?',
-    answer: "Yes. React Native renders to real native UI components rather than a web view, so scrolling, navigation, and interactions feel native. When a feature needs platform-specific power — advanced camera control, Bluetooth, background tasks — we drop into native modules written in Swift or Kotlin and bridge them to the JavaScript layer."
+    answer: "Yes. React Native renders to real native UI components rather than a web view, so scrolling, navigation, and interactions feel native. When a feature needs platform-specific power (advanced camera control, Bluetooth, background tasks) we drop into native modules written in Swift or Kotlin and bridge them to the JavaScript layer."
   },
   {
     question: 'Can one React Native codebase really ship to both iOS and Android?',
-    answer: "Yes — that's the core benefit. The large majority of your code is shared across both platforms, with small platform-specific branches only where iOS and Android genuinely differ. One team maintains both apps, which cuts cost and keeps features in sync across the stores."
+    answer: "Yes. That's the core benefit. The large majority of your code is shared across both platforms, with small platform-specific branches only where iOS and Android genuinely differ. One team maintains both apps, which cuts cost and keeps features in sync across the stores."
   },
   {
     question: 'Do your React Native developers also know React for web?',
@@ -308,19 +308,19 @@ const faqs = [
   },
   {
     question: 'Can you handle app-store submission and releases?',
-    answer: "Yes. We manage the full release flow — builds via EAS or Fastlane, App Store and Google Play Console submission, and over-the-air updates through Expo where they fit. We can own releases end to end or work within your existing pipeline."
+    answer: "Yes. We manage the full release flow: builds via EAS or Fastlane, App Store and Google Play Console submission, and over-the-air updates through Expo where they fit. We can own releases end to end or work within your existing pipeline."
   },
   {
     question: "What happens if a React Native developer isn't a good fit?",
-    answer: "That's exactly what the two-week trial is for. If the fit isn't right — for any reason — you walk away, with no cost for the trial period. If issues come up later, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
+    answer: "That's exactly what the two-week trial is for. If the fit isn't right, for any reason, you walk away, with no cost for the trial period. If issues come up later, we'll work with you to address the concern or propose a replacement engineer. We care about the partnership working, not just filling a seat."
   }
 ]
 
 useSeoMeta({
-  title: 'Hire React Native Developers in India | Cross-Platform Mobile Engineers | AcornGlobus',
-  description: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
-  ogTitle: 'Hire React Native Developers in India | Cross-Platform Mobile Engineers | AcornGlobus',
-  ogDescription: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, and app-store releases from a 20+ person team. 2-week trial, no bench.',
+  title: 'Hire React Native Developers | Cross-Platform Mobile',
+  description: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, app-store releases. 2-week trial, no bench.',
+  ogTitle: 'Hire React Native Developers | Cross-Platform Mobile',
+  ogDescription: 'Hire React Native developers in India who ship iOS and Android from one codebase. Expo, native modules, app-store releases. 2-week trial, no bench.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-react-native-developer.webp',
   ogImageWidth: 1200,
   ogImageHeight: 630,

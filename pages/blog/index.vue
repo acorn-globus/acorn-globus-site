@@ -159,7 +159,7 @@ const handleSubscribe = async () => {
 
 useSeoMeta({
   title: 'Blog | Engineering Insights & Product Thinking | AcornGlobus',
-  description: 'Practical engineering insights, product thinking, and lessons from building real products — from the AcornGlobus team.',
+  description: 'Practical engineering insights, product thinking, and lessons from building real products, from the AcornGlobus team.',
   keywords: 'software development blog, product engineering, tech articles, AcornGlobus blog',
   author: 'AcornGlobus',
   robots: 'index, follow',

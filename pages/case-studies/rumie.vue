@@ -125,7 +125,7 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             </div>
             <h3>Offline Learning</h3>
-            <p>Revolutionary offline functionality allowing learners to access content without internet connectivity.</p>
+            <p>Offline functionality that lets learners reach content without an internet connection.</p>
             <ul class="sub-features">
               <li>Content caching</li>
               <li>Offline progress tracking</li>
@@ -280,7 +280,7 @@
     <!-- IMAGE -->
     <section style="padding-top: 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-rumie.webp" alt="Rumie — Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-rumie.webp" alt="Rumie, Global education platform reaching learners in 176 countries" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 
@@ -305,6 +305,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -314,15 +328,15 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  title: 'Rumie Case Study: Learning Platform for 176 Countries',
   description: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
-  ogTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  ogTitle: 'Rumie Case Study: Learning Platform for 176 Countries',
   ogDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   ogImage: 'https://acornglobus.com/images/case-study-rumie.webp',
   ogUrl: 'https://acornglobus.com/case-studies/rumie/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Rumie Case Study | Democratizing Education Globally | AcornGlobus',
+  twitterTitle: 'Rumie Case Study: Learning Platform for 176 Countries',
   twitterDescription: 'How AcornGlobus partnered with Rumie to modernize their education platform, reaching learners in 176 countries with offline-capable, mobile-first technology.',
   twitterImage: 'https://acornglobus.com/images/case-study-rumie.webp',
 })
@@ -339,6 +353,14 @@ useArticleSchema({
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-rumie.webp',
 })
+
+const faqs = [
+  { question: 'What did AcornGlobus build for Rumie?', answer: 'We modernised their education platform for offline-capable, mobile-first learning, so people can reach content without a reliable internet connection. The platform now reaches learners in 176 countries.' },
+  { question: 'What results did the Rumie platform see?', answer: 'Mobile engagement rose 45% and platform speed improved 60%. The partnership has been running for more than four years.' },
+  { question: 'Do you work with nonprofits?', answer: 'Yes. Rumie is a nonprofit and the engagement has run for over four years. The engineering standard is the same as for any client, and you own the code either way.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -465,4 +487,16 @@ useBreadcrumbSchema([
   .impact-grid { grid-template-columns: 1fr; }
   .journey-steps { grid-template-columns: 1fr; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>

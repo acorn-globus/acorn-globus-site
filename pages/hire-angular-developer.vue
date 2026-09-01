@@ -6,7 +6,7 @@
         <div style="max-width: 720px;">
           <div class="hero-eyebrow"><span>Hire Angular Developers</span></div>
           <h1 class="text-display-lg" style="margin-bottom: 20px;">Hire Angular Developers in India Built for Complex Applications</h1>
-          <p class="text-body-lg">Angular is chosen for applications that need to scale, stay maintainable, and last. That's exactly how we think about engineering. Our Angular developers build for the long term — structured, tested, and ready for teams of any size to work in.</p>
+          <p class="text-body-lg">Angular is chosen for applications that need to scale, stay maintainable, and last. That's exactly how we think about engineering. Our Angular developers build for the long term: structured, tested, and ready for teams of any size to work in.</p>
           <div style="margin-top: 32px;">
             <a href="https://calendar.app.google/gbT42VeCDd7ioXh79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Talk to Us</a>
             <p class="text-body" style="margin-top: 14px; color: var(--text-secondary);">Prefer to send a message? <NuxtLink to="/contact/" style="color: var(--brand-blue); font-weight: 500;">Contact us</NuxtLink></p>
@@ -26,28 +26,28 @@
       <div class="container-redesign">
         <div class="section-header" style="max-width: 720px;">
           <h2 class="text-display-sm">A Product Team, Not a Staffing Agency</h2>
-          <p class="text-body-lg" style="margin-top: 16px;">Angular is an enterprise framework — it demands engineers who understand architecture, not just syntax. We bring product thinking to every Angular engagement.</p>
+          <p class="text-body-lg" style="margin-top: 16px;">Angular is an enterprise framework. It demands engineers who understand architecture, not just syntax. We bring product thinking to every Angular engagement.</p>
         </div>
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <div class="feature-card">
             <h3>Engineers Who Embed</h3>
-            <p>Our Angular developers join your standups, use your tools, and learn your codebase. They don't work in a silo and deliver code over the wall — they become part of your engineering team from day one.</p>
+            <p>Our Angular developers join your standups, use your tools, and learn your codebase. They don't work in a silo and deliver code over the wall. They become part of your engineering team from day one.</p>
           </div>
           <div class="feature-card">
             <h3>Full-Stack Capability</h3>
-            <p>Angular rarely lives alone. Our developers work across the full stack — Node.js backends, REST and GraphQL APIs, database design, and CI/CD pipelines. You get engineers who understand the whole system, not just the frontend.</p>
+            <p>Angular rarely lives alone. Our developers work across the full stack, Node.js backends, REST and GraphQL APIs, database design, and CI/CD pipelines. You get engineers who understand the whole system, not just the frontend.</p>
           </div>
           <div class="feature-card">
             <h3>Modern Angular Expertise</h3>
-            <p>Angular 17+, standalone components, Signals, the new control flow syntax (@if, @for, @switch), SSR with hydration — our developers stay current with the framework's direction and apply modern patterns from day one.</p>
+            <p>Angular 17+, standalone components, Signals, the new control flow syntax (@if, @for, @switch), SSR with hydration. Our developers stay current with the framework's direction and apply modern patterns from day one.</p>
           </div>
           <div class="feature-card">
             <h3>Enterprise Integration Experience</h3>
-            <p>We've built Angular applications that integrate with complex enterprise systems — identity providers, legacy APIs, third-party data platforms, and compliance-heavy workflows. We understand the constraints real businesses operate under.</p>
+            <p>We've built Angular applications that integrate with complex enterprise systems: identity providers, legacy APIs, third-party data platforms, and compliance-heavy workflows. We understand the constraints real businesses operate under.</p>
           </div>
           <div class="feature-card" style="grid-column: span 2;">
             <h3>Partnership Model</h3>
-            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep. That's not a staffing transaction — that's what happens when engineers care about the product they're building and clients trust the people writing their code.</p>
+            <p>PerformLine started with one of our engineers. Two years later, we're eight engineers deep. That's not a staffing transaction. That's what happens when engineers care about the product they're building and clients trust the people writing their code.</p>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
           </div>
           <div class="build-card">
             <h3>AngularJS to Angular Migrations</h3>
-            <p>Incremental migration from AngularJS to modern Angular — no big-bang rewrites. We run both frameworks side by side, migrate module by module, and keep your application running in production throughout.</p>
+            <p>Incremental migration from AngularJS to modern Angular. No big-bang rewrites. We run both frameworks side by side, migrate module by module, and keep your application running in production throughout.</p>
           </div>
         </div>
       </div>
@@ -160,14 +160,14 @@
             <div class="step-number">1</div>
             <div>
               <h3>Discovery Call</h3>
-              <p>We learn about your application architecture, your team's workflow, and the Angular expertise you need. No generic pitches — just a real conversation about your codebase and goals.</p>
+              <p>We learn about your application architecture, your team's workflow, and the Angular expertise you need. No generic pitches, just a real conversation about your codebase and goals.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div>
               <h3>Engineer Matching</h3>
-              <p>Based on your Angular version, domain, and team culture, we propose specific engineers. You interview them directly — no account managers in between, no resume databases.</p>
+              <p>Based on your Angular version, domain, and team culture, we propose specific engineers. You interview them directly. No account managers in between, no resume databases.</p>
             </div>
           </div>
           <div class="process-step">
@@ -186,7 +186,7 @@
           </div>
         </div>
         <div class="pull-quote" style="margin-top: 48px;">
-          <p>Our developers integrate with your existing Angular team — same Git repos, same CI pipelines, same coding standards. You'll forget we're external.</p>
+          <p>Our developers integrate with your existing Angular team: same Git repos, same CI pipelines, same coding standards. You'll forget we're external.</p>
         </div>
       </div>
     </section>
@@ -231,7 +231,7 @@
         </div>
         <div class="case-study-card" style="margin-top: 48px;">
           <h3>Partnership Track Record</h3>
-          <p class="text-body" style="margin-top: 8px;">We don't just deliver Angular code — we build partnerships around it. Our engagements start small and grow because the work speaks for itself. PerformLine began with a single engineer and grew to a cross-functional squad of eight-plus over two years. Eitoss started as an MVP we shipped in three months — they raised funding, and we're still building together. That's the kind of track record we bring to every Angular engagement.</p>
+          <p class="text-body" style="margin-top: 8px;">We don't just deliver Angular code. We build partnerships around it. Our engagements start small and grow because the work speaks for itself. PerformLine began with a single engineer and grew to a cross-functional squad of eight-plus over two years. Eitoss started as an MVP we shipped in three months. They raised funding, and we're still building together. That's the kind of track record we bring to every Angular engagement.</p>
           <div class="project-stats">
             <div class="project-stat">
               <div class="value">1 &#8594; 8+</div>
@@ -279,7 +279,7 @@
         <div class="feature-cards-grid" style="margin-top: 48px;">
           <NuxtLink to="/services/resource-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>Resource Augmentation</h3>
-            <p>Embed our Angular engineers into your existing team — same standups, same repo, same workflow.</p>
+            <p>Embed our Angular engineers into your existing team: same standups, same repo, same workflow.</p>
           </NuxtLink>
           <NuxtLink to="/guides/it-staff-augmentation/" class="feature-card" style="text-decoration: none;">
             <h3>IT Staff Augmentation Guide</h3>
@@ -331,11 +331,11 @@ const faqs = [
   },
   {
     question: 'How much does it cost to hire an Angular developer?',
-    answer: "Rates depend on seniority and engagement model. Our dedicated Angular developers typically range from $25 to $50 per hour, depending on experience level and project complexity. We're transparent about pricing from the first call — no hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
+    answer: "Rates depend on seniority and engagement model. Our dedicated Angular developers typically range from $25 to $50 per hour, depending on experience level and project complexity. We're transparent about pricing from the first call. No hidden fees, no surprise markups. Contact us for a specific quote based on your needs."
   },
   {
     question: 'Do your developers work with the latest Angular version?',
-    answer: "Yes. Our Angular developers work with Angular 17+ and stay current with the framework's evolution — standalone components, Signals, the new built-in control flow (@if, @for, @switch), SSR with hydration, and deferred loading. We also maintain expertise across older versions for migration projects."
+    answer: "Yes. Our Angular developers work with Angular 17+ and stay current with the framework's evolution: standalone components, Signals, the new built-in control flow (@if, @for, @switch), SSR with hydration, and deferred loading. We also maintain expertise across older versions for migration projects."
   },
   {
     question: 'Can you migrate our AngularJS application to modern Angular?',
@@ -343,7 +343,7 @@ const faqs = [
   },
   {
     question: 'How does Angular compare to React for our project?',
-    answer: "Angular excels in large, structured applications — enterprise dashboards, complex form workflows, and projects with large teams. Its opinionated architecture enforces consistency across the codebase. React offers more flexibility and a larger ecosystem. We're stack-agnostic and will honestly recommend whichever framework fits your project, team, and goals best."
+    answer: "Angular excels in large, structured applications: enterprise dashboards, complex form workflows, and projects with large teams. Its opinionated architecture enforces consistency across the codebase. React offers more flexibility and a larger ecosystem. We're stack-agnostic and will honestly recommend whichever framework fits your project, team, and goals best."
   },
   {
     question: 'How quickly can an Angular developer start on my project?',
@@ -351,22 +351,22 @@ const faqs = [
   },
   {
     question: 'Do your Angular developers use TypeScript?',
-    answer: "Absolutely — TypeScript is core to Angular development. Our developers write strictly-typed TypeScript with proper interfaces, generics, and type guards. Strong typing catches bugs at compile time, improves IDE support, and makes large codebases significantly easier to maintain and refactor."
+    answer: "Absolutely. TypeScript is core to Angular development. Our developers write strictly-typed TypeScript with proper interfaces, generics, and type guards. Strong typing catches bugs at compile time, improves IDE support, and makes large codebases significantly easier to maintain and refactor."
   },
   {
     question: 'Can you provide a full Angular development team?',
-    answer: "Yes. We can assemble a complete team — Angular frontend developers, Node.js or Java backend engineers, QA, and DevOps — all working as a single unit on your product. PerformLine grew from one engineer to a cross-functional squad of eight-plus. We scale teams organically based on your product's needs."
+    answer: "Yes. We can assemble a complete team (Angular frontend developers, Node.js or Java backend engineers, QA, and DevOps) all working as a single unit on your product. PerformLine grew from one engineer to a cross-functional squad of eight-plus. We scale teams organically based on your product's needs."
   },
   {
     question: 'How do your Angular developers integrate with our existing team?',
-    answer: "They join your tools — Slack, Jira, GitHub, whatever you use. They attend your standups, follow your coding standards, and submit PRs through your review process. We've embedded engineers in teams across US, UK, and European timezones with four to six hours of daily overlap. After a few weeks, most clients tell us they forget our developers are external."
+    answer: "They join your tools: Slack, Jira, GitHub, whatever you use. They attend your standups, follow your coding standards, and submit PRs through your review process. We've embedded engineers in teams across US, UK, and European timezones with four to six hours of daily overlap. After a few weeks, most clients tell us they forget our developers are external."
   }
 ]
 
 useSeoMeta({
-  title: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  title: 'Hire Angular Developers | Dedicated Angular Engineers',
   description: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
-  ogTitle: 'Hire Angular Developers in India | Dedicated Angular Engineers | AcornGlobus',
+  ogTitle: 'Hire Angular Developers | Dedicated Angular Engineers',
   ogDescription: 'Hire dedicated Angular developers in India who build structured, scalable applications. 20+ engineers, 2-week embedded trial, enterprise-grade expertise.',
   ogImage: 'https://acornglobus.com/images/og/og-hire-angular-developer.webp',
   ogImageWidth: 1200,

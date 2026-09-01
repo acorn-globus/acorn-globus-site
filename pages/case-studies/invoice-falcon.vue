@@ -101,7 +101,7 @@
     <!-- IMAGE -->
     <section style="padding: 80px 0;">
       <div class="container-redesign">
-        <img src="/images/case-study-invoice-falcon.webp" alt="Invoice Falcon — Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
+        <img src="/images/case-study-invoice-falcon.webp" alt="Invoice Falcon, Shopify invoicing dashboard transformation" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </section>
 
@@ -270,6 +270,20 @@
         </div>
       </div>
     </section>
+    <!-- ===== FAQ ===== -->
+    <section class="section-redesign" style="background: var(--surface);">
+      <div class="container-redesign">
+        <div class="section-header">
+          <h2 class="text-display-sm">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details v-for="(faq, index) in faqs" :key="index">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer">{{ faq.answer }}</div>
+          </details>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -279,16 +293,16 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
-  ogTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  title: 'Invoice Falcon Case Study: Shopify Invoicing at Scale',
+  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  ogTitle: 'Invoice Falcon Case Study: Shopify Invoicing at Scale',
+  ogDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   ogImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
   ogUrl: 'https://acornglobus.com/case-studies/invoice-falcon/',
   ogType: 'article',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Invoice Falcon Case Study | Shopify Invoicing Revolution | AcornGlobus',
-  twitterDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  twitterTitle: 'Invoice Falcon Case Study: Shopify Invoicing at Scale',
+  twitterDescription: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   twitterImage: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
 
@@ -298,12 +312,20 @@ useHead({
 
 useArticleSchema({
   title: 'Invoice Falcon Case Study | Shopify Invoicing Revolution',
-  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants — 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
+  description: 'How we transformed Invoice Falcon into the leading invoicing solution for Shopify merchants: 99.9% uptime, 40% faster performance, 50% fewer support tickets.',
   url: '/case-studies/invoice-falcon',
   datePublished: '2025-01-01',
   dateModified: '2025-01-01',
   image: 'https://acornglobus.com/images/case-study-invoice-falcon.webp',
 })
+
+const faqs = [
+  { question: 'What did AcornGlobus do for Invoice Falcon?', answer: 'We rebuilt and hardened their invoicing solution for Shopify merchants, focusing on reliability and performance rather than adding features. It now serves more than 500 merchants.' },
+  { question: 'What results did Invoice Falcon see?', answer: '99.9% platform uptime, a 40% performance improvement, and 50% fewer support tickets. The drop in support load matters most, because it means the product stopped costing them time.' },
+  { question: 'Do you build Shopify apps?', answer: 'Yes. Invoice Falcon is a Shopify app we took from unreliable to production-grade. We work with the Shopify ecosystem alongside our broader web and backend work.' },
+]
+
+useFaqSchema(faqs)
 
 useBreadcrumbSchema([
   { name: 'Portfolio', path: '/portfolio/' },
@@ -402,4 +424,16 @@ useBreadcrumbSchema([
   .meta-grid { grid-template-columns: 1fr; }
   .cta-buttons { flex-direction: column; align-items: center; }
 }
+
+.faq-list { max-width: 780px; margin: 32px auto 0; }
+.faq-list details { border-bottom: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list details:first-child { border-top: 1px solid rgba(194, 198, 213, 0.2); }
+.faq-list summary {
+  font-size: 18px; font-weight: 600; padding: 20px 0; cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; font-size: 24px; color: var(--text-secondary); flex-shrink: 0; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list .faq-answer { padding-bottom: 20px; color: var(--text-secondary); line-height: 1.7; }
 </style>
