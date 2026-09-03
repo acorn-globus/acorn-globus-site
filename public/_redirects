@@ -19,4 +19,29 @@
 
 # Retired v2 pages — collapse to homepage to preserve any latent equity
 /old-v2/*  /  301
-/technologies/*  /  301
+
+# Legacy /technologies/* pages. These were collapsing to the homepage via a
+# wildcard, which Google treats as a soft 404 for an irrelevant destination: the
+# ranking signal is discarded rather than preserved. Several of these URLs are
+# still indexed and still earning impressions (dotnet pos 8.9, reactjs pos 9.3,
+# angular pos 1.0), so each now points at the hire page that actually matches it.
+# Netlify is first-match-wins, so these specific rules must stay ABOVE the wildcard.
+/technologies/dotnet          /hire-dotnet-developer/        301
+/technologies/vuejs           /hire-vuejs-developer/         301
+/technologies/reactjs         /hire-react-developer/         301
+/technologies/react           /hire-react-developer/         301
+/technologies/angular         /hire-angular-developer/       301
+/technologies/ruby-on-rails   /hire-rails-developer/         301
+/technologies/rails           /hire-rails-developer/         301
+/technologies/nodejs          /hire-nodejs-developer/        301
+/technologies/node            /hire-nodejs-developer/        301
+/technologies/python          /hire-python-developer/        301
+/technologies/django          /hire-django-developer/        301
+/technologies/flutter         /hire-flutter-developer/       301
+/technologies/react-native    /hire-react-native-developer/  301
+/technologies/nuxt            /hire-nuxt-developer/          301
+/technologies/nuxtjs          /hire-nuxt-developer/          301
+
+# Anything else under /technologies/ has no obvious 1:1 match, so the services
+# index is a closer fit than the homepage.
+/technologies/*  /services/  301
